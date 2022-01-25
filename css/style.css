@@ -244,7 +244,7 @@
 #footer {
   background: #000;
   min-height: 100vh;
-  padding: 5vh 1rem; }
+  padding: 5vh 1rem 1rem; }
   #footer h2 {
     color: #fff;
     text-align: center;
@@ -309,12 +309,13 @@
         color: #f8650c; }
   @media (min-width: 768px) {
     #footer {
-      padding: 5vh 5vw; }
+      padding: 5vh 5vw 0; }
       #footer h2 {
         font-size: 2rem; }
       #footer .footer-contact {
         display: flex;
-        flex-direction: row; }
+        flex-direction: row;
+        margin: 10vh auto 5vh; }
         #footer .footer-contact .contact-item {
           width: 30%; } }
 
