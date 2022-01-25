@@ -1,0 +1,20 @@
+#hero {
+    @media (max-width: 768px) {
+        display: grid;
+        place-items: center;
+        .logo {
+            width: 50vw;
+            height: 50vh;
+            // overflow: hidden;
+            figure {
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    min-height: 100vh;
+    background-color: $brand;
+}
