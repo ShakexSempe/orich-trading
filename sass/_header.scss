@@ -9,7 +9,7 @@
     align-items: center;
     z-index: 5;
     .brand {
-        border: 1px solid $brand;
+        border: 1px solid $brand-light;
         padding: .2em .5em;
         border-radius: 5px;
         display: grid;
@@ -21,7 +21,7 @@
             text-decoration: none;
             
             span {
-                color: $brand;
+                color: $brand-dark;
             }
         }
     }
@@ -73,21 +73,21 @@
                 right: -100vw;
                 width: 100%;
                 height: 100vh;
-                background-color: $nav-bg;
                 background-color: $bg-second;
-                padding: 0 1em;
+                padding: 0 ;
                 transition: .5s;
                 z-index: -1;
+                overflow: hidden;
 
 
                 ul {
-                    border: 2px solid $border-main;
+                    border: 2px solid $brand-light;
                     border-radius: 3px;
                     position: absolute;
                     padding: 2em .2em;
                     top: 10vh;
-                    right: 35vw;
-                    width: 50vw;
+                    right: 30vw;
+                    width: 65vw;
                     height: auto;
 
                     li {
@@ -113,7 +113,7 @@
                         }
 
                         i {
-                            color: $brand;
+                            color: $brand-light;
                             width: 20%;
                             opacity: .7;
                             // padding: .1em;
@@ -127,7 +127,7 @@
                 }
                 
                 &.active {
-                    right: -30vw;
+                    right: -20vw;
                     ul {
                         li {
                             transform: translateX(0);
