@@ -40,16 +40,16 @@
   align-items: center;
   z-index: 5; }
   #header .brand {
-    border: 1px solid #ffa500;
+    border: 1px solid #f8650c;
     padding: .2em;
     border-radius: 5px;
     display: grid;
     place-items: center; }
     #header .brand a {
-      color: #ffa500;
+      color: #f4f4f4;
       text-decoration: none; }
       #header .brand a span {
-        color: #fff; }
+        color: #f8650c; }
   #header .navigation {
     position: relative;
     text-transform: uppercase; }
@@ -170,8 +170,10 @@
                   background-color: #ffa500; } }
 
 #hero {
+  display: grid;
+  place-items: center;
   min-height: 100vh;
-  background-color: #f8650c; }
+  background-color: #fff; }
   @media (max-width: 768px) {
     #hero {
       display: grid;
@@ -182,7 +184,14 @@
         #hero .logo figure {
           overflow: hidden; }
           #hero .logo figure img {
-            width: 100%; } }
+            width: 100%; }
+      #hero .slogan {
+        text-align: center;
+        margin: 0 auto;
+        background-color: #000; }
+        #hero .slogan p {
+          background-color: #f8650c;
+          padding: .5em; } }
 
 #footer {
   background: #000;

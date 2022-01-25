@@ -9,18 +9,18 @@
     align-items: center;
     z-index: 5;
     .brand {
-        border: 1px solid $text-brand;
+        border: 1px solid $brand;
         padding: .2em;
         border-radius: 5px;
         display: grid;
         place-items: center;
         
         a {
-            color: $text-brand;
+            color: $text-second;
             text-decoration: none;
             
             span {
-                color: #fff;
+                color: $brand;
             }
         }
     }
