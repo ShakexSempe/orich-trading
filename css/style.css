@@ -215,6 +215,32 @@
         color: #f4f4f4;
         border-radius: 5px; } }
 
+#about .about-article {
+  border: 1px solid #f8650c;
+  background: #f4f4f4;
+  border-radius: 5px;
+  margin: 5vh 5vw;
+  text-transform: none;
+  line-height: 1.6;
+  padding: .3em;
+  overflow: hidden;
+  text-align: left; }
+  #about .about-article p {
+    margin-bottom: 2rem; }
+    #about .about-article p span {
+      font-size: 2rem;
+      padding-right: .1em;
+      color: #fff;
+      text-shadow: 2px 2px 2px #f8650c; }
+
+@media (max-width: 768px) {
+  #about .about-article {
+    font-size: 1rem; } }
+
+@media (min-width: 768px) {
+  #about .about-article {
+    font-size: 1.2rem; } }
+
 #footer {
   background: #000;
   min-height: 100vh;
@@ -294,8 +320,7 @@
   #container #main {
     margin-top: 5vh;
     padding: 5vh 0;
-    min-height: 100vh;
-    background-color: #f4f4f4; }
+    min-height: 100vh; }
     @media (min-width: 768px) {
       #container #main {
         margin-top: 10vh;
