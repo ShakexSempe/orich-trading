@@ -50,7 +50,7 @@
       color: #f4f4f4;
       text-decoration: none; }
       #header .brand a span {
-        color: #f8650c; }
+        color: #ffa500; }
   #header .navigation {
     position: relative;
     text-transform: uppercase; }
@@ -306,7 +306,7 @@
       #footer .footer-copyright p span {
         color: #ffa500; }
       #footer .footer-copyright p#date {
-        color: #f8650c; }
+        color: #f4f4f4; }
   @media (min-width: 768px) {
     #footer {
       padding: 5vh 5vw 0; }
