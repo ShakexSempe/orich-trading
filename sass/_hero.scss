@@ -1,5 +1,10 @@
 #hero {display: grid;
     place-items: center;
+    .slogan {
+        p {
+            text-transform: capitalize;
+        }
+    }
     @media (max-width: 768px) {
         display: grid;
         place-items: center;
@@ -29,4 +34,16 @@
     }
     min-height: 100vh;
     background-color: $primary-color;
+
+    @media (min-width: 768px) {
+        .slogan {
+            text-align: center;
+            p {
+                background: #000;
+                padding: 1em;
+                color: $text-second;
+                border-radius: 5px;
+            }
+        }
+    }
 }

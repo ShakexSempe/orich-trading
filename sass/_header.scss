@@ -10,10 +10,11 @@
     z-index: 5;
     .brand {
         border: 1px solid $brand;
-        padding: .2em;
+        padding: .2em .5em;
         border-radius: 5px;
         display: grid;
         place-items: center;
+        text-transform: uppercase;
         
         a {
             color: $text-second;
@@ -41,16 +42,23 @@
         }
         .logo {
             // display: none;
-            width: 25vw;
+            width: 30vw;
+            height: 100%;
             overflow: hidden;
+            border-radius: 5px;
 
             figure {
                 width: 100%;
                 height: 100%;
+                border-radius: 10px;
+                overflow: hidden;
+
 
                 img {
                     width: 100%;
                     height: 100%;
+                    object-fit: contain;
+                    border-radius: 5px;
                 }
             }
         }
@@ -66,13 +74,14 @@
                 width: 100%;
                 height: 100vh;
                 background-color: $nav-bg;
+                background-color: $bg-second;
                 padding: 0 1em;
                 transition: .5s;
                 z-index: -1;
 
 
                 ul {
-                    border: 2px solid $text-brand;
+                    border: 2px solid $border-main;
                     border-radius: 3px;
                     position: absolute;
                     padding: 2em .2em;
@@ -105,7 +114,8 @@
 
                         i {
                             color: $brand;
-                            width: 15%;
+                            width: 20%;
+                            opacity: .7;
                             // padding: .1em;
                             // margin-right: .5em;
                         }
@@ -157,9 +167,11 @@
             }
         }
         .logo {
-            // display: none;
-            border: 1px solid green;
-            // width: 50%;
+            display: none;
+            // border: 2px solid $brand;
+            border-radius: 5px;
+            width: auto;
+            margin: 0 auto;
             height: 100%;
 
             figure {
@@ -170,7 +182,7 @@
                 img {
                     width: 100%;
                     height: 100%;
-                    object-fit: cover;
+                    object-fit: contain;
                 }
             }
         }
@@ -209,7 +221,7 @@
 
                             &:hover {
                                 color: $text-second;
-                                background-color: $text-brand;
+                                background-color: $brand;
                             }
                         }
                     }
