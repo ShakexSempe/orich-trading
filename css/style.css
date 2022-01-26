@@ -142,10 +142,8 @@
       #header .brand a {
         font-size: 1.5em; }
       #header .logo {
-        display: none;
         border-radius: 5px;
         width: auto;
-        margin: 0 auto;
         height: 100%; }
         #header .logo figure {
           height: 100%;
@@ -255,21 +253,24 @@
     color: #fff;
     text-align: center;
     margin-bottom: 2vh;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-transform: capitalize; }
   #footer .footer-contact {
-    border: 2px solid #ffa500;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding: 5vh 1rem; }
+    padding: 5vh 0; }
+    @media (max-width: 768px) {
+      #footer .footer-contact figure {
+        display: none; } }
     #footer .footer-contact .contact-item {
       background: #161616;
+      border: 1px solid #ffa500;
       border-radius: 5px;
       margin: 1rem auto;
-      padding: 1rem 2rem;
+      padding: 1rem;
       height: 70%;
       width: 100%; }
       #footer .footer-contact .contact-item header {
@@ -285,7 +286,8 @@
         overflow: hidden;
         text-overflow: ellipsis; }
         #footer .footer-contact .contact-item .contact-info p {
-          color: #f4f4f4; }
+          color: #f4f4f4;
+          text-overflow: ellipsis; }
         #footer .footer-contact .contact-item .contact-info a {
           color: #f4f4f4;
           text-overflow: ellipsis;
@@ -317,13 +319,32 @@
     #footer {
       padding: 5vh 5vw 0; }
       #footer h2 {
-        font-size: 2rem; }
+        font-size: 3rem;
+        text-align: right;
+        margin-right: 10vw; }
       #footer .footer-contact {
         display: flex;
-        flex-direction: row;
-        margin: 10vh auto 5vh; }
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+        border: none; }
+        #footer .footer-contact figure {
+          position: absolute;
+          left: 5vw;
+          bottom: 5vh;
+          height: 50%;
+          width: auto;
+          border: 1px solid red;
+          overflow: hidden;
+          z-index: 1; }
+          #footer .footer-contact figure img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; }
         #footer .footer-contact .contact-item {
-          width: 30%; } }
+          width: 40%;
+          margin: 0 1rem .5rem;
+          z-index: 2; } }
 
 * {
   padding: 0;
