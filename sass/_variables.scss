@@ -6,8 +6,10 @@ $brand: #f8650c;
 $brand-dark: #f8650c;
 $brand-light: #ffa500;
 
-$bg-main: #f4f4f4;
+$brand-overlay: linear-gradient(40deg, $brand-dark, $brand);
+$bg-main: #fff;
 $bg-second: #000;
+
 $text-main: #000;
 $text-second: #f4f4f4;
 $text-main-hover: #fffa;
