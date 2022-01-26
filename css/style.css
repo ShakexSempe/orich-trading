@@ -301,7 +301,8 @@
       margin: 1rem auto;
       border-radius: 5px; }
       #services .service-container .service-type ul li {
-        margin: .5rem 0; }
+        margin: .5rem 0;
+        text-transform: capitalize; }
 
 @media (min-width: 768px) {
   #services .service-container {
