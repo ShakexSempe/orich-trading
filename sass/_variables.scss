@@ -7,6 +7,8 @@ $brand-dark: #f8650c;
 $brand-light: #ffa500;
 
 $brand-overlay: linear-gradient(40deg, $brand-dark, $brand);
+$brand-btn: linear-gradient(0deg, $brand-dark, $brand-light);
+$brand-btn-hover: linear-gradient(0deg, $brand-light, $brand-dark);
 $bg-main: #fff;
 $bg-second: #000;
 
