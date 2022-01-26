@@ -95,7 +95,6 @@
                         margin: 0 0 2rem;
                         list-style: none;
                         // border: 1px solid yellow;
-                        padding: 1em .5em;
                         display: flex;
                         justify-content: flex-start;
                         align-items: center;
@@ -109,7 +108,9 @@
                             text-decoration: none;
                             margin-right: auto;
                             width: 100%;
-                            transition: .5s;
+                            padding: 1em .5em;
+                            transition: .2s;
+                            border: 1px solid #dddddd1a;
                         }
 
                         i {
@@ -121,7 +122,9 @@
                         }
 
                         &:hover {
-                            background-color: #000;
+                            a {
+                                background: #dddddd1a;
+                            }
                         }
                     }
                 }
