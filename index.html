@@ -94,6 +94,7 @@
             <section id="about">
                 <header class="section-title">
                     <h2>about us</h2>
+                </header>
                     <article class="about-article">
                         <p class="article-intro">
                             <span>O</span>rich Trading & Projects is a construction company located
@@ -108,7 +109,7 @@
                         <p class="article-body">
                         </p>
                     </article>
-                </header>
+                
             </section>
             <section id="services">
                 <header class="section-title">
@@ -122,9 +123,40 @@
             </section>
         </main>
         <footer id="footer">
-            <header class="foot-section-header">
+            <header class="section-title">
                 <h2>contact us</h2>
             </header>
+            <!-- FORM -->
+        <form id="form" class="contact-form" target="_blank" action="https://formsubmit.co/bshakex@gmail.com" method="POST">
+            <h1 data-scroll class="contact-title">Get In Touch</h1>
+
+            <div class="input-div">
+                <label for="name">name :</label>
+                <input type="text" name="name and lastname" id="username" placeholder="name & surname.." required
+                    minlength="2">
+            </div>
+
+            <div class="input-div">
+                <label for="email">email :</label>
+                <input type="email" name="email" id="email" placeholder="your email address.." required>
+            </div>
+
+            <div class="input-div">
+                <label for="message">message :</label>
+                <textarea rows="3" cols="50" minlength="2" name="message" placeholder="leave a message..."
+                    id="message" required></textarea>
+            </div>
+
+            <button type="submit" title="submit contact form">send email</button>
+            <!-- form options -->
+            <input type="hidden" name="_subject" value="New submission!">
+            <input type="hidden" name="_autoresponse" value="Shakex has received your form">
+            <input type="hidden" name="_next" value="http://shakexsempe.netlify.app/thanks.html">
+            <input type="hidden" name="_template" value="table">
+            <input type="text" name="_honey" style="display:none">
+
+        </form>
+        <!-- END OF FORM -->
             <div class="footer-contact">
                 <figure>
                     <a href="#">
