@@ -256,6 +256,75 @@
   #about .about-article {
     font-size: 1.2rem; } }
 
+#services .service-container {
+  margin: 5vh auto; }
+  #services .service-container .service-item {
+    border: 1px solid #f8650c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh 0;
+    margin: 5vh auto;
+    width: 100%; }
+    #services .service-container .service-item .service-core {
+      flex-basis: 50%;
+      overflow: hidden; }
+      #services .service-container .service-item .service-core figure {
+        margin: 1rem;
+        border: 1px solid #000; }
+        #services .service-container .service-item .service-core figure figcaption {
+          text-transform: capitalize;
+          font-size: 1.5rem;
+          color: #f8650c;
+          text-align: center;
+          margin: 5vh auto; }
+        #services .service-container .service-item .service-core figure img {
+          width: 100%; }
+  #services .service-container .service-type {
+    width: 100%;
+    padding: 0 1rem; }
+    #services .service-container .service-type ul {
+      background-color: #eee;
+      padding: 5vh .5rem;
+      list-style: none;
+      width: 100%; }
+      #services .service-container .service-type ul li {
+        margin: .5rem 0; }
+
+@media (min-width: 768px) {
+  #services .service-container {
+    margin: 5vh 5vw; }
+    #services .service-container .service-item {
+      display: flex;
+      flex-direction: row;
+      height: 50vh;
+      overflow: hidden;
+      position: relative; }
+      #services .service-container .service-item:nth-child(even) {
+        flex-direction: row-reverse; }
+        #services .service-container .service-item:nth-child(even) .service-type {
+          text-align: right; }
+      #services .service-container .service-item .service-core {
+        flex-basis: 50%;
+        overflow: hidden;
+        height: 100%;
+        width: 100%; }
+        #services .service-container .service-item .service-core figure {
+          margin: 0 auto;
+          height: 100%;
+          width: 80%;
+          overflow: hidden; }
+          #services .service-container .service-item .service-core figure figcaption {
+            text-align: center;
+            margin: 1rem auto; }
+          #services .service-container .service-item .service-core figure img {
+            width: 100%;
+            height: 70%;
+            object-fit: contain; }
+      #services .service-container .service-item .service-type {
+        width: 50%;
+        text-align: left; } }
+
 #form {
   min-height: 100vh;
   padding: 10vh 1rem; }

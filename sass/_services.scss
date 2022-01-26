@@ -1,0 +1,107 @@
+#services {
+    // background-color: #fff000;
+
+    .service-container {
+        // border: 1px solid red;
+        margin: 5vh auto;
+
+        .service-item {
+            border: 1px solid $brand;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 5vh 0;
+            margin: 5vh auto;
+            width: 100%;
+
+            .service-core {
+                flex-basis: 50%;
+                overflow: hidden;
+
+                figure {
+                    margin: 1rem ;
+                    border: 1px solid #000;
+                    figcaption {
+                        text-transform: capitalize;
+                        font-size: 1.5rem;
+                        color: $brand;
+                        text-align: center;
+                        margin: 5vh auto;
+                    }
+
+                    img {
+                        width: 100%;;
+                    }
+                }
+            }
+        }
+
+        .service-type {
+            width: 100%;
+            padding: 0 1rem;
+            ul {
+                background-color: #eee;
+                padding: 5vh .5rem;
+                list-style: none;
+                width: 100%;
+
+                li {
+                    margin: .5rem 0;
+                }
+
+            }
+        }
+    }
+
+    @media (min-width:768px) {
+        .service-container {
+            // border: 1px solid red;
+            margin: 5vh 5vw;
+    
+            .service-item {
+                // border: 1px solid blue;
+                display: flex;
+                flex-direction: row;
+                height: 50vh;
+                overflow: hidden;
+                position: relative;
+                // padding: 5vh 0;
+                &:nth-child(even){
+                    flex-direction: row-reverse;
+                    .service-type {
+                        text-align: right;
+                    }
+                }
+                .service-core {
+                    flex-basis: 50%;
+                    overflow: hidden;
+                    height: 100%;
+                    width: 100%;
+                    // margin: 5vh 0;
+
+                    figure {
+                        margin: 0 auto;
+                        height: 100%;
+                        width: 80%;
+                        overflow: hidden;
+                        // border: 1px solid red;
+                        figcaption {
+                            text-align: center;
+                            margin: 1rem auto;
+                        }
+                        img {
+                            width: 100%;
+                            height: 70%;
+                            object-fit: contain;
+                            // border: 2px solid green;
+                        }
+                    }
+                }
+                .service-type {
+                    width: 50%;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
