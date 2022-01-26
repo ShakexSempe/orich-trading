@@ -105,8 +105,9 @@
             color: $text-second;
             line-height: 1.6;
 
-            span {
+            a {
                 color: $text-main;
+                text-decoration: none;
             }
             &#date {
                 color: $text-second;
