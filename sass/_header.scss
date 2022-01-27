@@ -3,11 +3,20 @@
     top: 0;
     width: 100%;
     max-height: 8vh;
-    background-color: $header-bg;
+    background-color: $brand;
     display: flex;
+    transition: .5s;
     justify-content: space-between;
     align-items: center;
     z-index: 5;
+    // CHANGE BG COLOR ON SCROLL
+    &.scroll {
+        background-color: $header-bg;
+    }
+    // &.active {
+    //     background-color: $header-bg;
+    //     background-color: blue;
+    // }
     .brand {
         border: 1px solid $brand-light;
         padding: .2em .5em;
