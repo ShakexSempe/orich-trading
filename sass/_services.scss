@@ -1,12 +1,17 @@
 #services {
     // background-color: #fff000;
-
+    .section-description {
+        // border: 1px solid red;
+        margin: 0 5vw;
+        line-height: 1.6;
+    }
     .service-container {
         // border: 1px solid red;
         margin: 5vh auto;
 
         .service-item {
-            border: 1px solid $brand;
+            // border: 1px solid $brand;
+            background-color: #f4f4f4;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -71,7 +76,7 @@
                 background-color: $brand;
                 color: $text-second;
                 padding: 5vh .5rem;
-                list-style: none;
+                // list-style: none;
                 font-weight: 500;
                 width: 100%;
                 margin: 1rem auto;
@@ -80,6 +85,9 @@
                 li {
                     margin: .5rem 0;
                     text-transform: capitalize;
+                    &::marker {
+                        color: $brand;
+                    }
                 }
 
             }
@@ -103,6 +111,14 @@
                     flex-direction: row-reverse;
                     .service-type {
                         text-align: right;
+                        ul {
+                            li {
+                                list-style-position: inside;
+                                &::marker {
+                                    color: $text-second;
+                                }
+                            }
+                        }
                     }
                 }
                 .service-core {

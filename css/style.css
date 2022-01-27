@@ -231,7 +231,6 @@
       text-align: center; } }
 
 #about .about-article {
-  border: 1px solid #f8650c;
   background: #fff;
   border-radius: 5px;
   margin: 5vh 5vw;
@@ -245,8 +244,13 @@
     #about .about-article p span {
       font-size: 2rem;
       padding-right: .1em;
+      background: #000;
+      float: left;
+      margin-right: .1em;
+      border-radius: 2px;
+      box-shadow: 2px 3px 0 #4855634b;
       color: #fff;
-      text-shadow: 2px 2px 2px #f8650c; }
+      text-shadow: 2px 2px 0px #f8650c; }
 
 @media (max-width: 768px) {
   #about .about-article {
@@ -256,10 +260,14 @@
   #about .about-article {
     font-size: 1.2rem; } }
 
+#services .section-description {
+  margin: 0 5vw;
+  line-height: 1.6; }
+
 #services .service-container {
   margin: 5vh auto; }
   #services .service-container .service-item {
-    border: 1px solid #f8650c;
+    background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -295,7 +303,6 @@
       background-color: #f8650c;
       color: #f4f4f4;
       padding: 5vh .5rem;
-      list-style: none;
       font-weight: 500;
       width: 100%;
       margin: 1rem auto;
@@ -303,6 +310,8 @@
       #services .service-container .service-type ul li {
         margin: .5rem 0;
         text-transform: capitalize; }
+        #services .service-container .service-type ul li::marker {
+          color: #f8650c; }
 
 @media (min-width: 768px) {
   #services .service-container {
@@ -317,6 +326,10 @@
         flex-direction: row-reverse; }
         #services .service-container .service-item:nth-child(even) .service-type {
           text-align: right; }
+          #services .service-container .service-item:nth-child(even) .service-type ul li {
+            list-style-position: inside; }
+            #services .service-container .service-item:nth-child(even) .service-type ul li::marker {
+              color: #f4f4f4; }
       #services .service-container .service-item .service-core {
         flex-basis: 50%;
         overflow: hidden;
@@ -337,6 +350,51 @@
       #services .service-container .service-item .service-type {
         width: 50%;
         text-align: left; } }
+
+#references {
+  padding: 10vh 1rem; }
+  #references .references {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+    height: auto;
+    padding: 1rem 0;
+    width: 100%; }
+    #references .references .reference {
+      border: 2px solid #ffa500;
+      background-color: #f4f4f4;
+      border-radius: 5px;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 5vh 0; }
+      #references .references .reference i {
+        margin-right: .5rem;
+        color: #ffa500;
+        opacity: .7; }
+      #references .references .reference h3 {
+        text-transform: capitalize;
+        margin: .5rem auto;
+        color: #f8650c; }
+      #references .references .reference .ref-name {
+        margin: .5rem auto;
+        padding: .5rem 0; }
+  @media (min-width: 768px) {
+    #references {
+      padding: 5vh 5vw; }
+      #references .references {
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 1rem 0; }
+        #references .references .reference {
+          padding: .5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; } }
 
 #form {
   min-height: 100vh;

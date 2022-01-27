@@ -1,6 +1,6 @@
 #about {
     .about-article {
-        border: 1px solid $brand;
+        // border: 1px solid $brand;
         background: $bg-main;
         border-radius: 5px;
         margin: 5vh 5vw;
@@ -15,9 +15,14 @@
             span {
                 font-size: 2rem;
                 padding-right: .1em;
-                // background: #000;
+                background: #000;
+                float: left;
+                margin-right: .1em;
+                border-radius: 2px;
+                box-shadow: 2px 3px 0 #4855634b;
+
                 color: #fff;
-                text-shadow: 2px 2px 2px $brand;
+                text-shadow: 2px 2px 0px $brand;
             }
         }
     }
