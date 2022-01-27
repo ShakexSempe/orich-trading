@@ -63,6 +63,18 @@
             }
         }
 
+        .parallax {
+            height: 80vh;
+            background-color: #ffff;
+            background-image: url(../img/orich-project.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-attachment: fixed;
+            background-position: center;
+
+            @media (min-width: 768px) {
+            }
+        }
 
         section {
             min-height: 100vh;

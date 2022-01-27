@@ -653,6 +653,14 @@
     #container #main.active::after {
       z-index: 1;
       opacity: .7; }
+    #container #main .parallax {
+      height: 80vh;
+      background-color: #ffff;
+      background-image: url(../img/orich-project.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-attachment: fixed;
+      background-position: center; }
     #container #main section {
       min-height: 100vh; }
 
