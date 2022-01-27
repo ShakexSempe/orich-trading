@@ -51,6 +51,10 @@
   z-index: 5; }
   #header.scroll {
     background-color: #000; }
+  #header .logo {
+    transition: .2s; }
+    #header .logo:hover {
+      transform: scale(0.98); }
   #header .brand {
     border: 1px solid #ffa500;
     padding: .2em .5em;
@@ -276,6 +280,7 @@
     align-items: center;
     padding: 5vh 0;
     margin: 5vh auto;
+    border-radius: 5px;
     width: 100%; }
     #services .service-container .service-item .service-core {
       flex-basis: 50%;

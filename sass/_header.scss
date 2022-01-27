@@ -17,6 +17,12 @@
     //     background-color: $header-bg;
     //     background-color: blue;
     // }
+    .logo {
+        transition: .2s;
+        &:hover {
+            transform: scale(.98);
+        }
+    }
     .brand {
         border: 1px solid $brand-light;
         padding: .2em .5em;
