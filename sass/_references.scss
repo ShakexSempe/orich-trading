@@ -13,14 +13,14 @@
         width: 100%;
 
         .reference {
-            border: 2px solid $brand-light;
+            // border: 2px solid $brand-light;
             background-color: #f4f4f4;
             border-radius: 5px;
             width: 100%;
             height: 100%;
             margin: 0 auto;
-            text-align: center;
-            padding: 5vh 0;
+            text-align: left;
+            padding: 1rem 0 1rem 1rem;
 
             i {
                 margin-right: .5rem;
