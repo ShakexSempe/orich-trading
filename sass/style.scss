@@ -69,3 +69,19 @@
         }
     }
 }
+
+// SCROLL OUT
+[data-scroll] {
+    transition: 1s ease;
+    transform: scale(.5);
+}
+
+[data-scroll="in"] {
+    opacity: 1;
+    transform: scale(1);
+}
+
+[data-scroll="out"] {
+    opacity: 0;
+}
+// END OF SCROLL OUT

@@ -96,10 +96,7 @@
                 <header class="section-title">
                     <h2>about us</h2>
                 </header>
-                <!-- PARALLAX SECTION -->
-                
-                <!-- END OF PARALLAX SECTION -->
-                <article class="about-article">
+                <article data-scroll class="about-article">
                     <p class="article-intro">
                         <span>O</span>rich Trading & Projects is a construction company located
                         in Johannesburg, Gauteng that was established in 2021 and
@@ -128,7 +125,7 @@
                     </p>
                 </div>
                 <div class="service-container">
-                    <div class="service-item">
+                    <div data-scroll class="service-item">
                         <div class="service-core">
                             <h3>plumbing</h3>
                             <i class="fas fa-wrench"></i>
@@ -143,7 +140,7 @@
                         </div>
                     </div>
 
-                    <div class="service-item">
+                    <div data-scroll class="service-item">
                         <div class="service-core">
                             <h3>Painting</h3>
                             <i class="fas fa-paint-roller"></i>
@@ -158,7 +155,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="service-item">
+
+                    <div data-scroll class="service-item">
                         <div class="service-core">
                             <h3>electrical services</h3>
                             <i class="fas fa-network-wired"></i>
@@ -179,32 +177,32 @@
                     <h2>projects</h2>
                 </header>
                 <div class="gallery">
-                    <div class="project-item">
+                    <div data-scroll class="project-item">
                         <figure class="project-img">
                             <img src="img/project.jpg" loading="lazy" alt="orich project">
                         </figure>
                     </div>
-                    <div class="project-item">
+                    <div data-scroll class="project-item">
                         <figure class="project-img">
                             <img src="img/project-2.jpg" loading="lazy" alt="orich project">
                         </figure>
                     </div>
-                    <div class="project-item">
+                    <div data-scroll class="project-item">
                         <figure class="project-img">
                             <img src="img/project-3.jpg" loading="lazy" alt="orich project">
                         </figure>
                     </div>
-                    <div class="project-item">
+                    <div data-scroll class="project-item">
                         <figure class="project-img">
                             <img src="img/project-4.jpg" loading="lazy" alt="orich project">
                         </figure>
                     </div>
-                    <div class="project-item">
+                    <div data-scroll class="project-item">
                         <figure class="project-img">
                             <img src="img/project-5.jpg" loading="lazy" alt="orich project">
                         </figure>
                     </div>
-                    <div class="project-item">
+                    <div data-scroll class="project-item">
                         <figure class="project-img">
                             <img src="img/project-6.jpg" loading="lazy" alt="orich project">
                         </figure>
@@ -217,14 +215,14 @@
                     <h2>references</h2>
                 </header>
                 <div class="references">
-                    <div class="reference">
+                    <div data-scroll class="reference">
                         <h3>roofing</h3>
                         <p class="ref-name">
                             <i class="fas fa-user"></i>Nyameni Rambuda
                         </p>
                         <p class="ref-contact"><i class="fas fa-phone"></i>076 723 8251</p>
                     </div>
-                    <div class="reference">
+                    <div data-scroll class="reference">
                         <h3>Electricity</h3>
                         <p class="ref-name">
                             <i class="fas fa-user"></i>
@@ -232,14 +230,14 @@
                         </p>
                         <p class="ref-contact"><i class="fas fa-phone"></i>078 32 7117</p>
                     </div>
-                    <div class="reference">
+                    <div data-scroll class="reference">
                         <h3>pools</h3>
                         <p class="ref-name">
                             <i class="fas fa-user"></i>Phathu Oscar Mudalahothe
                         </p>
                         <p class="ref-contact"><i class="fas fa-phone"></i>076 780 6355</p>
                     </div>
-                    <div class="reference">
+                    <div data-scroll class="reference">
                         <h3>cameras</h3>
                         <p class="ref-name">
                             <i class="fas fa-user"></i>Lucas Mashilo
@@ -276,7 +274,7 @@
                     id="message" required></textarea>
             </div>
 
-            <button type="submit" title="submit contact form">send email</button>
+            <button data-scroll type="submit" title="submit contact form">send email</button>
             <!-- form options -->
             <input type="hidden" name="_subject" value="New submission!">
             <input type="hidden" name="_autoresponse" value="Shakex has received your form">
@@ -287,7 +285,7 @@
         </form>
         <!-- END OF FORM -->
             <div class="footer-contact">
-                <figure>
+                <figure data-scroll>
                     <a href="#">
                         <img src="img/orich.jpg" alt="Orich Trading logo">
                     </a>
@@ -322,5 +320,13 @@
         <!-- END OF FOOTER -->
     </div>
     <script src="js/app.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script>
+        ScrollOut({
+        onShown(el) {
+            el.classList.add("animated");
+        }
+        });
+    </script>
 </body>
 </html>

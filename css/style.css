@@ -655,3 +655,14 @@
       opacity: .7; }
     #container #main section {
       min-height: 100vh; }
+
+[data-scroll] {
+  transition: 1s ease;
+  transform: scale(0.5); }
+
+[data-scroll="in"] {
+  opacity: 1;
+  transform: scale(1); }
+
+[data-scroll="out"] {
+  opacity: 0; }
