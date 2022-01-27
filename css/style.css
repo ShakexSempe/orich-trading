@@ -202,6 +202,12 @@
   place-items: center;
   min-height: 100vh;
   background-color: #fff; }
+  #hero figure {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto; }
+    #hero figure img {
+      width: 100%; }
   #hero .slogan {
     border-radius: 5px;
     border: none;
@@ -234,6 +240,8 @@
           background-color: #f8650c;
           padding: .5em; } }
   @media (min-width: 768px) {
+    #hero figure {
+      width: 50%; }
     #hero .slogan {
       text-align: center; } }
 

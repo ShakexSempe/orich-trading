@@ -3,6 +3,16 @@
     place-items: center;
     min-height: 100vh;
     background-color: $primary-color;
+
+    figure {
+        width: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+
+        img {
+            width: 100%;
+        }
+    }
     .slogan {
         border-radius: 5px;
         border: none;
@@ -52,6 +62,9 @@
    
 
     @media (min-width: 768px) {
+        figure {
+            width: 50%;
+        }
         .slogan {
             text-align: center;
         }
