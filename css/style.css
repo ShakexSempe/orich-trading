@@ -435,7 +435,12 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-items: center; } }
+          align-items: center; }
+          #references .references .reference p {
+            width: 70%;
+            display: flex; }
+            #references .references .reference p i {
+              flex-basis: 10%; } }
 
 #form {
   min-height: 100vh;

@@ -59,6 +59,15 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+
+                p {
+                    width: 70%;
+                    display: flex;
+
+                    i {
+                        flex-basis: 10%;
+                    }
+                }
             }
         }
 
