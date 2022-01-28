@@ -68,7 +68,6 @@
       #header .brand a span {
         color: #ffa500; }
   #header .navigation {
-    position: relative;
     text-transform: uppercase; }
   @media (max-width: 768px) {
     #header {
@@ -185,7 +184,8 @@
             #header .navigation nav ul li {
               padding-left: 1em;
               list-style: none;
-              float: left; }
+              float: left;
+              position: relative; }
               #header .navigation nav ul li a {
                 color: #fff;
                 text-decoration: none;
@@ -218,7 +218,7 @@
               height: 0;
               overflow: hidden;
               position: absolute;
-              top: 7vh;
+              top: 5vh;
               left: 0%;
               width: auto;
               background-color: #f8650c;
@@ -492,7 +492,28 @@
   padding: 10vh 1rem; }
   #form .contact-title {
     margin-bottom: 5vh;
-    color: #f8650c; }
+    color: #f8650c;
+    position: relative; }
+    #form .contact-title::after {
+      position: absolute;
+      content: '';
+      bottom: -.2em;
+      left: 0;
+      width: 0;
+      height: .3rem;
+      background-color: #f8650c;
+      border-radius: 5px;
+      transition: 2s; }
+    #form .contact-title[data-scroll] {
+      transform: scale(1);
+      opacity: 1; }
+    #form .contact-title[data-scroll="in"] {
+      transition: 2s; }
+      #form .contact-title[data-scroll="in"]::after {
+        width: 3em; }
+        @media (min-width: 768px) {
+          #form .contact-title[data-scroll="in"]::after {
+            width: 3em; } }
   #form .input-div {
     margin: 1rem 0;
     padding: 1rem 0;

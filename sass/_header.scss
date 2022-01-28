@@ -44,7 +44,7 @@
     
     .navigation {
         // border: 1px solid yellow;
-        position: relative;
+        // position: relative;
         text-transform: uppercase;
     }
     // MOBILE HEADER 
@@ -229,6 +229,7 @@
                         padding-left: 1em;
                         list-style: none;
                         float: left;
+                        position: relative;
 
                         a {
                             color: #fff;
@@ -274,7 +275,7 @@
                             height: 0;
                             overflow: hidden;
                             position: absolute;
-                            top: 7vh;
+                            top: 5vh;
                             left: 0%;
                             width: auto;
                             background-color: $brand;
