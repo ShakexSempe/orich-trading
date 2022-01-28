@@ -113,7 +113,8 @@
             top: 10vh;
             right: 30vw;
             width: 65vw;
-            height: auto; }
+            height: 80vh;
+            overflow-y: auto; }
             #header .navigation aside ul li {
               margin: 0 0 2rem;
               list-style: none;
@@ -123,6 +124,39 @@
               transition: 1s;
               transform: translateX(3em);
               opacity: 0; }
+              #header .navigation aside ul li.aside-dropdown {
+                position: relative; }
+                #header .navigation aside ul li.aside-dropdown button {
+                  display: flex;
+                  align-items: center;
+                  width: 100%;
+                  color: #eee;
+                  text-decoration: none;
+                  margin-right: auto;
+                  width: 100%;
+                  padding: 1em .5em;
+                  transition: .2s;
+                  border: 1px solid #dddddd1a;
+                  background-color: transparent;
+                  font-size: 1rem;
+                  text-transform: uppercase; }
+                  #header .navigation aside ul li.aside-dropdown button a {
+                    color: #fff000; }
+                #header .navigation aside ul li.aside-dropdown .aside-dropdown-content {
+                  position: absolute;
+                  top: 3rem;
+                  left: 3.75rem;
+                  width: auto;
+                  height: 0;
+                  overflow: hidden;
+                  background-color: #000;
+                  display: flex;
+                  flex-direction: column;
+                  transition: 1s; }
+                  #header .navigation aside ul li.aside-dropdown .aside-dropdown-content a:hover {
+                    background-color: none; }
+                #header .navigation aside ul li.aside-dropdown:hover .aside-dropdown-content {
+                  height: 20vh; }
               #header .navigation aside ul li a {
                 color: #eee;
                 text-decoration: none;
