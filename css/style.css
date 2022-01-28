@@ -546,6 +546,8 @@
         margin-bottom: .5em;
         text-align: center;
         text-transform: capitalize; }
+        #footer .footer-contact .contact-item header i {
+          margin-right: .5rem; }
       #footer .footer-contact .contact-item .contact-info {
         display: flex;
         flex-direction: column;
