@@ -20,7 +20,7 @@ toggle.addEventListener("click",  () => {
     aside.classList.toggle("active");
     toggle.classList.toggle("active");
     main.classList.toggle("active");
-    header.classList.add("scroll");
+    header.classList.remove("scroll");
 });
 
 links.forEach(link => {

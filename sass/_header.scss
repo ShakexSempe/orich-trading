@@ -3,7 +3,7 @@
     top: 0;
     width: 100%;
     max-height: 8vh;
-    background-color: $brand;
+    background-color: $header-bg;
     display: flex;
     transition: .5s;
     justify-content: space-between;
@@ -11,7 +11,8 @@
     z-index: 5;
     // CHANGE BG COLOR ON SCROLL
     &.scroll {
-        background-color: $header-bg;
+    background-color: $brand;
+
     }
     // &.active {
     //     background-color: $header-bg;
@@ -178,7 +179,6 @@
         height: 10vh;
         // display: none;
         padding: .5em 5vw;
-        overflow: hidden;
         .brand {
             a {
                 font-size: 1.5em;
@@ -221,14 +221,14 @@
             // NAV STYLE
             nav {
                 display: block;
-
+                
                 ul {
                     display: flex;
                     align-items: center;
-
                     li {
                         padding-left: 1em;
                         list-style: none;
+                        float: left;
 
                         a {
                             color: #fff;
@@ -242,6 +242,62 @@
                                 background-color: $brand;
                                 box-shadow: inset 2px 2px 2px #fffa,
                                             inset -2px -2px 2px #000a;
+                            }
+                        }
+                    }
+
+                    // DROPDOWN
+                    .dropdown {
+                        // position: relative;
+                        button {
+                            display: flex;
+                            align-items: center;
+                            float: left;
+                            color: #fff;
+                            text-decoration: none;
+                            transition: .3s;
+                            padding: .5rem;
+                            border-radius: 5px;
+                            background-color: transparent;
+                            outline: none;
+                            border: none;
+                            font-size: 1rem;
+                            text-transform: uppercase;
+                            cursor: pointer;
+
+                            i {
+                                margin-left: .5rem;
+                            }
+                        }
+                        .dropdown-content {
+                            display: block;
+                            height: 0;
+                            overflow: hidden;
+                            position: absolute;
+                            top: 7vh;
+                            left: 0%;
+                            width: auto;
+                            background-color: $brand;
+                            transition: .2s;
+                            border-radius: 5px;
+
+
+                            a {
+                                color: #000;
+                                display: block;
+
+                                &:hover {
+                                    color: #ffff;
+                                    box-shadow: none;
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            .dropdown-content {
+                                // display: block;
+                                height: 30vh;
+                                border: 2px solid #000;
                             }
                         }
                     }
