@@ -677,7 +677,7 @@
           #footer .footer-contact .contact-item .contact-info button i {
             color: #f8650c;
             opacity: .5;
-            transition: .5s .2s; }
+            transition: .5s; }
           #footer .footer-contact .contact-item .contact-info button[data-scroll] {
             transform: scale(1);
             opacity: 1; }
