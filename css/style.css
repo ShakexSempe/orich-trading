@@ -440,6 +440,16 @@
 
 #projects {
   padding: 5vh 1rem; }
+  #projects .projects-article {
+    margin: 5vh 0; }
+    #projects .projects-article h4 {
+      text-align: center;
+      margin-bottom: 1rem;
+      text-transform: capitalize;
+      font-size: 1.5rem;
+      color: #f8650c; }
+    #projects .projects-article p {
+      line-height: 1.6; }
   #projects .gallery {
     background: #f4f4f4;
     display: grid;
@@ -461,14 +471,14 @@
     #projects {
       padding: 5vh 5vw; }
       #projects .gallery {
-        grid-template-columns: 1fr 1fr; }
+        grid-template-columns: 1fr 1fr 1fr; }
         #projects .gallery .project-item figure {
           width: 100%;
-          height: auto;
+          height: 100%;
           overflow: hidden; }
           #projects .gallery .project-item figure img {
             width: 100%;
-            height: auto;
+            height: 100%;
             object-fit: cover;
             object-position: center; } }
 
@@ -745,6 +755,27 @@
     text-transform: uppercase;
     font-size: 1.5rem;
     padding: 5vh 0; }
+    #container .section-title h2 {
+      position: relative; }
+      #container .section-title h2::after {
+        position: absolute;
+        content: '';
+        bottom: -.3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: .2rem;
+        background: #f8650c;
+        border-radius: 5px;
+        transition: 2s; }
+      #container .section-title h2[data-scroll] {
+        transform: scale(1);
+        opacity: 1; }
+      #container .section-title h2[data-scroll="in"]::after {
+        width: 25%; }
+        @media (min-width: 768px) {
+          #container .section-title h2[data-scroll="in"]::after {
+            width: 10vw; } }
   #container #main {
     margin-top: 5vh;
     padding: 5vh 0;
