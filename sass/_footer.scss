@@ -35,7 +35,6 @@
             height: 70%;
             width: 100%;
 
-
             header {
                 color: $brand;
                 font-size: 1.3rem;
@@ -70,7 +69,7 @@
                         background-image: linear-gradient(0deg, $brand, $brand-light);
                         padding: .5em 1rem;
                         border-radius: 10px;
-                        transition: .5s;
+                        transition: .5s .2s;
 
                         box-shadow: inset 2px 2px 2px #fffa,
                             inset -2px -2px 2px #000a,
@@ -81,9 +80,23 @@
                     i {
                         color: $brand;
                         opacity: .5;
-                        transition: .5s;
+                        transition: .5s .2s;
                     }
 
+                    &[data-scroll] {
+                        transform: scale(1);
+                        opacity: 1;
+                    }
+                    &[data-scroll="in"] {
+                        a {
+                            transform: translateX(20%);
+                        }
+
+                        i {
+                            opacity: 1;
+                            transform: scale(2.5);
+                        }
+                    }
                 }
                 p {
                     color: $text-main;
@@ -94,16 +107,16 @@
             }
 
             &:hover {
-                button {
-                    a {
-                        transform: translateX(20%);
-                    }
+                // button {
+                //     a {
+                //         transform: translateX(20%);
+                //     }
 
-                    i {
-                        opacity: 1;
-                        transform: scale(2.5);
-                    }
-                }
+                //     i {
+                //         opacity: 1;
+                //         transform: scale(2.5);
+                //     }
+                // }
             }
         }
     }

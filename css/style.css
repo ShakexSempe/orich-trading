@@ -672,20 +672,23 @@
             background-image: linear-gradient(0deg, #f8650c, #ffa500);
             padding: .5em 1rem;
             border-radius: 10px;
-            transition: .5s;
+            transition: .5s .2s;
             box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 2px 2px 4px rgba(0, 0, 0, 0.308); }
           #footer .footer-contact .contact-item .contact-info button i {
             color: #f8650c;
             opacity: .5;
-            transition: .5s; }
+            transition: .5s .2s; }
+          #footer .footer-contact .contact-item .contact-info button[data-scroll] {
+            transform: scale(1);
+            opacity: 1; }
+          #footer .footer-contact .contact-item .contact-info button[data-scroll="in"] a {
+            transform: translateX(20%); }
+          #footer .footer-contact .contact-item .contact-info button[data-scroll="in"] i {
+            opacity: 1;
+            transform: scale(2.5); }
         #footer .footer-contact .contact-item .contact-info p {
           color: #000;
           text-overflow: ellipsis; }
-      #footer .footer-contact .contact-item:hover button a {
-        transform: translateX(20%); }
-      #footer .footer-contact .contact-item:hover button i {
-        opacity: 1;
-        transform: scale(2.5); }
   #footer .footer-copyright {
     width: 100%;
     margin: 5vh 0 0;
