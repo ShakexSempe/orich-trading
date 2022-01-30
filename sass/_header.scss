@@ -97,14 +97,14 @@
 
 
                 ul {
-                    border: 2px solid $brand-light;
+                    // border: 2px solid $brand-light;
                     border-radius: 3px;
                     position: absolute;
                     padding: 2em .2em;
-                    top: 10vh;
-                    right: 30vw;
-                    width: 65vw;
-                    height: 80vh;
+                    top: 5vh;
+                    right: 25vw;
+                    width: 70vw;
+                    height: 100%;
                     overflow-y: auto;
 
                     li {
@@ -149,18 +149,20 @@
                             .aside-dropdown-content {
                                 position: absolute;
                                 top: 3rem;
-                                left: 3.75rem;
-                                width: auto;
+                                // left: 3.75rem;
+                                width: 100%;
                                 height: 0;
                                 overflow: hidden;
-                                background-color: #000;
+                                // background-color: #fff000;
                                 display: flex;
                                 flex-direction: column;
                                 transition: 1s;
 
                                 a {
+                                    text-align: right;
                                     &:hover {
                                         background-color: none;
+                                        color: $brand;
                                     }
                                 }
                             }
