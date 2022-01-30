@@ -716,7 +716,8 @@
     background: #f8650c; }
     #footer .footer-copyright p {
       color: #f4f4f4;
-      line-height: 1.6; }
+      line-height: 1.6;
+      font-size: .9rem; }
       #footer .footer-copyright p a {
         color: #000;
         text-decoration: none; }
@@ -755,7 +756,9 @@
           transform: translateX(50%); }
         #footer .footer-contact .contact-item:hover button i {
           opacity: 1;
-          transform: scale(2.5); } }
+          transform: scale(2.5); }
+    #footer .footer-copyright p {
+      font-size: 1rem; } }
 
 * {
   padding: 0;

@@ -132,6 +132,7 @@
         p {
             color: $text-second;
             line-height: 1.6;
+            font-size: .9rem;
 
             a {
                 color: $text-main;
@@ -206,7 +207,11 @@
                 }
             }
         }
-        .footer-copyright {}
+        .footer-copyright {
+            p {
+                font-size: 1rem;
+            }
+        }
 
     }
     
