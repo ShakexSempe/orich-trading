@@ -96,16 +96,17 @@
         }
 
         .parallax {
-            height: 80vh;
-            background-color: #ffff;
+            height: 95vh;
+            background-color: #fff000;
             background-image: url(../img/orich-project.jpg);
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
             background-attachment: fixed;
             background-position: center;
-            margin: 5vh 1rem;
+            margin: 0vh 1rem 5vh;
 
             @media (min-width: 768px) {
+            background-size: contain;
             }
         }
 
