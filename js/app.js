@@ -9,7 +9,7 @@ document.addEventListener("scroll", () => {
     const scroll_position = window.scrollY;
     const scroll_height = window.pageYOffset;
 
-    if(scroll_position < 150) {
+    if(scroll_position < 100) {
         header.classList.remove("scroll");
     } else {
         header.classList.add("scroll");

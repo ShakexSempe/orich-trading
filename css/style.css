@@ -672,7 +672,7 @@
             background-image: linear-gradient(0deg, #f8650c, #ffa500);
             padding: .5em 1rem;
             border-radius: 10px;
-            transition: .5s .2s;
+            transition: .5s;
             box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 2px 2px 4px rgba(0, 0, 0, 0.308); }
           #footer .footer-contact .contact-item .contact-info button i {
             color: #f8650c;
@@ -808,7 +808,8 @@
       background-repeat: no-repeat;
       background-size: contain;
       background-attachment: fixed;
-      background-position: center; }
+      background-position: center;
+      margin: 5vh 1rem; }
     #container #main section {
       min-height: 100vh; }
 
