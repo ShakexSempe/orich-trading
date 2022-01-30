@@ -111,55 +111,66 @@
                         // padding-bottom: 5vh;
                         margin: 0 0 2rem;
                         list-style: none;
-                        // border: 1px solid yellow;
+                        border: 1px solid $brand;
+                        border-radius: 5px;
                         display: flex;
                         justify-content: flex-start;
+                        justify-content: center;
                         align-items: center;
                         transition: 1s;
                         transform: translateX(3em);
                         opacity: 0;
 
                         &.aside-dropdown {
-                        // margin: 0 0 2rem;
+                        margin: 0 0 2rem;
+                        padding: 0 1rem 0 0;
                         position: relative;
+                        display: flex;
+                        flex-direction: column;
 
                         button {
-                            // margin: 0 0 2rem;
                             display: flex;
+                            justify-content: space-between;
                             align-items: center;
-                            // float: left;
-                            width: 100%;
+                            float: left;
                             color: $nav-links;
                             text-decoration: none;
                             margin-right: auto;
                             width: 100%;
-                            padding: 1em .5em;
+                            padding: 1em 0;
                             transition: .2s;
                             border: 1px solid #dddddd1a;
                             background-color: transparent;
+                            // background-color: pink;
                             font-size: 1rem;
                             text-transform: uppercase;
 
+
                             a {
                                 color: #fff000;
+                            }
+
+                            i {
+                                position: relative;
                             }
                             }
 
 
                             .aside-dropdown-content {
                                 position: absolute;
-                                top: 3rem;
+                                position: relative;
+                                top: 0;
                                 // left: 3.75rem;
                                 width: 100%;
                                 height: 0;
                                 overflow: hidden;
-                                // background-color: #fff000;
+                                background-color: $brand;
                                 display: flex;
                                 flex-direction: column;
                                 transition: 1s;
 
                                 a {
-                                    text-align: right;
+                                border: none;
                                     &:hover {
                                         background-color: none;
                                         color: $brand;
@@ -170,7 +181,7 @@
                             &:hover {
                                 .aside-dropdown-content {
                                     // display: block;
-                                    height: 20vh;
+                                    height: 15vh;
                                 }
                             }
                         }
@@ -178,8 +189,7 @@
                         a {
                             color: $nav-links;
                             text-decoration: none;
-                            margin-right: auto;
-                            width: 100%;
+                            // width: 100%;
                             padding: 1em .5em;
                             transition: .2s;
                             border: 1px solid #dddddd1a;
@@ -187,10 +197,12 @@
 
                         i {
                             color: $brand-light;
-                            width: 20%;
+                            // width: 20%;
                             opacity: .7;
                             // padding: .1em;
-                            // margin-right: .5em;
+                            // margin-right: auto;
+                            position: absolute;
+                            left: .5rem;
                         }
 
                         &:hover {
