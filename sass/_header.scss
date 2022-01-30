@@ -2,6 +2,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    min-height: 5vh;
     max-height: 8vh;
     background-color: $header-bg;
     display: flex;
@@ -139,7 +140,7 @@
                             width: 100%;
                             padding: 1em 0;
                             transition: .2s;
-                            border: 1px solid #dddddd1a;
+                            border: none;
                             background-color: transparent;
                             // background-color: pink;
                             font-size: 1rem;
@@ -167,13 +168,14 @@
                                 background-color: $brand;
                                 display: flex;
                                 flex-direction: column;
-                                transition: 1s;
+                                transition: .5s;
 
                                 a {
                                 border: none;
                                     &:hover {
                                         background-color: none;
-                                        color: $brand;
+                                        color: $text-main;
+                                        transition: .2s;
                                     }
                                 }
                             }
@@ -350,22 +352,28 @@
                             transition: .2s;
                             border-radius: 5px;
 
-
                             a {
                                 color: #000;
                                 display: block;
+                                border-radius: 0;
 
                                 &:hover {
-                                    color: #ffff;
+                                    color: $text-second;
                                     box-shadow: none;
+                                    background-color: #000;
                                 }
                             }
                         }
 
                         &:hover {
+                            i {
+                                transition: .3s;
+                                transform: scale(.9);
+                                color: $text-main;
+                            }
                             .dropdown-content {
                                 // display: block;
-                                height: 30vh;
+                                height: 25vh;
                                 border: 2px solid #000;
                             }
                         }

@@ -42,6 +42,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  min-height: 5vh;
   max-height: 8vh;
   background-color: #000;
   display: flex;
@@ -143,7 +144,7 @@
                   width: 100%;
                   padding: 1em 0;
                   transition: .2s;
-                  border: 1px solid #dddddd1a;
+                  border: none;
                   background-color: transparent;
                   font-size: 1rem;
                   text-transform: uppercase; }
@@ -161,12 +162,13 @@
                   background-color: #f8650c;
                   display: flex;
                   flex-direction: column;
-                  transition: 1s; }
+                  transition: .5s; }
                   #header .navigation aside ul li.aside-dropdown .aside-dropdown-content a {
                     border: none; }
                     #header .navigation aside ul li.aside-dropdown .aside-dropdown-content a:hover {
                       background-color: none;
-                      color: #f8650c; }
+                      color: #000;
+                      transition: .2s; }
                 #header .navigation aside ul li.aside-dropdown:hover .aside-dropdown-content {
                   height: 15vh; }
               #header .navigation aside ul li a {
@@ -270,12 +272,18 @@
               border-radius: 5px; }
               #header .navigation nav ul .dropdown .dropdown-content a {
                 color: #000;
-                display: block; }
+                display: block;
+                border-radius: 0; }
                 #header .navigation nav ul .dropdown .dropdown-content a:hover {
-                  color: #ffff;
-                  box-shadow: none; }
+                  color: #f4f4f4;
+                  box-shadow: none;
+                  background-color: #000; }
+            #header .navigation nav ul .dropdown:hover i {
+              transition: .3s;
+              transform: scale(0.9);
+              color: #000; }
             #header .navigation nav ul .dropdown:hover .dropdown-content {
-              height: 30vh;
+              height: 25vh;
               border: 2px solid #000; } }
 
 #hero {
@@ -819,10 +827,11 @@
       background-size: cover;
       background-attachment: fixed;
       background-position: center;
-      margin: 0vh 1rem 5vh; }
+      margin: 5vh 1rem; }
       @media (min-width: 768px) {
         #container #main .parallax {
-          background-size: contain; } }
+          background-size: contain;
+          margin: 5vh 5vw; } }
     #container #main section {
       min-height: 100vh; }
 
