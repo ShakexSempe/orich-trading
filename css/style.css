@@ -173,8 +173,7 @@
                 color: #eee;
                 text-decoration: none;
                 padding: 1em .5em;
-                transition: .2s;
-                border: 1px solid #dddddd1a; }
+                transition: .2s; }
               #header .navigation aside ul li i {
                 color: #ffa500;
                 opacity: .7;
