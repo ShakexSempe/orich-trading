@@ -45,6 +45,7 @@
                     @keyframes service {
                         50% {
                             transform: rotate(20deg);
+                            color: #000a;
                         }
                     }
 
@@ -66,9 +67,6 @@
                 // }
             }
             &:hover {
-                i {
-                    color: $brand-light;
-                }
                 h3 {
                     border-bottom: 2px solid orange;
                 }
@@ -109,7 +107,7 @@
             }
             &[data-scroll="in"] {
                 h3 {
-                    transition: 1.5s;
+                    transition: 1.3s;
                     color: $brand;
                 }
                 .service-type {
