@@ -702,6 +702,9 @@
         align-items: center;
         overflow: hidden;
         text-overflow: ellipsis; }
+        #footer .footer-contact .contact-item .contact-info .address {
+          display: flex;
+          flex-direction: column; }
         #footer .footer-contact .contact-item .contact-info button {
           display: flex;
           align-items: center;
