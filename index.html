@@ -333,7 +333,7 @@
                         </button>
                     </div>
                 </div>
-                <div title="Facebook link" class="contact-item">
+                <div title="Orich location" class="contact-item">
                     <header class="contact-title"><i class="fas fa-map-marked-alt"></i>location</header>
                     <div class="contact-info">
                         <div class="address">
@@ -365,7 +365,7 @@
 
             <div class="input-div">
                 <label for="name">name :</label>
-                <input type="text" name="name and lastname" id="username" placeholder="name & surname.." required
+                <input type="text" name="name" id="username" placeholder="name & surname.." required
                     minlength="2">
             </div>
 
@@ -375,16 +375,26 @@
             </div>
 
             <div class="input-div">
+                <label for="tel">phone number :</label>
+                <input type="tel" name="tel" id="tel" minlength="10" placeholder="your phone number..">
+            </div>
+
+            <div class="input-div">
+                <label for="subject">subject :</label>
+                <input type="text" name="subject" id="subject" placeholder="eg. Painting.." required>
+            </div>
+
+            <div class="input-div">
                 <label for="message">message :</label>
-                <textarea rows="3" cols="50" minlength="2" name="message" placeholder="leave a message..."
+                <textarea rows="3" cols="10" minlength="2" name="message" placeholder="leave a message..."
                     id="message" required></textarea>
             </div>
 
             <button type="submit" title="submit contact form">send email</button>
             <!-- form options -->
             <input type="hidden" name="_subject" value="New submission!">
-            <input type="hidden" name="_autoresponse" value="Shakex has received your form">
-            <input type="hidden" name="_next" value="http://shakexsempe.netlify.app/thanks.html">
+            <input type="hidden" name="_autoresponse" value="Orich has received your form">
+            <!-- <input type="hidden" name="_next" value="http://shakexsempe.netlify.app/thanks.html"> -->
             <input type="hidden" name="_template" value="table">
             <input type="text" name="_honey" style="display:none">
 
