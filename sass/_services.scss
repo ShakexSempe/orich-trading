@@ -19,6 +19,7 @@
             margin: 5vh auto;
             border-radius: 5px;
             width: 100%;
+            overflow: hidden;
 
             .service-core {
                 flex-basis: 50%;
@@ -93,7 +94,6 @@
                         transform: translateX(4rem);
                         transition: 1.5s;
                         opacity: 0;
-                        border: 1px solid #fff;
                         cursor: pointer;
                         &::marker {
                             color: $brand;
