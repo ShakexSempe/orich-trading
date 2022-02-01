@@ -8,6 +8,15 @@
         h3 {
             color: $brand;
             margin-bottom: 1rem;
+            &[data-scroll]{
+                transform: scale(1);
+                opacity: .7;
+                letter-spacing: .2em;
+            }
+            &[data-scroll="in"] {
+                letter-spacing: normal;
+                opacity: 1;
+            }
         }
     }
     .service-container {
@@ -55,7 +64,7 @@
                     }
                     @keyframes rollUp {
                         50% {
-                            transform: translateY(.5rem);
+                            transform: translateY(1rem);
                             color: #000a;
                         }
                     }

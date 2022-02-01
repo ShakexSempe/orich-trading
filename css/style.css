@@ -370,6 +370,13 @@
   #services .section-description h3 {
     color: #f8650c;
     margin-bottom: 1rem; }
+    #services .section-description h3[data-scroll] {
+      transform: scale(1);
+      opacity: .7;
+      letter-spacing: .2em; }
+    #services .section-description h3[data-scroll="in"] {
+      letter-spacing: normal;
+      opacity: 1; }
 
 #services .service-container {
   margin: 5vh auto; }
@@ -406,7 +413,7 @@
 
 @keyframes rollUp {
   50% {
-    transform: translateY(0.5rem);
+    transform: translateY(1rem);
     color: #000a; } }
 
 @keyframes service {
