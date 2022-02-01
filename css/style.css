@@ -883,6 +883,7 @@
       z-index: 1;
       opacity: .7; }
     #container #main .parallax {
+      display: none;
       height: 95vh;
       background-color: #fff;
       background-image: url(../img/orich-project.jpg);
