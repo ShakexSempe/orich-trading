@@ -34,6 +34,7 @@
             padding: 1rem .5rem;
             height: 70%;
             width: 100%;
+            transition: .3s;
 
             header {
                 color: $brand;
@@ -114,16 +115,7 @@
             }
 
             &:hover {
-                // button {
-                //     a {
-                //         transform: translateX(20%);
-                //     }
-
-                //     i {
-                //         opacity: 1;
-                //         transform: scale(2.5);
-                //     }
-                // }
+                transform: scale(1.02);
             }
         }
     }

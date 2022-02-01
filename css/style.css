@@ -367,6 +367,9 @@
 #services .section-description {
   margin: 0 5vw;
   line-height: 1.6; }
+  #services .section-description h3 {
+    color: #f8650c;
+    margin-bottom: 1rem; }
 
 #services .service-container {
   margin: 5vh auto; }
@@ -706,7 +709,8 @@
       padding: 1rem;
       padding: 1rem .5rem;
       height: 70%;
-      width: 100%; }
+      width: 100%;
+      transition: .3s; }
       #footer .footer-contact .contact-item header {
         color: #f8650c;
         font-size: 1.3rem;
@@ -757,6 +761,8 @@
         #footer .footer-contact .contact-item .contact-info p {
           color: #000;
           text-overflow: ellipsis; }
+      #footer .footer-contact .contact-item:hover {
+        transform: scale(1.02); }
   #footer .footer-copyright {
     width: 100%;
     margin: 5vh 0 0;
@@ -898,6 +904,31 @@
             display: none; } }
     #container #main section {
       min-height: 100vh; }
+  #container #top-btn {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background: #000;
+    display: grid;
+    place-items: center;
+    border-radius: 5px;
+    padding: .2rem;
+    z-index: 30;
+    transition: .3s;
+    box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 2px 2px 2px rgba(0, 0, 0, 0.24); }
+    @media (min-width: 768px) {
+      #container #top-btn {
+        right: 5vw;
+        bottom: 5vh; } }
+    #container #top-btn i {
+      color: #f8650c;
+      transition: .3s; }
+    #container #top-btn:hover {
+      transform: scale(1.1); }
+      #container #top-btn:hover i {
+        color: #ffa500; }
 
 [data-scroll] {
   transition: 1s ease;
