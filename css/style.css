@@ -159,15 +159,14 @@
                   width: 100%;
                   height: 0;
                   overflow: hidden;
-                  background-color: #f8650c;
+                  background-color: #000;
                   display: flex;
                   flex-direction: column;
                   transition: .5s; }
                   #header .navigation aside ul li.aside-dropdown .aside-dropdown-content a {
-                    border: none; }
+                    margin-left: auto; }
                     #header .navigation aside ul li.aside-dropdown .aside-dropdown-content a:hover {
-                      background-color: none;
-                      color: #000;
+                      color: #f4f4f4;
                       transition: .2s; }
                 #header .navigation aside ul li.aside-dropdown:hover .aside-dropdown-content {
                   height: 20vh; }
@@ -181,8 +180,6 @@
                 opacity: .7;
                 position: absolute;
                 left: .5rem; }
-              #header .navigation aside ul li:hover a {
-                background: #dddddd1a; }
           #header .navigation aside.active {
             right: -20vw; }
             #header .navigation aside.active ul li {
