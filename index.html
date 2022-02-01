@@ -374,32 +374,67 @@
 
             <div class="input-div">
                 <label for="name">name :</label>
-                <input type="text" name="name" id="username" placeholder="name & surname.." required
-                    minlength="2">
+                <input 
+                type="text" 
+                name="name" 
+                id="username" 
+                placeholder="name & surname.." 
+                minlength="2"
+                tabindex="1"
+                required>
             </div>
 
             <div class="input-div">
                 <label for="email">email :</label>
-                <input type="email" name="email" id="email" placeholder="your email address.." required>
+                <input 
+                type="email" 
+                name="email" 
+                id="email" 
+                placeholder="your email address.." 
+                tabindex="2"
+                required>
             </div>
 
             <div class="input-div">
                 <label for="tel">phone number :</label>
-                <input type="tel" name="tel" id="tel" minlength="10" placeholder="your phone number..">
+                <input 
+                    type="tel" 
+                    name="tel" 
+                    id="tel" 
+                    minlength="10" 
+                    placeholder="your phone number.."
+                    tabindex="3"
+                    >
             </div>
 
             <div class="input-div">
                 <label for="subject">subject :</label>
-                <input type="text" name="subject" id="subject" placeholder="eg. Painting.." required>
+                <input 
+                    type="text" 
+                    name="subject" 
+                    id="subject" 
+                    placeholder="eg. Painting.." 
+                    tabindex="4"
+                    required
+                    >
             </div>
 
             <div class="input-div">
                 <label for="message">message :</label>
-                <textarea rows="3" cols="10" minlength="2" name="message" placeholder="leave a message..."
-                    id="message" required></textarea>
+                <textarea 
+                    name="message" 
+                    rows="3" cols="10" 
+                    minlength="2" 
+                    placeholder="leave a message..."
+                    id="message"
+                    tabindex="5" 
+                    required></textarea>
             </div>
 
-            <button type="submit" title="submit contact form">send email</button>
+            <button 
+                type="submit" 
+                title="submit contact form"
+                tabindex="6">send form</button>
             <!-- form options -->
             <input type="hidden" name="_subject" value="New submission!">
             <input type="hidden" name="_autoresponse" value="Orich has received your form">
