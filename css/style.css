@@ -671,11 +671,23 @@
       text-transform: uppercase;
       transition: .2s;
       font-weight: 500; }
-    #form .input-div input {
+    #form .input-div input, #form .input-div textarea {
       padding: 1rem .5rem;
-      border-radius: 5px; }
-    #form .input-div textarea {
-      padding: 1rem .5rem; }
+      border-radius: 5px;
+      outline: 2px solid #f8650c;
+      border: none;
+      background: #fff;
+      color: #000;
+      transition: 1s;
+      font-size: 1rem; }
+      #form .input-div input:invalid, #form .input-div textarea:invalid {
+        border: none;
+        outline: none;
+        background: #f4f4f4;
+        background: #ffa500;
+        color: #000; }
+      #form .input-div input:focus, #form .input-div textarea:focus {
+        outline: 2px dashed #000; }
     #form .input-div:hover label {
       color: #f8650c;
       transform: translateY(1rem) translateX(0.5rem); }

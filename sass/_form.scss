@@ -50,13 +50,31 @@
             font-weight: 500;
         }
 
-        input {
+        input, textarea {
             padding: 1rem .5rem;
             border-radius: 5px;
+            outline: 2px solid $brand;
+            border: none;
+            background: #fff;
+            color: #000;
+            transition: 1s;
+            font-size: 1rem;
+
+            &:invalid {
+                border: none;
+                outline: none;
+                background: #f4f4f4;
+                background: $brand-light;
+                color: #000;
+            }
+            &:focus {
+                outline: 2px dashed #000;
+            }
         }
-        textarea {
-            padding: 1rem .5rem;
-        }
+
+        
+
+
         // INPUT DIV HOVER STATE
         &:hover {
             label {
