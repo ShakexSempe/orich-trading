@@ -10,10 +10,11 @@
             text-transform: capitalize;
             font-size: 1.5rem;
             color: $brand;
+            border: 1px solid red;
 
             &[data-scroll] {
                 transform: scale(1);
-                letter-spacing: .3em;
+                letter-spacing: .2em;
                 opacity: .5;
             }
             &[data-scroll="in"] {
