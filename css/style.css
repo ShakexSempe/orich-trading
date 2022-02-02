@@ -529,12 +529,11 @@
       margin-bottom: 1rem;
       text-transform: capitalize;
       font-size: 1.5rem;
-      color: #f8650c;
-      border: 1px solid red; }
+      color: #f8650c; }
       #projects .projects-article h4[data-scroll] {
         transform: scale(1);
         letter-spacing: .2em;
-        opacity: .5; }
+        opacity: 0; }
       #projects .projects-article h4[data-scroll="in"] {
         letter-spacing: 0;
         transition: 2s;
