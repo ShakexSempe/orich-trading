@@ -31,6 +31,7 @@
             text-transform: uppercase;
             font-size: 1.5rem;
             padding: 5vh 0;
+            // padding: 1rem 0;
             
             h2 {
                 position: relative;
@@ -44,7 +45,7 @@
                 width: 0;
                 height: .2rem;
                 background: $brand;
-                background: linear-gradient(90deg, $brand-light, $brand, $brand-light);
+                background: linear-gradient(90deg, $brand-dark, $brand-light, $brand-dark);
                 border-radius: 5px;
                 transition: 2s;
                 // @media (min-width: 768px) {
@@ -100,10 +101,11 @@
             // display: none;
             height: 95vh;
             background-color: #fff;
-            // background-image: url(../img/orich-project.jpg);
-            // background-repeat: no-repeat;
-            // background-size: cover;
-            // background-position: center;
+            background-image: url(../img/orich-project.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             position: relative;
 
             figure {
@@ -115,9 +117,7 @@
                     height: 100%;
                     object-fit: cover;
                 }
-            }
-
-            // margin: 5vh 1rem;    
+            }   
             // OVERLAY
             &::after {
                 position: absolute;
@@ -127,18 +127,12 @@
                 width: 100%;
                 height: 100%;
                 background-image: linear-gradient(40deg, $brand, #000);
-                opacity: .2;
+                opacity: .3;
             }
 
             @media (min-width: 768px) {
                 height: 95vh;
-            background-color: #fff;
-            background-image: url(../img/orich-project.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            background-size: contain;
-            background-attachment: fixed;
+                background-size: contain;
 
             figure {
                 display: none;

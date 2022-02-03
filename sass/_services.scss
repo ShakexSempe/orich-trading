@@ -1,8 +1,9 @@
 #services {
-    // background-color: #fff000;
+    // background-color: #f4f4f4;
+    padding: 5vh 1rem;
     .section-description {
         // border: 1px solid red;
-        margin: 0 5vw;
+        margin: 5vh 5vw;
         line-height: 1.6;
 
         h3 {
@@ -21,7 +22,10 @@
     }
     .service-container {
         // border: 1px solid red;
-        margin: 5vh auto;
+        margin: 1rem auto;
+        background: #f4f4f4;
+        padding-bottom: 5vh;
+        border-radius: 5px;
 
         .service-item {
             // border: 1px solid $brand;

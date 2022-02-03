@@ -52,17 +52,17 @@
 
 .section-btn {
     display: block;
-    width: auto;
+    // width: auto;
     width: 50%;
     text-align: center;
-    margin: 1rem auto;
+    margin: 0 auto;
     border-radius: 20px;
     background: $brand-btn;
     background: transparent;
     color: #f4f4f4;
     text-decoration: none;
     text-transform: capitalize;
-    padding: 1rem 0;
+    padding: .5rem 0;
     position: relative;
     transition: .2s;
     isolation: isolate;
