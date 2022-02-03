@@ -320,9 +320,10 @@
         transition: 1s; }
       #hero .slogan p::before {
         background: #f8650c;
+        background: linear-gradient(0deg, #f8650c, #ffa500);
         box-shadow: inset 2px 2px 2px #ddda, inset -2px -2px 2px #000a, 3px 3px 3px rgba(0, 0, 0, 0.281); }
       #hero .slogan p::after {
-        background: #ffa500;
+        background: linear-gradient(0deg, #ffa500, #f8650c);
         opacity: 0;
         box-shadow: inset 2px 2px 2px #000a, inset -2px -2px 2px #ddda, 1px 1px 3px rgba(0, 0, 0, 0.281); }
       #hero .slogan p:hover::before {
@@ -893,6 +894,7 @@
         width: 0;
         height: .2rem;
         background: #f8650c;
+        background: linear-gradient(90deg, #ffa500, #f8650c, #ffa500);
         border-radius: 5px;
         transition: 2s; }
       #container .section-title h2[data-scroll] {
