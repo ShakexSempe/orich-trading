@@ -967,26 +967,43 @@
     bottom: 1rem;
     right: 1rem;
     width: 2rem;
-    height: 2rem;
-    background: #000;
+    height: 2.5rem;
+    background: transparent;
+    background: #ffff;
+    outline: 2px solid #f8650c;
     display: grid;
     place-items: center;
     border-radius: 5px;
     padding: .2rem;
     z-index: 30;
-    transition: .3s;
-    box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 2px 2px 2px rgba(0, 0, 0, 0.24); }
+    transition: 2s;
+    opacity: 0;
+    cursor: pointer;
+    transform: translateY(10vh); }
     @media (min-width: 768px) {
       #container #top-btn {
         right: 5vw;
-        bottom: 5vh; } }
+        bottom: 5vh;
+        height: 2.5rem;
+        width: 2rem; }
+        #container #top-btn i {
+          font-size: 1.5rem; } }
     #container #top-btn i {
-      color: #f8650c;
-      transition: .3s; }
+      color: #000;
+      transition: .3s;
+      margin: 0 auto;
+      transition: .5s; }
     #container #top-btn:hover {
-      transform: scale(1.1); }
+      transform: scale(1.1);
+      background: #f8650c;
+      transition: .5s;
+      outline: 2px solid #fff; }
       #container #top-btn:hover i {
-        color: #ffa500; }
+        color: #ffa500;
+        color: #fff; }
+    #container #top-btn.active {
+      opacity: 1;
+      transform: translateY(0); }
 
 [data-scroll] {
   transition: 1s ease;

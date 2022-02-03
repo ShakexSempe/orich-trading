@@ -160,32 +160,55 @@
         bottom: 1rem;
         right: 1rem;
         width: 2rem;
-        height: 2rem;
-        background: #000;
+        height: 2.5rem;
+        background: transparent;
+        background: #ffff;
+        outline: 2px solid $brand;
         display: grid;
         place-items: center;
         border-radius: 5px;
         padding: .2rem;
         z-index: 30;
-        transition: .3s;
-        box-shadow: inset 2px 2px 2px #fffa,
-                    inset -2px -2px 2px #000a,
-                    2px 2px 2px rgba(0, 0, 0, 0.24);
+        transition: 2s;
+        opacity: 0;
+        cursor: pointer;
+        transform: translateY(10vh);
+        // box-shadow: inset 1px 1px 2px #fffa,
+        //             inset -1px -1px 2px #000a,
+        //             2px 2px 2px rgba(0, 0, 0, 0.24);
         @media (min-width: 768px) {
             right: 5vw;
             bottom: 5vh;
+            height: 2.5rem;
+            width: 2rem;
+
+            i {
+                font-size: 1.5rem;
+            }
         }
 
         i {
-            color: $brand;
+            color: #000;
             transition: .3s;
+            margin: 0 auto;
+            transition: .5s;
         }
         
         &:hover {
             transform: scale(1.1);
+            background: $brand;
+            transition: .5s;
+            outline: 2px solid #fff;
             i {
                 color: $brand-light;
+                color: #fff;
             }
+        }
+
+        // ACTIVE HOME BUTTOM
+        &.active {
+            opacity: 1;
+            transform: translateY(0);
         }
     }
 }
