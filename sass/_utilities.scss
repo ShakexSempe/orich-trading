@@ -50,3 +50,56 @@
     }
 }
 
+.section-btn {
+    display: block;
+    width: auto;
+    width: 50%;
+    text-align: center;
+    margin: 5vh auto;
+    border-radius: 20px;
+    background: $brand-btn;
+    background: transparent;
+    color: #f4f4f4;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 1rem 0;
+    position: relative;
+    transition: .2s;
+    isolation: isolate;
+    
+
+    &::before, &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: .5s ease;
+        z-index: -1;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+    }
+    &::before {
+        background: $brand-btn;
+        box-shadow: $box-shadow-sm;
+    }
+    &::after{
+        opacity: 0;
+        background: $brand-btn-hover;
+        box-shadow: $box-shadow-sm-hover;
+    }
+    &:hover {
+        transform: scale(.98);
+        &::before {opacity: 0;}
+        &::after {opacity: 1;}
+    }
+    &:active {
+        transform: scale(.95);
+    }
+
+    @media (min-width: 768px){
+        padding: 1rem;
+    }
+}

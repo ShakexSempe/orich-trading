@@ -31,4 +31,9 @@ $border-second: #0000;
 $bg-invalid: hsl(39, 100%, 80%) ;
 
 $box-shadow-sm: inset 2px 2px 2px #fffa,
-                inset -2px -2px 2px #000a;
+                inset -2px -2px 2px #000a,
+                3px 3px 3px rgba(0, 0, 0, 0.230);
+
+$box-shadow-sm-hover: inset 2px 2px 2px #000a,
+                    inset -2px -2px 2px #fffa,
+                    1px 3px 2px rgba(0,0,0, .300);
