@@ -1019,17 +1019,24 @@
     width: 2rem;
     height: 2.5rem;
     background: transparent;
-    background: #ffff;
-    outline: 2px solid #f8650c;
-    display: grid;
-    place-items: center;
+    background: #fffa;
+    outline: none;
+    border: 2px solid #f8650c;
     border-radius: 5px;
     padding: .2rem;
     z-index: 5;
-    transition: 2s;
+    transition: 1s;
     opacity: 0;
     cursor: pointer;
     transform: translateY(10vh); }
+    #container #top-btn a {
+      border: 1px solid blue;
+      border: none;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      place-items: center;
+      text-decoration: none; }
     @media (min-width: 768px) {
       #container #top-btn {
         right: 5vw;
@@ -1043,17 +1050,12 @@
       transition: .3s;
       margin: 0 auto;
       transition: .5s; }
-    #container #top-btn:hover {
-      transform: scale(1.1);
-      background: #f8650c;
-      transition: .5s;
-      outline: 2px solid #fff; }
-      #container #top-btn:hover i {
-        color: #ffa500;
-        color: #fff; }
     #container #top-btn.active {
       opacity: 1;
       transform: translateY(0); }
+      #container #top-btn.active:hover {
+        transition: .3s;
+        transform: scale(1.1); }
 
 [data-scroll] {
   transition: 1s ease;
