@@ -686,6 +686,7 @@
         outline: none;
         background: #f4f4f4;
         background: #ffa500;
+        background: #ffdb99;
         color: #000; }
       #form .input-div input:focus, #form .input-div textarea:focus {
         outline: 2px dashed #000; }
