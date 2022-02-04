@@ -1,4 +1,4 @@
-const toggle = document.getElementById("toggle");
+const toggle = document.querySelector(".toggle");
 const header = document.getElementById("header");
 const main = document.getElementById("main");
 const topBtn = document.getElementById("top-btn");

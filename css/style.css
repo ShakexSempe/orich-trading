@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&family=Ubuntu&display=swap");
-#toggle {
+.toggle {
   font-size: 20px;
   border-radius: 50%;
   height: 1.5em;
@@ -13,13 +13,13 @@
   transition: .3s;
   padding: .2em 0;
   overflow: hidden; }
-  #toggle .bar {
+  .toggle .bar {
     background-color: #fff;
     width: 60%;
     height: .1em;
     position: relative;
     transition: .3s; }
-    #toggle .bar::before, #toggle .bar::after {
+    .toggle .bar::before, .toggle .bar::after {
       position: absolute;
       content: '';
       top: 0;
@@ -28,14 +28,14 @@
       height: 100%;
       transition: .2s;
       background-color: inherit; }
-    #toggle .bar::before {
+    .toggle .bar::before {
       transform: translateY(-0.25em); }
-    #toggle .bar::after {
+    .toggle .bar::after {
       transform: translateY(0.25em); }
-  #toggle.active {
+  .toggle.active {
     outline: 2px solid #fff;
     outline-offset: -.4em; }
-    #toggle.active .bar {
+    .toggle.active .bar {
       opacity: 0; }
 
 .section-btn {
