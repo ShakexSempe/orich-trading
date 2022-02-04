@@ -431,6 +431,36 @@
     #about .about-article {
       font-size: 1.2rem; } }
 
+.about-page .page-article p {
+  margin-bottom: 1rem; }
+  .about-page .page-article p.article-intro {
+    font-weight: 600; }
+  .about-page .page-article p.article-body[data-scroll] {
+    transform: scale(1); }
+
+.about-page .page-article .article-pad {
+  background-color: pink;
+  background-color: #fff; }
+  .about-page .page-article .article-pad figure {
+    width: 50%;
+    overflow: hidden;
+    margin: 1rem auto; }
+    .about-page .page-article .article-pad figure img {
+      width: 100%; }
+
+@media (min-width: 768px) {
+  .about-page .page-article .article-pad {
+    width: 20vw;
+    float: left;
+    overflow: hidden;
+    margin-right: .5rem; }
+    .about-page .page-article .article-pad figure {
+      width: 100%;
+      height: auto; }
+      .about-page .page-article .article-pad figure img {
+        width: 100%;
+        height: auto; } }
+
 #services {
   padding: 5vh 1rem; }
   #services .section-description {
