@@ -1,3 +1,5 @@
+#container {
+    position: relative;
 #about {
     padding: 5vh 0;
     .about-article {
@@ -40,54 +42,60 @@
 }
 
 // ABOUT PAGE
-.about-page {
-    .page-article {
-        p {
-            margin-bottom: 1rem;
+&.about-container {
+    .about-page {
+        .page-article {
+            p {
+                margin-bottom: 1rem;
 
-            &.article-intro {
-                font-weight: 600;
-            }
-            &.article-body {
-                &[data-scroll]{
-                    transition: 1.5s;
-                    transform: scale(1);
+                &.article-intro {
+                    font-weight: 600;
+                    margin-bottom: 5vh;
+                }
+
+                &.article-body {
+                    &[data-scroll] {
+                        transition: 1.5s;
+                        transform: scale(1);
+                    }
                 }
             }
-        }
 
-        .article-pad {
-            background-color: pink;
-            background-color: #fff;
-
-            figure {
-                width: 50%;
-                overflow: hidden;
-                margin: 1rem auto;
-
-                img {
-                    width: 100%;
-                }
-            }
-        }
-
-        @media (min-width: 768px) {
             .article-pad {
-            width: 20vw;
-            float: left;
-            overflow: hidden;
-            margin-right: .5rem;
+                background-color: pink;
+                background-color: #fff;
 
-            figure {
-                width: 100%;
-                height: auto;
+                figure {
+                    width: 50%;
+                    overflow: hidden;
+                    margin: 1rem auto;
 
-                img {
-                    width: 100%;
-                    height: auto;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            @media (min-width: 768px) {
+
+                .article-pad {
+                    width: 20vw;
+                    float: left;
+                    overflow: hidden;
+                    margin-right: .5rem;
+
+                    figure {
+                        width: 100%;
+                        height: auto;
+
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
                 }
             }
         }
     }
-    }
+}
 }
