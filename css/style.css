@@ -357,7 +357,7 @@
       isolation: isolate; }
       #hero .slogan p span {
         color: #000;
-        font-weight: 600; }
+        font-weight: 500; }
       #hero .slogan p::before, #hero .slogan p::after {
         position: absolute;
         content: '';
