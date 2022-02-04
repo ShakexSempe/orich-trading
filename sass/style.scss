@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&family=Ubuntu&display=swap');
 
 @import 'variables';
 @import 'utilities';
@@ -16,6 +16,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
     font-family: $font-ubuntu;
+    font-family: 'Red Hat Display', sans-serif;
     scroll-behavior: smooth;
     scroll-padding-top: 8vh;
     @media (max-width:768px) {
@@ -35,6 +36,7 @@
             
             h2 {
                 position: relative;
+                font-family: $font-header;
                 // TITLE UNDERLINE
             &::after {
                 position: absolute;

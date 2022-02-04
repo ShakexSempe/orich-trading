@@ -30,6 +30,11 @@
             position: relative;
             isolation: isolate;
 
+            span {
+                color: #000;
+                font-weight: 600;
+            }
+
             &::before,
             &::after {
                 position: absolute;

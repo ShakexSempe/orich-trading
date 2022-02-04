@@ -10,6 +10,7 @@
             text-transform: capitalize;
             font-size: 1.5rem;
             color: $brand;
+            font-family: $font-header;
 
             &[data-scroll] {
                 transform: scale(1);

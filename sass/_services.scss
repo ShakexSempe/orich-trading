@@ -9,6 +9,7 @@
         h3 {
             color: $brand;
             margin-bottom: 1rem;
+            font-family: $font-header;
             &[data-scroll]{
                 transform: scale(1);
                 opacity: .7;
@@ -53,6 +54,7 @@
                     text-transform: capitalize;
                     font-size: 1.5rem;
                     color: $text-main;
+                    font-family: $font-header;
                 }
                 i {
                     margin-bottom: 1.5rem;

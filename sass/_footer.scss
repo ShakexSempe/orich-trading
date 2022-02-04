@@ -38,6 +38,7 @@
 
             header {
                 color: $brand;
+                font-family: $font-header;
                 font-size: 1.3rem;
                 margin-bottom: .5em;
                 text-align: center;
@@ -72,6 +73,7 @@
 
                     a {
                         color: $text-second;
+                        font-family: $font-header;
                         text-overflow: ellipsis;
                         text-decoration: none;
                         background-image: linear-gradient(0deg, $brand, $brand-light);

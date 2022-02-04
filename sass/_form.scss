@@ -6,6 +6,7 @@
     .contact-title {
         margin-bottom: 5vh;
         color: $brand;
+        font-family: $font-header;
         // margin: 0 1rem;
         position: relative;
         &::after {
@@ -48,6 +49,7 @@
             text-transform: uppercase;
             transition: .2s;
             font-weight: 500;
+            // font-family: $font-header;
         }
 
         input, textarea {
