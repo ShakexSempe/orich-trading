@@ -39,6 +39,12 @@
                 margin: .5rem auto;
                 padding: .5rem 0;
             }
+
+            // DATA SCROLL
+            &[data-scroll] {
+                transform: scale(1);
+                transition: 1.5s;
+            }
         }
     }
 

@@ -27,7 +27,6 @@
             border-radius: 5px;
             border: none;
             outline: none;
-            
             position: relative;
             isolation: isolate;
 
@@ -44,7 +43,6 @@
                 transition: 1s;
             }
             &::before {
-                background: $brand;
                 background: linear-gradient(0deg, $brand-dark, $brand-light);
                 box-shadow: inset 2px 2px 2px #ddda,
                             inset -2px -2px 2px #000a,
@@ -52,7 +50,6 @@
             }
             &::after {
                 background: linear-gradient(0deg, $brand-light, $brand-dark);
-
                 opacity: 0;
                 box-shadow: inset 2px 2px 2px #000a,
                             inset -2px -2px 2px #ddda,
