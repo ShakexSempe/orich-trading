@@ -3,7 +3,7 @@
     padding: 5vh 1rem;
     .section-description {
         // border: 1px solid red;
-        margin: 5vh 5vw;
+        margin: 5vh 0;
         line-height: 1.6;
 
         h3 {
@@ -173,9 +173,13 @@
     }
 
     @media (min-width:768px) {
+        padding: 0 5vw;
+        .section-description {
+            margin: 5vh 0;
+        }
         .service-container {
             // border: 1px solid red;
-            margin: 5vh 5vw;
+            margin: 5vh 0;
     
             .service-item {
                 // border: 1px solid blue;
