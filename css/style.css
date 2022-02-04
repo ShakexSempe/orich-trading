@@ -262,7 +262,7 @@
         display: grid;
         place-items: center;
         padding: .5em; }
-        #header .navigation #toggle {
+        #header .navigation .toggle {
           display: none; }
         #header .navigation aside {
           display: none; }

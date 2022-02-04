@@ -1,8 +1,8 @@
-const toggle = document.getElementById("toggle");
+const toggle = document.querySelector(".toggle");
 const header = document.getElementById("header");
 const main = document.getElementById("main");
 const topBtn = document.getElementById("top-btn");
-const aside = document.getElementById("aside");
+const aside = document.querySelector("aside");
 const links = document.querySelectorAll('#aside ul li a');
 console.log(header);
 
@@ -31,6 +31,7 @@ toggle.addEventListener("click",  () => {
     toggle.classList.toggle("active");
     main.classList.toggle("active");
     header.classList.remove("scroll");
+    console.log("open")
 });
 
 links.forEach(link => {
