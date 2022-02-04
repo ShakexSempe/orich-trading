@@ -436,6 +436,7 @@
   .about-page .page-article p.article-intro {
     font-weight: 600; }
   .about-page .page-article p.article-body[data-scroll] {
+    transition: 1.5s;
     transform: scale(1); }
 
 .about-page .page-article .article-pad {

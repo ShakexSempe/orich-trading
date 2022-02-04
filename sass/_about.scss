@@ -50,6 +50,7 @@
             }
             &.article-body {
                 &[data-scroll]{
+                    transition: 1.5s;
                     transform: scale(1);
                 }
             }
