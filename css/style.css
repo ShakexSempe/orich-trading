@@ -411,7 +411,7 @@
       background: #fff;
       border-radius: 5px;
       margin: 1rem 1rem;
-      font-size: 2rem;
+      font-size: 1rem;
       text-transform: none;
       line-height: 1.6;
       overflow: hidden;
@@ -431,7 +431,6 @@
         font-size: 1rem; } }
     @media (min-width: 768px) {
       #container #about .about-article {
-        font-size: 1.2rem;
         margin: 1rem 5vw; } }
   #container.about-page .about-container .about-overview {
     padding: 0vh 1rem 5vh; }
@@ -460,7 +459,7 @@
       #container.about-page .about-container .about-overview {
         padding: 0 5vw; }
         #container.about-page .about-container .about-overview .page-article p {
-          font-size: 1.2rem; }
+          font-size: 1.15rem; }
         #container.about-page .about-container .about-overview .page-article .article-pad {
           width: 15rem;
           float: left;
