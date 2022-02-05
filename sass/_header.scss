@@ -183,7 +183,7 @@
                             &:hover {
                                 .aside-dropdown-content {
                                     // display: block;
-                                    height: 20vh;
+                                    height: 25vh;
                                 }
                             }
                         }
@@ -340,9 +340,9 @@
                             position: absolute;
                             top: 5vh;
                             left: 0%;
-                            width: auto;
+                            width: max-content;
                             background-color: $brand;
-                            transition: .2s;
+                            transition: 1s;
                             border-radius: 5px;
 
                             a {
@@ -366,7 +366,8 @@
                             }
                             .dropdown-content {
                                 // display: block;
-                                height: 25vh;
+                                height: 20vh;
+                                height: max-content;
                                 border: 2px solid #000;
                             }
                         }

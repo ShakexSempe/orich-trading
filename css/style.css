@@ -216,7 +216,7 @@
                       color: #f4f4f4;
                       transition: .2s; }
                 #header .navigation aside ul li.aside-dropdown:hover .aside-dropdown-content {
-                  height: 20vh; }
+                  height: 25vh; }
               #header .navigation aside ul li a {
                 color: #eee;
                 text-decoration: none;
@@ -309,9 +309,9 @@
               position: absolute;
               top: 5vh;
               left: 0%;
-              width: auto;
+              width: max-content;
               background-color: #f8650c;
-              transition: .2s;
+              transition: 1s;
               border-radius: 5px; }
               #header .navigation nav ul .dropdown .dropdown-content a {
                 color: #000;
@@ -326,7 +326,8 @@
               transform: scale(0.9);
               color: #000; }
             #header .navigation nav ul .dropdown:hover .dropdown-content {
-              height: 25vh;
+              height: 20vh;
+              height: max-content;
               border: 2px solid #000; } }
 
 #hero {
@@ -565,7 +566,7 @@
           opacity: 1; }
     @media (min-width: 768px) {
       #container.about-page .about-container .vision-mission {
-        padding: 1rem 0 0;
+        padding: 5vh 0 0;
         margin-top: 10vh; }
         #container.about-page .about-container .vision-mission .vision {
           padding: 5vh .5rem;
