@@ -144,6 +144,32 @@
                         font-size: 2.5rem;
                         margin-bottom: 1rem;
                         font-family: $font-ubuntu;
+                        position: relative;
+                        width: fit-content;
+
+                        &::after {
+                            position: absolute;
+                            content: '';
+                            bottom: -.1rem;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 0;
+                            height: .2rem;
+                            border-radius: 5px;
+                            background: #f4f4f4;
+                            transition: 1.5s;
+                        }
+
+                        // DATA-SCROLL
+                        &[data-scroll] {
+                            transform: scale(1);
+                            opacity: 1;
+                        }
+                        &[data-scroll="in"] {
+                            &::after {
+                                width: 70%;
+                            }
+                        }
                     }
 
                     ul {
@@ -152,6 +178,12 @@
                             padding-bottom: 1rem;
                             &::marker {
                                 color: $brand;
+                            }
+
+                            // DATA SCROLL
+                            &[data-scroll] {
+                                transform: scale(1);
+                                transition: 2s;
                             }
                         }
                     }
@@ -198,14 +230,17 @@
                     // MS CLASS FOR HOVER STATES
                     .ms-item {
                         transition: .3s;
+
                         &:hover {
                             background: $brand;
+
                             h4 {
-                                color: #000;
+                                color: $text-main;
                             }
-                             p {
-                                 color: #fff;
-                             }
+
+                            p {
+                                color: $text-second;
+                            }
                         }
                     }
                     // MS CLASS FOR HOVER STATE

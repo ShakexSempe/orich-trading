@@ -487,11 +487,32 @@
       #container.about-page .about-container .vision-mission .vision h3 {
         font-size: 2.5rem;
         margin-bottom: 1rem;
-        font-family: "Ubuntu", sans-serif; }
+        font-family: "Ubuntu", sans-serif;
+        position: relative;
+        width: fit-content; }
+        #container.about-page .about-container .vision-mission .vision h3::after {
+          position: absolute;
+          content: '';
+          bottom: -.1rem;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 0;
+          height: .2rem;
+          border-radius: 5px;
+          background: #f4f4f4;
+          transition: 1.5s; }
+        #container.about-page .about-container .vision-mission .vision h3[data-scroll] {
+          transform: scale(1);
+          opacity: 1; }
+        #container.about-page .about-container .vision-mission .vision h3[data-scroll="in"]::after {
+          width: 70%; }
       #container.about-page .about-container .vision-mission .vision ul li {
         padding-bottom: 1rem; }
         #container.about-page .about-container .vision-mission .vision ul li::marker {
           color: #f8650c; }
+        #container.about-page .about-container .vision-mission .vision ul li[data-scroll] {
+          transform: scale(1);
+          transition: 2s; }
     #container.about-page .about-container .vision-mission .mission {
       background: #f4f4f4;
       padding: 5vh 5vw;
@@ -528,7 +549,7 @@
           #container.about-page .about-container .vision-mission .mission .ms-item:hover h4 {
             color: #000; }
           #container.about-page .about-container .vision-mission .mission .ms-item:hover p {
-            color: #fff; }
+            color: #f4f4f4; }
     @media (min-width: 768px) {
       #container.about-page .about-container .vision-mission {
         padding: 1rem 0 0;
