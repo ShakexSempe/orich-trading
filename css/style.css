@@ -1196,7 +1196,7 @@
     position: fixed;
     bottom: 1rem;
     right: 1rem;
-    width: 2rem;
+    width: 2.5rem;
     height: 2.5rem;
     background: transparent;
     background: #fffa;
@@ -1222,7 +1222,7 @@
         right: 5vw;
         bottom: 5vh;
         height: 2.5rem;
-        width: 2rem; }
+        width: 2.5rem; }
         #container #top-btn i {
           font-size: 1.5rem; } }
     #container #top-btn i {
