@@ -511,8 +511,10 @@
         #container.about-page .about-container .vision-mission .vision ul li::marker {
           color: #f8650c; }
         #container.about-page .about-container .vision-mission .vision ul li[data-scroll] {
-          transform: scale(1);
+          transform: scale(1) translateX(3rem);
           transition: 2s; }
+        #container.about-page .about-container .vision-mission .vision ul li[data-scroll="in"] {
+          transform: scale(1) translateX(0); }
     #container.about-page .about-container .vision-mission .mission {
       background: #f4f4f4;
       padding: 5vh 5vw;
@@ -527,7 +529,8 @@
       #container.about-page .about-container .vision-mission .mission p {
         margin-bottom: .5rem;
         line-height: 1.6;
-        transition: .3s; }
+        transition: .3s;
+        font-weight: 500; }
       #container.about-page .about-container .vision-mission .mission .statement {
         border: 1px solid #f8650c;
         border-radius: 5px;
@@ -545,11 +548,22 @@
       #container.about-page .about-container .vision-mission .mission .ms-item {
         transition: .3s; }
         #container.about-page .about-container .vision-mission .mission .ms-item:hover {
-          background: #f8650c; }
-          #container.about-page .about-container .vision-mission .mission .ms-item:hover h4 {
-            color: #000; }
+          background: #fff; }
           #container.about-page .about-container .vision-mission .mission .ms-item:hover p {
-            color: #f4f4f4; }
+            transition: .1s; }
+        #container.about-page .about-container .vision-mission .mission .ms-item[data-scroll] {
+          transform: scale(1);
+          opacity: 1; }
+          #container.about-page .about-container .vision-mission .mission .ms-item[data-scroll] h4 {
+            color: #000; }
+          #container.about-page .about-container .vision-mission .mission .ms-item[data-scroll] p {
+            opacity: 0; }
+        #container.about-page .about-container .vision-mission .mission .ms-item[data-scroll="in"] h4 {
+          color: #f8650c;
+          transition: 1s; }
+        #container.about-page .about-container .vision-mission .mission .ms-item[data-scroll="in"] p {
+          transition: 1.5s;
+          opacity: 1; }
     @media (min-width: 768px) {
       #container.about-page .about-container .vision-mission {
         padding: 1rem 0 0;

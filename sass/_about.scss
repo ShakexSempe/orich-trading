@@ -182,8 +182,11 @@
 
                             // DATA SCROLL
                             &[data-scroll] {
-                                transform: scale(1);
+                                transform: scale(1) translateX(3rem);
                                 transition: 2s;
+                            }
+                            &[data-scroll="in"] {
+                                transform: scale(1) translateX(0);
                             }
                         }
                     }
@@ -206,6 +209,7 @@
                         margin-bottom: .5rem;
                         line-height: 1.6;
                         transition: .3s;
+                        font-weight: 500;
                     }
 
                     .statement {
@@ -232,14 +236,32 @@
                         transition: .3s;
 
                         &:hover {
-                            background: $brand;
+                            background: #fff;
+                            p {
+                                transition: .1s;
+                            }
+                        }
+
+                        &[data-scroll] {
+                            transform: scale(1);
+                            opacity: 1;
 
                             h4 {
-                                color: $text-main;
+                                color: #000;
                             }
-
                             p {
-                                color: $text-second;
+                                opacity: 0;
+                            }
+                        }
+
+                        &[data-scroll="in"]{
+                            h4 {
+                                color: $brand;
+                                transition: 1s;
+                            }
+                            p {
+                                transition: 1.5s;
+                                opacity: 1;
                             }
                         }
                     }
