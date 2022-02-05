@@ -506,17 +506,15 @@
           opacity: 1; }
         #container.about-page .about-container .vision-mission .vision h3[data-scroll="in"]::after {
           width: 70%; }
-      #container.about-page .about-container .vision-mission .vision ul {
-        overflow-x: hidden; }
-        #container.about-page .about-container .vision-mission .vision ul li {
-          padding-bottom: 1rem; }
-          #container.about-page .about-container .vision-mission .vision ul li::marker {
-            color: #f8650c; }
-          #container.about-page .about-container .vision-mission .vision ul li[data-scroll] {
-            transform: scale(1) translateX(3rem);
-            transition: 2s; }
-          #container.about-page .about-container .vision-mission .vision ul li[data-scroll="in"] {
-            transform: scale(1) translateX(0); }
+      #container.about-page .about-container .vision-mission .vision ul li {
+        padding-bottom: 1rem; }
+        #container.about-page .about-container .vision-mission .vision ul li::marker {
+          color: #f8650c; }
+        #container.about-page .about-container .vision-mission .vision ul li[data-scroll] {
+          transform: scale(1) translateX(3rem);
+          transition: 2s; }
+        #container.about-page .about-container .vision-mission .vision ul li[data-scroll="in"] {
+          transform: scale(1) translateX(0); }
     #container.about-page .about-container .vision-mission .mission {
       background: #f4f4f4;
       padding: 5vh 5vw;
