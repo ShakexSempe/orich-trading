@@ -663,14 +663,14 @@
         width: 100%;
         padding: 0 1rem; }
         #services .service-container .service-item .service-type ul {
-          background-color: #f4f4f4;
-          background-color: #f8650c;
+          background: linear-gradient(45deg, #f8650c, #ffa500);
           color: #f4f4f4;
           padding: 5vh .5rem;
           font-weight: 500;
           width: 100%;
           margin: 1rem auto;
-          border-radius: 5px; }
+          border-radius: 5px;
+          box-shadow: inset 2px 2px 5px #fff, inset -2px -2px 5px rgba(0, 0, 0, 0.25), 5px 5px 5px rgba(0, 0, 0, 0.25); }
           #services .service-container .service-item .service-type ul li {
             margin: .5rem 0;
             padding: .5rem 0;

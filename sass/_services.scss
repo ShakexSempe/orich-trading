@@ -109,8 +109,7 @@
                 width: 100%;
                 padding: 0 1rem;
                 ul {
-                    background-color: #f4f4f4;
-                    background-color: $brand;
+                    background: $brand-overlay-dark;
                     color: $text-second;
                     padding: 5vh .5rem;
                     // list-style: none;
@@ -118,6 +117,9 @@
                     width: 100%;
                     margin: 1rem auto;
                     border-radius: 5px;
+                    box-shadow: inset 2px 2px 5px #fff,
+                                inset -2px -2px 5px rgba(0, 0, 0, 0.250),
+                                        5px 5px 5px rgba(0, 0, 0, .250);
     
                     li {
                         margin: .5rem 0;
