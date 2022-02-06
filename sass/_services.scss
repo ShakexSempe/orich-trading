@@ -129,6 +129,7 @@
                         transition: 1.5s;
                         opacity: 0;
                         cursor: pointer;
+                        text-shadow: 1px 1px 0px #000a;
                         &::marker {
                             color: $brand;
                         }

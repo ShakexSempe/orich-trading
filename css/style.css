@@ -713,7 +713,8 @@
             transform: translateX(4rem);
             transition: 1.5s;
             opacity: 0;
-            cursor: pointer; }
+            cursor: pointer;
+            text-shadow: 1px 1px 0px #000a; }
             #services .service-container .service-item .service-type ul li::marker {
               color: #f8650c; }
       #services .service-container .service-item[data-scroll] {
