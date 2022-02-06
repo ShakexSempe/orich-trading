@@ -1,3 +1,5 @@
+const title = document.getElementById("title");
+const hero = document.getElementById("hero");
 const toggle = document.querySelector(".toggle");
 const header = document.getElementById("header");
 const main = document.getElementById("main");
@@ -48,3 +50,7 @@ main.addEventListener("click", () => {
     toggle.classList.remove("active");
     main.classList.remove("active");
 });
+
+title.addEventListener('click', () => {
+    hero.classList.toggle("active");
+})

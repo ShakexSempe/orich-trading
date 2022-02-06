@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Red+Hat+Display&family=Ubuntu&display=swap");
 .toggle {
   font-size: 20px;
   border-radius: 50%;
@@ -334,13 +334,48 @@
   display: grid;
   place-items: center;
   min-height: 100vh;
-  background-color: #fff; }
+  background-color: #fff;
+  transition: 1.5s; }
+  #hero.active {
+    background: linear-gradient(45deg, #f8650c, #ffa500);
+    background: #f8650c; }
+  #hero .page-title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    font-family: "Gruppo", cursive;
+    color: #f4f4f4;
+    font-size: 3.5rem;
+    padding: .5rem;
+    border-radius: 5px;
+    width: min-content;
+    cursor: pointer;
+    transition: .5s;
+    animation: title 2s infinite;
+    box-shadow: inset 2px 2px 3px #fffa, inset -2px -2px 3px #000a, 3px 3px 4px rgba(0, 0, 0, 0.2); }
+    #hero .page-title span {
+      display: block;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1rem;
+      font-family: "Red Hat Display", sans-serif;
+      letter-spacing: .3rem; }
+    #hero .page-title:hover {
+      transition: .5s;
+      animation: none;
+      transform: scale(0.97);
+      background: #f8650c; }
+
+@keyframes title {
+  50% {
+    transform: scale(0.96); } }
   #hero figure {
     width: 100%;
     overflow: hidden;
-    margin: 0 auto; }
+    margin: 0 auto;
+    border-radius: 5px; }
     #hero figure img {
-      width: 100%; }
+      width: 100%;
+      border-radius: 5px; }
   #hero .slogan {
     border-radius: 5px;
     border: none;
@@ -670,7 +705,7 @@
           width: 100%;
           margin: 1rem auto;
           border-radius: 5px;
-          box-shadow: inset 2px 2px 5px #fff, inset -2px -2px 5px rgba(0, 0, 0, 0.25), 5px 5px 5px rgba(0, 0, 0, 0.25); }
+          box-shadow: inset 2px 2px 3px #fffa, inset -2px -2px 3px rgba(0, 0, 0, 0.25), 5px 5px 5px rgba(0, 0, 0, 0.25); }
           #services .service-container .service-item .service-type ul li {
             margin: .5rem 0;
             padding: .5rem 0;
