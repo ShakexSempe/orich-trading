@@ -361,8 +361,9 @@
       letter-spacing: 1rem;
       transition: .5s;
       animation: none;
-      transform: scale(0.97);
       background: #f8650c; }
+      #hero .page-title:hover span {
+        letter-spacing: .3rem; }
 
 @keyframes title {
   50% {

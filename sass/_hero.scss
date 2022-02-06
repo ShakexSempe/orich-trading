@@ -36,8 +36,11 @@
             letter-spacing: 1rem; 
             transition: .5s;
             animation: none;
-            transform: scale(.97);
             background: $brand;
+
+            span {
+                letter-spacing: .3rem;
+            }
         }
         @keyframes title {
             50%{
