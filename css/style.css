@@ -479,6 +479,7 @@
     padding: 1rem 0; }
     #container.about-page .about-container .vision-mission .vision {
       background: #f8650c;
+      background: linear-gradient(45deg, #f8650c, #ffa500);
       color: #f4f4f4;
       padding: .5rem .5rem;
       border-radius: 5px;
@@ -506,15 +507,17 @@
           opacity: 1; }
         #container.about-page .about-container .vision-mission .vision h3[data-scroll="in"]::after {
           width: 70%; }
-      #container.about-page .about-container .vision-mission .vision ul li {
-        padding-bottom: 1rem; }
-        #container.about-page .about-container .vision-mission .vision ul li::marker {
-          color: #f8650c; }
-        #container.about-page .about-container .vision-mission .vision ul li[data-scroll] {
-          transform: scale(1) translateX(3rem);
-          transition: 2s; }
-        #container.about-page .about-container .vision-mission .vision ul li[data-scroll="in"] {
-          transform: scale(1) translateX(0); }
+      #container.about-page .about-container .vision-mission .vision ul {
+        padding: .5rem 0 0 1rem; }
+        #container.about-page .about-container .vision-mission .vision ul li {
+          padding-bottom: 1rem; }
+          #container.about-page .about-container .vision-mission .vision ul li::marker {
+            color: #f4f4f4; }
+          #container.about-page .about-container .vision-mission .vision ul li[data-scroll] {
+            transform: scale(1) translateX(3rem);
+            transition: 2s; }
+          #container.about-page .about-container .vision-mission .vision ul li[data-scroll="in"] {
+            transform: scale(1) translateX(0); }
     #container.about-page .about-container .vision-mission .mission {
       background: #f4f4f4;
       padding: 5vh 5vw;
@@ -576,7 +579,7 @@
           #container.about-page .about-container .vision-mission .vision ul li {
             padding-bottom: 1rem; }
             #container.about-page .about-container .vision-mission .vision ul li::marker {
-              color: #f8650c; }
+              color: #f4f4f4; }
         #container.about-page .about-container .vision-mission .mission {
           padding: 10vh 5vw; }
           #container.about-page .about-container .vision-mission .mission .statement {
