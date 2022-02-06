@@ -19,16 +19,16 @@
         color: $text-second;
         font-size: 3rem;
         // padding: .5rem;
-        border: 1px solid red;
         border-radius: 5px;
-        width: max-content;
+        width: 100%;
+        width: fit-content;
         cursor: pointer;
         transition: .5s;
         // animation: title 2s infinite;
         span {
             display: block;
             font-family: $font-header;
-            font-size: .85rem;
+            font-size: .8rem;
             font-family: $font-content;
             letter-spacing: .3rem;
             font-weight: 200;

@@ -346,15 +346,15 @@
     font-family: "Gruppo", cursive;
     color: #f4f4f4;
     font-size: 3rem;
-    border: 1px solid red;
     border-radius: 5px;
-    width: max-content;
+    width: 100%;
+    width: fit-content;
     cursor: pointer;
     transition: .5s; }
     #hero .page-title span {
       display: block;
       font-family: "Ubuntu", sans-serif;
-      font-size: .85rem;
+      font-size: .8rem;
       font-family: "Red Hat Display", sans-serif;
       letter-spacing: .3rem;
       font-weight: 200; }
