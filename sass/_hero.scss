@@ -18,7 +18,8 @@
         font-family: $font-gruppo;
         color: $text-second;
         font-size: 3rem;
-        padding: .5rem;
+        // padding: .5rem;
+        border: 1px solid red;
         border-radius: 5px;
         width: max-content;
         cursor: pointer;
@@ -27,9 +28,10 @@
         span {
             display: block;
             font-family: $font-header;
-            font-size: 1rem;
+            font-size: .85rem;
             font-family: $font-content;
             letter-spacing: .3rem;
+            font-weight: 200;
         }
 
         &:hover {  

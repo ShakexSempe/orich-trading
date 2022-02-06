@@ -346,7 +346,7 @@
     font-family: "Gruppo", cursive;
     color: #f4f4f4;
     font-size: 3rem;
-    padding: .5rem;
+    border: 1px solid red;
     border-radius: 5px;
     width: max-content;
     cursor: pointer;
@@ -354,9 +354,10 @@
     #hero .page-title span {
       display: block;
       font-family: "Ubuntu", sans-serif;
-      font-size: 1rem;
+      font-size: .85rem;
       font-family: "Red Hat Display", sans-serif;
-      letter-spacing: .3rem; }
+      letter-spacing: .3rem;
+      font-weight: 200; }
     #hero .page-title:hover {
       letter-spacing: 1rem;
       transition: .5s;
