@@ -14,19 +14,16 @@
     .page-title {
         text-align: center;
         text-transform: uppercase;
-        letter-spacing: 1rem;
+        letter-spacing: 1.3rem;
         font-family: $font-gruppo;
         color: $text-second;
-        font-size: 3.5rem;
+        font-size: 3rem;
         padding: .5rem;
         border-radius: 5px;
-        width: min-content;
+        width: max-content;
         cursor: pointer;
         transition: .5s;
-        animation: title 2s infinite;
-        box-shadow: inset 2px 2px 3px #fffa,
-                    inset -2px -2px 3px #000a,
-                            3px 3px 4px rgba(0, 0, 0, .200);
+        // animation: title 2s infinite;
         span {
             display: block;
             font-family: $font-header;
@@ -35,7 +32,8 @@
             letter-spacing: .3rem;
         }
 
-        &:hover {   
+        &:hover {  
+            letter-spacing: 1rem; 
             transition: .5s;
             animation: none;
             transform: scale(.97);
