@@ -61,12 +61,9 @@
                     padding: 0;
                     font-size: 4em;
                     transition: .3s;
-                    // animation: service 2s infinite;
+                    animation: general 2s infinite;
                     &.fa-wrench {
-                        animation: wrench 2s infinite;
-                    }
-                    &.fa-faucet {
-                        animation: wrench 2s infinite;
+                        animation: rotate 2s infinite;
                     }
                     &.fa-paint-roller,
                     &.fa-plug {
@@ -74,14 +71,22 @@
 
                     }
                     @keyframes rollUp {
+                        0%, 100% {
+                            color: $brand;
+                        }
                         50% {
                             transform: translateY(1rem);
                             color: #000a;
                         }
                     }
-                    @keyframes wrench {
+                    @keyframes rotate {
                         50% {
                             transform: rotate(20deg);
+                            color: #000a;
+                        }
+                    }
+                    @keyframes general {
+                        50% {
                             color: #000a;
                         }
                     }

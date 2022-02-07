@@ -683,22 +683,27 @@
           margin-bottom: 1.5rem;
           padding: 0;
           font-size: 4em;
-          transition: .3s; }
+          transition: .3s;
+          animation: general 2s infinite; }
           #services .service-container .service-item .service-core i.fa-wrench {
-            animation: wrench 2s infinite; }
-          #services .service-container .service-item .service-core i.fa-faucet {
-            animation: wrench 2s infinite; }
+            animation: rotate 2s infinite; }
           #services .service-container .service-item .service-core i.fa-paint-roller, #services .service-container .service-item .service-core i.fa-plug {
             animation: rollUp 2s infinite; }
 
 @keyframes rollUp {
+  0%, 100% {
+    color: #f8650c; }
   50% {
     transform: translateY(1rem);
     color: #000a; } }
 
-@keyframes wrench {
+@keyframes rotate {
   50% {
     transform: rotate(20deg);
+    color: #000a; } }
+
+@keyframes general {
+  50% {
     color: #000a; } }
       #services .service-container .service-item .service-type {
         width: 100%;
