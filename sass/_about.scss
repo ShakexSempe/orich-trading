@@ -1,4 +1,4 @@
-#container {
+.container {
     position: relative;
 
     #about {
@@ -49,8 +49,9 @@
     }
 
     // ABOUT PAGE
-    &.about-page {
-        .about-container {
+    &#about-page {
+        .main {
+            margin-top: 0;
             .about-overview {
                 padding: 0vh 1rem 5vh;
 

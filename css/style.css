@@ -441,11 +441,11 @@
     #hero .slogan {
       text-align: center; } }
 
-#container {
+.container {
   position: relative; }
-  #container #about {
+  .container #about {
     padding: 5vh 0; }
-    #container #about .about-article {
+    .container #about .about-article {
       background: #fff;
       border-radius: 5px;
       margin: 1rem 1rem;
@@ -454,7 +454,7 @@
       line-height: 1.6;
       overflow: hidden;
       text-align: left; }
-      #container #about .about-article p span {
+      .container #about .about-article p span {
         font-size: 2rem;
         padding-right: .1em;
         background: #000;
@@ -465,173 +465,175 @@
         color: #fff;
         text-shadow: 2px 2px 0px #f8650c; }
     @media (max-width: 768px) {
-      #container #about .about-article {
+      .container #about .about-article {
         font-size: 1rem; } }
     @media (min-width: 768px) {
-      #container #about .about-article {
+      .container #about .about-article {
         margin: 1rem 5vw; } }
-  #container.about-page .about-container .about-overview {
-    padding: 0vh 1rem 5vh; }
-    #container.about-page .about-container .about-overview .page-article p {
-      margin-bottom: 1rem;
-      font-size: 1rem;
-      line-height: 1.6; }
-      #container.about-page .about-container .about-overview .page-article p.article-intro {
-        font-weight: 600;
-        margin-bottom: 10vh;
-        line-height: 1.8; }
-      #container.about-page .about-container .about-overview .page-article p.article-body[data-scroll] {
-        transition: 1.5s;
-        transform: scale(1); }
-    #container.about-page .about-container .about-overview .page-article .article-pad {
-      background-color: #fff;
-      width: 100%;
-      margin: 5vh auto; }
-      #container.about-page .about-container .about-overview .page-article .article-pad figure {
-        width: 50%;
-        overflow: hidden;
-        margin: 1rem auto; }
-        #container.about-page .about-container .about-overview .page-article .article-pad figure img {
-          width: 100%; }
-    @media (min-width: 768px) {
-      #container.about-page .about-container .about-overview {
-        padding: 0 5vw; }
-        #container.about-page .about-container .about-overview .page-article p {
-          font-size: 1.15rem; }
-        #container.about-page .about-container .about-overview .page-article .article-pad {
-          width: 15rem;
-          float: left;
-          overflow: hidden;
-          margin-right: .5rem;
-          margin: 0 .5rem 0 0;
-          border: 1px solid #f8650c;
-          border-radius: 5px; }
-          #container.about-page .about-container .about-overview .page-article .article-pad figure {
-            margin: 0;
-            width: 100%;
-            height: auto; }
-            #container.about-page .about-container .about-overview .page-article .article-pad figure img {
-              width: 100%;
-              height: auto; } }
-  #container.about-page .about-container .vision-mission {
-    padding: 1rem 0; }
-    #container.about-page .about-container .vision-mission .vision {
-      background: #f8650c;
-      background: linear-gradient(45deg, #f8650c, #ffa500);
-      color: #f4f4f4;
-      padding: .5rem .5rem;
-      border-radius: 5px;
-      margin: 0 1rem;
-      overflow: hidden; }
-      #container.about-page .about-container .vision-mission .vision h3 {
-        font-size: 2.5rem;
+  .container#about-page .main {
+    margin-top: 0; }
+    .container#about-page .main .about-overview {
+      padding: 0vh 1rem 5vh; }
+      .container#about-page .main .about-overview .page-article p {
         margin-bottom: 1rem;
-        font-family: "Ubuntu", sans-serif;
-        position: relative;
-        width: fit-content; }
-        #container.about-page .about-container .vision-mission .vision h3::after {
-          position: absolute;
-          content: '';
-          bottom: -.1rem;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 0;
-          height: .2rem;
-          border-radius: 5px;
-          background: #f4f4f4;
-          transition: 1.5s; }
-        #container.about-page .about-container .vision-mission .vision h3[data-scroll] {
-          transform: scale(1);
-          opacity: 1; }
-        #container.about-page .about-container .vision-mission .vision h3[data-scroll="in"]::after {
-          width: 70%; }
-      #container.about-page .about-container .vision-mission .vision ul {
-        padding: .5rem 0 0 1rem; }
-        #container.about-page .about-container .vision-mission .vision ul li {
-          padding-bottom: 1rem; }
-          #container.about-page .about-container .vision-mission .vision ul li::marker {
-            color: #f4f4f4; }
-          #container.about-page .about-container .vision-mission .vision ul li[data-scroll] {
-            transform: scale(1) translateX(3rem);
-            transition: 2s; }
-          #container.about-page .about-container .vision-mission .vision ul li[data-scroll="in"] {
-            transform: scale(1) translateX(0); }
-    #container.about-page .about-container .vision-mission .mission {
-      background: #f4f4f4;
-      padding: 5vh 5vw;
-      margin: 5vh 0 0; }
-      #container.about-page .about-container .vision-mission .mission h4 {
-        color: #f8650c;
-        font-size: 1.1rem;
-        margin-bottom: 1rem;
-        font-family: "Ubuntu", sans-serif;
-        text-transform: uppercase;
-        transition: .3s; }
-      #container.about-page .about-container .vision-mission .mission p {
-        margin-bottom: .5rem;
-        line-height: 1.6;
-        transition: .3s;
-        font-weight: 500; }
-      #container.about-page .about-container .vision-mission .mission .statement {
-        border: 1px solid #f8650c;
-        border-radius: 5px;
-        padding: .5rem;
-        width: 100%;
-        margin-bottom: 1rem; }
-      #container.about-page .about-container .vision-mission .mission .term {
-        display: flex;
-        flex-direction: column;
-        gap: .5rem; }
-        #container.about-page .about-container .vision-mission .mission .term .objective {
-          padding: .5rem;
-          border: 1px solid #f8650c;
-          border-radius: 5px; }
-      #container.about-page .about-container .vision-mission .mission .ms-item {
-        transition: .3s; }
-        #container.about-page .about-container .vision-mission .mission .ms-item:hover {
-          background: #fff; }
-          #container.about-page .about-container .vision-mission .mission .ms-item:hover p {
-            transition: .1s; }
-        #container.about-page .about-container .vision-mission .mission .ms-item[data-scroll] {
-          transform: scale(1);
-          opacity: 1; }
-          #container.about-page .about-container .vision-mission .mission .ms-item[data-scroll] h4 {
-            color: #000; }
-          #container.about-page .about-container .vision-mission .mission .ms-item[data-scroll] p {
-            opacity: 0; }
-        #container.about-page .about-container .vision-mission .mission .ms-item[data-scroll="in"] h4 {
-          color: #f8650c;
-          transition: 1s; }
-        #container.about-page .about-container .vision-mission .mission .ms-item[data-scroll="in"] p {
+        font-size: 1rem;
+        line-height: 1.6; }
+        .container#about-page .main .about-overview .page-article p.article-intro {
+          font-weight: 600;
+          margin-bottom: 10vh;
+          line-height: 1.8; }
+        .container#about-page .main .about-overview .page-article p.article-body[data-scroll] {
           transition: 1.5s;
-          opacity: 1; }
-    @media (min-width: 768px) {
-      #container.about-page .about-container .vision-mission {
-        padding: 5vh 0 0;
-        margin-top: 10vh; }
-        #container.about-page .about-container .vision-mission .vision {
-          padding: 5vh .5rem;
-          margin: 0 5vw; }
-          #container.about-page .about-container .vision-mission .vision h3 {
-            font-size: 2.5rem; }
-          #container.about-page .about-container .vision-mission .vision ul li {
-            padding-bottom: 1rem; }
-            #container.about-page .about-container .vision-mission .vision ul li::marker {
-              color: #f4f4f4; }
-        #container.about-page .about-container .vision-mission .mission {
-          padding: 10vh 5vw; }
-          #container.about-page .about-container .vision-mission .mission .statement {
-            border: 1px solid #f8650c;
-            border-radius: 5px;
-            padding: .5rem;
+          transform: scale(1); }
+      .container#about-page .main .about-overview .page-article .article-pad {
+        background-color: #fff;
+        width: 100%;
+        margin: 5vh auto; }
+        .container#about-page .main .about-overview .page-article .article-pad figure {
+          width: 50%;
+          overflow: hidden;
+          margin: 1rem auto; }
+          .container#about-page .main .about-overview .page-article .article-pad figure img {
             width: 100%; }
-          #container.about-page .about-container .vision-mission .mission .term {
-            display: flex;
-            flex-direction: row; }
-            #container.about-page .about-container .vision-mission .mission .term .objective {
-              flex-basis: 50%;
+      @media (min-width: 768px) {
+        .container#about-page .main .about-overview {
+          padding: 0 5vw; }
+          .container#about-page .main .about-overview .page-article p {
+            font-size: 1.15rem; }
+          .container#about-page .main .about-overview .page-article .article-pad {
+            width: 15rem;
+            float: left;
+            overflow: hidden;
+            margin-right: .5rem;
+            margin: 0 .5rem 0 0;
+            border: 1px solid #f8650c;
+            border-radius: 5px; }
+            .container#about-page .main .about-overview .page-article .article-pad figure {
+              margin: 0;
+              width: 100%;
+              height: auto; }
+              .container#about-page .main .about-overview .page-article .article-pad figure img {
+                width: 100%;
+                height: auto; } }
+    .container#about-page .main .vision-mission {
+      padding: 1rem 0; }
+      .container#about-page .main .vision-mission .vision {
+        background: #f8650c;
+        background: linear-gradient(45deg, #f8650c, #ffa500);
+        color: #f4f4f4;
+        padding: .5rem .5rem;
+        border-radius: 5px;
+        margin: 0 1rem;
+        overflow: hidden; }
+        .container#about-page .main .vision-mission .vision h3 {
+          font-size: 2.5rem;
+          margin-bottom: 1rem;
+          font-family: "Ubuntu", sans-serif;
+          position: relative;
+          width: fit-content; }
+          .container#about-page .main .vision-mission .vision h3::after {
+            position: absolute;
+            content: '';
+            bottom: -.1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: .2rem;
+            border-radius: 5px;
+            background: #f4f4f4;
+            transition: 1.5s; }
+          .container#about-page .main .vision-mission .vision h3[data-scroll] {
+            transform: scale(1);
+            opacity: 1; }
+          .container#about-page .main .vision-mission .vision h3[data-scroll="in"]::after {
+            width: 70%; }
+        .container#about-page .main .vision-mission .vision ul {
+          padding: .5rem 0 0 1rem; }
+          .container#about-page .main .vision-mission .vision ul li {
+            padding-bottom: 1rem; }
+            .container#about-page .main .vision-mission .vision ul li::marker {
+              color: #f4f4f4; }
+            .container#about-page .main .vision-mission .vision ul li[data-scroll] {
+              transform: scale(1) translateX(3rem);
+              transition: 2s; }
+            .container#about-page .main .vision-mission .vision ul li[data-scroll="in"] {
+              transform: scale(1) translateX(0); }
+      .container#about-page .main .vision-mission .mission {
+        background: #f4f4f4;
+        padding: 5vh 5vw;
+        margin: 5vh 0 0; }
+        .container#about-page .main .vision-mission .mission h4 {
+          color: #f8650c;
+          font-size: 1.1rem;
+          margin-bottom: 1rem;
+          font-family: "Ubuntu", sans-serif;
+          text-transform: uppercase;
+          transition: .3s; }
+        .container#about-page .main .vision-mission .mission p {
+          margin-bottom: .5rem;
+          line-height: 1.6;
+          transition: .3s;
+          font-weight: 500; }
+        .container#about-page .main .vision-mission .mission .statement {
+          border: 1px solid #f8650c;
+          border-radius: 5px;
+          padding: .5rem;
+          width: 100%;
+          margin-bottom: 1rem; }
+        .container#about-page .main .vision-mission .mission .term {
+          display: flex;
+          flex-direction: column;
+          gap: .5rem; }
+          .container#about-page .main .vision-mission .mission .term .objective {
+            padding: .5rem;
+            border: 1px solid #f8650c;
+            border-radius: 5px; }
+        .container#about-page .main .vision-mission .mission .ms-item {
+          transition: .3s; }
+          .container#about-page .main .vision-mission .mission .ms-item:hover {
+            background: #fff; }
+            .container#about-page .main .vision-mission .mission .ms-item:hover p {
+              transition: .1s; }
+          .container#about-page .main .vision-mission .mission .ms-item[data-scroll] {
+            transform: scale(1);
+            opacity: 1; }
+            .container#about-page .main .vision-mission .mission .ms-item[data-scroll] h4 {
+              color: #000; }
+            .container#about-page .main .vision-mission .mission .ms-item[data-scroll] p {
+              opacity: 0; }
+          .container#about-page .main .vision-mission .mission .ms-item[data-scroll="in"] h4 {
+            color: #f8650c;
+            transition: 1s; }
+          .container#about-page .main .vision-mission .mission .ms-item[data-scroll="in"] p {
+            transition: 1.5s;
+            opacity: 1; }
+      @media (min-width: 768px) {
+        .container#about-page .main .vision-mission {
+          padding: 5vh 0 0;
+          margin-top: 10vh; }
+          .container#about-page .main .vision-mission .vision {
+            padding: 5vh .5rem;
+            margin: 0 5vw; }
+            .container#about-page .main .vision-mission .vision h3 {
+              font-size: 2.5rem; }
+            .container#about-page .main .vision-mission .vision ul li {
+              padding-bottom: 1rem; }
+              .container#about-page .main .vision-mission .vision ul li::marker {
+                color: #f4f4f4; }
+          .container#about-page .main .vision-mission .mission {
+            padding: 10vh 5vw; }
+            .container#about-page .main .vision-mission .mission .statement {
+              border: 1px solid #f8650c;
+              border-radius: 5px;
               padding: .5rem;
-              border: 1px solid #f8650c; } }
+              width: 100%; }
+            .container#about-page .main .vision-mission .mission .term {
+              display: flex;
+              flex-direction: row; }
+              .container#about-page .main .vision-mission .mission .term .objective {
+                flex-basis: 50%;
+                padding: .5rem;
+                border: 1px solid #f8650c; } }
 
 #services {
   padding: 5vh 1rem; }
@@ -779,6 +781,9 @@
           #services .service-container .service-item .service-type {
             width: 50%;
             text-align: left; } }
+
+#services-page .main {
+  margin-top: 0; }
 
 #projects {
   padding: 5vh 1rem; }
@@ -1154,17 +1159,17 @@
     * {
       scroll-padding-top: 7vh; } }
 
-#container {
+.container {
   max-width: 100%; }
-  #container .section-title {
+  .container .section-title {
     text-align: center;
     text-transform: uppercase;
     font-size: 1.5rem;
     padding: 5vh 0; }
-    #container .section-title h2 {
+    .container .section-title h2 {
       position: relative;
       font-family: "Ubuntu", sans-serif; }
-      #container .section-title h2::after {
+      .container .section-title h2::after {
         position: absolute;
         content: '';
         bottom: -.3rem;
@@ -1176,23 +1181,23 @@
         background: linear-gradient(90deg, #f8650c, #ffa500, #f8650c);
         border-radius: 5px;
         transition: 2s; }
-      #container .section-title h2[data-scroll] {
+      .container .section-title h2[data-scroll] {
         transform: scale(1);
         opacity: 1; }
-      #container .section-title h2[data-scroll="in"]::after {
+      .container .section-title h2[data-scroll="in"]::after {
         width: 25%; }
         @media (min-width: 768px) {
-          #container .section-title h2[data-scroll="in"]::after {
+          .container .section-title h2[data-scroll="in"]::after {
             width: 10vw; } }
-  #container #main {
+  .container .main {
     margin-top: 5vh;
     padding: 5vh 0;
     min-height: 100vh; }
     @media (min-width: 768px) {
-      #container #main {
+      .container .main {
         margin-top: 10vh;
         padding: 5vh 0; } }
-    #container #main::after {
+    .container .main::after {
       position: fixed;
       content: '';
       top: 5vh;
@@ -1203,22 +1208,22 @@
       opacity: 0;
       z-index: -1;
       transition: .2s; }
-    #container #main.active::after {
+    .container .main.active::after {
       z-index: 1;
       opacity: .7; }
-    #container #main .parallax {
+    .container .main .parallax {
       height: 95vh;
       background-color: #ffffff; }
-      #container #main .parallax figure {
+      .container .main .parallax figure {
         width: 100%;
         height: 100%;
         position: relative;
         isolation: isolate; }
-        #container #main .parallax figure img {
+        .container .main .parallax figure img {
           width: 100%;
           height: 100%;
           object-fit: cover; }
-        #container #main .parallax figure::after {
+        .container .main .parallax figure::after {
           position: absolute;
           content: '';
           top: 0;
@@ -1228,7 +1233,7 @@
           background-image: linear-gradient(40deg, #f8650c, rgba(0, 0, 0, 0.137));
           opacity: .3; }
       @media (min-width: 768px) {
-        #container #main .parallax {
+        .container .main .parallax {
           height: 95vh;
           background-image: url(../img/orich-project.jpg);
           background-repeat: no-repeat;
@@ -1236,13 +1241,13 @@
           background-attachment: fixed;
           background-size: contain;
           margin: 5vh 5vw; }
-          #container #main .parallax figure {
+          .container .main .parallax figure {
             display: none; }
-          #container #main .parallax::after {
+          .container .main .parallax::after {
             display: none; } }
-    #container #main section {
+    .container .main section {
       min-height: 100vh; }
-  #container #top-btn {
+  .container #top-btn {
     position: fixed;
     bottom: 1rem;
     right: 1rem;
@@ -1259,7 +1264,7 @@
     opacity: 0;
     cursor: pointer;
     transform: translateY(10vh); }
-    #container #top-btn a {
+    .container #top-btn a {
       border: 1px solid blue;
       border: none;
       width: 100%;
@@ -1268,22 +1273,22 @@
       place-items: center;
       text-decoration: none; }
     @media (min-width: 768px) {
-      #container #top-btn {
+      .container #top-btn {
         right: 2vw;
         bottom: 5vh;
         height: 2.5rem;
         width: 2.5rem; }
-        #container #top-btn i {
+        .container #top-btn i {
           font-size: 1.5rem; } }
-    #container #top-btn i {
+    .container #top-btn i {
       color: #000;
       transition: .3s;
       margin: 0 auto;
       transition: .5s; }
-    #container #top-btn.active {
+    .container #top-btn.active {
       opacity: 1;
       transform: translateY(0); }
-      #container #top-btn.active:hover {
+      .container #top-btn.active:hover {
         transition: .3s;
         transform: scale(1.1); }
 
