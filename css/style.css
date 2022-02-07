@@ -683,8 +683,11 @@
           margin-bottom: 1.5rem;
           padding: 0;
           font-size: 4em;
-          transition: .3s;
-          animation: service 2s infinite; }
+          transition: .3s; }
+          #services .service-container .service-item .service-core i.fa-wrench {
+            animation: wrench 2s infinite; }
+          #services .service-container .service-item .service-core i.fa-faucet {
+            animation: wrench 2s infinite; }
           #services .service-container .service-item .service-core i.fa-paint-roller, #services .service-container .service-item .service-core i.fa-plug {
             animation: rollUp 2s infinite; }
 
@@ -693,12 +696,10 @@
     transform: translateY(1rem);
     color: #000a; } }
 
-@keyframes service {
+@keyframes wrench {
   50% {
     transform: rotate(20deg);
     color: #000a; } }
-      #services .service-container .service-item:hover h3 {
-        border-bottom: 2px solid orange; }
       #services .service-container .service-item .service-type {
         width: 100%;
         padding: 0 1rem; }
@@ -739,6 +740,10 @@
           transition-delay: .7s; }
         #services .service-container .service-item[data-scroll="in"] .service-type ul li:nth-child(4) {
           transition-delay: .8s; }
+        #services .service-container .service-item[data-scroll="in"] .service-type ul li:nth-child(5) {
+          transition-delay: .9s; }
+        #services .service-container .service-item[data-scroll="in"] .service-type ul li:nth-child(6) {
+          transition-delay: 1s; }
   @media (min-width: 768px) {
     #services {
       padding: 0 5vw; }
