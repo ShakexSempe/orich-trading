@@ -24,10 +24,21 @@
             }
         }
 
-        p {
-            line-height: 1.6;
-            // font-size: 1.1rem;
-            font-weight: 500;
+        .statement {
+            border: 1px solid $brand;
+            border-radius: 5px;
+            p {
+                padding: .5rem;
+                line-height: 1.6;
+                font-weight: 500;
+                font-size: 1.1rem;
+
+                &:nth-child(1) {
+                    background-color: $brand-dark;
+                    color: $text-second;
+                }
+
+            }
         }
     }
 

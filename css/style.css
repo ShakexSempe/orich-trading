@@ -799,9 +799,17 @@
         letter-spacing: 0;
         transition: 2s;
         opacity: 1; }
-    #projects .projects-article p {
-      line-height: 1.6;
-      font-weight: 500; }
+    #projects .projects-article .statement {
+      border: 1px solid #f8650c;
+      border-radius: 5px; }
+      #projects .projects-article .statement p {
+        padding: .5rem;
+        line-height: 1.6;
+        font-weight: 500;
+        font-size: 1.1rem; }
+        #projects .projects-article .statement p:nth-child(1) {
+          background-color: #f8650c;
+          color: #f4f4f4; }
   #projects .gallery {
     display: grid;
     grid-template-columns: 1fr;
