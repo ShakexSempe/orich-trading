@@ -163,7 +163,7 @@
             height: 100%;
             overflow-y: auto; }
             #header .navigation aside ul li {
-              margin: 0 0 2rem;
+              margin: 0 1rem 2rem;
               list-style: none;
               border: 1px solid #ffa500;
               border-radius: 5px;
@@ -176,6 +176,7 @@
               opacity: 0; }
               #header .navigation aside ul li.aside-dropdown {
                 margin: 0 0 2rem;
+                margin: 0 1rem 2rem;
                 padding: 0 1rem 0 0;
                 position: relative;
                 display: flex;
