@@ -20,6 +20,97 @@
                 opacity: 1;
             }
         }
+
+        &.promise {
+            background: url(../img/logo.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 1rem .5rem;
+            border-radius: 5px;
+            isolation: isolate;
+            position: relative;
+            z-index: 1;
+            @media (min-width: 768px) {
+                background-position: right;
+
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+                background: linear-gradient(30deg, $brand, hsla(0, 0%, 0%, 0.880) );
+                background: linear-gradient(30deg, hsla(0, 0%, 0%, .880), $brand );
+                z-index: -2;
+                box-shadow: inset 2px 2px 2px #fffa,
+                            inset -2px -2px 2px #000a,
+                                    3px 5px 3px rgba(0, 0, 0, .250);
+            }
+
+            h3 {
+                color: $text-second;
+                text-transform: capitalize;
+                z-index: 4;
+                font-family: $font-header;
+                font-size: 1.5rem;
+            }
+            h4 {
+                font-family: $font-header;
+                font-size: 1.15rem;
+                width: fit-content;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    bottom: 0;
+                    left: 0;
+                    width: 90%;
+                    height: .15rem;
+                    background: #f4f4f4;
+                    border-radius: 5px;
+                    opacity: .5;
+                    transition: 1s;
+                }
+            }
+            
+            p {
+                transition: 2s;
+            }
+            ul {
+                li {
+                    color: #fff;
+                    margin-bottom: 2rem;
+
+                    &[data-scroll] {
+                        transform: scale(1);
+                        opacity: 1;
+                        h4 {
+                            &::after {
+                                width: 0;
+                            }
+                        }
+                        p {
+                            opacity: 0;
+                        }
+                    }
+                    &[data-scroll="in"] {
+                        h4 {
+                            &::after {
+                                width: 90%;
+                            }
+                        }
+                        p {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
     }
     .service-container {
         // border: 1px solid red;

@@ -657,6 +657,68 @@
       #services .section-description h3[data-scroll="in"] {
         letter-spacing: normal;
         opacity: 1; }
+    #services .section-description.promise {
+      background: url(../img/logo.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 1rem .5rem;
+      border-radius: 5px;
+      isolation: isolate;
+      position: relative;
+      z-index: 1; }
+      @media (min-width: 768px) {
+        #services .section-description.promise {
+          background-position: right; } }
+      #services .section-description.promise::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        background: linear-gradient(30deg, #f8650c, rgba(0, 0, 0, 0.88));
+        background: linear-gradient(30deg, rgba(0, 0, 0, 0.88), #f8650c);
+        z-index: -2;
+        box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 3px 5px 3px rgba(0, 0, 0, 0.25); }
+      #services .section-description.promise h3 {
+        color: #f4f4f4;
+        text-transform: capitalize;
+        z-index: 4;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1.5rem; }
+      #services .section-description.promise h4 {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1.15rem;
+        width: fit-content;
+        position: relative; }
+        #services .section-description.promise h4::after {
+          position: absolute;
+          content: '';
+          bottom: 0;
+          left: 0;
+          width: 90%;
+          height: .15rem;
+          background: #f4f4f4;
+          border-radius: 5px;
+          opacity: .5;
+          transition: 1s; }
+      #services .section-description.promise p {
+        transition: 2s; }
+      #services .section-description.promise ul li {
+        color: #fff;
+        margin-bottom: 2rem; }
+        #services .section-description.promise ul li[data-scroll] {
+          transform: scale(1);
+          opacity: 1; }
+          #services .section-description.promise ul li[data-scroll] h4::after {
+            width: 0; }
+          #services .section-description.promise ul li[data-scroll] p {
+            opacity: 0; }
+        #services .section-description.promise ul li[data-scroll="in"] h4::after {
+          width: 90%; }
+        #services .section-description.promise ul li[data-scroll="in"] p {
+          opacity: 1; }
   #services .service-container {
     margin: 1rem auto;
     background: #f4f4f4;
