@@ -152,7 +152,7 @@
           padding: 0;
           transition: .5s;
           z-index: -1;
-          overflow: hidden; }
+          overflow-y: auto; }
           #header .navigation aside ul {
             border-radius: 3px;
             position: absolute;
@@ -200,7 +200,6 @@
                   #header .navigation aside ul li.aside-dropdown button i {
                     position: relative; }
                 #header .navigation aside ul li.aside-dropdown .aside-dropdown-content {
-                  position: absolute;
                   position: relative;
                   top: 0;
                   width: 100%;
@@ -211,12 +210,19 @@
                   flex-direction: column;
                   transition: .5s; }
                   #header .navigation aside ul li.aside-dropdown .aside-dropdown-content a {
+                    text-transform: capitalize;
                     margin-left: auto; }
                     #header .navigation aside ul li.aside-dropdown .aside-dropdown-content a:hover {
                       color: #f4f4f4;
                       transition: .2s; }
+                  #header .navigation aside ul li.aside-dropdown .aside-dropdown-content.services-dropdown a {
+                    width: 100%;
+                    text-align: right;
+                    text-transform: capitalize; }
                 #header .navigation aside ul li.aside-dropdown:hover .aside-dropdown-content {
                   height: 25vh; }
+                #header .navigation aside ul li.aside-dropdown:hover .services-dropdown {
+                  height: 50vh; }
               #header .navigation aside ul li a {
                 color: #eee;
                 text-decoration: none;
@@ -656,13 +662,24 @@
     background: #f4f4f4;
     padding-bottom: 5vh;
     border-radius: 5px; }
+    #services .service-container .container-title {
+      text-align: center;
+      padding: 1rem 0;
+      font-family: "Ubuntu", sans-serif;
+      color: #f4f4f4;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      letter-spacing: .2rem;
+      background: #f8650c;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px; }
     #services .service-container .service-item {
       background-color: #f4f4f4;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 5vh 0;
-      margin: 5vh auto;
+      padding: 0;
+      margin: 1rem auto;
       border-radius: 5px;
       width: 100%;
       overflow: hidden; }
@@ -792,8 +809,18 @@
             width: 50%;
             text-align: left; } }
 
+#services-page header .services-dropdown {
+  background-color: pink; }
+
 #services-page .main {
   margin-top: 0; }
+
+#services-page .section-description p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem; }
+  #services-page .section-description p[data-scroll] {
+    transition: 1.5s;
+    transform: scale(1); }
 
 #projects {
   padding: 5vh 1rem; }

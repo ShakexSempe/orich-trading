@@ -95,7 +95,7 @@
                 padding: 0 ;
                 transition: .5s;
                 z-index: -1;
-                overflow: hidden;
+                overflow-y: auto;
 
 
                 ul {
@@ -159,7 +159,6 @@
 
 
                             .aside-dropdown-content {
-                                position: absolute;
                                 position: relative;
                                 top: 0;
                                 // left: 3.75rem;
@@ -171,11 +170,20 @@
                                 flex-direction: column;
                                 transition: .5s;
                                 a {
-                                margin-left: auto;
+                                    text-transform: capitalize;
+                                    margin-left: auto;
                                 // width: 50%;
                                     &:hover {
                                         color: $text-second;
                                         transition: .2s;
+                                    }
+                                }
+                                // SERVICE PAGE ASIDE MENU ITEMS
+                                &.services-dropdown {
+                                    a {
+                                        width: 100%;
+                                        text-align: right;
+                                        text-transform: capitalize;
                                     }
                                 }
                             }
@@ -184,6 +192,10 @@
                                 .aside-dropdown-content {
                                     // display: block;
                                     height: 25vh;
+                                }
+                                // SERVICE PAGE DROPDOWN HOVER STATE
+                                .services-dropdown {
+                                    height: 50vh;
                                 }
                             }
                         }
