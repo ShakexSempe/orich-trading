@@ -210,7 +210,6 @@
                   flex-direction: column;
                   transition: .5s; }
                   #header .navigation aside ul li.aside-dropdown .aside-dropdown-content a {
-                    text-transform: capitalize;
                     margin-left: auto; }
                     #header .navigation aside ul li.aside-dropdown .aside-dropdown-content a:hover {
                       color: #f4f4f4;
