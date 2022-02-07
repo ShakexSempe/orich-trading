@@ -17,13 +17,16 @@
         letter-spacing: 1.3rem;
         font-family: $font-gruppo;
         color: $text-second;
+        // color: #ddd;
         font-size: 3rem;
-        padding: .5rem;
+        padding: .5rem 1rem;
         border-radius: 5px;
         width: 100%;
         width: fit-content;
         cursor: pointer;
         transition: .5s;
+        box-shadow: inset 2px 2px 2px #fffa,
+                    inset -2px -2px 2px rgba(0, 0, 0, .300);
         // animation: title 2s infinite;
         span {
             display: block;

@@ -346,12 +346,13 @@
     font-family: "Gruppo", cursive;
     color: #f4f4f4;
     font-size: 3rem;
-    padding: .5rem;
+    padding: .5rem 1rem;
     border-radius: 5px;
     width: 100%;
     width: fit-content;
     cursor: pointer;
-    transition: .5s; }
+    transition: .5s;
+    box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px rgba(0, 0, 0, 0.3); }
     #hero .page-title span {
       display: block;
       font-family: "Ubuntu", sans-serif;
@@ -1260,7 +1261,7 @@
       text-decoration: none; }
     @media (min-width: 768px) {
       #container #top-btn {
-        right: 5vw;
+        right: 2vw;
         bottom: 5vh;
         height: 2.5rem;
         width: 2.5rem; }
