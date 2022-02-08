@@ -16,14 +16,10 @@
         color: #ddd;
         text-transform: uppercase;
         padding: .5rem 1rem;
-        border-radius: 5px;
-        width: auto;
-        margin: 1rem 10vw;
+        // border-radius: 5px;
+        width: 100%;
         cursor: pointer;
         transition: .5s;
-        box-shadow: inset 2px 2px 2px #fffa,
-                    inset -2px -2px 2px rgba(0, 0, 0, .300);
-        // animation: title 2s infinite;
         h1 {
             font-size: 3rem;
             letter-spacing: 1.3rem;
