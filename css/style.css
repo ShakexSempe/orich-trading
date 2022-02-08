@@ -360,7 +360,7 @@
       transition: .5s; }
     #hero .page-title p {
       display: block;
-      font-size: 1rem;
+      font-size: .85rem;
       font-family: "Red Hat Display", sans-serif;
       letter-spacing: .3rem;
       font-weight: 200;
