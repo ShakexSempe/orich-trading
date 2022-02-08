@@ -61,7 +61,6 @@
             h4 {
                 font-family: $font-header;
                 font-size: 1.15rem;
-                width: fit-content;
                 position: relative;
 
                 &::after {
@@ -101,7 +100,7 @@
                     &[data-scroll="in"] {
                         h4 {
                             &::after {
-                                width: 90%;
+                                width: 15%;
                             }
                         }
                         p {

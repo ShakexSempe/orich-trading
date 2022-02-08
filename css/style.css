@@ -530,7 +530,8 @@
         padding: .5rem .5rem;
         border-radius: 5px;
         margin: 0 1rem;
-        overflow: hidden; }
+        overflow: hidden;
+        box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 5px 5px 5px rgba(0, 0, 0, 0.2); }
         .container#about-page .main .vision-mission .vision h3 {
           font-size: 2.5rem;
           margin-bottom: 1rem;
@@ -690,7 +691,6 @@
       #services .section-description.promise h4 {
         font-family: "Ubuntu", sans-serif;
         font-size: 1.15rem;
-        width: fit-content;
         position: relative; }
         #services .section-description.promise h4::after {
           position: absolute;
@@ -716,7 +716,7 @@
           #services .section-description.promise ul li[data-scroll] p {
             opacity: 0; }
         #services .section-description.promise ul li[data-scroll="in"] h4::after {
-          width: 90%; }
+          width: 15%; }
         #services .section-description.promise ul li[data-scroll="in"] p {
           opacity: 1; }
   #services .service-container {
