@@ -10,46 +10,40 @@
         background: $brand-overlay-dark;
         background: $brand;
     }
-
+    
     .page-title {
         text-align: center;
+        color: #ddd;
         text-transform: uppercase;
-        letter-spacing: 1.3rem;
-        font-family: $font-gruppo;
-        color: $text-second;
-        // color: #ddd;
-        font-size: 3rem;
         padding: .5rem 1rem;
         border-radius: 5px;
-        width: 100%;
-        width: fit-content;
+        width: auto;
+        margin: 1rem 10vw;
         cursor: pointer;
         transition: .5s;
         box-shadow: inset 2px 2px 2px #fffa,
                     inset -2px -2px 2px rgba(0, 0, 0, .300);
         // animation: title 2s infinite;
-        span {
+        h1 {
+            font-size: 3rem;
+            letter-spacing: 1.3rem;
+            font-family: $font-gruppo;
+            transition: .5s;
+        }
+        p {
             display: block;
-            font-family: $font-header;
-            font-size: .8rem;
+            font-size: 1rem;
             font-family: $font-content;
             letter-spacing: .3rem;
             font-weight: 200;
+            transition: .5s;
         }
 
         &:hover {  
-            letter-spacing: 1rem; 
             transition: .5s;
-            animation: none;
             background: $brand;
-
-            span {
-                letter-spacing: .3rem;
-            }
-        }
-        @keyframes title {
-            50%{
-                transform: scale(.96);
+            h1 {
+                letter-spacing: 1rem; 
             }
         }
     }
