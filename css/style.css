@@ -779,9 +779,7 @@
         letter-spacing: normal;
         opacity: 1; }
     #services .section-description.promise {
-      background: url(../img/logo.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
+      background: #f8650c;
       padding: 1rem .5rem;
       border-radius: 5px;
       isolation: isolate;
@@ -790,6 +788,9 @@
       margin: 10vh 0; }
       @media (min-width: 768px) {
         #services .section-description.promise {
+          background: url(../img/logo.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
           background-position: right; } }
       #services .section-description.promise::after {
         position: absolute;

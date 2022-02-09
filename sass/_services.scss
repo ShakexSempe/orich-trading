@@ -22,9 +22,7 @@
         }
 
         &.promise {
-            background: url(../img/logo.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
+            background: $brand;
             padding: 1rem .5rem;
             border-radius: 5px;
             isolation: isolate;
@@ -32,6 +30,9 @@
             z-index: 1;
             margin: 10vh 0;
             @media (min-width: 768px) {
+                background: url(../img/logo.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
                 background-position: right;
 
             }
