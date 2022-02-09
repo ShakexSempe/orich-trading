@@ -825,7 +825,8 @@
           opacity: .5;
           transition: 1.5s; }
       #services .section-description.promise p {
-        transition: 2s; }
+        transition: 2s;
+        transition-delay: .5s; }
       #services .section-description.promise ul li {
         color: #fff;
         margin-bottom: 5vh; }
