@@ -36,6 +36,7 @@
         }
 
         &:hover {  
+            color: $text-second;
             transition: .5s;
             background: $brand;
             h1 {
