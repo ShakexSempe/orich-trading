@@ -475,7 +475,7 @@
         overflow: hidden;
         box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 5px 5px 5px rgba(0, 0, 0, 0.2); }
         .container #about .vision-mission .vision h3 {
-          font-size: 2.5rem;
+          font-size: 2rem;
           margin-bottom: 1rem;
           font-family: "Ubuntu", sans-serif;
           position: relative;
@@ -487,7 +487,7 @@
             left: 50%;
             transform: translateX(-50%);
             width: 0;
-            height: .2rem;
+            height: .15rem;
             border-radius: 5px;
             background: #f4f4f4;
             transition: 1.5s; }
@@ -508,7 +508,6 @@
             .container #about .vision-mission .vision ul li[data-scroll="in"] {
               transform: scale(1) translateX(0); }
       .container #about .vision-mission .mission {
-        background: #f4f4f4;
         padding: 5vh 1rem;
         margin: 5vh 0 0; }
         .container #about .vision-mission .mission h4 {
@@ -529,44 +528,49 @@
           border-radius: 5px;
           width: 100%;
           height: 10vh;
+          height: 50vh;
+          height: auto;
           overflow: hidden;
           margin-bottom: 1rem;
-          transition: 1s; }
-          .container #about .vision-mission .mission .statement .mission-content p {
-            padding: .5rem; }
-            @media (min-width: 768px) {
-              .container #about .vision-mission .mission .statement .mission-content p {
+          transition: 1s;
+          display: flex;
+          flex-direction: column-reverse; }
+          @media (min-width: 768px) {
+            .container #about .vision-mission .mission .statement {
+              flex-direction: row; }
+              .container #about .vision-mission .mission .statement p {
                 font-size: 1.15rem; } }
-            .container #about .vision-mission .mission .statement .mission-content p:first-child {
-              background: #f8650c;
-              color: #f4f4f4; }
-            .container #about .vision-mission .mission .statement .mission-content p span {
-              margin: 0 0rem;
-              color: #fffa; }
-          .container #about .vision-mission .mission .statement:hover {
-            height: 55vh; }
+          .container #about .vision-mission .mission .statement .mission-logo {
+            overflow: hidden; }
+            .container #about .vision-mission .mission .statement .mission-logo figure {
+              width: 50%;
+              height: 50%;
+              overflow: hidden;
+              margin: 1rem auto; }
+              @media (min-width: 768px) {
+                .container #about .vision-mission .mission .statement .mission-logo figure {
+                  width: 100%;
+                  height: 100%; } }
+              .container #about .vision-mission .mission .statement .mission-logo figure img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain; }
+          .container #about .vision-mission .mission .statement .mission-content {
+            flex-basis: 50%; }
             @media (min-width: 768px) {
-              .container #about .vision-mission .mission .statement:hover {
-                height: 40vh; } }
-        .container #about .vision-mission .mission .ms-item {
-          transition: .3s; }
-          .container #about .vision-mission .mission .ms-item:hover {
-            background: #fff; }
-            .container #about .vision-mission .mission .ms-item:hover p {
-              transition: .1s; }
-          .container #about .vision-mission .mission .ms-item[data-scroll] {
-            transform: scale(1);
-            opacity: 1; }
-            .container #about .vision-mission .mission .ms-item[data-scroll] h4 {
-              color: #000; }
-            .container #about .vision-mission .mission .ms-item[data-scroll] p {
-              opacity: 0; }
-          .container #about .vision-mission .mission .ms-item[data-scroll="in"] h4 {
-            color: #f8650c;
-            transition: 1s; }
-          .container #about .vision-mission .mission .ms-item[data-scroll="in"] p {
-            transition: 1.5s;
-            opacity: 1; }
+              .container #about .vision-mission .mission .statement .mission-content {
+                flex-basis: 70%; } }
+            .container #about .vision-mission .mission .statement .mission-content p {
+              padding: .5rem; }
+              .container #about .vision-mission .mission .statement .mission-content p:first-child {
+                background: #f8650c;
+                color: #f4f4f4; }
+              .container #about .vision-mission .mission .statement .mission-content p span {
+                margin: 0 0rem;
+                color: #fffa; }
+            .container #about .vision-mission .mission .statement .mission-content[data-scroll] {
+              transition: 1.5s;
+              transform: scale(1); }
       @media (min-width: 768px) {
         .container #about .vision-mission {
           padding: 5vh 0 0;

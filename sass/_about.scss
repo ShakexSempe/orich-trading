@@ -50,7 +50,7 @@
                                     5px 5px 5px rgba(0, 0, 0, .200);
 
                 h3 {
-                    font-size: 2.5rem;
+                    font-size: 2rem;
                     margin-bottom: 1rem;
                     font-family: $font-ubuntu;
                     position: relative;
@@ -63,7 +63,7 @@
                         left: 50%;
                         transform: translateX(-50%);
                         width: 0;
-                        height: .2rem;
+                        height: .15rem;
                         border-radius: 5px;
                         background: #f4f4f4;
                         transition: 1.5s;
@@ -101,7 +101,7 @@
                 }
             }
             .mission {
-                background: #f4f4f4;
+                // background: #f4f4f4;
                 padding: 5vh 1rem;
                 margin: 5vh 0 0;
 
@@ -127,15 +127,49 @@
                     border-radius: 5px;
                     width: 100%;
                     height: 10vh;
+                    height: 50vh;
+                    height: auto;
                     overflow: hidden;
                     margin-bottom: 1rem;
                     transition: 1s;
-
-                    .mission-content {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    @media (min-width: 768px) {
+                        flex-direction: row;
                         p {
-                            @media (min-width: 768px) {
-                                font-size: 1.15rem;
-                            }
+                            font-size: 1.15rem;
+                        }
+                    }
+
+                    .mission-logo {
+                        overflow: hidden;
+                    
+                    figure {
+                        width: 50%;
+                        height: 50%;
+                        overflow: hidden;
+                        margin: 1rem auto;
+                        @media (min-width: 768px) {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+                    
+                    .mission-content {
+                        flex-basis: 50%;
+                        @media (min-width: 768px) {
+                            flex-basis: 70%;
+                            
+                        }
+                        p {
+                            
                             padding: .5rem;
                             &:first-child {
                                 background: $brand;
@@ -146,49 +180,16 @@
                                 color: #fffa;
                             }
                         }
-                    }
 
-                    &:hover {
-                        height: 55vh;
-                        @media (min-width: 768px){
-                            height: 40vh;
-                        }
-                    }
-                }
-                .ms-item {
-                    transition: .3s;
-
-                    &:hover {
-                        background: #fff;
-                        p {
-                            transition: .1s;
-                        }
-                    }
-
-                    &[data-scroll] {
-                        transform: scale(1);
-                        opacity: 1;
-
-                        h4 {
-                            color: #000;
-                        }
-                        p {
-                            opacity: 0;
-                        }
-                    }
-
-                    &[data-scroll="in"]{
-                        h4 {
-                            color: $brand;
-                            transition: 1s;
-                        }
-                        p {
+                        // DATA-SCROLL
+                        &[data-scroll] {
                             transition: 1.5s;
-                            opacity: 1;
+                            transform: scale(1);
                         }
                     }
+
+                    
                 }
-                // MS CLASS FOR HOVER STATE
             }
 
             @media (min-width: 768px) {
