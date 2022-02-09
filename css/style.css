@@ -1035,23 +1035,27 @@
         #projects .projects-article .statement p:nth-child(1) {
           background-color: #f8650c;
           color: #f4f4f4; }
-  #projects .gallery {
+  #projects .gallery .gallery-title {
+    text-transform: uppercase;
+    color: #f8650c;
+    font-size: 1.5rem;
+    font-family: "Ubuntu", sans-serif; }
+  #projects .gallery .gallery-grid {
     display: grid;
-    grid-template-columns: 1fr;
     gap: .5rem;
-    margin: 5vh 0; }
-    #projects .gallery .project-item figure {
+    margin: 5vh 0;
+    grid-template-columns: 1fr; }
+    #projects .gallery .gallery-grid .project-item figure {
       width: 100%;
       overflow: hidden;
       border-radius: 5px;
       position: relative; }
-      #projects .gallery .project-item figure img {
+      #projects .gallery .gallery-grid .project-item figure img {
         width: 100%;
-        height: auto;
         border-radius: 5px;
         cursor: pointer;
         transition: .5s; }
-      #projects .gallery .project-item figure::after {
+      #projects .gallery .gallery-grid .project-item figure::after {
         position: absolute;
         content: '';
         top: 0;
@@ -1061,24 +1065,24 @@
         box-shadow: inset 5px 5px 3px #fffa, inset -5px -5px 3px #000a;
         opacity: .4;
         transition: .5s; }
-      #projects .gallery .project-item figure:hover img {
+      #projects .gallery .gallery-grid .project-item figure:hover img {
         transform: scale(1.15); }
-      #projects .gallery .project-item figure:hover::after {
+      #projects .gallery .gallery-grid .project-item figure:hover::after {
         opacity: .8; }
   @media (min-width: 768px) {
     #projects {
       padding: 5vh 5vw; }
-      #projects .gallery {
+      #projects .gallery .gallery-grid {
         grid-template-columns: 1fr 1fr 1fr; }
-        #projects .gallery .project-item figure {
+      #projects .gallery .project-item figure {
+        width: 100%;
+        height: 100%;
+        overflow: hidden; }
+        #projects .gallery .project-item figure img {
           width: 100%;
           height: 100%;
-          overflow: hidden; }
-          #projects .gallery .project-item figure img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center; } }
+          object-fit: cover;
+          object-position: center; } }
 
 #references {
   padding: 10vh 1rem; }
