@@ -34,7 +34,196 @@
                 }
             }
         }
+        .vision-mission {
+            // border: 1px solid $brand;
+            padding: 1rem 0;
+            .vision {
+                background: $brand;
+                background: $brand-overlay-dark;
+                color: $text-second;
+                padding: .5rem .5rem;
+                border-radius: 5px;
+                margin: 0 1rem;
+                overflow: hidden;
+                box-shadow: inset 2px 2px 2px #fffa,
+                            inset -2px -2px 2px #000a,
+                                    5px 5px 5px rgba(0, 0, 0, .200);
 
+                h3 {
+                    font-size: 2.5rem;
+                    margin-bottom: 1rem;
+                    font-family: $font-ubuntu;
+                    position: relative;
+                    width: fit-content;
+
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        bottom: -.1rem;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 0;
+                        height: .2rem;
+                        border-radius: 5px;
+                        background: #f4f4f4;
+                        transition: 1.5s;
+                    }
+
+                    // DATA-SCROLL
+                    &[data-scroll] {
+                        transform: scale(1);
+                        opacity: 1;
+                    }
+                    &[data-scroll="in"] {
+                        &::after {
+                            width: 70%;
+                        }
+                    }
+                }
+
+                ul {
+                    padding: .5rem 0 0 1rem;
+                    li {
+                        padding-bottom: 1rem;
+                        &::marker {
+                            color: $marker;
+                        }
+
+                        // DATA SCROLL
+                        &[data-scroll] {
+                            transform: scale(1) translateX(3rem);
+                            transition: 2s;
+                        }
+                        &[data-scroll="in"] {
+                            transform: scale(1) translateX(0);
+                        }
+                    }
+                }
+            }
+            .mission {
+                background: #f4f4f4;
+                padding: 5vh 1rem;
+                margin: 5vh 0 0;
+
+                h4 {
+                    color:$brand;
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                    font-family: $font-header;
+                    text-transform: uppercase;
+                    transition: .3s;
+                    text-align: center;
+                }
+
+                p {
+                    margin-bottom: .5rem;
+                    line-height: 1.6;
+                    transition: .3s;
+                    font-weight: 500;
+                }
+
+                .statement {
+                    border: 1px solid $brand;
+                    border-radius: 5px;
+                    width: 100%;
+                    height: 10vh;
+                    overflow: hidden;
+                    margin-bottom: 1rem;
+                    transition: 1s;
+
+                    .mission-content {
+                        p {
+                            @media (min-width: 768px) {
+                                font-size: 1.15rem;
+                            }
+                            padding: .5rem;
+                            &:first-child {
+                                background: $brand;
+                                color: $text-second;
+                            }
+                            span {
+                                margin: 0 1rem;
+                                color: #fffa;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        height: 55vh;
+                        @media (min-width: 768px){
+                            height: 40vh;
+                        }
+                    }
+                }
+                .ms-item {
+                    transition: .3s;
+
+                    &:hover {
+                        background: #fff;
+                        p {
+                            transition: .1s;
+                        }
+                    }
+
+                    &[data-scroll] {
+                        transform: scale(1);
+                        opacity: 1;
+
+                        h4 {
+                            color: #000;
+                        }
+                        p {
+                            opacity: 0;
+                        }
+                    }
+
+                    &[data-scroll="in"]{
+                        h4 {
+                            color: $brand;
+                            transition: 1s;
+                        }
+                        p {
+                            transition: 1.5s;
+                            opacity: 1;
+                        }
+                    }
+                }
+                // MS CLASS FOR HOVER STATE
+            }
+
+            @media (min-width: 768px) {
+                padding: 5vh 0 0;
+                margin-top: 10vh;
+                .vision {
+                    padding: 5vh .5rem;
+                    margin: 0 5vw;
+
+                    h3 {
+                        font-size: 2.5rem;
+                    }
+
+                    ul {
+                        
+                        li {
+                            padding-bottom: 1rem;
+                            &::marker {
+                                color: $marker;
+                            }
+                        }
+                    }
+                }
+                .mission {
+                    padding: 10vh 5vw;
+
+                    .statement {
+                        border: 1px solid $brand;
+                        border-radius: 5px;
+                        // padding: .5rem;
+                        width: 100%;
+                    }
+                }
+            }
+        }
         @media (max-width: 768px) {
             .about-article {
                 font-size: 1rem;

@@ -40,5 +40,5 @@ $box-shadow-sm: inset 2px 2px 2px #fffa,
                 3px 3px 3px rgba(0, 0, 0, 0.230);
 
 $box-shadow-sm-hover: inset 2px 2px 2px #000a,
-                    inset -2px -2px 2px #fffa,
+                    inset -2px -2px 2px rgba(255, 255, 255, 0.152),
                     1px 3px 2px rgba(0,0,0, .300);
