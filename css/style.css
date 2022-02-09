@@ -779,7 +779,10 @@
         letter-spacing: normal;
         opacity: 1; }
     #services .section-description.promise {
-      background: #f8650c;
+      background: url(../img/logo.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
       padding: 1rem .5rem;
       border-radius: 5px;
       isolation: isolate;
