@@ -541,7 +541,7 @@
               background: #f8650c;
               color: #f4f4f4; }
             .container #about .vision-mission .mission .statement .mission-content p span {
-              margin: 0 1rem;
+              margin: 0 0rem;
               color: #fffa; }
           .container #about .vision-mission .mission .statement:hover {
             height: 55vh; }
