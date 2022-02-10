@@ -142,8 +142,10 @@
                     flex-direction: column-reverse;
                     @media (min-width: 768px) {
                         flex-direction: row;
+                        flex-direction: column;
                         p {
                             font-size: 1.15rem;
+                            text-align: center;
                         }
                     }
 
@@ -156,8 +158,8 @@
                         overflow: hidden;
                         margin: 1rem auto;
                         @media (min-width: 768px) {
-                            width: 100%;
-                            height: 100%;
+                            width: 20%;
+                            height: 20%;
                         }
 
                         img {
@@ -169,21 +171,21 @@
                 }
                     
                     .mission-content {
+                        background: $brand;
                         flex-basis: 50%;
+                        text-align: center;
                         @media (min-width: 768px) {
                             flex-basis: 70%;
                             border-right: 1px solid $brand;
+                            p {
+                                font-size: 1.2rem;
+                            }
                         }
                         p {
-                            
-                            padding: .5rem;
-                            &:first-child {
-                                background: $brand;
-                                color: $text-second;
-                            }
+                            padding: .2rem;
+                            color: $text-second;
                             span {
                                 margin: 0 0rem;
-                                color: #fffa;
                             }
                         }
 

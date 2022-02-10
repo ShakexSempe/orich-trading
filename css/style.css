@@ -543,9 +543,11 @@
           flex-direction: column-reverse; }
           @media (min-width: 768px) {
             .container #about .vision-mission .mission .statement {
-              flex-direction: row; }
+              flex-direction: row;
+              flex-direction: column; }
               .container #about .vision-mission .mission .statement p {
-                font-size: 1.15rem; } }
+                font-size: 1.15rem;
+                text-align: center; } }
           .container #about .vision-mission .mission .statement .mission-logo {
             overflow: hidden; }
             .container #about .vision-mission .mission .statement .mission-logo figure {
@@ -555,26 +557,27 @@
               margin: 1rem auto; }
               @media (min-width: 768px) {
                 .container #about .vision-mission .mission .statement .mission-logo figure {
-                  width: 100%;
-                  height: 100%; } }
+                  width: 20%;
+                  height: 20%; } }
               .container #about .vision-mission .mission .statement .mission-logo figure img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain; }
           .container #about .vision-mission .mission .statement .mission-content {
-            flex-basis: 50%; }
+            background: #f8650c;
+            flex-basis: 50%;
+            text-align: center; }
             @media (min-width: 768px) {
               .container #about .vision-mission .mission .statement .mission-content {
                 flex-basis: 70%;
-                border-right: 1px solid #f8650c; } }
+                border-right: 1px solid #f8650c; }
+                .container #about .vision-mission .mission .statement .mission-content p {
+                  font-size: 1.2rem; } }
             .container #about .vision-mission .mission .statement .mission-content p {
-              padding: .5rem; }
-              .container #about .vision-mission .mission .statement .mission-content p:first-child {
-                background: #f8650c;
-                color: #f4f4f4; }
+              padding: .2rem;
+              color: #f4f4f4; }
               .container #about .vision-mission .mission .statement .mission-content p span {
-                margin: 0 0rem;
-                color: #fffa; }
+                margin: 0 0rem; }
             .container #about .vision-mission .mission .statement .mission-content[data-scroll] {
               transition: 1.5s;
               transform: scale(1); }
