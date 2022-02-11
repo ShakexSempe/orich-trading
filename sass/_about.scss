@@ -242,6 +242,10 @@
         @media (min-width: 768px) {
             .about-article {
                 margin: 1rem 5vw;
+
+                p {
+                    font-size: 1.2rem;
+                }
             }
         }
     }
