@@ -382,7 +382,8 @@
   #hero .slogan {
     border-radius: 5px;
     border: none;
-    outline: none; }
+    outline: none;
+    cursor: pointer; }
     #hero .slogan p {
       text-transform: capitalize;
       padding: 1rem;

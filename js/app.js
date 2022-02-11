@@ -1,4 +1,5 @@
 const title = document.getElementById("title");
+const bgChanger = document.querySelectorAll('.bg-change');
 const hero = document.getElementById("hero");
 const toggle = document.querySelector(".toggle");
 const header = document.getElementById("header");
@@ -6,7 +7,7 @@ const main = document.querySelector(".main");
 const topBtn = document.getElementById("top-btn");
 const aside = document.querySelector("aside");
 const links = document.querySelectorAll('#aside ul li a');
-console.log(header);
+console.log(bgChanger);
 
 document.addEventListener("scroll", () => {
     const scroll_position = window.scrollY;
@@ -51,6 +52,9 @@ main.addEventListener("click", () => {
     main.classList.remove("active");
 });
 
-title.addEventListener('click', () => {
-    hero.classList.toggle("active");
+
+bgChanger.forEach(changer => {
+    changer.addEventListener("click", () => {
+        hero.classList.toggle("active");
+    })
 })
