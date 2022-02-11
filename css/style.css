@@ -1062,7 +1062,7 @@
     font-family: "Ubuntu", sans-serif; }
   #projects .gallery .gallery-grid {
     display: grid;
-    gap: .5rem;
+    gap: 1rem;
     margin: 5vh 0;
     grid-template-columns: 1fr; }
     #projects .gallery .gallery-grid .project-item figure {
@@ -1071,13 +1071,18 @@
       overflow: hidden;
       border-radius: 5px;
       position: relative;
-      cursor: pointer; }
+      cursor: pointer;
+      isolation: isolate;
+      z-index: 1; }
+      #projects .gallery .gallery-grid .project-item figure figcaption {
+        font-size: 1.2rem; }
       #projects .gallery .gallery-grid .project-item figure img {
         width: 100%;
         height: 100%;
         border-radius: 5px;
         cursor: pointer;
-        transition: .5s; }
+        transition: .5s;
+        position: relative; }
       #projects .gallery .gallery-grid .project-item figure::after {
         position: absolute;
         content: '';
@@ -1474,6 +1479,24 @@
         .container .main .parallax figure img {
           width: 100%;
           height: auto; }
+        .container .main .parallax figure::after {
+          position: absolute;
+          content: '';
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image: url(/img/orich-project.jpg);
+          background-size: contain;
+          background-size: 100%;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          animation: fadeImg 8s infinite; }
+
+@keyframes fadeImg {
+  50% {
+    opacity: 0; } }
       @media (min-width: 768px) {
         .container .main .parallax {
           height: 95vh;
