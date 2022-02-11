@@ -45,6 +45,7 @@
     .gallery {
         // border: 1px solid red;
         // min-height: 100vh;
+        margin: 5vh auto;
         .gallery-title {
             text-transform: uppercase;
             color: $brand;
@@ -54,22 +55,34 @@
         .gallery-grid {
             display: grid;
         gap: 1rem;
-            margin: 5vh 0;
+            margin: 0 0 5vh;
+            padding: 5vh 0;
+            // border: 1px solid red;
+            // background: $brand;
+            border-radius: 5px;
+            height: auto;
             grid-template-columns: 1fr;
+            overflow: hidden;
         .project-item {
+            // background: #fff000;
+            // padding: 1rem 0;
+            padding-bottom: 5vh;
+            height: auto;
+            // overflow: hidden;
+            figcaption {
+                padding: .5rem;
+                font-size: 1.2rem;
+            }
             figure {
                 width: 100%;
-                height: 100%;
+                height: 50vh;
                 overflow: hidden;
                 border-radius: 5px;
                 position: relative;
                 cursor: pointer;
                 isolation: isolate;
                 z-index: 1;
-
-                figcaption {
-                    font-size: 1.2rem;
-                }
+                margin-top: .5rem;
                 img {
                     width: 100%;
                     height: 100%;

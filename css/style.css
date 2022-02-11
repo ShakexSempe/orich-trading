@@ -1055,48 +1055,59 @@
         #projects .projects-article .statement p:nth-child(1) {
           background-color: #f8650c;
           color: #f4f4f4; }
-  #projects .gallery .gallery-title {
-    text-transform: uppercase;
-    color: #f8650c;
-    font-size: 1.3rem;
-    font-family: "Ubuntu", sans-serif; }
-  #projects .gallery .gallery-grid {
-    display: grid;
-    gap: 1rem;
-    margin: 5vh 0;
-    grid-template-columns: 1fr; }
-    #projects .gallery .gallery-grid .project-item figure {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
+  #projects .gallery {
+    margin: 5vh auto; }
+    #projects .gallery .gallery-title {
+      text-transform: uppercase;
+      color: #f8650c;
+      font-size: 1.3rem;
+      font-family: "Ubuntu", sans-serif; }
+    #projects .gallery .gallery-grid {
+      display: grid;
+      gap: 1rem;
+      margin: 0 0 5vh;
+      padding: 5vh 0;
       border-radius: 5px;
-      position: relative;
-      cursor: pointer;
-      isolation: isolate;
-      z-index: 1; }
-      #projects .gallery .gallery-grid .project-item figure figcaption {
-        font-size: 1.2rem; }
-      #projects .gallery .gallery-grid .project-item figure img {
-        width: 100%;
-        height: 100%;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: .5s;
-        position: relative; }
-      #projects .gallery .gallery-grid .project-item figure::after {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        box-shadow: inset 5px 5px 3px #fffa, inset -5px -5px 3px #000a;
-        opacity: .4;
-        transition: .5s; }
-      #projects .gallery .gallery-grid .project-item figure:hover img {
-        transform: scale(1.15); }
-      #projects .gallery .gallery-grid .project-item figure:hover::after {
-        opacity: .8; }
+      height: auto;
+      grid-template-columns: 1fr;
+      overflow: hidden; }
+      #projects .gallery .gallery-grid .project-item {
+        padding-bottom: 5vh;
+        height: auto; }
+        #projects .gallery .gallery-grid .project-item figcaption {
+          padding: .5rem;
+          font-size: 1.2rem; }
+        #projects .gallery .gallery-grid .project-item figure {
+          width: 100%;
+          height: 50vh;
+          overflow: hidden;
+          border-radius: 5px;
+          position: relative;
+          cursor: pointer;
+          isolation: isolate;
+          z-index: 1;
+          margin-top: .5rem; }
+          #projects .gallery .gallery-grid .project-item figure img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: .5s;
+            position: relative; }
+          #projects .gallery .gallery-grid .project-item figure::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: inset 5px 5px 3px #fffa, inset -5px -5px 3px #000a;
+            opacity: .4;
+            transition: .5s; }
+          #projects .gallery .gallery-grid .project-item figure:hover img {
+            transform: scale(1.15); }
+          #projects .gallery .gallery-grid .project-item figure:hover::after {
+            opacity: .8; }
   @media (min-width: 768px) {
     #projects {
       padding: 5vh 5vw; }
