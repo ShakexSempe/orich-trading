@@ -160,6 +160,11 @@
                 //         display: none;
                 //     }
                 // }
+
+                // DATA-SCROLL
+                &[data-scroll] {
+                    transform: scale(1);
+                }
             }   
             
 
