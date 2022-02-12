@@ -343,19 +343,17 @@
   place-items: center;
   min-height: 100vh;
   background-color: #fff;
-  background-color: #2668c1;
   transition: 1.5s;
   background-image: url(../img/orich-project.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
-  background-size: 100%;
+  background-size: cover;
+  background-position: top;
   position: relative;
   isolation: isolate;
   z-index: 1; }
   @media (min-width: 768px) {
     #hero {
-      background-size: 38vw;
+      background-size: contain;
       background-position: left; }
       #hero::after {
         display: none; } }
