@@ -350,11 +350,22 @@
   background-position: top;
   position: relative;
   isolation: isolate;
-  z-index: 1; }
+  z-index: 10; }
+  @media (max-width: 768px) {
+    #hero::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: .7;
+      background-image: linear-gradient(30deg, #f8650c, #000a); } }
   @media (min-width: 768px) {
     #hero {
       background-size: contain;
-      background-position: left; }
+      background-position: center; }
       #hero::after {
         display: none; } }
   #hero.active {
@@ -380,12 +391,6 @@
       letter-spacing: .3rem;
       font-weight: 200;
       transition: .5s; }
-    #hero .page-title:hover {
-      color: #f4f4f4;
-      transition: .5s;
-      background: #f8650c; }
-      #hero .page-title:hover h1 {
-        letter-spacing: 1rem; }
   #hero figure {
     width: 100%;
     overflow: hidden;
