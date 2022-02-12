@@ -164,6 +164,7 @@
                 // DATA-SCROLL
                 &[data-scroll] {
                     transform: scale(1);
+                    transition: 2s ease;
                 }
             }   
             
