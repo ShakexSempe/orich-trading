@@ -134,13 +134,19 @@
             color: $text-second;
             line-height: 1.6;
             font-size: .9rem;
-
-            a {
-                color: $text-main;
-                text-decoration: none;
-            }
             &#date {
                 color: $text-second;
+            }
+        }
+
+        a {
+            color: $text-second;
+            opacity: .5;
+            text-decoration: none;
+            transition: .2s;
+
+            &:hover {
+                opacity: 1;
             }
         }
     }

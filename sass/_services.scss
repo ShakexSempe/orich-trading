@@ -1,5 +1,5 @@
 #services {
-    // background-color: #f4f4f4;
+    background-color: #f4f4f4;
     padding: 5vh 1rem;
     .section-description {
         // border: 1px solid red;
@@ -125,8 +125,8 @@
     .service-container {
         // border: 1px solid red;
         margin: 1rem auto;
-        background: #f4f4f4;
-        padding-bottom: 5vh;
+        background: #ddd;
+        // padding-bottom: 5vh;
         border-radius: 5px;
         .container-title {
             text-align: center;
@@ -142,13 +142,15 @@
         }
         .service-item {
             // border: 1px solid $brand;
-            background-color: #f4f4f4;
+            background-color: #eee;
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 0;
             margin: 1rem auto;
+            margin: 0 auto 1rem;
             border-radius: 5px;
+            border-radius: 0;
             width: 100%;
             overflow: hidden;
 
@@ -286,7 +288,7 @@
     }
 
     @media (min-width:768px) {
-        padding: 0 5vw;
+        padding: 0 5vw 5vh;
         .section-description {
             margin: 5vh 0;
         }

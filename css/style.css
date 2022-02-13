@@ -795,6 +795,7 @@
                 border: 1px solid #f8650c; } }
 
 #services {
+  background-color: #f4f4f4;
   padding: 5vh 1rem; }
   #services .section-description {
     margin: 5vh 0;
@@ -882,8 +883,7 @@
           opacity: 1; }
   #services .service-container {
     margin: 1rem auto;
-    background: #f4f4f4;
-    padding-bottom: 5vh;
+    background: #ddd;
     border-radius: 5px; }
     #services .service-container .container-title {
       text-align: center;
@@ -897,13 +897,15 @@
       border-top-right-radius: 5px;
       border-top-left-radius: 5px; }
     #services .service-container .service-item {
-      background-color: #f4f4f4;
+      background-color: #eee;
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 0;
       margin: 1rem auto;
+      margin: 0 auto 1rem;
       border-radius: 5px;
+      border-radius: 0;
       width: 100%;
       overflow: hidden; }
       #services .service-container .service-item .service-core {
@@ -991,7 +993,7 @@
           transition-delay: 1s; }
   @media (min-width: 768px) {
     #services {
-      padding: 0 5vw; }
+      padding: 0 5vw 5vh; }
       #services .section-description {
         margin: 5vh 0; }
       #services .service-container {
@@ -1387,11 +1389,15 @@
       color: #f4f4f4;
       line-height: 1.6;
       font-size: .9rem; }
-      #footer .footer-copyright p a {
-        color: #000;
-        text-decoration: none; }
       #footer .footer-copyright p#date {
         color: #f4f4f4; }
+    #footer .footer-copyright a {
+      color: #f4f4f4;
+      opacity: .5;
+      text-decoration: none;
+      transition: .2s; }
+      #footer .footer-copyright a:hover {
+        opacity: 1; }
   @media (min-width: 768px) {
     #footer h2 {
       text-align: center;
