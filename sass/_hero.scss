@@ -34,8 +34,9 @@
     // DESKTOP HERO
     @media (min-width: 768px) {
         background-size: contain;
-        // background-position: left;
-        background-position: center;
+        background-position: left;
+        background-attachment: fixed;
+        // background-position: center;
         &::after {
             display: none;
             // position: absolute;

@@ -365,7 +365,8 @@
   @media (min-width: 768px) {
     #hero {
       background-size: contain;
-      background-position: center; }
+      background-position: left;
+      background-attachment: fixed; }
       #hero::after {
         display: none; } }
   #hero.active {
@@ -1485,7 +1486,6 @@
           .container .section-title h2[data-scroll="in"]::after {
             width: 10vw; } }
   .container .main {
-    padding: 5vh 0;
     padding: 0vh 0 5vh;
     min-height: 100vh;
     position: relative; }
@@ -1536,6 +1536,7 @@
         .container .main .parallax {
           height: 95vh;
           margin: 5vh 5vw;
+          margin: 0vh 5vw;
           background-image: url(../img/orich-partners.jpg);
           background-repeat: no-repeat;
           background-position: center;
