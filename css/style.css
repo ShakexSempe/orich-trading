@@ -1111,7 +1111,7 @@
           font-size: 1.2rem; }
         #projects .gallery .gallery-grid .project-item figure {
           width: 100%;
-          height: 50vh;
+          height: 60vh;
           overflow: hidden;
           border-radius: 5px;
           position: relative;
@@ -1125,7 +1125,8 @@
             border-radius: 5px;
             cursor: pointer;
             transition: .5s;
-            position: relative; }
+            position: relative;
+            object-fit: cover; }
           #projects .gallery .gallery-grid .project-item figure::after {
             position: absolute;
             content: '';
@@ -1144,10 +1145,11 @@
     #projects {
       padding: 5vh 5vw; }
       #projects .gallery .gallery-grid {
-        grid-template-columns: 1fr 1fr 1fr; }
+        grid-template-columns: 1fr 1fr;
+        overflow: hidden; }
       #projects .gallery .project-item figure {
         width: 100%;
-        height: 100%;
+        height: 80vh;
         overflow: hidden; }
         #projects .gallery .project-item figure img {
           width: 100%;

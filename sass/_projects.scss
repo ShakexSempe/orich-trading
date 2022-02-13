@@ -54,7 +54,7 @@
         }
         .gallery-grid {
             display: grid;
-        gap: 1rem;
+            gap: 1rem;
             margin: 0 0 5vh;
             padding: 5vh 0;
             // border: 1px solid red;
@@ -63,19 +63,17 @@
             height: auto;
             grid-template-columns: 1fr;
             overflow: hidden;
-        .project-item {
-            // background: #fff000;
-            // padding: 1rem 0;
+
+            .project-item {
             padding-bottom: 5vh;
             height: auto;
-            // overflow: hidden;
             figcaption {
                 padding: .5rem;
                 font-size: 1.2rem;
             }
             figure {
                 width: 100%;
-                height: 50vh;
+                height: 60vh;
                 overflow: hidden;
                 border-radius: 5px;
                 position: relative;
@@ -90,22 +88,8 @@
                     cursor: pointer;
                     transition: .5s;
                     position: relative;
-                    // object-fit: contain;
+                    object-fit: cover;
                 }
-
-                // FIGURE OVERLAY
-                // &::before {
-                //     position: absolute;
-                //     content: "Orich Projects";
-                //     display: grid;
-                //     place-items: center;
-                //     top: 0;
-                //     left: 0;
-                //     width: 100%;
-                //     height: 100%;
-                //     background: red;
-                //     z-index: 1;
-                // }
                 &::after {
                     position: absolute;
                     content: '';
@@ -132,18 +116,18 @@
         }
     }
     }
-    
     @media (min-width: 768px) {
         padding: 5vh 5vw;
         .gallery {
             .gallery-grid{
-                grid-template-columns: 1fr 1fr 1fr;;
+                grid-template-columns: 1fr 1fr;
+                // height: 50%;
+                overflow: hidden;
             }
             .project-item {
-                // height: 50vh;
                 figure {
                     width: 100%;
-                    height: 100%;
+                    height: 80vh;
                     overflow: hidden;
     
                     img {
@@ -157,4 +141,6 @@
             }
         }
     }
+
+    
 }
