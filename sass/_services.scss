@@ -1,5 +1,5 @@
 #services {
-    background-color: #f4f4f4;
+    background-color: #fff;
     padding: 5vh 1rem;
     .section-description {
         // border: 1px solid red;
@@ -22,6 +22,7 @@
         }
         p {
             &[data-scroll] {
+                transition: 1.5s;
                 transform: scale(1);
             }
             @media (min-width: 768px) {
@@ -134,7 +135,7 @@
     .service-container {
         // border: 1px solid $brand;
         margin: 1rem auto;
-        background: #f4f4f4;
+        background: #fff;
         // padding-bottom: 5vh;
         border-radius: 5px;
         .container-title {
@@ -241,9 +242,8 @@
                         margin: .5rem 0;
                         padding: .5rem 0;
                         text-transform: capitalize;
-                        transform: translateX(4rem);
+                        
                         transition: 1.5s;
-                        opacity: 0;
                         cursor: pointer;
                         text-shadow: 1px 1px 0px #000a;
                         &::marker {
@@ -257,6 +257,11 @@
             &[data-scroll] {
                 transform: scale(1);
                 opacity: 1;
+
+                li {
+                    transform: translateX(4rem);
+                        opacity: 0;
+                }
             }
             &[data-scroll="in"] {
                 h3 {

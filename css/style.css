@@ -796,7 +796,7 @@
                 border: 1px solid #f8650c; } }
 
 #services {
-  background-color: #f4f4f4;
+  background-color: #fff;
   padding: 5vh 1rem; }
   #services .section-description {
     margin: 5vh 0;
@@ -813,6 +813,7 @@
         letter-spacing: normal;
         opacity: 1; }
     #services .section-description p[data-scroll] {
+      transition: 1.5s;
       transform: scale(1); }
     @media (min-width: 768px) {
       #services .section-description p {
@@ -890,7 +891,7 @@
           opacity: 1; }
   #services .service-container {
     margin: 1rem auto;
-    background: #f4f4f4;
+    background: #fff;
     border-radius: 5px; }
     #services .service-container .container-title {
       text-align: center;
@@ -970,9 +971,7 @@
             margin: .5rem 0;
             padding: .5rem 0;
             text-transform: capitalize;
-            transform: translateX(4rem);
             transition: 1.5s;
-            opacity: 0;
             cursor: pointer;
             text-shadow: 1px 1px 0px #000a; }
             #services .service-container .service-item .service-type ul li::marker {
@@ -980,6 +979,9 @@
       #services .service-container .service-item[data-scroll] {
         transform: scale(1);
         opacity: 1; }
+        #services .service-container .service-item[data-scroll] li {
+          transform: translateX(4rem);
+          opacity: 0; }
       #services .service-container .service-item[data-scroll="in"] h3 {
         transition: 1.3s;
         color: #f8650c; }
