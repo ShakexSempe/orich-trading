@@ -811,6 +811,12 @@
       #services .section-description h3[data-scroll="in"] {
         letter-spacing: normal;
         opacity: 1; }
+    #services .section-description p[data-scroll] {
+      transform: scale(1); }
+    @media (min-width: 768px) {
+      #services .section-description p {
+        font-weight: 600;
+        font-size: 1.1rem; } }
     #services .section-description.promise {
       background: url(../img/logo.jpg);
       background-repeat: no-repeat;
@@ -883,7 +889,7 @@
           opacity: 1; }
   #services .service-container {
     margin: 1rem auto;
-    background: #ddd;
+    background: #f4f4f4;
     border-radius: 5px; }
     #services .service-container .container-title {
       text-align: center;
@@ -995,7 +1001,7 @@
     #services {
       padding: 0 5vw 5vh; }
       #services .section-description {
-        margin: 5vh 0; }
+        margin: 5vh 0 10vh; }
       #services .service-container {
         margin: 5vh 0; }
         #services .service-container .service-item {
