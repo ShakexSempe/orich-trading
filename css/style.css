@@ -14,7 +14,7 @@
   padding: .2em 0;
   overflow: hidden; }
   .toggle .bar {
-    background-color: #fff;
+    background-color: #f4f4f4;
     width: 60%;
     height: .1em;
     position: relative;
@@ -33,7 +33,7 @@
     .toggle .bar::after {
       transform: translateY(0.25em); }
   .toggle.active {
-    outline: 2px solid #fff;
+    outline: 2px solid #f4f4f4;
     outline-offset: -.4em; }
     .toggle.active .bar {
       opacity: 0; }
@@ -106,7 +106,8 @@
     transition: 1s;
     opacity: 0; }
     #header .logo:hover {
-      transform: scale(0.98); }
+      transform: scale(0.98);
+      opacity: 1; }
   #header .brand {
     border: 1px solid #ffa500;
     padding: .2em .5em;

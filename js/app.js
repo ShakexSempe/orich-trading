@@ -77,8 +77,8 @@ main.addEventListener("click", () => {
 });
 
 
-bgChanger.forEach(changer => {
-    changer.addEventListener("click", () => {
-        hero.classList.toggle("active");
-    })
-})
+// bgChanger.forEach(changer => {
+//     changer.addEventListener("click", () => {
+//         hero.classList.toggle("active");
+//     })
+// })
