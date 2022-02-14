@@ -6,8 +6,9 @@ const header = document.getElementById("header");
 const main = document.querySelector(".main");
 const topBtn = document.getElementById("top-btn");
 const aside = document.querySelector("aside");
+const dropdownBtn = document.querySelectorAll(".aside-dropdown")
 const links = document.querySelectorAll('#aside ul li a');
-console.log(bgChanger);
+console.log(dropdownBtn);
 
 document.addEventListener("scroll", () => {
     const scroll_position = window.scrollY;
@@ -34,8 +35,22 @@ toggle.addEventListener("click",  () => {
     toggle.classList.toggle("active");
     main.classList.toggle("active");
     header.classList.remove("scroll");
-    console.log("open")
+    console.log("open");
+    
 });
+
+// dropdownBtn.forEach(btn => {
+//     btn.addEventListener("click", () => {
+//         if(!btn.classList.contains("active")) {
+//             btn.classList.add("active");
+//         } else {
+//             btn.classList.remove("active");
+//         }
+//         // btn.addEventListener("click", () => {
+
+//         // })
+//     })
+// })
 
 links.forEach(link => {
     link.addEventListener("click", () => {
@@ -53,8 +68,8 @@ main.addEventListener("click", () => {
 });
 
 
-bgChanger.forEach(changer => {
-    changer.addEventListener("click", () => {
-        hero.classList.toggle("active");
-    })
-})
+// bgChanger.forEach(changer => {
+//     changer.addEventListener("click", () => {
+//         hero.classList.toggle("active");
+//     })
+// })

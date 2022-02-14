@@ -196,10 +196,10 @@
                   background-color: transparent;
                   font-size: 1rem;
                   text-transform: uppercase; }
-                  #header .navigation aside ul li.aside-dropdown button a {
-                    color: #fff000; }
                   #header .navigation aside ul li.aside-dropdown button i {
                     position: relative; }
+                    #header .navigation aside ul li.aside-dropdown button i.fa-caret-down {
+                      transition: .3s; }
                 #header .navigation aside ul li.aside-dropdown .aside-dropdown-content {
                   position: relative;
                   top: 0;
@@ -219,6 +219,11 @@
                     width: 100%;
                     text-align: right;
                     text-transform: capitalize; }
+                #header .navigation aside ul li.aside-dropdown:hover button i {
+                  transition: .2s;
+                  color: #fffa; }
+                  #header .navigation aside ul li.aside-dropdown:hover button i.fa-caret-down {
+                    transform: rotate(180deg); }
                 #header .navigation aside ul li.aside-dropdown:hover .aside-dropdown-content {
                   height: 25vh; }
                 #header .navigation aside ul li.aside-dropdown:hover .services-dropdown {

@@ -149,12 +149,11 @@
                             text-transform: uppercase;
 
 
-                            a {
-                                color: #fff000;
-                            }
-
                             i {
                                 position: relative;
+                                &.fa-caret-down {
+                                    transition: .3s;
+                                }
                             }
                             }
 
@@ -190,6 +189,15 @@
                             }
 
                             &:hover {
+                                button {
+                                    i {
+                                        transition: .2s;
+                                        color: #fffa;
+                                    &.fa-caret-down {
+                                        transform: rotate(180deg);
+                                    }
+                                }
+                                }
                                 .aside-dropdown-content {
                                     // display: block;
                                     height: 25vh;
@@ -198,6 +206,7 @@
                                 .services-dropdown {
                                     height: 50vh;
                                 }
+                            
                             }
                         }
 
