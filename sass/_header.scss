@@ -5,6 +5,7 @@
     min-height: 5vh;
     max-height: 8vh;
     background-color: $header-bg;
+    background-color: transparent;
     display: flex;
     transition: 1s;
     justify-content: space-between;
@@ -13,12 +14,11 @@
     // CHANGE BG COLOR ON SCROLL
     &.scroll {
     background-color: $brand;
-
     }
-    // &.active {
-    //     background-color: $header-bg;
-    //     background-color: blue;
-    // }
+    &.active {
+        background-color: #000;
+    }
+
     .logo {
         transition: .2s;
         &:hover {
@@ -320,7 +320,7 @@
                         position: relative;
 
                         a {
-                            color: #fff;
+                            color: #f4f4f4;
                             text-decoration: none;
                             transition: .3s;
                             padding: .5rem;
@@ -342,7 +342,7 @@
                             display: flex;
                             align-items: center;
                             float: left;
-                            color: #fff;
+                            color: #f4f4f4;
                             text-decoration: none;
                             transition: .3s;
                             padding: .5rem;

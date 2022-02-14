@@ -14,8 +14,9 @@ document.addEventListener("scroll", () => {
     const scroll_position = window.scrollY;
     const scroll_height = window.pageYOffset;
 
-    if(scroll_position < 100) {
+    if(scroll_position < 10) {
         header.classList.remove("scroll");
+        // header.style.backgroundColor = 'transparent';
     } 
     else {
         header.classList.add("scroll");
@@ -23,7 +24,7 @@ document.addEventListener("scroll", () => {
     }
 
     if(scroll_position > 150) {
-        topBtn.classList.add("active");
+        topBtn.classList.add("active")
     }
     else {
         topBtn.classList.remove("active");
@@ -35,6 +36,7 @@ toggle.addEventListener("click",  () => {
     toggle.classList.toggle("active");
     main.classList.toggle("active");
     header.classList.remove("scroll");
+    header.classList.add("active");
     console.log("open");
     
 });
@@ -57,6 +59,7 @@ links.forEach(link => {
         aside.classList.remove("active");
         toggle.classList.remove("active");
         main.classList.remove("active");
+        header.classList.remove("active");
         header.classList.add("scroll");
     });
 });
@@ -65,6 +68,7 @@ main.addEventListener("click", () => {
     aside.classList.remove("active");
     toggle.classList.remove("active");
     main.classList.remove("active");
+    header.classList.remove("active");
 });
 
 
