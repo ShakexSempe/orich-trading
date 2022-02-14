@@ -1557,8 +1557,10 @@
           width: 100%;
           height: 100%; }
         .container .main .parallax figure[data-scroll] {
-          transform: scale(1);
+          transform: scale(1) translateY(100%);
           transition: 2s ease; }
+        .container .main .parallax figure[data-scroll="in"] {
+          transform: scale(1) translateY(0); }
       @media (min-width: 768px) {
         .container .main .parallax {
           height: 95vh;
