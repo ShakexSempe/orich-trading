@@ -51,7 +51,7 @@
         text-transform: uppercase;
     }
     // MOBILE HEADER 
-    @media (max-width: 768px) {
+    @media (max-width: 821px) {
         height: 7vh;
         padding: 1vh 1rem;
         .brand {
@@ -266,7 +266,7 @@
     // END OF MOBILE HEADER 
     
     // DESKTOP HEADER
-    @media (min-width: 768px) {
+    @media (min-width: 821px) {
         height: 10vh;
         // display: none;
         padding: .5em 5vw;

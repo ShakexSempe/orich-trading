@@ -15,7 +15,7 @@ document.addEventListener("scroll", () => {
     const scroll_position = window.scrollY;
     const scroll_height = window.pageYOffset;
 
-    if(scroll_position < 10) {
+    if(scroll_position < 100) {
         header.classList.remove("scroll");
         logo.style.opacity = 0;
         
@@ -41,7 +41,7 @@ toggle.addEventListener("click",  () => {
     toggle.classList.toggle("active");
     main.classList.toggle("active");
     header.classList.remove("scroll");
-    header.classList.add("active");
+    header.classList.toggle("active");
     console.log("open");
     
 });

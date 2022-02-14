@@ -122,7 +122,7 @@
         color: #ffa500; }
   #header .navigation {
     text-transform: uppercase; }
-  @media (max-width: 768px) {
+  @media (max-width: 821px) {
     #header {
       height: 7vh;
       padding: 1vh 1rem; }
@@ -258,7 +258,7 @@
               transition-delay: .6s; }
             #header .navigation aside.active ul :nth-child(5) {
               transition-delay: .7s; } }
-  @media (min-width: 768px) {
+  @media (min-width: 821px) {
     #header {
       height: 10vh;
       padding: .5em 5vw; }
