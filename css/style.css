@@ -103,7 +103,7 @@
   #header.active {
     background-color: #000; }
   #header .logo {
-    transition: .2s;
+    transition: 1s;
     opacity: 0; }
     #header .logo:hover {
       transform: scale(0.98); }
