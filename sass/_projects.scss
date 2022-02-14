@@ -41,7 +41,6 @@
             }
         }
     }
-
     .gallery {
         // border: 1px solid red;
         // min-height: 100vh;
@@ -49,8 +48,17 @@
         .gallery-title {
             text-transform: uppercase;
             color: $brand;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
+            // font-weight: 600;
+            padding: .5rem 0;
             font-family: $font-header;
+            position: sticky;
+            top: 7vh;
+            background-color: #fffa;
+            z-index: 5;
+            @media (min-width: 768px) {
+                top: 8vh;
+            }
         }
         .gallery-grid {
             display: grid;
@@ -65,55 +73,64 @@
             overflow: hidden;
 
             .project-item {
-            padding-bottom: 5vh;
-            height: auto;
-            figcaption {
-                padding: .5rem;
-                font-size: 1.2rem;
-            }
-            figure {
-                width: 100%;
-                height: 60vh;
-                overflow: hidden;
-                border-radius: 5px;
-                position: relative;
-                cursor: pointer;
-                isolation: isolate;
-                z-index: 1;
-                margin-top: .5rem;
-                img {
+                // DATA-SCROLL
+                &[data-scroll] {
+                    transform: scale(1);
+                }
+                padding-bottom: 5vh;
+                height: auto;
+
+                figcaption {
+                    padding: .5rem;
+                    font-size: 1.2rem;
+                }
+
+                figure {
                     width: 100%;
-                    height: 100%;
+                    height: 60vh;
+                    overflow: hidden;
                     border-radius: 5px;
-                    cursor: pointer;
-                    transition: .5s;
                     position: relative;
-                    object-fit: cover;
-                }
-                &::after {
-                    position: absolute;
-                    content: '';
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    box-shadow: inset 5px 5px 3px #fffa,
-                                inset -5px -5px 3px #000a;
-                    opacity: .4;
-                    transition: .5s;
-                }
+                    cursor: pointer;
+                    isolation: isolate;
+                    z-index: 1;
+                    margin-top: .5rem;
 
-
-                &:hover {
                     img {
-                        transform: scale(1.15);
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        transition: .5s;
+                        position: relative;
+                        object-fit: cover;
                     }
+
                     &::after {
-                        opacity: .8;
+                        position: absolute;
+                        content: '';
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        box-shadow: inset 5px 5px 3px #fffa,
+                            inset -5px -5px 3px #000a;
+                        opacity: .4;
+                        transition: .5s;
+                    }
+
+
+                    &:hover {
+                        img {
+                            transform: scale(1.15);
+                        }
+
+                        &::after {
+                            opacity: .8;
+                        }
                     }
                 }
             }
-        }
     }
     }
     @media (min-width: 768px) {
@@ -133,8 +150,6 @@
                     img {
                         width: 100%;
                         height: 100%;
-                        object-fit: cover;
-                        object-position: center;
     
                     }
                 }
@@ -144,3 +159,15 @@
 
     
 }
+
+// #projects-page {
+//     .main {
+//         .gallery {
+//             .project-item {
+//                 &[data-scroll] {
+//                     transform: scale(1);
+//                 }
+//             }
+//         }
+//     }
+// }
