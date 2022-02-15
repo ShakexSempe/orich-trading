@@ -15,7 +15,7 @@ document.addEventListener("scroll", () => {
     const scroll_position = window.scrollY;
     const scroll_height = window.pageYOffset;
 
-    if(scroll_position < 30) {
+    if(scroll_position < 25) {
         header.classList.remove("scroll");
         logo.style.opacity = 0;
         
