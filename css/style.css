@@ -234,7 +234,8 @@
                 #header .navigation aside ul li.aside-dropdown:hover .services-dropdown {
                   height: 50vh; }
                 #header .navigation aside ul li.aside-dropdown:hover .projects-dropdown {
-                  height: 80vh; }
+                  height: 80vh;
+                  min-height: 50vh; }
               #header .navigation aside ul li a {
                 color: #eee;
                 text-decoration: none;
