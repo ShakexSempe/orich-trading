@@ -167,6 +167,7 @@
                                 // left: 3.75rem;
                                 width: 100%;
                                 height: 0;
+                                // padding: 1rem;
                                 overflow: hidden;
                                 background-color: $bg-second;
                                 display: flex;
@@ -175,7 +176,7 @@
                                 a {
                                     // text-transform: capitalize;
                                     margin-left: auto;
-                                // width: 50%;
+                                width: auto;
                                     &:hover {
                                         color: $text-second;
                                         transition: .2s;
@@ -193,6 +194,7 @@
 
                             &:hover {
                                 button {
+                                    color: #fffa;
                                     i {
                                         transition: .2s;
                                         color: #fffa;
@@ -220,10 +222,10 @@
                         a {
                             color: $nav-links;
                             text-decoration: none;
-                            // width: 100%;
+                            width: 100%;
+                            text-align: center;
                             padding: .5rem;
                             transition: .2s;
-                            // border: 1px solid #dddddd1a;
                         }
 
                         i {
