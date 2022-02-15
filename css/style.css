@@ -195,7 +195,7 @@
                   text-decoration: none;
                   margin-right: auto;
                   width: 100%;
-                  padding: 1em 0;
+                  padding: .5rem 0;
                   transition: .2s;
                   border: none;
                   background-color: transparent;
@@ -239,7 +239,7 @@
               #header .navigation aside ul li a {
                 color: #eee;
                 text-decoration: none;
-                padding: 1em .5em;
+                padding: .5rem;
                 transition: .2s; }
               #header .navigation aside ul li i {
                 color: #ffa500;
