@@ -93,7 +93,6 @@
                 right: -100vw;
                 width: 100%;
                 height: 100vh;
-                min-height: 100vh;
                 background-color: $bg-second;
                 padding: 0 ;
                 transition: .5s;
@@ -110,7 +109,7 @@
                     right: 25vw;
                     width: 70vw;
                     height: 100%;
-                    // overflow-y: auto;
+                    overflow-y: auto;
 
                     li {
                         // padding-bottom: 5vh;
