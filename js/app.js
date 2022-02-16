@@ -14,11 +14,10 @@ console.log(logo);
 document.addEventListener("scroll", () => {
     const scroll_position = window.scrollY;
     const scroll_height = window.pageYOffset;
-
+    // HEADER AND LOGO OPACITY ON SCROLL
     if(scroll_position < 25) {
         header.classList.remove("scroll");
         logo.style.opacity = 0;
-        title.style.opacity = 1;
 
         // header.style.backgroundColor = 'transparent';
     } 
@@ -26,7 +25,6 @@ document.addEventListener("scroll", () => {
         header.classList.add("scroll");
         topBtn.classList.remove("active");
         logo.style.opacity = 1;
-        title.style.opacity = 0;
     }
 
     if(scroll_position > 150) {

@@ -52,8 +52,6 @@
     }
     
     .page-title {
-        position: sticky;
-        top: 10vh;
         padding: .5rem 1rem;
         width: 100%;
         text-align: center;
@@ -77,10 +75,8 @@
             transition: .5s;
         }
     }
-    // .logo {
-    //     position: sticky;
-    //     bottom: 5vh;
-    // }
+    .logo {
+    }
     figure {
         width: 100%;
         overflow: hidden;

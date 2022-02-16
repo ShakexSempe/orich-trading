@@ -394,8 +394,6 @@
     background: linear-gradient(45deg, #f8650c, #ffa500);
     background: #f8650c; }
   #hero .page-title {
-    position: sticky;
-    top: 10vh;
     padding: .5rem 1rem;
     width: 100%;
     text-align: center;
