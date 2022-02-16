@@ -1588,7 +1588,7 @@
     .container .main section {
       min-height: 100vh;
       background: #fff; }
-  .container #top-btn {
+  .container #top-btn, .container .home-btn {
     position: fixed;
     bottom: 1rem;
     right: 1rem;
@@ -1605,7 +1605,7 @@
     opacity: 0;
     cursor: pointer;
     transform: translateY(10vh); }
-    .container #top-btn a {
+    .container #top-btn a, .container .home-btn a {
       border: 1px solid blue;
       border: none;
       width: 100%;
@@ -1614,22 +1614,22 @@
       place-items: center;
       text-decoration: none; }
     @media (min-width: 768px) {
-      .container #top-btn {
+      .container #top-btn, .container .home-btn {
         right: 2vw;
         bottom: 5vh;
         height: 2.5rem;
         width: 2.5rem; }
-        .container #top-btn i {
+        .container #top-btn i, .container .home-btn i {
           font-size: 1.5rem; } }
-    .container #top-btn i {
+    .container #top-btn i, .container .home-btn i {
       color: #000;
       transition: .3s;
       margin: 0 auto;
       transition: .5s; }
-    .container #top-btn.active {
+    .container #top-btn.active, .container .home-btn.active {
       opacity: 1;
       transform: translateY(0); }
-      .container #top-btn.active:hover {
+      .container #top-btn.active:hover, .container .home-btn.active:hover {
         transition: .3s;
         transform: scale(1.1); }
 
