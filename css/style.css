@@ -303,6 +303,7 @@
               position: relative; }
               #header .navigation nav ul li a {
                 color: #f4f4f4;
+                color: #161616;
                 text-decoration: none;
                 transition: .3s;
                 padding: .5rem;
@@ -315,7 +316,7 @@
               display: flex;
               align-items: center;
               float: left;
-              color: #f4f4f4;
+              color: #161616;
               text-decoration: none;
               transition: .3s;
               padding: .5rem;
@@ -382,6 +383,8 @@
       background-image: linear-gradient(30deg, #f8650c, #000a); } }
   @media (min-width: 768px) {
     #hero {
+      display: grid;
+      place-items: center;
       background-size: contain;
       background-position: left;
       background-attachment: fixed; }
@@ -391,13 +394,16 @@
     background: linear-gradient(45deg, #f8650c, #ffa500);
     background: #f8650c; }
   #hero .page-title {
+    position: sticky;
+    top: 10vh;
+    padding: .5rem 1rem;
+    width: 100%;
     text-align: center;
     color: #ddd;
     text-transform: uppercase;
-    padding: .5rem 1rem;
-    width: 100%;
     cursor: pointer;
-    transition: .5s; }
+    transition: .5s;
+    z-index: 2; }
     #hero .page-title h1 {
       font-size: 3rem;
       letter-spacing: 1.3rem;
@@ -414,7 +420,8 @@
     width: 100%;
     overflow: hidden;
     margin: 0 auto;
-    border-radius: 5px; }
+    border-radius: 5px;
+    z-index: 4; }
     #hero figure img {
       width: 100%;
       border-radius: 5px; }
