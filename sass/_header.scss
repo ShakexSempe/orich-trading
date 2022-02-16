@@ -208,11 +208,11 @@
                                 }
                                 // SERVICE PAGE DROPDOWN HOVER STATE
                                 .services-dropdown {
-                                    height: 50vh;
+                                    height: 65vh;
                                 }
                                 .projects-dropdown {
-                                    height: 80vh;
-                                    min-height: 50vh;
+                                    height: 60vh;
+                                    overflow-y: auto;
                                 }
                             
                             }

@@ -235,10 +235,10 @@
                 #header .navigation aside ul li.aside-dropdown:hover .aside-dropdown-content {
                   height: 25vh; }
                 #header .navigation aside ul li.aside-dropdown:hover .services-dropdown {
-                  height: 50vh; }
+                  height: 65vh; }
                 #header .navigation aside ul li.aside-dropdown:hover .projects-dropdown {
-                  height: 80vh;
-                  min-height: 50vh; }
+                  height: 60vh;
+                  overflow-y: auto; }
               #header .navigation aside ul li a {
                 color: #eee;
                 text-decoration: none;
@@ -1552,7 +1552,6 @@
         height: 100%;
         position: relative;
         overflow: hidden;
-        border-radius: 5px;
         isolation: isolate; }
         .container .main .parallax figure img {
           width: 100%;
