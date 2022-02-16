@@ -1411,7 +1411,7 @@
             transform: scale(1);
             opacity: 1; }
           #footer .footer-contact .contact-item .contact-info button[data-scroll="in"] a {
-            transform: translateX(20%); }
+            transform: translateX(30%); }
           #footer .footer-contact .contact-item .contact-info button[data-scroll="in"] i {
             opacity: 1;
             transform: scale(2.5); }
@@ -1456,7 +1456,7 @@
         left: 5vw;
         bottom: 20vh;
         height: 50%;
-        width: auto;
+        width: 50%;
         overflow: hidden;
         z-index: 1; }
         #footer .footer-contact figure img {
