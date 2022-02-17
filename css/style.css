@@ -939,9 +939,6 @@
       margin: 0 auto 1rem;
       width: 100%;
       overflow: hidden; }
-      @media (min-width: 768px) {
-        #services .service-container .service-item {
-          border-bottom: 1px solid #f8650c; } }
       #services .service-container .service-item .service-core {
         flex-basis: 50%;
         overflow: hidden;

@@ -162,7 +162,7 @@
             width: 100%;
             overflow: hidden;
             @media (min-width: 768px) {
-                border-bottom: 1px solid $brand;
+                // border-bottom: 1px solid $brand;
             }
             .service-core {
                 flex-basis: 50%;
