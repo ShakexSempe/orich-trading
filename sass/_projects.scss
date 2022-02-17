@@ -83,6 +83,14 @@
                     box-shadow: inset 2px 2px 2px #fffa,
                                 inset -2px -2px 2px #000a,
                                 3px 3px 3px rgba(0, 0, 0, .250);
+                    
+                    // TITLE BUTTON HOVER STATE
+                    &:hover {
+                        transform: scale(.97);
+                    }
+                    &:active {
+                        transform: scale(.9);
+                    }
                 }
             }
             &:hover {

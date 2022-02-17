@@ -256,6 +256,10 @@
                             opacity: 1;
                         }
                     }
+                    &:active {
+                        transition: .2s;
+                        transform: scale(.95);
+                    }
                 }
             }
             .service-type {
