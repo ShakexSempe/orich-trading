@@ -982,8 +982,8 @@
         #services .service-container .service-item .service-core a {
           border: 1px solid #f8650c;
           text-decoration: none;
-          padding: .2rem .5rem;
-          margin: 1rem auto;
+          padding: .2rem 1rem;
+          margin: 0 auto .5rem;
           border-radius: 20px;
           outline: none;
           color: #f8650c;
