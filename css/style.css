@@ -306,7 +306,7 @@
                 color: #161616;
                 text-decoration: none;
                 transition: .3s;
-                padding: .5rem;
+                padding: .3rem;
                 border-radius: 5px; }
                 #header .navigation nav ul li a:hover {
                   color: #f4f4f4;
@@ -348,10 +348,12 @@
                   color: #f4f4f4;
                   box-shadow: none;
                   background-color: #000; }
+            #header .navigation nav ul .dropdown:hover button {
+              color: #ddd; }
             #header .navigation nav ul .dropdown:hover i {
               transition: .3s;
-              transform: scale(0.9);
-              color: #000; }
+              transform: scale(0.9) rotate(180deg);
+              color: #ddd; }
             #header .navigation nav ul .dropdown:hover .dropdown-content {
               height: 20vh;
               height: max-content;
@@ -979,6 +981,37 @@
 @keyframes general {
   50% {
     color: #000a; } }
+        #services .service-container .service-item .service-core a {
+          border: 1px solid #f8650c;
+          text-decoration: none;
+          padding: .2rem .5rem;
+          margin: 1rem auto;
+          border-radius: 20px;
+          outline: none;
+          color: #f8650c;
+          position: relative;
+          transition: .5s; }
+          #services .service-container .service-item .service-core a::before, #services .service-container .service-item .service-core a::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: .5s;
+            border-radius: 20px;
+            outline: none; }
+          #services .service-container .service-item .service-core a::before {
+            box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2); }
+          #services .service-container .service-item .service-core a::after {
+            opacity: 0;
+            box-shadow: 2px 4px 1px rgba(0, 0, 0, 0.3); }
+          #services .service-container .service-item .service-core a:hover {
+            transform: scale(0.98); }
+            #services .service-container .service-item .service-core a:hover::before {
+              opacity: 0; }
+            #services .service-container .service-item .service-core a:hover::after {
+              opacity: 1; }
       #services .service-container .service-item .service-type {
         width: 100%;
         padding: 0 1rem; }
