@@ -46,18 +46,51 @@
         // min-height: 100vh;
         margin: 5vh auto;
         .gallery-title {
+            position: sticky;
+            top: 7vh;
             text-transform: uppercase;
             color: $brand;
             font-size: 1.5rem;
             // font-weight: 600;
             padding: .5rem 0;
             font-family: $font-header;
-            position: sticky;
-            top: 7vh;
             background-color: #fffa;
             z-index: 5;
+
             @media (min-width: 768px) {
                 top: 8vh;
+            }
+
+            a {
+                text-decoration: none;
+                color: $brand;
+
+                span {
+                    text-transform: lowercase;
+                    position: absolute;
+                    right: 0;
+                    @media (min-width: 768px) {
+
+                    }
+                    font-size: 1rem;
+                    margin-left: 2rem;
+                    border-radius: 20px;
+                    background: $brand;
+                    color: #f4f4f4;
+                    padding: .15rem 1rem;
+                    opacity: .9;
+                    transition: .3s;
+                    box-shadow: inset 2px 2px 2px #fffa,
+                                inset -2px -2px 2px #000a,
+                                3px 3px 3px rgba(0, 0, 0, .250);
+                }
+            }
+            &:hover {
+                a {
+                    span {
+                        opacity: 1;
+                    }
+                }
             }
         }
         .gallery-grid {
