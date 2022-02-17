@@ -1150,14 +1150,15 @@
       top: 7vh;
       text-transform: uppercase;
       color: #f8650c;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       padding: .5rem 0;
       font-family: "Ubuntu", sans-serif;
       background-color: #fffa;
       z-index: 5; }
       @media (min-width: 768px) {
         #projects .gallery .gallery-title {
-          top: 8vh; } }
+          top: 8vh;
+          font-size: 1.5rem; } }
       #projects .gallery .gallery-title a {
         text-decoration: none;
         color: #f8650c; }

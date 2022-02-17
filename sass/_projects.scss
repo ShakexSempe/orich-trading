@@ -50,7 +50,7 @@
             top: 7vh;
             text-transform: uppercase;
             color: $brand;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             // font-weight: 600;
             padding: .5rem 0;
             font-family: $font-header;
@@ -59,6 +59,7 @@
 
             @media (min-width: 768px) {
                 top: 8vh;
+                font-size: 1.5rem;
             }
 
             a {
