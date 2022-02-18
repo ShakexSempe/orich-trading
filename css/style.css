@@ -130,19 +130,19 @@
         font-size: 1.2em; }
       #header .logo {
         width: 10rem;
-        height: 100%;
-        overflow: hidden;
-        border-radius: 5px; }
+        width: auto;
+        height: 100%; }
         #header .logo figure {
           width: 100%;
           height: 100%;
+          border-radius: 10px;
           overflow: hidden; }
           #header .logo figure img {
             width: 100%;
             height: 100%;
             object-fit: contain;
             object-position: left;
-            border-radius: 5px; }
+            border-radius: 10px; }
       #header .navigation {
         border: none; }
         #header .navigation nav {
