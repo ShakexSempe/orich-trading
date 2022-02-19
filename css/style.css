@@ -1619,7 +1619,7 @@
           height: auto;
           transition: .5s; }
         .container .main .parallax figure[data-scroll] {
-          transform: scale(1) translateY(50%);
+          transform: scale(1) translateY(20%);
           transition: 2s ease; }
         .container .main .parallax figure[data-scroll="in"] {
           transform: scale(1) translateY(0); }

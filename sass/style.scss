@@ -124,7 +124,7 @@
 
                 // DATA-SCROLL
                 &[data-scroll] {
-                    transform: scale(1) translateY(50%);
+                    transform: scale(1) translateY(20%);
                     transition: 2s ease;
                 }
                 &[data-scroll="in"] {
