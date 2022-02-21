@@ -233,7 +233,7 @@
                     #header .navigation aside ul li.aside-dropdown:hover button i.fa-caret-down {
                       transform: rotate(180deg); }
                 #header .navigation aside ul li.aside-dropdown:hover .aside-dropdown-content {
-                  height: 25vh; }
+                  height: 15vh; }
                 #header .navigation aside ul li.aside-dropdown:hover .services-dropdown {
                   height: 65vh; }
                 #header .navigation aside ul li.aside-dropdown:hover .projects-dropdown {
