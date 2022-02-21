@@ -39,8 +39,15 @@
                 // border: 1px solid green;
                 margin: .5rem auto;
                 padding: .5rem 0;
-            }
+                text-transform: capitalize;
 
+                i {
+                    text-transform: capitalize;
+                }
+            }
+            .ref-contact {
+                text-transform: capitalize;
+            }
             // DATA SCROLL
             &[data-scroll] {
                 transform: scale(1);

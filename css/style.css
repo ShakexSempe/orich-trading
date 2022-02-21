@@ -1277,7 +1277,12 @@
         color: #f8650c; }
       #references .references .reference .ref-name {
         margin: .5rem auto;
-        padding: .5rem 0; }
+        padding: .5rem 0;
+        text-transform: capitalize; }
+        #references .references .reference .ref-name i {
+          text-transform: capitalize; }
+      #references .references .reference .ref-contact {
+        text-transform: capitalize; }
       #references .references .reference[data-scroll] {
         transform: scale(1);
         transition: 1.5s; }
