@@ -265,7 +265,9 @@
             #header .navigation aside.active ul :nth-child(4) {
               transition-delay: .6s; }
             #header .navigation aside.active ul :nth-child(5) {
-              transition-delay: .7s; } }
+              transition-delay: .7s; }
+            #header .navigation aside.active ul :nth-child(6) {
+              transition-delay: .8s; } }
   @media (min-width: 821px) {
     #header {
       height: 10vh;
