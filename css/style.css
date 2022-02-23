@@ -91,20 +91,23 @@
   width: 100%;
   min-height: 5vh;
   max-height: 8vh;
-  background-color: #000;
   background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.1);
   display: flex;
   transition: 1s;
   justify-content: space-between;
   align-items: center;
   z-index: 20; }
+  @media (min-width: 768px) {
+    #header {
+      background-color: transparent; } }
   #header.scroll {
     background-color: #f8650c; }
   #header.active {
     background-color: #000; }
   #header .logo {
     transition: 1s;
-    opacity: 0; }
+    opacity: 1; }
     #header .logo:hover {
       transform: scale(0.98);
       opacity: 1; }
@@ -135,14 +138,14 @@
         #header .logo figure {
           width: 100%;
           height: 100%;
-          border-radius: 10px;
+          border-radius: 5px;
           overflow: hidden; }
           #header .logo figure img {
             width: 100%;
             height: 100%;
             object-fit: contain;
             object-position: left;
-            border-radius: 10px; }
+            border-radius: 5px; }
       #header .navigation {
         border: none; }
         #header .navigation nav {
@@ -233,7 +236,7 @@
                     #header .navigation aside ul li.aside-dropdown:hover button i.fa-caret-down {
                       transform: rotate(180deg); }
                 #header .navigation aside ul li.aside-dropdown:hover .aside-dropdown-content {
-                  height: 15vh; }
+                  height: 18vh; }
                 #header .navigation aside ul li.aside-dropdown:hover .services-dropdown {
                   height: 65vh; }
                 #header .navigation aside ul li.aside-dropdown:hover .projects-dropdown {

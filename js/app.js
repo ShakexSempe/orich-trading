@@ -18,8 +18,6 @@ document.addEventListener("scroll", () => {
     if(scroll_position < 25) {
         header.classList.remove("scroll");
         logo.style.opacity = 0;
-
-        // header.style.backgroundColor = 'transparent';
     } 
     else {
         header.classList.add("scroll");
@@ -29,8 +27,6 @@ document.addEventListener("scroll", () => {
 
     if(scroll_position > 150) {
         topBtn.classList.add("active");
-
-
     }
     else {
         topBtn.classList.remove("active");
