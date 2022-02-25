@@ -1508,7 +1508,8 @@
       color: #f4f4f4;
       opacity: .5;
       text-decoration: none;
-      transition: .2s; }
+      transition: .2s;
+      text-transform: none; }
       #footer .footer-copyright a:hover {
         opacity: 1; }
   @media (min-width: 768px) {
