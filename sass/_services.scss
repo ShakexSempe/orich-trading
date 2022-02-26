@@ -195,11 +195,11 @@
                     }
                     @keyframes rollUp {
                         0%, 100% {
-                            color: $brand;
+                            color: #000a;
                         }
                         50% {
                             transform: translateY(1rem);
-                            color: #000a;
+                            color: #000;
                         }
                     }
                     @keyframes rotate {
