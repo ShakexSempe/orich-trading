@@ -38,11 +38,23 @@
     @media (min-width: 821px) {
         display: grid;
         place-items: center;
-        background-image: url("https://images.unsplash.com/photo-1536895058696-a69b1c7ba34f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80");
+        background-image: url("https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+        background-image: url("https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=448&q=80");
         background-size: contain;
-        background-position: left;
+        background-size: 100%;
+        background-position: center 30%;
         background-attachment: fixed;
         z-index: 10;
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000a;
+            z-index: -1;
+        }
         &::before {
             position: absolute;
             content: '';
@@ -50,13 +62,9 @@
             right: 0;
             width: 100%;
             height: 100%;
-            // background: #fff000;
-            background-image: url(../img/orich-project.jpg);
-            background-repeat: no-repeat;
-            background-position: right;
-            background-size: contain;
-            background-attachment: fixed;
-            z-index: -10;
+            z-index: -1;
+            background-image: linear-gradient(0deg, transparent, #000);
+            // opacity: .5;
         }
     }
     // END OF DESKTOP HERO
@@ -82,6 +90,9 @@
             letter-spacing: 1.3rem;
             font-family: $font-gruppo;
             transition: .5s;
+            @media (min-width: 768px) {
+                font-size: 4rem;
+            }
         }
         p {
             display: block;

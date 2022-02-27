@@ -321,9 +321,6 @@
             }
         }
         .logo {
-            // display: none;
-            // width: auto;
-            // margin: 0 auto;
             height: 100%;
             
             figure {
@@ -336,7 +333,6 @@
                     width: 100%;
                     height: 100%;
                     object-fit: contain;
-
                 }
             }
         }
@@ -368,7 +364,7 @@
                         position: relative;
 
                         a {
-                            color: $text-main;
+                            color: $text-second;
                             text-decoration: none;
                             transition: .3s;
                             padding: .3rem;
@@ -391,6 +387,7 @@
                             align-items: center;
                             float: left;
                             color: #161616;
+                            color: $text-second;
                             text-decoration: none;
                             transition: .3s;
                             padding: .5rem;
