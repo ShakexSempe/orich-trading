@@ -92,7 +92,6 @@
   min-height: 5vh;
   max-height: 8vh;
   background-color: transparent;
-  background-color: rgba(0, 0, 0, 0.1);
   display: flex;
   transition: 1s;
   justify-content: space-between;
@@ -107,10 +106,9 @@
     background-color: #000; }
   #header .logo {
     transition: 1s;
-    opacity: 1; }
+    opacity: 0; }
     #header .logo:hover {
-      transform: scale(0.98);
-      opacity: 1; }
+      transform: scale(0.98); }
   #header .brand {
     border: 1px solid #ffa500;
     padding: .2em .5em;
@@ -970,6 +968,22 @@
       margin: 0 auto 1rem;
       width: 100%;
       overflow: hidden; }
+      #services .service-container .service-item a {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), #eee 50%);
+        text-decoration: none;
+        padding: .2rem 1rem;
+        margin: 0 auto .5rem;
+        border-radius: 20px;
+        outline: none;
+        color: #f8650c;
+        position: relative;
+        transition: .3s; }
+        #services .service-container .service-item a:hover {
+          transform: scale(0.98); }
+        #services .service-container .service-item a:active {
+          transition: .2s;
+          transform: scale(0.95); }
       #services .service-container .service-item .service-core {
         flex-basis: 50%;
         overflow: hidden;
@@ -1010,41 +1024,6 @@
 @keyframes general {
   50% {
     color: #000a; } }
-        #services .service-container .service-item .service-core a {
-          border: 1px solid rgba(0, 0, 0, 0.2);
-          background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), #eee 50%);
-          text-decoration: none;
-          padding: .2rem 1rem;
-          margin: 0 auto .5rem;
-          border-radius: 20px;
-          outline: none;
-          color: #f8650c;
-          position: relative;
-          transition: .3s; }
-          #services .service-container .service-item .service-core a::before, #services .service-container .service-item .service-core a::after {
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            transition: .5s;
-            border-radius: 20px;
-            outline: none; }
-          #services .service-container .service-item .service-core a::before {
-            box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1); }
-          #services .service-container .service-item .service-core a::after {
-            opacity: 0;
-            box-shadow: 2px 4px 1px rgba(0, 0, 0, 0.3); }
-          #services .service-container .service-item .service-core a:hover {
-            transform: scale(0.98); }
-            #services .service-container .service-item .service-core a:hover::before {
-              opacity: 0; }
-            #services .service-container .service-item .service-core a:hover::after {
-              opacity: 1; }
-          #services .service-container .service-item .service-core a:active {
-            transition: .2s;
-            transform: scale(0.95); }
       #services .service-container .service-item .service-type {
         width: 100%;
         padding: 0 1rem; }
