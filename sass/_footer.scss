@@ -140,7 +140,7 @@
 
         a {
             color: $text-second;
-            opacity: .5;
+            opacity: .7;
             text-decoration: none;
             transition: .2s;
             text-transform: none;
@@ -148,6 +148,15 @@
             &:hover {
                 opacity: 1;
             }
+        }
+
+        #date {
+            display: block;
+            font-size: .8rem;
+            opacity: .7;
+        }
+        .footer-logo {
+            display: none;
         }
     }
     @media (min-width: 768px) {
@@ -215,8 +224,27 @@
             }
         }
         .footer-copyright {
+            text-align: left;
+            padding: 5vh 5vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             p {
                 font-size: 1rem;
+            }
+            a {
+                font-size: 1rem;
+            }
+            .footer-logo {
+                display: block;
+                width: auto;
+                height: 20vh;
+                overflow: hidden;
+                    img {
+                        height: 100%;
+                        width: auto;
+                        border-radius: 5px;
+                    }
             }
         }
 

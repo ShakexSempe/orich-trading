@@ -1513,12 +1513,18 @@
         color: #f4f4f4; }
     #footer .footer-copyright a {
       color: #f4f4f4;
-      opacity: .5;
+      opacity: .7;
       text-decoration: none;
       transition: .2s;
       text-transform: none; }
       #footer .footer-copyright a:hover {
         opacity: 1; }
+    #footer .footer-copyright #date {
+      display: block;
+      font-size: .8rem;
+      opacity: .7; }
+    #footer .footer-copyright .footer-logo {
+      display: none; }
   @media (min-width: 768px) {
     #footer h2 {
       text-align: center;
@@ -1553,8 +1559,25 @@
         #footer .footer-contact .contact-item:hover button i {
           opacity: 1;
           transform: scale(2.5); }
-    #footer .footer-copyright p {
-      font-size: 1rem; } }
+    #footer .footer-copyright {
+      text-align: left;
+      padding: 5vh 5vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      #footer .footer-copyright p {
+        font-size: 1rem; }
+      #footer .footer-copyright a {
+        font-size: 1rem; }
+      #footer .footer-copyright .footer-logo {
+        display: block;
+        width: auto;
+        height: 20vh;
+        overflow: hidden; }
+        #footer .footer-copyright .footer-logo img {
+          height: 100%;
+          width: auto;
+          border-radius: 5px; } }
 
 * {
   padding: 0;
