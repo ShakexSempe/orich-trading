@@ -406,7 +406,7 @@
     transition: .5s;
     z-index: 2; }
     #hero .page-title h1 {
-      font-size: 3rem;
+      font-size: 3.5rem;
       letter-spacing: 1.3rem;
       font-family: "Gruppo", cursive;
       transition: .5s; }
@@ -451,9 +451,9 @@
         #hero .page-title h1 {
           font-size: 4rem; } }
   #hero .hero-logo {
-    margin: 0 auto;
-    height: 40vh;
-    width: 40vh; }
+    margin: 10vh auto 0;
+    height: 50%;
+    width: 55%; }
     #hero .hero-logo figure {
       width: 100%;
       overflow: hidden;
@@ -476,7 +476,7 @@
     #hero .slogan p {
       text-transform: capitalize;
       margin: 0rem auto;
-      padding: 1rem;
+      padding: .5rem 1rem;
       background: #fff;
       color: #f4f4f4;
       border-radius: 5px;
@@ -485,7 +485,8 @@
       position: relative;
       isolation: isolate; }
       #hero .slogan p span {
-        color: #000;
+        color: #f4f4f4;
+        color: #ffa500;
         font-weight: 500; }
       #hero .slogan p::before {
         position: absolute;
@@ -495,8 +496,10 @@
         width: 100%;
         height: 100%;
         border-radius: 5px;
+        border: none;
+        outline: none;
         z-index: -1;
-        background: linear-gradient(0deg, #f8650c, #ffa500);
+        background: linear-gradient(0deg, #000, #111);
         box-shadow: inset 2px 2px 2px #ddda, inset -2px -2px 2px #000a, 3px 3px 3px rgba(0, 0, 0, 0.281); }
   @media (min-width: 821px) {
     #hero {
