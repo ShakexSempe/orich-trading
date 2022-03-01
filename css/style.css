@@ -102,6 +102,8 @@
       background-color: transparent; } }
   #header.scroll {
     background-color: #f8650c; }
+    #header.scroll .navigation nav ul li a::after {
+      background-color: #fff; }
   #header.active {
     background-color: #000; }
   #header .logo {
@@ -305,21 +307,32 @@
               float: left;
               position: relative; }
               #header .navigation nav ul li a {
-                color: #f4f4f4;
+                color: #fffa;
                 text-decoration: none;
                 transition: .3s;
                 padding: .3rem;
-                border-radius: 5px; }
-                #header .navigation nav ul li a:hover {
-                  color: #f4f4f4;
+                border-radius: 5px;
+                position: relative; }
+                #header .navigation nav ul li a::after {
+                  position: absolute;
+                  content: '';
+                  bottom: 0;
+                  left: 50%;
+                  transform: translateX(-50%) scale(0.3);
+                  width: 70%;
+                  height: .1rem;
                   background-color: #f8650c;
-                  box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a; }
+                  transition: .5s; }
+                #header .navigation nav ul li a:hover {
+                  color: #f4f4f4; }
+                  #header .navigation nav ul li a:hover::after {
+                    transform: translateX(-50%) scale(1); }
             #header .navigation nav ul .dropdown button {
               display: flex;
               align-items: center;
               float: left;
               color: #161616;
-              color: #f4f4f4;
+              color: #fffa;
               text-decoration: none;
               transition: .3s;
               padding: .5rem;

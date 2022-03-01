@@ -16,6 +16,19 @@
     // CHANGE BG COLOR ON SCROLL
     &.scroll {
     background-color: $brand;
+    .navigation {
+        nav {
+            ul {
+                li {
+                    a {
+                        &::after {
+                            background-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
     }
     &.active {
         background-color: #000;
@@ -362,17 +375,31 @@
                         position: relative;
 
                         a {
-                            color: $text-second;
+                            color: $text-second-trans;
                             text-decoration: none;
                             transition: .3s;
                             padding: .3rem;
                             border-radius: 5px;
+                            position: relative;
+                            // NAV LINK UNDERLINE
+                            &::after {
+                                position: absolute;
+                                content: '';
+                                bottom: 0;
+                                left: 50%;
+                                transform: translateX(-50%) scale(.3);
+                                width: 70%;
+                                height: .1rem;
+                                background-color: $brand;
+                                transition: .5s;
+                            }
 
                             &:hover {
                                 color: $text-second;
-                                background-color: $brand;
-                                box-shadow: inset 2px 2px 2px #fffa,
-                                            inset -2px -2px 2px #000a;
+                                // color: $brand-light;
+                                &::after {
+                                    transform: translateX(-50%) scale(1);
+                                }
                             }
                         }
                     }
@@ -385,7 +412,7 @@
                             align-items: center;
                             float: left;
                             color: #161616;
-                            color: $text-second;
+                            color: $text-second-trans;
                             text-decoration: none;
                             transition: .3s;
                             padding: .5rem;
