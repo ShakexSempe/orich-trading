@@ -53,15 +53,21 @@
             margin: 1.5rem auto;
             transition: .3s;
             .cta-btn {
-                padding: .2rem 1rem;
+                padding: .5rem 1.5rem;
+                margin: 0 auto;
                 border-radius: 20px;
                 cursor: pointer;
                 text-decoration: none;
                 text-transform: capitalize;
                 color: $text-second;
+                background: $brand-light;
+                display: block;
+                width: 10rem;
                 position: relative;
                 isolation: isolate;
-
+                transition: .3s;
+                letter-spacing: .05rem;
+                // CTA BACKGROUND & BOX SHADOW HOVER STATES
                 &::before,
                 &::after {
                     position: absolute;
@@ -72,7 +78,7 @@
                     height: 100%;
                     border-radius: 20px;
                     z-index: -1;
-                    transition: 1s;
+                    transition: .3s;
                 }
 
                 &::before {
@@ -81,9 +87,19 @@
                         inset -2px -2px 2px #000a,
                         3px 3px 3px rgba(0, 0, 0, 0.281);
                 }
-            }
-            &:hover {
-                transform: scale(.98);
+                &::after {
+                    opacity: 0;
+                    background: linear-gradient(0deg, $brand-light, $brand-dark);
+                    box-shadow: inset 2px 2px 2px #000a,
+                        inset -2px -2px 2px #ddda,
+                        1px 1px 3px rgba(0, 0, 0, 0.381);
+                }
+                &:hover {
+                    transform: scale(.95);
+                    letter-spacing: normal;
+                    &::before {opacity: 0}
+                    &::after {opacity: 1}
+                }
             }
         }
         // DESKTOP PAGE TITLE
