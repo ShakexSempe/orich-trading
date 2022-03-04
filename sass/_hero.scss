@@ -2,8 +2,9 @@
     min-height: 100vh;
     background-color: $primary-color;
     transition: 1.5s;
-    background-image: url(../img/orich-project.jpg);background-repeat: no-repeat;
-    // background-image: url("https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=448&q=80");
+    background-image: url(../img/orich-project.jpg);
+    // background-image: url(../img/orich-hero.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -83,14 +84,14 @@
                 }
 
                 &::before {
-                    background: linear-gradient(0deg, $brand-dark, $brand-light);
+                    background: $brand-btn;
                     box-shadow: inset 2px 2px 2px #ddda,
                         inset -2px -2px 2px #000a,
                         3px 3px 3px rgba(0, 0, 0, 0.281);
                 }
                 &::after {
                     opacity: 0;
-                    background: linear-gradient(0deg, $brand-light, $brand-dark);
+                    background: $brand-btn-hover;
                     box-shadow: inset 2px 2px 2px #000a,
                         inset -2px -2px 2px #ddda,
                         1px 1px 3px rgba(0, 0, 0, 0.381);
@@ -172,7 +173,7 @@
             border: none;
             outline: none;
             z-index: -1;
-            background: linear-gradient(0deg, #000, #161616);
+            background: linear-gradient(0deg, #000, #222);
             box-shadow: inset 2px 2px 2px #ddda,
                         inset -2px -2px 2px #000a,
                         3px 3px 3px rgba(0, 0, 0, 0.281);
@@ -182,8 +183,9 @@
 }
     // DESKTOP HEROf
     @media (min-width: 821px) {
-        background-image: url("https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
-        background-image: url("https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=448&q=80");
+        // background-image: url("https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+        // background-image: url("https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=448&q=80");
+        background-image: url("../img/orich-hero.jpg");
         background-size: contain;
         background-size: 100%;
         background-position: center 30%;
