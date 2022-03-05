@@ -63,8 +63,8 @@
     // HERO LOGO
     .hero-logo {
         margin: 1rem auto 0;
-        height: 20rem;
-        width: 20rem;
+        width: 50vw;
+        height: auto;
         figure {
             width: 100%;
             overflow: hidden;
@@ -78,8 +78,9 @@
             }
         }
         @media (min-width: 768px) {
-            height: 50vh;
-            width: 50vh;
+            width: 15rem;
+            // height: 50vh;
+            // width: 50vh;
         }
     }
 
@@ -146,7 +147,10 @@
                 color: $text-second;
                 background: $brand-light;
                 display: block;
-                width: 10rem;
+                width: 50vw;
+                @media (min-width: 768px) {
+                    width: 15rem;
+                }
                 position: relative;
                 isolation: isolate;
                 transition: .3s;

@@ -425,8 +425,8 @@
           font-size: 4rem; } }
   #hero .hero-logo {
     margin: 1rem auto 0;
-    height: 20rem;
-    width: 20rem; }
+    width: 50vw;
+    height: auto; }
     #hero .hero-logo figure {
       width: 100%;
       overflow: hidden;
@@ -438,8 +438,7 @@
         border-radius: 5px; }
     @media (min-width: 768px) {
       #hero .hero-logo {
-        height: 50vh;
-        width: 50vh; } }
+        width: 15rem; } }
   #hero .slogan {
     border-radius: 5px;
     border: 2px solid blue;
@@ -491,11 +490,14 @@
       color: #f4f4f4;
       background: #ffa500;
       display: block;
-      width: 10rem;
+      width: 50vw;
       position: relative;
       isolation: isolate;
       transition: .3s;
       letter-spacing: .05rem; }
+      @media (min-width: 768px) {
+        #hero #cta .cta-btn {
+          width: 15rem; } }
       #hero #cta .cta-btn::before, #hero #cta .cta-btn::after {
         position: absolute;
         content: '';
