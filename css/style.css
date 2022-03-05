@@ -474,7 +474,7 @@
         border: none;
         outline: none;
         z-index: -1;
-        background: linear-gradient(0deg, #000, #222);
+        background: linear-gradient(0deg, #000, #333);
         box-shadow: inset 2px 2px 2px #ddda, inset -2px -2px 2px #000a, 3px 3px 3px rgba(0, 0, 0, 0.281); }
   #hero #cta {
     margin: 1.5rem auto;
