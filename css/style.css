@@ -318,7 +318,7 @@
                   content: '';
                   bottom: 0;
                   left: 50%;
-                  transform: translateX(-50%) scale(0.3);
+                  transform: translateX(-50%) scale(0.1);
                   width: 70%;
                   height: .1rem;
                   background-color: #f8650c;
@@ -380,7 +380,7 @@
   min-height: 100vh;
   background-color: #fff;
   transition: 1.5s;
-  background-image: url(../img/orich-project.jpg);
+  background-image: url(../img/shivendu-shukla-3yoTPuYR9ZY-unsplash-min.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -395,11 +395,10 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: .8;
     background-image: linear-gradient(30deg, #f8650c, #000a); }
   #hero .page-title {
     padding: 10vh 0 0;
-    width: 100%;
+    margin: 0 auto;
     text-align: center;
     color: #ddd;
     text-transform: uppercase;
@@ -407,6 +406,7 @@
     z-index: 2; }
     #hero .page-title h1 {
       font-size: 3.5rem;
+      font-weight: 600;
       letter-spacing: 1.3rem;
       font-family: "Gruppo", cursive;
       transition: .5s; }
@@ -415,7 +415,7 @@
       font-size: .85rem;
       font-family: "Red Hat Display", sans-serif;
       letter-spacing: .3rem;
-      font-weight: 200;
+      font-weight: 500;
       transition: .5s; }
     @media (min-width: 768px) {
       #hero .page-title {
@@ -497,7 +497,8 @@
       letter-spacing: .05rem; }
       @media (min-width: 768px) {
         #hero #cta .cta-btn {
-          width: 15rem; } }
+          width: 15rem;
+          margin: 5vh auto; } }
       #hero #cta .cta-btn::before, #hero #cta .cta-btn::after {
         position: absolute;
         content: '';
@@ -524,7 +525,7 @@
           opacity: 1; }
   @media (min-width: 821px) {
     #hero {
-      background-image: url("../img/orich-hero.jpg");
+      background-image: url("../img/shivendu-shukla-3yoTPuYR9ZY-unsplash-min.jpg");
       background-size: contain;
       background-size: 100%;
       background-position: center 30%;
