@@ -424,7 +424,7 @@
         #hero .page-title h1 {
           font-size: 4rem; } }
   #hero .hero-logo {
-    margin: 1rem auto 0;
+    margin: 5vh auto 0;
     width: 50vw;
     height: auto; }
     #hero .hero-logo figure {
