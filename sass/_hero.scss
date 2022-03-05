@@ -20,6 +20,7 @@
             height: 100%;
             z-index: -1;
             background-image: linear-gradient(30deg, $brand, #000a);
+            background-image: linear-gradient(30deg , #000a, $brand);
             
         }
     // HERO PAGE TITLE
