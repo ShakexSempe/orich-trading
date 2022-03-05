@@ -50,10 +50,92 @@
             font-weight: 200;
             transition: .5s;
         }
-        // CTA 
+        
+        // DESKTOP PAGE TITLE
+        @media (min-width: 768px) {
+            padding: 10vh 0 0;
+            margin-bottom: 5vh;
+            h1 {
+                font-size: 4rem;
+            }
+        }
+    }
+    // HERO LOGO
+    .hero-logo {
+        margin: 1rem auto 0;
+        height: 20rem;
+        width: 20rem;
+        figure {
+            width: 100%;
+            overflow: hidden;
+            margin: 0 auto;
+            border-radius: 5px;
+            z-index: 4;
+
+            img {
+                width: 100%;
+                border-radius: 5px;
+            }
+        }
+        @media (min-width: 768px) {
+            height: 50vh;
+            width: 50vh;
+        }
+    }
+
+// SLOGAN 'quality or nothing'
+.slogan {
+    border-radius: 5px;
+    border: 2px solid blue;
+    border: none;
+    width: 15rem;
+    margin: .5rem auto 5vh;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    
+    p {
+        text-transform: capitalize;
+        margin: 0rem auto;
+        padding: .5rem 1rem;
+        background: #fff;
+        color: $text-second;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        position: relative;
+        isolation: isolate;
+
+        span {
+            color: $text-second;
+            color: $brand-light;
+            font-weight: 500;
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            z-index: -1;
+            background: linear-gradient(0deg, #000, #222);
+            box-shadow: inset 2px 2px 2px #ddda,
+                        inset -2px -2px 2px #000a,
+                        3px 3px 3px rgba(0, 0, 0, 0.281);
+        
+    }
+}
+}
+// CTA 
         #cta {
             margin: 1.5rem auto;
             transition: .3s;
+            text-align: center;
             .cta-btn {
                 padding: .5rem 1.5rem;
                 margin: 0 auto;
@@ -104,83 +186,6 @@
                 }
             }
         }
-        // DESKTOP PAGE TITLE
-        @media (min-width: 768px) {
-            padding: 10vh 0 0;
-            margin-bottom: 5vh;
-            h1 {
-                font-size: 4rem;
-            }
-        }
-    }
-    // HERO LOGO
-    .hero-logo {
-        margin: 10vh auto 0;
-        height: 50%;
-        width: 55%;
-        figure {
-            width: 100%;
-            overflow: hidden;
-            margin: 0 auto;
-            border-radius: 5px;
-            z-index: 4;
-
-            img {
-                width: 100%;
-                border-radius: 5px;
-            }
-        }
-        @media (min-width: 768px) {
-            height: 50vh;
-            width: 50vh;
-        }
-    }
-
-// SLOGAN 'quality or nothing'
-.slogan {
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    text-align: center;
-    
-    p {
-        text-transform: capitalize;
-        margin: 0rem auto;
-        padding: .5rem 1rem;
-        background: #fff;
-        color: $text-second;
-        border-radius: 5px;
-        border: none;
-        outline: none;
-        position: relative;
-        isolation: isolate;
-
-        span {
-            color: $text-second;
-            color: $brand-light;
-            font-weight: 500;
-        }
-
-        &::before {
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 5px;
-            border: none;
-            outline: none;
-            z-index: -1;
-            background: linear-gradient(0deg, #000, #222);
-            box-shadow: inset 2px 2px 2px #ddda,
-                        inset -2px -2px 2px #000a,
-                        3px 3px 3px rgba(0, 0, 0, 0.281);
-        
-    }
-}
-}
     // DESKTOP HEROf
     @media (min-width: 821px) {
         // background-image: url("https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
