@@ -23,6 +23,40 @@
             background-image: linear-gradient(0deg, #000, #000a);
             
         }
+    // DESKTOP HEROf
+    @media (min-width: 821px) {
+        background-image: url("../img/shivendu-shukla-3yoTPuYR9ZY-unsplash-min.jpg");
+        background-size: contain;
+        background-size: 100%;
+        background-position: center 30%;
+        background-attachment: fixed;
+        z-index: 10;
+        display: grid;
+        // place-items: center;
+        // border: 3px solid red;
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000a;
+            z-index: -1;
+        }
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: linear-gradient(0deg, transparent, #000);
+            // opacity: .5;
+        }
+    }
+    // END OF DESKTOP HERO
     // HERO PAGE TITLE
     .page-title {
         padding: 10vh 0 0;
@@ -49,13 +83,66 @@
             font-weight: 500;
             transition: .5s;
         }
-        
+        // SLOGAN 'quality or nothing'
+        .slogan {
+            border-radius: 5px;
+            border: 2px solid blue;
+            border: none;
+            width: 15rem;
+            margin: .5rem auto 5vh;
+            outline: none;
+            cursor: pointer;
+            text-align: center;
+
+            p {
+                text-transform: capitalize;
+                margin: 0rem auto;
+                padding: .5rem 1rem;
+                background: #fff;
+                color: $text-second;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                position: relative;
+                isolation: isolate;
+                font-size: 1rem;
+
+                span {
+                    color: $text-second;
+                    color: $brand-light;
+                    font-weight: 500;
+                }
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 5px;
+                    border: none;
+                    outline: none;
+                    z-index: -1;
+                    background: linear-gradient(0deg, #000, #333);
+                    box-shadow: inset 2px 2px 2px #ddda,
+                        inset -2px -2px 2px #000a,
+                        3px 3px 3px rgba(0, 0, 0, 0.281);
+
+                }
+            }
+        }
         // DESKTOP PAGE TITLE
-        @media (min-width: 768px) {
-            padding: 10vh 0 0;
-            margin-bottom: 5vh;
+        @media (min-width: 1024px) {
+            padding: 0;
+            margin: 15vh auto 0;
+            // margin-bottom: 5vh;
+            // border: 1px solid red;
             h1 {
-                font-size: 4rem;
+                font-size: 5rem;
+            }
+            p {
+                font-size: 1.3rem;
             }
         }
     }
@@ -77,60 +164,17 @@
             }
         }
         @media (min-width: 768px) {
-            width: 15rem;
+            width: 10rem;
+            // border: 1px solid red;
+            position: absolute;
+            left: 5vw;
+            bottom: 5vh;
             // height: 50vh;
             // width: 50vh;
         }
     }
 
-// SLOGAN 'quality or nothing'
-.slogan {
-    border-radius: 5px;
-    border: 2px solid blue;
-    border: none;
-    width: 15rem;
-    margin: .5rem auto 5vh;
-    outline: none;
-    cursor: pointer;
-    text-align: center;
-    
-    p {
-        text-transform: capitalize;
-        margin: 0rem auto;
-        padding: .5rem 1rem;
-        background: #fff;
-        color: $text-second;
-        border-radius: 5px;
-        border: none;
-        outline: none;
-        position: relative;
-        isolation: isolate;
 
-        span {
-            color: $text-second;
-            color: $brand-light;
-            font-weight: 500;
-        }
-
-        &::before {
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 5px;
-            border: none;
-            outline: none;
-            z-index: -1;
-            background: linear-gradient(0deg, #000, #333);
-            box-shadow: inset 2px 2px 2px #ddda,
-                        inset -2px -2px 2px #000a,
-                        3px 3px 3px rgba(0, 0, 0, 0.281);
-        
-    }
-}
-}
 // CTA 
         #cta {
             margin: 1.5rem auto;
@@ -139,18 +183,14 @@
             .cta-btn {
                 padding: .5rem 1.5rem;
                 margin: 0 auto;
-                border-radius: 20px;
+                border-radius: 30px;
                 cursor: pointer;
                 text-decoration: none;
                 text-transform: capitalize;
                 color: $text-second;
                 background: $brand-light;
                 display: block;
-                width: 50vw;
-                @media (min-width: 768px) {
-                    width: 15rem;
-                    margin: 5vh auto;
-                }
+                width: 15rem;
                 position: relative;
                 isolation: isolate;
                 transition: .3s;
@@ -164,7 +204,7 @@
                     left: 0;
                     width: 100%;
                     height: 100%;
-                    border-radius: 20px;
+                    border-radius: 30px;
                     z-index: -1;
                     transition: .3s;
                 }
@@ -189,38 +229,19 @@
                     &::after {opacity: 1}
                 }
             }
+            @media (min-width: 1024px) {
+                position: absolute;
+                bottom: 10vh;
+                left: 50%;
+                transform: translateX(-50%);
+                .cta-btn {
+                    width: 15rem;
+                    margin: 5vh auto;
+                    font-size: 1.7rem;
+                }
+            }
         }
-    // DESKTOP HEROf
-    @media (min-width: 821px) {
-        background-image: url("../img/shivendu-shukla-3yoTPuYR9ZY-unsplash-min.jpg");
-        background-size: contain;
-        background-size: 100%;
-        background-position: center 30%;
-        background-attachment: fixed;
-        z-index: 10;
-        &::after {
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #000a;
-            z-index: -1;
-        }
-        &::before {
-            position: absolute;
-            content: '';
-            top: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background-image: linear-gradient(0deg, transparent, #000);
-            // opacity: .5;
-        }
-    }
-    // END OF DESKTOP HERO
+    
 
     
     // HERO ACTIVE BACKGROUND CLASS
