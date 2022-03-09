@@ -1664,8 +1664,8 @@
     position: relative; }
     @media (min-width: 768px) {
       .container .main {
-        margin-top: 10vh;
-        padding: 5vh 0; } }
+        padding: 5vh 0;
+        padding: 0; } }
     .container .main::after {
       position: fixed;
       content: '';
@@ -1705,8 +1705,7 @@
       @media (min-width: 768px) {
         .container .main .parallax {
           height: 95vh;
-          margin: 5vh 5vw;
-          margin: 0vh 5vw;
+          margin: 10vh 0 5vh;
           background-image: url(../img/orich-team.jpg);
           background-repeat: no-repeat;
           background-position: center;
