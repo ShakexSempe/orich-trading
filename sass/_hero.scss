@@ -169,8 +169,13 @@
             position: absolute;
             left: 5vw;
             bottom: 5vh;
+            transition: .5s;
             // height: 50vh;
             // width: 50vh;
+
+            &:hover {
+                transform: scale(1.5) translateX(5vw) translateY(-5vh);
+            }
         }
     }
 

@@ -320,9 +320,9 @@
                   left: 50%;
                   transform: translateX(-50%) scale(0.1);
                   width: 70%;
-                  height: .1rem;
+                  height: .15rem;
                   background-color: #f8650c;
-                  transition: .5s; }
+                  transition: .3s; }
                 #header .navigation nav ul li a:hover {
                   color: #f4f4f4; }
                   #header .navigation nav ul li a:hover::after {
@@ -508,7 +508,10 @@
         width: 10rem;
         position: absolute;
         left: 5vw;
-        bottom: 5vh; } }
+        bottom: 5vh;
+        transition: .5s; }
+        #hero .hero-logo:hover {
+          transform: scale(1.5) translateX(5vw) translateY(-5vh); } }
   #hero #cta {
     margin: 1.5rem auto;
     transition: .3s;
@@ -1744,7 +1747,7 @@
     border-radius: 5px;
     padding: .2rem;
     z-index: 5;
-    transition: 1s;
+    transition: .3s;
     opacity: 0;
     cursor: pointer;
     transform: translateY(10vh); }
@@ -1766,15 +1769,17 @@
           font-size: 1.5rem; } }
     .container #top-btn i, .container .home-btn i {
       color: #000;
-      transition: .3s;
       margin: 0 auto;
-      transition: .5s; }
+      transition: .3s; }
     .container #top-btn.active, .container .home-btn.active {
       opacity: 1;
       transform: translateY(0); }
       .container #top-btn.active:hover, .container .home-btn.active:hover {
         transition: .3s;
-        transform: scale(1.1); }
+        background: #fff;
+        border-color: #000; }
+        .container #top-btn.active:hover i, .container .home-btn.active:hover i {
+          color: #f8650c; }
 
 [data-scroll] {
   transition: 1s ease;

@@ -178,7 +178,7 @@
         border-radius: 5px;
         padding: .2rem;
         z-index: 5;
-        transition: 1s;
+        transition: .3s;
         opacity: 0;
         cursor: pointer;
         transform: translateY(10vh);
@@ -205,9 +205,8 @@
 
         i {
             color: #000;
-            transition: .3s;
             margin: 0 auto;
-            transition: .5s;
+            transition: .3s;
         }
         
         
@@ -218,7 +217,12 @@
             transform: translateY(0);
             &:hover {
                 transition: .3s;
-                transform: scale(1.1);
+                background: #fff;
+                border-color: #000;
+
+                i {
+                    color: $brand;
+                }
             }
         }
     }
