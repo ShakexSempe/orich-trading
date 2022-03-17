@@ -100,9 +100,11 @@
   @media (min-width: 768px) {
     #header {
       background-color: transparent; } }
-  #header.scroll {
+  #header.observe {
     background-color: #f8650c; }
-    #header.scroll .navigation nav ul li a::after {
+    #header.observe .logo {
+      opacity: 1; }
+    #header.observe .navigation nav ul li a::after {
       background-color: #fff; }
   #header.active {
     background-color: #000; }
@@ -1751,10 +1753,10 @@
     border-radius: 5px;
     padding: .2rem;
     z-index: 5;
-    transition: .3s;
+    transition: 1s;
     opacity: 0;
     cursor: pointer;
-    transform: translateY(10vh); }
+    transform: translateY(5rem); }
     .container #top-btn a, .container .home-btn a {
       border: 1px solid blue;
       border: none;

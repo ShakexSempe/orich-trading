@@ -178,10 +178,10 @@
         border-radius: 5px;
         padding: .2rem;
         z-index: 5;
-        transition: .3s;
+        transition: 1s;
         opacity: 0;
         cursor: pointer;
-        transform: translateY(10vh);
+        transform: translateY(5rem);
         
         a {
             border: 1px solid blue;

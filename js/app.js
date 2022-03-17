@@ -11,27 +11,6 @@ const dropdownBtn = document.querySelectorAll(".aside-dropdown")
 const links = document.querySelectorAll('#aside ul li a');
 console.log(logo);
 
-document.addEventListener("scroll", () => {
-    const scroll_position = window.scrollY;
-    const scroll_height = window.pageYOffset;
-    // HEADER AND LOGO OPACITY ON SCROLL
-    if(scroll_position < 25) {
-        header.classList.remove("scroll");
-        logo.style.opacity = 0;
-    } 
-    else {
-        header.classList.add("scroll");
-        topBtn.classList.remove("active");
-        logo.style.opacity = 1;
-    }
-
-    if(scroll_position > 150) {
-        topBtn.classList.add("active");
-    }
-    else {
-        topBtn.classList.remove("active");
-    }
-});
 
 toggle.addEventListener("click",  () => {
     aside.classList.toggle("active");
@@ -79,3 +58,29 @@ main.addEventListener("click", () => {
 //         hero.classList.toggle("active");
 //     })
 // })
+
+// INTERSECTION OBSERVER
+const heroOptions = {
+    rootMargin: "-90% 0px 0px 0px"
+};
+
+const heroObserver = new IntersectionObserver(
+    function(
+        entries, heroObserver
+    ) {
+        entries.forEach(entry => {
+            if(!entry.isIntersecting) {
+                console.log("hero NOT intersecting");
+                header.classList.add("observe");
+                topBtn.classList.add("active");
+            } else {
+                console.log("hero intersecting");
+                header.classList.remove("observe");
+                topBtn.classList.remove("active");
+
+            }
+        });
+    }, heroOptions
+);
+
+heroObserver.observe(hero);

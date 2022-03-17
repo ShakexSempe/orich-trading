@@ -14,8 +14,11 @@
     align-items: center;
     z-index: 20;
     // CHANGE BG COLOR ON SCROLL
-    &.scroll {
+    &.observe {
     background-color: $brand;
+    .logo {
+        opacity: 1;
+    }
     // NAV BAR LINKS UNDERLINES COLOR WHEN SCROLL CLASS ACTIVE
     .navigation {
         nav {
