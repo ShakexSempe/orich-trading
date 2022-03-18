@@ -68,7 +68,7 @@
             }
         }
 
-    .main {
+    main {
         @media (min-width: 768px) {
             // margin-top: 10vh;
             padding: 5vh 0;
@@ -78,7 +78,14 @@
         min-height: 100vh;
         position: relative;
         // background-color: $bg-main;
-
+        // MAIN SECTION ON INDEX
+        &.index-main {
+            margin-top: 5vh;
+        }
+        // MAIN SECTION ON PAGES
+        &.page-main {
+            margin-top: 10vh;
+        }
         &::after {
             position: fixed;
             content: '';
@@ -179,9 +186,12 @@
         padding: .2rem;
         z-index: 5;
         transition: 1s;
-        opacity: 0;
+        opacity: 1;
         cursor: pointer;
-        transform: translateY(5rem);
+        &.index-top-btn {
+            transform: translateY(5rem);
+            opacity: 0;
+        }
         
         a {
             border: 1px solid blue;
