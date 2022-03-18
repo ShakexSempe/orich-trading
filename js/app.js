@@ -9,7 +9,6 @@ const topBtn = document.querySelector(".index-top-btn");
 const aside = document.querySelector("aside");
 const dropdownBtn = document.querySelectorAll(".aside-dropdown")
 const links = document.querySelectorAll('#aside ul li a');
-console.log(pageHeader);
 
 
 toggle.addEventListener("click",  () => {
