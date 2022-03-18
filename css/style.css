@@ -1691,8 +1691,6 @@
       .container main {
         padding: 5vh 0;
         padding: 0; } }
-    .container main.index-main {
-      margin-top: 5vh; }
     .container main.page-main {
       margin-top: 10vh; }
     .container main::after {
