@@ -28,6 +28,8 @@
     background-color: $brand;
     .logo {
         opacity: 1;
+        transform: translateY(0);
+
     }
     // NAV BAR LINKS UNDERLINES COLOR WHEN SCROLL CLASS ACTIVE
     .navigation {
@@ -56,7 +58,7 @@
     }
     .brand {
         border: 1px solid $brand-light;
-        padding: .2em .5em;
+        padding: .35em .5em;
         border-radius: 5px;
         display: grid;
         place-items: center;
@@ -306,7 +308,7 @@
     @media (min-width: 821px) {
         height: 10vh;
         // display: none;
-        padding: .5em 5vw;
+        padding: .2rem 5vw;
         .brand {
             a {
                 font-size: 1.5em;
@@ -314,7 +316,8 @@
         }
         .logo {
             height: 100%;
-            
+            width: 10rem;
+            border-radius: 5px;
             figure {
                 border-radius: 5px;
                 height: 100%;
@@ -324,7 +327,6 @@
                 img {
                     width: 100%;
                     height: 100%;
-                    object-fit: contain;
                 }
             }
         }
