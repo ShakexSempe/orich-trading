@@ -101,7 +101,7 @@
                 opacity: .7;
             }
         }
-
+        #parallax{
         .mobile-parallax {
             // display: none;
             height: 60vh;
@@ -116,24 +116,25 @@
                 position: relative;
                 overflow: hidden;
                 isolation: isolate;
+                &[data-scroll] {
+                    transform: scale(1) translateY(20%);
+                    transition: 2s ease;
+                }
+                &[data-scroll="in"] {
+                    transform: scale(1) translateY(0);
+                }
                 img {
                     position: absolute;
                     width: 100%;
                     height: auto;
                     transition: .5s;
-
+                    
                     &.img-1 {
-                        &[data-scroll] {
-                            transform: scale(1) translateY(20%);
-                            transition: 2s ease;
-                        }
-                        &[data-scroll="in"] {
-                            transform: scale(1) translateY(0);
-                        }
+                        
                     }
                     &.img-2 {
-                        opacity: 0;
-                        animation: heroImg 5s infinite;
+                        opacity: 1;
+                        // animation: heroImg 5s infinite;
                         @keyframes heroImg {
                             50% {
                                 opacity: 1;
@@ -143,21 +144,6 @@
                     }
                 }
 
-                // DATA-SCROLL
-                &[data-scroll] {
-                    transform: scale(1);
-                    transition: 2s ease;
-                }
-
-                &:hover {
-                    img {
-                        &.img-2 {
-                            transform: scale(1.25);
-                            opacity: 1;
-                            
-                        }
-                    }
-                }
             }   
             }
             
@@ -192,7 +178,7 @@
                 display: none;
             }
         }
-
+    }
         section {
             min-height: 100vh;
             background: #fff;

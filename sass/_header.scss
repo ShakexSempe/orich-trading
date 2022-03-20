@@ -308,23 +308,23 @@
     @media (min-width: 821px) {
         height: 10vh;
         // display: none;
-        padding: .2rem 5vw;
+        padding: .5rem 5vw;
         .brand {
             a {
                 font-size: 1.5em;
             }
         }
         .logo {
-            height: 100%;
             width: 10rem;
             border-radius: 5px;
             figure {
                 border-radius: 5px;
-                height: 100%;
+                // height: 100%;
                 width: 100%;
                 overflow: hidden;
 
                 img {
+                    border-radius: 5px;
                     width: 100%;
                     height: 100%;
                 }
