@@ -101,8 +101,8 @@
                 opacity: .7;
             }
         }
-        #parallax{
-        .mobile-parallax {
+        #banner{
+        .mobile-banner {
             // display: none;
             height: 60vh;
             background-color: #ffffff;
@@ -148,7 +148,7 @@
                 display: none;
             }
         }
-        .desktop-parallax-1 {
+        .desktop-banner-1 {
             height: 100vh;
             margin: 10vh 0 0;
             background: url(/img/orich-partners.jpg);
@@ -161,7 +161,7 @@
                 display: none;
             }
         }
-        .desktop-parallax-2 {
+        .desktop-banner-2 {
             height: 100vh;
             margin: 5vh 0;
             background: url(/img/orich-team.jpg);
