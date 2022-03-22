@@ -1732,7 +1732,8 @@
             height: auto;
             transition: .5s; }
             .container main #parallax .mobile-parallax figure img.img-2 {
-              opacity: 1; }
+              opacity: 0;
+              animation: heroImg 5s infinite; }
         @keyframes heroImg {
           50% {
             opacity: 1;

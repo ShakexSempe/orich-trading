@@ -128,13 +128,9 @@
                     width: 100%;
                     height: auto;
                     transition: .5s;
-                    
-                    &.img-1 {
-                        
-                    }
                     &.img-2 {
-                        opacity: 1;
-                        // animation: heroImg 5s infinite;
+                        opacity: 0;
+                        animation: heroImg 5s infinite;
                         @keyframes heroImg {
                             50% {
                                 opacity: 1;
