@@ -31,19 +31,20 @@
             }
         }
         &.promise {
-            background: url(../img/logo.jpg);
+            // background: url(../img/logo.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
+            height: 90vh;
             // background: $brand;
             padding: 1rem .5rem;
             border-radius: 5px;
             isolation: isolate;
             position: relative;
             z-index: 1;
-            margin: 15vh 0;
+            margin: 0;
             @media (min-width: 768px) {
-                background: url(../img/logo.jpg);
+                // background: url(../img/logo.jpg);
             background-repeat: no-repeat;
             background-position: center;
                 background-position: right;
@@ -57,9 +58,11 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                border-radius: 5px;
+                // border-radius: 5px;
                 // background: linear-gradient(30deg, $brand, $brand-light );
                 background: linear-gradient(30deg, hsla(0, 0%, 0%, .780), $brand );
+                background: linear-gradient(45deg, #000, $brand );
+                opacity: .9;
                 z-index: -2;
                 box-shadow: inset 2px 2px 2px #fffa,
                             inset -2px -2px 2px #000a,
@@ -133,7 +136,7 @@
     }
     .service-container {
         // border: 1px solid $brand;
-        margin: 1rem auto;
+        margin: 1rem auto 0;
         background: #f4f4f4;
         padding-bottom: 1vh;
         border-radius: 5px;
@@ -321,6 +324,44 @@
 
         
     }
+    .service-section-pad {
+        // border: 3px solid blue;
+        height: 90vh;
+        padding: 0;
+        overflow: hidden;
+        position: sticky;
+        top: 10vh;
+
+        .section-pad-img {
+            width: 100%;
+            height: 100%;
+            background: url(../img/nathan-waters-j7q-Z9DV3zw-unsplash.jpg);
+            // background: url(../img/orich.jpg);
+        
+
+        // TURN DISPLAY OFF FOR RESPECTIVE SCREEN SIZE
+        @media (min-width: 768px){
+            // border: 2px solid red;
+            background: url(../img/ben-allan-BIeC4YK2MTA-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            &.mobile-img {
+                display: none;
+                background: yellow;
+            }
+        }
+        @media (max-width: 768px){
+            // border: 2px solid green;
+            // background: url(../img/nathan-waters-j7q-Z9DV3zw-unsplash.jpg);
+            background-size: cover;
+            &.desktop-img {
+                display: none;
+                background: green;
+            }
+        }
+    }
+    }
 
     @media (min-width:768px) {
         padding: 0 5vw 5vh;
@@ -329,7 +370,7 @@
         }
         .service-container {
             // border: 1px solid red;
-            margin: 5vh 0;
+            margin: 5vh 0 0;
     
             .service-item {
                 // border: 1px solid blue;

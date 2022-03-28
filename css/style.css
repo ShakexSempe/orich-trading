@@ -941,19 +941,18 @@
       #services .section-description p {
         font-size: 1.15rem; } }
     #services .section-description.promise {
-      background: url(../img/logo.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
+      height: 90vh;
       padding: 1rem .5rem;
       border-radius: 5px;
       isolation: isolate;
       position: relative;
       z-index: 1;
-      margin: 15vh 0; }
+      margin: 0; }
       @media (min-width: 768px) {
         #services .section-description.promise {
-          background: url(../img/logo.jpg);
           background-repeat: no-repeat;
           background-position: center;
           background-position: right; } }
@@ -964,8 +963,9 @@
         left: 0;
         width: 100%;
         height: 100%;
-        border-radius: 5px;
         background: linear-gradient(30deg, rgba(0, 0, 0, 0.78), #f8650c);
+        background: linear-gradient(45deg, #000, #f8650c);
+        opacity: .9;
         z-index: -2;
         box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 3px 5px 3px rgba(0, 0, 0, 0.25); }
       #services .section-description.promise h3 {
@@ -1011,7 +1011,7 @@
         #services .section-description.promise ul li[data-scroll="in"] p {
           opacity: 1; }
   #services .service-container {
-    margin: 1rem auto;
+    margin: 1rem auto 0;
     background: #f4f4f4;
     padding-bottom: 1vh;
     border-radius: 5px; }
@@ -1137,13 +1137,38 @@
           transition-delay: .9s; }
         #services .service-container .service-item[data-scroll="in"] .service-type ul li:nth-child(6) {
           transition-delay: 1s; }
+  #services .service-section-pad {
+    height: 90vh;
+    padding: 0;
+    overflow: hidden;
+    position: sticky;
+    top: 10vh; }
+    #services .service-section-pad .section-pad-img {
+      width: 100%;
+      height: 100%;
+      background: url(../img/nathan-waters-j7q-Z9DV3zw-unsplash.jpg); }
+      @media (min-width: 768px) {
+        #services .service-section-pad .section-pad-img {
+          background: url(../img/ben-allan-BIeC4YK2MTA-unsplash.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover; }
+          #services .service-section-pad .section-pad-img.mobile-img {
+            display: none;
+            background: yellow; } }
+      @media (max-width: 768px) {
+        #services .service-section-pad .section-pad-img {
+          background-size: cover; }
+          #services .service-section-pad .section-pad-img.desktop-img {
+            display: none;
+            background: green; } }
   @media (min-width: 768px) {
     #services {
       padding: 0 5vw 5vh; }
       #services .section-description {
         margin: 5vh 0 10vh; }
       #services .service-container {
-        margin: 5vh 0; }
+        margin: 5vh 0 0; }
         #services .service-container .service-item {
           display: flex;
           flex-direction: row;
