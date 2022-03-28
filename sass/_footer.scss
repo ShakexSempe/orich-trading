@@ -19,6 +19,7 @@
         align-items: center;
         padding: 5vh 0;
         margin: 0 1rem;
+        figure {display: none;}
         @media (max-width: 768px) {
             figure {
                 display: none;

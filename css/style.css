@@ -941,15 +941,17 @@
       #services .section-description p {
         font-size: 1.15rem; } }
     #services .section-description.promise {
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
       padding: 1rem .5rem;
       border-radius: 5px;
       isolation: isolate;
       position: relative;
       z-index: 1;
       margin: 0; }
+      #services .section-description.promise.page-promise {
+        background: url(../img/logo.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain; }
       @media (min-width: 768px) {
         #services .section-description.promise {
           background-repeat: no-repeat;
@@ -1524,6 +1526,8 @@
     align-items: center;
     padding: 5vh 0;
     margin: 0 1rem; }
+    #footer .footer-contact figure {
+      display: none; }
     @media (max-width: 768px) {
       #footer .footer-contact figure {
         display: none; } }
