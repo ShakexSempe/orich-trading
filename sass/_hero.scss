@@ -2,7 +2,7 @@
     min-height: 100vh;
     background-color: $primary-color;
     transition: 1.5s;
-    background-image: url(../img/orich-project.jpg);
+    background-image: url(../img/shivendu-shukla-3yoTPuYR9ZY-unsplash-min.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -60,7 +60,7 @@
     // END OF DESKTOP HERO
     // HERO PAGE TITLE
     .page-title {
-        padding: 10vh 0 0;
+        padding: 40vh 0 0;
         margin: 0 auto;
         text-align: center;
         color: #ddd;
@@ -251,6 +251,8 @@
                     width: 15rem;
                     margin: 5vh auto;
                     font-size: 1.7rem;
+                padding: .5rem 1.5rem;
+
                 }
             }
         }
