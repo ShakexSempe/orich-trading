@@ -60,7 +60,7 @@
     // END OF DESKTOP HERO
     // HERO PAGE TITLE
     .page-title {
-        padding: 20vh 0 0;
+        padding: 10vh 0 0;
         margin: 0 auto;
         text-align: center;
         color: #ddd;
@@ -190,11 +190,11 @@
 
 // CTA 
         #cta {
-            margin: 10vh auto 0;
+            margin: 30vh auto 0;
             transition: .3s;
             text-align: center;
             .cta-btn {
-                padding: .5rem 1.5rem;
+                padding: .5rem 1rem;
                 margin: 0 auto;
                 border-radius: 30px;
                 cursor: pointer;
@@ -251,7 +251,7 @@
                     width: 15rem;
                     margin: 5vh auto;
                     font-size: 1.7rem;
-                padding: .5rem 1.5rem;
+                padding: .5rem 1rem;
 
                 }
             }
