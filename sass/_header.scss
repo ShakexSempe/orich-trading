@@ -91,7 +91,7 @@
         &.active-logo {
             transition: 1s ease;
             @media (max-width: 768px){
-                transform: translateY(10vh) translateX(30vw) scale(2);
+                transform: translateY(10vh) translateX(30vw) scale(2.5);
             }
             @media (min-width: 768px) {
             top: 20vh;

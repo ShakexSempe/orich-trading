@@ -145,7 +145,7 @@
       transition: 1s ease; }
       @media (max-width: 768px) {
         #header .logo.active-logo {
-          transform: translateY(10vh) translateX(30vw) scale(2); } }
+          transform: translateY(10vh) translateX(30vw) scale(2.5); } }
       @media (min-width: 768px) {
         #header .logo.active-logo {
           top: 20vh;
