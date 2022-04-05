@@ -145,7 +145,7 @@
       transition: 1s ease; }
       @media (max-width: 768px) {
         #header .logo.active-logo {
-          transform: translateY(10vh) translateX(30vw) scale(2.5); } }
+          transform: translateY(10vh) translateX(35vw) scale(2.5); } }
       @media (min-width: 768px) {
         #header .logo.active-logo {
           top: 20vh;
@@ -404,6 +404,67 @@
               height: 20vh;
               height: max-content;
               border: 2px solid #000; } }
+
+#banner {
+  height: auto;
+  background-color: #fff;
+  isolation: isolate; }
+  #banner .banner-bg {
+    position: sticky;
+    top: 6vh;
+    z-index: -1;
+    height: 95vh; }
+    #banner .banner-bg img {
+      width: 100%;
+      height: 70%;
+      object-fit: cover;
+      object-position: 38% 10%; }
+    @media (min-width: 768px) {
+      #banner .banner-bg {
+        width: 50%; }
+        #banner .banner-bg img {
+          height: 100%;
+          object-position: left; } }
+  #banner .banner-fg {
+    height: 95vh; }
+    #banner .banner-fg img {
+      width: 100%;
+      height: 70%;
+      object-fit: cover;
+      object-position: 35%; }
+    @media (min-width: 768px) {
+      #banner .banner-fg img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        object-position: left; } }
+  #banner figure {
+    position: relative; }
+    #banner figure figcaption {
+      font-family: "Gruppo", cursive;
+      font-weight: 500;
+      color: #ffff;
+      padding: .5rem;
+      font-size: 1.5rem;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 100%;
+      background: #000;
+      text-align: center;
+      transform: translateX(-50%); }
+      #banner figure figcaption.team-caption {
+        background: #fff;
+        color: #000; }
+      @media (min-width: 768px) {
+        #banner figure figcaption {
+          left: 70vw;
+          top: 40vh;
+          background: #fff;
+          font-size: 2.5rem;
+          width: 50%;
+          border: 2px solid #f8650c;
+          color: #000; } }
 
 #hero {
   min-height: 100vh;
@@ -1706,36 +1767,6 @@
         @media (min-width: 768px) {
           .container .section-title h2[data-scroll="in"]::after {
             width: 10vw; } }
-  .container #banner {
-    height: auto;
-    background-color: #fff;
-    isolation: isolate; }
-    .container #banner .banner-bg {
-      position: sticky;
-      top: 6vh;
-      z-index: -1;
-      height: 95vh; }
-      .container #banner .banner-bg img {
-        width: 100%;
-        height: 70%;
-        object-fit: cover;
-        object-position: 38% 10%; }
-      @media (min-width: 768px) {
-        .container #banner .banner-bg img {
-          height: 100%;
-          object-fit: contain; } }
-    .container #banner .banner-fg {
-      height: 95vh; }
-      .container #banner .banner-fg img {
-        width: 100%;
-        height: 70%;
-        object-fit: cover;
-        object-position: 35%; }
-      @media (min-width: 768px) {
-        .container #banner .banner-fg img {
-          height: 100%;
-          object-fit: cover;
-          object-position: 100% 0%; } }
   .container main {
     padding: 0vh 0 5vh;
     min-height: 100vh;
