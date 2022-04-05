@@ -68,23 +68,24 @@
         place-items: center;
         .title {
             a {
-            color: #ddd;
-            // text-align: center;
-            text-decoration: none;
-            h1 {
-                font-family: $font-gruppo;
-                letter-spacing: .5rem;
-                text-transform: uppercase;
-            }
+                color: #ddd;
+                text-align: center;
+                text-decoration: none;
 
-            p {
-                text-transform: uppercase;
-                font-size: .5rem;
-                font-family: $font-content;
-            font-family: $font-content;
-            letter-spacing: .15rem;
+                h1 {
+                    font-family: $font-gruppo;
+                    letter-spacing: .5rem;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    text-transform: uppercase;
+                    font-size: .5rem;
+                    font-family: $font-content;
+                    font-family: $font-content;
+                    letter-spacing: .15rem;
+                }
             }
-        }
         }
 
         &.active-logo {
