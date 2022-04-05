@@ -8,10 +8,10 @@
     @media (min-width: 768px) {
         background-color: transparent;
     }
-    display: flex;
     transition: 1s;
-    justify-content: space-between;
-    align-items: center;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
     z-index: 20;
     // CHANGE BG COLOR ON SCROLL
     // HEADER CLASSES FOR IO
@@ -19,6 +19,7 @@
         background: transparent;
         .logo {
             opacity: 0;
+            opacity: 1;
         }
     }
     &.page-header {
@@ -31,11 +32,13 @@
     }
     .logo {
         opacity: 1;
-        transform: translateY(0);
+        // transform: translateY(0);
 
     }
     // NAV BAR LINKS UNDERLINES COLOR WHEN SCROLL CLASS ACTIVE
     .navigation {
+        // position: relative;
+        // right: 1rem;
         nav {
             ul {
                 li {
@@ -54,26 +57,39 @@
     }
     // LOGO - STARTS WITH 0 OPACITY
     .logo {
+        position: absolute;
+        top: 0;
+        left: 1rem;
         transition: 1s;
-        &:hover {
-            transform: scale(.98);
-        }
-    }
-    .brand {
-        border: 1px solid $brand-light;
-        padding: .35em .5em;
-        border-radius: 5px;
+        overflow: hidden;
         display: grid;
         place-items: center;
-        text-transform: uppercase;
-        
-        a {
-            color: $text-second;
+        .title {
+            a {
+            color: #ddd;
+            text-align: center;
             text-decoration: none;
-            
-            span {
-                color: $brand-light;
+            h1 {
+                font-family: $font-gruppo;
+                letter-spacing: .5rem;
+                text-transform: uppercase;
             }
+
+            p {
+                text-transform: uppercase;
+                font-size: .5rem;
+                font-family: $font-content;
+            font-family: $font-content;
+            letter-spacing: .15rem;
+            }
+        }
+        }
+
+        &.active-logo {
+            transition: 1s ease;
+            top: 20vh;
+            left: 50vw;
+            transform: translateX(-50%) scale(2.5);
         }
     }
     
@@ -85,7 +101,7 @@
     // MOBILE HEADER 
     @media (max-width: 821px) {
         height: 7vh;
-        padding: 1vh 1rem;
+        padding: .5rem 1rem 0;
         .brand {
             a {
                 font-size: 1.2em;
@@ -94,9 +110,13 @@
         .logo {
             // display: none;
             width: 10rem;
+            // border: 2px solid yellow;
             width: auto;
             height: 100%;
-            // overflow: hidden;
+            font-size: .6rem;
+            
+
+
 
             figure {
                 width: 100%;
@@ -336,8 +356,9 @@
 
         .navigation {
             // border: 1px solid yellow;
-            display: grid;
-            place-items: center;
+            // display: grid;
+            // place-items: center;
+            float: right;
             padding: .5em;
             .toggle {
                 display: none;

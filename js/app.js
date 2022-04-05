@@ -105,10 +105,13 @@ const heroObserver = new IntersectionObserver(
                 console.log("hero NOT intersecting");
                 indexHeader.classList.add("observe");
                 topBtn.classList.add("active");
+                logo.classList.remove("active-logo");
             } else {
                 console.log("hero intersecting");
                 indexHeader.classList.remove("observe");
                 topBtn.classList.remove("active");
+                logo.classList.add("active-logo");
+
 
             }
         });

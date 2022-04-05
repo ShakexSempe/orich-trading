@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Red+Hat+Display&family=Ubuntu&display=swap");
 .toggle {
+  float: right;
   font-size: 20px;
   border-radius: 50%;
   height: 1.5em;
@@ -92,10 +93,7 @@
   min-height: 5vh;
   max-height: 8vh;
   background-color: transparent;
-  display: flex;
   transition: 1s;
-  justify-content: space-between;
-  align-items: center;
   z-index: 20; }
   @media (min-width: 768px) {
     #header {
@@ -103,7 +101,8 @@
   #header.index-header {
     background: transparent; }
     #header.index-header .logo {
-      opacity: 0; }
+      opacity: 0;
+      opacity: 1; }
   #header.page-header {
     background: #f8650c; }
   #header.observe {
@@ -112,40 +111,51 @@
       #header.observe {
         background-color: #000; } }
     #header.observe .logo {
-      opacity: 1;
-      transform: translateY(0); }
+      opacity: 1; }
     #header.observe .navigation nav ul li a::after {
       background-color: #fff; }
   #header.active {
     background-color: #000; }
   #header .logo {
-    transition: 1s; }
-    #header .logo:hover {
-      transform: scale(0.98); }
-  #header .brand {
-    border: 1px solid #ffa500;
-    padding: .35em .5em;
-    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    transition: 1s;
+    overflow: hidden;
     display: grid;
-    place-items: center;
-    text-transform: uppercase; }
-    #header .brand a {
-      color: #f4f4f4;
+    place-items: center; }
+    #header .logo .title a {
+      color: #ddd;
+      text-align: center;
       text-decoration: none; }
-      #header .brand a span {
-        color: #ffa500; }
+      #header .logo .title a h1 {
+        font-family: "Gruppo", cursive;
+        letter-spacing: .5rem;
+        text-transform: uppercase; }
+      #header .logo .title a p {
+        text-transform: uppercase;
+        font-size: .5rem;
+        font-family: "Red Hat Display", sans-serif;
+        font-family: "Red Hat Display", sans-serif;
+        letter-spacing: .15rem; }
+    #header .logo.active-logo {
+      transition: 1s ease;
+      top: 20vh;
+      left: 50vw;
+      transform: translateX(-50%) scale(2.5); }
   #header .navigation {
     text-transform: uppercase; }
   @media (max-width: 821px) {
     #header {
       height: 7vh;
-      padding: 1vh 1rem; }
+      padding: .5rem 1rem 0; }
       #header .brand a {
         font-size: 1.2em; }
       #header .logo {
         width: 10rem;
         width: auto;
-        height: 100%; }
+        height: 100%;
+        font-size: .6rem; }
         #header .logo figure {
           width: 100%;
           height: 100%;
@@ -300,8 +310,7 @@
             width: 100%;
             height: 100%; }
       #header .navigation {
-        display: grid;
-        place-items: center;
+        float: right;
         padding: .5em; }
         #header .navigation .toggle {
           display: none; }
@@ -465,7 +474,9 @@
       margin: .5rem auto 5vh;
       outline: none;
       cursor: pointer;
-      text-align: center; }
+      text-align: center;
+      position: relative;
+      top: 50vh; }
       #hero .page-title .slogan p {
         text-transform: capitalize;
         margin: 0rem auto;
@@ -503,34 +514,11 @@
           font-size: 5rem; }
         #hero .page-title p {
           font-size: 1.3rem; } }
-  #hero .hero-logo {
-    margin: 5vh auto 0;
-    width: 10rem;
-    height: auto; }
-    #hero .hero-logo figure {
-      width: 100%;
-      overflow: hidden;
-      margin: 0 auto;
-      border-radius: 5px;
-      z-index: 4; }
-      @media (max-width: 768px) {
-        #hero .hero-logo figure:hover img {
-          transform: scale(1.1); } }
-      #hero .hero-logo figure img {
-        width: 100%;
-        border-radius: 5px;
-        transition: .3s; }
-    @media (min-width: 768px) {
-      #hero .hero-logo {
-        width: 10rem;
-        position: absolute;
-        left: 5vw;
-        top: 10vh;
-        transition: .5s; }
-        #hero .hero-logo:hover {
-          transform: scale(1.5) translateX(5vw) translateY(-5vh); } }
   #hero #cta {
-    margin: 30vh auto 0;
+    position: absolute;
+    bottom: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
     transition: .3s;
     text-align: center; }
     #hero #cta .cta-btn {
