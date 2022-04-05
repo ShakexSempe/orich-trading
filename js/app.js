@@ -20,7 +20,7 @@ toggle.addEventListener("click",  () => {
     header.classList.remove("scroll");
     header.classList.toggle("active");
     console.log("open");
-    
+    logo.classList.remove("active-logo");
 });
 
 // dropdownBtn.forEach(btn => {

@@ -112,11 +112,14 @@
         background-color: #000; } }
     #header.observe .logo {
       opacity: 1; }
-    #header.observe .navigation nav ul li a::after {
-      background-color: #fff; }
+    #header.observe .navigation {
+      z-index: 5; }
+      #header.observe .navigation nav ul li a::after {
+        background-color: #fff; }
   #header.active {
     background-color: #000; }
   #header .logo {
+    z-index: 1;
     position: absolute;
     top: 0;
     left: 1rem;
@@ -126,7 +129,6 @@
     place-items: center; }
     #header .logo .title a {
       color: #ddd;
-      text-align: center;
       text-decoration: none; }
       #header .logo .title a h1 {
         font-family: "Gruppo", cursive;
@@ -139,10 +141,15 @@
         font-family: "Red Hat Display", sans-serif;
         letter-spacing: .15rem; }
     #header .logo.active-logo {
-      transition: 1s ease;
-      top: 20vh;
-      left: 50vw;
-      transform: translateX(-50%) scale(2.5); }
+      transition: 1s ease; }
+      @media (max-width: 768px) {
+        #header .logo.active-logo {
+          transform: translateY(10vh) translateX(30vw) scale(2); } }
+      @media (min-width: 768px) {
+        #header .logo.active-logo {
+          top: 20vh;
+          left: 50vw;
+          transform: translateX(-50%) scale(2.5); } }
   #header .navigation {
     text-transform: uppercase; }
   @media (max-width: 821px) {
