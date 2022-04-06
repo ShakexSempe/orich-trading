@@ -5,7 +5,7 @@
   border-radius: 50%;
   height: 1.5em;
   width: 1.5em;
-  border: 2px solid #ffa500;
+  border: 2px solid #f8650c;
   outline: 2px solid #f8650c;
   outline-offset: -2px;
   cursor: pointer;
@@ -106,7 +106,7 @@
   #header.page-header {
     background: #f8650c; }
   #header.observe {
-    background-color: #f8650c; }
+    background-color: #000; }
     @media (min-width: 768px) {
       #header.observe {
         background-color: #000; } }
@@ -445,17 +445,14 @@
       font-weight: 500;
       color: #ffff;
       padding: .5rem;
+      background: #f8650c;
       font-size: 1.5rem;
       position: absolute;
       top: 0;
       left: 50%;
       width: 100%;
-      background: #000;
       text-align: center;
       transform: translateX(-50%); }
-      #banner figure figcaption.team-caption {
-        background: #fff;
-        color: #000; }
       @media (min-width: 768px) {
         #banner figure figcaption {
           left: 70vw;
