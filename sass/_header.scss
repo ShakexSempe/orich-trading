@@ -306,7 +306,7 @@
                     top: 5vh;
                     width: 80vw;
                     display: flex;
-                    justify-content: center;
+                    justify-content: flex-start;
                     align-items: center;
                     opacity: 0;
                     transition: 1.5s;
@@ -353,7 +353,6 @@
 
                     }
                     .social-links {
-                        transition-delay: 1.3s;
                         opacity: 1;
                     }
                 }

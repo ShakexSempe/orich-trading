@@ -288,7 +288,7 @@
             top: 5vh;
             width: 80vw;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             opacity: 0;
             transition: 1.5s; }
@@ -315,7 +315,6 @@
             #header .navigation aside.active ul :nth-child(6) {
               transition-delay: .8s; }
             #header .navigation aside.active .social-links {
-              transition-delay: 1.3s;
               opacity: 1; } }
   @media (min-width: 821px) {
     #header {
