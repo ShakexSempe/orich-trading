@@ -129,6 +129,7 @@
         text-align: center;
         text-transform: capitalize;
         background: $brand;
+        background-image: linear-gradient(0deg, $brand, $brand-light);
 
         p {
             color: $text-second;

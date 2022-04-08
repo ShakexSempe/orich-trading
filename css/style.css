@@ -2070,6 +2070,7 @@
   text-align: center;
   text-transform: capitalize;
   background: #f8650c;
+  background-image: linear-gradient(0deg, #f8650c, #ffa500);
 }
 #footer .footer-copyright p {
   color: #f4f4f4;
