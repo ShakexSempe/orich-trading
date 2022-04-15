@@ -818,10 +818,10 @@
   background-position: left bottom;
   cursor: pointer;
   font-weight: 500;
+  font-weight: 900;
   transition: 1.5s;
 }
 .container #about .about-article p strong.active-io {
-  font-weight: 900;
   background-size: 100% 2px;
   transition: background 2s ease-out;
 }

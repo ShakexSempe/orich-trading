@@ -56,7 +56,7 @@ main.addEventListener("click", () => {
 const strong = document.querySelector('.strong');
 console.log(strong);
 const strongOptions = {
-    rootMargin: "0px 0px -50% 0px",
+    rootMargin: "0px 0px -30% 0px",
 }
 const strongObserver = new IntersectionObserver(
     function(entries, strongObserver){

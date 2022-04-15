@@ -29,8 +29,8 @@
                     transition: 1.5s;
                     
                     &.active-io {
-                        background-size: 100% 2px;
                         font-weight: 900;
+                        background-size: 100% 2px;
                         transition: background 2s ease-out;
                     }
 
