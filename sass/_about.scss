@@ -19,7 +19,31 @@
 
             p {
                 margin-bottom: 1.5rem;
+                strong {
+                    background: linear-gradient(90deg, orange, red);
+                    background-size: 0% 2px;
+                    background-repeat: no-repeat;
+                    background-position: left bottom;
+                    cursor: pointer;
+                    font-weight: 500;
+                    transition: 1.5s;
+                    
+                    &.active-io {
+                        background-size: 100% 2px;
+                        font-weight: 900;
+                        transition: background 2s ease-out;
+                    }
 
+                    // &[data-scroll]{
+                    //     transform: scale(0) ;
+                    //     opacity: 1;
+                    //     transition: 5s;
+                    //     background-size: 0% 3px;
+                    // }
+                    // &[data-scroll="in"]{
+                    //     background-size: 100% 3px;
+                    // }
+                }
                 span {
                     font-size: 2rem;
                     padding-right: .1em;

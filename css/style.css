@@ -811,6 +811,20 @@
 .container #about .about-article p {
   margin-bottom: 1.5rem;
 }
+.container #about .about-article p strong {
+  background: linear-gradient(90deg, orange, red);
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 1.5s;
+}
+.container #about .about-article p strong.active-io {
+  background-size: 100% 2px;
+  font-weight: 900;
+  transition: background 2s ease-out;
+}
 .container #about .about-article p span {
   font-size: 2rem;
   padding-right: 0.1em;
