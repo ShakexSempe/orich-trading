@@ -172,8 +172,7 @@
 #header .logo .title a p {
   text-transform: uppercase;
   font-size: 0.5rem;
-  font-family: "Red Hat Display", sans-serif;
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Gruppo", cursive;
   letter-spacing: 0.15rem;
 }
 #header .logo.active-logo {
