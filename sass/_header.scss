@@ -109,7 +109,7 @@
     // MOBILE HEADER 
     @media (max-width: 821px) {
         height: 7vh;
-        padding: .5rem 1rem 0;
+        padding: .5rem 1rem;
         .brand {
             a {
                 font-size: 1.2em;
@@ -149,7 +149,7 @@
             }
             aside {
                 position: fixed;
-                top: 6vh;
+                top: 7vh;
                 right: -100vw;
                 width: 100%;
                 height: 100vh;
@@ -169,7 +169,7 @@
                     width: 70vw;
                     height: 100%;
                     height: auto;
-                    overflow-y: auto;
+                    overflow: none;
 
                     li {
                         // padding-bottom: 5vh;
@@ -326,8 +326,8 @@
                         i {
                             // border: 1px solid red;
                             width: 1rem;
-                            margin: 0 1.5rem;
-                            font-size: 1.5rem;
+                            margin: 0 1rem;
+                            font-size: 1.2rem;
                             color: $brand-light;
                         }
                     }
