@@ -2,8 +2,6 @@
     position: fixed;
     top: 0;
     width: 100%;
-    min-height: 5vh;
-    max-height: 8vh;
     background-color: transparent;
     @media (min-width: 768px) {
         background-color: transparent;
@@ -62,7 +60,7 @@
         position: absolute;
         top: 0;
         left: 1rem;
-        transition: 1s;
+        transition: .5s;
         overflow: hidden;
         display: grid;
         place-items: center;
@@ -109,7 +107,7 @@
     // MOBILE HEADER 
     @media (max-width: 821px) {
         height: 7vh;
-        padding: .5rem 1rem;
+        padding: .3rem 1rem;
         .brand {
             a {
                 font-size: 1.2em;
@@ -389,9 +387,8 @@
     
     // DESKTOP HEADER
     @media (min-width: 821px) {
-        height: 10vh;
-        // display: none;
-        padding: .5rem 5vw;
+        height: 7vh;
+        padding: .25rem 5vw;
         .brand {
             a {
                 font-size: 1.5em;
@@ -419,7 +416,7 @@
             // display: grid;
             // place-items: center;
             float: right;
-            padding: .5em;
+            // padding: .5em;
             .toggle {
                 display: none;
             }
