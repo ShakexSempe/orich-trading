@@ -2141,6 +2141,7 @@
   position: absolute;
   top: 1rem;
   right: 5vw;
+  display: none;
 }
 #footer .footer-copyright .footer-logo img {
   width: 100%;

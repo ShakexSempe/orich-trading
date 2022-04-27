@@ -167,6 +167,7 @@
             position: absolute;
             top: 1rem;
             right: 5vw;
+            display: none;
             img {
                 width: 100%;
                 border-radius: 5px;
@@ -269,8 +270,8 @@
             a {
                 font-size: 1rem;
             }
+            
         }
-
     }
     
 }
