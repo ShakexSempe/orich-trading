@@ -1283,7 +1283,10 @@
 }
 #services .section-description p[data-scroll] {
   transition: 1.5s;
-  transform: scale(1);
+  transform: scale(1) translateY(5vh);
+}
+#services .section-description p[data-scroll=in] {
+  transform: scale(1) translateY(0);
 }
 @media (min-width: 768px) {
   #services .section-description p {
