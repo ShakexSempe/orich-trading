@@ -601,7 +601,7 @@
 }
 #banner figure figcaption {
   font-family: "Gruppo", cursive;
-  font-weight: 500;
+  font-weight: 400;
   color: #ffff;
   padding: 0.5rem;
   background: #f8650c;
@@ -747,6 +747,7 @@
   cursor: pointer;
   text-decoration: none;
   text-transform: capitalize;
+  font-family: "Ubuntu", sans-serif;
   color: #f4f4f4;
   background: #ffa500;
   display: block;
