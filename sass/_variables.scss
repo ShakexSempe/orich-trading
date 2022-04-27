@@ -1,3 +1,10 @@
+
+@font-face {
+    font-family: customFont;
+    src: url(../fonts/CORBEL.TTF);
+  }
+
+$font-custom: customFont;
 $font-ubuntu: 'Ubuntu', sans-serif;
 $font-header: 'Ubuntu', sans-serif;
 $font-content: 'Red Hat Display', sans-serif;

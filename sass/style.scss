@@ -16,8 +16,9 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    font-family: $font-ubuntu;
     font-family: 'Red Hat Display', sans-serif;
+    font-family: $font-ubuntu;
+    font-family: $font-custom;
     scroll-behavior: smooth;
     scroll-padding-top: 8vh;
     @media (max-width:768px) {

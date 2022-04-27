@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Red+Hat+Display&family=Ubuntu&display=swap");
+@font-face {
+  font-family: customFont;
+  src: url(../fonts/CORBEL.TTF);
+}
 .toggle {
   float: right;
   font-size: 20px;
@@ -171,6 +175,7 @@
   text-transform: uppercase;
   font-size: 0.5rem;
   font-family: "Gruppo", cursive;
+  font-family: customFont;
   letter-spacing: 0.15rem;
 }
 #header .logo.active-logo {
@@ -683,21 +688,6 @@
   transition: 0.5s;
   z-index: 2;
 }
-#hero .page-title h1 {
-  font-size: 3.5rem;
-  font-weight: 600;
-  letter-spacing: 1.3rem;
-  font-family: "Gruppo", cursive;
-  transition: 0.5s;
-}
-#hero .page-title p {
-  display: block;
-  font-size: 0.85rem;
-  font-family: "Red Hat Display", sans-serif;
-  letter-spacing: 0.3rem;
-  font-weight: 500;
-  transition: 0.5s;
-}
 #hero .page-title .slogan {
   border-radius: 5px;
   border: 2px solid blue;
@@ -717,6 +707,7 @@
   background: #fff;
   color: #f4f4f4;
   border-radius: 5px;
+  font-family: "Gruppo", cursive;
   border: none;
   outline: none;
   position: relative;
@@ -728,6 +719,7 @@
   color: #f4f4f4;
   color: #ffa500;
   font-weight: 500;
+  font-family: "Gruppo", cursive;
 }
 @media (min-width: 1024px) {
   #hero .page-title {
@@ -2231,8 +2223,9 @@
   margin: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-  font-family: "Ubuntu", sans-serif;
   font-family: "Red Hat Display", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  font-family: customFont;
   scroll-behavior: smooth;
   scroll-padding-top: 8vh;
 }

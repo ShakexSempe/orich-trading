@@ -24,7 +24,7 @@
             background-image: linear-gradient(0deg, #000, #000a);
             
         }
-    // DESKTOP HEROf
+    // DESKTOP HERO
     @media (min-width: 821px) {
         background-image: url("../img/shivendu-shukla-3yoTPuYR9ZY-unsplash-min.jpg");
         background-size: contain;
@@ -68,22 +68,6 @@
         transition: .5s;
         z-index: 2;
 
-        h1 {
-            font-size: 3.5rem;
-            font-weight: 600;
-            letter-spacing: 1.3rem;
-            font-family: $font-gruppo;
-            transition: .5s;
-        }
-
-        p {
-            display: block;
-            font-size: .85rem;
-            font-family: $font-content;
-            letter-spacing: .3rem;
-            font-weight: 500;
-            transition: .5s;
-        }
         // SLOGAN 'quality or nothing'
         .slogan {
             border-radius: 5px;
@@ -104,17 +88,19 @@
                 background: #fff;
                 color: $text-second;
                 border-radius: 5px;
+                font-family: $font-gruppo;
                 border: none;
                 outline: none;
                 position: relative;
                 isolation: isolate;
                 font-size: 1rem;
-                    background: linear-gradient(0deg, #000, #111);
+                background: linear-gradient(0deg, #000, #111);
 
                 span {
                     color: $text-second;
                     color: $brand-light;
                     font-weight: 500;
+                    font-family: $font-gruppo;
                 }
 
                 // &::before {
