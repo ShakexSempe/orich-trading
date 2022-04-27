@@ -125,21 +125,25 @@
     .footer-copyright {
         width: 100%;
         margin: 5vh 0 0;
-        padding: 5vh 0;
+        padding: 5vh 5vw;
         text-align: center;
+        text-align: left;
         text-transform: capitalize;
         background: $brand;
+        background-image: linear-gradient(0deg, $brand, $brand-light);
+        position: relative;
 
         p {
             color: $text-second;
             line-height: 1.6;
-            font-size: .9rem;
+            font-size: 1rem;
             &#date {
                 color: $text-second;
             }
         }
 
         a {
+            font-size: .9rem;
             color: $text-second;
             opacity: .7;
             text-decoration: none;
@@ -157,7 +161,28 @@
             opacity: .7;
         }
         .footer-logo {
-            display: none;
+            overflow: hidden;
+            width: 4rem;
+            height: 4rem;
+            position: absolute;
+            top: 1rem;
+            right: 3vw;
+            img {
+                width: 100%;
+                border-radius: 5px;
+            }
+
+            @media (min-width: 768px) {
+                height: 20vh;
+                display: block;
+                width: auto;
+                right: 5vw;
+
+                img {
+                    height: 100%;
+                    border-radius: 5px;
+                }
+            }
         }
     }
     @media (min-width: 768px) {
@@ -243,17 +268,6 @@
             }
             a {
                 font-size: 1rem;
-            }
-            .footer-logo {
-                display: block;
-                width: auto;
-                height: 20vh;
-                overflow: hidden;
-                    img {
-                        height: 100%;
-                        width: auto;
-                        border-radius: 5px;
-                    }
             }
         }
 

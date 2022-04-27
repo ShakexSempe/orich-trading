@@ -53,7 +53,25 @@ main.addEventListener("click", () => {
     header.classList.remove("active");
 });
 
-
+const strong = document.querySelector('.strong');
+console.log(strong);
+const strongOptions = {
+    rootMargin: "0px 0px -40% 0px",
+}
+const strongObserver = new IntersectionObserver(
+    function(entries, strongObserver){
+        entries.forEach(entry => {
+            if(!entry.isIntersecting) {
+                console.log("strong NOT IO");
+                strong.classList.remove("active-io");
+            } else {
+                console.log("strong IS IO");
+                strong.classList.add("active-io");
+            }
+        })
+    }, strongOptions
+);
+strongObserver.observe(strong);
 // bgChanger.forEach(changer => {
 //     changer.addEventListener("click", () => {
 //         hero.classList.toggle("active");
@@ -89,33 +107,3 @@ main.addEventListener("click", () => {
 
 // pageMainObserver.observe(pageMain);
 
-// INTERSECTION OBSERVER
-const indexHeader = document.querySelector(".index-header");
-
-const heroOptions = {
-    rootMargin: "-90% 0px 0px 0px"
-};
-
-const heroObserver = new IntersectionObserver(
-    function(
-        entries, heroObserver
-    ) {
-        entries.forEach(entry => {
-            if(!entry.isIntersecting) {
-                console.log("hero NOT intersecting");
-                indexHeader.classList.add("observe");
-                topBtn.classList.add("active");
-                logo.classList.remove("active-logo");
-            } else {
-                console.log("hero intersecting");
-                indexHeader.classList.remove("observe");
-                topBtn.classList.remove("active");
-                logo.classList.add("active-logo");
-
-
-            }
-        });
-    }, heroOptions
-);
-
-heroObserver.observe(hero);

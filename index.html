@@ -71,9 +71,6 @@
                         <li>
                             <a title="Orich Projects" href="#projects">projects</a>
                         </li>
-                        <li>
-                            <a title="Orich References" href="#references">references</a>
-                        </li>
                         <li title="Orich Contact" class="dropdown">
                             <button class="dropdown-btn">contact
                                 <i class="fa fa-caret-down"></i>
@@ -130,19 +127,7 @@
                                 <a href="#services"><i class="fas fa-arrow-down"></i>section</a>
                                 <a href="pages/services.html"><i class="fa-solid fa-angles-right"></i>full page</a>
                             </div>
-                        </li>                      
-                        <!-- SOCIAL DROPDOWN -->
-                        <li class="aside-dropdown">
-                            <button>
-                                <i class="fas fa-users"></i>social
-                                <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="aside-dropdown-content">
-                                <a target="_blank" href="https://www.facebook.com/orichtrading"><i class="fa-brands fa-facebook"></i>facebook</a>
-                                <a target="_blank" href="https://www.instagram.com/orichtradingprojects/?fbclid=IwAR3F4lHFYwmHfR52gYtnQj-8hMbTLDAuQd9yX4IndLP05Ocfu3ZUZQkSpyk"><i class="fa-brands fa-instagram"></i>instagram</a>
-                            </div>
-                        </li>
-                        <!-- SOCIAL DROPDOWN -->
+                        </li>   
                         <li class="aside-dropdown">
                             <button>
                                 <i class="fas fa-star"></i>references
@@ -155,8 +140,10 @@
                         </li>
                     </ul>
                     <div class="social-links">
-                        <a target="_blank" href="https://www.facebook.com/orichtrading"><i class="fa-brands fa-facebook"></i></a>
-                        <a target="_blank" href="https://www.instagram.com/orichtradingprojects/?fbclid=IwAR3F4lHFYwmHfR52gYtnQj-8hMbTLDAuQd9yX4IndLP05Ocfu3ZUZQkSpyk"><i class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="tel:0712345678"><i class="fas fa-phone"></i>0712345678</a>
+                        <a target="_blank" href="mailto:orichtrading&projects@gmail.com"><i class="fas fa-envelope"></i>orichtrading&projects@gmail</a>
+                        <a target="_blank" href="https://www.facebook.com/orichtrading"><i class="fa-brands fa-facebook"></i>facebook</a>
+                        <a target="_blank" href="https://www.instagram.com/orichtradingprojects/?fbclid=IwAR3F4lHFYwmHfR52gYtnQj-8hMbTLDAuQd9yX4IndLP05Ocfu3ZUZQkSpyk"><i class="fa-brands fa-instagram"></i>instagram</a>
                     </div>
                 </aside>
             </div>
@@ -165,13 +152,7 @@
         <!-- HERO -->
         <div id="hero">
             <div class="page-title bg-change" id="title">
-                <!-- <div class="hero-logo">
-                    <figure>
-                        <img title="Orich Trading and Projects" src="img/orich.jpg" alt="Orich Trading logo">
-                    </figure>
-                </div> -->
-                <!-- <h1>Orich</h1>
-                <p>trading & projects</p> -->
+                
                 <div class="slogan bg-change">
                     <p>Quality<span>Or</span>Nothing</p>
                 </div>
@@ -186,11 +167,15 @@
         <div id="banner" class="banner">
             <figure class="banner-bg">
                 <img src="img/orich-partners2.jpg" loading="lazy" alt="Orich Partners">
-                <figcaption>Orich&trade; Partners</figcaption>
+                <a href="#orich-team">
+                    <figcaption>Orich&trade; Partners</figcaption>
+                </a>
             </figure>
-            <figure class="banner-fg">
+            <figure id="orich-team" class="banner-fg">
                 <img src="img/orich-team.jpg" loading="lazy" alt="Orich Team">
-                <figcaption class="team-caption">Orich&trade; Team</figcaption>
+                <a href="#about">
+                    <figcaption class="team-caption">Orich&trade; Team</figcaption>
+                </a>
             </figure>
         </div>
         <main class="main index-main" >
@@ -206,7 +191,7 @@
                         in Johannesburg, Gauteng that was established in 2021 and
                         currently has two very capable and hands on managing directors.
                         The company’s mission is to establish a one-stop shop for any
-                        quality, small-scale construction services and solutions that will
+                        <a href="#services" class="strong"> quality, small-scale construction services and solutions </a> that will
                         serve the local clients according to their budgets and business
                         objectives, and ultimately continue to growth the company
                         provincially and nationally.
@@ -468,7 +453,7 @@
                 </div>
                 <!-- TILE INSTALLATION -->
                 <div class="gallery" id="tile">
-                    <div class="gallery-title" id="tile">tile installation</div>
+                    <div class="gallery-title" id="tile">tile installation<a href="pages/projects.html#tile"><span>view all</span></a></div>
                     <div class="gallery-grid">
                         <div data-scroll class="project-item">
                             <figure class="project-img">
@@ -720,8 +705,8 @@
         <!-- COPYRIGHT -->
             <div class="footer-copyright">
                 <div class="copyright-info">
-                    <p>All rights reserved. || copyright&copy; : </p>
-                    <p>orich trading&trade; 2021</p>
+                    <p>All rights reserved. </p>
+                    <p>copyright&copy; : Orich Trading&trade; 2021</p>
                     <a title="Shakex Sempe" href="http://shakexsempe.netlify.app/" target="_blank">Web Design: Shakex
                         Sempe <span id="date"></span></a>
                 </div>
@@ -733,6 +718,7 @@
         <!-- END OF FOOTER -->
     </div>
     <script src="js/app.js"></script>
+    <script src="js/indexIO.js"></script>
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <script>
         ScrollOut({
