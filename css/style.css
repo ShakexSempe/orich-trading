@@ -2096,6 +2096,7 @@
 #footer .footer-contact .contact-item .contact-info p {
   color: #000;
   text-overflow: ellipsis;
+  font-family: "Ubuntu", sans-serif;
 }
 #footer .footer-contact .contact-item:hover {
   transform: scale(1.02);
