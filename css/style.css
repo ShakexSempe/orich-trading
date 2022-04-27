@@ -856,7 +856,10 @@
   text-shadow: 2px 2px 0px #f8650c;
 }
 .container #about .about-article p[data-scroll] {
-  transform: scale(1);
+  transform: scale(1) translateY(5vh);
+}
+.container #about .about-article p[data-scroll=in] {
+  transform: scale(1) translateY(0);
 }
 .container #about .vision-mission {
   margin: 5vh 0;
@@ -2248,6 +2251,10 @@
 .container .section-title h2[data-scroll] {
   transform: scale(1);
   opacity: 1;
+  letter-spacing: 0.2rem;
+}
+.container .section-title h2[data-scroll=in] {
+  letter-spacing: normal;
 }
 .container .section-title h2[data-scroll=in]::after {
   width: 25%;
