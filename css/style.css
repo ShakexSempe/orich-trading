@@ -417,13 +417,14 @@
 }
 @media (min-width: 821px) {
   #header {
-    height: 7vh;
+    height: 8vh;
     padding: 0.25rem 5vw;
   }
   #header .brand a {
     font-size: 1.5em;
   }
   #header .logo {
+    left: 5vw;
     width: 10rem;
     border-radius: 5px;
   }
@@ -514,12 +515,15 @@
     left: 0%;
     width: max-content;
     background-color: #f8650c;
-    transition: 1s;
+    transition: 0.5s;
     border-radius: 5px;
   }
   #header .navigation nav ul .dropdown .dropdown-content a {
     display: block;
     border-radius: 0;
+  }
+  #header .navigation nav ul .dropdown .dropdown-content a::after {
+    display: none;
   }
   #header .navigation nav ul .dropdown .dropdown-content a:hover {
     color: #f4f4f4;
@@ -538,8 +542,8 @@
     transform: scale(0.9) rotate(180deg);
   }
   #header .navigation nav ul .dropdown:hover .dropdown-content {
-    height: 20vh;
-    height: max-content;
+    height: 15vh;
+    opacity: 1;
     border: 2px solid #000;
   }
 }

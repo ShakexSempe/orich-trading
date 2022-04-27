@@ -387,7 +387,7 @@
     
     // DESKTOP HEADER
     @media (min-width: 821px) {
-        height: 7vh;
+        height: 8vh;
         padding: .25rem 5vw;
         .brand {
             a {
@@ -395,6 +395,7 @@
             }
         }
         .logo {
+            left: 5vw;
             width: 10rem;
             border-radius: 5px;
             figure {
@@ -502,17 +503,21 @@
                             left: 0%;
                             width: max-content;
                             background-color: $brand;
-                            transition: 1s;
+                            transition: .5s;
                             border-radius: 5px;
 
                             a {
                                 display: block;
                                 border-radius: 0;
+                                &::after {
+                                    display: none;
+                                }
 
                                 &:hover {
                                     color: $text-second;
                                     box-shadow: none;
                                     background-color: #000;
+                                    
                                 }
                             }
 
@@ -534,8 +539,8 @@
                            
                             .dropdown-content {
                                 // display: block;
-                                height: 20vh;
-                                height: max-content;
+                                height: 15vh;
+                                opacity: 1;
                                 border: 2px solid #000;
                             }
                         }
