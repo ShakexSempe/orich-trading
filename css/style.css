@@ -360,6 +360,7 @@
     transition: 1.5s;
   }
   #header .navigation aside .social-links a {
+    font-family: "Ubuntu", sans-serif;
     width: 100%;
     text-decoration: none;
     color: #f4f4f4;
