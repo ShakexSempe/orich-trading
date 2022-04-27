@@ -2270,11 +2270,13 @@
 }
 .container .section-title h2[data-scroll] {
   transform: scale(1);
-  opacity: 1;
+  opacity: 0;
   letter-spacing: 0.2rem;
 }
 .container .section-title h2[data-scroll=in] {
   letter-spacing: normal;
+  opacity: 1;
+  transition: 1.5s;
 }
 .container .section-title h2[data-scroll=in]::after {
   width: 25%;
