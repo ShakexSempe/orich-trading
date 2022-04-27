@@ -55,12 +55,14 @@
 
                 &[data-scroll] {
                     transform: scale(1);
-                    opacity: 1;
+                    opacity: 0;
                     letter-spacing: .2rem;
                 }
 
                 &[data-scroll="in"] {
                     letter-spacing: normal;
+                    opacity: 1;
+                    transition: 1.5s;
                     &::after {
                         width: 25%;
 
