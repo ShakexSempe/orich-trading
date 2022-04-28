@@ -156,10 +156,14 @@
   position: absolute;
   top: 0;
   left: 1rem;
+  padding: 0 0.2rem;
   transition: 0.5s;
   overflow: hidden;
   display: grid;
   place-items: center;
+  border-radius: 5px;
+  background-color: #000a;
+  border: 1px solid #000;
 }
 #header .logo .title a {
   color: #ddd;
@@ -179,10 +183,11 @@
 }
 #header .logo.active-logo {
   transition: 1s ease;
+  border: 1px solid #f8650c;
 }
 @media (max-width: 768px) {
   #header .logo.active-logo {
-    transform: translateY(10vh) translateX(30vw) scale(2.5);
+    transform: translateY(20vh) translateX(30vw) scale(2.5);
   }
 }
 @media (min-width: 768px) {
@@ -694,7 +699,6 @@
   color: #ddd;
   border-radius: 5px;
   border: none;
-  border: 1px solid #f8650c;
   width: 19rem;
   margin: 0 auto;
   outline: none;
