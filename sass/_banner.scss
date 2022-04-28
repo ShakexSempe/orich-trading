@@ -50,9 +50,7 @@
     figure {
         position: relative;
         figcaption {
-            font-family: $font-gruppo;
-            font-weight: 400;
-            color: #ffff;
+            overflow: hidden;
             padding: .5rem;
             background: $brand;
             font-size: 1.5rem;
@@ -62,18 +60,45 @@
             width: 100%;
             text-align: center;
             transform: translateX(-50%);
-            // &.team-caption {
-            //     background: #fff;
-            //     color: #000;
-            // }
-            @media (min-width: 768px){
+            
+            p {
+                font-family: $font-gruppo;
+                font-family: $font-ubuntu;
+                font-weight: 400;
+                color: #ffff;
+            }
+            @media (min-width: 1024px){
                 left: 70vw;
                 top: 40vh;
-                background: #fff;
+                background: $brand;
                 font-size: 2.5rem;
-                width: 50%;
-                border: 2px solid $brand;
+                width: 40%;
+                border: 2px solid #000;
+                border-radius: 5px;
                 color: #000;
+                font-size: 1.3rem;
+            }
+        }
+
+        // DATA-SCROLL 
+        &[data-scroll] {
+            transform: scale(1);
+            figcaption {
+                p {
+                    opacity: .5;
+                    transform: translateY(-5vh);
+                    transition: 1.5s;
+                    transition-delay: .5s;
+                }
+            }
+        }
+        &[data-scroll="in"] {
+            transform: scale(1);
+            figcaption {
+                p {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
             }
         }
     }
