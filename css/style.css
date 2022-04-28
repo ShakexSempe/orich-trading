@@ -701,7 +701,7 @@
   text-align: center;
   text-align: center;
   position: relative;
-  top: 45vh;
+  top: 50vh;
   background-color: #000a;
 }
 @media (min-width: 768px) {
@@ -737,7 +737,7 @@
 }
 #hero #cta {
   position: absolute;
-  bottom: 30vh;
+  bottom: 20vh;
   left: 50%;
   transform: translateX(-50%);
   transition: 0.3s;
