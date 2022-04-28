@@ -739,14 +739,15 @@
 }
 #hero #cta {
   position: absolute;
-  bottom: 20vh;
+  bottom: 25vh;
   left: 50%;
   transform: translateX(-50%);
   transition: 0.3s;
   text-align: center;
 }
 #hero #cta .cta-btn {
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
   margin: 0 auto;
   cursor: pointer;
   text-decoration: none;
