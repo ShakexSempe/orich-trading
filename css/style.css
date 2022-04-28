@@ -684,15 +684,13 @@
   margin: 0 auto;
   text-align: center;
   color: #ddd;
-  text-transform: uppercase;
   transition: 0.5s;
   z-index: 2;
 }
 #hero .page-title .slogan {
   border-radius: 5px;
-  border: 2px solid blue;
   border: none;
-  width: 15rem;
+  width: 17rem;
   margin: 0.5rem auto 5vh;
   outline: none;
   cursor: pointer;
@@ -700,14 +698,14 @@
   position: relative;
   top: 50vh;
 }
-#hero .page-title .slogan p {
+#hero .page-title .slogan .slogan-p {
   text-transform: capitalize;
   margin: 0rem auto;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0;
   background: #fff;
   color: #f4f4f4;
   border-radius: 5px;
-  font-family: "Gruppo", cursive;
+  font-family: "Ubuntu", sans-serif;
   border: none;
   outline: none;
   position: relative;
@@ -715,23 +713,16 @@
   font-size: 1rem;
   background: linear-gradient(0deg, #000, #111);
 }
-#hero .page-title .slogan p span {
+#hero .page-title .slogan .slogan-p span {
   color: #f4f4f4;
   color: #ffa500;
   font-weight: 500;
-  font-family: "Gruppo", cursive;
+  font-family: inherit;
 }
-@media (min-width: 1024px) {
-  #hero .page-title {
-    padding: 0;
-    margin: 15vh auto 0;
-  }
-  #hero .page-title h1 {
-    font-size: 5rem;
-  }
-  #hero .page-title p {
-    font-size: 1.3rem;
-  }
+#hero .page-title .slogan p {
+  text-transform: capitalize;
+  margin: 1rem 0;
+  font-family: corbel;
 }
 #hero #cta {
   position: absolute;
@@ -798,7 +789,7 @@
   #hero #cta .cta-btn {
     width: 15rem;
     margin: 5vh auto;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     padding: 0.5rem 1rem;
   }
 }

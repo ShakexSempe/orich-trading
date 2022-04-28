@@ -64,16 +64,15 @@
         margin: 0 auto;
         text-align: center;
         color: #ddd;
-        text-transform: uppercase;
         transition: .5s;
         z-index: 2;
 
         // SLOGAN 'quality or nothing'
         .slogan {
             border-radius: 5px;
-            border: 2px solid blue;
             border: none;
-            width: 15rem;
+            // border: 2px solid blue; 
+            width: 17rem;
             margin: .5rem auto 5vh;
             outline: none;
             cursor: pointer;
@@ -81,14 +80,14 @@
             position: relative;
             top: 50vh;
 
-            p {
+            .slogan-p {
                 text-transform: capitalize;
                 margin: 0rem auto;
-                padding: .5rem 1rem;
+                padding: .5rem 0;
                 background: #fff;
                 color: $text-second;
                 border-radius: 5px;
-                font-family: $font-gruppo;
+                font-family: $font-ubuntu;
                 border: none;
                 outline: none;
                 position: relative;
@@ -100,41 +99,18 @@
                     color: $text-second;
                     color: $brand-light;
                     font-weight: 500;
-                    font-family: $font-gruppo;
+                    font-family: inherit;
                 }
 
-                // &::before {
-                //     position: absolute;
-                //     content: '';
-                //     top: 0;
-                //     left: 0;
-                //     width: 100%;
-                //     height: 100%;
-                //     border-radius: 5px;
-                //     border: none;
-                //     outline: none;
-                //     z-index: -1;
-                //     background: linear-gradient(0deg, #000, #333);
-                //     box-shadow: inset 2px 2px 2px #ddda,
-                //         inset -2px -2px 2px #000a,
-                //         3px 3px 3px rgba(0, 0, 0, 0.281);
-
-                // }
+            }
+            p {
+                text-transform: capitalize;
+                margin: 1rem 0;
+                font-family: $font-content;
             }
         }
         // DESKTOP PAGE TITLE
-        @media (min-width: 1024px) {
-            padding: 0;
-            margin: 15vh auto 0;
-            // margin-bottom: 5vh;
-            // border: 1px solid red;
-            h1 {
-                font-size: 5rem;
-            }
-            p {
-                font-size: 1.3rem;
-            }
-        }
+       
     }
     
 
@@ -205,7 +181,7 @@
                 .cta-btn {
                     width: 15rem;
                     margin: 5vh auto;
-                    font-size: 1.7rem;
+                    font-size: 1.5rem;
                 padding: .5rem 1rem;
 
                 }
