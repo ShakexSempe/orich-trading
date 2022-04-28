@@ -61,7 +61,7 @@
 
                 // DATA SCROLL
                 &[data-scroll] {
-                    transform: scale(1) translateY(5vh);
+                    transform: scale(1) translateY(10vh);
                 }
                 &[data-scroll="in"] {
                     transform: scale(1) translateY(0);
@@ -220,8 +220,24 @@
 
                         // DATA-SCROLL
                         &[data-scroll] {
-                            transition: 1.5s;
+                            transition: 1.5s; 
+                            opacity: 1;
                             transform: scale(1);
+
+                            p {
+                                opacity: .0;
+                                transform: translateY(-5vh);
+                                transition: 1.5s;
+                            }
+                        }
+                        &[data-scroll="in"] {
+                            transform: scale(1);
+
+                            p {
+                                opacity: 1;
+                                transform: translateY(0);
+                                transition-delay: .5s;
+                            }
                         }
                     }
 
@@ -292,17 +308,18 @@
                         line-height: 1.6;
 
                         &.article-intro {
-                            font-weight: 600;
                             margin-bottom: 10vh;
-                            line-height: 1.8;
+                            line-height: 1.6;
                         }
 
-                        &.article-body {
                             &[data-scroll] {
                                 transition: 1.5s;
-                                transform: scale(1);
+                                transform: scale(1) translateY(10vh);
                             }
-                        }
+                            &[data-scroll="in"] {
+                                transform: scale(1) translateY(0);
+                            }
+                        
                     }
 
                     .article-pad {
@@ -318,7 +335,16 @@
 
                             img {
                                 width: 100%;
+                            }
 
+                            &[data-scroll] {
+                                transform: scale(1) translateY(10vh);
+                                opacity: 0;
+                            }
+                            &[data-scroll="in"] {
+                                transform: translateY(0);
+                                opacity: 1;
+                                transition: 2s;
                             }
                         }
                     }

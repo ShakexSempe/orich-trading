@@ -866,7 +866,7 @@
   text-shadow: 2px 2px 0px #f8650c;
 }
 .container #about .about-article p[data-scroll] {
-  transform: scale(1) translateY(5vh);
+  transform: scale(1) translateY(10vh);
 }
 .container #about .about-article p[data-scroll=in] {
   transform: scale(1) translateY(0);
@@ -1012,7 +1012,21 @@
 }
 .container #about .vision-mission .mission .statement .mission-content[data-scroll] {
   transition: 1.5s;
+  opacity: 1;
   transform: scale(1);
+}
+.container #about .vision-mission .mission .statement .mission-content[data-scroll] p {
+  opacity: 0;
+  transform: translateY(-5vh);
+  transition: 1.5s;
+}
+.container #about .vision-mission .mission .statement .mission-content[data-scroll=in] {
+  transform: scale(1);
+}
+.container #about .vision-mission .mission .statement .mission-content[data-scroll=in] p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
 }
 @media (min-width: 768px) {
   .container #about .vision-mission {
@@ -1062,13 +1076,15 @@
   line-height: 1.6;
 }
 .container#about-page main .about-overview .page-article p.article-intro {
-  font-weight: 600;
   margin-bottom: 10vh;
-  line-height: 1.8;
+  line-height: 1.6;
 }
-.container#about-page main .about-overview .page-article p.article-body[data-scroll] {
+.container#about-page main .about-overview .page-article p[data-scroll] {
   transition: 1.5s;
-  transform: scale(1);
+  transform: scale(1) translateY(10vh);
+}
+.container#about-page main .about-overview .page-article p[data-scroll=in] {
+  transform: scale(1) translateY(0);
 }
 .container#about-page main .about-overview .page-article .article-pad {
   background-color: #fff;
@@ -1082,6 +1098,15 @@
 }
 .container#about-page main .about-overview .page-article .article-pad figure img {
   width: 100%;
+}
+.container#about-page main .about-overview .page-article .article-pad figure[data-scroll] {
+  transform: scale(1) translateY(10vh);
+  opacity: 0;
+}
+.container#about-page main .about-overview .page-article .article-pad figure[data-scroll=in] {
+  transform: translateY(0);
+  opacity: 1;
+  transition: 2s;
 }
 @media (min-width: 768px) {
   .container#about-page main .about-overview {
