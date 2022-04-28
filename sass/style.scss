@@ -21,6 +21,7 @@
     font-family: $font-content;
     scroll-behavior: smooth;
     scroll-padding-top: 8vh;
+    // border: 1px solid red;
     @media (max-width:768px) {
         scroll-padding-top: 7vh;
     }
