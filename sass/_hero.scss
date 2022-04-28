@@ -71,7 +71,7 @@
         border-radius: 5px;
         border: none;
         border: 1px solid $brand;
-        width: 17rem;
+        width: 19rem;
         margin: 0 auto;
         outline: none;
         // cursor: pointer;
@@ -80,7 +80,9 @@
         position: relative;
         top: 50vh;
         background-color: #000a;
-
+        @media (min-width: 768px) {
+            width: 17rem;
+        }
         .slogan-p {
             text-transform: capitalize;
             margin: 0rem auto;
@@ -133,7 +135,10 @@
             color: $text-second;
             background: $brand-light;
             display: block;
-            width: 17rem;
+            width: 19rem;
+            @media (min-width: 768px) {
+                width: 17rem;
+            }
             position: relative;
             isolation: isolate;
             border-radius: 5px;
