@@ -162,7 +162,6 @@
   display: grid;
   place-items: center;
   border-radius: 5px;
-  background-color: #000a;
   border: 1px solid #000;
 }
 #header .logo .title a {
@@ -184,10 +183,11 @@
 #header .logo.active-logo {
   transition: 1s ease;
   border: 1px solid #f8650c;
+  backdrop-filter: blur(0.05rem);
 }
 @media (max-width: 768px) {
   #header .logo.active-logo {
-    transform: translateY(20vh) translateX(30vw) scale(2.5);
+    transform: translateY(20vh) translateX(28vw) scale(2.5);
   }
 }
 @media (min-width: 768px) {
@@ -706,7 +706,6 @@
   text-align: center;
   position: relative;
   top: 50vh;
-  background-color: #000a;
 }
 @media (min-width: 768px) {
   #hero .slogan {
