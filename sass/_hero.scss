@@ -80,6 +80,7 @@
         position: relative;
         top: 50vh;
         background-color: #000a;
+        // background: linear-gradient(0deg, #000a, #000);
         @media (min-width: 768px) {
             width: 17rem;
         }
@@ -87,7 +88,6 @@
             text-transform: capitalize;
             margin: 0rem auto;
             padding: .5rem 0;
-            background: #fff;
             color: $text-second;
             border-radius: 5px;
             font-family: $font-ubuntu;
@@ -96,7 +96,6 @@
             position: relative;
             isolation: isolate;
             font-size: 1rem;
-            background: linear-gradient(0deg, #000, #111);
 
             span {
                 color: $text-second;

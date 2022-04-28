@@ -713,7 +713,6 @@
   text-transform: capitalize;
   margin: 0rem auto;
   padding: 0.5rem 0;
-  background: #fff;
   color: #f4f4f4;
   border-radius: 5px;
   font-family: "Ubuntu", sans-serif;
@@ -722,7 +721,6 @@
   position: relative;
   isolation: isolate;
   font-size: 1rem;
-  background: linear-gradient(0deg, #000, #111);
 }
 #hero .slogan .slogan-p span {
   color: #f4f4f4;
