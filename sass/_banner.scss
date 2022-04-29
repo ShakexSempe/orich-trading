@@ -83,6 +83,7 @@
         // DATA-SCROLL 
         &[data-scroll] {
             transform: scale(1);
+            opacity: 1;
             figcaption {
                 p {
                     opacity: .5;

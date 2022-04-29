@@ -637,6 +637,7 @@
 }
 #banner figure[data-scroll] {
   transform: scale(1);
+  opacity: 1;
 }
 #banner figure[data-scroll] figcaption p {
   opacity: 0.5;
