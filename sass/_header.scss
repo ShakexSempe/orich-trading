@@ -24,9 +24,9 @@
         background: $brand;
     }
     &.observe {
-    background-color: #000;
+    background-color: #000a;
     @media (min-width: 768px) {
-        background-color: #000;
+        background-color: #000a;
     }
     .logo {
         opacity: 1;
@@ -67,7 +67,7 @@
         place-items: center;
         border-radius: 5px;
         // background-color: #000a;
-        border: 1px solid #000;
+        // border: 1px solid #000;
         .title {
             a {
                 color: #ddd;

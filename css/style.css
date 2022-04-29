@@ -132,11 +132,11 @@
   background: #f8650c;
 }
 #header.observe {
-  background-color: #000;
+  background-color: #000a;
 }
 @media (min-width: 768px) {
   #header.observe {
-    background-color: #000;
+    background-color: #000a;
   }
 }
 #header.observe .logo {
@@ -162,7 +162,6 @@
   display: grid;
   place-items: center;
   border-radius: 5px;
-  border: 1px solid #000;
 }
 #header .logo .title a {
   color: #ddd;
@@ -565,7 +564,7 @@
 }
 #banner .banner-bg {
   position: sticky;
-  top: 6vh;
+  top: 7vh;
   z-index: -1;
   height: 95vh;
 }
@@ -575,7 +574,7 @@
   object-fit: cover;
   object-position: 38% 10%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   #banner .banner-bg {
     width: 50%;
   }
@@ -593,7 +592,7 @@
   object-fit: cover;
   object-position: 35%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   #banner .banner-fg img {
     height: 100%;
     width: 100%;
