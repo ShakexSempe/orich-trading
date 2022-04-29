@@ -1898,8 +1898,16 @@
   text-transform: capitalize;
 }
 #references .references .reference[data-scroll] {
-  transform: scale(1);
   transition: 1.5s;
+}
+#references .references .reference:nth-child(1) {
+  transition-delay: 0;
+}
+#references .references .reference:nth-child(2) {
+  transition-delay: 0.3s;
+}
+#references .references .reference:nth-child(3) {
+  transition-delay: 0.6s;
 }
 @media (min-width: 768px) {
   #references {
