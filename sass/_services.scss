@@ -7,7 +7,7 @@
         line-height: 1.6;
 
         h3 {
-            color: $brand;
+            color: #000;
             margin-bottom: 1rem;
             font-family: $font-header;
             &[data-scroll]{
@@ -207,7 +207,7 @@
                     margin: 5vh auto 1rem;
                     text-transform: capitalize;
                     font-size: 1.5rem;
-                    color: $text-main;
+                    color: $brand;
                     font-family: $font-header;
                 }
                 i {
@@ -294,8 +294,8 @@
             }
             &[data-scroll="in"] {
                 h3 {
-                    transition: 1.3s;
-                    color: $brand;
+                    transition: 2s;
+                    color: #000;
                 }
                 .service-type {
                     ul {

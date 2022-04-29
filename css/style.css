@@ -924,7 +924,7 @@
   margin: 5vh 0 0;
 }
 .container #about .vision-mission .mission h4 {
-  color: #f8650c;
+  color: #000;
   font-size: 1.5rem;
   margin-bottom: 1rem;
   font-family: "Ubuntu", sans-serif;
@@ -947,7 +947,7 @@
   font-weight: 500;
 }
 .container #about .vision-mission .mission .statement {
-  border: 1px solid #f8650c;
+  border: 1px solid #000;
   border-radius: 5px;
   width: 100%;
   height: 10vh;
@@ -1001,7 +1001,7 @@
   transform: scale(1) translateY(0);
 }
 .container #about .vision-mission .mission .statement .mission-content {
-  background: #f8650c;
+  background: #000;
   flex-basis: 50%;
   text-align: center;
 }
@@ -1310,7 +1310,7 @@
   line-height: 1.6;
 }
 #services .section-description h3 {
-  color: #f8650c;
+  color: #000;
   margin-bottom: 1rem;
   font-family: "Ubuntu", sans-serif;
 }
@@ -1485,7 +1485,7 @@
   margin: 5vh auto 1rem;
   text-transform: capitalize;
   font-size: 1.5rem;
-  color: #000;
+  color: #f8650c;
   font-family: "Ubuntu", sans-serif;
 }
 #services .service-container .service-item .service-core i {
@@ -1555,8 +1555,8 @@
   opacity: 0;
 }
 #services .service-container .service-item[data-scroll=in] h3 {
-  transition: 1.3s;
-  color: #f8650c;
+  transition: 2s;
+  color: #000;
 }
 #services .service-container .service-item[data-scroll=in] .service-type ul li {
   transform: translateX(0);
@@ -1731,7 +1731,7 @@
   position: sticky;
   top: 7vh;
   text-transform: uppercase;
-  color: #f8650c;
+  color: #000;
   font-size: 1.3rem;
   padding: 0.5rem 0;
   font-family: "Ubuntu", sans-serif;
@@ -2413,7 +2413,7 @@
   background: transparent;
   background: #fffa;
   outline: none;
-  border: 2px solid #f8650c;
+  border: 2px solid #000;
   border-radius: 5px;
   padding: 0.2rem;
   z-index: 5;
@@ -2446,7 +2446,7 @@
   }
 }
 .container #top-btn i, .container .home-btn i {
-  color: #000;
+  color: #f8650c;
   margin: 0 auto;
   transition: 0.3s;
 }
@@ -2457,7 +2457,7 @@
 .container #top-btn.active:hover, .container .home-btn.active:hover {
   transition: 0.3s;
   background: #fff;
-  border-color: #000;
+  border-color: #f8650c;
 }
 .container #top-btn.active:hover i, .container .home-btn.active:hover i {
   color: #f8650c;
