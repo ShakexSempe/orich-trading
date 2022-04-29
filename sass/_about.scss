@@ -89,7 +89,8 @@
                     margin-bottom: 1rem;
                     font-family: $font-ubuntu;
                     position: relative;
-                    width: fit-content;
+                    // width: fit-content;
+                    text-align: center;
 
                     &::after {
                         position: absolute;
@@ -111,7 +112,7 @@
                     }
                     &[data-scroll="in"] {
                         &::after {
-                            width: 70%;
+                            width: 3.5rem;
                         }
                     }
                 }
@@ -148,6 +149,14 @@
                     text-transform: uppercase;
                     transition: .3s;
                     text-align: center;
+                    &[data-scroll] {
+                        transition: 2s;
+                        transform: scale(1);
+                        letter-spacing: .5rem;
+                    }
+                    &[data-scroll="in"] {
+                        letter-spacing: normal;
+                    }
                 }
 
                 p {
@@ -195,6 +204,23 @@
                             width: 100%;
                             height: 100%;
                             object-fit: contain;
+                        }
+                    }
+                    &[data-scroll]{
+                        transform: scale(1);
+                        opacity: 1;
+                        figure {
+                            img {
+                                transition: 1.5s;
+                                transform: scale(1) translateY(10vh);
+                            }
+                        }
+                    }
+                    &[data-scroll="in"]{
+                        figure {
+                            img {
+                                transform: scale(1) translateY(0);
+                            }
                         }
                     }
                 }

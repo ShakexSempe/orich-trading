@@ -214,13 +214,14 @@
 
 // SCROLL OUT
 [data-scroll] {
-    transition: 1s ease;
+    transition: 1.5s ease;
     transform: scale(.5);
+    transform: scale(1) translateY(10vh);
 }
 
 [data-scroll="in"] {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1) translateY(0);
 }
 
 [data-scroll="out"] {

@@ -35,7 +35,7 @@
         }
         &.promise {
             
-            // height: 90vh;
+            height: 90vh;
             // background: $brand;
             padding: 1rem .5rem;
             border-radius: 5px;
@@ -359,8 +359,9 @@
         }
         @media (max-width: 768px){
             // border: 2px solid green;
-            // background: url(../img/nathan-waters-j7q-Z9DV3zw-unsplash.jpg);
+            background: url(../img/orich-project.jpg);
             background-size: cover;
+            background-position: center;
             &.desktop-img {
                 display: none;
                 background: green;
