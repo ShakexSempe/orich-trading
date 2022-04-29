@@ -935,7 +935,7 @@
 .container #about .vision-mission .mission h4[data-scroll] {
   transition: 2s;
   transform: scale(1);
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.2rem;
 }
 .container #about .vision-mission .mission h4[data-scroll=in] {
   letter-spacing: normal;

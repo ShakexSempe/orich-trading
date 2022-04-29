@@ -152,7 +152,7 @@
                     &[data-scroll] {
                         transition: 2s;
                         transform: scale(1);
-                        letter-spacing: .5rem;
+                        letter-spacing: .2rem;
                     }
                     &[data-scroll="in"] {
                         letter-spacing: normal;
