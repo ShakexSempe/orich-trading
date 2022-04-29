@@ -27,7 +27,7 @@
         }
 
         .contact-item {
-            border: 1px solid $brand-light;
+            border: 1px solid #000;
             border-radius: 5px;
             margin: 1rem auto;
             padding: 1rem;
@@ -37,12 +37,13 @@
             transition: .3s;
 
             header {
-                color: $brand;
+                // color: $brand;
                 font-family: $font-header;
-                font-size: 1.3rem;
-                margin-bottom: .5em;
+                font-size: 1.25rem;
+                margin-bottom: 1em;
                 text-align: center;
                 text-transform: capitalize;
+                text-transform: uppercase;
                 
                 i {
                     margin-right: .5rem;
@@ -51,9 +52,11 @@
             .contact-info {
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                // align-items: center;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                padding: 0 1rem;
+
                 
                 .address {
                     display: flex;
@@ -64,12 +67,13 @@
                 button {
                     display: flex;
                     align-items: center;
-                    width: 50%;
+                    width: 100%;
                     margin: 1rem auto;
                     transition: .5s;
                     border: none;
                     background: #fff;
                     text-transform: capitalize;
+                    // border: 1px solid blue;
 
                     a {
                         color: $text-second;
@@ -89,6 +93,7 @@
 
                     i {
                         color: $brand;
+                        color: #000;
                         opacity: .5;
                         transition: .5s;
                     }
@@ -115,10 +120,16 @@
                     // width: 100%;
                     // border: 1px solid red;
                 }
+                a {
+                    color: $brand;
+                    font-family: $font-ubuntu;
+                    text-decoration: none;
+                }
             }
 
             &:hover {
                 transform: scale(1.02);
+                border-color: $brand;
             }
         }
     }
