@@ -15,7 +15,7 @@
             left: 0;
             width: 0;
             height: .2rem;
-            background: #000;
+            background: $brand-overlay;
             border-radius: 5px;
             transition: 2s;
         }
@@ -73,7 +73,7 @@
                 color: #000;
             }
             &:focus {
-                outline: 2px dashed #000;
+                outline: 1px dashed $brand;
             }
         }
 

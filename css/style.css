@@ -1901,14 +1901,16 @@
 #references .references .reference[data-scroll] {
   transition: 1.5s;
 }
-#references .references .reference:nth-child(1) {
-  transition-delay: 0;
-}
-#references .references .reference:nth-child(2) {
-  transition-delay: 0.3s;
-}
-#references .references .reference:nth-child(3) {
-  transition-delay: 0.6s;
+@media (min-width: 1024px) {
+  #references .references .reference:nth-child(1) {
+    transition-delay: 0;
+  }
+  #references .references .reference:nth-child(2) {
+    transition-delay: 0.3s;
+  }
+  #references .references .reference:nth-child(3) {
+    transition-delay: 0.6s;
+  }
 }
 @media (min-width: 768px) {
   #references {
@@ -1953,7 +1955,7 @@
   left: 0;
   width: 0;
   height: 0.2rem;
-  background: #000;
+  background: linear-gradient(40deg, #f8650c, #f8650c);
   border-radius: 5px;
   transition: 2s;
 }
@@ -2002,11 +2004,11 @@
   outline: none;
   background: #f4f4f4;
   background: #ffa500;
-  background: #ffdb99;
+  background: #f4f4f4;
   color: #000;
 }
 #form .input-div input:focus, #form .input-div textarea:focus {
-  outline: 2px dashed #000;
+  outline: 1px dashed #f8650c;
 }
 #form .input-div:hover label {
   color: #f8650c;
