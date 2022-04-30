@@ -952,7 +952,6 @@
   width: 100%;
   height: 10vh;
   height: 50vh;
-  height: auto;
   overflow: hidden;
   margin-bottom: 1rem;
   transition: 1s;
@@ -971,23 +970,18 @@
 }
 .container #about .vision-mission .mission .statement .mission-logo {
   overflow: hidden;
+  flex-basis: 90%;
 }
 .container #about .vision-mission .mission .statement .mission-logo figure {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
-  margin: 1rem auto;
-}
-@media (min-width: 768px) {
-  .container #about .vision-mission .mission .statement .mission-logo figure {
-    width: 20%;
-    height: 20%;
-  }
 }
 .container #about .vision-mission .mission .statement .mission-logo figure img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  border-radius: 5px;
 }
 .container #about .vision-mission .mission .statement .mission-logo[data-scroll] {
   transform: scale(1);
@@ -995,7 +989,7 @@
 }
 .container #about .vision-mission .mission .statement .mission-logo[data-scroll] figure img {
   transition: 1.5s;
-  transform: scale(1) translateY(10vh);
+  transform: scale(1) translateY(20vh);
 }
 .container #about .vision-mission .mission .statement .mission-logo[data-scroll=in] figure img {
   transform: scale(1) translateY(0);
@@ -1004,11 +998,12 @@
   background: #000;
   flex-basis: 50%;
   text-align: center;
+  display: grid;
+  place-items: center;
 }
 @media (min-width: 768px) {
   .container #about .vision-mission .mission .statement .mission-content {
-    flex-basis: 70%;
-    border-right: 1px solid #f8650c;
+    flex-basis: 20%;
   }
   .container #about .vision-mission .mission .statement .mission-content p {
     font-size: 1.2rem;
@@ -1060,7 +1055,6 @@
     padding: 10vh 5vw;
   }
   .container #about .vision-mission .mission .statement {
-    border: 1px solid #f8650c;
     border-radius: 5px;
     width: 100%;
   }
