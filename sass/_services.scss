@@ -78,9 +78,12 @@
             h3 {
                 color: $text-second;
                 text-transform: capitalize;
+                text-transform: uppercase;
                 z-index: 4;
                 font-family: $font-header;
-                font-size: 1.8rem;
+                font-size: 1.6rem;
+                text-align: center;
+                margin-bottom: 5vh;
             }
             h4 {
                 font-family: $font-header;
@@ -110,6 +113,7 @@
                 li {
                     color: #fff;
                     margin-bottom: 5vh;
+                    list-style: none;
 
                     &[data-scroll] {
                         transform: scale(1);

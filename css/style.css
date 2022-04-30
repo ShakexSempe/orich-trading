@@ -1367,9 +1367,12 @@
 #services .section-description.promise h3 {
   color: #f4f4f4;
   text-transform: capitalize;
+  text-transform: uppercase;
   z-index: 4;
   font-family: "Ubuntu", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 5vh;
 }
 #services .section-description.promise h4 {
   font-family: "Ubuntu", sans-serif;
@@ -1396,6 +1399,7 @@
 #services .section-description.promise ul li {
   color: #fff;
   margin-bottom: 5vh;
+  list-style: none;
 }
 #services .section-description.promise ul li[data-scroll] {
   transform: scale(1);
