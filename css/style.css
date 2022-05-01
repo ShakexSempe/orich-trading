@@ -734,6 +734,7 @@
   text-transform: capitalize;
   padding: 1rem 0;
   font-family: corbel;
+  color: #fff;
 }
 #hero #cta {
   position: absolute;
