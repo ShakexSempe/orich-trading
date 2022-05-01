@@ -181,7 +181,7 @@
 }
 #header .logo.active-logo {
   transition: 1s ease;
-  border: 1px solid #f8650c;
+  border: 1px solid rgba(244, 244, 244, 0.334);
   backdrop-filter: blur(0.05rem);
 }
 @media (max-width: 768px) {

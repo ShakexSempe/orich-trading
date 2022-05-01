@@ -91,7 +91,8 @@
 
         &.active-logo {
             transition: 1s ease;
-            border: 1px solid $brand;
+            // border: 1px solid $brand;
+            border: 1px solid rgba(244, 244, 244, 0.334);
             backdrop-filter: blur(.05rem);
             @media (max-width: 768px){
                 transform: translateY(20vh) translateX(28vw) scale(2.5);
