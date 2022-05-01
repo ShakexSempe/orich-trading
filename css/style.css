@@ -1524,22 +1524,21 @@
   padding: 0 1rem;
 }
 #services .service-container .service-item .service-type ul {
-  background: linear-gradient(45deg, #f8650c, #ffa500);
   color: #f4f4f4;
   padding: 5vh 0.5rem;
   font-weight: 500;
   width: 100%;
   margin: 1rem auto;
   border-radius: 5px;
-  box-shadow: inset 2px 2px 3px #fffa, inset -2px -2px 3px rgba(0, 0, 0, 0.25), 5px 5px 5px rgba(0, 0, 0, 0.25);
+  border-bottom: 3px solid #f8650c;
 }
 #services .service-container .service-item .service-type ul li {
   margin: 0.5rem 0;
   padding: 0.5rem 0;
   text-transform: capitalize;
+  color: #000;
   transition: 1.5s;
   cursor: pointer;
-  text-shadow: 1px 1px 0px #000a;
 }
 #services .service-container .service-item .service-type ul li::marker {
   color: #f8650c;
@@ -1553,7 +1552,7 @@
   opacity: 0;
 }
 #services .service-container .service-item[data-scroll=in] h3 {
-  transition: 2s;
+  transition: 1.5s;
   color: #000;
 }
 #services .service-container .service-item[data-scroll=in] .service-type ul li {

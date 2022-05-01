@@ -259,7 +259,7 @@
                 width: 100%;
                 padding: 0 1rem;
                 ul {
-                    background: $brand-overlay-dark;
+                    // background: $brand-overlay-dark;
                     color: $text-second;
                     padding: 5vh .5rem;
                     // list-style: none;
@@ -267,18 +267,19 @@
                     width: 100%;
                     margin: 1rem auto;
                     border-radius: 5px;
-                    box-shadow: inset 2px 2px 3px #fffa,
-                                inset -2px -2px 3px rgba(0, 0, 0, 0.250),
-                                        5px 5px 5px rgba(0, 0, 0, .250);
+                    border-bottom: 3px solid $brand;
+                    // box-shadow: inset 2px 2px 3px #fffa,
+                    //             inset -2px -2px 3px rgba(0, 0, 0, 0.250),
+                    //                     5px 5px 5px rgba(0, 0, 0, .250);
     
                     li {
                         margin: .5rem 0;
                         padding: .5rem 0;
                         text-transform: capitalize;
-                        
+                        color: #000;
                         transition: 1.5s;
                         cursor: pointer;
-                        text-shadow: 1px 1px 0px #000a;
+                        // text-shadow: 1px 1px 0px #000a;
                         &::marker {
                             color: $brand;
                         }
@@ -298,7 +299,7 @@
             }
             &[data-scroll="in"] {
                 h3 {
-                    transition: 2s;
+                    transition: 1.5s;
                     color: #000;
                 }
                 .service-type {
