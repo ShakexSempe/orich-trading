@@ -281,10 +281,19 @@
                         cursor: pointer;
                         // text-shadow: 1px 1px 0px #000a;
                         &::marker {
-                            color: $brand;
+                            color: #000;
+                            transition: .3s;
                         }
                     }
-    
+                }
+                &:hover {
+                    ul {
+                        li {
+                            &::marker {
+                                color: $brand;
+                            }
+                        }
+                    }
                 }
             }
             // SCROLL 
@@ -299,7 +308,7 @@
             }
             &[data-scroll="in"] {
                 h3 {
-                    transition: 1.5s;
+                    transition: 1.8s;
                     color: #000;
                 }
                 .service-type {
@@ -399,7 +408,7 @@
                             li {
                                 list-style-position: inside;
                                 &::marker {
-                                    color: $text-second;
+                                    // color: $text-second;
                                 }
                             }
                         }

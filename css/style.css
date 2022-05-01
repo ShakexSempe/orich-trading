@@ -1541,6 +1541,10 @@
   cursor: pointer;
 }
 #services .service-container .service-item .service-type ul li::marker {
+  color: #000;
+  transition: 0.3s;
+}
+#services .service-container .service-item .service-type:hover ul li::marker {
   color: #f8650c;
 }
 #services .service-container .service-item[data-scroll] {
@@ -1552,7 +1556,7 @@
   opacity: 0;
 }
 #services .service-container .service-item[data-scroll=in] h3 {
-  transition: 1.5s;
+  transition: 1.8s;
   color: #000;
 }
 #services .service-container .service-item[data-scroll=in] .service-type ul li {
@@ -1637,9 +1641,6 @@
   }
   #services .service-container .service-item:nth-child(even) .service-type ul li {
     list-style-position: inside;
-  }
-  #services .service-container .service-item:nth-child(even) .service-type ul li::marker {
-    color: #f4f4f4;
   }
   #services .service-container .service-item .service-core {
     flex-basis: 50%;
