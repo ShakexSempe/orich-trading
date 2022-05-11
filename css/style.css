@@ -1403,6 +1403,9 @@
   padding-bottom: 1vh;
   border-radius: 5px;
 }
+#services .service-container.index-container .service-item .service-type ul {
+  list-style: none;
+}
 #services .service-container .container-title {
   text-align: center;
   padding: 1rem 0;
@@ -1519,6 +1522,7 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), #eee 50%);
   text-decoration: none;
   padding: 0.2rem 1rem;
+  margin: 0 auto 0.5rem;
   border-radius: 20px;
   outline: none;
   color: #000;
