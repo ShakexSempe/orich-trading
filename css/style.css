@@ -83,7 +83,7 @@
 }
 .section-btn::before {
   background: linear-gradient(0deg, #f8650c, #ffa500);
-  box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 3px 3px 3px rgba(0, 0, 0, 0.23);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px #000a, 3px 3px 3px rgba(0, 0, 0, 0.25);
 }
 .section-btn::after {
   opacity: 0;
@@ -138,15 +138,16 @@
   #header.observe {
     background-color: #000a;
   }
+  #header.observe:hover {
+    background-color: #000;
+    transition: 0.3s;
+  }
 }
 #header.observe .logo {
   opacity: 1;
 }
 #header.observe .navigation {
   z-index: 5;
-}
-#header.observe .navigation nav ul li a::after {
-  background-color: #fff;
 }
 #header.active {
   background-color: #000;

@@ -23,10 +23,15 @@
     &.page-header {
         background: $brand;
     }
+    // HEADER AFTER HERO IO
     &.observe {
     background-color: #000a;
     @media (min-width: 768px) {
         background-color: #000a;
+        &:hover {
+            background-color: #000;
+            transition: .3s;
+        }
     }
     .logo {
         opacity: 1;
@@ -38,21 +43,22 @@
         // position: relative;
         // right: 1rem;
         z-index: 5;
-        nav {
-            ul {
-                li {
-                    a {
-                        &::after {
-                            background-color: #fff;
-                        }
-                    }
-                }
-            }
-        }
+        // nav {
+        //     ul {
+        //         li {
+        //             a {
+        //                 &::after {
+        //                     background-color: #fff;
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
     }
     }
     &.active {
         background-color: #000;
+
     }
     // LOGO - STARTS WITH 0 OPACITY
     .logo {
