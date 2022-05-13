@@ -1515,14 +1515,12 @@
   transition: 0.3s;
 }
 #services .service-container .service-item .service-type ul li a {
-  display: block;
   width: 8rem;
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.2);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), #eee 50%);
   text-decoration: none;
   padding: 0.2rem 1rem;
-  margin: 0 auto 0.5rem;
   border-radius: 20px;
   outline: none;
   color: #000;
@@ -1548,7 +1546,7 @@
 }
 #services .service-container .service-item[data-scroll] li {
   transform: translateX(4rem);
-  opacity: 0;
+  opacity: 1;
 }
 #services .service-container .service-item[data-scroll=in] h3 {
   transition: 1.8s;
@@ -1556,7 +1554,7 @@
 }
 #services .service-container .service-item[data-scroll=in] .service-type ul::after {
   transition: 2s;
-  transition-delay: 1.1s;
+  transition-delay: 1.5s;
   transform: scale(1);
 }
 #services .service-container .service-item[data-scroll=in] .service-type ul li {
