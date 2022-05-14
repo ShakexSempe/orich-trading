@@ -12,12 +12,12 @@ const heroObserver = new IntersectionObserver(
         entries.forEach(entry => {
             if(!entry.isIntersecting) {
                 console.log("hero NOT intersecting");
-                indexHeader.classList.add("observe");
+                indexHeader.classList.remove("hero-header");
                 topBtn.classList.add("active");
                 logo.classList.remove("active-logo");
             } else {
                 console.log("hero intersecting");
-                indexHeader.classList.remove("observe");
+                indexHeader.classList.add("hero-header");
                 topBtn.classList.remove("active");
                 logo.classList.add("active-logo");
 

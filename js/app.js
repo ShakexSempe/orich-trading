@@ -18,7 +18,8 @@ toggle.addEventListener("click",  () => {
     toggle.classList.toggle("active");
     main.classList.toggle("active");
     header.classList.remove("scroll");
-    header.classList.toggle("active");
+    header.classList.remove("hero-header");
+    header.classList.toggle("toggle-header");
     console.log("open");
     logo.classList.remove("active-logo");
 });
@@ -43,6 +44,7 @@ links.forEach(link => {
         main.classList.remove("active");
         header.classList.remove("active");
         header.classList.add("scroll");
+        header.classList.remove("toggle-header");
     });
 });
 
@@ -53,25 +55,6 @@ main.addEventListener("click", () => {
     header.classList.remove("active");
 });
 
-const strong = document.querySelector('.strong');
-console.log(strong);
-const strongOptions = {
-    rootMargin: "0px 0px -40% 0px",
-}
-const strongObserver = new IntersectionObserver(
-    function(entries, strongObserver){
-        entries.forEach(entry => {
-            if(!entry.isIntersecting) {
-                console.log("strong NOT IO");
-                strong.classList.remove("active-io");
-            } else {
-                console.log("strong IS IO");
-                strong.classList.add("active-io");
-            }
-        })
-    }, strongOptions
-);
-strongObserver.observe(strong);
 // bgChanger.forEach(changer => {
 //     changer.addEventListener("click", () => {
 //         hero.classList.toggle("active");
