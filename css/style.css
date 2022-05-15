@@ -556,6 +556,7 @@
   overflow: hidden;
   padding: 0.5rem;
   background: #f8650c;
+  background: #000;
   font-size: 1.5rem;
   position: absolute;
   top: 0;
@@ -567,6 +568,7 @@
 #banner figure figcaption p {
   font-family: "Gruppo", cursive;
   font-weight: 400;
+  color: #000;
   color: #ffff;
 }
 @media (min-width: 1024px) {
@@ -574,12 +576,15 @@
     left: 70vw;
     top: 40vh;
     background: #f8650c;
+    background: #000;
     font-size: 2.5rem;
     width: 40%;
-    border: 2px solid #000;
+    border: 2px solid #f8650c;
     border-radius: 5px;
-    color: #000;
     font-size: 1.3rem;
+  }
+  #banner figure figcaption p {
+    color: #fff;
   }
 }
 #banner figure[data-scroll] {
@@ -1246,7 +1251,7 @@
 }
 #services .section-description h3[data-scroll] {
   transform: scale(1);
-  opacity: 0;
+  opacity: 0.7;
   letter-spacing: 0.2em;
 }
 #services .section-description h3[data-scroll=in] {
@@ -2281,6 +2286,7 @@
   font-size: 1.5rem;
   font-weight: 500;
   padding: 5vh 0;
+  overflow: hidden;
 }
 .container .section-title h2 {
   position: relative;
@@ -2301,8 +2307,8 @@
 }
 .container .section-title h2[data-scroll] {
   transform: scale(1);
-  opacity: 0;
-  letter-spacing: 0.2rem;
+  opacity: 1;
+  letter-spacing: 0.3rem;
 }
 .container .section-title h2[data-scroll=in] {
   letter-spacing: normal;
@@ -2310,6 +2316,7 @@
   transition: 1.5s;
 }
 .container .section-title h2[data-scroll=in]::after {
+  transition-delay: 1s;
   width: 25%;
 }
 @media (min-width: 768px) {

@@ -52,6 +52,7 @@
             overflow: hidden;
             padding: .5rem;
             background: $brand;
+            background: #000;
             font-size: 1.5rem;
             position: absolute;
             top: 0;
@@ -63,18 +64,24 @@
             p {
                 font-family: $font-gruppo;
                 font-weight: 400;
+                color: #000;
                 color: #ffff;
             }
             @media (min-width: 1024px){
                 left: 70vw;
                 top: 40vh;
                 background: $brand;
+                background: #000;
                 font-size: 2.5rem;
                 width: 40%;
-                border: 2px solid #000;
+                border: 2px solid $brand;
                 border-radius: 5px;
-                color: #000;
                 font-size: 1.3rem;
+
+                p {
+                color: #fff;
+                    
+                }
             }
         }
 
