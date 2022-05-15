@@ -500,7 +500,7 @@
   z-index: 5;
 }
 #header.hero-header .logo a img {
-  border-radius: 5px;
+  border-radius: 10px;
 }
 #header.toggle-header {
   background-color: #000;
@@ -604,7 +604,6 @@
   min-height: 100vh;
   background-color: #fff;
   transition: 1.5s;
-  background-image: url(../img/work.jpg);
   background-image: url(../img/orich-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -624,10 +623,11 @@
   opacity: 0.8;
   background-image: linear-gradient(0deg, #000, #000a);
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   #hero {
+    background-image: url(../img/work.jpg);
     background-size: contain;
-    background-size: 100%;
+    background-size: cover;
     background-position: center 30%;
     background-attachment: fixed;
     z-index: 10;

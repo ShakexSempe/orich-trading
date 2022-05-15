@@ -46,7 +46,6 @@
                 img {
                     height: 100%;
                     width: 100%;
-                    // border-radius: 5px;
                     object-fit: contain;
                     object-position: left;
                 }
@@ -63,21 +62,6 @@
                     letter-spacing: .15rem;
                 }
             }
-        
-
-        // &.active-logo {
-        //     transition: 1s ease;
-        //     @media (max-width: 768px){
-        //     a {
-        //         transform: scale(4) translateY(5vh) translateX(5vw);
-        //         img {
-        //             object-position: right;
-        //         }
-        //     }
-        //     }
-        //     @media (min-width: 768px) {
-        //     }
-        // }
     }
     
     .navigation {
@@ -502,8 +486,9 @@
 
         .logo {
             a {
+
                 img {
-                    border-radius: 5px;
+                    border-radius: 10px;
                 }
             }
         }
