@@ -499,9 +499,6 @@
 #header.hero-header .navigation {
   z-index: 5;
 }
-#header.hero-header .logo a img {
-  border-radius: 10px;
-}
 #header.toggle-header {
   background-color: #000;
 }
