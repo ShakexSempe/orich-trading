@@ -333,8 +333,8 @@
                 opacity: 1;
 
                 li {
-                    transform: translateX(4rem);
-                        opacity: 1;
+                    transform: translateX(2rem);
+                    opacity: 0;
                 }
             }
             &[data-scroll="in"] {

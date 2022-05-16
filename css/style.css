@@ -1513,8 +1513,8 @@
   opacity: 1;
 }
 #services .service-container .service-item[data-scroll] li {
-  transform: translateX(4rem);
-  opacity: 1;
+  transform: translateX(2rem);
+  opacity: 0;
 }
 #services .service-container .service-item[data-scroll=in] h3 {
   transition: 1.8s;
