@@ -658,11 +658,6 @@
   position: relative;
   top: 50vh;
 }
-@media (min-width: 768px) {
-  #hero .slogan {
-    width: 17rem;
-  }
-}
 #hero .slogan .slogan-p {
   text-transform: capitalize;
   margin: 0rem auto;
@@ -687,6 +682,16 @@
   padding: 1rem 0;
   font-family: corbel;
   color: #fff;
+}
+@media (min-width: 768px) {
+  #hero .slogan {
+    top: 45vh;
+    width: 50rem;
+    font-size: 1.5rem;
+  }
+  #hero .slogan .slogan-p {
+    font-size: 3rem;
+  }
 }
 #hero #cta {
   position: absolute;
@@ -754,7 +759,7 @@
     bottom: 20vh;
   }
   #hero #cta .cta-btn {
-    width: 15rem;
+    width: 20rem;
     margin: 5vh auto;
     font-size: 1.5rem;
     padding: 0.5rem 1rem;
@@ -2313,7 +2318,6 @@
   transition: 1.5s;
 }
 .container .section-title h2[data-scroll=in]::after {
-  transition-delay: 1s;
   width: 25%;
 }
 @media (min-width: 768px) {

@@ -81,9 +81,7 @@
         top: 50vh;
         // background-color: #000a;
         // background: linear-gradient(0deg, #000a, #000);
-        @media (min-width: 768px) {
-            width: 17rem;
-        }
+    
         .slogan-p {
             text-transform: capitalize;
             margin: 0rem auto;
@@ -111,6 +109,16 @@
             padding: 1rem 0;
             font-family: $font-content;
             color: #fff;
+        }
+
+        @media (min-width: 768px) {
+            top: 45vh;
+            width:50rem;
+            font-size: 1.5rem;
+            // border: 1px solid red;
+            .slogan-p {
+                font-size: 3rem;
+            }
         }
     }
 
@@ -196,7 +204,7 @@
             // transform: translateX(-50%);
 
             .cta-btn {
-                width: 15rem;
+                width: 20rem;
                 margin: 5vh auto;
                 font-size: 1.5rem;
                 padding: .5rem 1rem;
