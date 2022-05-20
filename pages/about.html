@@ -45,16 +45,12 @@
 <body>
     <div class="container" id="about-page">
         <!-- HEADER -->
-        <header id="header" class="about-header page-header">
-            <!-- <div class="brand"><a href="#">or<span>i</span>ch</a></div> -->
+        <header id="header" class="about-header index-header">
             <div class="logo">
-                <div class="title">
-                    <a href="../index.html">
-                        <h1>Orich</h1>
-                        <p>Trading & Projects</p>
-                    </a>
-                </div>
-            </div>
+                <a href="#">
+                    <img src="../img/orich.jpg" alt="Orich Trading logo">
+                </a>
+        </div>
             <div class="navigation">
                 <div class="toggle" >
                     <div class="bar"></div>
@@ -105,19 +101,21 @@
         </header>
         <!-- END OF HEADER -->
         <!-- HERO -->
-        <!-- <div id="hero">
-            <div class="logo">
-                <figure>
-                    <img src="img/orich.jpg" alt="Orich Trading logo">
-                </figure>
-                <div class="slogan">
-                    <p>Quality <span>Or</span> nothing</p>
+        <div id="hero">
+            <div class="page-title bg-change" id="title">
+                
+                <div class="slogan bg-change">
+                    <p class="slogan-p">Quality<span>Or</span>Nothing</p>
+                    <p>level-1 BEE construction company</p>
+                </div>
+                <div id="cta">
+                    <a class="cta-btn" title="Who is Orich TRading & Projects" href="#main">about Us</a>
                 </div>
             </div>
-        </div>     -->
+        </div>    
         <!-- END OF HERO -->
         <!-- MAIN -->
-        <main class="main page-main">
+        <main id="main" class="main page-main">
             <section class="about-overview">
                 <header class="section-title">
                     <h2 data-scroll>about us</h2>
@@ -336,6 +334,7 @@
         <!-- END OF FOOTER -->
     </div>
     <script src="../js/app.js"></script>
+    <script src="../js/indexIO.js"></script>
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <script>
         ScrollOut({

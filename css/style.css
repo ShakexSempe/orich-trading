@@ -108,6 +108,63 @@
   }
 }
 
+#top-btn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: transparent;
+  background: #fffa;
+  outline: none;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 0.2rem;
+  z-index: 5;
+  transition: 1s;
+  opacity: 1;
+  cursor: pointer;
+  transform: translateY(5rem);
+  opacity: 0;
+}
+#top-btn a {
+  border: 1px solid blue;
+  border: none;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  #top-btn {
+    right: 2vw;
+    bottom: 5vh;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  #top-btn i {
+    font-size: 1.5rem;
+  }
+}
+#top-btn i {
+  color: #f8650c;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+#top-btn.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+#top-btn.active:hover {
+  transition: 0.3s;
+  background: #fff;
+  border-color: #f8650c;
+}
+#top-btn.active:hover i {
+  color: #f8650c;
+}
+
 #header {
   position: fixed;
   top: 0;
@@ -2384,64 +2441,6 @@
   .container main .section-pad .mobile-pad {
     display: none;
   }
-}
-.container #top-btn, .container .home-btn {
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  background: transparent;
-  background: #fffa;
-  outline: none;
-  border: 2px solid #000;
-  border-radius: 5px;
-  padding: 0.2rem;
-  z-index: 5;
-  transition: 1s;
-  opacity: 1;
-  cursor: pointer;
-}
-.container #top-btn.index-top-btn, .container .home-btn.index-top-btn {
-  transform: translateY(5rem);
-  opacity: 0;
-}
-.container #top-btn a, .container .home-btn a {
-  border: 1px solid blue;
-  border: none;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  place-items: center;
-  text-decoration: none;
-}
-@media (min-width: 768px) {
-  .container #top-btn, .container .home-btn {
-    right: 2vw;
-    bottom: 5vh;
-    height: 2.5rem;
-    width: 2.5rem;
-  }
-  .container #top-btn i, .container .home-btn i {
-    font-size: 1.5rem;
-  }
-}
-.container #top-btn i, .container .home-btn i {
-  color: #f8650c;
-  margin: 0 auto;
-  transition: 0.3s;
-}
-.container #top-btn.active, .container .home-btn.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-.container #top-btn.active:hover, .container .home-btn.active:hover {
-  transition: 0.3s;
-  background: #fff;
-  border-color: #f8650c;
-}
-.container #top-btn.active:hover i, .container .home-btn.active:hover i {
-  color: #f8650c;
 }
 
 [data-scroll] {

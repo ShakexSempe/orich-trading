@@ -148,70 +148,7 @@
         }
     }
 
-    #top-btn, .home-btn {
-        position: fixed;
-        bottom: 1rem;
-        right: 1rem;
-        width: 2.5rem;
-        height: 2.5rem;
-        background: transparent;
-        background: #fffa;
-        outline: none;
-        border: 2px solid #000;
-        border-radius: 5px;
-        padding: .2rem;
-        z-index: 5;
-        transition: 1s;
-        opacity: 1;
-        cursor: pointer;
-        &.index-top-btn {
-            transform: translateY(5rem);
-            opacity: 0;
-        }
-        
-        a {
-            border: 1px solid blue;
-            border: none;
-            width: 100%;
-            height: 100%;
-            display: grid;
-            place-items: center;
-            text-decoration: none;
-        }
-        @media (min-width: 768px) {
-            right: 2vw;
-            bottom: 5vh;
-            height: 2.5rem;
-            width: 2.5rem;
-
-            i {
-                font-size: 1.5rem;
-            }
-        }
-
-        i {
-            color: $brand;
-            margin: 0 auto;
-            transition: .3s;
-        }
-        
-        
-
-        // ACTIVE HOME BUTTOM
-        &.active {
-            opacity: 1;
-            transform: translateY(0);
-            &:hover {
-                transition: .3s;
-                background: #fff;
-                border-color: $brand;
-
-                i {
-                    color: $brand;
-                }
-            }
-        }
-    }
+    
 }
 
 // SCROLL OUT
