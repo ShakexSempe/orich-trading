@@ -321,6 +321,7 @@
                     }
                 }
             }
+
         }
     }
     // END OF MOBILE HEADER 
@@ -505,13 +506,13 @@
                     }
                 }
             }
-        }
 
-        .logo {
-            a {
+            .toggle {
+                top: 1rem;
+                transition: .5s;
 
-                img {
-                    // border-radius: 10px;
+                .bar {
+                    background-color: #fff;
                 }
             }
         }

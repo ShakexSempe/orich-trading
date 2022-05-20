@@ -5,8 +5,12 @@
     height: 1.5em;
     width: 1.5em;
     border: 2px solid $brand;
+    border: 2px solid #000a;
     outline: 2px solid $brand;
+    outline: 2px solid #000a;
     outline-offset: -2px;
+    border: none;
+    outline: none;
     cursor: pointer;
     display: grid;
     place-items: center;
@@ -14,14 +18,18 @@
     padding: .2em 0;
     overflow: hidden;
     z-index: 5;
+    position: fixed;
+    right: 5vw;
+    top: .5rem;
     // transform: rotate(90deg);
 
     .bar {
         background-color: $toggle;
+        background-color: $brand;
         width: 60%;
         height: .1em;
         position: relative;
-        transition: .3s;
+        transition: .2s;
 
         &::before, &::after {
             position: absolute;
