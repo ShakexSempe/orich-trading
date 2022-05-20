@@ -834,15 +834,29 @@
   background: linear-gradient(0deg, #ffa500, #f8650c);
   box-shadow: inset 2px 2px 2px #000a, inset -2px -2px 2px #ddda, 1px 1px 3px rgba(0, 0, 0, 0.381);
 }
-#hero #cta .cta-btn:hover {
-  transform: scale(0.95);
-  letter-spacing: normal;
+@media (max-width: 1024px) {
+  #hero #cta .cta-btn:active {
+    transform: scale(0.95);
+    letter-spacing: normal;
+  }
+  #hero #cta .cta-btn:active::before {
+    opacity: 0;
+  }
+  #hero #cta .cta-btn:active::after {
+    opacity: 1;
+  }
 }
-#hero #cta .cta-btn:hover::before {
-  opacity: 0;
-}
-#hero #cta .cta-btn:hover::after {
-  opacity: 1;
+@media (min-width: 1024px) {
+  #hero #cta .cta-btn:hover {
+    transform: scale(0.95);
+    letter-spacing: normal;
+  }
+  #hero #cta .cta-btn:hover::before {
+    opacity: 0;
+  }
+  #hero #cta .cta-btn:hover::after {
+    opacity: 1;
+  }
 }
 @media (min-width: 1024px) {
   #hero #cta {

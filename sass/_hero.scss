@@ -182,18 +182,34 @@
                     inset -2px -2px 2px #ddda,
                     1px 1px 3px rgba(0, 0, 0, 0.381);
             }
-
-            &:hover {
-                transform: scale(.95);
-                letter-spacing: normal;
-
-                &::before {
-                    opacity: 0
+            @media (max-width:1024px){
+                &:active {
+                    transform: scale(.95);
+                    letter-spacing: normal;
+    
+                    &::before {
+                        opacity: 0
+                    }
+    
+                    &::after {
+                        opacity: 1
+                    }
+                }
+            }
+            @media (min-width: 1024px){
+                &:hover {
+                    transform: scale(.95);
+                    letter-spacing: normal;
+    
+                    &::before {
+                        opacity: 0
+                    }
+    
+                    &::after {
+                        opacity: 1
+                    }
                 }
 
-                &::after {
-                    opacity: 1
-                }
             }
         }
 
