@@ -176,6 +176,7 @@
 #header.index-header {
   background: transparent;
   background-color: #000a;
+  background-color: #fff;
 }
 #header.index-header .logo {
   opacity: 0;
@@ -195,6 +196,11 @@
   display: grid;
   place-items: center;
   border-radius: 5px;
+}
+@media (min-width: 768px) {
+  #header .logo {
+    left: 5vw;
+  }
 }
 #header .logo a {
   color: #fff;
@@ -444,6 +450,7 @@
   }
   #header .navigation nav {
     display: block;
+    transition: 0.5s;
   }
   #header .navigation nav ul {
     display: flex;
@@ -456,13 +463,14 @@
     position: relative;
   }
   #header .navigation nav ul li a {
-    color: #fffa;
+    color: #000;
     text-decoration: none;
     transition: 0.3s;
     padding: 0.3rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     border-radius: 5px;
     position: relative;
+    display: block;
   }
   #header .navigation nav ul li a::after {
     position: absolute;
@@ -475,9 +483,6 @@
     background-color: #f8650c;
     transition: 0.3s;
   }
-  #header .navigation nav ul li a:hover {
-    color: #f4f4f4;
-  }
   #header .navigation nav ul li a:hover::after {
     transform: translateX(-50%) scale(1);
   }
@@ -486,8 +491,7 @@
     display: flex;
     align-items: center;
     float: left;
-    color: #161616;
-    color: #fffa;
+    color: #000;
     text-decoration: none;
     transition: 0.3s;
     padding: 0.5rem;
@@ -530,7 +534,7 @@
     margin-right: 0.5rem;
   }
   #header .navigation nav ul .dropdown:hover button {
-    color: #ddd;
+    color: #000a;
   }
   #header .navigation nav ul .dropdown:hover button i {
     transition: 0.3s;
@@ -554,6 +558,21 @@
 }
 #header.hero-header .navigation {
   z-index: 5;
+}
+#header.hero-header .navigation nav {
+  transform: translateY(5vh);
+}
+#header.hero-header .navigation nav ul li a {
+  color: #fffa;
+}
+#header.hero-header .navigation nav ul li a:hover {
+  color: #fff;
+}
+#header.hero-header .navigation nav .dropdown button {
+  color: #fffa;
+}
+#header.hero-header .navigation nav .dropdown button:hover {
+  color: #fff;
 }
 #header.toggle-header {
   background-color: #000;

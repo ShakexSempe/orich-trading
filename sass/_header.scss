@@ -10,6 +10,7 @@
     &.index-header {
         background: transparent;
         background-color: #000a;
+        background-color: #fff;
         .logo {
             opacity: 0;
             opacity: 1;
@@ -34,6 +35,9 @@
         place-items: center;
         border-radius: 5px;
         // border: 1px solid blue;
+        @media (min-width: 768px){
+            left: 5vw;
+        }
             a {
                 color: #fff;
                 text-align: center;
@@ -123,7 +127,7 @@
                         position: relative;
                         display: flex;
                         flex-direction: column;
-
+                        // ASIDE BUTTON LINKS
                         button {
                             display: flex;
                             justify-content: space-between;
@@ -343,6 +347,7 @@
             // NAV STYLE
             nav {
                 display: block;
+                transition: .5s;
                 
                 ul {
                     display: flex;
@@ -354,13 +359,14 @@
                         position: relative;
 
                         a {
-                            color: $text-second-trans;
+                            color: #000;
                             text-decoration: none;
                             transition: .3s;
                             padding: .3rem;
-                            font-size: .9rem;
+                            font-size: 1rem;
                             border-radius: 5px;
                             position: relative;
+                            display: block;
                             // NAV LINK UNDERLINE
                             &::after {
                                 position: absolute;
@@ -375,8 +381,6 @@
                             }
 
                             &:hover {
-                                color: $text-second;
-                                // color: $brand-light;
                                 &::after {
                                     transform: translateX(-50%) scale(1);
                                 }
@@ -392,8 +396,7 @@
                             display: flex;
                             align-items: center;
                             float: left;
-                            color: #161616;
-                            color: $text-second-trans;
+                            color: #000;
                             text-decoration: none;
                             transition: .3s;
                             padding: .5rem;
@@ -443,14 +446,13 @@
 
                         &:hover {
                             button {
-                                color: #ddd;
+                                color: #000a;
                                 i {
                                     transition: .3s;
                                     transform: scale(.9) rotate(180deg);
                                     // color: #ddd;
                                 }
                             }
-                           
                             .dropdown-content {
                                 // display: block;
                                 height: 15vh;
@@ -479,6 +481,30 @@
             // position: relative;
             // right: 1rem;
             z-index: 5;
+            nav {
+                // border: 1px solid red;
+                transform: translateY(5vh);
+
+                ul {
+                    li {
+                        a {
+                            color: $text-second-trans;
+                            &:hover {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+
+                .dropdown {
+                    button {
+                        color: #fffa;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
         }
 
         .logo {
