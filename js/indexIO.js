@@ -2,7 +2,7 @@
 const indexHeader = document.querySelector(".index-header");
 
 const heroOptions = {
-    rootMargin: "-90% 0px 0px 0px"
+    rootMargin: "-100% 0px 0px 0px"
 };
 
 const heroObserver = new IntersectionObserver(
