@@ -1822,13 +1822,13 @@
   right: 0;
   font-size: 1rem;
   margin-left: 2rem;
-  border-radius: 20px;
+  border-radius: 5px;
   background: linear-gradient(0deg, #f8650c, #ffa500);
   color: #f4f4f4;
-  padding: 0.15rem 1rem;
+  padding: 0.3rem 1rem;
   opacity: 0.9;
   transition: 0.3s;
-  box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 3px 3px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a;
 }
 #projects .gallery .gallery-title a span:hover {
   transform: scale(0.97);
