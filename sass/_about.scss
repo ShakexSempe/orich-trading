@@ -47,8 +47,9 @@
             margin: 5vh 0;
             padding: 1rem 0;
             .vision {
-                background: $brand;
-                background: $brand-overlay-dark;
+                // background: $brand;
+                // background: $brand-overlay-dark;
+                background: linear-gradient(0deg, #000, #111);
                 color: $text-second;
                 padding: .5rem .5rem;
                 border-radius: 5px;

@@ -915,8 +915,7 @@
   padding: 1rem 0;
 }
 .container #about .vision-mission .vision {
-  background: #f8650c;
-  background: linear-gradient(45deg, #f8650c, #ffa500);
+  background: linear-gradient(0deg, #000, #111);
   color: #f4f4f4;
   padding: 0.5rem 0.5rem;
   border-radius: 5px;
