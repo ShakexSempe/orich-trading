@@ -2049,6 +2049,7 @@
 #form {
   min-height: 100vh;
   padding: 10vh 1rem;
+  overflow: hidden;
 }
 #form .contact-title {
   margin-bottom: 5vh;
@@ -2090,6 +2091,7 @@
   padding: 1rem 0;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 #form .input-div label {
   margin-bottom: 0.5rem;
