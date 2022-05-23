@@ -47,7 +47,7 @@
         flex-direction: column;
 
         label {
-            margin-bottom: 1rem;
+            margin-bottom: .5rem;
             text-transform: uppercase;
             transition: .2s;
             font-weight: 500;
@@ -55,25 +55,38 @@
         }
 
         input, textarea {
-            padding: 1rem .5rem;
+            padding: .5rem;
             border-radius: 5px;
-            outline: 2px solid $brand;
+            outline: none;
             border: none;
+            border-bottom: 2px solid $brand;
             background: #fff;
             color: #000;
-            transition: 1s;
+            transition:.51s;
             font-size: 1rem;
+
+            &::placeholder {
+                opacity: 0;
+                letter-spacing: .1rem;
+                transition: .2s;
+            }
 
             &:invalid {
                 border: none;
+                border-bottom: 2px solid #000;
+                border-radius: 0;
                 outline: none;
-                background: #f4f4f4;
-                background: $brand-light;
-                background: $bg-invalid;
+                // background: $brand-light;
+                // background: $bg-invalid;
                 color: #000;
             }
             &:focus {
-                outline: 1px dashed $brand;
+                // outline: 1px dashed $brand;
+                background: #fff;
+                &::placeholder {
+                    opacity: 1;
+                    letter-spacing: normal;
+                }
             }
         }
 
@@ -81,10 +94,12 @@
 
 
         // INPUT DIV HOVER STATE
-        &:hover {
-            label {
-                color: $brand;
-                transform: translateY(1rem) translateX(.5rem);
+        @media (min-width: 1024px) {
+            &:hover {
+                label {
+                    color: $brand;
+                    transform: translateY(1rem) translateX(.5rem);
+                }
             }
         }
     }
@@ -94,7 +109,6 @@
         padding:  1rem;
         font-weight: 600;
         text-transform: uppercase;
-        border-radius: 15px;
         cursor: pointer;
         width: 100%;
         // background: $brand-overlay;
@@ -105,6 +119,7 @@
         isolation: isolate;
         transition: .2s;
         letter-spacing: .15em;
+        border-radius: 10px;
         // BUTTON BOX SHADOW
         &::before, &::after {
             position: absolute;
@@ -115,7 +130,7 @@
             height: 100%;
             border: none;
             outline: none;
-            border-radius: 15px;
+            border-radius: 10px;
             transition: .5s ease;
             z-index: -1;
         }
