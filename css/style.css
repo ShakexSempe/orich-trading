@@ -2109,6 +2109,7 @@
   color: #000;
   transition: 0.51s;
   font-size: 1rem;
+  overflow: hidden;
 }
 #form .input-div input::placeholder, #form .input-div textarea::placeholder {
   opacity: 0;
