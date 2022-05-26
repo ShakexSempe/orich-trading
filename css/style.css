@@ -917,7 +917,7 @@
 .container #about .vision-mission .vision {
   background: linear-gradient(0deg, #000, #111);
   color: #f4f4f4;
-  padding: 0.5rem 0.5rem;
+  padding: 1rem 0.5rem;
   border-radius: 5px;
   margin: 0 1rem;
   overflow: hidden;
@@ -925,7 +925,7 @@
 }
 .container #about .vision-mission .vision h3 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 5vh;
   font-family: "Ubuntu", sans-serif;
   position: relative;
   text-align: center;
@@ -940,6 +940,7 @@
   height: 0.15rem;
   border-radius: 5px;
   background: #f4f4f4;
+  background: #f8650c;
   transition: 1.5s;
 }
 .container #about .vision-mission .vision h3[data-scroll] {
@@ -957,6 +958,7 @@
 }
 .container #about .vision-mission .vision ul li::marker {
   color: #f4f4f4;
+  color: rgba(255, 255, 255, 0.2);
 }
 .container #about .vision-mission .vision ul li[data-scroll] {
   transform: scale(1) translateX(3rem);
