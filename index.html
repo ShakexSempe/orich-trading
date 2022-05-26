@@ -742,7 +742,7 @@
             <!-- FORM -->
         <form id="form" class="contact-form" target="_blank" action="https://formsubmit.co/orichtradingprojects@gmail.com" method="POST">
             <h1 data-scroll class="contact-title">Get In Touch</h1>
-
+            <!-- NAME -->
             <div class="input-div">
                 <label for="name">name :</label>
                 <input 
@@ -754,7 +754,19 @@
                 tabindex="1"
                 required>
             </div>
-
+            <!-- TEXTAREA -->
+            <div class="input-div">
+                <label for="message">subject of enquiry :</label>
+                <textarea 
+                    name="Subject" 
+                    rows="2" cols="10" 
+                    minlength="2" 
+                    placeholder="eg. Bathroom Set Installation"
+                    id="message"
+                    tabindex="2" 
+                    required></textarea>
+            </div>
+            <!-- EMAIL -->
             <div class="input-div">
                 <label for="email">email :</label>
                 <input 
@@ -762,10 +774,10 @@
                 name="Email" 
                 id="email" 
                 placeholder="your email address.." 
-                tabindex="2"
+                tabindex="3"
                 required>
             </div>
-
+            <!-- PHONE -->
             <div class="input-div">
                 <label for="tel">phone number :</label>
                 <input 
@@ -774,22 +786,11 @@
                     id="tel" 
                     minlength="10" 
                     placeholder="your phone number.."
-                    tabindex="3"
+                    tabindex="4"
                     required
                     >
             </div>
-
-            <div class="input-div">
-                <label for="message">subject of enquiry :</label>
-                <textarea 
-                    name="Subject" 
-                    rows="3" cols="10" 
-                    minlength="2" 
-                    placeholder="eg. Bathroom Set Installation"
-                    id="message"
-                    tabindex="5" 
-                    required></textarea>
-            </div>
+            
 
             <button 
                 type="submit" 
