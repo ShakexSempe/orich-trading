@@ -127,28 +127,35 @@
 
     .footer-copyright {
         width: 100%;
+        // min-height: 40vh;
         margin: 5vh 0 0;
         padding: 5vh 5vw;
         text-align: center;
-        text-align: left;
+        // text-align: left;
+        display: grid;
+        place-items: center;
         text-transform: capitalize;
-        background: $brand;
+        // background: $brand;
         background-image: linear-gradient(0deg, $brand, $brand-light);
+        background-image: linear-gradient(0deg, #f4f4f4, #fff);
         position: relative;
 
         p {
             color: $text-second;
+            color: #000;
             line-height: 1.6;
             font-size: 1rem;
             &#date {
                 color: $text-second;
+                color: #000;
             }
         }
 
         a {
             font-size: .9rem;
             color: $text-second;
-            opacity: .7;
+            color: #000;
+            // opacity: .7;
             text-decoration: none;
             transition: .2s;
             text-transform: none;
@@ -267,13 +274,19 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            background-image: linear-gradient(90deg, #f4f4f4, #fff);
+
             p {
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
+
             a {
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
-            
+
+            #date {
+                font-size: 1.2rem;
+            }
         }
     }
     
