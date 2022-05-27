@@ -1973,7 +1973,7 @@
   display: grid;
   place-items: center;
   grid-template-columns: 1fr;
-  gap: 0.5rem;
+  gap: 5vh;
   height: auto;
   padding: 1rem 0;
   width: 100%;
@@ -2024,7 +2024,7 @@
     transition-delay: 0.6s;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   #references {
     padding: 5vh 5vw;
   }
@@ -2032,6 +2032,7 @@
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
     padding: 1rem 0;
   }
   #references .references .reference {
