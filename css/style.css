@@ -2082,13 +2082,13 @@
   transition: 2s;
 }
 #form .contact-title[data-scroll] {
-  transform: scale(1) translateY(5vh);
+  transform: scale(1);
   opacity: 0;
 }
 #form .contact-title[data-scroll=in] {
   transition: 2s;
   opacity: 1;
-  transform: scale(1) translateY(0);
+  transform: scale(1);
 }
 #form .contact-title[data-scroll=in]::after {
   width: 5em;
@@ -2100,7 +2100,6 @@
   }
 }
 #form .input-div {
-  border: 1px solid red;
   margin: 1rem 0;
   padding: 1rem 0;
   display: flex;
