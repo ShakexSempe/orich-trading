@@ -2053,7 +2053,15 @@
 #form {
   min-height: 100vh;
   padding: 10vh 1rem;
+  margin: 1rem auto;
   overflow: hidden;
+}
+@media (min-width: 768px) {
+  #form {
+    padding: 10vh 10vw;
+    width: 70%;
+    margin: 0 auto;
+  }
 }
 #form .contact-title {
   margin-bottom: 5vh;
@@ -2113,6 +2121,7 @@
   color: #000;
   transition: 0.51s;
   font-size: 1rem;
+  resize: none;
   overflow: hidden;
 }
 #form .input-div input::placeholder, #form .input-div textarea::placeholder {
@@ -2151,7 +2160,7 @@
   outline: none;
   position: relative;
   isolation: isolate;
-  transition: 0.2s;
+  transition: 0.25s;
   letter-spacing: 0.15em;
   border-radius: 10px;
 }
@@ -2165,31 +2174,44 @@
   border: none;
   outline: none;
   border-radius: 10px;
-  transition: 0.5s ease;
+  transition: 0.25s;
   z-index: -1;
 }
 #form button::before {
   background: linear-gradient(0deg, #f8650c, #ffa500);
-  box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 4px 4px 3px rgba(0, 0, 0, 0.212);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px #000a, 3px 3px 3px rgba(0, 0, 0, 0.25);
 }
 #form button::after {
   background: linear-gradient(0deg, #ffa500, #f8650c);
   opacity: 0;
-  box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 2px 2px 3px rgba(0, 0, 0, 0.412);
-}
-#form button:hover, #form button:focus {
-  letter-spacing: 0;
-  transform: scale(0.98);
-}
-#form button:hover::before, #form button:focus::before {
-  opacity: 0;
-}
-#form button:hover::after, #form button:focus::after {
-  opacity: 1;
+  box-shadow: inset 2px 2px 2px #000a, inset -2px -2px 2px rgba(255, 255, 255, 0.152), 1px 3px 2px rgba(0, 0, 0, 0.3);
 }
 @media (min-width: 768px) {
-  #form {
-    padding: 10vh 10vw;
+  #form button:hover, #form button:focus {
+    transition: 0.25s;
+    letter-spacing: 0;
+    transform: scale(0.98);
+  }
+  #form button:hover::before, #form button:focus::before {
+    opacity: 0;
+  }
+  #form button:hover::after, #form button:focus::after {
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  #form button {
+    transition: 0.25s;
+  }
+  #form button:active, #form button:focus {
+    letter-spacing: 0;
+    transform: scale(0.98);
+  }
+  #form button:active::before, #form button:focus::before {
+    opacity: 0;
+  }
+  #form button:active::after, #form button:focus::after {
+    opacity: 1;
   }
 }
 
