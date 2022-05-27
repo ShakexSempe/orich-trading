@@ -129,7 +129,7 @@
         width: 100%;
         // min-height: 40vh;
         margin: 5vh 0 0;
-        padding: 5vh 5vw;
+        padding: 5vh .5rem 5vh 5vw;
         text-align: center;
         text-align: left;
         // display: grid;
@@ -143,11 +143,10 @@
 
         p {
             color: $text-second;
-        font-family: $font-ubuntu;
-
+            font-family: $font-ubuntu;
             color: #000;
             line-height: 1.6;
-            font-size: 1rem;
+            font-size: .95rem;
             &#date {
                 color: $text-second;
                 color: #000;
@@ -171,8 +170,8 @@
 
         #date {
             display: block;
-            font-size: .8rem;
-            opacity: .7;
+            font-size: .85rem;
+            opacity: .8;
         font-family: $font-ubuntu;
 
         }
