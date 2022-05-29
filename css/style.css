@@ -2066,7 +2066,7 @@
   }
 }
 #form .contact-title {
-  margin-bottom: 5vh;
+  margin: 5vh 0;
   color: #000;
   font-family: "Ubuntu", sans-serif;
   position: relative;
@@ -2113,7 +2113,7 @@
   font-weight: 500;
 }
 #form .input-div input, #form .input-div textarea {
-  padding: 0.5rem;
+  padding: 1rem 0.5rem;
   border-radius: 5px;
   outline: none;
   border: none;
