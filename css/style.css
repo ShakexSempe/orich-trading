@@ -2054,8 +2054,9 @@
 #form {
   min-height: 100vh;
   padding: 10vh 1rem;
-  margin: 1rem auto;
+  margin: 5vh 0;
   overflow: hidden;
+  width: 100%;
 }
 @media (min-width: 768px) {
   #form {
@@ -2101,7 +2102,6 @@
 }
 #form .input-div {
   margin: 1rem 0;
-  padding: 1rem 0;
   display: flex;
   flex-direction: column;
   overflow: hidden;
