@@ -5,14 +5,14 @@
         margin: 0 auto;
     }
     min-height: 100vh;
-    padding: 10vh 1rem;
+    padding: 0 1rem;
     margin: 5vh 0;
     overflow: hidden;
     // border: 2px solid blue;
     width: 100%;
 
     .contact-title {
-        margin: 5vh 0;
+        margin: 0 0 10vh;
         color: #000;
         font-family: $font-header;
         // margin: 0 1rem;
@@ -50,14 +50,14 @@
     .input-div {
         // background: red;
         // border: 1px solid red;
-        margin: 1rem 0;
+        margin: 5vh 0;
         // padding: 1rem 0;
         display: flex;
         flex-direction: column;
         overflow: hidden;
 
         label {
-            margin-bottom: .5rem;
+            // margin-bottom: .5rem;
             text-transform: uppercase;
             transition: .2s;
             font-weight: 500;
