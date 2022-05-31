@@ -2582,6 +2582,7 @@
 .container main section {
   min-height: 100vh;
   background: #fff;
+  overflow: hidden;
 }
 .container main .section-pad {
   height: 95vh;
