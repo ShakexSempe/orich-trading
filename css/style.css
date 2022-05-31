@@ -2048,6 +2048,7 @@
   text-transform: capitalize;
 }
 #references .references .reference[data-scroll] {
+  transform: scale(1);
   transition: 1.5s;
 }
 @media (min-width: 1024px) {
@@ -2152,6 +2153,7 @@
   padding: 1rem 0.5rem;
   border-radius: 5px;
   outline: none;
+  resize: none;
   border: none;
   border-bottom: 2px solid #f8650c;
   background: #fff;

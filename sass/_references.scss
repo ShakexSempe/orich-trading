@@ -51,7 +51,7 @@
             }
             // DATA SCROLL
             &[data-scroll] {
-                // transform: scale(1);
+                transform: scale(1);
                 transition: 1.5s;
             }
             // ITEMS FADE IN WITH DELAYS ON SCREENS < 1024px
