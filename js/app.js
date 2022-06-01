@@ -48,6 +48,7 @@ logo.addEventListener("click", () => {
     toggle.classList.remove("active");
     main.classList.remove("active");
     header.classList.remove("active");
+    header.classList.remove("toggle-header");
 });
 
 // HERO INTERSECTION OBSERVER
