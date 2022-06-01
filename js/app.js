@@ -10,10 +10,10 @@ const aside = document.querySelector("aside");
 const dropdownBtn = document.querySelectorAll(".aside-dropdown")
 const links = document.querySelectorAll('#aside ul li a');
 
-
+// HAMBURGER TOGGLE
 toggle.addEventListener("click",  () => {
-    // TOGGLE VARIABLES
-
+    // ADD ACTIVE CLASS TO : 
+    // MAIN = OVERLAY , NAV = DISPLAY, HEADER = BLACK BG, REMOVE HERO HEADER  
     aside.classList.toggle("active");
     toggle.classList.toggle("active");
     main.classList.toggle("active");
@@ -21,22 +21,9 @@ toggle.addEventListener("click",  () => {
     header.classList.remove("hero-header");
     header.classList.toggle("toggle-header");
     console.log("open");
-    logo.classList.remove("active-logo");
+    // logo.classList.remove("active-logo");
 });
-
-// dropdownBtn.forEach(btn => {
-//     btn.addEventListener("click", () => {
-//         if(!btn.classList.contains("active")) {
-//             btn.classList.add("active");
-//         } else {
-//             btn.classList.remove("active");
-//         }
-//         // btn.addEventListener("click", () => {
-
-//         // })
-//     })
-// })
-
+// REMOVE ACTIVE CLASSES WHEN NAV LINKS CLICKED
 links.forEach(link => {
     link.addEventListener("click", () => {
         aside.classList.remove("active");
@@ -47,7 +34,7 @@ links.forEach(link => {
         header.classList.remove("toggle-header");
     });
 });
-
+// REMOVE ACTIVE CLASSES WHEN AREA OUTSIDE MENU IS CLICKED
 main.addEventListener("click", () => {
     aside.classList.remove("active");
     toggle.classList.remove("active");
@@ -55,38 +42,29 @@ main.addEventListener("click", () => {
     header.classList.remove("active");
 });
 
-// bgChanger.forEach(changer => {
-//     changer.addEventListener("click", () => {
-//         hero.classList.toggle("active");
-//     })
-// })
+// HERO INTERSECTION OBSERVER
+const indexHeader = document.querySelector(".index-header");
+const heroOptions = {
+    rootMargin: "-100% 0px 0px 0px"
+};
 
-
-
-// PAGE HEADERS INTERSECTION OBSERVER
-// const pageMain = document.querySelectorAll('.page-main')
-// const pageMainOptions = {
-//     rootMargin: "-50% 0px 0px 0px"
-// };
-
-// const pageMainObserver = new IntersectionObserver(
-//     function(
-//         entries, pageMainObserver
-//     ) {
-//         entries.forEach(entry => {
-//             if(!entry.isIntersecting) {
-//                 console.log("page Main NOT intersecting");
-//                 indexHeader.classList.add("observe");
-//                 topBtn.classList.add("active");
-//             } else {
-//                 console.log("page Main intersecting");
-//                 indexHeader.classList.remove("observe");
-//                 topBtn.classList.remove("active");
-
-//             }
-//         });
-//     }, pageMainOptions
-// );
-
-// pageMainObserver.observe(pageMain);
-
+const heroObserver = new IntersectionObserver(
+    function(
+        entries, heroObserver
+    ) {
+        entries.forEach(entry => {
+            if(!entry.isIntersecting) {
+                console.log("hero NOT intersecting");
+                indexHeader.classList.remove("hero-header");
+                topBtn.classList.add("active");
+                logo.classList.remove("active-logo");
+            } else {
+                console.log("hero intersecting");
+                indexHeader.classList.add("hero-header");
+                topBtn.classList.remove("active");
+                logo.classList.add("active-logo");
+            }
+        });
+    }, heroOptions
+);
+heroObserver.observe(hero);
