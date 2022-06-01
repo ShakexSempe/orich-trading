@@ -42,6 +42,14 @@ main.addEventListener("click", () => {
     header.classList.remove("active");
 });
 
+// REMOVE ACTIVE CLASSES WHEN LOGO IS CLICKED
+logo.addEventListener("click", () => {
+    aside.classList.remove("active");
+    toggle.classList.remove("active");
+    main.classList.remove("active");
+    header.classList.remove("active");
+});
+
 // HERO INTERSECTION OBSERVER
 const indexHeader = document.querySelector(".index-header");
 const heroOptions = {
