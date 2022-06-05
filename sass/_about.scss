@@ -252,12 +252,13 @@
                 }
             }
 
-            @media (min-width: 768px) {
+            @media (min-width: 820px) {
                 padding: 5vh 0 5vh;
                 // margin-top: 10vh;
                 .vision {
                     padding: 5vh .5rem;
                     margin: 0 5vw;
+                    // width: 50%;
 
                     h3 {
                         font-size: 2.5rem;
@@ -284,6 +285,7 @@
                 }
             }
         }
+
         @media (max-width: 768px) {
             .about-article {
                 font-size: 1rem;
@@ -292,10 +294,11 @@
 
         @media (min-width: 768px) {
             .about-article {
-                margin: 1rem 5vw;
+                width: 60%;
+                margin: 1rem auto;
 
                 p {
-                    font-size: 1.2rem;
+                    font-size: 1.3rem;
                 }
             }
         }

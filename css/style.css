@@ -1084,7 +1084,7 @@
   transform: translateY(0);
   transition-delay: 0.5s;
 }
-@media (min-width: 768px) {
+@media (min-width: 820px) {
   .container #about .vision-mission {
     padding: 5vh 0 5vh;
   }
@@ -1116,10 +1116,11 @@
 }
 @media (min-width: 768px) {
   .container #about .about-article {
-    margin: 1rem 5vw;
+    width: 60%;
+    margin: 1rem auto;
   }
   .container #about .about-article p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 .container#about-page main .about-overview {
@@ -2494,8 +2495,9 @@
   box-sizing: border-box;
   font-family: sans-serif;
   font-family: "Red Hat Display", sans-serif;
-  font-family: "Ubuntu", sans-serif;
   font-family: corbel;
+  font-family: "Ubuntu", sans-serif;
+  font-family: customFont;
   scroll-behavior: smooth;
   scroll-padding-top: 8vh;
 }
