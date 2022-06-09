@@ -77,3 +77,23 @@ const heroObserver = new IntersectionObserver(
     }, heroOptions
 );
 heroObserver.observe(hero);
+
+// MAIN OBSERVER 
+const mainOptions = {
+    rootMargin: '0px 0px -80% 0px',
+};
+
+const mainObserver = new IntersectionObserver(
+    function(entries, mainObserver){
+        entries.forEach( entry => {
+            if(!entry.isIntersecting){
+                console.log('MAIN NOT IO');
+                header.classList.remove("main-header");
+            } else {
+                console.log('MAIN IS IO');
+                header.classList.add("main-header");
+            }
+        });
+    }, mainOptions
+);
+mainObserver.observe(main);

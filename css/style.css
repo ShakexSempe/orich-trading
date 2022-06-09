@@ -182,9 +182,9 @@
   transition: all 0.5s;
 }
 #header.index-header {
-  background: transparent;
   background-color: #000a;
   background-color: #fff;
+  background: transparent;
 }
 #header.index-header .logo {
   opacity: 0;
@@ -592,6 +592,9 @@
 }
 #header.toggle-header {
   background-color: #000;
+}
+#header.main-header {
+  background: #fff;
 }
 
 #banner {
@@ -2756,7 +2759,6 @@
   }
 }
 .container main {
-  padding: 0vh 0 5vh;
   min-height: 100vh;
   position: relative;
 }
