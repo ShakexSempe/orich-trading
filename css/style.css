@@ -572,6 +572,7 @@
 }
 #header.hero-header .navigation nav ul li a {
   color: #fffa;
+  color: #f4f4f4;
 }
 #header.hero-header .navigation nav ul li a:hover {
   color: #fff;
