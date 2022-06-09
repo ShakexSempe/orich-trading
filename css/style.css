@@ -182,9 +182,9 @@
   transition: all 0.5s;
 }
 #header.index-header {
-  background-color: #000a;
   background-color: #fff;
   background: transparent;
+  background-color: #000a;
 }
 #header.index-header .logo {
   opacity: 0;

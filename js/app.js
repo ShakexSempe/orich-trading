@@ -65,12 +65,10 @@ const heroObserver = new IntersectionObserver(
             if(!entry.isIntersecting) {
                 console.log("hero NOT intersecting");
                 indexHeader.classList.remove("hero-header");
-                topBtn.classList.add("active");
                 logo.classList.remove("active-logo");
             } else {
                 console.log("hero intersecting");
                 indexHeader.classList.add("hero-header");
-                topBtn.classList.remove("active");
                 logo.classList.add("active-logo");
             }
         });
@@ -89,9 +87,13 @@ const mainObserver = new IntersectionObserver(
             if(!entry.isIntersecting){
                 console.log('MAIN NOT IO');
                 header.classList.remove("main-header");
+                topBtn.classList.remove("active");
+
             } else {
                 console.log('MAIN IS IO');
                 header.classList.add("main-header");
+                topBtn.classList.add("active");
+
             }
         });
     }, mainOptions
