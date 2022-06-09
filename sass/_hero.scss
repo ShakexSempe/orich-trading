@@ -258,6 +258,7 @@
         height: 100vh;
 
         figure {
+            
             width: 100%;
             height: 100%;
             position: relative;
@@ -267,6 +268,10 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                // HIDE IMG ON DESKTOP TO ENABLE FIXED BG IMAGE
+                @media (min-width: 820px){
+                    display: none;
+                }
             }
 
             figcaption {
@@ -442,6 +447,26 @@
                 background: #000a;
                 background: rgba(0, 0, 0, 0.5);
                 // z-index: -1;
+            }
+        }
+
+        @media (min-width: 820px){
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            &#menu-1 {
+                background-image: url('../img/work.jpg');
+            }
+            &#menu-2 {
+                background: #ff0000;
+                background-image: url('../img/electric.jpg');
+                background-size: 100%;
+                background-position: left;
+            }
+            &#menu-3 {
+                background: #fff000;
+                background-image: url('../img/project.jpg');
             }
         }
     }

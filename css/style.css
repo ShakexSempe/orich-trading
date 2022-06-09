@@ -901,6 +901,11 @@
   height: 100%;
   object-fit: cover;
 }
+@media (min-width: 820px) {
+  #menu .menu-section figure img {
+    display: none;
+  }
+}
 #menu .menu-section figure figcaption {
   position: absolute;
   left: 50%;
@@ -1049,6 +1054,26 @@
   height: 100%;
   background: #000a;
   background: rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 820px) {
+  #menu .menu-section {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #menu .menu-section#menu-1 {
+    background-image: url("../img/work.jpg");
+  }
+  #menu .menu-section#menu-2 {
+    background: #ff0000;
+    background-image: url("../img/electric.jpg");
+    background-size: 100%;
+    background-position: left;
+  }
+  #menu .menu-section#menu-3 {
+    background: #fff000;
+    background-image: url("../img/project.jpg");
+  }
 }
 
 .container {
