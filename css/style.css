@@ -1409,11 +1409,12 @@
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 5px;
   background: linear-gradient(30deg, rgba(0, 0, 0, 0.78), #f8650c);
   background: linear-gradient(45deg, #000, #f8650c);
   opacity: 0.9;
   z-index: -2;
-  box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 3px 5px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.5), 2px 3px 2px rgba(0, 0, 0, 0.15);
 }
 #services .section-description.promise h3 {
   color: #f4f4f4;
@@ -1691,6 +1692,7 @@
   transition-delay: 1s;
 }
 #services .service-section-pad {
+  border-radius: 5px;
   height: 95vh;
   padding: 0;
   overflow: hidden;
@@ -2383,7 +2385,7 @@
   color: #000;
 }
 #footer .footer-copyright a {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: #f4f4f4;
   font-family: "Ubuntu", sans-serif;
   color: #000;
