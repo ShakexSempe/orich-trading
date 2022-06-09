@@ -281,15 +281,16 @@
             background-image: linear-gradient(90deg, #f4f4f4, #fff);
 
             p {
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
 
             a {
-                font-size: 1.2rem;
+                font-size: 1rem;
+                text-decoration: underline rgba(0, 0, 0, 0.367);
             }
 
             #date {
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
         }
     }

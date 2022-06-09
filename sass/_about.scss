@@ -19,7 +19,7 @@
 
             p {
                 margin-bottom: 1.5rem;
-
+                font-weight: 100;
                 span {
                     font-size: 2rem;
                     padding-right: 0.1em;
@@ -97,6 +97,7 @@
                     padding: .5rem 0 0 1rem;
                     li {
                         padding-bottom: 1rem;
+                        font-size: 1rem;
                         &::marker {
                             color: $marker;
                             color: hsla(0, 0%, 100%, 0.200);
@@ -286,19 +287,16 @@
             }
         }
 
-        @media (max-width: 768px) {
-            .about-article {
-                font-size: 1rem;
-            }
-        }
+        
 
         @media (min-width: 768px) {
             .about-article {
                 width: 60%;
+                // height: 100vh;
                 margin: 1rem auto;
 
                 p {
-                    font-size: 1.3rem;
+                    font-size: 1.15rem;
                 }
             }
         }

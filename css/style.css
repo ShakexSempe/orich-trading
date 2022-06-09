@@ -894,6 +894,7 @@
 }
 .container #about .about-article p {
   margin-bottom: 1.5rem;
+  font-weight: 100;
 }
 .container #about .about-article p span {
   font-size: 2rem;
@@ -957,6 +958,7 @@
 }
 .container #about .vision-mission .vision ul li {
   padding-bottom: 1rem;
+  font-size: 1rem;
 }
 .container #about .vision-mission .vision ul li::marker {
   color: #f4f4f4;
@@ -1109,18 +1111,13 @@
     width: 100%;
   }
 }
-@media (max-width: 768px) {
-  .container #about .about-article {
-    font-size: 1rem;
-  }
-}
 @media (min-width: 768px) {
   .container #about .about-article {
     width: 60%;
     margin: 1rem auto;
   }
   .container #about .about-article p {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
   }
 }
 .container#about-page main .about-overview {
@@ -2482,13 +2479,14 @@
     background-image: linear-gradient(90deg, #f4f4f4, #fff);
   }
   #footer .footer-copyright p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   #footer .footer-copyright a {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    text-decoration: underline rgba(0, 0, 0, 0.367);
   }
   #footer .footer-copyright #date {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
