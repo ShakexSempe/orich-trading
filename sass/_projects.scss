@@ -145,12 +145,13 @@
             .project-item {
                 // DATA-SCROLL
                 &[data-scroll] {
-                    transform: scale(.9);
-                    opacity: 1;
+                    transform: scale(1);
+                    opacity: 0;
                 }
                 &[data-scroll="in"] {
                     transform: scale(1);
-                    transition: .5s;
+                    transition: 1.5s;
+                    opacity: 1;
 
                 }
                 padding-bottom: 5vh;

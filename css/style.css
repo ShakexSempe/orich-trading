@@ -1931,12 +1931,13 @@
   height: auto;
 }
 #projects .gallery .gallery-grid .project-item[data-scroll] {
-  transform: scale(0.9);
-  opacity: 1;
+  transform: scale(1);
+  opacity: 0;
 }
 #projects .gallery .gallery-grid .project-item[data-scroll=in] {
   transform: scale(1);
-  transition: 0.5s;
+  transition: 1.5s;
+  opacity: 1;
 }
 #projects .gallery .gallery-grid .project-item figcaption {
   padding: 0.5rem;
