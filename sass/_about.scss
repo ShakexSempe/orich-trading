@@ -406,9 +406,7 @@
                     border-radius: 5px;
                     margin: 0 1rem;
                     overflow: hidden;
-                    box-shadow: inset 2px 2px 2px #fffa,
-                                inset -2px -2px 2px #000a,
-                                        5px 5px 5px rgba(0, 0, 0, .200);
+                    box-shadow: $box-shadow-sm;
 
                     h3 {
                         font-size: 2.5rem;
