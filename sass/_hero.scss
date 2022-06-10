@@ -314,7 +314,12 @@
                                 // text-decoration: none;
                             }
                         }
-
+                        // DESKTOP
+                        @media (min-width: 820px) {
+                            h2 {
+                                font-size: 2.3rem;
+                            }
+                        } 
                         // DATA SCROLL TITLE
                         &[data-scroll] {
                             transform: scale(1) translateY(0);
@@ -340,8 +345,9 @@
                     bottom: 30vh;
                     display: flex;
                     flex-direction: column;
-
+                   
                     a {
+
                         padding: .5rem 0;
                         margin: .5rem 0;
                         // border: 2px solid #fff;
@@ -437,6 +443,11 @@
                                     }
                                 }
                             }
+                        }
+                    }
+                     @media (min-width: 820px){
+                        a {
+                            padding: 1rem;
                         }
                     }
                 }

@@ -946,6 +946,11 @@
 #menu .menu-section figure figcaption.menu-title .cta-content p a {
   color: #f4f4f4;
 }
+@media (min-width: 820px) {
+  #menu .menu-section figure figcaption.menu-title .cta-content h2 {
+    font-size: 2.3rem;
+  }
+}
 #menu .menu-section figure figcaption.menu-title .cta-content[data-scroll] {
   transform: scale(1) translateY(0);
 }
@@ -1053,6 +1058,11 @@
   }
   #menu .menu-section figure figcaption.cta a.view:hover::after {
     opacity: 1;
+  }
+}
+@media (min-width: 820px) {
+  #menu .menu-section figure figcaption.cta a {
+    padding: 1rem;
   }
 }
 #menu .menu-section figure .page-link {
