@@ -183,8 +183,8 @@
 }
 #header.index-header {
   background-color: #fff;
-  background: transparent;
   background-color: #000a;
+  background: transparent;
 }
 #header.index-header .logo {
   opacity: 0;
@@ -1963,9 +1963,6 @@
   }
 }
 @media (min-width: 768px) {
-  #services {
-    padding: 0 5vw 5vh;
-  }
   #services .section-description {
     margin: 5vh 0 10vh;
   }
@@ -2496,6 +2493,7 @@
 #footer {
   background: #fff;
   min-height: 100vh;
+  padding-top: 5vh;
 }
 #footer .footer-contact {
   border-radius: 5px;
@@ -2739,14 +2737,7 @@
   font-family: customFont;
   font-family: "Ubuntu", sans-serif;
   scroll-behavior: smooth;
-  scroll-padding-top: 8vh;
 }
-@media (max-width: 768px) {
-  * {
-    scroll-padding-top: 7vh;
-  }
-}
-
 .container {
   max-width: 100%;
 }
@@ -2825,6 +2816,7 @@
 .container main section {
   min-height: 100vh;
   background: #fff;
+  padding-top: 5vh;
 }
 .container main .section-pad {
   height: 95vh;

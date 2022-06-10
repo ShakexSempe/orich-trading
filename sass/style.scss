@@ -21,10 +21,10 @@
     font-family: $font-custom;
     font-family: $font-ubuntu;
     scroll-behavior: smooth;
-    scroll-padding-top: 8vh;
+    // scroll-padding-top: 8vh;
     // border: 1px solid red;
     @media (max-width:768px) {
-        scroll-padding-top: 7vh;
+        // scroll-padding-top: 7vh;
     }
 }
 
@@ -117,6 +117,7 @@
         section {
             min-height: 100vh;
             background: #fff;
+            padding-top: 5vh;
             // overflow: hidden;
         }
         .section-pad {
