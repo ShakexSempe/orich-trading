@@ -900,6 +900,16 @@
   position: relative;
   isolation: isolate;
 }
+#menu .menu-section figure::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000a;
+  background: rgba(0, 0, 0, 0.4);
+}
 #menu .menu-section figure img {
   width: 100%;
   height: 100%;
@@ -922,14 +932,37 @@
   text-align: center;
   width: 100%;
 }
-#menu .menu-section figure figcaption.menu-title h2 {
+#menu .menu-section figure figcaption.menu-title .cta-content h2 {
   color: #fff;
   font-size: 2rem;
   font-weight: 500;
   text-transform: capitalize;
+  transition: 1s;
 }
-#menu .menu-section figure figcaption.menu-title a {
-  color: #ddd;
+#menu .menu-section figure figcaption.menu-title .cta-content p {
+  color: #f4f4f4;
+  transition: 1s;
+}
+#menu .menu-section figure figcaption.menu-title .cta-content p a {
+  color: #f4f4f4;
+}
+#menu .menu-section figure figcaption.menu-title .cta-content[data-scroll] {
+  transform: scale(1) translateY(0);
+}
+#menu .menu-section figure figcaption.menu-title .cta-content[data-scroll] h2 {
+  transform: translateX(-2rem);
+}
+#menu .menu-section figure figcaption.menu-title .cta-content[data-scroll] p {
+  transform: translateX(2rem);
+}
+#menu .menu-section figure figcaption.menu-title .cta-content[data-scroll=in] {
+  transform: scale(1) translateY(0);
+}
+#menu .menu-section figure figcaption.menu-title .cta-content[data-scroll=in] h2 {
+  transform: translateX(0);
+}
+#menu .menu-section figure figcaption.menu-title .cta-content[data-scroll=in] p {
+  transform: translateX(0);
 }
 #menu .menu-section figure figcaption.cta {
   bottom: 30vh;
@@ -1049,16 +1082,6 @@
     transform: translateX(-50%) scale(0.97);
   }
 }
-#menu .menu-section figure::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #000a;
-  background: rgba(0, 0, 0, 0.45);
-}
 @media (min-width: 820px) {
   #menu .menu-section {
     background-attachment: fixed;
@@ -1077,6 +1100,8 @@
   #menu .menu-section#menu-3 {
     background: #fff000;
     background-image: url("../img/project.jpg");
+    background-position: center bottom;
+    background-size: cover;
   }
 }
 
@@ -2821,7 +2846,6 @@
 
 [data-scroll] {
   transition: 1.5s ease;
-  transform: scale(0.5);
   transform: scale(1) translateY(10vh);
 }
 

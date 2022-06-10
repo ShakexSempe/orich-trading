@@ -155,7 +155,6 @@
 // SCROLL OUT
 [data-scroll] {
     transition: 1.5s ease;
-    transform: scale(.5);
     transform: scale(1) translateY(10vh);
 }
 

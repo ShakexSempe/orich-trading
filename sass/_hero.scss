@@ -262,6 +262,18 @@
             height: 100%;
             position: relative;
             isolation: isolate;
+            // OVERLAY
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #000a;
+                background: rgba(0, 0, 0, 0.4);
+                // z-index: -1;
+            }
 
             img {
                 width: 100%;
@@ -285,18 +297,44 @@
                 top: 10vh;
                 text-align: center;
                 width: 100%;
+                    .cta-content {
+                        // border: 2px solid red;
+                        h2 {
+                            color: #fff;
+                            font-size: 2rem;
+                            font-weight: 500;
+                            text-transform: capitalize;
+                            transition: 1s;
+                        }
+                        p {
+                            color: #f4f4f4;
+                            transition: 1s;
+                            a {
+                                color: #f4f4f4;
+                                // text-decoration: none;
+                            }
+                        }
 
-                h2 {
-                    color: #fff;
-                    font-size: 2rem;
-                    font-weight: 500;
-                    text-transform: capitalize;
-                }
-
-                a {
-                    color: #ddd;
-                    // text-decoration: none;
-                }
+                        // DATA SCROLL TITLE
+                        &[data-scroll] {
+                            transform: scale(1) translateY(0);
+                            h2 {
+                                transform: translateX(-2rem);
+                            }
+                            p {
+                                transform: translateX(2rem);
+                            }
+                        }
+                        &[data-scroll="in"] {
+                            transform: scale(1) translateY(0);
+                            h2 {
+                                transform: translateX(0);
+                            }
+                            p {
+                                transform: translateX(0);
+                            }
+                        }
+                    }
                 }
                 &.cta {
                     bottom: 30vh;
@@ -435,25 +473,13 @@
                 }
 
             }
-            // OVERLAY
-            &::after {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: #000a;
-                background: rgba(0, 0, 0, 0.45);
-                // z-index: -1;
-            }
+            
         }
 
         @media (min-width: 820px){
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: cover;
-            
             &#menu-1 {
                 background-image: url('../img/work.jpg');
             }
@@ -466,6 +492,8 @@
             &#menu-3 {
                 background: #fff000;
                 background-image: url('../img/project.jpg');
+                background-position: center bottom;
+                background-size: cover;
             }
         }
     }
