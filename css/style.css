@@ -1094,17 +1094,18 @@
 }
 @media (min-width: 820px) {
   #menu .menu-section {
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
   }
   #menu .menu-section#menu-1 {
     background-image: url("../img/work.jpg");
+    background-attachment: fixed;
   }
   #menu .menu-section#menu-2 {
     background: #ff0000;
     background-image: url("../img/electric.jpg");
     background-size: 100%;
+    background-attachment: fixed;
     background-position: left;
   }
   #menu .menu-section#menu-3 {
@@ -1112,6 +1113,7 @@
     background-image: url("../img/project.jpg");
     background-position: center bottom;
     background-size: cover;
+    background-attachment: fixed;
   }
 }
 
