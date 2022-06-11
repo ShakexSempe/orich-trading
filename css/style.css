@@ -1150,7 +1150,8 @@
   text-shadow: 2px 2px 0px #f8650c;
 }
 .container #about .about-article p[data-scroll] {
-  transform: scale(1) translateY(10vh);
+  transition: 1.5s;
+  transform: scale(1) translateY(0vh);
 }
 .container #about .about-article p[data-scroll=in] {
   transform: scale(1) translateY(0);
