@@ -25,6 +25,7 @@
   z-index: 5;
   position: fixed;
   right: 5vw;
+  right: 1rem;
   top: 0.5rem;
 }
 .toggle .bar {
