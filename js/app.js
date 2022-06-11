@@ -20,7 +20,7 @@ toggle.addEventListener("click",  () => {
     header.classList.remove("scroll");
     header.classList.remove("hero-header");
     header.classList.toggle("toggle-header");
-    header.classList.toggle("main-header");
+    header.classList.remove("main-header");
     console.log("open");
     // logo.classList.remove("active-logo");
 });
