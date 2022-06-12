@@ -935,7 +935,7 @@
   color: #fff;
   font-size: 2rem;
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   transition: 1s;
 }
 #menu .menu-section figure figcaption.menu-title .cta-content p {
@@ -948,6 +948,7 @@
 @media (min-width: 820px) {
   #menu .menu-section figure figcaption.menu-title .cta-content h2 {
     font-size: 2.3rem;
+    margin-bottom: 1rem;
   }
   #menu .menu-section figure figcaption.menu-title .cta-content p {
     font-size: 1.15rem;
