@@ -928,11 +928,14 @@
   text-align: center;
   width: 100%;
 }
+#menu .menu-section figure figcaption.menu-title .cta-content {
+  text-transform: capitalize;
+}
 #menu .menu-section figure figcaption.menu-title .cta-content h2 {
   color: #fff;
   font-size: 2rem;
   font-weight: 500;
-  text-transform: capitalize;
+  margin-bottom: 1rem;
   transition: 1s;
 }
 #menu .menu-section figure figcaption.menu-title .cta-content p {
@@ -945,6 +948,9 @@
 @media (min-width: 820px) {
   #menu .menu-section figure figcaption.menu-title .cta-content h2 {
     font-size: 2.3rem;
+  }
+  #menu .menu-section figure figcaption.menu-title .cta-content p {
+    font-size: 1.15rem;
   }
 }
 #menu .menu-section figure figcaption.menu-title .cta-content[data-scroll] {
@@ -1057,26 +1063,37 @@
   }
 }
 @media (min-width: 820px) {
+  #menu .menu-section figure figcaption.cta {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    bottom: 20vh;
+  }
   #menu .menu-section figure figcaption.cta a {
     padding: 1rem;
+    width: 20rem;
   }
 }
 #menu .menu-section figure .page-link {
   position: absolute;
-  display: block;
+  overflow: hidden;
   bottom: 20vh;
   z-index: 5;
   background-color: #000a;
   border-radius: 5px;
   width: 5rem;
   text-align: center;
-  font-size: 1rem;
   padding: 0.5rem;
   text-decoration: none;
-  color: #f8650c;
   transition: 0.2s;
   left: 50%;
   transform: translateX(-50%);
+}
+#menu .menu-section figure .page-link i {
+  font-size: 1rem;
+  color: #f8650c;
+  transition: 0.25s;
 }
 @media (max-width: 820px) {
   #menu .menu-section figure .page-link:active {
@@ -1084,8 +1101,15 @@
   }
 }
 @media (min-width: 820px) {
+  #menu .menu-section figure .page-link {
+    bottom: 10vh;
+  }
   #menu .menu-section figure .page-link:hover {
     transform: translateX(-50%) scale(0.97);
+  }
+  #menu .menu-section figure .page-link:hover i {
+    transform: translateY(0.5rem);
+    color: #eee;
   }
 }
 @media (min-width: 820px) {
