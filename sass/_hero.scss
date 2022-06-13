@@ -5,6 +5,7 @@
     background-image: url(../img/orich-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    // background-position: 55% top;
     background-position: 55% top;
     position: relative;
     isolation: isolate;
@@ -79,7 +80,7 @@
         text-align: center;
         text-align: center;
         position: relative;
-        top: 50vh;
+        top: 60vh;
         // background-color: #000a;
         // background: linear-gradient(0deg, #000a, #000);
     
@@ -132,7 +133,7 @@
     // CTA 
     #cta {
         position: absolute;
-        bottom: 25vh;
+        bottom: 20vh;
         left: 50%;
         transform: translateX(-50%);
         transition: .3s;
