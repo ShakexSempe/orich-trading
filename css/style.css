@@ -212,7 +212,7 @@
   text-align: center;
   text-decoration: none;
   overflow: hidden;
-  width: 11rem;
+  width: 15rem;
   height: 100%;
   transition: 0.3s;
 }
@@ -700,7 +700,7 @@
   background-image: url(../img/orich-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 55% top;
+  background-position: 30% top;
   position: relative;
   isolation: isolate;
   z-index: 10;
@@ -718,11 +718,10 @@
 }
 @media (min-width: 768px) {
   #hero {
-    background-image: url(../img/work.jpg);
     background-image: url(../img/shivendu-shukla-3yoTPuYR9ZY-unsplash-min.jpg);
     background-size: contain;
     background-size: cover;
-    background-position: center 30%;
+    background-position: center 20%;
     background-attachment: fixed;
     z-index: 10;
     display: grid;
@@ -868,7 +867,7 @@
 }
 @media (min-width: 1024px) {
   #hero #cta {
-    bottom: 15vh;
+    bottom: 45vh;
   }
   #hero #cta .cta-btn {
     width: 20rem;
