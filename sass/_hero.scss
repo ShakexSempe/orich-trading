@@ -30,15 +30,13 @@
     // DESKTOP HERO
     @media (min-width: 768px) {
     // background-image: url(../img/work.jpg);
-    background-image: url(../img/shivendu-shukla-3yoTPuYR9ZY-unsplash-min.jpg);
+        background-image: url(../img/shivendu-shukla-3yoTPuYR9ZY-unsplash-min.jpg);
         background-size: contain;
         background-size: cover;
-        background-position: center 20%;
+        background-position: center 30%;
         background-attachment: fixed;
         z-index: 10;
         display: grid;
-
-        // place-items: center;
         // border: 3px solid red;
         &::after {
             position: absolute;
@@ -51,17 +49,6 @@
             z-index: -1;
         }
 
-        // &::before {
-        //     position: absolute;
-        //     content: '';
-        //     top: 0;
-        //     right: 0;
-        //     width: 100%;
-        //     height: 100%;
-        //     z-index: -1;
-        //     background-image: linear-gradient(0deg, transparent, #000);
-        //     // opacity: .5;
-        // }
     }
 
     // END OF DESKTOP HERO
@@ -69,15 +56,13 @@
 
     // SLOGAN 'quality or nothing'
     .slogan {
+        // border: 1px solid $brand;
         color: #ddd;
         border-radius: 5px;
         border: none;
-        // border: 1px solid $brand;
         width: 19rem;
         margin: 0 auto;
         outline: none;
-        // cursor: pointer;
-        text-align: center;
         text-align: center;
         position: relative;
         top: 60vh;
@@ -222,7 +207,7 @@
 
         @media (min-width: 1024px) {
             // position: absolute;
-            bottom: 45vh;
+            bottom: 10vh;
             // left: 50%;
             // transform: translateX(-50%);
 
@@ -304,14 +289,17 @@
                             color: #fff;
                             font-size: 2rem;
                             font-weight: 500;
+                            letter-spacing: .05rem;
                             margin-bottom: .5rem;
                             transition: 1s;
                         }
                         p {
                             color: #f4f4f4;
+                            font-weight: 300;
                             transition: 1s;
                             a {
                                 color: #f4f4f4;
+                                font-weight: 400;
                                 // text-decoration: none;
                             }
                         }
@@ -353,7 +341,6 @@
                     flex-direction: column;
 
                     a {
-
                         padding: .7rem 0;
                         margin: .5rem 0;
                         // border: 2px solid #fff;
@@ -397,16 +384,17 @@
                             // DESKTOP
                             @media (min-width: 820px) {
                                 &:hover {
+                                    background: #000;
+                                    color: $brand;
                                     letter-spacing: normal;
                                     transform: scale(.98);
                                     letter-spacing: normal;
-
                                 }
                             }
                         }
 
                         &.view {
-
+                            background-color: $brand;
                             &::before,
                             &::after {
                                 content: '';

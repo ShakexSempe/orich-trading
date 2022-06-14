@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Red+Hat+Display&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;800&display=swap");
 @font-face {
   font-family: corbel;
   src: url(../fonts/CORBEL.TTF);
@@ -230,7 +230,7 @@
 #header .logo a p {
   text-transform: uppercase;
   font-size: 0.5rem;
-  font-family: corbel;
+  font-family: "Prompt", sans-serif;
   letter-spacing: 0.15rem;
 }
 #header .navigation {
@@ -382,6 +382,7 @@
     width: 100%;
     text-decoration: none;
     color: #f4f4f4;
+    letter-spacing: 0.025rem;
     margin-bottom: 0.5rem;
     transform: translateY(2rem);
     opacity: 0;
@@ -568,14 +569,13 @@
   transform: translateY(5vh);
 }
 #header.hero-header .navigation nav ul li a {
-  color: #fffa;
   color: #f4f4f4;
 }
 #header.hero-header .navigation nav ul li a:hover {
   color: #fff;
 }
 #header.hero-header .navigation nav .dropdown button {
-  color: #fffa;
+  color: #f4f4f4;
 }
 #header.hero-header .navigation nav .dropdown button:hover {
   color: #fff;
@@ -721,7 +721,7 @@
     background-image: url(../img/shivendu-shukla-3yoTPuYR9ZY-unsplash-min.jpg);
     background-size: contain;
     background-size: cover;
-    background-position: center 20%;
+    background-position: center 30%;
     background-attachment: fixed;
     z-index: 10;
     display: grid;
@@ -744,7 +744,6 @@
   width: 19rem;
   margin: 0 auto;
   outline: none;
-  text-align: center;
   text-align: center;
   position: relative;
   top: 60vh;
@@ -771,7 +770,7 @@
 #hero .slogan p {
   text-transform: capitalize;
   padding: 1rem 0;
-  font-family: corbel;
+  font-family: "Prompt", sans-serif;
   color: #fff;
 }
 @media (min-width: 768px) {
@@ -867,7 +866,7 @@
 }
 @media (min-width: 1024px) {
   #hero #cta {
-    bottom: 45vh;
+    bottom: 10vh;
   }
   #hero #cta .cta-btn {
     width: 20rem;
@@ -934,15 +933,18 @@
   color: #fff;
   font-size: 2rem;
   font-weight: 500;
+  letter-spacing: 0.05rem;
   margin-bottom: 0.5rem;
   transition: 1s;
 }
 #menu .menu-section figure figcaption.menu-title .cta-content p {
   color: #f4f4f4;
+  font-weight: 300;
   transition: 1s;
 }
 #menu .menu-section figure figcaption.menu-title .cta-content p a {
   color: #f4f4f4;
+  font-weight: 400;
 }
 @media (min-width: 820px) {
   #menu .menu-section figure figcaption.menu-title .cta-content h2 {
@@ -1013,10 +1015,15 @@
 }
 @media (min-width: 820px) {
   #menu .menu-section figure figcaption.cta a.enquiry:hover {
+    background: #000;
+    color: #f8650c;
     letter-spacing: normal;
     transform: scale(0.98);
     letter-spacing: normal;
   }
+}
+#menu .menu-section figure figcaption.cta a.view {
+  background-color: #f8650c;
 }
 #menu .menu-section figure figcaption.cta a.view::before, #menu .menu-section figure figcaption.cta a.view::after {
   content: "";
@@ -1158,7 +1165,7 @@
 }
 .container #about .about-article p {
   margin-bottom: 1.5rem;
-  font-weight: 100;
+  font-weight: 300;
 }
 .container #about .about-article p span {
   font-size: 2rem;
@@ -2757,11 +2764,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
-  font-family: "Red Hat Display", sans-serif;
-  font-family: corbel;
-  font-family: customFont;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Prompt", sans-serif;
   scroll-behavior: smooth;
 }
 .container {

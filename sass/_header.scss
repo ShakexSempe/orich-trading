@@ -254,6 +254,7 @@
                         width: 100%;
                         text-decoration: none;
                         color: #f4f4f4;
+                        letter-spacing: .025rem;
                         // margin: 1rem 0 0;
                         margin-bottom: .5rem;
                         transform: translateY(2rem);
@@ -489,7 +490,6 @@
                 ul {
                     li {
                         a {
-                            color: $text-second-trans;
                             color: $text-second;
                             &:hover {
                                 color: #fff;
@@ -500,7 +500,7 @@
 
                 .dropdown {
                     button {
-                        color: #fffa;
+                        color: $text-second;
                         &:hover {
                             color: #fff;
                         }
