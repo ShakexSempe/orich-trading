@@ -389,8 +389,8 @@
   }
   #header .navigation aside .social-links a i {
     width: 1rem;
-    margin: 0 1rem;
-    font-size: 1.2rem;
+    margin: 0 0.5rem 0 1rem;
+    font-size: 1rem;
     color: #ffa500;
   }
   #header .navigation aside.active {
