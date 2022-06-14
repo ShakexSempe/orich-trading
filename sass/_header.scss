@@ -240,7 +240,7 @@
                     // bottom: 5vh;
                     // left: 5vw;
                     font-family: $font-ubuntu;
-                    width: 87vw;
+                    width: 85vw;
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-start;
@@ -274,7 +274,7 @@
                 // HAMBURGER ACTIVE CLASS
                 &.active {
                     // DISPLAY ASIDE FROM RIGHT
-                    right: -15vw;
+                    right: -10vw;
                     // DISPLAY UL
                     ul {
                         li {
