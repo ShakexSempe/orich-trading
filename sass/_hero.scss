@@ -529,7 +529,9 @@
             background-size: cover;
             &#menu-1 {
                 background-image: url('../img/work.jpg');
+                background-image: url('../img/project.jpg');
                 background-attachment: fixed;
+                background-position: center;
             }
 
             &#menu-2 {
@@ -543,6 +545,8 @@
             &#menu-3 {
                 background: #fff000;
                 background-image: url('../img/project.jpg');
+                background-image: url('../projects/solar-3.jpg');
+                // background-position: center bottom;
                 background-position: center bottom;
                 background-size: cover;
                 background-attachment: fixed;
