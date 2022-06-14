@@ -93,7 +93,7 @@
 
         p {
             text-transform: capitalize;
-            padding: 1rem 0;
+            padding: .5rem 0;
             font-family: $font-content;
             color: #fff;
         }
@@ -118,7 +118,7 @@
     // CTA 
     #cta {
         position: absolute;
-        bottom: 20vh;
+        bottom: 15vh;
         left: 50%;
         transform: translateX(-50%);
         transition: .3s;
