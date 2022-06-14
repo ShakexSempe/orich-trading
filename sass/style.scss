@@ -35,14 +35,14 @@
             text-align: center;
             text-transform: uppercase;
             font-size: 1.35rem;
-            font-weight: 500;
+            letter-spacing: .2rem;
             padding: 5vh 0;
             overflow: hidden;
             // padding: 1rem 0;
             
             h2 {
+                font-weight: 500;
                 position: relative;
-                font-family: $font-header;
 
                 // TITLE UNDERLINE
                 &::after {

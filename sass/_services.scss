@@ -9,18 +9,20 @@
         h3 {
             color: #000;
             margin-bottom: 1rem;
-            font-family: $font-header;
+            font-size: 1.3rem;
+            font-weight: 500;
             &[data-scroll]{
                 transform: scale(1);
                 opacity: .7;
-                letter-spacing: .2em;
+                letter-spacing: .2rem;
             }
             &[data-scroll="in"] {
-                letter-spacing: normal;
+                letter-spacing: .05rem;
                 opacity: 1;
             }
         }
         p {
+            font-weight: 300;
             &[data-scroll] {
                 transition: 1.5s;
                 transform: scale(1) translateY(5vh);
@@ -76,16 +78,17 @@
             h3 {
                 color: $text-second;
                 text-transform: capitalize;
-                text-transform: uppercase;
                 z-index: 4;
-                font-family: $font-header;
                 font-size: 1.6rem;
+                font-weight: 600;
                 text-align: center;
                 margin-bottom: 5vh;
             }
             h4 {
-                font-family: $font-header;
                 font-size: 1.15rem;
+                font-weight: 500;
+                letter-spacing: .05rem;
+                margin-bottom: .5rem;
                 position: relative;
 
                 &::after {
@@ -161,9 +164,9 @@
         .container-title {
             text-align: center;
             padding: 1rem 0;
-            font-family: $font-header;
+            font-weight: 400;
             color: $text-second;
-            text-transform: uppercase;
+            text-transform: capitalize;
             font-size: 1.5rem;
             letter-spacing: .2rem;
             background: $brand;
@@ -201,7 +204,7 @@
                     text-transform: capitalize;
                     font-size: 1.5rem;
                     color: $brand;
-                    font-family: $font-header;
+                    font-weight: 500;
                 }
                 i {
                     margin-bottom: 1.5rem;
@@ -273,6 +276,7 @@
                         margin: .5rem 0;
                         padding: .5rem 0;
                         text-transform: capitalize;
+                        font-weight: 400;
                         color: #000;
                         transition: 1.5s;
                         cursor: pointer;

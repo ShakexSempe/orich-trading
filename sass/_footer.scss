@@ -30,7 +30,6 @@
 
             header {
                 // color: $brand;
-                font-family: $font-header;
                 font-size: 1.25rem;
                 margin-bottom: 1em;
                 text-align: center;
@@ -69,7 +68,6 @@
 
                     a {
                         color: $text-second;
-                        font-family: $font-header;
                         text-overflow: ellipsis;
                         text-decoration: none;
                         background-image: linear-gradient(0deg, $brand, $brand-light);
@@ -108,13 +106,11 @@
                 p {
                     color: $text-main;
                     text-overflow: ellipsis;
-                    font-family: $font-ubuntu;
                     // width: 100%;
                     // border: 1px solid red;
                 }
                 a {
                     color: $brand;
-                    font-family: $font-ubuntu;
                     text-decoration: none;
                 }
             }
@@ -140,11 +136,10 @@
         background-image: linear-gradient(0deg, #eee, #fff);
         position: relative;
         line-height: 1.8;
-        font-family: $font-ubuntu;
 
         p {
             color: $text-second;
-            font-family: $font-ubuntu;
+            // font-family: $font-ubuntu;
             color: #000;
             font-size: .95rem;
             &#date {
@@ -156,7 +151,6 @@
         a {
             font-size: .95rem;
             color: $text-second;
-        font-family: $font-ubuntu;
         color: #000;
             // opacity: .7;
             text-decoration: none;
@@ -172,7 +166,6 @@
             display: block;
             font-size: .85rem;
             opacity: .8;
-        font-family: $font-ubuntu;
 
         }
         .footer-logo {

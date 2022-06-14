@@ -56,18 +56,20 @@
                 border-radius: 5px;
                 margin: 0 1rem;
                 overflow: hidden;
-                box-shadow: inset 2px 2px 2px #fffa,
-                            inset -2px -2px 2px #000a,
-                                    5px 5px 5px rgba(0, 0, 0, .200);
+                // box-shadow: inset 2px 2px 2px #fffa,
+                //             inset -2px -2px 2px #000a,
+                //                     5px 5px 5px rgba(0, 0, 0, .200);
 
                 h3 {
                     font-size: 2rem;
+                    font-weight: 600;
                     margin-bottom: 5vh;
                     font-family: $font-ubuntu;
                     position: relative;
+                    letter-spacing: .1rem;
                     // width: fit-content;
                     text-align: center;
-
+                    // PSEUDO UNDERLINE
                     &::after {
                         position: absolute;
                         content: '';
@@ -99,6 +101,7 @@
                     li {
                         padding-bottom: 1rem;
                         font-size: 1rem;
+                        font-weight: 300;
                         &::marker {
                             color: $marker;
                             color: hsla(0, 0%, 100%, 0.200);
@@ -123,6 +126,7 @@
                 h4 {
                     color:#000;
                     font-size: 1.5rem;
+                    font-weight: 500;
                     margin-bottom: 1rem;
                     font-family: $font-header;
                     text-transform: uppercase;
@@ -142,7 +146,7 @@
                     margin-bottom: .5rem;
                     line-height: 1.6;
                     transition: .3s;
-                    font-weight: 500;
+                    font-weight: 300;
                 }
 
                 .statement {

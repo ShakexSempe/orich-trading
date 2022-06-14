@@ -71,7 +71,6 @@
   position: relative;
   transition: 0.2s;
   isolation: isolate;
-  font-family: "Ubuntu", sans-serif;
 }
 .section-btn::before, .section-btn::after {
   position: absolute;
@@ -382,7 +381,6 @@
     width: 100%;
     text-decoration: none;
     color: #f4f4f4;
-    letter-spacing: 0.025rem;
     margin-bottom: 0.5rem;
     transform: translateY(2rem);
     opacity: 0;
@@ -654,8 +652,7 @@
   transform: translateX(-50%);
 }
 #banner figure figcaption p {
-  font-family: "Gruppo", cursive;
-  font-weight: 400;
+  font-weight: 300;
   color: #000;
   color: #ffff;
 }
@@ -754,7 +751,6 @@
   padding: 0.5rem 0;
   color: #f4f4f4;
   border-radius: 5px;
-  font-family: "Ubuntu", sans-serif;
   border: none;
   outline: none;
   position: relative;
@@ -803,7 +799,6 @@
   border: none;
   text-decoration: none;
   text-transform: capitalize;
-  font-family: "Ubuntu", sans-serif;
   color: #f4f4f4;
   background: #ffa500;
   display: block;
@@ -931,7 +926,7 @@
 }
 #menu .menu-section figure figcaption.menu-title .cta-content h2 {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 500;
   letter-spacing: 0.05rem;
   margin-bottom: 0.5rem;
@@ -1196,13 +1191,14 @@
   border-radius: 5px;
   margin: 0 1rem;
   overflow: hidden;
-  box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .container #about .vision-mission .vision h3 {
   font-size: 2rem;
+  font-weight: 600;
   margin-bottom: 5vh;
   font-family: "Ubuntu", sans-serif;
   position: relative;
+  letter-spacing: 0.1rem;
   text-align: center;
 }
 .container #about .vision-mission .vision h3::after {
@@ -1231,6 +1227,7 @@
 .container #about .vision-mission .vision ul li {
   padding-bottom: 1rem;
   font-size: 1rem;
+  font-weight: 300;
 }
 .container #about .vision-mission .vision ul li::marker {
   color: #f4f4f4;
@@ -1250,6 +1247,7 @@
 .container #about .vision-mission .mission h4 {
   color: #000;
   font-size: 1.5rem;
+  font-weight: 500;
   margin-bottom: 1rem;
   font-family: "Ubuntu", sans-serif;
   text-transform: uppercase;
@@ -1268,7 +1266,7 @@
   margin-bottom: 0.5rem;
   line-height: 1.6;
   transition: 0.3s;
-  font-weight: 500;
+  font-weight: 300;
 }
 .container #about .vision-mission .mission .statement {
   border: 1px solid #000;
@@ -1626,16 +1624,20 @@
 #services .section-description h3 {
   color: #000;
   margin-bottom: 1rem;
-  font-family: "Ubuntu", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 #services .section-description h3[data-scroll] {
   transform: scale(1);
   opacity: 0.7;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.2rem;
 }
 #services .section-description h3[data-scroll=in] {
-  letter-spacing: normal;
+  letter-spacing: 0.05rem;
   opacity: 1;
+}
+#services .section-description p {
+  font-weight: 300;
 }
 #services .section-description p[data-scroll] {
   transition: 1.5s;
@@ -1688,16 +1690,17 @@
 #services .section-description.promise h3 {
   color: #f4f4f4;
   text-transform: capitalize;
-  text-transform: uppercase;
   z-index: 4;
-  font-family: "Ubuntu", sans-serif;
   font-size: 1.6rem;
+  font-weight: 600;
   text-align: center;
   margin-bottom: 5vh;
 }
 #services .section-description.promise h4 {
-  font-family: "Ubuntu", sans-serif;
   font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  margin-bottom: 0.5rem;
   position: relative;
 }
 #services .section-description.promise h4::after {
@@ -1755,9 +1758,9 @@
 #services .service-container .container-title {
   text-align: center;
   padding: 1rem 0;
-  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
   color: #f4f4f4;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
   background: #f8650c;
@@ -1790,7 +1793,7 @@
   text-transform: capitalize;
   font-size: 1.5rem;
   color: #f8650c;
-  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
 }
 #services .service-container .service-item .service-core i {
   margin-bottom: 1.5rem;
@@ -1853,6 +1856,7 @@
   margin: 0.5rem 0;
   padding: 0.5rem 0;
   text-transform: capitalize;
+  font-weight: 400;
   color: #000;
   transition: 1.5s;
   cursor: pointer;
@@ -2105,11 +2109,11 @@
 #projects .gallery .gallery-title {
   position: sticky;
   top: 7vh;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #000;
   font-size: 1.3rem;
+  font-weight: 400;
   padding: 0.5rem 0;
-  font-family: "Ubuntu", sans-serif;
   background-color: #fffa;
   z-index: 5;
 }
@@ -2129,7 +2133,7 @@
   right: 0;
   width: 6rem;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.85rem;
   margin-left: 2rem;
   border-radius: 15px;
   background: linear-gradient(0deg, #f8650c, #ffa500);
@@ -2301,10 +2305,10 @@
 }
 #references .references .reference h3 {
   text-transform: capitalize;
-  font-family: "Ubuntu", sans-serif;
   margin: 0.5rem auto;
   color: #000;
   font-size: 1rem;
+  font-weight: 600;
 }
 #references .references .reference .ref-name {
   margin: 0.5rem auto;
@@ -2376,13 +2380,13 @@
 #form .contact-title {
   margin: 0 0 10vh;
   color: #000;
-  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
   position: relative;
 }
 #form .contact-title::after {
   position: absolute;
   content: "";
-  bottom: -0.2em;
+  bottom: -0.05em;
   left: 0;
   width: 0;
   height: 0.2rem;
@@ -2409,7 +2413,7 @@
   }
 }
 #form .input-div {
-  margin: 5vh 0;
+  margin: 1rem 0;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -2459,7 +2463,8 @@
 }
 #form button {
   padding: 1rem;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 1rem;
   text-transform: uppercase;
   cursor: pointer;
   width: 100%;
@@ -2556,7 +2561,6 @@
   transition: 0.3s;
 }
 #footer .footer-contact .contact-item header {
-  font-family: "Ubuntu", sans-serif;
   font-size: 1.25rem;
   margin-bottom: 1em;
   text-align: center;
@@ -2589,7 +2593,6 @@
 }
 #footer .footer-contact .contact-item .contact-info button a {
   color: #f4f4f4;
-  font-family: "Ubuntu", sans-serif;
   text-overflow: ellipsis;
   text-decoration: none;
   background-image: linear-gradient(0deg, #f8650c, #ffa500);
@@ -2618,11 +2621,9 @@
 #footer .footer-contact .contact-item .contact-info p {
   color: #000;
   text-overflow: ellipsis;
-  font-family: "Ubuntu", sans-serif;
 }
 #footer .footer-contact .contact-item .contact-info a {
   color: #f8650c;
-  font-family: "Ubuntu", sans-serif;
   text-decoration: none;
 }
 #footer .footer-contact .contact-item:hover {
@@ -2639,11 +2640,9 @@
   background-image: linear-gradient(0deg, #eee, #fff);
   position: relative;
   line-height: 1.8;
-  font-family: "Ubuntu", sans-serif;
 }
 #footer .footer-copyright p {
   color: #f4f4f4;
-  font-family: "Ubuntu", sans-serif;
   color: #000;
   font-size: 0.95rem;
 }
@@ -2654,7 +2653,6 @@
 #footer .footer-copyright a {
   font-size: 0.95rem;
   color: #f4f4f4;
-  font-family: "Ubuntu", sans-serif;
   color: #000;
   text-decoration: none;
   transition: 0.2s;
@@ -2667,7 +2665,6 @@
   display: block;
   font-size: 0.85rem;
   opacity: 0.8;
-  font-family: "Ubuntu", sans-serif;
 }
 #footer .footer-copyright .footer-logo {
   overflow: hidden;
@@ -2774,13 +2771,13 @@
   text-align: center;
   text-transform: uppercase;
   font-size: 1.35rem;
-  font-weight: 500;
+  letter-spacing: 0.2rem;
   padding: 5vh 0;
   overflow: hidden;
 }
 .container .section-title h2 {
+  font-weight: 500;
   position: relative;
-  font-family: "Ubuntu", sans-serif;
 }
 .container .section-title h2::after {
   position: absolute;

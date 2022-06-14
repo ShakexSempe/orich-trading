@@ -14,13 +14,13 @@
     .contact-title {
         margin: 0 0 10vh;
         color: #000;
-        font-family: $font-header;
+        font-weight: 500;
         // margin: 0 1rem;
         position: relative;
         &::after {
             position: absolute;
             content: '';
-            bottom: -.2em;
+            bottom: -.05em;
             left: 0;
             width: 0;
             height: .2rem;
@@ -50,7 +50,7 @@
     .input-div {
         // background: red;
         // border: 1px solid red;
-        margin: 5vh 0;
+        margin: 1rem 0;
         // padding: 1rem 0;
         display: flex;
         flex-direction: column;
@@ -119,7 +119,8 @@
     // SUBMIT BUTTON
     button {
         padding:  1rem;
-        font-weight: 600;
+        font-weight: 500;
+        font-size: 1rem;
         text-transform: uppercase;
         cursor: pointer;
         width: 100%;

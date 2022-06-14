@@ -48,12 +48,11 @@
         .gallery-title {
             position: sticky;
             top: 7vh;
-            text-transform: uppercase;
+            text-transform:capitalize;
             color: #000;
             font-size: 1.3rem;
-            // font-weight: 600;
+            font-weight: 400;
             padding: .5rem 0;
-            font-family: $font-ubuntu;
             background-color: #fffa;
             // border-top: 1px solid $brand;
             z-index: 5;
@@ -73,7 +72,7 @@
                     right: 0;
                     width: 6rem;
                     text-align: center;
-                    font-size: 1rem;
+                    font-size: .85rem;
                     margin-left: 2rem;
                     border-radius: 15px;
                     background: $brand-btn;
