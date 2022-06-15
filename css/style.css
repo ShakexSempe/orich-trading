@@ -750,13 +750,14 @@
   text-transform: capitalize;
   margin: 0rem auto;
   padding: 0.5rem 0;
+  font-weight: 500;
   color: #f4f4f4;
   border-radius: 5px;
   border: none;
   outline: none;
   position: relative;
   isolation: isolate;
-  font-size: 1rem;
+  font-size: 1.15rem;
 }
 #hero .slogan .slogan-p span {
   color: #f4f4f4;
@@ -767,8 +768,8 @@
 #hero .slogan p {
   text-transform: capitalize;
   padding: 0.5rem 0;
-  font-family: "Prompt", sans-serif;
   color: #fff;
+  font-weight: 200;
 }
 @media (min-width: 768px) {
   #hero .slogan {

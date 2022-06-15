@@ -73,6 +73,7 @@
             text-transform: capitalize;
             margin: 0rem auto;
             padding: .5rem 0;
+            font-weight: 500;
             color: $text-second;
             border-radius: 5px;
             // font-family: $font-ubuntu;
@@ -80,7 +81,7 @@
             outline: none;
             position: relative;
             isolation: isolate;
-            font-size: 1rem;
+            font-size: 1.15rem;
 
             span {
                 color: $text-second;
@@ -94,8 +95,8 @@
         p {
             text-transform: capitalize;
             padding: .5rem 0;
-            font-family: $font-content;
             color: #fff;
+            font-weight: 200;
         }
 
         @media (min-width: 768px) {
