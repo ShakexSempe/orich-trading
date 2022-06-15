@@ -81,7 +81,6 @@ heroObserver.observe(hero);
 const mainOptions = {
     rootMargin: '0px 0px -80% 0px',
 };
-
 const mainObserver = new IntersectionObserver(
     function(entries, mainObserver){
         entries.forEach( entry => {
