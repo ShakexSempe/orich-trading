@@ -9,17 +9,22 @@
             background: $bg-main;
             border-radius: 5px;
             margin: 1rem 1rem;
-            font-size: 1rem;
             text-transform: none;
             line-height: 1.6;
             // padding: .3em;
             // height: 40vh;
             overflow: hidden;
             text-align: left;
-
+            
             p {
                 margin-bottom: 1.5rem;
+                font-size: 1rem;
                 font-weight: 300;
+
+                // FONT-UBUNTU ON SMALL SCREENS
+                @media (max-width: 768px) {
+                    font-family: $font-ubuntu;
+                }
                 span {
                     font-size: 2rem;
                     padding-right: 0.1em;
@@ -64,7 +69,6 @@
                     font-size: 2rem;
                     font-weight: 600;
                     margin-bottom: 5vh;
-                    font-family: $font-ubuntu;
                     position: relative;
                     letter-spacing: .1rem;
                     // width: fit-content;
@@ -102,6 +106,10 @@
                         padding-bottom: 1rem;
                         font-size: 1rem;
                         font-weight: 300;
+                        // FONT-UBUNTU ON SMALL SCREENS
+                        @media (max-width: 768px) {
+                            font-family: $font-ubuntu;
+                        }
                         &::marker {
                             color: $marker;
                             color: hsla(0, 0%, 100%, 0.200);
@@ -318,6 +326,10 @@
                         margin-bottom: 1rem;
                         font-size: 1rem;
                         line-height: 1.6;
+                        // FONT-UBUNTU ON SMALL SCREENS
+                        @media (max-width: 768px) {
+                            font-family: $font-ubuntu;
+                        }
 
                         &.article-intro {
                             margin-bottom: 10vh;
@@ -410,11 +422,11 @@
                     margin: 0 1rem;
                     overflow: hidden;
                     box-shadow: $box-shadow-sm;
-
+                    
                     h3 {
                         font-size: 2.5rem;
+                        font-weight: 500;
                         margin-bottom: 1rem;
-                        font-family: $font-ubuntu;
                         position: relative;
                         width: fit-content;
 
@@ -447,10 +459,15 @@
                         padding: .5rem 0 0 1rem;
                         li {
                             padding-bottom: 1rem;
+
                             &::marker {
                                 color: $marker;
                             }
 
+                            // FONT-UBUNTU ON SMALL SCREENS
+                            @media (max-width: 768px) {
+                                font-family: $font-ubuntu;
+                            }
                             // DATA SCROLL
                             &[data-scroll] {
                                 transform: scale(1) translateX(3rem);
@@ -481,6 +498,10 @@
                         line-height: 1.6;
                         transition: .3s;
                         font-weight: 500;
+                        // FONT-UBUNTU ON SMALL SCREENS
+                        @media (max-width: 768px) {
+                            font-family: $font-ubuntu;
+                        }
                     }
 
                     .statement {

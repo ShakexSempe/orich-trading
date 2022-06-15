@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Red+Hat+Display&family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;800&display=swap");
 @font-face {
   font-family: corbel;
@@ -735,10 +736,10 @@
   }
 }
 #hero .slogan {
+  border: none;
   color: #ddd;
   border-radius: 5px;
-  border: none;
-  width: 19rem;
+  width: 25rem;
   margin: 0 auto;
   outline: none;
   text-align: center;
@@ -1152,7 +1153,6 @@
   background: #fff;
   border-radius: 5px;
   margin: 1rem 1rem;
-  font-size: 1rem;
   text-transform: none;
   line-height: 1.6;
   overflow: hidden;
@@ -1160,7 +1160,13 @@
 }
 .container #about .about-article p {
   margin-bottom: 1.5rem;
+  font-size: 1rem;
   font-weight: 300;
+}
+@media (max-width: 768px) {
+  .container #about .about-article p {
+    font-family: "Ubuntu", sans-serif;
+  }
 }
 .container #about .about-article p span {
   font-size: 2rem;
@@ -1196,7 +1202,6 @@
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 5vh;
-  font-family: "Ubuntu", sans-serif;
   position: relative;
   letter-spacing: 0.1rem;
   text-align: center;
@@ -1228,6 +1233,11 @@
   padding-bottom: 1rem;
   font-size: 1rem;
   font-weight: 300;
+}
+@media (max-width: 768px) {
+  .container #about .vision-mission .vision ul li {
+    font-family: "Ubuntu", sans-serif;
+  }
 }
 .container #about .vision-mission .vision ul li::marker {
   color: #f4f4f4;
@@ -1398,6 +1408,11 @@
   font-size: 1rem;
   line-height: 1.6;
 }
+@media (max-width: 768px) {
+  .container#about-page main .about-overview .page-article p {
+    font-family: "Ubuntu", sans-serif;
+  }
+}
 .container#about-page main .about-overview .page-article p.article-intro {
   margin-bottom: 10vh;
   line-height: 1.6;
@@ -1472,8 +1487,8 @@
 }
 .container#about-page main .vision-mission .vision h3 {
   font-size: 2.5rem;
+  font-weight: 500;
   margin-bottom: 1rem;
-  font-family: "Ubuntu", sans-serif;
   position: relative;
   width: fit-content;
 }
@@ -1505,6 +1520,11 @@
 .container#about-page main .vision-mission .vision ul li::marker {
   color: #f4f4f4;
 }
+@media (max-width: 768px) {
+  .container#about-page main .vision-mission .vision ul li {
+    font-family: "Ubuntu", sans-serif;
+  }
+}
 .container#about-page main .vision-mission .vision ul li[data-scroll] {
   transform: scale(1) translateX(3rem);
   transition: 2s;
@@ -1530,6 +1550,11 @@
   line-height: 1.6;
   transition: 0.3s;
   font-weight: 500;
+}
+@media (max-width: 768px) {
+  .container#about-page main .vision-mission .mission p {
+    font-family: "Ubuntu", sans-serif;
+  }
 }
 .container#about-page main .vision-mission .mission .statement {
   border: 1px solid #f8650c;
