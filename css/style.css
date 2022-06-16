@@ -302,7 +302,7 @@
     border: none;
     background-color: transparent;
     font-size: 1rem;
-    text-transform: capitalize;
+    text-transform: uppercase;
   }
   #header .navigation aside ul li.aside-dropdown button i {
     position: relative;
