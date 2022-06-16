@@ -30,9 +30,12 @@
             &[data-scroll="in"] {
                 transform: scale(1) translateY(0);
             }
+            // UBUNTU FONT ON SMALL SCREENS
+            @media (max-width: 768px) {
+                font-family: $font-ubuntu;
+            }
             @media (min-width: 768px) {
                 font-size: 1.15rem;
-
             }
         }
         &.promise {

@@ -24,6 +24,7 @@
                 // FONT-UBUNTU ON SMALL SCREENS
                 @media (max-width: 768px) {
                     font-family: $font-ubuntu;
+                    // font-weight: 200;
                 }
                 span {
                     font-size: 2rem;
@@ -105,9 +106,9 @@
                     li {
                         padding-bottom: 1rem;
                         font-size: 1rem;
-                        font-weight: 300;
                         // FONT-UBUNTU ON SMALL SCREENS
                         @media (max-width: 768px) {
+                        font-weight: 200;
                             font-family: $font-ubuntu;
                         }
                         &::marker {

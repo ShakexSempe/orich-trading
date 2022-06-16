@@ -143,7 +143,7 @@
                             background-color: transparent;
                             // background-color: pink;
                             font-size: 1rem;
-                            text-transform: uppercase;
+                            text-transform: capitalize;
 
 
                             i {
@@ -168,7 +168,7 @@
                                 flex-direction: column;
                                 transition: .5s;
                                 a {
-                                    // text-transform: capitalize;
+                                    text-transform: capitalize;
                                     margin-left: auto;
                                 width: auto;
                                     &:hover {
