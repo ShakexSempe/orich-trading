@@ -71,8 +71,9 @@
     color: #f4f4f4;
     text-decoration: none;
     text-transform: capitalize;
-    padding: .5rem 0;
+    padding: .7rem 0;
     position: relative;
+    letter-spacing: .05rem;
     transition: .2s;
     isolation: isolate;
     // font-family: $font-header;
@@ -100,17 +101,23 @@
         background: $brand-btn-hover;
         box-shadow: $box-shadow-sm-hover;
     }
-    &:hover {
-        transform: scale(.98);
-        &::before {opacity: 0;}
-        &::after {opacity: 1;}
-    }
-    &:active {
-        transform: scale(.95);
-    }
 
-    @media (min-width: 768px){
+    @media (min-width: 820px){
         padding: 1rem;
+        &:hover {
+            letter-spacing: normal;
+            transform: scale(.98);
+            &::before {opacity: 0;}
+            &::after {opacity: 1;}
+        }
+    }
+    @media (max-width: 820px){
+        &:active {
+            letter-spacing: normal;
+            transform: scale(.98);
+            &::before {opacity: 0;}
+            &::after {opacity: 1;}
+        }
     }
 }
 
