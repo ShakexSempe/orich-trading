@@ -71,12 +71,10 @@
                         text-decoration: none;
                         background-image: linear-gradient(0deg, $brand, $brand-light);
                         padding: .5em 1rem;
-                        border-radius: 10px;
+                        border-radius: 1.5rem;
                         transition: .5s;
 
-                        box-shadow: inset 2px 2px 2px #fffa,
-                            inset -2px -2px 2px #000a,
-                            2px 2px 4px rgba(0, 0, 0, 0.308);
+                        box-shadow: $box-shadow-sm;
                         
                     }
 

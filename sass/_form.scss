@@ -132,7 +132,7 @@
         isolation: isolate;
         transition: .25s;
         letter-spacing: .15em;
-        border-radius: 15px;
+        border-radius: 1.5rem;
         // BUTTON BOX SHADOW
         &::before, &::after {
             position: absolute;
@@ -143,7 +143,7 @@
             height: 100%;
             border: none;
             outline: none;
-            border-radius: 15px;
+            border-radius: 1.5rem;
             transition: .25s;
             z-index: -1;
         }

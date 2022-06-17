@@ -62,7 +62,7 @@
   width: 50%;
   text-align: center;
   margin: 5vh auto;
-  border-radius: 15px;
+  border-radius: 1.5rem;
   background: linear-gradient(0deg, #f8650c, #ffa500);
   background: transparent;
   color: #f4f4f4;
@@ -82,7 +82,7 @@
   height: 100%;
   transition: 0.5s ease;
   z-index: -1;
-  border-radius: 15px;
+  border-radius: 1.5rem;
   border: none;
   outline: none;
 }
@@ -808,7 +808,7 @@
   width: 19rem;
   position: relative;
   isolation: isolate;
-  border-radius: 15px;
+  border-radius: 1.5rem;
   transition: 0.3s;
   letter-spacing: 0.05rem;
 }
@@ -825,7 +825,7 @@
   width: 100%;
   height: 100%;
   border: none;
-  border-radius: 15px;
+  border-radius: 1.5rem;
   z-index: -1;
   transition: 0.3s;
 }
@@ -1102,7 +1102,7 @@
   bottom: 20vh;
   z-index: 5;
   background-color: #000a;
-  border-radius: 5px;
+  border-radius: 1.5rem;
   width: 5rem;
   text-align: center;
   padding: 0.5rem;
@@ -1918,7 +1918,7 @@
   text-align: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
-  border-radius: 15px;
+  border-radius: 1.5rem;
   outline: none;
   color: #fff;
   position: relative;
@@ -1933,7 +1933,7 @@
   width: 100%;
   height: 100%;
   background-color: #f8650c;
-  border-radius: 15px;
+  border-radius: 1.5rem;
   z-index: -1;
   transition: 0.2s;
 }
@@ -2183,7 +2183,7 @@
   text-align: center;
   font-size: 0.85rem;
   margin-left: 2rem;
-  border-radius: 15px;
+  border-radius: 1.5rem;
   background: linear-gradient(0deg, #f8650c, #ffa500);
   text-transform: capitalize;
   color: #f4f4f4;
@@ -2199,7 +2199,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 15px;
+  border-radius: 1.5rem;
   transition: 0.2s;
   z-index: -1;
 }
@@ -2523,7 +2523,7 @@
   isolation: isolate;
   transition: 0.25s;
   letter-spacing: 0.15em;
-  border-radius: 15px;
+  border-radius: 1.5rem;
 }
 #form button::before, #form button::after {
   position: absolute;
@@ -2534,7 +2534,7 @@
   height: 100%;
   border: none;
   outline: none;
-  border-radius: 15px;
+  border-radius: 1.5rem;
   transition: 0.25s;
   z-index: -1;
 }
@@ -2644,9 +2644,9 @@
   text-decoration: none;
   background-image: linear-gradient(0deg, #f8650c, #ffa500);
   padding: 0.5em 1rem;
-  border-radius: 10px;
+  border-radius: 1.5rem;
   transition: 0.5s;
-  box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 2px 2px 4px rgba(0, 0, 0, 0.308);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.5), 2px 3px 2px rgba(0, 0, 0, 0.15);
 }
 #footer .footer-contact .contact-item .contact-info button i {
   color: #f8650c;
