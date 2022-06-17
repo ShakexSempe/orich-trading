@@ -57,7 +57,6 @@ const indexHeader = document.querySelector(".index-header");
 const heroOptions = {
     rootMargin: "-100% 0px 0px 0px"
 };
-
 const heroObserver = new IntersectionObserver(
     function(
         entries, heroObserver
@@ -77,7 +76,7 @@ const heroObserver = new IntersectionObserver(
 );
 heroObserver.observe(hero);
 
-// MAIN OBSERVER 
+// MAIN SECTION OBSERVER 
 const mainOptions = {
     rootMargin: '0px 0px -80% 0px',
 };
