@@ -1711,7 +1711,7 @@
   }
 }
 #services .section-description.promise {
-  height: 100vh;
+  min-height: 100vh;
   padding: 1rem 0.5rem;
   border-radius: 5px;
   isolation: isolate;
