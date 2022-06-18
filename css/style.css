@@ -1163,6 +1163,14 @@
     background-position: left;
   }
   #menu .menu-section#menu-3 {
+    background: #0000ff;
+    background-image: url("../img/project-4.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  #menu .menu-section#menu-4 {
     background: #fff000;
     background-image: url("../img/project.jpg");
     background-image: url("../projects/solar-3.jpg");
