@@ -72,7 +72,7 @@
         .slogan-p {
             text-transform: capitalize;
             margin: 0rem auto;
-            padding: .5rem 0;
+            // padding: .5rem 0 0;
             font-weight: 500;
             color: $text-second;
             border-radius: 5px;
@@ -81,7 +81,7 @@
             outline: none;
             position: relative;
             isolation: isolate;
-            font-size: 1.15rem;
+            font-size: 1.25rem;
 
             span {
                 color: $text-second;
@@ -97,6 +97,7 @@
             padding: .5rem 0;
             color: #fff;
             font-weight: 200;
+            font-size: 1rem;
         }
 
         @media (min-width: 768px) {

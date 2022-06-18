@@ -761,7 +761,6 @@
 #hero .slogan .slogan-p {
   text-transform: capitalize;
   margin: 0rem auto;
-  padding: 0.5rem 0;
   font-weight: 500;
   color: #f4f4f4;
   border-radius: 5px;
@@ -769,7 +768,7 @@
   outline: none;
   position: relative;
   isolation: isolate;
-  font-size: 1.15rem;
+  font-size: 1.25rem;
 }
 #hero .slogan .slogan-p span {
   color: #f4f4f4;
@@ -782,6 +781,7 @@
   padding: 0.5rem 0;
   color: #fff;
   font-weight: 200;
+  font-size: 1rem;
 }
 @media (min-width: 768px) {
   #hero .slogan {
