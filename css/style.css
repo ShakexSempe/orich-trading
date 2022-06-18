@@ -923,6 +923,9 @@
     display: none;
   }
 }
+#menu .menu-section figure img.roof-img {
+  object-position: center 55%;
+}
 #menu .menu-section figure figcaption {
   position: absolute;
   left: 50%;
@@ -943,7 +946,7 @@
   font-size: 1.8rem;
   font-weight: 500;
   letter-spacing: 0.05rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
   transition: 1s;
 }
 #menu .menu-section figure figcaption.menu-title .cta-content p {

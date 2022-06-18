@@ -270,6 +270,10 @@
                 @media (min-width: 820px){
                     display: none;
                 }
+
+                &.roof-img {
+                    object-position: center 55%;
+                }
             }
 
             figcaption {
@@ -292,7 +296,7 @@
                             font-size: 1.8rem;
                             font-weight: 500;
                             letter-spacing: .05rem;
-                            margin-bottom: .5rem;
+                            margin-bottom: 0;
                             transition: 1s;
                         }
                         p {
