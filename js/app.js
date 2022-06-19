@@ -53,6 +53,8 @@ logo.addEventListener("click", () => {
 });
 
 // HERO INTERSECTION OBSERVER
+    // OPTIONS = TRANSITION TAKES PLACE AT -100% MARGIN TOP
+        // TRANSITIONS = 1) HEADER BACKGROUND.  2) LOGO HEIGHT
 const indexHeader = document.querySelector(".index-header");
 const heroOptions = {
     rootMargin: "-100% 0px 0px 0px"
@@ -77,6 +79,9 @@ const heroObserver = new IntersectionObserver(
 heroObserver.observe(hero);
 
 // MAIN SECTION OBSERVER 
+    // OPTIONS = TRANSITION TAKES PLACE -80% MARGIN-BOTTOM OF 'MAIN' SECTION
+        // TRANSITIONS = 1) HEADER- FROM TRANSPARENT TO WHITE
+        //              = 2) BUTTON LINK TO TOP OF THE PAGE
 const mainOptions = {
     rootMargin: '0px 0px -80% 0px',
 };
