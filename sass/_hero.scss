@@ -57,11 +57,10 @@
     // SLOGAN 'quality or nothing'
     .slogan {
         border: none;
-        border: 1px solid $brand;
+        // border: 1px solid $brand;
         color: #ddd;
         border-radius: 5px;
         width: 100%;
-        width: 19rem;
         margin: 0 auto;
         outline: none;
         text-align: center;
@@ -140,7 +139,7 @@
             color: $text-second;
             background: $brand-light;
             display: block;
-            width: 19rem;
+            width: 20rem;
             @media (min-width: 768px) {
                 width: 17rem;
             }

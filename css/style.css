@@ -749,11 +749,9 @@
 }
 #hero .slogan {
   border: none;
-  border: 1px solid #f8650c;
   color: #ddd;
   border-radius: 5px;
   width: 100%;
-  width: 19rem;
   margin: 0 auto;
   outline: none;
   text-align: center;
@@ -818,7 +816,7 @@
   color: #f4f4f4;
   background: #ffa500;
   display: block;
-  width: 19rem;
+  width: 20rem;
   position: relative;
   isolation: isolate;
   border-radius: 1.5rem;
