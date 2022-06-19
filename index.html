@@ -40,18 +40,21 @@
 
 <body>
     <div class="container">
-        <!-- HEADER -->
+        <!-- HEADER = 1) LOGO 2) SECTION & PAGE NAVIGATION LINKS -->
         <header id="header" class="index-header hero-header">
+            <!-- LOGO = LINK TO TOP OF THE PAGE -->
             <div class="logo">
                     <a href="#">
-                        <!-- <img src="img/orich.jpg" alt="Orich Trading logo"> -->
-                        <img src="img/orich-logo.png" alt="Orich Trading logo">
+                        <img src="img/orich-logo.png" loading="lazy" alt="Orich Trading & Projects logo">
                     </a>
             </div>
+            <!-- DESKTOP NAVBAR & MOBILE HAMBURGER MENU -->
             <div class="navigation">
+                <!-- HAMBURGER MENU = HIDDEN ON DESKTOPS -->
                 <div id="toggle" class="toggle">
                     <div class="bar"></div>
                 </div>
+                <!-- NAVBAR = HIDDEN ON MOBILE SCREENS -->
                 <nav id="nav">
                     <ul>
                         <!-- ABOUT -->
@@ -66,7 +69,7 @@
                         <li>
                             <a title="Orich Projects" href="#projects">projects</a>
                         </li>
-                        <!-- CONTACT -->
+                        <!-- CONTACT DROPDOWN BUTTON -->
                         <li title="Orich Contact" class="dropdown">
                             <button class="dropdown-btn">contact
                                 <i class="fa fa-caret-down"></i>
@@ -78,6 +81,8 @@
                         </li>
                     </ul>
                 </nav>
+                <!-- SIDEBAR = HIDDEN ON DESKTOPS -->
+                <!-- SIDEBAR ACTIVATED BY JAVASCRIPT CLICK EVENT LISTENER -->
                 <aside id="aside" class="aside" >
                     <ul>
                         <!-- ABOUT DROPDOWN -->
@@ -126,6 +131,7 @@
                         </li>
                         
                     </ul>
+                    <!-- SOCIAL & CONTACT DETAILS -->
                     <div class="social-links">
                         <a target="_blank" href="tel:0712345678"><i class="fas fa-phone"></i>0712345678</a>
                         <a target="_blank" href="mailto:orichtrading&projects@gmail.com"><i class="fas fa-envelope"></i>orichtrading&projects@gmail.com</a>
@@ -137,19 +143,23 @@
         </header>
         <!-- END OF HEADER -->
         <!-- HERO -->
+        <!-- INTO PAGE: CTA = LINK TO SERIVES MENU -->
         <div id="hero">
-            <div class="bg-change" id="title">
+            <!-- WEBSITE SLOGAN -->
+            <div id="title">
                 <div class="slogan bg-change">
                     <p class="slogan-p">Quality<span>Or</span>Nothing</p>
                     <p>level-1 BEE construction company</p>
                 </div>
+                <!-- CALL TO ACTION = LINK TO SERVICES MENU -->
                 <div id="cta">
                     <a href="#menu-1" class="cta-btn" title="Who is Orich TRading & Projects">let's work</a>
                 </div>
             </div>
         </div>    
         <!-- END OF HERO -->
-        <!-- HERO MENU -->
+        <!-- HERO MENU = IMAGE SERVICE CALL TO ACTION SECTION -->
+        <!-- EACH MENU = FULL PAGE || EMAIL & TEL LINKS || ENQUIRY AND NEXT PAGE ACTIONS -->
         <div class="service-menu" id="menu">
             <!-- MENU 1 GENERAL -->
             <div id="menu-1" class="menu-section building">
@@ -289,6 +299,7 @@
             </section>
             <!-- BANNER SCROLL -->
             <div id="banner" class="banner">
+                <!-- PARTNERS IMAGE AND CAPTION -->
                 <figure data-scroll class="banner-bg">
                     <img src="img/orich-partners2.jpg" loading="lazy" alt="Orich Partners">
                     <a href="#orich-team">
@@ -297,6 +308,7 @@
                         </figcaption>
                     </a>
                 </figure>
+                <!-- TEAM IMAGE AND CAPTION -->
                 <figure data-scroll id="orich-team" class="banner-fg">
                     <img src="img/orich-team.jpg" loading="lazy" alt="Orich Team">
                     <a href="#about">
@@ -311,6 +323,7 @@
                 <header class="section-title">
                     <h2 title="Orich services" data-scroll>services</h2>
                 </header>
+                <!-- INTRO TITLE & PARAGRAPH -->
                 <div class="section-description">
                     <h3 data-scroll>Industrial Relations</h3>
                     <p data-scroll>
@@ -322,6 +335,7 @@
                 </div>
                 <div class="service-container index-container" id="service-container">
                     <h3 class="container-title">core services</h3>
+                    <!-- EACH SERVICE = 1) SERVICE CORE: TITLE & IMAGE. || 2) SERVICE TYPE = UL WITH 1 LINK TO ENQUIRY PAGE  -->
                     <!-- GENERAL BUILDING -->
                     <div data-scroll id="general" class="service-item">
                         <div class="service-core">
@@ -482,13 +496,15 @@
                         </div>
                     </div>
                 </div>
-                <!-- SECTION BUTTON -->
+                <!-- SECTION BUTTON = LINK TO SECTIONS FULL PAGE -->
                 <a class="section-btn" title="view Orich projects" href="pages/services.html">view services page</a>
-                <!-- SERVICE PAD -->
+                <!-- SERVICE PAD = IMAGE WHICH PROMISE CARD SCROLLS ON TOP OF -->
+                <!-- IMAGE FOR DESKTOP AND MOBILE RESPECTIVELY -->
                 <div class="service-section-pad">
                     <div class=" section-pad-img mobile-img"></div>
                     <div class=" section-pad-img desktop-img"></div>
                 </div>
+                <!-- PROMISE CARD = LIST OF BUSSINESS VALUES -->
                 <div class="section-description promise" id="promise">
                     <h3>what we promise</h3>
                     <ul>
@@ -519,6 +535,7 @@
                 <header class="section-title">
                     <h2 title="Orich projects" data-scroll>projects</h2>
                 </header>
+                <!-- EACH PROJECT = TITLE IS A LINK ("VIEW ALL" BUTTON) TO FULL PAGE AND RESPECTIVE SECTION -->
                 <!-- BALUSTRADE -->
                 <div class="gallery" id="balustrade">
                     <div class="gallery-title" id="balustrade"><a href="pages/projects.html#balustrade">balustrade
@@ -693,11 +710,12 @@
                 <!-- SECTION BUTTON -->
                 <a class="section-btn" title="view Orich projects" href="pages/projects.html">view all projects</a>
             </section>
-            <!-- REFERENCES -->
+            <!-- CERTIFICATES -->
             <section id="references">
                 <header class="section-title">
                     <h2 title="Work and projects references" data-scroll>certificates</h2>
                 </header>
+                <!-- EACH REFERENCE = CERTIFICATE -->
                 <div class="references">
                     <div data-scroll class="reference">
                         <h3>Black Economic Empowerment </h3>
@@ -726,7 +744,7 @@
 
             </section>
             <!-- END OF REFERENCES -->
-            <!-- SECTION PAD -->
+            <!-- SECTION PAD = COMPANY LOGO (FIXED ON DESKTOP) -->
             <div class="section-pad">
                 <div class="mobile-pad"></div>
                 <div class="desktop-pad"></div>
@@ -740,12 +758,12 @@
             <!-- END OF BACK TO TOP BTN -->
 
         
-        <!-- FOOTER -->
+        <!-- FOOTER = 1) CONTACT DETAILS. 2) CONTACT FORM. 3) COPYRIGHT SECTION -->
         <footer id="footer">
             <header class="section-title">
                 <h2 data-scroll>contact us</h2>
             </header>
-
+            <!-- CONTACT INFO -->
             <div id="contact-info" class="footer-contact">
 
                 <div title="phone numbers" class="contact-item">
@@ -886,6 +904,7 @@
     </div>
     <!-- JAVASCRIPT -->
     <script src="js/app.js"></script>
+    <!-- SCROLL OUT LIBRARY -->
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <script>
         ScrollOut({
