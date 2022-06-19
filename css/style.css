@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Red+Hat+Display&family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;800&display=swap");
-@font-face {
-  font-family: corbel;
-  src: url(../fonts/CORBEL.TTF);
-}
 .toggle {
   float: right;
   font-size: 20px;
