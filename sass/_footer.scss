@@ -121,15 +121,12 @@
 
     .footer-copyright {
         width: 100%;
-        // min-height: 40vh;
         margin: 5vh 0 0;
         padding: 5vh .5rem 5vh 5vw;
-        text-align: center;
         text-align: left;
         // display: grid;
         // place-items: center;
         text-transform: capitalize;
-        // background: $brand;
         background-image: linear-gradient(0deg, #eee, #fff);
         position: relative;
         line-height: 1.8;
@@ -139,15 +136,11 @@
             // font-family: $font-ubuntu;
             color: #000;
             font-size: .9rem;
-            &#date {
-                color: $text-second;
-                color: #000;
-            }
+            font-weight: 500;
         }
 
         a {
             font-size: .9rem;
-            color: $text-second;
             color: #000;
             // opacity: .7;
             text-decoration: none;
@@ -162,7 +155,6 @@
         #date {
             display: block;
             font-size: .85rem;
-            opacity: .8;
 
         }
         .footer-logo {

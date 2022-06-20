@@ -175,13 +175,28 @@
     &.active {
         opacity: 1;
         transform: translateY(0);
-        &:hover {
-            transition: .3s;
-            background: #fff;
-            border-color: $brand;
-
-            i {
-                color: $brand;
+        // DESKTOP HOVER STYLE
+        @media (min-width: 820px){
+            &:hover {
+                transition: .15s;
+                background: #eee;
+                border-color: $brand;
+    
+                i {
+                    color: #000;
+                }
+            }
+        }
+        // MOBILE HOVER STYLE
+        @media (max-width: 820px){
+            &:active {
+                transition: .15s;
+                background: #eee;
+                border-color: $brand;
+    
+                i {
+                    color: #000;
+                }
             }
         }
     }

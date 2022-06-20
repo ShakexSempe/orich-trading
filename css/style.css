@@ -168,13 +168,25 @@
   opacity: 1;
   transform: translateY(0);
 }
-#top-btn.active:hover {
-  transition: 0.3s;
-  background: #fff;
-  border-color: #f8650c;
+@media (min-width: 820px) {
+  #top-btn.active:hover {
+    transition: 0.15s;
+    background: #eee;
+    border-color: #f8650c;
+  }
+  #top-btn.active:hover i {
+    color: #000;
+  }
 }
-#top-btn.active:hover i {
-  color: #f8650c;
+@media (max-width: 820px) {
+  #top-btn.active:active {
+    transition: 0.15s;
+    background: #eee;
+    border-color: #f8650c;
+  }
+  #top-btn.active:active i {
+    color: #000;
+  }
 }
 
 #header {
@@ -2699,7 +2711,6 @@
   width: 100%;
   margin: 5vh 0 0;
   padding: 5vh 0.5rem 5vh 5vw;
-  text-align: center;
   text-align: left;
   text-transform: capitalize;
   background-image: linear-gradient(0deg, #eee, #fff);
@@ -2710,14 +2721,10 @@
   color: #f4f4f4;
   color: #000;
   font-size: 0.9rem;
-}
-#footer .footer-copyright p#date {
-  color: #f4f4f4;
-  color: #000;
+  font-weight: 500;
 }
 #footer .footer-copyright a {
   font-size: 0.9rem;
-  color: #f4f4f4;
   color: #000;
   text-decoration: none;
   transition: 0.2s;
@@ -2729,7 +2736,6 @@
 #footer .footer-copyright #date {
   display: block;
   font-size: 0.85rem;
-  opacity: 0.8;
 }
 #footer .footer-copyright .footer-logo {
   overflow: hidden;
