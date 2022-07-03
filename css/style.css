@@ -194,44 +194,58 @@
   top: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #000;
+  background-color: #111;
   z-index: 999;
 }
 .loader_bg .loader {
   position: absolute;
-  top: 60%;
+  bottom: 15vh;
   left: 50%;
-  transform: translate(-50%, -50%);
-  height: 2rem;
-  width: 10rem;
+  transform: translateX(-50%);
+  height: 2.75rem;
+  width: 20rem;
   border: none;
-  border-radius: 5rem;
+  border-radius: 1.5rem;
   background: orangered;
   overflow: hidden;
   background: #000;
-  outline: 2px solid #f8650c;
+  display: grid;
+  place-items: center;
+  isolation: isolate;
 }
-.loader_bg .loader::before {
+@media (min-width: 1024px) {
+  .loader_bg .loader {
+    bottom: 15vh;
+  }
+}
+.loader_bg .loader p {
+  color: #fff;
+}
+.loader_bg .loader::before, .loader_bg .loader::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 5rem;
+  border-radius: 1.5rem;
   border: none;
   outline: none;
-  background: #111;
-  background: #f8650c;
-  animation: loader 4s forwards;
+}
+.loader_bg .loader::before {
+  background: linear-gradient(0deg, #f8650c, #ffa500);
+  animation: loader 4s linear forwards;
 }
 @keyframes loader {
   0% {
     transform: scaleX(0);
   }
   90% {
-    transform: scale(1);
+    transform: scaleX(1);
   }
+}
+.loader_bg .loader::after {
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.5), 2px 3px 2px rgba(0, 0, 0, 0.15);
 }
 
 #header {
