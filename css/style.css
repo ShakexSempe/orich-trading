@@ -244,9 +244,6 @@
     transform: scaleX(1);
   }
 }
-.loader_bg .loader::after {
-  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.5), 2px 3px 2px rgba(0, 0, 0, 0.15);
-}
 
 #header {
   position: fixed;
