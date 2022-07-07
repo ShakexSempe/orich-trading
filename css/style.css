@@ -1340,7 +1340,9 @@
 @media (max-width: 768px) {
   .container #about .vision-mission .vision ul li {
     font-weight: 200;
+    font-size: 0.95rem;
     font-family: "Ubuntu", sans-serif;
+    font-family: "Prompt", sans-serif;
   }
 }
 .container #about .vision-mission .vision ul li::marker {

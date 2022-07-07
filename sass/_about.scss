@@ -62,10 +62,6 @@
                 border-radius: 5px;
                 margin: 0 1rem;
                 overflow: hidden;
-                // box-shadow: inset 2px 2px 2px #fffa,
-                //             inset -2px -2px 2px #000a,
-                //                     5px 5px 5px rgba(0, 0, 0, .200);
-
                 h3 {
                     font-size: 2rem;
                     font-weight: 600;
@@ -108,8 +104,10 @@
                         font-size: 1rem;
                         // FONT-UBUNTU ON SMALL SCREENS
                         @media (max-width: 768px) {
-                        font-weight: 200;
+                            font-weight: 200;
+                            font-size: .95rem;
                             font-family: $font-ubuntu;
+                            font-family: $font-content;
                         }
                         &::marker {
                             color: $marker;
