@@ -1269,7 +1269,8 @@
 }
 @media (max-width: 768px) {
   .container #about .about-article p {
-    font-family: "Ubuntu", sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
 }
 .container #about .about-article p span {
