@@ -144,6 +144,7 @@
                             // background-color: pink;
                             font-size: 1rem;
                             text-transform: uppercase;
+                            letter-spacing: .025rem;
 
 
                             i {
@@ -170,7 +171,8 @@
                                 a {
                                     text-transform: capitalize;
                                     margin-left: auto;
-                                width: auto;
+                                    width: auto;
+                                    letter-spacing: .025rem;
                                     &:hover {
                                         color: $text-second;
                                         transition: .2s;
@@ -254,6 +256,7 @@
                         width: 100%;
                         text-decoration: none;
                         color: #f4f4f4;
+                        letter-spacing: .05rem;
                         // letter-spacing: .025rem;
                         // margin: 1rem 0 0;
                         margin-bottom: .5rem;
