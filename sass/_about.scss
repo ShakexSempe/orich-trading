@@ -137,8 +137,8 @@
                     font-size: 1.5rem;
                     font-weight: 500;
                     margin-bottom: 1rem;
-                    font-family: $font-header;
-                    text-transform: uppercase;
+                    font-family: $font-content;
+                    text-transform: capitalize;
                     transition: .3s;
                     text-align: center;
                     &[data-scroll] {
@@ -225,6 +225,7 @@
                         text-align: center;
                         display: grid;
                         place-items: center;
+                        padding: .5rem;
                         @media (min-width: 768px) {
                             flex-basis: 20%;
                             // border-right: 1px solid $brand;
@@ -233,8 +234,8 @@
                             }
                         }
                         p {
-                            padding: .2rem .1rem;
                             color: $text-second;
+                            font-size: 1rem;
                             span {
                                 margin: 0 0rem;
                             }
