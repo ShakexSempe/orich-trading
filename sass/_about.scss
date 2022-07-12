@@ -330,7 +330,7 @@
                         line-height: 1.6;
                         // FONT-UBUNTU ON SMALL SCREENS
                         @media (max-width: 768px) {
-                            font-family: $font-ubuntu;
+                            // font-family: $font-ubuntu;
                         }
 
                         &.article-intro {
@@ -468,7 +468,7 @@
 
                             // FONT-UBUNTU ON SMALL SCREENS
                             @media (max-width: 768px) {
-                                font-family: $font-ubuntu;
+                                // font-family: $font-ubuntu;
                             }
                             // DATA SCROLL
                             &[data-scroll] {
@@ -487,11 +487,12 @@
                     margin: 5vh 0 0;
 
                     h4 {
-                        color:$brand;
-                        font-size: 1.1rem;
+                        color: #000;
+                        font-size: 1.25rem;
+                        font-weight: 500;
                         margin-bottom: 1rem;
-                        font-family: $font-header;
-                        text-transform: uppercase;
+                        // font-family: $font-header;
+                        text-transform: capitalize;
                         transition: .3s;
                     }
 
@@ -499,10 +500,10 @@
                         margin-bottom: .5rem;
                         line-height: 1.6;
                         transition: .3s;
-                        font-weight: 500;
+                        font-weight: 400;
                         // FONT-UBUNTU ON SMALL SCREENS
                         @media (max-width: 768px) {
-                            font-family: $font-ubuntu;
+                            // font-family: $font-ubuntu;
                         }
                     }
 
@@ -541,7 +542,7 @@
                             opacity: 1;
 
                             h4 {
-                                color: #000;
+                                color: $brand;
                             }
                             p {
                                 opacity: 0;
@@ -550,7 +551,7 @@
 
                         &[data-scroll="in"]{
                             h4 {
-                                color: $brand;
+                                color: #000;
                                 transition: 1s;
                             }
                             p {

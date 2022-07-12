@@ -1519,11 +1519,6 @@
   font-size: 1rem;
   line-height: 1.6;
 }
-@media (max-width: 768px) {
-  .container#about-page main .about-overview .page-article p {
-    font-family: "Ubuntu", sans-serif;
-  }
-}
 .container#about-page main .about-overview .page-article p.article-intro {
   margin-bottom: 10vh;
   line-height: 1.6;
@@ -1631,11 +1626,6 @@
 .container#about-page main .vision-mission .vision ul li::marker {
   color: #f4f4f4;
 }
-@media (max-width: 768px) {
-  .container#about-page main .vision-mission .vision ul li {
-    font-family: "Ubuntu", sans-serif;
-  }
-}
 .container#about-page main .vision-mission .vision ul li[data-scroll] {
   transform: scale(1) translateX(3rem);
   transition: 2s;
@@ -1649,23 +1639,18 @@
   margin: 5vh 0 0;
 }
 .container#about-page main .vision-mission .mission h4 {
-  color: #f8650c;
-  font-size: 1.1rem;
+  color: #000;
+  font-size: 1.25rem;
+  font-weight: 500;
   margin-bottom: 1rem;
-  font-family: "Ubuntu", sans-serif;
-  text-transform: uppercase;
+  text-transform: capitalize;
   transition: 0.3s;
 }
 .container#about-page main .vision-mission .mission p {
   margin-bottom: 0.5rem;
   line-height: 1.6;
   transition: 0.3s;
-  font-weight: 500;
-}
-@media (max-width: 768px) {
-  .container#about-page main .vision-mission .mission p {
-    font-family: "Ubuntu", sans-serif;
-  }
+  font-weight: 400;
 }
 .container#about-page main .vision-mission .mission .statement {
   border: 1px solid #f8650c;
@@ -1698,13 +1683,13 @@
   opacity: 1;
 }
 .container#about-page main .vision-mission .mission .ms-item[data-scroll] h4 {
-  color: #000;
+  color: #f8650c;
 }
 .container#about-page main .vision-mission .mission .ms-item[data-scroll] p {
   opacity: 0;
 }
 .container#about-page main .vision-mission .mission .ms-item[data-scroll=in] h4 {
-  color: #f8650c;
+  color: #000;
   transition: 1s;
 }
 .container#about-page main .vision-mission .mission .ms-item[data-scroll=in] p {
