@@ -1518,6 +1518,7 @@
   margin-bottom: 1rem;
   font-size: 1rem;
   line-height: 1.6;
+  font-weight: 300;
 }
 .container#about-page main .about-overview .page-article p.article-intro {
   margin-bottom: 10vh;
