@@ -2675,8 +2675,8 @@
   }
 }
 #footer .footer-contact .contact-item {
-  border: 1px solid #000;
-  border-radius: 5px;
+  background-color: #f4f4f4;
+  border-radius: 0.5rem;
   margin: 1rem auto;
   padding: 1rem;
   padding: 1rem 0.5rem;
@@ -2685,7 +2685,7 @@
   transition: 0.3s;
 }
 #footer .footer-contact .contact-item header {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin-bottom: 1em;
   text-align: center;
   text-transform: capitalize;
@@ -2711,7 +2711,7 @@
   margin: 1rem auto;
   transition: 0.5s;
   border: none;
-  background: #fff;
+  background: #f4f4f4;
   text-transform: capitalize;
 }
 #footer .footer-contact .contact-item .contact-info button a {
