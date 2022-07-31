@@ -15,6 +15,8 @@
             opacity: 0;
             opacity: 1;
         }
+
+        
     }
     &.page-header {
         background: $brand;
@@ -52,18 +54,8 @@
                     width: 100%;
                     object-fit: contain;
                     object-position: left;
-                }
-                h1 {
-                    font-family: $font-gruppo;
-                    letter-spacing: .5rem;
-                    text-transform: uppercase;
-                }
-
-                p {
-                    text-transform: uppercase;
-                    font-size: .5rem;
-                    font-family: $font-content;
-                    letter-spacing: .15rem;
+                    border-bottom-left-radius: .5rem;
+                    border-bottom-right-radius: .5rem;
                 }
             }
     }
@@ -71,7 +63,7 @@
     .navigation {
         // border: 1px solid yellow;
         // position: relative;
-        text-transform: uppercase;
+        text-transform: capitalize;
     }
     // MOBILE HEADER 
     @media (max-width: 821px) {
@@ -96,7 +88,6 @@
                 // overflow-y: auto;
                 overflow: hidden;
                 z-index: 1;
-
 
                 ul {
                     // border: 2px solid $brand-light;
@@ -133,18 +124,18 @@
                             justify-content: space-between;
                             align-items: center;
                             float: left;
-                            color: $nav-links;
-                            text-decoration: none;
                             margin-right: auto;
                             width: 100%;
                             padding: .5rem 0;
+                            background-color: transparent;
+                            color: $nav-links;
+                            font-size: 1rem;
+                            text-transform: capitalize;
+                            text-decoration: none;
+                            letter-spacing: .025rem;
                             transition: .2s;
                             border: none;
-                            background-color: transparent;
                             // background-color: pink;
-                            font-size: 1rem;
-                            text-transform: uppercase;
-                            letter-spacing: .025rem;
 
 
                             i {
@@ -173,6 +164,7 @@
                                     margin-left: auto;
                                     width: auto;
                                     letter-spacing: .025rem;
+                                    font-weight: 300;
                                     &:hover {
                                         color: $text-second;
                                         transition: .2s;
@@ -409,7 +401,7 @@
                             background-color: transparent;
                             outline: none;
                             border: none;
-                            text-transform: uppercase;
+                            text-transform: capitalize;
                             cursor: pointer;
 
                             i {
@@ -479,7 +471,25 @@
         height: 30vh;
         @media (min-width: 768px) {
             background-color: transparent;
-            
+            .navigation {
+                nav {
+                    ul {
+                        background: #000;
+                        border-radius: .5rem;
+                    }
+                }
+            }
+            .logo {
+                a {
+                    img {
+                        object-position: center;
+                        &:hover {
+                            transition: 1s;
+                            background: #fff;
+                        }
+                    }
+                }
+            }
         }
         // NAV BAR LINKS UNDERLINES COLOR WHEN SCROLL CLASS ACTIVE
         .navigation {

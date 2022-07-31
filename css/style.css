@@ -296,20 +296,11 @@
   width: 100%;
   object-fit: contain;
   object-position: left;
-}
-#header .logo a h1 {
-  font-family: "Gruppo", cursive;
-  letter-spacing: 0.5rem;
-  text-transform: uppercase;
-}
-#header .logo a p {
-  text-transform: uppercase;
-  font-size: 0.5rem;
-  font-family: "Prompt", sans-serif;
-  letter-spacing: 0.15rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 #header .navigation {
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 @media (max-width: 821px) {
   #header {
@@ -368,17 +359,17 @@
     justify-content: space-between;
     align-items: center;
     float: left;
-    color: #eee;
-    text-decoration: none;
     margin-right: auto;
     width: 100%;
     padding: 0.5rem 0;
+    background-color: transparent;
+    color: #eee;
+    font-size: 1rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    letter-spacing: 0.025rem;
     transition: 0.2s;
     border: none;
-    background-color: transparent;
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.025rem;
   }
   #header .navigation aside ul li.aside-dropdown button i {
     position: relative;
@@ -402,6 +393,7 @@
     margin-left: auto;
     width: auto;
     letter-spacing: 0.025rem;
+    font-weight: 300;
   }
   #header .navigation aside ul li.aside-dropdown .aside-dropdown-content a:hover {
     color: #f4f4f4;
@@ -583,7 +575,7 @@
     background-color: transparent;
     outline: none;
     border: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
     cursor: pointer;
   }
   #header .navigation nav ul .dropdown button i {
@@ -638,6 +630,17 @@
 @media (min-width: 768px) {
   #header.hero-header {
     background-color: transparent;
+  }
+  #header.hero-header .navigation nav ul {
+    background: #000;
+    border-radius: 0.5rem;
+  }
+  #header.hero-header .logo a img {
+    object-position: center;
+  }
+  #header.hero-header .logo a img:hover {
+    transition: 1s;
+    background: #fff;
   }
 }
 #header.hero-header .navigation {
@@ -2889,7 +2892,7 @@
 }
 .container .section-title {
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 1.35rem;
   letter-spacing: 0.2rem;
   padding: 5vh 0;
