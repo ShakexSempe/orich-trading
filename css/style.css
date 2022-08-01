@@ -246,6 +246,36 @@
     transform: scaleX(1);
   }
 }
+.loader_bg .spinner {
+  height: 6rem;
+  width: 6rem;
+  display: grid;
+  place-items: center;
+}
+.loader_bg .spinner .circle {
+  height: 6rem;
+  width: 6rem;
+  border: 0.35rem solid transparent;
+  border-radius: 50%;
+  position: absolute;
+  animation: spinner 1.5s infinite;
+}
+.loader_bg .spinner .circle.circle-1 {
+  border-top-color: #f8650c;
+  animation-timing-function: ease-in;
+}
+.loader_bg .spinner .circle.circle-2 {
+  border-left-color: #fff;
+  animation-timing-function: ease-out;
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 #header {
   position: fixed;

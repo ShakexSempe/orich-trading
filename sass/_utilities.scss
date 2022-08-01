@@ -264,4 +264,39 @@
         }
     }
 
+    // SPINNER 
+    .spinner {
+        height: 6rem;
+        width: 6rem;
+        // border: .25rem solid #fff;
+        display: grid;
+        place-items: center;
+        .circle {
+            height: 6rem;
+            width: 6rem;
+            border: .35rem solid transparent;
+            border-radius: 50%;
+            position: absolute;
+            animation: spinner 1.5s infinite;
+
+            &.circle-1 {
+                border-top-color: $brand;
+                animation-timing-function: ease-in;
+            }
+            &.circle-2 {
+                border-left-color: #fff;
+                animation-timing-function: ease-out;
+
+            }
+        }
+
+        @keyframes spinner {
+            0% {
+                transform: rotate(0);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
 }
