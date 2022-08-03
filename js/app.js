@@ -31,7 +31,7 @@ links.forEach(link => {
         toggle.classList.remove("active");
         main.classList.remove("active");
         header.classList.remove("active");
-        header.classList.add("scroll");
+        header.classList.add("main-header");
         header.classList.remove("toggle-header");
     });
 });
