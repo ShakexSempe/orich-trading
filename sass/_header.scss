@@ -102,8 +102,9 @@
                         // padding-bottom: 5vh;
                         margin: 0 1rem 1rem;
                         list-style: none;
-                        border: 1px solid hsla(39, 100%, 50%, .3);
-                        border-radius: 5px;
+                        border-bottom: 1px solid hsla(39, 100%, 50%, .3);
+                        // border-bottom: 1px solid rgba(78, 78, 78, 0.4);
+                        border-radius: .5rem;
                         display: flex;
                         justify-content: flex-start;
                         justify-content: center;
@@ -181,29 +182,37 @@
                             }
 
                             &:hover {
+                                transition: .2s;
+                                border: 1px solid hsla(39, 100%, 50%, .5);
+
                                 button {
-                                    color: $text-second;
+                                    color: #fffa;
+
                                     i {
                                         transition: .2s;
                                         color: #fffa;
-                                    &.fa-caret-down {
-                                        transform: rotate(180deg);
+
+                                        &.fa-caret-down {
+                                            transform: rotate(180deg);
+                                        }
                                     }
                                 }
-                                }
+
                                 .aside-dropdown-content {
                                     // display: block;
                                     height: 18vh;
                                 }
+
                                 // SERVICE PAGE DROPDOWN HOVER STATE
                                 .services-dropdown {
                                     height: 65vh;
                                 }
+
                                 .projects-dropdown {
                                     height: 60vh;
                                     overflow-y: auto;
                                 }
-                            
+
                             }
                         }
 
