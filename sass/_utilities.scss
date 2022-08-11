@@ -299,4 +299,60 @@
             }
         }
     }
+
+    // LOGO 
+    .loader2 {
+        width: 8rem;
+        height: 8rem;
+        // border: 2px solid yellow;
+        place-items: center;
+        
+        .logo {
+            width: 50%;
+            height: 50%;
+            border-radius: 50%;
+            // border: 1px solid pink;
+            margin: 0 auto;
+            position: relative;
+            display: grid;
+            place-items: center;
+            
+            p {
+            color: #f4f4f4;
+            font-size: 3rem;
+            }
+        }
+        .bar {
+            border: 1px solid #000;
+            border: none;
+            overflow: hidden;
+            border-radius: 1rem;
+            margin: 0 auto;
+            width: 50%;
+            height: .5rem;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 50%;
+                height: 100%;
+                background: $brand-border;
+                border-radius: 1rem;
+                animation: bar 2s infinite ease-in-out;
+            }
+
+            @keyframes bar {
+                0% {
+                    transform: translateX(-50%);
+                }
+                50% {
+                    transform: translateX(150%);
+                }
+                100% {
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
 }
