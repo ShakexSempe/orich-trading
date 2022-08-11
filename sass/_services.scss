@@ -1,4 +1,4 @@
-#services {
+.services {
     background-color: #fff;
     padding: 5vh 1rem;
     .section-description {
@@ -256,7 +256,7 @@
                     // background: $brand-overlay-dark;
                     color: $text-second;
                     padding: 5vh .5rem;
-                    // list-style: none;
+                    list-style: none;
                     font-weight: 500;
                     width: 100%;
                     margin: 1rem auto;
@@ -271,7 +271,7 @@
                         width: 100%;
                         transform: scale(0);
                         height: 3px;
-                        background: $brand;
+                        background: $brand-border;
                         border-radius: 5px;
                     }
                     li {
@@ -544,4 +544,5 @@
             }
         }
     }
+
 }

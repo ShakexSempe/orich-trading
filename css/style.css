@@ -1770,46 +1770,46 @@
   }
 }
 
-#services {
+.services {
   background-color: #fff;
   padding: 5vh 1rem;
 }
-#services .section-description {
+.services .section-description {
   margin: 5vh 0;
   line-height: 1.6;
 }
-#services .section-description h3 {
+.services .section-description h3 {
   color: #000;
   margin-bottom: 1rem;
   font-size: 1.3rem;
   font-weight: 500;
 }
-#services .section-description h3[data-scroll] {
+.services .section-description h3[data-scroll] {
   transform: scale(1);
   opacity: 0.7;
   letter-spacing: 0.2rem;
 }
-#services .section-description h3[data-scroll=in] {
+.services .section-description h3[data-scroll=in] {
   letter-spacing: 0.05rem;
   opacity: 1;
 }
-#services .section-description p {
+.services .section-description p {
   font-weight: 300;
   font-size: 1rem;
 }
-#services .section-description p[data-scroll] {
+.services .section-description p[data-scroll] {
   transition: 1.5s;
   transform: scale(1) translateY(5vh);
 }
-#services .section-description p[data-scroll=in] {
+.services .section-description p[data-scroll=in] {
   transform: scale(1) translateY(0);
 }
 @media (min-width: 768px) {
-  #services .section-description p {
+  .services .section-description p {
     font-size: 1.15rem;
   }
 }
-#services .section-description.promise {
+.services .section-description.promise {
   min-height: 100vh;
   padding: 1rem 0.5rem;
   border-radius: 5px;
@@ -1818,20 +1818,20 @@
   z-index: 1;
   margin: 0;
 }
-#services .section-description.promise.page-promise {
+.services .section-description.promise.page-promise {
   background: url(../img/logo.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 @media (min-width: 768px) {
-  #services .section-description.promise {
+  .services .section-description.promise {
     background-repeat: no-repeat;
     background-position: center;
     background-position: right;
   }
 }
-#services .section-description.promise::after {
+.services .section-description.promise::after {
   position: absolute;
   content: "";
   top: 0;
@@ -1845,7 +1845,7 @@
   z-index: -2;
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.5), 2px 3px 2px rgba(0, 0, 0, 0.15);
 }
-#services .section-description.promise h3 {
+.services .section-description.promise h3 {
   color: #f4f4f4;
   text-transform: capitalize;
   z-index: 4;
@@ -1855,14 +1855,14 @@
   margin-bottom: 5vh;
   text-decoration: underline #f4f4f4;
 }
-#services .section-description.promise h4 {
+.services .section-description.promise h4 {
   font-size: 1.25rem;
   font-weight: 500;
   letter-spacing: 0.05rem;
   margin-bottom: 0.5rem;
   position: relative;
 }
-#services .section-description.promise h4::after {
+.services .section-description.promise h4::after {
   position: absolute;
   content: "";
   bottom: 0;
@@ -1875,46 +1875,46 @@
   opacity: 0.5;
   transition: 1.5s;
 }
-#services .section-description.promise p {
+.services .section-description.promise p {
   transition: 2s;
   transition-delay: 0.5s;
 }
-#services .section-description.promise ul li {
+.services .section-description.promise ul li {
   color: #fff;
   margin-bottom: 5vh;
   list-style: none;
 }
-#services .section-description.promise ul li[data-scroll] {
+.services .section-description.promise ul li[data-scroll] {
   transform: scale(1);
   opacity: 1;
 }
-#services .section-description.promise ul li[data-scroll] h4::after {
+.services .section-description.promise ul li[data-scroll] h4::after {
   width: 0;
 }
-#services .section-description.promise ul li[data-scroll] p {
+.services .section-description.promise ul li[data-scroll] p {
   opacity: 0;
 }
-#services .section-description.promise ul li[data-scroll=in] h4::after {
+.services .section-description.promise ul li[data-scroll=in] h4::after {
   width: 15%;
 }
 @media (min-width: 768px) {
-  #services .section-description.promise ul li[data-scroll=in] h4::after {
+  .services .section-description.promise ul li[data-scroll=in] h4::after {
     width: 5%;
   }
 }
-#services .section-description.promise ul li[data-scroll=in] p {
+.services .section-description.promise ul li[data-scroll=in] p {
   opacity: 1;
 }
-#services .service-container {
+.services .service-container {
   margin: 1rem auto 0;
   background: #f4f4f4;
   padding-bottom: 1vh;
   border-radius: 5px;
 }
-#services .service-container.index-container .service-item .service-type ul {
+.services .service-container.index-container .service-item .service-type ul {
   list-style: none;
 }
-#services .service-container .container-title {
+.services .service-container .container-title {
   text-align: center;
   padding: 1rem 0;
   font-weight: 400;
@@ -1927,7 +1927,7 @@
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
-#services .service-container .service-item {
+.services .service-container .service-item {
   background-color: #f4f4f4f4;
   display: flex;
   flex-direction: column;
@@ -1938,7 +1938,7 @@
   width: 100%;
   overflow: hidden;
 }
-#services .service-container .service-item .service-core {
+.services .service-container .service-item .service-core {
   flex-basis: 50%;
   overflow: hidden;
   display: flex;
@@ -1946,7 +1946,7 @@
   align-items: center;
   padding: 0 0.5rem;
 }
-#services .service-container .service-item .service-core h3 {
+.services .service-container .service-item .service-core h3 {
   text-align: center;
   margin: 5vh auto 1rem;
   text-transform: capitalize;
@@ -1954,17 +1954,17 @@
   color: #f8650c;
   font-weight: 500;
 }
-#services .service-container .service-item .service-core i {
+.services .service-container .service-item .service-core i {
   margin-bottom: 1.5rem;
   padding: 0;
   font-size: 4em;
   transition: 0.3s;
   animation: general 2s infinite;
 }
-#services .service-container .service-item .service-core i.fa-wrench {
+.services .service-container .service-item .service-core i.fa-wrench {
   animation: rotate 2s infinite;
 }
-#services .service-container .service-item .service-core i.fa-paint-roller, #services .service-container .service-item .service-core i.fa-plug {
+.services .service-container .service-item .service-core i.fa-paint-roller, .services .service-container .service-item .service-core i.fa-plug {
   animation: rollUp 2s infinite;
 }
 @keyframes rollUp {
@@ -1987,20 +1987,21 @@
     color: #000a;
   }
 }
-#services .service-container .service-item .service-type {
+.services .service-container .service-item .service-type {
   width: 100%;
   padding: 0 1rem;
 }
-#services .service-container .service-item .service-type ul {
+.services .service-container .service-item .service-type ul {
   color: #f4f4f4;
   padding: 5vh 0.5rem;
+  list-style: none;
   font-weight: 500;
   width: 100%;
   margin: 1rem auto;
   border-radius: 5px;
   position: relative;
 }
-#services .service-container .service-item .service-type ul::after {
+.services .service-container .service-item .service-type ul::after {
   position: absolute;
   content: "";
   bottom: 0;
@@ -2008,10 +2009,10 @@
   width: 100%;
   transform: scale(0);
   height: 3px;
-  background: #f8650c;
+  background: linear-gradient(90deg, #f8650c, #ffa500, #f8650c);
   border-radius: 5px;
 }
-#services .service-container .service-item .service-type ul li {
+.services .service-container .service-item .service-type ul li {
   margin: 0.5rem 0;
   padding: 0.5rem 0;
   text-transform: capitalize;
@@ -2020,11 +2021,11 @@
   transition: 1.5s;
   cursor: pointer;
 }
-#services .service-container .service-item .service-type ul li::marker {
+.services .service-container .service-item .service-type ul li::marker {
   color: #000;
   transition: 0.3s;
 }
-#services .service-container .service-item .service-type ul li a {
+.services .service-container .service-item .service-type ul li a {
   width: 8rem;
   text-align: center;
   text-decoration: none;
@@ -2036,7 +2037,7 @@
   isolation: isolate;
   transition: 0.3s;
 }
-#services .service-container .service-item .service-type ul li a::before, #services .service-container .service-item .service-type ul li a::after {
+.services .service-container .service-item .service-type ul li a::before, .services .service-container .service-item .service-type ul li a::after {
   content: "";
   position: absolute;
   top: 0;
@@ -2048,82 +2049,82 @@
   z-index: -1;
   transition: 0.2s;
 }
-#services .service-container .service-item .service-type ul li a::before {
+.services .service-container .service-item .service-type ul li a::before {
   background: linear-gradient(0deg, #f8650c, #ffa500);
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.5), 2px 3px 2px rgba(0, 0, 0, 0.15);
 }
-#services .service-container .service-item .service-type ul li a::after {
+.services .service-container .service-item .service-type ul li a::after {
   background: linear-gradient(0deg, #ffa500, #f8650c);
   box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.5), inset -2px -2px 2px rgba(255, 255, 255, 0.152), 1px 2px 2px rgba(0, 0, 0, 0.3);
   opacity: 0;
 }
 @media (min-width: 1024px) {
-  #services .service-container .service-item .service-type ul li a:hover {
+  .services .service-container .service-item .service-type ul li a:hover {
     transition: 0.2s;
     transform: scale(0.98);
   }
-  #services .service-container .service-item .service-type ul li a:hover::before {
+  .services .service-container .service-item .service-type ul li a:hover::before {
     opacity: 0;
   }
-  #services .service-container .service-item .service-type ul li a:hover::after {
+  .services .service-container .service-item .service-type ul li a:hover::after {
     opacity: 1;
   }
 }
 @media (max-width: 1024px) {
-  #services .service-container .service-item .service-type ul li a:active {
+  .services .service-container .service-item .service-type ul li a:active {
     transition: 0.2s;
     transform: scale(0.98);
   }
-  #services .service-container .service-item .service-type ul li a:active::before {
+  .services .service-container .service-item .service-type ul li a:active::before {
     opacity: 0;
   }
-  #services .service-container .service-item .service-type ul li a:active::after {
+  .services .service-container .service-item .service-type ul li a:active::after {
     opacity: 1;
   }
 }
-#services .service-container .service-item .service-type:hover ul li::marker {
+.services .service-container .service-item .service-type:hover ul li::marker {
   color: #f8650c;
 }
-#services .service-container .service-item[data-scroll] {
+.services .service-container .service-item[data-scroll] {
   transform: scale(1);
   opacity: 1;
 }
-#services .service-container .service-item[data-scroll] li {
+.services .service-container .service-item[data-scroll] li {
   transform: translateX(2rem);
   opacity: 0;
 }
-#services .service-container .service-item[data-scroll=in] h3 {
+.services .service-container .service-item[data-scroll=in] h3 {
   transition: 1.8s;
   color: #000;
 }
-#services .service-container .service-item[data-scroll=in] .service-type ul::after {
+.services .service-container .service-item[data-scroll=in] .service-type ul::after {
   transition: 2s;
   transition-delay: 1s;
   transform: scale(1);
 }
-#services .service-container .service-item[data-scroll=in] .service-type ul li {
+.services .service-container .service-item[data-scroll=in] .service-type ul li {
   transform: translateX(0);
   opacity: 1;
 }
-#services .service-container .service-item[data-scroll=in] .service-type ul li:nth-child(1) {
+.services .service-container .service-item[data-scroll=in] .service-type ul li:nth-child(1) {
   transition-delay: 0.5s;
 }
-#services .service-container .service-item[data-scroll=in] .service-type ul li:nth-child(2) {
+.services .service-container .service-item[data-scroll=in] .service-type ul li:nth-child(2) {
   transition-delay: 0.6s;
 }
-#services .service-container .service-item[data-scroll=in] .service-type ul li:nth-child(3) {
+.services .service-container .service-item[data-scroll=in] .service-type ul li:nth-child(3) {
   transition-delay: 0.7s;
 }
-#services .service-container .service-item[data-scroll=in] .service-type ul li:nth-child(4) {
+.services .service-container .service-item[data-scroll=in] .service-type ul li:nth-child(4) {
   transition-delay: 0.8s;
 }
-#services .service-container .service-item[data-scroll=in] .service-type ul li:nth-child(5) {
+.services .service-container .service-item[data-scroll=in] .service-type ul li:nth-child(5) {
   transition-delay: 0.9s;
 }
-#services .service-container .service-item[data-scroll=in] .service-type ul li:nth-child(6) {
+.services .service-container .service-item[data-scroll=in] .service-type ul li:nth-child(6) {
   transition-delay: 1s;
 }
-#services .service-section-pad {
+.services .service-section-pad {
   border-radius: 5px;
   height: 95vh;
   padding: 0;
@@ -2131,41 +2132,41 @@
   position: sticky;
   top: 10vh;
 }
-#services .service-section-pad .section-pad-img {
+.services .service-section-pad .section-pad-img {
   width: 100%;
   height: 100%;
 }
 @media (min-width: 768px) {
-  #services .service-section-pad .section-pad-img {
+  .services .service-section-pad .section-pad-img {
     background: url(../img/ben-allan-BIeC4YK2MTA-unsplash.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
-  #services .service-section-pad .section-pad-img.mobile-img {
+  .services .service-section-pad .section-pad-img.mobile-img {
     display: none;
     background: yellow;
   }
 }
 @media (max-width: 768px) {
-  #services .service-section-pad .section-pad-img {
+  .services .service-section-pad .section-pad-img {
     background: url(../img/orich-roof.jpg);
     background-size: cover;
     background-position: center;
   }
-  #services .service-section-pad .section-pad-img.desktop-img {
+  .services .service-section-pad .section-pad-img.desktop-img {
     display: none;
     background: green;
   }
 }
 @media (min-width: 768px) {
-  #services .section-description {
+  .services .section-description {
     margin: 5vh 0 10vh;
   }
-  #services .service-container {
+  .services .service-container {
     margin: 5vh 0 0;
   }
-  #services .service-container .service-item {
+  .services .service-container .service-item {
     display: flex;
     flex-direction: row;
     height: 50vh;
@@ -2173,37 +2174,37 @@
     overflow: hidden;
     position: relative;
   }
-  #services .service-container .service-item:nth-child(even) {
+  .services .service-container .service-item:nth-child(even) {
     flex-direction: row-reverse;
   }
-  #services .service-container .service-item:nth-child(even) .service-type {
+  .services .service-container .service-item:nth-child(even) .service-type {
     text-align: right;
   }
-  #services .service-container .service-item:nth-child(even) .service-type ul li {
+  .services .service-container .service-item:nth-child(even) .service-type ul li {
     list-style-position: inside;
   }
-  #services .service-container .service-item .service-core {
+  .services .service-container .service-item .service-core {
     flex-basis: 50%;
     overflow: hidden;
     height: 100%;
     width: 100%;
   }
-  #services .service-container .service-item .service-core figure {
+  .services .service-container .service-item .service-core figure {
     margin: 0 auto;
     height: 100%;
     width: 80%;
     overflow: hidden;
   }
-  #services .service-container .service-item .service-core figure figcaption {
+  .services .service-container .service-item .service-core figure figcaption {
     text-align: center;
     margin: 1rem auto;
   }
-  #services .service-container .service-item .service-core figure img {
+  .services .service-container .service-item .service-core figure img {
     width: 100%;
     height: 70%;
     object-fit: contain;
   }
-  #services .service-container .service-item .service-type {
+  .services .service-container .service-item .service-type {
     width: 50%;
     text-align: left;
   }
@@ -2942,7 +2943,6 @@
   transform: translateX(-50%);
   width: 0;
   height: 0.2rem;
-  background: #f8650c;
   background: linear-gradient(90deg, #f8650c, #ffa500, #f8650c);
   border-radius: 5px;
   transition: 2s;
