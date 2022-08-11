@@ -2160,6 +2160,9 @@
   }
 }
 @media (min-width: 768px) {
+  .services {
+    padding: 0 5vw 5vh;
+  }
   .services .section-description {
     margin: 5vh 0 10vh;
   }
