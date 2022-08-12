@@ -716,7 +716,6 @@
     background-color: transparent;
   }
   #header.hero-header .navigation nav ul {
-    background: #000;
     border-radius: 0.5rem;
   }
   #header.hero-header .logo a img {
@@ -885,7 +884,7 @@
     background-image: url(../img/shivendu-shukla-3yoTPuYR9ZY-unsplash-min.jpg);
     background-size: contain;
     background-size: cover;
-    background-position: center 30%;
+    background-position: center 15%;
     background-attachment: fixed;
     z-index: 10;
     display: grid;
@@ -1115,7 +1114,7 @@
 @media (min-width: 820px) {
   #menu .menu-section figure figcaption.menu-title .cta-content h2 {
     font-size: 2.3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   #menu .menu-section figure figcaption.menu-title .cta-content p {
     font-size: 1.15rem;
