@@ -311,7 +311,7 @@
   height: 100%;
   background: linear-gradient(90deg, #f8650c, #ffa500, #f8650c);
   border-radius: 1rem;
-  animation: bar 2s infinite ease-in-out;
+  animation: bar 1.5s infinite ease-in-out;
 }
 @keyframes bar {
   0% {
