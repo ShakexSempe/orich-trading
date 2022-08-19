@@ -1110,6 +1110,7 @@
 #menu .menu-section figure figcaption.menu-title .cta-content p a {
   color: #f4f4f4;
   font-weight: 400;
+  text-underline-offset: 0.25rem;
 }
 @media (min-width: 820px) {
   #menu .menu-section figure figcaption.menu-title .cta-content h2 {
