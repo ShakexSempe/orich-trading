@@ -328,6 +328,7 @@
     // ABOUT PAGE
     &#about-page {
         main {
+            padding-top: 5vh;
             .about-overview {
                 padding: 0vh 1rem 5vh;
 
@@ -337,6 +338,7 @@
                         font-size: 1rem;
                         line-height: 1.6;
                         font-weight: 300;
+                        text-align: justify;
                         // FONT-UBUNTU ON SMALL SCREENS
                         @media (max-width: 768px) {
                             // font-family: $font-ubuntu;
@@ -402,8 +404,8 @@
                                 overflow: hidden;
                                 margin-right: .5rem;
                                 margin: 0 .5rem 0 0;
-                                border: 1px solid $brand;
-                                border-radius: 5px;
+                                border: 2px solid #000;
+                                border-radius: .5rem;
 
                                 figure {
                                     margin: 0;
