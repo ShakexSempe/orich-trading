@@ -17,12 +17,11 @@ toggle.addEventListener("click",  () => {
     aside.classList.toggle("active");
     toggle.classList.toggle("active");
     main.classList.toggle("active");
-    header.classList.remove("scroll");
+    // header.classList.remove("scroll");
     header.classList.remove("hero-header");
     header.classList.toggle("toggle-header");
-    // header.classList.remove("main-header");
+    header.classList.toggle("main-header");
     console.log("open");
-
     // logo.classList.remove("active-logo");
 });
 // REMOVE ACTIVE CLASSES WHEN NAV LINKS CLICKED
