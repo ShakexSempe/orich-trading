@@ -908,7 +908,7 @@
 }
 #hero .hero-title {
   position: absolute;
-  bottom: 15vh;
+  bottom: 20vh;
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -975,7 +975,7 @@
 #hero #cta .cta-btn {
   padding: 0.7rem 1rem;
   font-size: 1rem;
-  margin: 0 auto;
+  margin: 1rem auto 0;
   cursor: pointer;
   border: none;
   text-decoration: none;
