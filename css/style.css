@@ -58,7 +58,7 @@
   width: 18rem;
   text-align: center;
   margin: 5vh auto;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   background: linear-gradient(0deg, #f8650c, #ffa500);
   background: transparent;
   color: #f4f4f4;
@@ -79,7 +79,7 @@
   height: 100%;
   transition: 0.5s ease;
   z-index: -1;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   border: none;
   outline: none;
 }
@@ -972,7 +972,7 @@
   width: 20rem;
   position: relative;
   isolation: isolate;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   transition: 0.3s;
   letter-spacing: 0.05rem;
 }
@@ -989,7 +989,7 @@
   width: 100%;
   height: 100%;
   border: none;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   z-index: -1;
   transition: 0.3s;
 }
@@ -1147,7 +1147,7 @@
 #menu .menu-section figure figcaption.cta a {
   padding: 0.7rem 0;
   margin: 0.5rem 0;
-  border-radius: 20px;
+  border-radius: 1rem;
   text-align: center;
   color: #fff;
   text-decoration: none;
@@ -1164,7 +1164,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   transition: 0.3s;
   z-index: -1;
 }
@@ -1214,7 +1214,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 1rem;
   transition: 0.3s;
   z-index: -1;
 }
@@ -2092,7 +2092,7 @@
   text-align: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   outline: none;
   color: #fff;
   position: relative;
@@ -2107,7 +2107,7 @@
   width: 100%;
   height: 100%;
   background-color: #f8650c;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   z-index: -1;
   transition: 0.2s;
 }
@@ -2360,7 +2360,7 @@
   text-align: center;
   font-size: 0.85rem;
   margin-left: 2rem;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   background: linear-gradient(0deg, #f8650c, #ffa500);
   text-transform: capitalize;
   color: #f4f4f4;
@@ -2376,7 +2376,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   transition: 0.2s;
   z-index: -1;
 }
@@ -2688,6 +2688,7 @@
 }
 #form button {
   padding: 1rem;
+  margin-top: 1rem;
   font-weight: 400;
   font-size: 1rem;
   text-transform: capitalize;
@@ -2700,7 +2701,7 @@
   isolation: isolate;
   transition: 0.25s;
   letter-spacing: 0.15em;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
 }
 #form button::before, #form button::after {
   position: absolute;
@@ -2711,7 +2712,7 @@
   height: 100%;
   border: none;
   outline: none;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   transition: 0.25s;
   z-index: -1;
 }
@@ -2821,7 +2822,7 @@
   text-decoration: none;
   background-image: linear-gradient(0deg, #f8650c, #ffa500);
   padding: 0.5em 1rem;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   transition: 0.5s;
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.5), 2px 3px 2px rgba(0, 0, 0, 0.15);
 }

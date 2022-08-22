@@ -339,10 +339,6 @@
                         line-height: 1.6;
                         font-weight: 300;
                         // text-align: justify;
-                        // FONT-UBUNTU ON SMALL SCREENS
-                        @media (max-width: 768px) {
-                            // font-family: $font-ubuntu;
-                        }
 
                         &.article-intro {
                             margin-bottom: 10vh;

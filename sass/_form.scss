@@ -119,6 +119,7 @@
     // SUBMIT BUTTON
     button {
         padding:  1rem;
+        margin-top: 1rem;
         font-weight: 400;
         font-size: 1rem;
         text-transform: capitalize;
@@ -132,7 +133,7 @@
         isolation: isolate;
         transition: .25s;
         letter-spacing: .15em;
-        border-radius: 1.5rem;
+        border-radius: $border-radius-md;
         // BUTTON BOX SHADOW
         &::before, &::after {
             position: absolute;
@@ -143,7 +144,7 @@
             height: 100%;
             border: none;
             outline: none;
-            border-radius: 1.5rem;
+            border-radius: $border-radius-md;
             transition: .25s;
             z-index: -1;
         }

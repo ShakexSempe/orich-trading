@@ -64,7 +64,7 @@
     width: 18rem;
     text-align: center;
     margin: 5vh auto;
-    border-radius: 1.5rem;
+    border-radius: $border-radius-md;
     background: $brand-btn;
     background: transparent;
     color: #f4f4f4;
@@ -87,7 +87,7 @@
         height: 100%;
         transition: .5s ease;
         z-index: -1;
-        border-radius: 1.5rem;
+        border-radius: $border-radius-md;
         border: none;
         outline: none;
     }

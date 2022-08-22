@@ -74,7 +74,7 @@
                     text-align: center;
                     font-size: .85rem;
                     margin-left: 2rem;
-                    border-radius: 1.5rem;
+                    border-radius: $border-radius-md;
                     background: $brand-btn;
                     text-transform: capitalize;
                     color: #f4f4f4;
@@ -91,7 +91,7 @@
                         left: 0;
                         width: 100%;
                         height: 100%;
-                        border-radius: 1.5rem;
+                        border-radius: $border-radius-md;
                         transition: .2s;
                         z-index: -1;
                     }
