@@ -890,7 +890,7 @@
     background-image: url(../img/shivendu-shukla-3yoTPuYR9ZY-unsplash-min.jpg);
     background-size: contain;
     background-size: cover;
-    background-position: center 10%;
+    background-position: center 15%;
     background-attachment: fixed;
     z-index: 10;
     display: grid;
@@ -919,7 +919,7 @@
 }
 @media (min-width: 1024px) {
   #hero .hero-title {
-    background: #000a;
+    background: rgba(0, 0, 0, 0.9);
     height: 30vh;
     top: 10vh;
     bottom: none;
