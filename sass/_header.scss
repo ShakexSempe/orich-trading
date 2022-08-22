@@ -10,19 +10,12 @@
     &.index-header {
         background-color: #fff;
         background-color: #000a;
-        background: transparent;
-        .logo {
-            opacity: 0;
-            opacity: 1;
-        }
-
-        
+        background: transparent;       
     }
     &.page-header {
         background: $brand;
     }
-    
-    
+
     // LOGO - STARTS WITH 0 OPACITY
     .logo {
         z-index: 1;
@@ -36,28 +29,31 @@
         display: grid;
         place-items: center;
         border-radius: 5px;
+
         // border: 1px solid blue;
-        @media (min-width: 768px){
+        @media (min-width: 768px) {
             left: 5vw;
         }
-            a {
-                color: #fff;
-                text-align: center;
-                text-decoration: none;
-                overflow: hidden;
-                width: 15rem;
+
+        a {
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            overflow: hidden;
+            width: 15rem;
+            height: 100%;
+            // border: 1px solid red;
+            transition: .3s;
+
+            img {
                 height: 100%;
-                // border: 1px solid red;
-                transition: .3s;
-                img {
-                    height: 100%;
-                    width: 100%;
-                    object-fit: contain;
-                    object-position: left;
-                    border-bottom-left-radius: .5rem;
-                    border-bottom-right-radius: .5rem;
-                }
+                width: 100%;
+                object-fit: contain;
+                object-position: left;
+                border-bottom-left-radius: .5rem;
+                border-bottom-right-radius: .5rem;
             }
+        }
     }
     
     .navigation {
@@ -66,7 +62,7 @@
         text-transform: capitalize;
     }
     // MOBILE HEADER 
-    @media (max-width: 821px) {
+    @media (max-width: 1024px) {
         height: 7vh;
         padding: .3rem 1rem;
         
@@ -332,7 +328,7 @@
     // END OF MOBILE HEADER 
     
     // DESKTOP HEADER
-    @media (min-width: 821px) {
+    @media (min-width: 1024px) {
         height: 8vh;
         padding: .25rem 5vw;
 
@@ -485,6 +481,20 @@
                     ul {
                         // background: #000;
                         border-radius: .5rem;
+                        li {
+                            a {
+                                opacity: .7;
+
+                                &:hover {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                        .dropdown {
+                            button {
+                                opacity: .7;
+                            }
+                        }
                     }
                 }
             }

@@ -338,10 +338,6 @@
   background-color: #000a;
   background: transparent;
 }
-#header.index-header .logo {
-  opacity: 0;
-  opacity: 1;
-}
 #header.page-header {
   background: #f8650c;
 }
@@ -382,7 +378,7 @@
 #header .navigation {
   text-transform: capitalize;
 }
-@media (max-width: 821px) {
+@media (max-width: 1024px) {
   #header {
     height: 7vh;
     padding: 0.3rem 1rem;
@@ -594,7 +590,7 @@
     transition-delay: 1.15s;
   }
 }
-@media (min-width: 821px) {
+@media (min-width: 1024px) {
   #header {
     height: 8vh;
     padding: 0.25rem 5vw;
@@ -717,6 +713,15 @@
   }
   #header.hero-header .navigation nav ul {
     border-radius: 0.5rem;
+  }
+  #header.hero-header .navigation nav ul li a {
+    opacity: 0.7;
+  }
+  #header.hero-header .navigation nav ul li a:hover {
+    opacity: 1;
+  }
+  #header.hero-header .navigation nav ul .dropdown button {
+    opacity: 0.7;
   }
   #header.hero-header .logo a img {
     object-position: center;
@@ -864,6 +869,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 30% top;
+  background-position: 55% 50%;
   position: relative;
   isolation: isolate;
   z-index: 10;
@@ -884,7 +890,7 @@
     background-image: url(../img/shivendu-shukla-3yoTPuYR9ZY-unsplash-min.jpg);
     background-size: contain;
     background-size: cover;
-    background-position: center 15%;
+    background-position: center 10%;
     background-attachment: fixed;
     z-index: 10;
     display: grid;
@@ -900,6 +906,25 @@
     z-index: -1;
   }
 }
+#hero .hero-title {
+  position: absolute;
+  bottom: 10vh;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #hero .hero-title {
+    height: 35vh;
+    bottom: 0vh;
+  }
+}
+@media (min-width: 1024px) {
+  #hero .hero-title {
+    background: #000a;
+    height: 30vh;
+    top: 10vh;
+    bottom: none;
+  }
+}
 #hero .slogan {
   border: none;
   color: #ddd;
@@ -909,7 +934,6 @@
   outline: none;
   text-align: center;
   position: relative;
-  top: 60vh;
 }
 #hero .slogan .slogan-p {
   text-transform: capitalize;
@@ -931,30 +955,20 @@
 }
 #hero .slogan p {
   text-transform: capitalize;
-  padding: 0.5rem 0;
   color: #fff;
   font-weight: 200;
   font-size: 1rem;
 }
 @media (min-width: 768px) {
   #hero .slogan {
-    top: 20vh;
-    width: 50rem;
-    width: max-content;
     padding: 0.5rem;
     font-size: 1.5rem;
-    background-color: #000;
-    border-radius: 10px;
   }
   #hero .slogan .slogan-p {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 #hero #cta {
-  position: absolute;
-  bottom: 15vh;
-  left: 50%;
-  transform: translateX(-50%);
   transition: 0.3s;
   text-align: center;
 }
@@ -1027,9 +1041,6 @@
   }
 }
 @media (min-width: 1024px) {
-  #hero #cta {
-    bottom: 10vh;
-  }
   #hero #cta .cta-btn {
     width: 20rem;
     margin: 5vh auto;
@@ -1096,21 +1107,21 @@
 }
 #menu .menu-section figure figcaption.menu-title .cta-content h2 {
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 0.05rem;
   margin-bottom: 0;
   transition: 1s;
 }
 #menu .menu-section figure figcaption.menu-title .cta-content p {
-  color: #f4f4f4;
+  color: #fff;
   font-weight: 300;
   transition: 1s;
 }
 #menu .menu-section figure figcaption.menu-title .cta-content p a {
   color: #f4f4f4;
   font-weight: 400;
-  text-underline-offset: 0.25rem;
+  text-underline-offset: 0.2rem;
 }
 @media (min-width: 820px) {
   #menu .menu-section figure figcaption.menu-title .cta-content h2 {

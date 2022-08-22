@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 30% top;
-    // background-position: 55% 80%;
+    background-position: 55% 50%;
     position: relative;
     isolation: isolate;
     z-index: 10;
@@ -33,7 +33,7 @@
         background-image: url(../img/shivendu-shukla-3yoTPuYR9ZY-unsplash-min.jpg);
         background-size: contain;
         background-size: cover;
-        background-position: center 15%;
+        background-position: center 10%;
         background-attachment: fixed;
         z-index: 10;
         display: grid;
@@ -53,7 +53,28 @@
 
     // END OF DESKTOP HERO
     // HERO PAGE TITLE
-
+    .hero-title {
+        // border:2px solid red;
+        // background-color: blue;
+        position: absolute;
+        bottom: 10vh;
+        width: 100%;
+        @media (min-width: 768px){
+            // background: #ff0000;
+            height: 35vh;
+            bottom: 0vh;
+        }
+        // @media (min-width: 820px){
+        //     background: #fff000;
+        //     height: 35vh;
+        // }
+        @media (min-width: 1024px){
+            background: #000a;
+            height: 30vh;
+            top: 10vh;
+            bottom: none;
+        }
+    }
     // SLOGAN 'quality or nothing'
     .slogan {
         border: none;
@@ -65,7 +86,7 @@
         outline: none;
         text-align: center;
         position: relative;
-        top: 60vh;
+        // top: 60vh;
     
         .slogan-p {
             text-transform: capitalize;
@@ -92,24 +113,25 @@
 
         p {
             text-transform: capitalize;
-            padding: .5rem 0;
+            // padding: .5rem 0;
             color: #fff;
             font-weight: 200;
             font-size: 1rem;
         }
 
         @media (min-width: 768px) {
-            top: 20vh;
-            width: 50rem;
-            width: max-content;
+            // top: 20vh;
+            // height: 30vh;
+            // width: 50rem;
+            // width: max-content;
             padding: .5rem;
             font-size: 1.5rem;
             // backdrop-filter: blur(.1rem);
-            background-color: #000;
-            border-radius: 10px;
-            // border: 1px solid red;
+            // background-color: #000;
+            // border-radius: 10px;
+            // border: 1px solid green;
             .slogan-p {
-                font-size: 3rem;
+                font-size: 2rem;
             }
         }
     }
@@ -118,10 +140,10 @@
 
     // CTA 
     #cta {
-        position: absolute;
-        bottom: 15vh;
-        left: 50%;
-        transform: translateX(-50%);
+        // position: absolute;
+        // bottom: 15vh;
+        // left: 50%;
+        // transform: translateX(-50%);
         transition: .3s;
         text-align: center;
 
@@ -208,7 +230,7 @@
 
         @media (min-width: 1024px) {
             // position: absolute;
-            bottom: 10vh;
+            // bottom: 10vh;
             // left: 50%;
             // transform: translateX(-50%);
 
@@ -292,21 +314,21 @@
                         text-transform: capitalize;
                         h2 {
                             color: #fff;
-                            font-size: 1.8rem;
+                            font-size: 1.5rem;
                             font-weight: 500;
                             letter-spacing: .05rem;
                             margin-bottom: 0;
                             transition: 1s;
                         }
                         p {
-                            color: #f4f4f4;
+                            color: #fff;
                             font-weight: 300;
                             transition: 1s;
                             a {
                                 color: #f4f4f4;
                                 font-weight: 400;
                                 // text-decoration: none;
-                                text-underline-offset: .25rem;
+                                text-underline-offset: .2rem;
                             }
                         }
                         // DESKTOP
