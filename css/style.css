@@ -908,7 +908,7 @@
 }
 #hero .hero-title {
   position: absolute;
-  bottom: 10vh;
+  bottom: 15vh;
   width: 100%;
 }
 @media (min-width: 768px) {
