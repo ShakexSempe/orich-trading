@@ -159,7 +159,7 @@
             color: $text-second;
             background: $brand-light;
             display: block;
-            width: 20rem;
+            width: 18rem;
             @media (min-width: 768px) {
                 width: 17rem;
             }
@@ -236,9 +236,9 @@
 
             .cta-btn {
                 width: 20rem;
-                margin: 5vh auto;
-                font-size: 1.5rem;
                 padding: .5rem 1rem;
+                margin: 5vh auto;
+                font-size: 1.5rem; 
 
             }
         }
@@ -315,7 +315,7 @@
                         h2 {
                             color: #fff;
                             font-size: 1.5rem;
-                            font-weight: 500;
+                            font-weight: 600;
                             letter-spacing: .05rem;
                             margin-bottom: 0;
                             transition: 1s;
