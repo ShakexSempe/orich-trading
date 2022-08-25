@@ -499,13 +499,9 @@
                 }
             }
             .logo {
+                top: 10vh;
                 a {
                     img {
-                        object-position: center;
-                        &:hover {
-                            transition: 1s;
-                            background: #fff;
-                        }
                     }
                 }
             }

@@ -727,12 +727,8 @@
   #header.hero-header .navigation nav ul .dropdown button {
     opacity: 0.7;
   }
-  #header.hero-header .logo a img {
-    object-position: center;
-  }
-  #header.hero-header .logo a img:hover {
-    transition: 1s;
-    background: #fff;
+  #header.hero-header .logo {
+    top: 10vh;
   }
 }
 #header.hero-header .navigation {
