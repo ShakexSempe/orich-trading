@@ -20,7 +20,7 @@ toggle.addEventListener("click",  () => {
     // header.classList.remove("scroll");
     header.classList.remove("hero-header");
     header.classList.toggle("toggle-header");
-    header.classList.toggle("main-header");
+    header.classList.remove("main-header");
     console.log("open");
     // logo.classList.remove("active-logo");
 });
@@ -41,6 +41,8 @@ main.addEventListener("click", () => {
     toggle.classList.remove("active");
     main.classList.remove("active");
     header.classList.remove("active");
+    header.classList.remove("toggle-header");
+    header.classList.add("main-header");
 });
 
 // REMOVE ACTIVE CLASSES WHEN LOGO IS CLICKED
