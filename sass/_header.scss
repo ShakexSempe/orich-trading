@@ -416,14 +416,15 @@
                         .dropdown-content {
                             display: block;
                             height: 0;
-                            overflow: hidden;
+                            width: 15vw;
+                            overflow-y: auto;
                             position: absolute;
                             top: 5vh;
-                            left: 0%;
+                            left: -5vw;
                             width: max-content;
                             background-color: $brand;
-                            transition: .5s;
-                            border-radius: 5px;
+                            transition: .25s;
+                            border-radius: .25rem;
 
                             a {
                                 display: block;
@@ -460,6 +461,12 @@
                                 height: 15vh;
                                 opacity: 1;
                                 border: 2px solid #000;
+                                @media (min-width:820px){
+                                    height: 55vh;
+                                    height: auto;
+                                    width: 15vw;
+                                    overflow-y: auto;
+                                }
                             }
                         }
                     }

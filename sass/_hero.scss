@@ -340,6 +340,12 @@
 
                             p {
                                 font-size: 1.15rem;
+                                a {
+                                    transition: .25s;
+                                    &:hover {
+                                        color: $text-brand;
+                                    }
+                                }
                             }
                         } 
                         // DATA SCROLL TITLE
