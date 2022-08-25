@@ -34,6 +34,7 @@
             
             @media (min-width: 768px) {
                 font-size: 1.15rem;
+                width: 70%;
             }
         }
         &.promise {
@@ -474,21 +475,6 @@
                 height: auto;
                 overflow: hidden;
                 position: relative;
-                // padding: 5vh 0;
-                &:nth-child(even){
-                    flex-direction: row-reverse;
-                    .service-type {
-                        text-align: right;
-                        ul {
-                            li {
-                                list-style-position: inside;
-                                &::marker {
-                                    // color: $text-second;
-                                }
-                            }
-                        }
-                    }
-                }
                 .service-core {
                     flex-basis: 50%;
                     overflow: hidden;

@@ -1880,6 +1880,7 @@
 @media (min-width: 768px) {
   .services .section-description p {
     font-size: 1.15rem;
+    width: 70%;
   }
 }
 .services .section-description.promise {
@@ -2249,15 +2250,6 @@
     height: auto;
     overflow: hidden;
     position: relative;
-  }
-  .services .service-container .service-item:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-  .services .service-container .service-item:nth-child(even) .service-type {
-    text-align: right;
-  }
-  .services .service-container .service-item:nth-child(even) .service-type ul li {
-    list-style-position: inside;
   }
   .services .service-container .service-item .service-core {
     flex-basis: 50%;
