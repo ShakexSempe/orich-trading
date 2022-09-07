@@ -50,11 +50,16 @@
     }
 
     &.active {
-        outline: 2px solid $toggle;
-
-        outline-offset: -.4em;
         .bar {
-            opacity: 0;
+            background: $brand-light;
+            &::before {
+                background: $brand;
+                transform: translateY(-.25em) translateX(.25em);
+            }
+            &::after {
+                background: $brand;
+                transform: translateY(.25em) translateX(-.25rem);
+            }
         }
     }
 }

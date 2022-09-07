@@ -45,12 +45,16 @@
 .toggle .bar::after {
   transform: translateY(0.25em);
 }
-.toggle.active {
-  outline: 2px solid #f4f4f4;
-  outline-offset: -0.4em;
-}
 .toggle.active .bar {
-  opacity: 0;
+  background: #ffa500;
+}
+.toggle.active .bar::before {
+  background: #f8650c;
+  transform: translateY(-0.25em) translateX(0.25em);
+}
+.toggle.active .bar::after {
+  background: #f8650c;
+  transform: translateY(0.25em) translateX(-0.25rem);
 }
 
 .section-btn {
