@@ -45,15 +45,12 @@
 .toggle .bar::after {
   transform: translateY(0.25em);
 }
-.toggle.active .bar {
-  background: #ffa500;
-}
 .toggle.active .bar::before {
-  background: #f8650c;
+  opacity: 0.6;
   transform: translateY(-0.25em) translateX(0.25em);
 }
 .toggle.active .bar::after {
-  background: #f8650c;
+  opacity: 0.6;
   transform: translateY(0.25em) translateX(-0.25rem);
 }
 
@@ -504,6 +501,9 @@
   }
   #header .navigation aside ul li.aside-dropdown:hover .aside-dropdown-content {
     height: 18vh;
+  }
+  #header .navigation aside ul li.aside-dropdown:hover .aside-dropdown-content a:hover {
+    color: #ffa500;
   }
   #header .navigation aside ul li.aside-dropdown:hover .services-dropdown {
     height: 65vh;

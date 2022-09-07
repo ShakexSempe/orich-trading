@@ -51,13 +51,12 @@
 
     &.active {
         .bar {
-            background: $brand-light;
             &::before {
-                background: $brand;
+                opacity: .6;
                 transform: translateY(-.25em) translateX(.25em);
             }
             &::after {
-                background: $brand;
+                opacity: .6;
                 transform: translateY(.25em) translateX(-.25rem);
             }
         }

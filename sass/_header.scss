@@ -197,6 +197,11 @@
                                 .aside-dropdown-content {
                                     // display: block;
                                     height: 18vh;
+                                    a {
+                                        &:hover {
+                                            color: $brand-light;
+                                        }
+                                    }
                                 }
 
                                 // SERVICE PAGE DROPDOWN HOVER STATE
