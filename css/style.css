@@ -741,7 +741,7 @@
     opacity: 0.7;
   }
   #header.hero-header .logo {
-    top: 10vh;
+    top: 5vh;
   }
 }
 #header.hero-header .navigation {
@@ -934,7 +934,7 @@
   #hero .hero-title {
     background: rgba(0, 0, 0, 0.9);
     height: 30vh;
-    top: 10vh;
+    top: 5vh;
     bottom: none;
   }
 }
