@@ -64,15 +64,13 @@
             height: 35vh;
             bottom: 0vh;
         }
-        // @media (min-width: 820px){
-        //     background: #fff000;
-        //     height: 35vh;
-        // }
         @media (min-width: 1024px){
             background: rgba(0, 0, 0, .9);
-            height: 30vh;
-            top: 5vh;
+            height: 25vh;
+            top: 0vh;
+            padding-top: 5vh;
             bottom: none;
+            z-index: 100;
         }
     }
     // SLOGAN 'quality or nothing'
@@ -162,6 +160,7 @@
             width: 18rem;
             @media (min-width: 768px) {
                 width: 17rem;
+                // top: 5vh;
             }
             position: relative;
             isolation: isolate;
@@ -237,7 +236,7 @@
             .cta-btn {
                 width: 20rem;
                 padding: .5rem 1rem;
-                margin: 5vh auto;
+                margin: 5vh auto 0;
                 font-size: 1.5rem; 
 
             }

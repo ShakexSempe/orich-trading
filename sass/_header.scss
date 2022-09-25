@@ -485,9 +485,10 @@
     &.hero-header {
         background-color: #000a;
         background-color: transparent;
-        height: 30vh;
+        height: 25vh;
         @media (min-width: 768px) {
             background-color: transparent;
+            // background-color: #ffee00b6;
             .navigation {
                 nav {
                     ul {
@@ -511,7 +512,7 @@
                 }
             }
             .logo {
-                top: 5vh;
+                // top: 5vh;
                 a {
                     img {
                     }
