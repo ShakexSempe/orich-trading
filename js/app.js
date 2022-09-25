@@ -5,6 +5,7 @@ const toggle = document.querySelector(".toggle");
 const header = document.getElementById("header");
 const main = document.querySelector(".main");
 const logo = document.querySelector(".logo");
+const footerNav = document.querySelector(".footer-nav");
 const topBtn = document.getElementById("top-btn");
 const aside = document.querySelector("aside");
 const dropdownBtn = document.querySelectorAll(".aside-dropdown")
@@ -93,12 +94,12 @@ const mainObserver = new IntersectionObserver(
             if(!entry.isIntersecting){
                 console.log('MAIN NOT IO');
                 header.classList.remove("main-header");
-                topBtn.classList.remove("active");
+                footerNav.classList.remove("active-footer");
 
             } else {
                 console.log('MAIN IS IO');
                 header.classList.add("main-header");
-                topBtn.classList.add("active");
+                footerNav.classList.add("active-footer");
 
             }
         });

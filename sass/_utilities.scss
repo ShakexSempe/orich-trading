@@ -387,3 +387,68 @@
         text-decoration: underline;
     }
 }
+
+// BOTTOM NAV
+.footer-nav {
+    position: fixed;
+    z-index: 5;
+    bottom: 0;
+    // height: 7vh;
+    height: auto;
+    width: 100%;
+    // border: 2px solid green;
+    padding: .5rem 5vw;
+    // padding: .5rem 0;
+    background: linear-gradient(0deg, #000, #111);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: .5rem;
+    transform: translateY(8vh);
+    transition: .5s;
+    .item {
+        // border: 1px solid yellow;
+        width: 100%;
+        a {
+            transition: 1s;
+            text-transform: capitalize;
+            text-decoration: none;
+            font-size: .75rem;
+            color: #f4f4f4;
+            display: grid;
+            place-items: center;
+            place-content: center;
+            i {
+                font-size: 1.05rem;
+                color: $brand;
+                color: #fff7;
+                // opacity: .8;
+                transition: 1s;
+            }
+        }
+        @include md {
+            a {
+                i {
+                    font-size: 1rem;
+                }
+            }
+            &:hover {
+                a {
+                    i {
+                        opacity: 1;
+                        transition: .25s;
+                    }
+                    transition: .25s;
+                }
+            }
+        }
+    }
+    // DESKTOP NAV STYLE
+    @include md {
+        padding: .5rem 5vw;
+    }
+    // FOOTER NAV IO
+    &.active-footer {
+        transform: translateY(0);
+    }
+}
