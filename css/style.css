@@ -524,7 +524,7 @@
     margin: 0 1rem 1rem;
     list-style: none;
     border-bottom: 1px solid rgba(255, 166, 0, 0.3);
-    border-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
     display: flex;
     justify-content: flex-start;
     justify-content: center;
