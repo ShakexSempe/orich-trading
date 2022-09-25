@@ -2485,7 +2485,7 @@
   width: 100%;
   height: 60vh;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 0.25rem;
   position: relative;
   cursor: pointer;
   isolation: isolate;
@@ -2500,23 +2500,12 @@
 #projects .gallery .gallery-grid .project-item figure img {
   width: 100%;
   height: 100%;
-  border-radius: 5px;
+  border-radius: 0.25rem;
   cursor: pointer;
   transition: 0.5s;
   position: relative;
   object-fit: cover;
   object-position: center;
-}
-#projects .gallery .gallery-grid .project-item figure::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #000a;
-  opacity: 0.2;
-  transition: 0.5s;
 }
 #projects .gallery .gallery-grid .project-item figure:hover img {
   transform: scale(1.15);
