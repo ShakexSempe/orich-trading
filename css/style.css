@@ -646,6 +646,7 @@
     text-decoration: none;
     color: #f4f4f4;
     letter-spacing: 0.05rem;
+    font-weight: 300;
     margin-bottom: 0.5rem;
     transform: translateY(2rem);
     opacity: 0;
