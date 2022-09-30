@@ -384,7 +384,7 @@
   color: #fff7;
   transition: 1s;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .footer-nav .item {
     transform: translateX(-2rem);
     transition: 1s;
@@ -408,7 +408,17 @@
     transition: 0.25s;
   }
 }
-@media (min-width: 768px) {
+@media (max-width: 1024px) {
+  .footer-nav .item .desktop-contact-item {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .footer-nav .item .mobile-contact-item {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
   .footer-nav {
     height: 100vh;
     width: 5vw;
