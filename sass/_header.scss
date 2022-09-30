@@ -179,7 +179,8 @@
 
                             &:hover {
                                 transition: .2s;
-                                border: 1px solid hsla(39, 100%, 50%, .5);
+                                border-color: #fff4;
+                                border-radius: 0;
 
                                 button {
                                     color: #fffa;
