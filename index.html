@@ -39,10 +39,10 @@
 
 <body>
     <!-- LOADER -->
-    <div class="loader_bg">
+    <!-- <div class="loader_bg">
         <div class="loader">
         </div>
-    </div>
+    </div> -->
     <div class="container">
         <!-- HEADER = 1) LOGO 2) SECTION & PAGE NAVIGATION LINKS -->
         <header id="header" class="index-header hero-header">
@@ -64,25 +64,43 @@
                 <nav id="nav">
                     <ul>
                         <!-- ABOUT -->
-                        <li>
-                            <a title="About Orich Trading and Projects" href="#about">about</a>
+                        <li class="dropdown">
+                            <button class="dropdown-btn">about
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a title="About Orich Trading and Projects" href="#about">about section</a>
+                                <a title="About Orich Trading and Projects" href="pages/about.html">about page</a>
+                            </div>
                         </li>
                         <!-- SERVICES -->
-                        <li>
-                            <a title="Orich Services" href="#services">services</a>
+                        <li class="dropdown">
+                            <button class="dropdown-btn">services
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a title="Services: Orich Trading & Projects" href="#services">services section</a>
+                                <a title="Services: Orich Trading & Projects" href="pages/services.html">services page</a>
+                            </div>
                         </li>
                         <!-- PROJECTS -->
-                        <li>
-                            <a title="Orich Projects" href="#projects">projects</a>
+                        <li class="dropdown">
+                            <button class="dropdown-btn">Projects
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a title="Projects: Orich Trading & Projects" href="#Projects">Projects section</a>
+                                <a title="Projects: Orich Trading & Projects" href="pages/Projects.html">Projects page</a>
+                            </div>
                         </li>
                         <!-- CONTACT DROPDOWN BUTTON -->
-                        <li title="Orich Contact" class="dropdown">
+                        <li title="Contact Dropdown" class="dropdown">
                             <button class="dropdown-btn">contact
                                 <i class="fa fa-caret-down"></i>
                             </button>
                             <div class="dropdown-content">
-                                <a title="Orich Contact-info" href="#footer">contact info</a>
-                                <a title="Orich Contact-form" href="#form">contact form</a>
+                                <a title="Contact-info" href="#footer">contact info</a>
+                                <a title="Contact-form" href="#form">contact form</a>
                             </div>
                         </li>
                     </ul>
