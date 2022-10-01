@@ -44,12 +44,12 @@
 
 <body>
     <!-- LOADER -->
-    <div class="loader_bg">
+    <!-- <div class="loader_bg">
         <div class="loader2">
             <div class="logo"><p>O</p></div>
             <div class="bar"></div>
         </div>
-    </div>
+    </div> -->
     <div class="container" id="about-page">
         <!-- HEADER -->
         <header id="header" class="about-header index-header">
@@ -62,19 +62,30 @@
                 <div class="toggle">
                     <div class="bar"></div>
                 </div>
+                <!-- NAVBAR = HIDDEN ON MOBILE SCREENS -->
                 <nav id="nav">
                     <ul>
+                        <!-- ABOUT -->
                         <li>
-                            <a title="About Orich Trading and Projects" href="../index.html">home</a>
+                            <a href="../index.html">Home</a>
                         </li>
-                        <li>
-                            <a title="Orich Projects" href="#vision">vision</a>
+                        <!-- SERVICES -->
+                        <li class="dropdown">
+                            <a href="services.html">services</a>
                         </li>
-                        <li>
-                            <a title="Orich Projects" href="#mission">mission</a>
+                        <!-- PROJECTS -->
+                        <li class="dropdown">
+                            <a href="projects.html">projects</a>
                         </li>
-                        <li>
-                            <a title="About Orich Trading and Projects" href="#footer">contact</a>
+                        <!-- CONTACT DROPDOWN BUTTON -->
+                        <li title="Contact Dropdown" class="dropdown">
+                            <button class="dropdown-btn">contact
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a title="Contact-info" href="#footer">contact info</a>
+                                <a title="Contact-form" href="#form">contact form</a>
+                            </div>
                         </li>
                     </ul>
                 </nav>

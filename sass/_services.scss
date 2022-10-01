@@ -41,7 +41,7 @@
             // border: 2px solid red;
             min-height: 100vh;
             // background: $brand;
-            padding: 1rem .5rem;
+            padding: 5vh .5rem 1rem;
             border-radius: 5px;
             isolation: isolate;
             position: relative;
@@ -57,8 +57,8 @@
                 // background: url(../img/logo.jpg);
             background-repeat: no-repeat;
             background-position: center;
-                background-position: right;
-
+            background-position: right;
+            padding: 10vh .5rem 1rem;
             }
 
             &::after {
@@ -74,7 +74,7 @@
                 background: linear-gradient(45deg, #000, $brand );
                 opacity: .9;
                 z-index: -2;
-                box-shadow: $box-shadow-sm;
+                // box-shadow: $box-shadow-sm;
             }
 
             h3 {
