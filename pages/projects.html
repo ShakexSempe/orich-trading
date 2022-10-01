@@ -39,12 +39,12 @@
 
 <body>
     <!-- LOADER -->
-    <div class="loader_bg">
+    <!-- <div class="loader_bg">
         <div class="spinner">
             <div class="circle circle-1"></div>
             <div class="circle circle-2"></div>
         </div>
-    </div>
+    </div> -->
     <div class="container" id="projects-page">
         <!-- HEADER -->
         <header id="header" class="index-header">
@@ -58,38 +58,29 @@
                 <div id="toggle" class="toggle">
                     <div class="bar"></div>
                 </div>
+                <!-- NAVBAR = HIDDEN ON MOBILE SCREENS -->
                 <nav id="nav">
                     <ul>
+                        <!-- HOME -->
                         <li>
-                            <a title="About Orich Trading and Projects" href="about.html">about</a>
+                            <a href="../index.html">Home</a>
                         </li>
-                        <li>
-                            <a title="Orich Projects" href="services.html">services</a>
+                        <!-- ABOUT -->
+                        <li class="dropdown">
+                            <a href="about.html">about</a>
                         </li>
-                        <li title="Orich Contact" class="dropdown">
-                            <button class="dropdown-btn">projects
-                                <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="dropdown-content">
-                                <a href="#balustrade"><i class="fas fa-hard-hat"></i>balustrade</a>
-                                <a href="#dry-wall"><i class="fas fa-hard-hat"></i>dry-wall</a>
-                                <a href="#general"><i class="fas fa-hard-hat"></i>general</a>
-                                <a href="#plumbing"><i class="fas fa-hard-hat"></i>plumbing</a>
-                                <a href="#gate"><i class="fas fa-hard-hat"></i>gate</a>
-                                <a href="#roofing"><i class="fas fa-hard-hat"></i>roofing</a>
-                                <a href="#pool"><i class="fas fa-hard-hat"></i>pool</a>
-                                <a href="#tile"><i class="fas fa-hard-hat"></i>tile</a>
-                                <a href="#solar"><i class="fas fa-hard-hat"></i>solar</a>
-                                <a href="#electrical"><i class="fas fa-hard-hat"></i>electrical</a>
-                            </div>
+                        <!-- SERVICES -->
+                        <li class="dropdown">
+                            <a href="services.html">services</a>
                         </li>
-                        <li title="Orich Contact" class="dropdown">
+                        <!-- CONTACT DROPDOWN BUTTON -->
+                        <li title="Contact Dropdown" class="dropdown">
                             <button class="dropdown-btn">contact
                                 <i class="fa fa-caret-down"></i>
                             </button>
                             <div class="dropdown-content">
-                                <a title="Orich Contact-info" href="#contact-info">contact info</a>
-                                <a title="Orich Contact-form" href="#form">contact form</a>
+                                <a title="Contact-info" href="#footer">contact info</a>
+                                <a title="Contact-form" href="contact.html">contact form</a>
                             </div>
                         </li>
                     </ul>
