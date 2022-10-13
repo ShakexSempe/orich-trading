@@ -10,6 +10,7 @@
         gap: 5vh;
         height: auto;
         padding: 1rem 0;
+        margin-top: 5vh;
         width: 100%;
 
         .reference {
@@ -22,6 +23,7 @@
             text-align: left;
             padding: 1rem 0 1rem 1rem;
             position: relative;
+            display: block;
             &::after {
                 content: '';
                 position: absolute;
@@ -37,6 +39,7 @@
                 opacity: 0;
             }
             &:hover {
+                transform: scale(1);
                 &::after {opacity: 1;}
             }
             i {
@@ -68,9 +71,15 @@
             }
             // DATA SCROLL
             &[data-scroll] {
-                transform: scale(1);
+                transform: scale(.98);
                 transition: 1.5s;
+                &:hover {
+                    transform: scale(1);
+                    transition: .25s;
+                    transition-delay: 0;
+                }
             }
+            
             // ITEMS FADE IN WITH DELAYS ON SCREENS < 1024px
             @media (min-width: 1024px){
             &:nth-child(1){

@@ -2644,6 +2644,7 @@
   gap: 5vh;
   height: auto;
   padding: 1rem 0;
+  margin-top: 5vh;
   width: 100%;
 }
 #references .references .reference {
@@ -2654,6 +2655,7 @@
   text-align: left;
   padding: 1rem 0 1rem 1rem;
   position: relative;
+  display: block;
 }
 #references .references .reference::after {
   content: "";
@@ -2668,6 +2670,9 @@
   border-radius: 0.5rem;
   transition: 0.5s;
   opacity: 0;
+}
+#references .references .reference:hover {
+  transform: scale(1);
 }
 #references .references .reference:hover::after {
   opacity: 1;
@@ -2696,8 +2701,13 @@
   text-transform: capitalize;
 }
 #references .references .reference[data-scroll] {
-  transform: scale(1);
+  transform: scale(0.98);
   transition: 1.5s;
+}
+#references .references .reference[data-scroll]:hover {
+  transform: scale(1);
+  transition: 0.25s;
+  transition-delay: 0;
 }
 @media (min-width: 1024px) {
   #references .references .reference:nth-child(1) {
