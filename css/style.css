@@ -900,6 +900,11 @@
   background-color: #fff;
   isolation: isolate;
 }
+@media (min-width: 768px) {
+  #banner {
+    margin: 0 5vw;
+  }
+}
 #banner .banner-bg {
   position: sticky;
   top: 7vh;
@@ -2010,18 +2015,18 @@
   font-weight: 300;
   font-size: 1rem;
 }
+@media (min-width: 768px) {
+  .services .section-description p {
+    font-size: 1.15rem;
+    width: 50%;
+  }
+}
 .services .section-description p[data-scroll] {
   transition: 1.5s;
   transform: scale(1) translateY(5vh);
 }
 .services .section-description p[data-scroll=in] {
   transform: scale(1) translateY(0);
-}
-@media (min-width: 768px) {
-  .services .section-description p {
-    font-size: 1.15rem;
-    width: 70%;
-  }
 }
 .services .section-description.promise {
   min-height: 100vh;
@@ -2121,8 +2126,7 @@
 }
 .services .service-container {
   margin: 1rem auto 0;
-  background: #f4f4f4;
-  padding-bottom: 1vh;
+  background: #fafafa;
   border-radius: 5px;
 }
 .services .service-container.index-container .service-item .service-type ul {
@@ -2373,12 +2377,15 @@
     background: green;
   }
 }
+.services .section-btn {
+  margin: 10vh auto;
+}
 @media (min-width: 768px) {
   .services {
     padding: 0 5vw 5vh;
   }
   .services .section-description {
-    margin: 5vh 0 10vh;
+    margin: 5vh auto 10vh;
   }
   .services .service-container {
     margin: 5vh 0 0;
@@ -2916,7 +2923,7 @@
 #footer {
   background: #fff;
   min-height: 100vh;
-  padding: 5vh 0;
+  padding: 10vh 0 0;
 }
 #footer .footer-contact {
   border-radius: 5px;

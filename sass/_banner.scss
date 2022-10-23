@@ -4,6 +4,9 @@
     // border: 2px solid red;
     background-color: #fff;
     isolation: isolate;
+    @media (min-width: 768px) {
+        margin: 0 5vw;
+    }
     .banner-bg {
         // border: 2px solid blue;
         position: sticky;

@@ -24,6 +24,10 @@
         p {
             font-weight: 300;
             font-size: 1rem;
+            @media (min-width: 768px) {
+                font-size: 1.15rem;
+                width: 50%;
+            }
             &[data-scroll] {
                 transition: 1.5s;
                 transform: scale(1) translateY(5vh);
@@ -32,10 +36,6 @@
                 transform: scale(1) translateY(0);
             }
             
-            @media (min-width: 768px) {
-                font-size: 1.15rem;
-                width: 70%;
-            }
         }
         &.promise {
             // border: 2px solid red;
@@ -151,8 +151,8 @@
     .service-container {
         // border: 1px solid $brand;
         margin: 1rem auto 0;
-        background: #f4f4f4;
-        padding-bottom: 1vh;
+        background: #fafafa;
+        // padding-bottom: 1vh;
         border-radius: 5px;
         // REMOVE LIST STYLE FROM INDEX PAGE LINK BUTTONS
         &.index-container {
@@ -457,11 +457,13 @@
         }
     }
     }
-
+    .section-btn {
+        margin: 10vh auto;
+    }
     @media (min-width:768px) {
         padding: 0 5vw 5vh;
         .section-description {
-            margin: 5vh 0 10vh;
+            margin: 5vh auto 10vh;
         }
         .service-container {
             // border: 1px solid red;
