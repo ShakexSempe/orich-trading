@@ -98,9 +98,9 @@
                         // padding-bottom: 5vh;
                         margin: 0 1rem 1rem;
                         list-style: none;
-                        border-bottom: 1px solid hsla(39, 100%, 50%, .3);
-                        // border-bottom: 1px solid rgba(78, 78, 78, 0.4);
-                        border-bottom-right-radius: .5rem;
+                        // border-bottom: 1px solid hsla(39, 100%, 50%, .3);
+                        border-bottom: 1px solid rgba(78, 78, 78, 0.4);
+                        // border-bottom-right-radius: .5rem;
                         display: flex;
                         justify-content: flex-start;
                         justify-content: center;
@@ -137,6 +137,7 @@
 
                             i {
                                 position: relative;
+                                color: #fff9;
                                 &.fa-caret-down {
                                     transition: .3s;
                                 }
@@ -183,11 +184,11 @@
                                 border-radius: 0;
 
                                 button {
-                                    color: #fffa;
+                                    color: $brand-light;
 
                                     i {
                                         transition: .2s;
-                                        color: #fffa;
+                                        color: #fff8;
 
                                         &.fa-caret-down {
                                             transform: rotate(180deg);
