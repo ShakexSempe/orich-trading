@@ -1514,6 +1514,12 @@
   font-weight: 300;
   text-justify: inter-word;
 }
+.container #about .about-article p a {
+  display: block;
+  text-transform: capitalize;
+  color: #f8650c;
+  text-decoration: none;
+}
 @media (max-width: 768px) {
   .container #about .about-article p {
     font-size: 0.95rem;
