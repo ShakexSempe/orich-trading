@@ -57,7 +57,7 @@
         // border:2px solid red;
         // background-color: blue;
         position: absolute;
-        bottom: 20vh;
+        bottom: 15vh;
         width: 100%;
         @media (min-width: 768px){
             // background: #ff0000;
@@ -72,64 +72,66 @@
             bottom: none;
             z-index: 100;
         }
-    }
-    // SLOGAN 'quality or nothing'
-    .slogan {
-        border: none;
-        // border: 1px solid $brand;
-        color: #ddd;
-        border-radius: 5px;
-        width: 100%;
-        margin: 0 auto;
-        outline: none;
-        text-align: center;
-        position: relative;
-        // top: 60vh;
-    
-        .slogan-p {
-            text-transform: capitalize;
-            margin: 0rem auto;
-            // padding: .5rem 0 0;
-            font-weight: 500;
-            color: $text-second;
-            border-radius: 5px;
-            // font-family: $font-ubuntu;
+        // SLOGAN 'quality or nothing'
+        .slogan {
             border: none;
+            // border: 1px solid $brand;
+            color: #ddd;
+            border-radius: 5px;
+            width: 100%;
+            margin: 0 auto;
             outline: none;
+            text-align: center;
             position: relative;
-            isolation: isolate;
-            font-size: 1.25rem;
-
-            span {
-                color: $text-second;
-                color: $brand-light;
-                font-weight: 500;
-                font-family: inherit;
+            // top: 60vh;
+            h1 {
+                text-transform: capitalize;
+                // padding: .5rem 0;
+                color: $text-light;
+                font-weight: 400;
+                font-size: 1.05rem;
+                text-transform: capitalize;
+                margin: .5rem 0;
             }
-
-        }
-
-        p {
-            text-transform: capitalize;
-            // padding: .5rem 0;
-            color: #fff;
-            font-weight: 200;
-            font-size: 1rem;
-        }
-
-        @media (min-width: 768px) {
-            // top: 20vh;
-            // height: 30vh;
-            // width: 50rem;
-            // width: max-content;
-            padding: .5rem;
-            font-size: 1.5rem;
-            // backdrop-filter: blur(.1rem);
-            // background-color: #000;
-            // border-radius: 10px;
-            // border: 1px solid green;
             .slogan-p {
-                font-size: 2rem;
+                text-transform: capitalize;
+                margin: 0rem auto;
+                // padding: .5rem 0 0;
+                font-weight: 200;
+                color: $text-second;
+                border-radius: 5px;
+                // font-family: $font-ubuntu;
+                border: none;
+                outline: none;
+                position: relative;
+                isolation: isolate;
+                font-size: 1rem;
+    
+                span {
+                    color: $text-second;
+                    color: $brand-light;
+                    font-weight: 400;
+                    font-family: inherit;
+                }
+    
+            }
+    
+            
+    
+            @media (min-width: 768px) {
+                // top: 20vh;
+                // height: 30vh;
+                // width: 50rem;
+                // width: max-content;
+                padding: .5rem;
+                font-size: 1.5rem;
+                // backdrop-filter: blur(.1rem);
+                // background-color: #000;
+                // border-radius: 10px;
+                // border: 1px solid green;
+                .slogan-p {
+                    font-size: 2rem;
+                }
             }
         }
     }

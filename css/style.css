@@ -1045,7 +1045,7 @@
 }
 #hero .hero-title {
   position: absolute;
-  bottom: 20vh;
+  bottom: 15vh;
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -1064,7 +1064,7 @@
     z-index: 100;
   }
 }
-#hero .slogan {
+#hero .hero-title .slogan {
   border: none;
   color: #ddd;
   border-radius: 5px;
@@ -1074,36 +1074,38 @@
   text-align: center;
   position: relative;
 }
-#hero .slogan .slogan-p {
+#hero .hero-title .slogan h1 {
+  text-transform: capitalize;
+  color: #fafafa;
+  font-weight: 400;
+  font-size: 1.05rem;
+  text-transform: capitalize;
+  margin: 0.5rem 0;
+}
+#hero .hero-title .slogan .slogan-p {
   text-transform: capitalize;
   margin: 0rem auto;
-  font-weight: 500;
+  font-weight: 200;
   color: #f4f4f4;
   border-radius: 5px;
   border: none;
   outline: none;
   position: relative;
   isolation: isolate;
-  font-size: 1.25rem;
-}
-#hero .slogan .slogan-p span {
-  color: #f4f4f4;
-  color: #ffa500;
-  font-weight: 500;
-  font-family: inherit;
-}
-#hero .slogan p {
-  text-transform: capitalize;
-  color: #fff;
-  font-weight: 200;
   font-size: 1rem;
 }
+#hero .hero-title .slogan .slogan-p span {
+  color: #f4f4f4;
+  color: #ffa500;
+  font-weight: 400;
+  font-family: inherit;
+}
 @media (min-width: 768px) {
-  #hero .slogan {
+  #hero .hero-title .slogan {
     padding: 0.5rem;
     font-size: 1.5rem;
   }
-  #hero .slogan .slogan-p {
+  #hero .hero-title .slogan .slogan-p {
     font-size: 2rem;
   }
 }
@@ -1614,7 +1616,7 @@
   padding: 5vh 1rem;
   margin: 5vh 0 0;
 }
-.container #about .vision-mission .mission h4 {
+.container #about .vision-mission .mission h3 {
   color: #000;
   font-size: 1.5rem;
   font-weight: 500;
@@ -1624,12 +1626,12 @@
   transition: 0.3s;
   text-align: center;
 }
-.container #about .vision-mission .mission h4[data-scroll] {
+.container #about .vision-mission .mission h3[data-scroll] {
   transition: 2s;
   transform: scale(1);
   letter-spacing: 0.2rem;
 }
-.container #about .vision-mission .mission h4[data-scroll=in] {
+.container #about .vision-mission .mission h3[data-scroll=in] {
   letter-spacing: normal;
 }
 .container #about .vision-mission .mission p {
