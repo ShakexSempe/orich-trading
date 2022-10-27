@@ -92,6 +92,10 @@
                 font-size: 1.05rem;
                 text-transform: capitalize;
                 margin: .5rem 0;
+                @include lg {
+                    font-size: 2rem;
+                    margin: 0;
+                }
             }
             .slogan-p {
                 text-transform: capitalize;
@@ -113,9 +117,11 @@
                     font-weight: 400;
                     font-family: inherit;
                 }
-    
+                @include lg {
+                    font-size: 1.5rem;
+                }
             }
-    
+            
             
     
             @media (min-width: 768px) {
@@ -124,14 +130,11 @@
                 // width: 50rem;
                 // width: max-content;
                 padding: .5rem;
-                font-size: 1.5rem;
                 // backdrop-filter: blur(.1rem);
                 // background-color: #000;
                 // border-radius: 10px;
                 // border: 1px solid green;
-                .slogan-p {
-                    font-size: 2rem;
-                }
+                
             }
         }
     }
