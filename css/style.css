@@ -219,7 +219,7 @@
 @media (min-width: 1024px) {
   .loader_bg .loader {
     bottom: none;
-    top: 30vh;
+    top: 28vh;
     width: 20rem;
     height: 2.9rem;
     padding: 0.5rem 1rem;
@@ -607,15 +607,16 @@
   }
   #header .navigation aside ul li.aside-dropdown:hover {
     transition: 0.2s;
-    border-color: #fff4;
+    border-color: #fff8;
     border-radius: 0;
   }
   #header .navigation aside ul li.aside-dropdown:hover button {
     color: #ffa500;
+    transition: 0.2s;
   }
   #header .navigation aside ul li.aside-dropdown:hover button i {
     transition: 0.2s;
-    color: #fff8;
+    color: #fff6;
   }
   #header .navigation aside ul li.aside-dropdown:hover button i.fa-caret-down {
     transform: rotate(180deg);

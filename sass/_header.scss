@@ -180,15 +180,16 @@
 
                             &:hover {
                                 transition: .2s;
-                                border-color: #fff4;
+                                border-color: #fff8;
                                 border-radius: 0;
 
                                 button {
                                     color: $brand-light;
+                                    transition: .2s;
 
                                     i {
                                         transition: .2s;
-                                        color: #fff8;
+                                        color: #fff6;
 
                                         &.fa-caret-down {
                                             transform: rotate(180deg);
