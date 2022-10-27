@@ -187,16 +187,13 @@
 
             &::before {
                 background: $brand-btn;
-                box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.500),
-                    inset -2px -2px 2px rgba(0, 0, 0, 0.500);
+                box-shadow: $box-shadow-sm;
             }
 
             &::after {
                 opacity: 0;
                 background: $brand-btn-hover;
-                box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.500),
-                    inset -2px -2px 2px rgba(255, 255, 255, 0.500),
-                    1px 1px 3px rgba(0, 0, 0, 0.381);
+                box-shadow: $box-shadow-sm-hover;
             }
             @media (max-width:1024px){
                 &:active {
