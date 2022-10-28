@@ -371,13 +371,13 @@
                     }
                 }
                 &.cta {
-                    bottom: 30vh;
+                    bottom: 20vh;
                     display: flex;
                     flex-direction: column;
 
                     a {
                         padding: .7rem 0;
-                        margin: .5rem 0;
+                        margin: .25rem 0;
                         // border: 2px solid #fff;
                         border-radius: $border-radius-md;
                         text-align: center;
@@ -404,7 +404,7 @@
                             }
                             &::before {
                                 box-shadow: $box-shadow-sm;
-                                background-color: rgba(0, 0, 0, 0.700);
+                                background-color: rgba(0, 0, 0, 0.90);
                             }
                             &:after {
                                 opacity: 0;
@@ -515,7 +515,7 @@
             .page-link {
                 position: absolute;
                 overflow: hidden;
-                bottom: 20vh;
+                bottom: 12vh;
                 z-index: 5;
                 // border: 1px solid #000;
                 background-color: #000a;

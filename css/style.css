@@ -454,9 +454,8 @@
   position: fixed;
   top: 0;
   width: 100%;
-  transition: 1s;
   z-index: 20;
-  transition: all 0.5s;
+  transition: all 0.25s;
 }
 #header.index-header {
   background-color: #fff;
@@ -895,6 +894,9 @@
 #header.main-header {
   background: #fff;
 }
+#header.menu-header {
+  background: transparent;
+}
 
 #banner {
   height: auto;
@@ -1306,13 +1308,13 @@
   transform: translateX(0);
 }
 #menu .menu-section figure figcaption.cta {
-  bottom: 30vh;
+  bottom: 20vh;
   display: flex;
   flex-direction: column;
 }
 #menu .menu-section figure figcaption.cta a {
   padding: 0.7rem 0;
-  margin: 0.5rem 0;
+  margin: 0.25rem 0;
   border-radius: 1rem;
   text-align: center;
   color: #fff;
@@ -1336,7 +1338,7 @@
 }
 #menu .menu-section figure figcaption.cta a.enquiry::before {
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.5), 2px 3px 2px rgba(0, 0, 0, 0.15);
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 #menu .menu-section figure figcaption.cta a.enquiry:after {
   opacity: 0;
@@ -1433,7 +1435,7 @@
 #menu .menu-section figure .page-link {
   position: absolute;
   overflow: hidden;
-  bottom: 20vh;
+  bottom: 12vh;
   z-index: 5;
   background-color: #000a;
   border-radius: 1.5rem;

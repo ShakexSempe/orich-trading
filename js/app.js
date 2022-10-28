@@ -106,3 +106,23 @@ const mainObserver = new IntersectionObserver(
     }, mainOptions
 );
 mainObserver.observe(main);
+
+// MENU OBSERVER
+const menu = document.getElementById("menu");
+const menuOptions = {
+    rootMargin: '0px 0px -90% 0px',
+};
+const menuObserver = new IntersectionObserver(
+    function(entries, menuObserver){
+        entries.forEach(entry => {
+            if(!entry.isIntersecting){
+                console.log('Menu NOT io');
+                header.classList.remove('menu-header');
+            } else {
+                console.log('menu IS io');
+                header.classList.add('menu-header');
+            }
+        })
+    }, menuOptions
+);
+menuObserver.observe(menu);

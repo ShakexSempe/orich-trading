@@ -2,9 +2,8 @@
     position: fixed;
     top: 0;
     width: 100%;
-    transition: 1s;
     z-index: 20;
-    transition: all .5s;
+    transition: all .25s;
     // CHANGE BG COLOR ON SCROLL
     // HEADER CLASSES FOR IO
     &.index-header {
@@ -568,5 +567,9 @@
     }
     &.main-header {
         background: #fff;
+    }
+    &.menu-header {
+        // background: green;
+        background: transparent;
     }
 }
