@@ -2327,7 +2327,7 @@
   transform: translateX(2rem);
   opacity: 0;
 }
-.services .service-container .service-item[data-scroll=in] h3 {
+.services .service-container .service-item[data-scroll=in] h4 {
   transition: 1.8s;
   color: #000;
 }
