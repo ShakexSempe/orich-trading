@@ -324,12 +324,30 @@
                         p {
                             color: #fff;
                             font-weight: 300;
-                            transition: 1s;
+                            transition: 1.5s;
                             a {
                                 color: #f4f4f4;
                                 font-weight: 400;
                                 // text-decoration: none;
                                 text-underline-offset: .2rem;
+                            }
+                        }
+                        // IO-ITEM 
+                        &.io-item {
+                            h2 {
+                                letter-spacing: .05rem;
+                            }
+                            p {
+                                transform: translateY(5vh);
+                            }
+                        }
+                        // ACTIVE ITEM 
+                        &.active-item {
+                            h2 {
+                                letter-spacing: normal;
+                            }
+                            p {
+                                transform: translateY(0);
                             }
                         }
                         // DESKTOP
@@ -559,6 +577,8 @@
         @media (min-width: 820px){
             background-repeat: no-repeat;
             background-size: cover;
+            // border: 2px solid red;
+            height: 110vh;
             &#menu-1 {
                 background-image: url('../img/work.jpg');
                 background-image: url('../img/project.jpg');
@@ -580,7 +600,7 @@
             background-repeat: no-repeat;
                 background-position: center top;
                 background-size: cover;
-                background-attachment: fixed;
+                // background-attachment: fixed;
             }
             &#menu-4 {
                 background: #fff000;

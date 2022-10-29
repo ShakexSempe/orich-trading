@@ -126,3 +126,54 @@ const menuObserver = new IntersectionObserver(
     }, menuOptions
 );
 menuObserver.observe(menu);
+
+// SECTION TITLE INTERSECTION OBSERVERS
+// const topLine = document.querySelector(".decoration-line");
+const titles = document.querySelectorAll(".section-title");
+const titlesOptions = {
+    rootMargin: '00% 0px -50% 0px',
+}
+
+titles.forEach(title => {
+    const titleObserver = new IntersectionObserver(
+        function(entries, titleObserver){
+            entries.forEach(entry => {
+                if(!entry.isIntersecting) {
+                    console.log("title NOT io");
+                    title.classList.remove("active-title");
+                    // topLine.classList.add('active-line');
+                } else {
+                    console.log("title is io");
+                    title.classList.add("active-title");
+                    // topLine.classList.remove('active-line');
+
+                }
+            });
+        }, titlesOptions
+    );
+
+    titleObserver.observe(title);
+});
+
+
+const ioItem = document.querySelectorAll('.io-item');
+const itemOptions = {
+    rootMargin: '0px 0px -30% 0px', 
+} 
+
+ioItem.forEach(item => {
+    const itemObserver = new IntersectionObserver(
+        function(entries, itemObserver) {
+            entries.forEach(entry => {
+                if(!entry.isIntersecting){
+                    console.log("Item NOT io");
+                    item.classList.remove("active-item");
+                } else {
+                    console.log("Item IS io");
+                    item.classList.add("active-item");
+                }
+            })
+        }, itemOptions
+    );
+    itemObserver.observe(item);
+});

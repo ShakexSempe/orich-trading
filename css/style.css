@@ -1267,12 +1267,24 @@
 #menu .menu-section figure figcaption.menu-title .cta-content p {
   color: #fff;
   font-weight: 300;
-  transition: 1s;
+  transition: 1.5s;
 }
 #menu .menu-section figure figcaption.menu-title .cta-content p a {
   color: #f4f4f4;
   font-weight: 400;
   text-underline-offset: 0.2rem;
+}
+#menu .menu-section figure figcaption.menu-title .cta-content.io-item h2 {
+  letter-spacing: 0.05rem;
+}
+#menu .menu-section figure figcaption.menu-title .cta-content.io-item p {
+  transform: translateY(5vh);
+}
+#menu .menu-section figure figcaption.menu-title .cta-content.active-item h2 {
+  letter-spacing: normal;
+}
+#menu .menu-section figure figcaption.menu-title .cta-content.active-item p {
+  transform: translateY(0);
 }
 @media (min-width: 820px) {
   #menu .menu-section figure figcaption.menu-title .cta-content h2 {
@@ -1473,6 +1485,7 @@
   #menu .menu-section {
     background-repeat: no-repeat;
     background-size: cover;
+    height: 110vh;
   }
   #menu .menu-section#menu-1 {
     background-image: url("../img/work.jpg");
@@ -1493,7 +1506,6 @@
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    background-attachment: fixed;
   }
   #menu .menu-section#menu-4 {
     background: #fff000;
@@ -3099,6 +3111,9 @@
   }
 }
 @media (min-width: 768px) {
+  #footer {
+    padding: 5vh 5vw 0;
+  }
   #footer h2 {
     text-align: center;
     margin: 0 auto;
