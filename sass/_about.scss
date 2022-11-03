@@ -7,7 +7,7 @@
         .about-article {
             // border: 1px solid $brand;
             background: $bg-main;
-            border-radius: 5px;
+            // border-radius: 5px;
             margin: 1rem 1rem;
             text-transform: none;
             line-height: 1.6;
@@ -36,19 +36,37 @@
                     line-height: 1.6;
                     // font-weight: 200;
                 }
-                span {
+                &::first-letter {
                     font-size: 2rem;
                     padding-right: 0.1em;
                     background: #000;
+                    color: #fff;
                     float: left;
                     margin-right: 0.1em;
-                    border-radius: 2px;
-                    box-shadow: 2px 3px 0 #4855634b;
-                    color: #fff;
+                    border-radius: .25rem;
+                    box-shadow: 2px 3px 3px #4855634b;
                     text-shadow: 2px 2px 0px #f8650c;
-                
                 }
-
+                .article-link {
+                    color: #000;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    display: block;
+                    position: relative;
+                    transition: .25s;
+                    &::before {
+                        content: '~';
+                        color: $brand;
+                        margin-right: .25rem;
+                        transition: .25s;
+                    }
+                    &:hover {
+                        color: $brand;
+                        &::before {
+                            opacity: .5;
+                        }
+                    }
+                }
                 // DATA SCROLL
                 &[data-scroll] {
                     transition: 1.5s;
