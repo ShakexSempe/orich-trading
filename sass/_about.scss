@@ -234,6 +234,7 @@
                         text-align: center;
                         display: grid;
                         place-items: center;
+                        place-content: center;
                         padding: .5rem;
                         @media (min-width: 768px) {
                             flex-basis: 20%;
@@ -249,26 +250,54 @@
                                 margin: 0 0rem;
                             }
                         }
+                        // VIEW SERVICES LINK
+                        a {
+                            text-transform: capitalize;
+                            text-decoration: none;
+                            color: $brand;
 
+                        }
                         // DATA-SCROLL
                         &[data-scroll] {
-                            transition: 1.5s; 
+                            transition: 1.5s;
                             opacity: 1;
                             transform: scale(1);
 
                             p {
                                 opacity: .0;
                                 transform: translateY(-5vh);
-                                transition: 1.5s;
+                            }
+
+                            a {
+                                letter-spacing: .25rem;
+                                opacity: 0;
                             }
                         }
+
                         &[data-scroll="in"] {
                             transform: scale(1);
 
                             p {
                                 opacity: 1;
                                 transform: translateY(0);
-                                transition-delay: .5s;
+                                transition: 1.5s .5s;
+                            }
+
+                            a {
+                                opacity: 1;
+                                letter-spacing: normal;
+                                transition: 1.5s 1s;
+                                @media (max-width: 820px){
+                                    &:active {
+                                        opacity: .5;
+                                    }
+                                }
+                                @media (min-width: 820px){
+                                    &:hover {
+                                        opacity: .5;
+                                    }
+                                }
+
                             }
                         }
                     }

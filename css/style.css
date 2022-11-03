@@ -1715,6 +1715,7 @@
   text-align: center;
   display: grid;
   place-items: center;
+  place-content: center;
   padding: 0.5rem;
 }
 @media (min-width: 768px) {
@@ -1732,6 +1733,11 @@
 .container #about .vision-mission .mission .statement .mission-content p span {
   margin: 0 0rem;
 }
+.container #about .vision-mission .mission .statement .mission-content a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #f8650c;
+}
 .container #about .vision-mission .mission .statement .mission-content[data-scroll] {
   transition: 1.5s;
   opacity: 1;
@@ -1740,7 +1746,10 @@
 .container #about .vision-mission .mission .statement .mission-content[data-scroll] p {
   opacity: 0;
   transform: translateY(-5vh);
-  transition: 1.5s;
+}
+.container #about .vision-mission .mission .statement .mission-content[data-scroll] a {
+  letter-spacing: 0.25rem;
+  opacity: 0;
 }
 .container #about .vision-mission .mission .statement .mission-content[data-scroll=in] {
   transform: scale(1);
@@ -1748,7 +1757,22 @@
 .container #about .vision-mission .mission .statement .mission-content[data-scroll=in] p {
   opacity: 1;
   transform: translateY(0);
-  transition-delay: 0.5s;
+  transition: 1.5s 0.5s;
+}
+.container #about .vision-mission .mission .statement .mission-content[data-scroll=in] a {
+  opacity: 1;
+  letter-spacing: normal;
+  transition: 1.5s 1s;
+}
+@media (max-width: 820px) {
+  .container #about .vision-mission .mission .statement .mission-content[data-scroll=in] a:active {
+    opacity: 0.5;
+  }
+}
+@media (min-width: 820px) {
+  .container #about .vision-mission .mission .statement .mission-content[data-scroll=in] a:hover {
+    opacity: 0.5;
+  }
 }
 @media (min-width: 820px) {
   .container #about .vision-mission {
