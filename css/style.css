@@ -1755,7 +1755,7 @@
 .container #about .vision-mission .mission .statement .mission-content a {
   text-transform: capitalize;
   text-decoration: none;
-  color: #f8650c;
+  color: #ffa500;
 }
 .container #about .vision-mission .mission .statement .mission-content[data-scroll] {
   transition: 1.5s;
