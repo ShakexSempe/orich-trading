@@ -2197,7 +2197,7 @@
 }
 .services .service-container {
   margin: 1rem auto 0;
-  background: #fafafa;
+  background: #ffff;
   border-radius: 5px;
 }
 .services .service-container.index-container .service-item .service-type ul {
@@ -2217,13 +2217,14 @@
   border-top-left-radius: 5px;
 }
 .services .service-container .service-item {
-  background-color: #f4f4f4f4;
+  background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10vh 0 0;
   margin: 1rem auto;
   margin: 0 auto 1rem;
+  border-radius: 0.5rem;
   width: 100%;
   overflow: hidden;
 }
@@ -2289,17 +2290,6 @@
   margin: 1rem auto;
   border-radius: 5px;
   position: relative;
-}
-.services .service-container .service-item .service-type ul::after {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  transform: scale(0);
-  height: 3px;
-  background: linear-gradient(90deg, #f8650c, #ffa500, #f8650c);
-  border-radius: 5px;
 }
 .services .service-container .service-item .service-type ul li {
   margin: 0.5rem 0;
@@ -3254,7 +3244,7 @@
 .container .section-title h2::after {
   position: absolute;
   content: "";
-  bottom: -0.3rem;
+  bottom: -0.2rem;
   left: 50%;
   transform: translateX(-50%);
   width: 0;
