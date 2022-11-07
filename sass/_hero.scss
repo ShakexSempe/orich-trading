@@ -76,7 +76,7 @@
         .slogan {
             border: none;
             // border: 1px solid $brand;
-            color: #ddd;
+            color: $text-light;
             border-radius: 5px;
             width: 100%;
             margin: 0 auto;
@@ -121,8 +121,10 @@
                     font-size: 1.5rem;
                 }
             }
-            
-            
+            p {
+                color: $text-light;
+                font-weight: 200;
+            }
     
             @media (min-width: 768px) {
                 // top: 20vh;

@@ -1069,7 +1069,7 @@
 }
 #hero .hero-title .slogan {
   border: none;
-  color: #ddd;
+  color: #fafafa;
   border-radius: 5px;
   width: 100%;
   margin: 0 auto;
@@ -1113,6 +1113,10 @@
   #hero .hero-title .slogan .slogan-p {
     font-size: 1.5rem;
   }
+}
+#hero .hero-title .slogan p {
+  color: #fafafa;
+  font-weight: 200;
 }
 @media (min-width: 768px) {
   #hero .hero-title .slogan {
