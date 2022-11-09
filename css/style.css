@@ -384,6 +384,24 @@
   color: #fff7;
   transition: 1s;
 }
+@media (min-width: 820px) {
+  .footer-nav .item:hover a {
+    opacity: 0.7;
+  }
+  .footer-nav .item:hover i {
+    color: #f8650c;
+    transition: 0.25s;
+  }
+}
+@media (max-width: 820px) {
+  .footer-nav .item:active a {
+    opacity: 0.7;
+  }
+  .footer-nav .item:active i {
+    color: #f8650c;
+    transition: 0.25s;
+  }
+}
 @media (min-width: 1024px) {
   .footer-nav .item {
     transform: translateX(-2rem);

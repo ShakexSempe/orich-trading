@@ -425,6 +425,30 @@
                 // opacity: .8;
                 transition: 1s;
             }
+
+        }
+        // HOVER AND ACTIVE CLASSES
+        @media (min-width: 820px) {
+            &:hover {
+                a {
+                    opacity: .7;
+                }
+                i {
+                    color: $brand;
+                    transition: .25s;
+                }
+            }
+        }
+        @media (max-width: 820px) {
+            &:active {
+                a {
+                    opacity: .7;
+                }
+                i {
+                    color: $brand;
+                    transition: .25s;
+                }
+            }
         }
         @include xlg {
             transform: translateX(-2rem);
