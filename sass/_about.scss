@@ -24,8 +24,9 @@
                 text-justify: inter-word;
                 a {
                     display: block;
-                    // text-transform: capitalize;
+                    text-transform: capitalize;
                     color: $brand;
+                    font-weight: 400;
                     text-decoration: none;
                 }
 
@@ -55,8 +56,9 @@
                     position: relative;
                     transition: .25s;
                     &::before {
-                        content: '~';
+                        content: '-';
                         color: $brand;
+                        font-weight: 500;
                         margin-right: .25rem;
                         transition: .25s;
                     }
