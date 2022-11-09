@@ -202,7 +202,7 @@
             }
             @media (max-width:1024px){
                 &:active {
-                    transform: scale(.95);
+                    transform: scale(.97);
                     letter-spacing: normal;
     
                     &::before {
@@ -216,7 +216,7 @@
             }
             @media (min-width: 1024px){
                 &:hover {
-                    transform: scale(.95);
+                    transform: scale(.97);
                     letter-spacing: normal;
     
                     &::before {

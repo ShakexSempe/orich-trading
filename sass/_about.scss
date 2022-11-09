@@ -24,10 +24,12 @@
                 text-justify: inter-word;
                 a {
                     display: block;
+                    width: max-content;
                     text-transform: capitalize;
                     color: $brand;
                     font-weight: 400;
                     text-decoration: none;
+                    // border: 1px solid red;
                 }
 
                 // FONT-UBUNTU ON SMALL SCREENS

@@ -1191,7 +1191,7 @@
 }
 @media (max-width: 1024px) {
   #hero #cta .cta-btn:active {
-    transform: scale(0.95);
+    transform: scale(0.97);
     letter-spacing: normal;
   }
   #hero #cta .cta-btn:active::before {
@@ -1203,7 +1203,7 @@
 }
 @media (min-width: 1024px) {
   #hero #cta .cta-btn:hover {
-    transform: scale(0.95);
+    transform: scale(0.97);
     letter-spacing: normal;
   }
   #hero #cta .cta-btn:hover::before {
@@ -1561,6 +1561,7 @@
 }
 .container #about .about-article p a {
   display: block;
+  width: max-content;
   text-transform: capitalize;
   color: #f8650c;
   font-weight: 400;
