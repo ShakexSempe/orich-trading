@@ -12,9 +12,10 @@
     width: 100%;
 
     .contact-title {
-        margin: 0 0 10vh;
+        margin: 0 0 15vh;
         color: #000;
         font-weight: 500;
+        // font-size: 1.25rem;
         // margin: 0 1rem;
         position: relative;
         &::after {
@@ -27,6 +28,13 @@
             background: $brand-overlay;
             border-radius: 5px;
             transition: 2s;
+        }
+        @include md {
+            font-size: 2rem;
+            &::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
 
         &[data-scroll] {
@@ -66,7 +74,6 @@
 
         input, textarea {
             padding: 1rem .5rem;
-            border-radius: 5px;
             outline: none;
             resize: none;
             border: none;
