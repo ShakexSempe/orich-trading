@@ -207,7 +207,7 @@
             // align-items: flex-end;
             // position: relative;
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
             margin: 10vh 5vw 5vh;
             gap: 1rem;
             padding: 5vh 5vw;
@@ -238,7 +238,8 @@
                 z-index: 2;
                 text-align: center;
                 background: transparent;
-                // border: 1px solid red;
+                background: transparent;
+                border: 1px solid #0005;
                 // text-align: right;
                 header {
                     font-size: 1.5rem;
