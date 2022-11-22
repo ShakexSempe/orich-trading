@@ -4,6 +4,10 @@
     width: 100%;
     z-index: 20;
     transition: all .25s;
+    // border: 2px solid yellow;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     // CHANGE BG COLOR ON SCROLL
     // HEADER CLASSES FOR IO
     &.index-header {
