@@ -5,9 +5,9 @@
     z-index: 20;
     transition: all .25s;
     // border: 2px solid yellow;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    // display: flex;
+    // align-items: center;
+    // justify-content: flex-end;
     // CHANGE BG COLOR ON SCROLL
     // HEADER CLASSES FOR IO
     &.index-header {
@@ -575,5 +575,11 @@
     &.menu-header {
         // background: green;
         background: transparent;
+        .toggle {
+            .bar {
+                transform: scale(0);
+                transition: .5s;
+            }
+        }
     }
 }

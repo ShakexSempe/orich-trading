@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Red+Hat+Display&family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;800&display=swap");
 .toggle {
+  float: right;
   font-size: 20px;
-  height: 1em;
-  width: 1em;
+  border-radius: 50%;
+  height: 1.5em;
+  width: 1.5em;
   outline-offset: -2px;
   border: none;
   outline: none;
@@ -14,18 +16,22 @@
   padding: 0.2em 0;
   overflow: hidden;
   z-index: 5;
-  border: 2px solid transparent;
+  position: fixed;
+  right: 5vw;
+  right: 1rem;
+  top: 0.5rem;
   border-left-color: transparent;
   border-right-color: transparent;
+  border: none;
   transition: 0.5s;
 }
 .toggle .bar {
-  background-color: #fff;
+  background-color: #f4f4f4;
   background-color: #f8650c;
-  height: 2px;
-  width: 100%;
-  transition: 0.5s;
+  width: 60%;
+  height: 0.1em;
   position: relative;
+  transition: 0.2s;
 }
 .toggle .bar::before, .toggle .bar::after {
   position: absolute;
@@ -34,25 +40,20 @@
   left: 0;
   width: 100%;
   height: 100%;
-  transition: 0s;
+  transition: 0.2s;
   background-color: inherit;
 }
-.toggle .bar:before {
-  transform: translateY(0.25rem);
+.toggle .bar::before {
+  transform: translateY(-0.25em);
 }
-.toggle .bar:after {
-  transform: translateY(-0.25rem);
+.toggle .bar::after {
+  transform: translateY(0.25em);
 }
-.toggle.active {
-  border-radius: 50%;
-  border-color: #f8650c;
+.toggle.active .bar::before {
+  transform: translateY(-0.25em) translateX(0.25em);
 }
-.toggle.active .bar {
-  transform: scale(0.5);
-  background-color: #000;
-}
-.toggle.active .bar::after, .toggle.active .bar::before {
-  transform: scale(0);
+.toggle.active .bar::after {
+  transform: translateY(0.25em) translateX(-0.25rem);
 }
 
 .section-btn {
@@ -475,9 +476,6 @@
   width: 100%;
   z-index: 20;
   transition: all 0.25s;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
 }
 #header.index-header {
   background-color: #fff;
@@ -918,6 +916,10 @@
 }
 #header.menu-header {
   background: transparent;
+}
+#header.menu-header .toggle .bar {
+  transform: scale(0);
+  transition: 0.5s;
 }
 
 #banner {
