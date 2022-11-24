@@ -1579,7 +1579,7 @@
     line-height: 1.6;
   }
 }
-.container .about .about-article p::first-letter {
+.container .about .about-article p.article-intro::first-letter {
   font-size: 2rem;
   padding-right: 0.1em;
   background: #000;

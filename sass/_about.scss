@@ -39,6 +39,7 @@
                     line-height: 1.6;
                     // font-weight: 200;
                 }
+                &.article-intro {
                 &::first-letter {
                     font-size: 2rem;
                     padding-right: 0.1em;
@@ -50,6 +51,7 @@
                     box-shadow: 2px 3px 3px #4855634b;
                     text-shadow: 2px 2px 0px #f8650c;
                 }
+            }
                 .article-link {
                     color: #000;
                     font-weight: 500;
