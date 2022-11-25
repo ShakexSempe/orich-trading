@@ -1869,7 +1869,7 @@
   padding-top: 5vh;
 }
 .container#about-page main .about-overview {
-  padding: 0vh 1rem 5vh;
+  padding: 0vh 0 5vh;
 }
 .container#about-page main .about-overview .page-article p {
   margin-bottom: 1rem;
