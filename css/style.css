@@ -918,8 +918,8 @@
   background: transparent;
 }
 #header.menu-header .toggle .bar {
-  transform: scale(0);
-  transition: 0.5s;
+  background-color: #fff;
+  transition: 0.25s;
 }
 
 #banner {
