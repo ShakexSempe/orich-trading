@@ -444,7 +444,7 @@
     width: 5vw;
     flex-direction: column;
     align-items: center;
-    padding: 0.5rem;
+    padding: 0;
     transform: translateY(0) translateX(-15vw);
     background: transparent;
   }
