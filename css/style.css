@@ -1884,72 +1884,80 @@
 .container#about-page main {
   padding-top: 5vh;
 }
-.container#about-page main .about-overview {
+.container#about-page main .article-container {
   padding: 0vh 0 5vh;
 }
-.container#about-page main .about-overview .page-article p {
+.container#about-page main .article-container .page-article p {
   margin-bottom: 1rem;
   font-size: 1rem;
   line-height: 1.6;
   font-weight: 300;
 }
-.container#about-page main .about-overview .page-article p.article-intro {
+.container#about-page main .article-container .page-article p.article-intro {
   margin-bottom: 10vh;
   line-height: 1.6;
 }
-.container#about-page main .about-overview .page-article p[data-scroll] {
+.container#about-page main .article-container .page-article p[data-scroll] {
   transition: 1.5s;
   transform: scale(1) translateY(10vh);
 }
-.container#about-page main .about-overview .page-article p[data-scroll=in] {
+.container#about-page main .article-container .page-article p[data-scroll=in] {
   transform: scale(1) translateY(0);
 }
-.container#about-page main .about-overview .page-article .article-pad {
+.container#about-page main .article-container .page-article .article-pad {
   background-color: #fff;
   width: 100%;
   margin: 5vh auto;
 }
-.container#about-page main .about-overview .page-article .article-pad figure {
+.container#about-page main .article-container .page-article .article-pad figure {
   width: 50%;
   overflow: hidden;
   margin: 1rem auto;
 }
-.container#about-page main .about-overview .page-article .article-pad figure img {
+.container#about-page main .article-container .page-article .article-pad figure img {
   width: 100%;
 }
-.container#about-page main .about-overview .page-article .article-pad figure[data-scroll] {
+.container#about-page main .article-container .page-article .article-pad figure[data-scroll] {
   transform: scale(1) translateY(10vh);
   opacity: 0;
 }
-.container#about-page main .about-overview .page-article .article-pad figure[data-scroll=in] {
+.container#about-page main .article-container .page-article .article-pad figure[data-scroll=in] {
   transform: translateY(0);
   opacity: 1;
   transition: 2s;
 }
 @media (min-width: 768px) {
-  .container#about-page main .about-overview {
+  .container#about-page main .article-container {
     padding: 0 5vw;
   }
-  .container#about-page main .about-overview .page-article p {
+  .container#about-page main .article-container .page-article {
+    width: 70%;
+  }
+  .container#about-page main .article-container .page-article p {
     font-size: 1.15rem;
   }
-  .container#about-page main .about-overview .page-article .article-pad {
-    width: 15rem;
+  .container#about-page main .article-container .page-article .article-pad {
+    width: 10rem;
     float: left;
     overflow: hidden;
     margin-right: 0.5rem;
     margin: 0 0.5rem 0 0;
-    border: 2px solid #000;
+    border: 3px solid #000;
     border-radius: 0.5rem;
   }
-  .container#about-page main .about-overview .page-article .article-pad figure {
+  .container#about-page main .article-container .page-article .article-pad figure {
     margin: 0;
     width: 100%;
     height: auto;
   }
-  .container#about-page main .about-overview .page-article .article-pad figure img {
+  .container#about-page main .article-container .page-article .article-pad figure img {
     width: 100%;
     height: auto;
+  }
+  .container#about-page main .article-container .page-article .article-pad.reverse {
+    float: right;
+    margin-right: 0;
+    margin-left: 0.25rem;
   }
 }
 .container#about-page main .vision-mission {
