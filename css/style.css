@@ -2024,7 +2024,7 @@
 .container#about-page main .vision-mission .mission {
   background: #f4f4f4;
   padding: 5vh 5vw;
-  margin: 5vh 0 0;
+  margin: 10vh 0 0;
 }
 .container#about-page main .vision-mission .mission h4 {
   color: #000;
@@ -2041,8 +2041,6 @@
   font-weight: 400;
 }
 .container#about-page main .vision-mission .mission .statement {
-  border: 1px solid #f8650c;
-  border-radius: 5px;
   padding: 0.5rem;
   width: 100%;
   margin-bottom: 1rem;
@@ -2054,14 +2052,15 @@
 }
 .container#about-page main .vision-mission .mission .term .objective {
   padding: 0.5rem;
-  border: 1px solid #f8650c;
-  border-radius: 5px;
 }
 .container#about-page main .vision-mission .mission .ms-item {
-  transition: 0.3s;
+  border-radius: 0.25rem;
+  border: 1px solid #f8650c;
+  transition: 0.25s;
 }
 .container#about-page main .vision-mission .mission .ms-item:hover {
   background: #fff;
+  border: 1px solid transparent;
 }
 .container#about-page main .vision-mission .mission .ms-item:hover p {
   transition: 0.1s;
@@ -2107,8 +2106,6 @@
     padding: 10vh 5vw;
   }
   .container#about-page main .vision-mission .mission .statement {
-    border: 1px solid #f8650c;
-    border-radius: 5px;
     padding: 0.5rem;
     width: 100%;
   }
@@ -2119,7 +2116,6 @@
   .container#about-page main .vision-mission .mission .term .objective {
     flex-basis: 50%;
     padding: 0.5rem;
-    border: 1px solid #f8650c;
   }
 }
 
