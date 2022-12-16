@@ -1931,7 +1931,7 @@
     padding: 0 5vw;
   }
   .container#about-page main .article-container .page-article {
-    width: 70%;
+    width: 50%;
   }
   .container#about-page main .article-container .page-article p {
     font-size: 1.15rem;
@@ -1964,14 +1964,12 @@
   padding: 1rem 0;
 }
 .container#about-page main .vision-mission .vision {
-  background: #f8650c;
-  background: linear-gradient(45deg, #f8650c, #ffa500);
+  background: #000;
   color: #f4f4f4;
   padding: 0.5rem 0.5rem;
-  border-radius: 5px;
+  border-radius: 0.25rem;
   margin: 0 1rem;
   overflow: hidden;
-  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 2px 3px 2px rgba(0, 0, 0, 0.15);
 }
 .container#about-page main .vision-mission .vision h3 {
   font-size: 2.5rem;
@@ -1990,6 +1988,7 @@
   height: 0.2rem;
   border-radius: 5px;
   background: #f4f4f4;
+  background: #f8650c;
   transition: 1.5s;
 }
 .container#about-page main .vision-mission .vision h3[data-scroll] {
@@ -1997,16 +1996,23 @@
   opacity: 1;
 }
 .container#about-page main .vision-mission .vision h3[data-scroll=in]::after {
-  width: 70%;
+  width: 25%;
+}
+@media (min-width: 768px) {
+  .container#about-page main .vision-mission .vision h3[data-scroll=in]::after {
+    width: 10%;
+  }
 }
 .container#about-page main .vision-mission .vision ul {
   padding: 0.5rem 0 0 1rem;
 }
 .container#about-page main .vision-mission .vision ul li {
   padding-bottom: 1rem;
+  font-weight: 400;
 }
 .container#about-page main .vision-mission .vision ul li::marker {
   color: #f4f4f4;
+  color: #fff6;
 }
 .container#about-page main .vision-mission .vision ul li[data-scroll] {
   transform: scale(1) translateX(3rem);
@@ -2086,15 +2092,16 @@
   .container#about-page main .vision-mission .vision {
     padding: 5vh 0.5rem;
     margin: 0 5vw;
+    margin: 0 auto;
+    width: 50%;
   }
   .container#about-page main .vision-mission .vision h3 {
+    text-align: center;
     font-size: 2.5rem;
+    width: auto;
   }
   .container#about-page main .vision-mission .vision ul li {
     padding-bottom: 1rem;
-  }
-  .container#about-page main .vision-mission .vision ul li::marker {
-    color: #f4f4f4;
   }
   .container#about-page main .vision-mission .mission {
     padding: 10vh 5vw;

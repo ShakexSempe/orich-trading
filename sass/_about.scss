@@ -449,7 +449,7 @@
                         padding: 0 5vw;
                         .page-article {
                             // border: 2px solid yellow;
-                            width: 70%;
+                            width: 50%;
                             p {
                                 font-size: 1.15rem;
                             }
@@ -488,14 +488,15 @@
                 // border: 1px solid $brand;
                 padding: 1rem 0;
                 .vision {
-                    background: $brand;
-                    background: $brand-overlay-dark;
+                    // background: $brand;
+                    // background: $brand-overlay-dark;
+                    background: #000;
                     color: $text-second;
                     padding: .5rem .5rem;
-                    border-radius: 5px;
+                    border-radius: .25rem;
                     margin: 0 1rem;
                     overflow: hidden;
-                    box-shadow: $box-shadow-sm;
+                    // box-shadow: $box-shadow-sm;
                     
                     h3 {
                         font-size: 2.5rem;
@@ -514,6 +515,7 @@
                             height: .2rem;
                             border-radius: 5px;
                             background: #f4f4f4;
+                            background: $brand;
                             transition: 1.5s;
                         }
 
@@ -524,7 +526,10 @@
                         }
                         &[data-scroll="in"] {
                             &::after {
-                                width: 70%;
+                                width: 25%;
+                                @include md {
+                                    width: 10%;
+                                }
                             }
                         }
                     }
@@ -533,9 +538,11 @@
                         padding: .5rem 0 0 1rem;
                         li {
                             padding-bottom: 1rem;
+                            font-weight: 400;
 
                             &::marker {
                                 color: $marker;
+                                color: #fff6;
                             }
 
                             // FONT-UBUNTU ON SMALL SCREENS
@@ -639,11 +646,15 @@
                     padding: 5vh 0 0;
                     margin-top: 10vh;
                     .vision {
+                        // background: #333;
                         padding: 5vh .5rem;
                         margin: 0 5vw;
-
+                        margin: 0 auto;
+                        width: 50%;
                         h3 {
+                            text-align: center;
                             font-size: 2.5rem;
+                            width: auto;
                         }
 
                         ul {
@@ -651,7 +662,7 @@
                             li {
                                 padding-bottom: 1rem;
                                 &::marker {
-                                    color: $marker;
+                                    // color: $marker;
                                 }
                             }
                         }
