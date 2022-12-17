@@ -561,11 +561,13 @@
                 }
                 .mission {
                     background: #f4f4f4;
+                    background: #000;
                     padding: 5vh 5vw;
                     margin: 10vh 0 0;
 
                     h4 {
                         color: #000;
+                        color: #fff;
                         font-size: 1.25rem;
                         font-weight: 500;
                         margin-bottom: 1rem;
@@ -579,6 +581,7 @@
                         line-height: 1.6;
                         transition: .3s;
                         font-weight: 400;
+                        color: #fff;
                         // FONT-UBUNTU ON SMALL SCREENS
                         @media (max-width: 768px) {
                             // font-family: $font-ubuntu;
@@ -604,15 +607,17 @@
                     .ms-item {
                         border-radius: .25rem;
                         border: 1px solid $brand;
+                        background: #111;
                         transition: .25s;
 
-                        &:hover {
-                            background: #fff;
-                            border: 1px solid transparent;
-                            p {
-                                transition: .1s;
-                            }
-                        }
+                        // &:hover {
+                        //     background: #fff;
+                        //     background: #000;
+                        //     border: 1px solid transparent;
+                        //     p {
+                        //         transition: .1s;
+                        //     }
+                        // }
 
                         &[data-scroll] {
                             transform: scale(1);
@@ -629,11 +634,25 @@
                         &[data-scroll="in"]{
                             h4 {
                                 color: #000;
+                                color: #fff;
                                 transition: 1s;
                             }
                             p {
                                 transition: 1.5s;
                                 opacity: 1;
+                            }
+                            &:hover {
+                                background: #fff;
+                                background: #000;
+                                transition: .5s;
+                                border: 1px solid transparent;
+                                h4 {
+                                    color: $brand;
+                                    transition: .5s;
+                                }
+                                p {
+                                    transition: .1s;
+                                }
                             }
                         }
                     }
