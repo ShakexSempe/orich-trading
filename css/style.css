@@ -1616,7 +1616,6 @@
 }
 .container .about .about-article p .article-link::before {
   content: "-";
-  color: #f8650c;
   font-weight: 500;
   margin-right: 0.25rem;
   transition: 0.25s;
