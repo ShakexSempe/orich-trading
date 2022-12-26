@@ -1100,7 +1100,10 @@
 @media (min-width: 1024px) {
   #hero .hero-title {
     background: rgba(0, 0, 0, 0.9);
+    background: linear-gradient(0deg, transparent, #000);
+    background: linear-gradient(#000 50%, transparent);
     height: 25vh;
+    height: 50vh;
     top: 0vh;
     padding-top: 5vh;
     bottom: none;
