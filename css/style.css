@@ -3315,7 +3315,6 @@
   text-align: center;
   text-transform: capitalize;
   font-size: 1.35rem;
-  letter-spacing: 0.2rem;
   padding: 5vh 0;
   overflow: hidden;
 }
@@ -3333,20 +3332,23 @@
   height: 0.2rem;
   background: linear-gradient(90deg, #f8650c, #ffa500, #f8650c);
   border-radius: 5px;
-  transition: 2s;
+  transition: 0.5s;
 }
 .container .section-title h2[data-scroll] {
-  transform: scale(1);
-  opacity: 1;
-  letter-spacing: 0.3rem;
+  transform: translateY(-10vh);
+  opacity: 0;
+  transition: 1s;
 }
 .container .section-title h2[data-scroll=in] {
-  letter-spacing: normal;
-  opacity: 1;
   transition: 1.5s;
+  opacity: 1;
+  transform: translateY(0);
 }
 .container .section-title h2[data-scroll=in]::after {
   width: 25%;
+  transform: translateX(-50%);
+  transition: 1.5s;
+  transition-delay: 1s;
 }
 @media (min-width: 768px) {
   .container .section-title h2[data-scroll=in]::after {
