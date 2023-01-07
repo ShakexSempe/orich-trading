@@ -1631,7 +1631,7 @@
 }
 .container .about .about-article p[data-scroll] {
   transition: 1.5s;
-  transform: scale(1) translateY(0vh);
+  transform: scale(1) translateY(5vh);
 }
 .container .about .about-article p[data-scroll=in] {
   transform: scale(1) translateY(0);

@@ -75,7 +75,7 @@
                 // DATA SCROLL
                 &[data-scroll] {
                     transition: 1.5s;
-                    transform: scale(1) translateY(0vh);
+                    transform: scale(1) translateY(5vh);
                 }
                 &[data-scroll="in"] {
                     transform: scale(1) translateY(0);
@@ -609,16 +609,6 @@
                         border: 1px solid $brand;
                         background: #111;
                         transition: .25s;
-
-                        // &:hover {
-                        //     background: #fff;
-                        //     background: #000;
-                        //     border: 1px solid transparent;
-                        //     p {
-                        //         transition: .1s;
-                        //     }
-                        // }
-
                         &[data-scroll] {
                             transform: scale(1);
                             opacity: 1;
