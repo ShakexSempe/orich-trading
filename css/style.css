@@ -3339,6 +3339,9 @@
   opacity: 0;
   transition: 1s;
 }
+.container .section-title h2[data-scroll]::after {
+  transform: translateX(-50%) translateY(0);
+}
 .container .section-title h2[data-scroll=in] {
   transition: 1.5s;
   opacity: 1;
@@ -3346,8 +3349,8 @@
 }
 .container .section-title h2[data-scroll=in]::after {
   width: 25%;
-  transform: translateX(-50%);
-  transition: 1.5s;
+  transform: translateX(-50%) translateY(0);
+  transition: 1s;
   transition-delay: 1s;
 }
 @media (min-width: 768px) {

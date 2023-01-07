@@ -64,6 +64,9 @@
                         transform: translateY(-10vh);
                         opacity: 0;
                         transition: 1s;
+                        &::after {
+                            transform: translateX(-50%) translateY(0);
+                        }
                 }
 
                 &[data-scroll="in"] {
@@ -72,8 +75,8 @@
                     transform: translateY(0);
                     &::after {
                         width: 25%;
-                        transform: translateX(-50%);
-                        transition: 1.5s;
+                        transform: translateX(-50%) translateY(0);
+                        transition: 1s;
                         transition-delay: 1s;
                         
                         @media (min-width: 768px) {
