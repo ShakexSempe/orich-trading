@@ -1095,6 +1095,50 @@
   border-radius: 0.5rem;
   overflow: hidden;
   cursor: pointer;
+  position: relative;
+  isolation: isolate;
+}
+.menu .menu-item .menu-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0005;
+  opacity: 0;
+  transition: 0.25s;
+}
+.menu .menu-item .menu-image figcaption {
+  position: absolute;
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: left;
+  opacity: 1;
+  z-index: 1;
+}
+.menu .menu-item .menu-image figcaption p {
+  transition: 1s;
+  opacity: 0;
+}
+.menu .menu-item .menu-image figcaption a {
+  background: #f8650c;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: block;
+  color: #fff;
+  width: fit-content;
+  text-decoration: none;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: 1s;
 }
 .menu .menu-item .menu-image img {
   width: 100%;
@@ -1106,6 +1150,16 @@
 .menu .menu-item:hover .menu-title h2 {
   color: #f8650c;
   transition: 0.25s;
+}
+.menu .menu-item:hover .menu-image::after {
+  opacity: 1;
+}
+.menu .menu-item:hover .menu-image figcaption p {
+  opacity: 1;
+}
+.menu .menu-item:hover .menu-image figcaption a {
+  transform: scale(1);
+  opacity: 1;
 }
 .menu .menu-item:hover .menu-image img {
   transform: scale(1.2);

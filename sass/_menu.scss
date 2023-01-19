@@ -58,6 +58,57 @@
             border-radius: .5rem;
             overflow: hidden;
             cursor: pointer;
+            position: relative;
+            isolation: isolate;
+            // OVERLAY 
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #0005;
+                opacity: 0;
+                transition: .25s;
+                // z-index: -1;
+
+            }
+            figcaption {
+                position: absolute;
+                // border: 2px solid yellow;
+                display: grid;
+                // place-items: center;
+                place-content: center;
+                gap: 1rem;
+                padding: 1rem;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                color: #fff;
+                text-align: left;
+                opacity: 1;
+                z-index: 1;
+                
+                p {
+                    transition: 1s;
+                    opacity: 0;
+                }
+                a {
+                    // border: 1px solid red;
+                    background: $brand;
+                    padding: .5rem;
+                    border-radius: .5rem;
+                    display: block;
+                    color: #fff;
+                    width: fit-content;
+                    text-decoration: none;
+                    transform: translateX(-100%);
+                    opacity: 0;
+                    transition: 1s;
+                }
+            }
             img {
                 width: 100%;
                 height: 40vh;
@@ -73,11 +124,24 @@
                     transition: .25s;
                 }
             }
+
             .menu-image {
-            img {
-                transform: scale(1.2);
+                &::after {
+                    opacity: 1;
+                }
+                figcaption {
+                    p {
+                        opacity: 1;
+                    }
+                    a {
+                        transform: scale(1);
+                        opacity: 1;
+                    }
+                }
+                img {
+                    transform: scale(1.2);
+                }
             }
-        }
         }
     }
     
