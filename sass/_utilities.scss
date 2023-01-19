@@ -395,12 +395,10 @@
     position: fixed;
     z-index: 5;
     bottom: 0;
-    // height: 7vh;
     height: auto;
     width: 100%;
     // border: 2px solid green;
     padding: .5rem 5vw;
-    // padding: .5rem 0;
     background: linear-gradient(0deg, #000, #111);
     display: flex;
     align-items: center;
@@ -423,8 +421,7 @@
             i {
                 font-size: 1.05rem;
                 color: $brand;
-                color: #fff7;
-                // opacity: .8;
+                color: #fff8;
                 transition: 1s;
             }
 
