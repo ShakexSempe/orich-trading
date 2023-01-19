@@ -497,6 +497,7 @@
         padding: 0;
         transform: translateY(0) translateX(-15vw);
         background:transparent;
+        display: none;
         // border-right: 1px solid #0002;
     }
     // FOOTER NAV IO
@@ -515,6 +516,14 @@
                 &:nth-child(3) {
                     transition-delay: .45s;
                 }
+            }
+        }
+    }
+    &.menu-footer {
+        .item {
+            a {
+                color: $brand;
+                transform: scale(2);
             }
         }
     }

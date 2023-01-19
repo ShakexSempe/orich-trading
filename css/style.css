@@ -447,6 +447,7 @@
     padding: 0;
     transform: translateY(0) translateX(-15vw);
     background: transparent;
+    display: none;
   }
 }
 .footer-nav.active-footer {
@@ -468,6 +469,10 @@
   .footer-nav.active-footer .item:nth-child(3) {
     transition-delay: 0.45s;
   }
+}
+.footer-nav.menu-footer .item a {
+  color: #f8650c;
+  transform: scale(2);
 }
 
 #header {
@@ -1041,6 +1046,71 @@
   transform: translateY(0);
 }
 
+.menu {
+  padding: 0vh 5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+}
+@media (min-width: 768px) {
+  .menu {
+    padding: 5vh 5vw;
+    gap: 5vw;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.menu .menu-item {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu .menu-item .menu-title {
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+  margin-bottom: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu .menu-item .menu-title h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  text-transform: capitalize;
+}
+@media (min-width: 768px) {
+  .menu .menu-item .menu-title h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+.menu .menu-item .menu-title i {
+  font-size: 1.5rem;
+  color: #0005;
+}
+.menu .menu-item .menu-image {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.menu .menu-item .menu-image img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+}
+.menu .menu-item:hover .menu-title h2 {
+  color: #f8650c;
+  transition: 0.25s;
+}
+.menu .menu-item:hover .menu-image img {
+  transform: scale(1.2);
+}
+
 #hero {
   min-height: 100vh;
   background-color: #fff;
@@ -1252,6 +1322,7 @@
 }
 
 #menu {
+  display: none;
   min-height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -1567,9 +1638,6 @@
 .container {
   position: relative;
 }
-.container .about {
-  padding: 5vh 0;
-}
 .container .about .about-article {
   background: #fff;
   margin: 1rem 1rem;
@@ -1635,10 +1703,6 @@
 }
 .container .about .about-article p[data-scroll=in] {
   transform: scale(1) translateY(0);
-}
-.container .about .vision-mission {
-  margin: 5vh 0;
-  padding: 1rem 0;
 }
 .container .about .vision-mission .vision {
   background: linear-gradient(0deg, #000, #111);
@@ -1846,6 +1910,7 @@
 @media (min-width: 820px) {
   .container .about .vision-mission {
     padding: 5vh 0 5vh;
+    margin: 5vh 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
