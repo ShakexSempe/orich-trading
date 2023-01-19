@@ -1076,7 +1076,7 @@
   justify-content: space-between;
 }
 .menu .menu-item .menu-title h2 {
-  font-size: 2rem;
+  font-size: 1.85rem;
   font-weight: 500;
   line-height: 1.25;
   text-transform: capitalize;
@@ -1089,7 +1089,8 @@
 }
 .menu .menu-item .menu-title i {
   font-size: 1.5rem;
-  color: #0005;
+  color: #000;
+  opacity: 0.6;
 }
 .menu .menu-item .menu-image {
   border-radius: 0.5rem;
@@ -1158,6 +1159,9 @@
 .menu .menu-item:hover .menu-title h2 {
   color: #f8650c;
   transition: 0.25s;
+}
+.menu .menu-item:hover .menu-title i {
+  opacity: 1;
 }
 .menu .menu-item:hover .menu-image::after {
   opacity: 1;

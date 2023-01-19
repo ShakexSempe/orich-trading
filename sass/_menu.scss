@@ -31,7 +31,7 @@
             align-items: center;
             justify-content: space-between;
             h2 {
-                font-size: 2rem;
+                font-size: 1.85rem;
                 // color: $brand;
                 font-weight: 500;
                 line-height: 1.25;
@@ -44,7 +44,8 @@
             i {
                 // position: absolute;
                 font-size: 1.5rem;
-                color: #0005;
+                color: #000;
+                opacity: .6;
                 // right: 0;
                 // top: 50%;
                 // transform: translateX(-50%);
@@ -131,6 +132,9 @@
                 h2 {
                     color: $brand;
                     transition: .25s;
+                }
+                i {
+                    opacity: 1;
                 }
             }
 
