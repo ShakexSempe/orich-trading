@@ -1136,7 +1136,6 @@
   transition: 0.5s;
 }
 .menu .menu-item .menu-image figcaption .cta-flex a {
-  border: 1px solid red;
   background: linear-gradient(0deg, #f8650c, #ffa500);
   margin-left: 1rem;
   padding: 0.5rem;
