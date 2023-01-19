@@ -453,13 +453,13 @@
             transform: translateX(-2rem);
             transition: 1s;
             a {
-                background-color: #fff;
+                background-color: transparent;
                 border-radius: 50%;
                 height: 3.5rem;
                 width: 3.5rem;
                 color: #000;
                 i {
-                    font-size: 1rem;
+                    font-size: 1.25rem;
                     color: $brand;
                 }
             }

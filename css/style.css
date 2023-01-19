@@ -410,14 +410,14 @@
     transition: 1s;
   }
   .footer-nav .item a {
-    background-color: #fff;
+    background-color: transparent;
     border-radius: 50%;
     height: 3.5rem;
     width: 3.5rem;
     color: #000;
   }
   .footer-nav .item a i {
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: #f8650c;
   }
   .footer-nav .item:hover a {
