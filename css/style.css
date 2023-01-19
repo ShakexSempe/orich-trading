@@ -3351,7 +3351,7 @@
   width: 25%;
   transform: translateX(-50%) translateY(0);
   transition: 1s;
-  transition-delay: 1s;
+  transition-delay: 0.5s;
 }
 @media (min-width: 768px) {
   .container .section-title h2[data-scroll=in]::after {
