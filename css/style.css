@@ -1113,7 +1113,7 @@
   position: absolute;
   display: grid;
   place-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 1rem;
   top: 0;
   left: 0;
@@ -1124,20 +1124,29 @@
   opacity: 1;
   z-index: 1;
 }
-.menu .menu-item .menu-image figcaption p {
-  transition: 1s;
-  opacity: 0;
+.menu .menu-item .menu-image figcaption .cta-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
 }
-.menu .menu-item .menu-image figcaption a {
+.menu .menu-item .menu-image figcaption .cta-flex i {
+  opacity: 0;
+  transform: translateX(-5vw);
+  transition: 0.5s;
+}
+.menu .menu-item .menu-image figcaption .cta-flex a {
+  border: 1px solid red;
   background: linear-gradient(0deg, #f8650c, #ffa500);
+  margin-left: 1rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  display: block;
   color: #fff;
-  width: fit-content;
+  display: block;
+  font-weight: 500;
   text-decoration: none;
-  transform: translateX(-100%);
   opacity: 0;
+  transform: translateY(5rem);
   transition: 1s;
 }
 .menu .menu-item .menu-image img {
@@ -1154,12 +1163,13 @@
 .menu .menu-item:hover .menu-image::after {
   opacity: 1;
 }
-.menu .menu-item:hover .menu-image figcaption p {
+.menu .menu-item:hover .menu-image figcaption .cta-flex i {
   opacity: 1;
+  transform: translateX(0);
 }
-.menu .menu-item:hover .menu-image figcaption a {
-  transform: scale(1);
+.menu .menu-item:hover .menu-image figcaption .cta-flex a {
   opacity: 1;
+  transform: translateY(0);
 }
 .menu .menu-item:hover .menu-image img {
   transform: scale(1.2);

@@ -80,7 +80,7 @@
                 display: grid;
                 // place-items: center;
                 place-content: center;
-                gap: 1rem;
+                gap: 1.5rem;
                 padding: 1rem;
                 top: 0;
                 left: 0;
@@ -90,23 +90,32 @@
                 text-align: left;
                 opacity: 1;
                 z-index: 1;
-                
-                p {
-                    transition: 1s;
-                    opacity: 0;
-                }
-                a {
-                    // border: 1px solid red;
-                    background: $brand-btn;
-                    padding: .5rem;
-                    border-radius: .5rem;
-                    display: block;
-                    color: #fff;
-                    width: fit-content;
-                    text-decoration: none;
-                    transform: translateX(-100%);
-                    opacity: 0;
-                    transition: 1s;
+                .cta-flex {
+                    // border: 2px solid blue;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    overflow: hidden;
+                    i {
+                        opacity: 0;
+                        transform: translateX(-5vw);
+                        transition: .5s;
+                    }
+                    a {
+                        border: 1px solid red;
+                        background: $brand-btn;
+                        margin-left: 1rem;
+                        padding: .5rem;
+                        border-radius: .5rem;
+                        color: #fff;
+                        display: block;
+                        font-weight: 500;
+                        // width: fit-content;
+                        text-decoration: none;
+                        opacity: 0;
+                        transform: translateY(5rem);
+                        transition: 1s;
+                    }
                 }
             }
             img {
@@ -130,12 +139,15 @@
                     opacity: 1;
                 }
                 figcaption {
-                    p {
-                        opacity: 1;
-                    }
-                    a {
-                        transform: scale(1);
-                        opacity: 1;
+                    .cta-flex {
+                        i {
+                            opacity: 1;
+                            transform: translateX(0);
+                        }
+                        a {
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
                     }
                 }
                 img {
