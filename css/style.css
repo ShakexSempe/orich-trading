@@ -1222,6 +1222,9 @@
   opacity: 0;
   transition: 1s;
 }
+.menu .menu-item.io-item .menu-image figcaption .cta-flex i {
+  opacity: 0;
+}
 .menu .menu-item.active-item .menu-title h2 {
   transform: translateY(0);
 }
@@ -1238,6 +1241,9 @@
 .menu .menu-item.active-item .menu-image figcaption p {
   opacity: 1;
   transition-delay: 0.5s;
+}
+.menu .menu-item.active-item .menu-image figcaption .cta-flex i {
+  opacity: 1;
 }
 .menu .menu-item.active-item .menu-image figcaption .cta-flex a:hover {
   transform: scale(0.98);

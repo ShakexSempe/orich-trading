@@ -214,17 +214,11 @@
                         opacity: 0;
                         transition: 1s;
                     }
-                    // .cta-flex {
-                    //     i {
-                    //         opacity: 0;
-                    //         transform: translateX(-5vw);
-                    //     }
-                    //     a {
-                    //         opacity: 0;
-                    //         transform: translateY(5rem);
-                        
-                    //     }
-                    // }
+                    .cta-flex {
+                        i {
+                            opacity: 0;
+                        }
+                    }
                 }
             }
         }
@@ -252,6 +246,9 @@
                         transition-delay: .5s;
                     }
                     .cta-flex {
+                        i {
+                            opacity: 1;
+                        }
                         a {
                             &:hover {
                                 transform: scale(.98);
