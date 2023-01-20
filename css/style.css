@@ -1207,6 +1207,7 @@
   transform: scale(1.2);
 }
 .menu .menu-item.io-item .menu-title h2 {
+  opacity: 0;
   transform: translateY(-5vh);
   transition: 1s;
 }
@@ -1226,6 +1227,7 @@
   opacity: 0;
 }
 .menu .menu-item.active-item .menu-title h2 {
+  opacity: 1;
   transform: translateY(0);
 }
 .menu .menu-item.active-item .menu-title i {
@@ -1234,7 +1236,7 @@
   transition-delay: 0.25s;
 }
 .menu .menu-item.active-item .menu-image::after {
-  opacity: 0.6;
+  opacity: 0.5;
   transition: 1.5s;
   transition-delay: 0.25s;
 }
@@ -1251,7 +1253,7 @@
 }
 .menu .menu-item.active-item:hover .menu-image::after {
   transition: 0.25s;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 #hero {

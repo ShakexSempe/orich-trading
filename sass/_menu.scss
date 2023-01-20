@@ -198,6 +198,7 @@
         &.io-item {
             .menu-title {
                 h2 {
+                    opacity: 0;
                     transform: translateY(-5vh);
                     transition: 1s;
                 }
@@ -226,6 +227,7 @@
         &.active-item {
             .menu-title {
                 h2 {
+                    opacity: 1;
                     transform: translateY(0);
                 }
                 i {
@@ -236,7 +238,7 @@
             }
             .menu-image {
                 &::after {
-                    opacity: .6;
+                    opacity: .5;
                     transition: 1.5s;
                     transition-delay: .25s;
                 }
@@ -262,7 +264,7 @@
                 .menu-image {
                     &::after {
                         transition: .25s;
-                        opacity: .8;
+                        opacity: .7;
                     }
                 }
             }
