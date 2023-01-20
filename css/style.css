@@ -471,8 +471,13 @@
   }
 }
 .footer-nav.menu-footer .item a {
+  transform: scale(1.2);
+}
+.footer-nav.menu-footer .item a i {
   color: #f8650c;
-  transform: scale(2);
+}
+.footer-nav.menu-footer .item:nth-child(2) i {
+  color: #fff5;
 }
 
 #header {
@@ -1239,7 +1244,7 @@
 }
 .menu .menu-item.active-item .menu-image::after {
   opacity: 0.5;
-  transition: 1.5s;
+  transition: 2s;
   transition-delay: 0.25s;
 }
 .menu .menu-item.active-item .menu-image figcaption p {

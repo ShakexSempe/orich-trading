@@ -522,8 +522,15 @@
     &.menu-footer {
         .item {
             a {
-                color: $brand;
-                transform: scale(2);
+                transform: scale(1.2);
+                i {
+                    color: $brand;
+                }
+            }
+            &:nth-child(2){
+                i {
+                color: #fff5;
+                }
             }
         }
     }

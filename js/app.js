@@ -108,9 +108,9 @@ const mainObserver = new IntersectionObserver(
 mainObserver.observe(main);
 
 // MENU OBSERVER
-const menu = document.getElementById("menu");
+const menu = document.getElementById("menu1");
 const menuOptions = {
-    rootMargin: '0px 0px -85% 0px',
+    rootMargin: '0px 0px -50% 0px',
 };
 const menuObserver = new IntersectionObserver(
     function(entries, menuObserver){
@@ -118,9 +118,11 @@ const menuObserver = new IntersectionObserver(
             if(!entry.isIntersecting){
                 console.log('Menu NOT io');
                 header.classList.remove('menu-header');
+                footerNav.classList.remove('menu-footer');
             } else {
                 console.log('menu IS io');
                 header.classList.add('menu-header');
+                footerNav.classList.add('menu-footer');
             }
         })
     }, menuOptions
