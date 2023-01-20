@@ -1219,7 +1219,7 @@
   opacity: 0;
 }
 .menu .menu-item.io-item .menu-image figcaption p {
-  opacity: 0.4;
+  opacity: 0;
   transition: 1s;
 }
 .menu .menu-item.active-item .menu-title h2 {

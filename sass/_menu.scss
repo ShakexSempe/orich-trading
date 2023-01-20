@@ -211,7 +211,7 @@
                 &::after {opacity: 0;}
                 figcaption {
                     p {
-                        opacity: .4;
+                        opacity: 0;
                         transition: 1s;
                     }
                     // .cta-flex {
@@ -228,6 +228,7 @@
                 }
             }
         }
+        // ACTIVE IO ITEM
         &.active-item {
             .menu-title {
                 h2 {
