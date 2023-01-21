@@ -470,14 +470,10 @@
     transition-delay: 0.45s;
   }
 }
-.footer-nav.menu-footer .item a {
-  transform: scale(1.2);
-}
-.footer-nav.menu-footer .item a i {
+.footer-nav.menu-footer .item.menu-target i {
   color: #f8650c;
-}
-.footer-nav.menu-footer .item:nth-child(2) i {
-  color: #fff5;
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 
 #header {

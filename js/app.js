@@ -110,7 +110,7 @@ mainObserver.observe(main);
 // MENU OBSERVER
 const menu = document.getElementById("menu1");
 const menuOptions = {
-    rootMargin: '0% 0px -30% 0px',
+    rootMargin: '0% 0px -70% 0px',
 };
 const menuObserver = new IntersectionObserver(
     function(entries, menuObserver){
