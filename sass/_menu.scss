@@ -179,7 +179,7 @@
 
             .menu-image {
                 &::after {
-                    opacity: .6;
+                    opacity: 1;
                 }
                 figcaption {
                     p {
@@ -267,8 +267,13 @@
                 .menu-image {
                     &::after {
                         transition: .25s;
-                        opacity: .7;
+                        opacity: .5;
                     }
+                }
+                img {
+                    transform: scale(1.05);
+                    transition: 1s;
+                    transition-delay: 0;
                 }
             }
         }
