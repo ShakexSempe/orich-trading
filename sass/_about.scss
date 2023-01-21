@@ -61,7 +61,8 @@
                     transition: .25s;
                     &::before {
                         content: '-';
-                        font-weight: 500;
+                        font-weight: 300;
+                        // opacity: .5;
                         margin-right: .25rem;
                         transition: .25s;
                     }

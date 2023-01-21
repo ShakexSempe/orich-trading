@@ -1837,7 +1837,7 @@
 }
 .container .about .about-article p .article-link::before {
   content: "-";
-  font-weight: 500;
+  font-weight: 300;
   margin-right: 0.25rem;
   transition: 0.25s;
 }
