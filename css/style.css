@@ -938,11 +938,7 @@
 }
 #header.menu-header::after {
   background: transparent;
-}
-@media (min-width: 768px) {
-  #header.menu-header::after {
-    background: #fff;
-  }
+  background: #fff;
 }
 #header.menu-header .toggle .bar {
   transform: scale(0.5);

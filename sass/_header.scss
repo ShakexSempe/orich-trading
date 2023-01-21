@@ -596,8 +596,8 @@
         background: none;
         &::after {
             background: transparent;
+            background: #fff;
             @include md {
-                background: #fff;
             }
         }
         .toggle {
