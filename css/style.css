@@ -946,106 +946,106 @@
 }
 
 #banner {
-  height: auto;
+  padding: 10vh 5vw;
   background-color: #fff;
   isolation: isolate;
 }
 @media (min-width: 768px) {
   #banner {
     margin: 0 5vw;
+    padding: 10vh 0vw;
   }
 }
-#banner .banner-bg {
-  position: sticky;
-  top: 7vh;
-  z-index: -1;
-  height: 95vh;
-}
-#banner .banner-bg img {
+#banner .banner-image-container {
   width: 100%;
-  height: 70%;
-  object-fit: cover;
-  object-position: 38% 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
 }
-@media (min-width: 1024px) {
-  #banner .banner-bg {
-    width: 50%;
-  }
-  #banner .banner-bg img {
-    height: 100%;
-    object-position: left;
+@media (min-width: 768px) {
+  #banner .banner-image-container {
+    flex-direction: row;
+    height: 70vh;
   }
 }
-#banner .banner-fg {
-  height: 95vh;
-}
-#banner .banner-fg img {
+#banner .banner-image-container figure {
   width: 100%;
-  height: 70%;
-  object-fit: cover;
-  object-position: 35%;
-}
-@media (min-width: 1024px) {
-  #banner .banner-fg img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    object-position: left;
-  }
-}
-#banner figure {
+  border-radius: 0.5rem;
   position: relative;
-}
-#banner figure figcaption {
   overflow: hidden;
-  padding: 0.5rem;
-  background: #f8650c;
-  background: #000;
-  font-size: 1.5rem;
+}
+#banner .banner-image-container figure img {
+  width: 100%;
+  border-radius: 0.5rem;
+  height: 100%;
+}
+@media (min-width: 820px) {
+  #banner .banner-image-container figure img {
+    object-fit: cover;
+  }
+}
+#banner .banner-image-container figure figcaption {
   position: absolute;
   top: 0;
-  left: 50%;
   width: 100%;
-  text-align: center;
-  transform: translateX(-50%);
+  height: 100%;
+  padding: 5vh 5vw;
+  background: #000;
+  clip-path: circle(5% at 90% 90%);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  animation: pulse 1.5s infinite ease;
 }
-#banner figure figcaption p {
-  font-weight: 300;
-  color: #000;
-  color: #ffff;
-}
-@media (min-width: 1024px) {
-  #banner figure figcaption {
-    left: 70vw;
-    top: 40vh;
-    background: #f8650c;
-    background: #000;
-    font-size: 2.5rem;
-    width: 40%;
-    border: 2px solid #f8650c;
-    border-radius: 5px;
-    font-size: 1.3rem;
-  }
-  #banner figure figcaption p {
-    color: #fff;
+@keyframes pulse {
+  50% {
+    background: #0008;
   }
 }
-#banner figure[data-scroll] {
-  transform: scale(1);
-  opacity: 1;
+@media (min-width: 576px) {
+  #banner .banner-image-container figure figcaption {
+    clip-path: circle(5% at 95% 5%);
+    padding: 1rem;
+  }
 }
-#banner figure[data-scroll] figcaption p {
+#banner .banner-image-container figure figcaption h3 {
+  color: #f8650c;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+#banner .banner-image-container figure figcaption p {
+  color: #fff;
+}
+#banner .banner-image-container figure figcaption span {
+  display: none;
+  position: absolute;
+  right: 0.5vw;
+  top: 5vh;
+  color: #f8650c;
+  border-radius: 50%;
+  background: #0006;
+  padding: 0.25rem 1rem;
+  font-size: 1rem;
+  transition: 1s;
+}
+@media (min-width: 576px) {
+  #banner .banner-image-container figure figcaption span {
+    right: 5vw;
+    top: 10vh;
+  }
+}
+@media (min-width: 768px) {
+  #banner .banner-image-container figure figcaption span {
+    right: 2vw;
+    top: 5vh;
+  }
+}
+#banner .banner-image-container figure figcaption:hover {
+  clip-path: circle(75%);
+  background: #0007;
+  animation: none;
+}
+#banner .banner-image-container figure figcaption:hover span {
   opacity: 0;
-  transform: translateY(-5vh);
-  transition: 1.5s;
-  transition-delay: 0.5s;
-}
-#banner figure[data-scroll=in] {
-  transform: scale(1);
-}
-#banner figure[data-scroll=in] figcaption p {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .menu {
