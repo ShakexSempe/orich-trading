@@ -97,8 +97,6 @@
 
                 p {
                     font-weight: 400;
-                    opacity: .6;
-                    transform: scale(.95);
                     transition: .5s;
                 }
                 .cta-flex {
@@ -220,6 +218,10 @@
                     opacity: 0;
                 }
                 figcaption {
+                    p {
+                        opacity: .6;
+                        transform: scale(.99);
+                    }
                     .cta-flex {
                         i {
                             opacity: 0;
@@ -268,6 +270,12 @@
                     &::after {
                         transition: .25s;
                         opacity: .5;
+                    }
+                    figcaption {
+                        p {
+                            opacity: 1;
+                            transform: scale(1);
+                        }
                     }
                 }
                 img {

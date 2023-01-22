@@ -24,6 +24,8 @@
         }
         figure {
             width: 100%;
+            width: auto;
+            height: 55vh;
             border-radius: .5rem;
             // border: 2px solid yellow;
             position: relative;
@@ -32,8 +34,15 @@
                 width: 100%;
                 border-radius: .5rem;
                 height: 100%;
+                object-fit: cover;
+                object-position: center;
                 @include lg {
                     object-fit: cover;
+                }
+            }
+            &:nth-child(2){
+                img {
+                    object-position: 30%;
                 }
             }
 
@@ -42,62 +51,96 @@
                 top: 0;
                 width: 100%;
                 height: 100%;
-                padding: 5vh 5vw;
+                padding: 1rem;
                 // border: 3px solid green;
                 // font-size: 1rem;
-                background: #000;
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.95) 30%, #0001 55%);
                 clip-path: circle(5% at 90% 90%);
                 transition: .5s ease-in-out;
                 cursor: pointer;
-                animation: pulse 1.5s infinite ease;
-                @keyframes pulse {
-                    50% {
-                        background: #0008;
-                    }
-                }
+                // animation: pulse 1.5s infinite ease;
+                // @keyframes pulse {
+                //     50% {
+                //         background: #0008;
+                //     }
+                // }
                 @include sm {
                 clip-path: circle(5% at 95% 5%);
                 padding: 1rem;
                 }
-
-                h3 {
-                    color: $brand;
-                    text-transform: capitalize;
-                    font-size: 1.5rem;
-                }
-                p {
-                    color: #fff;
-                }
-                span {
-                    display: none;
+                .banner-image-title {
+                    .flex-container {
+                        // border: 2px solid blue;
+                        display: flex;
+                        flex-direction: column;
+                        gap: .5rem;
+                    }
                     position: absolute;
-                    right: .5vw;
-                    top: 5vh;
-                    // float: right;
-                    color: $brand;
-                    border-radius: 50%;
-                    background: #0006;
-                    padding: .25rem 1rem;
-                    font-size: 1rem;
-                    transition: 1s;
-                    @include sm {
-                        right: 5vw;
-                        top: 10vh;
+                    bottom: 1rem;
+                    h3 {
+                        color: $text-light;
+                        text-transform: capitalize;
+                        font-size: 1.25rem;
+                        font-size: clamp(1.5rem, 1,5vw, 2rem);
+                        margin-bottom: .5rem;
                     }
-                    @include md {
-                        right: 2vw;
-                        top: 5vh;
-                    }
-                }
-                &:hover {
-                    clip-path: circle(75%);
-                    background: #0007;
-                    animation: none;
 
-                    span {
-                        opacity: 0;
+                    p {
+                        i {
+                            margin-right: .25rem;
+                            color: $brand;
+                        }
+                        color: $text-light;
+                        line-height: 1.6;
+                        span {
+                            color: $brand;
+                            margin-left: .25rem;
+                        }
+                        a {
+                            display: block;
+                            color: inherit;
+                            text-decoration: none;
+                        }
+                        &:hover {
+                            a {
+                                color: $brand;
+                                transition: .25s;
+                            }
+                        }
+                    }
+                    a {
+                        color: $text-light;
+                        text-decoration: none;
+                        i {
+                            color: $brand;
+                            margin-right: .25rem;
+                        }
+                    }
+                    // FLEX CONTAINER FOR DESKTOP TITLE
+                    @include md {
+                        width: 95%;
+                        margin: 0 auto;
+                        .flex-container {
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: space-between;
+                            border: 2px solid red;
+                            padding: 0 1rem;
+                        }
                     }
                 }
+            }
+            &:hover {
+                figcaption {
+                    clip-path: circle(75%);
+                    // background: #0007;
+                    animation: none;
+                }
+            }
+            // DESKTOP FIGURE
+            @include sm {
+                height: auto;
+                width: 100%;
             }
         }
     }
