@@ -976,9 +976,16 @@
   position: relative;
   overflow: hidden;
 }
+@media (min-width: 576px) {
+  #banner .banner-image-container figure {
+    height: auto;
+    width: 100%;
+  }
+}
 #banner .banner-image-container figure img {
   width: 100%;
   border-radius: 0.5rem;
+  transition: 0.5s;
   height: 100%;
   object-fit: cover;
   object-position: center;
@@ -998,9 +1005,15 @@
   height: 100%;
   padding: 1rem;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 30%, #0001 55%);
-  clip-path: circle(5% at 90% 90%);
+  clip-path: circle(5% at 90% 95%);
   transition: 0.5s ease-in-out;
   cursor: pointer;
+  animation: pulse 2s infinite ease;
+}
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
 }
 @media (min-width: 576px) {
   #banner .banner-image-container figure figcaption {
@@ -1009,20 +1022,31 @@
   }
 }
 #banner .banner-image-container figure figcaption .banner-image-title {
+  width: 90%;
+  margin: 0 auto;
   position: absolute;
   bottom: 1rem;
 }
 #banner .banner-image-container figure figcaption .banner-image-title .flex-container {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   gap: 0.5rem;
 }
 #banner .banner-image-container figure figcaption .banner-image-title h3 {
   color: #fafafa;
   text-transform: capitalize;
-  font-size: 1.25rem;
-  font-size: clamp(1.5rem, 1,5vw, 2rem);
+  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 1.5vw, 1.5rem);
   margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+#banner .banner-image-container figure figcaption .banner-image-title h4 {
+  color: #f8650c;
+  font-weight: 500;
+}
+#banner .banner-image-container figure figcaption .banner-image-title h4 span {
+  color: #fafafa;
 }
 #banner .banner-image-container figure figcaption .banner-image-title p {
   color: #fafafa;
@@ -1055,26 +1079,20 @@
 }
 @media (min-width: 768px) {
   #banner .banner-image-container figure figcaption .banner-image-title {
-    width: 95%;
     margin: 0 auto;
   }
   #banner .banner-image-container figure figcaption .banner-image-title .flex-container {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border: 2px solid red;
-    padding: 0 1rem;
   }
 }
 #banner .banner-image-container figure:hover figcaption {
   clip-path: circle(75%);
   animation: none;
 }
-@media (min-width: 576px) {
-  #banner .banner-image-container figure {
-    height: auto;
-    width: 100%;
-  }
+#banner .banner-image-container figure:hover img {
+  transform: scale(1.1);
 }
 
 .menu {
