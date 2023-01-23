@@ -108,26 +108,30 @@ const mainObserver = new IntersectionObserver(
 mainObserver.observe(main);
 
 // MENU OBSERVER
-const menu = document.getElementById("menu1");
+// const menu = document.getElementById("menu1");
+const menu = document.querySelectorAll('[data-active-footer]');
 const menuOptions = {
     rootMargin: '0% 0px -70% 0px',
 };
-const menuObserver = new IntersectionObserver(
-    function(entries, menuObserver){
-        entries.forEach(entry => {
-            if(!entry.isIntersecting){
-                console.log('Menu NOT io');
-                header.classList.remove('menu-header');
-                footerNav.classList.remove('menu-footer');
-            } else {
-                console.log('menu IS io');
-                header.classList.add('menu-header');
-                footerNav.classList.add('menu-footer');
-            }
-        })
-    }, menuOptions
-);
-menuObserver.observe(menu);
+menu.forEach(menu => {
+
+    const menuObserver = new IntersectionObserver(
+        function(entries, menuObserver){
+            entries.forEach(entry => {
+                if(!entry.isIntersecting){
+                    console.log('Menu NOT io');
+                    header.classList.remove('menu-header');
+                    footerNav.classList.remove('menu-footer');
+                } else {
+                    console.log('menu IS io');
+                    header.classList.add('menu-header');
+                    footerNav.classList.add('menu-footer');
+                }
+            })
+        }, menuOptions
+    );
+    menuObserver.observe(menu);
+})
 
 // SECTION TITLE INTERSECTION OBSERVERS
 // const topLine = document.querySelector(".decoration-line");
