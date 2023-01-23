@@ -1255,7 +1255,7 @@
   opacity: 0;
 }
 .menu .menu-item.io-item .menu-image figcaption p {
-  opacity: 0.6;
+  opacity: 0.8;
   transform: scale(0.99);
 }
 .menu .menu-item.io-item .menu-image figcaption .cta-flex i {
