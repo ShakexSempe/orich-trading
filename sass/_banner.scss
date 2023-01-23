@@ -140,6 +140,15 @@
                             color: $brand;
                             margin-right: .25rem;
                         }
+                        &:hover {
+                            color: $brand;
+                            transition: .25s;
+
+                            i {
+                                color: $text-light;
+                                transition: .25s;
+                            }
+                        }
                     }
                     // FLEX CONTAINER FOR DESKTOP TITLE
                     @include md {

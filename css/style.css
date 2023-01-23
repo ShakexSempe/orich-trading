@@ -1077,6 +1077,14 @@
   color: #f8650c;
   margin-right: 0.25rem;
 }
+#banner .banner-image-container figure figcaption .banner-image-title a:hover {
+  color: #f8650c;
+  transition: 0.25s;
+}
+#banner .banner-image-container figure figcaption .banner-image-title a:hover i {
+  color: #fafafa;
+  transition: 0.25s;
+}
 @media (min-width: 768px) {
   #banner .banner-image-container figure figcaption .banner-image-title {
     margin: 0 auto;
