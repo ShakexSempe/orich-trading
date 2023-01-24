@@ -184,9 +184,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 10vh 0 0;
-            margin: 1rem auto;
-            margin: 0 auto 1rem;
+            padding: 5vh 0 ;
+            margin: 0 auto 5vh;
             border-radius: $border-radius-sm;
             width: 100%;
             overflow: hidden;
@@ -203,7 +202,7 @@
                 padding: 0 .5rem;
                 h4 {
                     text-align: center;
-                    margin: 5vh auto 1rem;
+                    margin: 1rem auto 1rem;
                     text-transform: capitalize;
                     font-size: 1.5rem;
                     color: $brand;
@@ -256,7 +255,8 @@
                 ul {
                     // background: $brand-overlay-dark;
                     color: $text-second;
-                    padding: 5vh .5rem;
+                    // padding: 5vh .5rem;
+                    // border: 1px solid red;
                     list-style: none;
                     font-weight: 500;
                     width: 100%;
@@ -276,7 +276,7 @@
                     //     border-radius: 5px;
                     // }
                     li {
-                        margin: .5rem 0;
+                        // margin: .5rem 0;
                         padding: .5rem 0;
                         text-transform: capitalize;
                         font-weight: 400;
@@ -288,15 +288,19 @@
                             color: #000;
                             transition: .3s;
                         }
+                        &:last-child {
+                            margin-top: 1rem;
+                        }
                         // SERVICE ITEM BUTTONS
                         a {
                             // display: block;
+                            // border: 2px solid yellow;
                             width: 8rem;
                             text-align: center;
                             text-decoration: none;
                             padding: .5rem 1rem;
-                            // margin: 0 auto .5rem;
-                            border-radius: $border-radius-md;
+                            margin: 5rem auto .5rem;
+                            border-radius: $border-radius-sm;
                             outline: none;
                             color: #fff;
                             position: relative;
@@ -311,7 +315,7 @@
                                 width: 100%;
                                 height: 100%;
                                 background-color: $brand;
-                                border-radius: $border-radius-md;
+                                border-radius: $border-radius-sm;
                                 z-index: -1;
                                 transition: .2s;
                             }
