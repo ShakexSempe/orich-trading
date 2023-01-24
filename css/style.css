@@ -2920,7 +2920,7 @@
   text-align: center;
   font-size: 0.85rem;
   margin-left: 2rem;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   background: linear-gradient(0deg, #f8650c, #ffa500);
   text-transform: capitalize;
   color: #f4f4f4;
@@ -2936,7 +2936,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   transition: 0.2s;
   z-index: -1;
 }
