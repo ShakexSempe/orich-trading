@@ -197,7 +197,7 @@
   top: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #111;
+  background: linear-gradient(0deg, #000 10%, #111 40%);
   z-index: 999;
   display: grid;
   place-items: center;
