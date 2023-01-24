@@ -61,7 +61,7 @@
   width: 18rem;
   text-align: center;
   margin: 5vh auto;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   background: linear-gradient(0deg, #f8650c, #ffa500);
   background: transparent;
   color: #f4f4f4;
@@ -82,7 +82,7 @@
   height: 100%;
   transition: 0.5s ease;
   z-index: -1;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   border: none;
   outline: none;
 }
