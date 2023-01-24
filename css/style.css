@@ -210,7 +210,7 @@
   height: 2.75rem;
   width: 18rem;
   border: none;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   background: orangered;
   overflow: hidden;
   background: #000;
@@ -237,7 +237,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   border: none;
   outline: none;
 }
@@ -1467,7 +1467,7 @@
   width: 18rem;
   position: relative;
   isolation: isolate;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   transition: 0.3s;
   letter-spacing: 0.05rem;
 }
@@ -1484,7 +1484,7 @@
   width: 100%;
   height: 100%;
   border: none;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   z-index: -1;
   transition: 0.3s;
 }

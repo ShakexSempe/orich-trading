@@ -174,7 +174,7 @@
             }
             position: relative;
             isolation: isolate;
-            border-radius: 1rem;
+            border-radius: $border-radius-sm;
             transition: .3s;
             letter-spacing: .05rem;
 
@@ -188,7 +188,7 @@
                 width: 100%;
                 height: 100%;
                 border: none;
-                border-radius: $border-radius-md;
+                border-radius: $border-radius-sm;
                 z-index: -1;
                 transition: .3s;
             }
