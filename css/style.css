@@ -3166,8 +3166,7 @@
 }
 
 #form {
-  min-height: 100vh;
-  padding: 10vh 0;
+  padding: 10vh 0 5vh;
   margin: 5vh 5vw;
   overflow: hidden;
 }
@@ -3327,7 +3326,7 @@
   }
 }
 #footer .footer-contact .contact-item {
-  background-color: #f4f4f4;
+  background-color: #fafafa;
   border-radius: 0.5rem;
   margin: 1rem auto;
   padding: 1rem;
@@ -3364,7 +3363,7 @@
   margin: 1rem auto;
   transition: 0.5s;
   border: none;
-  background: #f4f4f4;
+  background: #fafafa;
   text-transform: capitalize;
 }
 @media (min-width: 768px) {
@@ -3378,7 +3377,7 @@
   text-decoration: none;
   background-image: linear-gradient(0deg, #f8650c, #ffa500);
   padding: 0.5em 1rem;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   transition: 0.5s;
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 2px 3px 2px rgba(0, 0, 0, 0.15);
 }
