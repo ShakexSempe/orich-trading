@@ -1281,7 +1281,7 @@
 }
 .menu .menu-item.io-item .menu-image figcaption p {
   opacity: 0;
-  transform: scale(0.99);
+  transform: scale(0.95);
 }
 .menu .menu-item.io-item .menu-image figcaption .cta-flex i {
   opacity: 0;
