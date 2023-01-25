@@ -1245,7 +1245,7 @@
   transition: 0.5s;
 }
 .menu .menu-item:hover .menu-title h2 {
-  font-weight: 600;
+  color: #f8650c;
   transition: 0.25s;
 }
 .menu .menu-item:hover .menu-image::after {
@@ -1307,6 +1307,9 @@
 }
 .menu .menu-item.active-item .menu-image figcaption .cta-flex a:hover {
   transform: scale(0.98);
+  transition: 0.25s;
+}
+.menu .menu-item.active-item:hover .menu-title h2 {
   transition: 0.25s;
 }
 .menu .menu-item.active-item:hover .menu-image::after {

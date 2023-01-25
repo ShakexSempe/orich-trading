@@ -169,8 +169,7 @@
         &:hover {
             .menu-title {
                 h2 {
-                    // color: $brand;
-                    font-weight: 600;
+                    color: $brand;
                     transition: .25s;
                 }
             }
@@ -266,6 +265,11 @@
                 }
             }
             &:hover {
+                .menu-title {
+                    h2 {
+                        transition: .25s;
+                    }
+                }
                 .menu-image {
                     &::after {
                         transition: .25s;
