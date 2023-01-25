@@ -2155,7 +2155,7 @@
 @media (min-width: 768px) {
   .container .about .about-article {
     width: 60%;
-    margin: 1rem auto;
+    margin: 5vh auto;
   }
   .container .about .about-article p {
     font-size: 1.15rem;
@@ -3182,7 +3182,7 @@
   margin: 0 0 5vh;
   color: #000;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 2rem;
   position: relative;
 }
 #form .contact-title::after {
@@ -3261,8 +3261,10 @@
   position: relative;
   isolation: isolate;
   transition: 0.25s;
-  letter-spacing: 0.15em;
   border-radius: 0.5rem;
+}
+#form button i {
+  margin-left: 0.5rem;
 }
 #form button::before, #form button::after {
   position: absolute;
