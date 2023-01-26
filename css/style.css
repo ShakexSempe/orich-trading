@@ -742,18 +742,7 @@
   #header .navigation aside.active .social-links a {
     opacity: 1;
     transform: translateY(0);
-  }
-  #header .navigation aside.active .social-links a:nth-child(1) {
-    transition-delay: 0.85s;
-  }
-  #header .navigation aside.active .social-links a:nth-child(2) {
-    transition-delay: 0.95s;
-  }
-  #header .navigation aside.active .social-links a:nth-child(3) {
-    transition-delay: 1.05s;
-  }
-  #header .navigation aside.active .social-links a:nth-child(4) {
-    transition-delay: 1.15s;
+    transition-delay: calc(.85s + .15s * var(--i));
   }
 }
 @media (min-width: 1024px) {
