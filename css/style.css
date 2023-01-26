@@ -1361,20 +1361,22 @@
   }
 }
 #hero .hero-title {
-  position: relative;
-  top: 65vh;
+  position: absolute;
+  bottom: 15vh;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 0.5rem 0;
 }
 @media (min-width: 576px) {
   #hero .hero-title {
-    top: 55vh;
+    bottom: 5vh;
     padding: 1rem;
     background: rgba(0, 0, 0, 0.9);
     border-radius: 0.5rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 820px) {
   #hero .hero-title {
-    top: 25vh;
+    bottom: 20vh;
     width: max-content;
     background: rgba(0, 0, 0, 0.85);
   }
