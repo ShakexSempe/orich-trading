@@ -66,10 +66,23 @@
                         margin-right: .25rem;
                         transition: .25s;
                     }
-                    &:hover {
-                        color: $brand;
-                        &::before {
-                            opacity: .5;
+                    // HOVER - ACTIVE MEDIA QUERY
+                    // DESKTOP HOVER
+                    @media (min-width: 768px){
+                        &:hover {
+                            color: $brand;
+                            &::before {
+                                opacity: .5;
+                            }
+                        }
+                    }
+                    // MOBILE ACTIVE
+                    @media (max-width: 768px){
+                        &:active {
+                            color: $brand;
+                            &::before {
+                                opacity: .5;
+                            }
                         }
                     }
                 }

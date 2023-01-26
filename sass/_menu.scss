@@ -2,18 +2,17 @@
     // border: .25rem solid $brand;
     // min-height: 100vh;
     padding: 0vh 5vw;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     gap: 10vh;
-    @include md {
-            // height: 100vh;
-            // height: 80vh;
-            padding: 10vh 5vw;
-            gap: 5vw;
-            // border: 2px solid blue;
-            flex-direction: row;
-            justify-content: space-between;
-        }
+    display: grid;
+    @include sm {
+        grid-template-columns: 1fr 1fr;
+        padding: 10vh 5vw;
+    }
+    @include xlg {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
         .menu-item {
             // border: 2px solid yellow; 
             flex-basis: 100%;
@@ -32,7 +31,8 @@
             justify-content: space-between;
             h2 {
                 overflow: hidden;
-                font-size: 1.5rem;
+                font-size: 1.25rem;
+                font-size: clamp(1.25rem, 1.5vw, 1.5rem);
                 // color: $brand;
                 font-weight: 500;
                 line-height: 1.25;
@@ -97,6 +97,8 @@
 
                 p {
                     font-weight: 400;
+                    padding: .25rem;
+                    border-radius: $border-radius-sm;
                     transition: .5s;
                 }
                 .cta-flex {
@@ -273,7 +275,7 @@
                 .menu-image {
                     &::after {
                         transition: .25s;
-                        opacity: .5;
+                        opacity: .65;
                     }
                     figcaption {
                         p {
