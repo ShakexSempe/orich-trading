@@ -1,5 +1,6 @@
 #hero {
     min-height: 100vh;
+    padding: 5vh 5vw;
     background-color: $primary-color;
     transition: 1.5s;
     background-image: url(../img/orich-hero.jpg);
@@ -28,15 +29,14 @@
     }
 
     // DESKTOP HERO
-    @media (min-width: 768px) {
+    @include md {
     // background-image: url(../img/work.jpg);
         background-image: url(../img/shivendu-shukla-3yoTPuYR9ZY-unsplash-min.jpg);
-        background-size: contain;
         background-size: cover;
         background-position: center 15%;
         background-attachment: fixed;
         z-index: 10;
-        display: grid;
+        // display: grid;
         // border: 3px solid red;
         &::after {
             position: absolute;
@@ -54,37 +54,50 @@
     // END OF DESKTOP HERO
     // HERO PAGE TITLE
     .hero-title {
-        // border:2px solid red;
+        // border:2px solid $brand;
         // background-color: blue;
-        position: absolute;
-        bottom: 15vh;
-        width: 100%;
-        @media (min-width: 768px){
-            // background: #ff0000;
-            height: 35vh;
-            bottom: 0vh;
-        }
-        @media (min-width: 1024px){
+        // position: absolute;
+        // bottom: 15vh;
+        // width: 100%;
+        position: relative;
+        top: 65vh;
+        @include sm {
+            top: 55vh;
+            padding: 1rem;
             background: rgba(0, 0, 0, .9);
-            background: linear-gradient(0deg, transparent, #000);
-            background: linear-gradient(#000 50%, transparent);
-            height: 25vh;
-            height: 50vh;
-            top: 0vh;
-            padding-top: 5vh;
-            bottom: none;
-            z-index: 100;
+            border-radius: $border-radius-sm;
         }
+        @include xlg {
+            top: 25vh;
+            width: max-content;
+            // border: 1px solid $brand;
+            background: rgba(0, 0, 0, .85);
+        }
+        // padding: 0 5vw;
+        // @media (min-width: 1024px){
+        //     // background: rgba(0, 0, 0, .9);
+        //     // background: linear-gradient(0deg, transparent, #000);
+        //     // background: linear-gradient(#000 50%, transparent);
+        //     // height: 25vh;
+        //     // height: 50vh;
+        //     top: 40vh;
+        //     border: 2px solid red;
+        //     // background: #000;
+        //     // padding-top: 5vh;
+        //     // bottom: none;
+        //     z-index: 100;
+        // }
         // SLOGAN 'quality or nothing'
         .slogan {
             border: none;
-            // border: 1px solid $brand;
+            // border: 1px solid blue;
             color: $text-light;
             border-radius: 5px;
             width: 100%;
             margin: 0 auto;
             outline: none;
             text-align: center;
+            text-align: left;
             position: relative;
             // top: 60vh;
             h1 {
@@ -153,12 +166,13 @@
         // left: 50%;
         // transform: translateX(-50%);
         transition: .3s;
-        text-align: center;
-
+        // text-align: center;
+        // display: flex;
+        // align-items: center;
         .cta-btn {
             padding: .7rem 1rem;
             font-size: 1rem;
-            margin: 1rem auto 0;
+            margin: 1rem 0;
             cursor: pointer;
             border: none;
             text-decoration: none;
@@ -168,8 +182,24 @@
             background: $brand-light;
             display: block;
             width: 18rem;
+            width: max-content;
+            
+            i {
+                margin-left: 1rem;
+                animation: arrow 1.5s infinite;
+                @keyframes arrow {
+                    0%, 100% {
+                        opacity: .5;
+                    }
+                    50% {
+                        transform: translateX(.25rem);
+                        opacity: 1;
+                    }
+                }
+            }
+            
             @media (min-width: 768px) {
-                width: 17rem;
+                // width: 17rem;
                 // top: 5vh;
             }
             position: relative;
@@ -203,11 +233,18 @@
                 background: $brand-btn-hover;
                 box-shadow: $box-shadow-sm-hover;
             }
+            &:hover, &:active {
+                i {
+                    animation: none;
+                }
+            }
             @media (max-width:1024px){
                 &:active {
                     transform: scale(.97);
                     letter-spacing: normal;
-    
+                    i {
+                        animation: none;
+                    }
                     &::before {
                         opacity: 0
                     }
@@ -241,9 +278,9 @@
             // transform: translateX(-50%);
 
             .cta-btn {
-                width: 20rem;
+                // width: 20rem;
                 padding: .5rem 1rem;
-                margin: 5vh auto 0;
+                // margin: 5vh auto 0;
                 font-size: 1.5rem; 
 
             }
