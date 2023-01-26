@@ -1362,15 +1362,15 @@
 #hero .hero-title {
   position: absolute;
   bottom: 15vh;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.7);
   padding: 0.5rem 0;
+  border-radius: 0.5rem;
 }
 @media (min-width: 576px) {
   #hero .hero-title {
     bottom: 5vh;
     padding: 1rem;
     background: rgba(0, 0, 0, 0.9);
-    border-radius: 0.5rem;
   }
 }
 @media (min-width: 820px) {
