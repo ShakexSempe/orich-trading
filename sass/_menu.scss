@@ -32,15 +32,14 @@
             h2 {
                 overflow: hidden;
                 font-size: 1.25rem;
-                font-size: clamp(1.25rem, 1.5vw, 1.5rem);
+                font-size: clamp(1.45rem, 2.25vw, 1.5rem);
                 // color: $brand;
                 font-weight: 500;
                 line-height: 1.25;
                 text-transform: capitalize;
-                @include md {
-                    font-size: 1.5rem;
-                    text-align: center;
-                }
+                // @include md {
+                //     font-size: 1.5rem;
+                // }
             }
             i {
                 display: none;

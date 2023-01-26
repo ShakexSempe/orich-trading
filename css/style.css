@@ -1126,16 +1126,10 @@
 .menu .menu-item .menu-title h2 {
   overflow: hidden;
   font-size: 1.25rem;
-  font-size: clamp(1.25rem, 1.5vw, 1.5rem);
+  font-size: clamp(1.45rem, 2.25vw, 1.5rem);
   font-weight: 500;
   line-height: 1.25;
   text-transform: capitalize;
-}
-@media (min-width: 768px) {
-  .menu .menu-item .menu-title h2 {
-    font-size: 1.5rem;
-    text-align: center;
-  }
 }
 .menu .menu-item .menu-title i {
   display: none;
