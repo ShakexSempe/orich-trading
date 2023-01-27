@@ -3203,10 +3203,13 @@
   font-size: 2rem;
   position: relative;
 }
+#form .contact-title h2 {
+  position: relative;
+}
 #form .contact-title::after {
   position: absolute;
   content: "";
-  bottom: -0.05em;
+  bottom: 0em;
   left: 0;
   width: 0;
   height: 0.2rem;
@@ -3497,7 +3500,7 @@
     border-radius: 5px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 820px) {
   #footer {
     padding: 5vh 5vw 0;
   }
@@ -3508,10 +3511,9 @@
   #footer .footer-contact {
     border: none;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     margin: 10vh 5vw 5vh;
     gap: 1rem;
-    padding: 5vh 5vw;
   }
   #footer .footer-contact figure {
     position: absolute;
