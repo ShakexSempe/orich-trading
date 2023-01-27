@@ -1411,7 +1411,7 @@
   color: #fafafa;
   font-weight: 400;
   font-size: 1.25rem;
-  font-size: clamp(1.25rem, 1.5vw, 2.25rem);
+  font-size: clamp(1.25rem, 5vw, 2rem);
   text-transform: capitalize;
   margin: 0.25rem 0;
 }
