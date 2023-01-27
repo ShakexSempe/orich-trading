@@ -1427,8 +1427,8 @@
   color: #f4f4f4;
   position: relative;
   isolation: isolate;
-  font-size: 1.25rem;
-  font-size: clamp(1rem, 1.25vw, 1.25rem);
+  font-size: 1.5vw;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
 }
 #hero .hero-title .slogan .slogan-p span {
   color: #ffa500;
