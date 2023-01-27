@@ -1094,17 +1094,35 @@
 
 .menu {
   padding: 0vh 5vw;
+}
+.menu .menu-title {
+  margin-bottom: 5vh;
+  background: linear-gradient(0deg, #f8650c, #ffa500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (min-width: 768px) {
+  .menu .menu-title {
+    text-align: center;
+  }
+}
+.menu .menu-title h2 {
+  text-transform: capitalize;
+  line-height: 1;
+  font-size: 3rem;
+}
+.menu .menu-grid {
   gap: 10vh;
   display: grid;
 }
 @media (min-width: 576px) {
-  .menu {
+  .menu .menu-grid {
     grid-template-columns: 1fr 1fr;
     padding: 10vh 5vw;
   }
 }
 @media (min-width: 1024px) {
-  .menu {
+  .menu .menu-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -1114,7 +1132,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.menu .menu-item .menu-title {
+.menu .menu-item .menu-item-title {
   overflow: hidden;
   position: relative;
   isolation: isolate;
@@ -1123,7 +1141,7 @@
   align-items: center;
   justify-content: space-between;
 }
-.menu .menu-item .menu-title h2 {
+.menu .menu-item .menu-item-title h2 {
   overflow: hidden;
   font-size: 1.25rem;
   font-size: clamp(1.45rem, 2.25vw, 1.5rem);
@@ -1131,7 +1149,7 @@
   line-height: 1.25;
   text-transform: capitalize;
 }
-.menu .menu-item .menu-title i {
+.menu .menu-item .menu-item-title i {
   display: none;
   font-size: 1.5rem;
   color: #000;
@@ -1232,7 +1250,7 @@
   border-radius: 0.5rem;
   transition: 0.5s;
 }
-.menu .menu-item:hover .menu-title h2 {
+.menu .menu-item:hover .menu-item-title h2 {
   color: #f8650c;
   transition: 0.25s;
 }
@@ -1255,7 +1273,7 @@
 .menu .menu-item:hover .menu-image img {
   transform: scale(1.2);
 }
-.menu .menu-item.io-item .menu-title h2 {
+.menu .menu-item.io-item .menu-item-title h2 {
   opacity: 0;
   transform: translateY(-5vh);
   transition: 1s;
@@ -1274,11 +1292,11 @@
 .menu .menu-item.io-item .menu-image figcaption .cta-flex i {
   opacity: 0;
 }
-.menu .menu-item.active-item .menu-title h2 {
+.menu .menu-item.active-item .menu-item-title h2 {
   opacity: 1;
   transform: translateY(0);
 }
-.menu .menu-item.active-item .menu-title i {
+.menu .menu-item.active-item .menu-item-title i {
   transform: translateX(0);
   opacity: 1;
   transition-delay: 0.25s;
@@ -1365,7 +1383,7 @@
   background: rgba(0, 0, 0, 0.8);
   padding: 0.25rem 0;
   border-radius: 0.5rem;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
 @media (min-width: 576px) {
