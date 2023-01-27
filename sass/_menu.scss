@@ -4,7 +4,7 @@
     .menu-title {
         // border: 2px solid red;
         
-        margin-bottom: 5vh;
+        margin-bottom: 10vh;
         background: $brand-btn;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -14,7 +14,8 @@
         h2 {
             text-transform: capitalize;
             line-height: 1;
-            font-size: 3rem;
+            font-size: 10vw;
+            font-size: clamp(1.5rem, 10vw, 2.5rem);
             span {
             }
         }

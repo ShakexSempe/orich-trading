@@ -1096,7 +1096,7 @@
   padding: 0vh 5vw;
 }
 .menu .menu-title {
-  margin-bottom: 5vh;
+  margin-bottom: 10vh;
   background: linear-gradient(0deg, #f8650c, #ffa500);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1109,7 +1109,8 @@
 .menu .menu-title h2 {
   text-transform: capitalize;
   line-height: 1;
-  font-size: 3rem;
+  font-size: 10vw;
+  font-size: clamp(1.5rem, 10vw, 2.5rem);
 }
 .menu .menu-grid {
   gap: 10vh;
