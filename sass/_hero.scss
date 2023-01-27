@@ -205,11 +205,11 @@
                 background: $brand-btn-hover;
                 box-shadow: $box-shadow-sm-hover;
             }
-            &:hover, &:active {
-                i {
-                    animation: none;
-                }
-            }
+            // &:hover, &:active {
+            //     i {
+            //         animation: none;
+            //     }
+            // }
             @media (max-width:1024px){
                 &:active {
                     transform: scale(.97);
@@ -230,7 +230,9 @@
                 &:hover {
                     transform: scale(.97);
                     letter-spacing: normal;
-    
+                    i {
+                        animation: none;
+                    }
                     &::before {
                         opacity: 0
                     }
