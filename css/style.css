@@ -1362,32 +1362,29 @@
 #hero .hero-title {
   position: absolute;
   bottom: 15vh;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 0.5rem 0;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 0.25rem 0;
   border-radius: 0.5rem;
+  width: 90%;
+  margin: 0 auto;
 }
 @media (min-width: 576px) {
   #hero .hero-title {
-    bottom: 5vh;
+    bottom: 10vh;
     padding: 1rem;
     background: rgba(0, 0, 0, 0.9);
   }
 }
 @media (min-width: 820px) {
   #hero .hero-title {
-    bottom: 20vh;
+    bottom: 30vh;
     width: max-content;
     background: rgba(0, 0, 0, 0.85);
   }
 }
 #hero .hero-title .slogan {
-  border: none;
   color: #fafafa;
   border-radius: 5px;
-  width: 100%;
-  margin: 0 auto;
-  outline: none;
-  text-align: center;
   text-align: left;
   position: relative;
 }
@@ -1395,38 +1392,30 @@
   text-transform: capitalize;
   color: #fafafa;
   font-weight: 400;
-  font-size: 1.05rem;
+  font-size: 1.25rem;
+  font-size: clamp(1.25rem, 2vw, 2.5rem);
   text-transform: capitalize;
   margin: 0.5rem 0;
 }
 @media (min-width: 820px) {
   #hero .hero-title .slogan h1 {
-    font-size: 2rem;
     margin: 0;
   }
 }
 #hero .hero-title .slogan .slogan-p {
   text-transform: capitalize;
   margin: 0rem auto;
-  font-weight: 200;
+  font-weight: 300;
   color: #f4f4f4;
-  border-radius: 5px;
-  border: none;
-  outline: none;
   position: relative;
   isolation: isolate;
-  font-size: 1rem;
+  font-size: 1.25rem;
+  font-size: clamp(1rem, 1.25vw, 1.25rem);
 }
 #hero .hero-title .slogan .slogan-p span {
-  color: #f4f4f4;
   color: #ffa500;
   font-weight: 400;
   font-family: inherit;
-}
-@media (min-width: 820px) {
-  #hero .hero-title .slogan .slogan-p {
-    font-size: 1.5rem;
-  }
 }
 #hero .hero-title .slogan p {
   color: #fafafa;
@@ -1438,7 +1427,7 @@
   }
 }
 #hero #cta {
-  transition: 0.3s;
+  transition: 0.25s;
 }
 #hero #cta .cta-btn {
   padding: 0.7rem 1rem;
