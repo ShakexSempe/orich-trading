@@ -142,8 +142,10 @@
     #cta {
         transition: .25s;
         .cta-btn {
-            padding: .7rem 1rem;
-            font-size: 1rem;
+            padding: .5rem 1rem;
+            // font-size: 1.25rem;
+            // font-size: 3.5vw;
+            font-size: clamp(1.25rem, 3.5vw, 1.5rem);
             margin: 1rem 0;
             cursor: pointer;
             border: none;
@@ -153,9 +155,13 @@
             color: $text-second;
             background: $brand-light;
             display: block;
-            width: 18rem;
+            // width: 18rem;
             width: max-content;
-            
+            position: relative;
+            isolation: isolate;
+            border-radius: $border-radius-sm;
+            transition: .3s;
+            // letter-spacing: .05rem;
             i {
                 margin-left: 1rem;
                 animation: arrow 1.5s infinite;
@@ -170,15 +176,7 @@
                 }
             }
             
-            @media (min-width: 768px) {
-                // width: 17rem;
-                // top: 5vh;
-            }
-            position: relative;
-            isolation: isolate;
-            border-radius: $border-radius-sm;
-            transition: .3s;
-            letter-spacing: .05rem;
+            
 
             // CTA BACKGROUND & BOX SHADOW HOVER STATES
             &::before,
@@ -253,9 +251,8 @@
 
             .cta-btn {
                 // width: 20rem;
-                padding: .5rem 1rem;
-                // margin: 5vh auto 0;
-                font-size: 1.5rem; 
+                // padding: .5rem 1rem;
+                // font-size: 1.5rem; 
 
             }
         }

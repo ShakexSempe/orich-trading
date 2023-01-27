@@ -1448,8 +1448,8 @@
   transition: 0.25s;
 }
 #hero #cta .cta-btn {
-  padding: 0.7rem 1rem;
-  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: clamp(1.25rem, 3.5vw, 1.5rem);
   margin: 1rem 0;
   cursor: pointer;
   border: none;
@@ -1458,13 +1458,11 @@
   color: #f4f4f4;
   background: #ffa500;
   display: block;
-  width: 18rem;
   width: max-content;
   position: relative;
   isolation: isolate;
   border-radius: 0.5rem;
   transition: 0.3s;
-  letter-spacing: 0.05rem;
 }
 #hero #cta .cta-btn i {
   margin-left: 1rem;
@@ -1528,12 +1526,6 @@
   }
   #hero #cta .cta-btn:hover::after {
     opacity: 1;
-  }
-}
-@media (min-width: 1024px) {
-  #hero #cta .cta-btn {
-    padding: 0.5rem 1rem;
-    font-size: 1.5rem;
   }
 }
 #hero.active {
