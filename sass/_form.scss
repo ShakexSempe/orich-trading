@@ -213,6 +213,11 @@
                 transform: scale(.98);
                 &::before {opacity: 0;}
                 &::after {opacity: 1;}
+
+                i {
+                    transform: rotate(20deg) translateX(.25rem);
+                    transition: .5s;
+                }
             }
         }
         // MOBILE ACTIVE & FOCUS
@@ -223,6 +228,10 @@
                 transform: scale(.98);
                 &::before {opacity: 0;}
                 &::after {opacity: 1;}
+                i {
+                    transform: rotate(20deg) translateX(.25rem);
+                    transition: .5s;
+                }
             }
         }
     }
