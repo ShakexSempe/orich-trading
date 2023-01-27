@@ -930,7 +930,7 @@
   background: #fff;
 }
 #header.menu-header .toggle .bar {
-  transform: scale(0.5);
+  background: #000;
   transition: 0.25s;
 }
 
@@ -2671,6 +2671,7 @@
   margin-top: 1rem;
 }
 .services .service-container .service-item .service-type ul li a {
+  display: none;
   width: 8rem;
   text-align: center;
   text-decoration: none;
