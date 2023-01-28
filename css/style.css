@@ -1381,7 +1381,8 @@
 #hero .hero-title {
   position: absolute;
   position: relative;
-  top: 55vh;
+  top: 50vh;
+  background: rgba(0, 0, 0, 0.85);
   padding: 0.25rem 0;
 }
 @media (min-width: 576px) {
