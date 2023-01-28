@@ -204,12 +204,6 @@
 
         // HOVER EFFECT
         &:hover {
-            .menu-item-title {
-                h2 {
-                    color: $brand;
-                    transition: .25s;
-                }
-            }
 
             .menu-image {
                 &::after {
@@ -328,11 +322,12 @@
                     &::after {
                         transition: .25s;
                         opacity: .65;
+                        opacity: .45;
                     }
 
                     figcaption {
                         p {
-                            opacity: 1;
+                            opacity: 0;
                             transform: scale(1);
                             transition: 2s;
                             // transition-delay: .25s;

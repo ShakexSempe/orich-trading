@@ -1251,10 +1251,6 @@
   border-radius: 0.5rem;
   transition: 0.5s;
 }
-.menu .menu-item:hover .menu-item-title h2 {
-  color: #f8650c;
-  transition: 0.25s;
-}
 .menu .menu-item:hover .menu-image::after {
   opacity: 1;
 }
@@ -1322,9 +1318,10 @@
 .menu .menu-item.active-item:hover .menu-image::after {
   transition: 0.25s;
   opacity: 0.65;
+  opacity: 0.45;
 }
 .menu .menu-item.active-item:hover .menu-image figcaption p {
-  opacity: 1;
+  opacity: 0;
   transform: scale(1);
   transition: 2s;
 }
