@@ -1381,9 +1381,8 @@
 #hero .hero-title {
   position: absolute;
   bottom: 15vh;
-  background: rgba(0, 0, 0, 0.8);
   padding: 0.25rem 0;
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
 @media (min-width: 576px) {
@@ -1411,7 +1410,7 @@
   color: #fafafa;
   font-weight: 400;
   font-size: 1.25rem;
-  font-size: clamp(1.25rem, 5vw, 2rem);
+  font-size: clamp(1.25rem, 4.5vw, 2rem);
   text-transform: capitalize;
   margin: 0.25rem 0;
 }
