@@ -927,7 +927,7 @@
 }
 #header.menu-header::after {
   background: transparent;
-  background: #fffa;
+  background: #fff;
 }
 #header.menu-header .toggle .bar {
   background: #000;
