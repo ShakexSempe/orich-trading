@@ -57,21 +57,25 @@
         // border:2px solid $brand;
         // background-color: blue;
         position: absolute;
-        bottom: 15vh;
+        position: relative;
+        // bottom: 15vh;
+        top: 55vh;
         // background: rgba(0, 0, 0, .8);
         // background: yellow;
         padding: .25rem 0;
-        // border-radius: $border-radius-sm;
-        width: 90%;
-        margin: 0 auto;
+        // width: 90%;
+        // margin: 0 auto;
         @include sm {
-            bottom: 10vh;
+            // bottom: 10vh;
+            border-radius: $border-radius-sm;
+            top: 55vh;
             padding: 1rem;
             background: rgba(0, 0, 0, .9);
         }
         @include lg {
             // border: 1px solid $brand;
-            bottom: 30vh;
+            // bottom: 30vh;
+            top: 25vh;
             width: max-content;
             background: rgba(0, 0, 0, .85);
         }
@@ -87,9 +91,9 @@
                 text-transform: capitalize;
                 // padding: .5rem 0;
                 color: $text-light;
-                font-weight: 400;
+                font-weight: 500;
                 font-size: 1.25rem;
-                font-size: clamp(1.2rem, 4.5vw, 2rem);
+                font-size: clamp(1.05rem, 4.5vw, 2rem);
                 text-transform: capitalize;
                 margin: .25rem 0;
                 @include lg {

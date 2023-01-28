@@ -1380,21 +1380,21 @@
 }
 #hero .hero-title {
   position: absolute;
-  bottom: 15vh;
+  position: relative;
+  top: 55vh;
   padding: 0.25rem 0;
-  width: 90%;
-  margin: 0 auto;
 }
 @media (min-width: 576px) {
   #hero .hero-title {
-    bottom: 10vh;
+    border-radius: 0.5rem;
+    top: 55vh;
     padding: 1rem;
     background: rgba(0, 0, 0, 0.9);
   }
 }
 @media (min-width: 820px) {
   #hero .hero-title {
-    bottom: 30vh;
+    top: 25vh;
     width: max-content;
     background: rgba(0, 0, 0, 0.85);
   }
@@ -1408,9 +1408,9 @@
 #hero .hero-title .slogan h1 {
   text-transform: capitalize;
   color: #fafafa;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.25rem;
-  font-size: clamp(1.2rem, 4.5vw, 2rem);
+  font-size: clamp(1.05rem, 4.5vw, 2rem);
   text-transform: capitalize;
   margin: 0.25rem 0;
 }
