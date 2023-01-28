@@ -3,7 +3,7 @@
     padding: 0vh 5vw;
     .menu-title {
         // border: 2px solid red;
-        
+        overflow: hidden;
         margin-bottom: 10vh;
         background: $brand-btn;
         -webkit-background-clip: text;
@@ -16,8 +16,16 @@
             line-height: 1;
             font-size: 10vw;
             font-size: clamp(1.5rem, 10vw, 2.5rem);
-            span {
-            }
+        }
+
+        &.io-item {
+            transform: translateY(-5vh);
+            opacity: 0;
+            transition: 1s;
+        }
+        &.active-item {
+            transform: translateY(0);
+            opacity: 1;
         }
     }
     .menu-grid {
