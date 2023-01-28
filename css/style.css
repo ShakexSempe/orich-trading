@@ -1382,12 +1382,12 @@
   position: absolute;
   position: relative;
   top: 50vh;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 0.5rem;
   padding: 0.25rem 0;
 }
 @media (min-width: 576px) {
   #hero .hero-title {
-    border-radius: 0.5rem;
     top: 55vh;
     padding: 1rem;
     background: rgba(0, 0, 0, 0.9);
