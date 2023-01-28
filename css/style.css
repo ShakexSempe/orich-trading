@@ -1465,7 +1465,8 @@
   transition: 0.3s;
 }
 #hero #cta .cta-btn i {
-  margin-left: 1rem;
+  font-size: 1rem;
+  margin-left: 0.5rem;
   animation: arrow 1.5s infinite;
 }
 @keyframes arrow {

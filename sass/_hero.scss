@@ -163,9 +163,9 @@
             isolation: isolate;
             border-radius: $border-radius-sm;
             transition: .3s;
-            // letter-spacing: .05rem;
             i {
-                margin-left: 1rem;
+                font-size: 1rem;
+                margin-left: .5rem;
                 animation: arrow 1.5s infinite;
                 @keyframes arrow {
                     0%, 100% {
