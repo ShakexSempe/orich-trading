@@ -1865,18 +1865,10 @@
   text-align: left;
 }
 .container .about .about-article p {
-  margin-bottom: 1.5rem;
   font-size: 1rem;
-  font-weight: 300;
-  text-justify: inter-word;
-}
-.container .about .about-article p a {
-  display: block;
-  width: max-content;
-  text-transform: capitalize;
-  color: #f8650c;
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
   font-weight: 400;
-  text-decoration: none;
+  text-justify: inter-word;
 }
 @media (max-width: 768px) {
   .container .about .about-article p {
@@ -1925,12 +1917,49 @@
     opacity: 0.5;
   }
 }
-.container .about .about-article p[data-scroll] {
-  transition: 1.5s;
-  transform: scale(1) translateY(5vh);
+.container .about .about-article ul {
+  margin: 0.5rem 0;
 }
-.container .about .about-article p[data-scroll=in] {
-  transform: scale(1) translateY(0);
+.container .about .about-article ul li {
+  list-style: none;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1rem;
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+}
+.container .about .about-article ul li::before {
+  content: "-";
+  font-weight: 300;
+  margin-right: 0.25rem;
+}
+.container .about .about-article a {
+  display: block;
+  width: max-content;
+  color: #f8650c;
+  font-weight: 400;
+  text-decoration: none;
+}
+.container .about .about-article.io-item p {
+  opacity: 0;
+  transform: translateY(5vh);
+  transition: 1.5s;
+}
+.container .about .about-article.io-item ul {
+  opacity: 0;
+  transform: translateY(5vh);
+  transition: 1.5s;
+}
+.container .about .about-article.active-item p {
+  opacity: 1;
+  transform: translateY(0vh);
+}
+.container .about .about-article.active-item p.last-p {
+  transition-delay: 0.75s;
+}
+.container .about .about-article.active-item ul {
+  opacity: 1;
+  transform: translateY(0vh);
+  transition-delay: 0.5s;
 }
 .container .about .vision-mission .vision {
   background: linear-gradient(0deg, #000, #111);
@@ -2171,9 +2200,6 @@
   .container .about .about-article {
     width: 60%;
     margin: 5vh auto;
-  }
-  .container .about .about-article p {
-    font-size: 1.15rem;
   }
 }
 .container#about-page main {

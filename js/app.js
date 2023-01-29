@@ -137,7 +137,7 @@ menu.forEach(menu => {
 // const topLine = document.querySelector(".decoration-line");
 const titles = document.querySelectorAll(".section-title");
 const titlesOptions = {
-    rootMargin: '00% 0px -50% 0px',
+    rootMargin: '00% 0px -30% 0px',
 }
 
 titles.forEach(title => {

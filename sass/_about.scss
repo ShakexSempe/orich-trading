@@ -17,20 +17,13 @@
             text-align: left;
             
             p {
-                margin-bottom: 1.5rem;
+                // margin-bottom: 1.5rem;
                 font-size: 1rem;
-                font-weight: 300;
+                font-size: clamp(1rem, 1.5vw, 1.15rem);
+                font-weight: 400;
                 // text-align: justify;
                 text-justify: inter-word;
-                a {
-                    display: block;
-                    width: max-content;
-                    text-transform: capitalize;
-                    color: $brand;
-                    font-weight: 400;
-                    text-decoration: none;
-                    // border: 1px solid red;
-                }
+                
 
                 // FONT-UBUNTU ON SMALL SCREENS
                 @media (max-width: 768px) {
@@ -86,13 +79,60 @@
                         }
                     }
                 }
-                // DATA SCROLL
-                &[data-scroll] {
-                    transition: 1.5s;
-                    transform: scale(1) translateY(5vh);
+                
+            }
+
+            ul {
+                // border: 1px solid red;
+                margin: .5rem 0;
+                li {
+                    list-style: none;
+                    text-transform: capitalize;
+                    font-weight: 500;
+                    font-size: 1rem;
+                font-size: clamp(1rem, 1.5vw, 1.15rem);
+                    &::before {
+                        content: "-";
+                        font-weight: 300;
+                        margin-right: .25rem;
+                    }
                 }
-                &[data-scroll="in"] {
-                    transform: scale(1) translateY(0);
+            }
+            a {
+                // border: 1px solid red;
+                display: block;
+                width: max-content;
+                color: $brand;
+                font-weight: 400;
+                text-decoration: none;
+            }
+
+            // IO CLASS
+            &.io-item {
+                p {
+                    opacity: 0;
+                    transform: translateY(5vh);
+                    transition: 1.5s;
+                }
+                ul {
+                    opacity: 0;
+                    transform: translateY(5vh);
+                    transition: 1.5s;
+                }
+            }
+            // ACTIVE IO CLASS
+            &.active-item {
+                p {
+                    opacity: 1;
+                    transform: translateY(0vh);
+                    &.last-p {
+                        transition-delay: .75s;
+                    }
+                }
+                ul {
+                    opacity: 1;
+                    transform: translateY(0vh);
+                    transition-delay: .5s;
                 }
             }
         }
@@ -392,9 +432,6 @@
                 // height: 100vh;
                 margin: 5vh auto;
 
-                p {
-                    font-size: 1.15rem;
-                }
             }
         }
     }
