@@ -2452,7 +2452,7 @@
 
 .services {
   background-color: #fff;
-  padding: 5vh 1rem;
+  padding: 10vh 5vw;
 }
 .services .section-description {
   margin: 5vh 0;
@@ -3281,7 +3281,7 @@
   border-color: #f8650c;
 }
 #form input::placeholder, #form textarea::placeholder {
-  opacity: 0.3;
+  opacity: 0.5;
   letter-spacing: 0.05rem;
   transition: 0.25s;
 }
