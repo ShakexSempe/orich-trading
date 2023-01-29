@@ -524,7 +524,7 @@
         .item {
             &.menu-target {
                 i {
-                    color: $brand;
+                    color: $brand-light;
                     transform: scale(1.05);
                     transition: .5s;
                 }
