@@ -1396,12 +1396,12 @@
 @media (min-width: 576px) {
   #hero .hero-title {
     top: 55vh;
-    padding: 1rem;
     background: rgba(0, 0, 0, 0.9);
   }
 }
 @media (min-width: 820px) {
   #hero .hero-title {
+    padding: 0.25rem;
     top: 25vh;
     width: max-content;
     background: rgba(0, 0, 0, 0.85);
@@ -1456,7 +1456,8 @@
 }
 #hero #cta .cta-btn {
   padding: 0.5rem 1rem;
-  font-size: clamp(1.25rem, 3.5vw, 1.5rem);
+  font-size: 1rem;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
   margin: 1rem 0;
   cursor: pointer;
   border: none;

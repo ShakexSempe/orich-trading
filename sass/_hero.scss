@@ -66,12 +66,12 @@
         @include sm {
             // bottom: 10vh;
             top: 55vh;
-            padding: 1rem;
             background: rgba(0, 0, 0, .9);
         }
         @include lg {
             // border: 1px solid $brand;
             // bottom: 30vh;
+            padding: .25rem;
             top: 25vh;
             width: max-content;
             background: rgba(0, 0, 0, .85);
@@ -145,15 +145,13 @@
         transition: .25s;
         .cta-btn {
             padding: .5rem 1rem;
-            // font-size: 1.25rem;
-            // font-size: 3.5vw;
-            font-size: clamp(1.25rem, 3.5vw, 1.5rem);
+            font-size: 1rem;
+            font-size: clamp(1rem, 1.5vw, 1.5rem);
             margin: 1rem 0;
             cursor: pointer;
             border: none;
             text-decoration: none;
             text-transform: capitalize;
-            // font-family: $font-ubuntu;
             color: $text-second;
             background: $brand-light;
             display: block;
@@ -241,20 +239,6 @@
                         opacity: 1
                     }
                 }
-
-            }
-        }
-
-        @media (min-width: 1024px) {
-            // position: absolute;
-            // bottom: 10vh;
-            // left: 50%;
-            // transform: translateX(-50%);
-
-            .cta-btn {
-                // width: 20rem;
-                // padding: .5rem 1rem;
-                // font-size: 1.5rem; 
 
             }
         }
