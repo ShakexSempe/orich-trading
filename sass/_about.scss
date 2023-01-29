@@ -90,7 +90,7 @@
                     text-transform: capitalize;
                     font-weight: 500;
                     font-size: 1rem;
-                font-size: clamp(1rem, 1.5vw, 1.15rem);
+                font-size: clamp(1rem, 1.25vw, 1.15rem);
                     &::before {
                         content: "-";
                         font-weight: 300;
@@ -103,6 +103,7 @@
                 display: block;
                 // width: max-content;
                 color: $brand;
+                font-size: 1rem;
                 font-weight: 400;
                 text-decoration: none;
             }

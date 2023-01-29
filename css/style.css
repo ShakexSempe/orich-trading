@@ -1925,7 +1925,7 @@
   text-transform: capitalize;
   font-weight: 500;
   font-size: 1rem;
-  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  font-size: clamp(1rem, 1.25vw, 1.15rem);
 }
 .container .about .about-article ul li::before {
   content: "-";
@@ -1935,6 +1935,7 @@
 .container .about .about-article a {
   display: block;
   color: #f8650c;
+  font-size: 1rem;
   font-weight: 400;
   text-decoration: none;
 }
