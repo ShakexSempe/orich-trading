@@ -2460,7 +2460,8 @@
 .services .section-description h3 {
   color: #000;
   margin-bottom: 1rem;
-  font-size: 1.15rem;
+  font-size: 1.25rem;
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
   font-weight: 500;
 }
 .services .section-description h3[data-scroll] {
@@ -2473,8 +2474,9 @@
   opacity: 1;
 }
 .services .section-description p {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1rem;
+  font-size: clamp(1rem, 1vw, 1.05rem);
 }
 @media (min-width: 768px) {
   .services .section-description p {
