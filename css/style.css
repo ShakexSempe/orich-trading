@@ -2878,9 +2878,6 @@
   }
 }
 
-#services-page header .services-dropdown {
-  background-color: pink;
-}
 #services-page .main {
   margin-top: 0;
 }
@@ -3619,53 +3616,6 @@
 .container {
   max-width: 100%;
 }
-.container .section-title {
-  text-align: center;
-  text-transform: capitalize;
-  font-size: 1.35rem;
-  padding: 5vh 0;
-  overflow: hidden;
-}
-.container .section-title h2 {
-  font-weight: 500;
-  position: relative;
-}
-.container .section-title h2::after {
-  position: absolute;
-  content: "";
-  bottom: -0.2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 0.2rem;
-  background: linear-gradient(90deg, #f8650c, #ffa500, #f8650c);
-  border-radius: 5px;
-  transition: 0.5s;
-}
-.container .section-title h2[data-scroll] {
-  transform: translateY(-10vh);
-  opacity: 0;
-  transition: 1s;
-}
-.container .section-title h2[data-scroll]::after {
-  transform: translateX(-50%) translateY(0);
-}
-.container .section-title h2[data-scroll=in] {
-  transition: 1.5s;
-  opacity: 1;
-  transform: translateY(0);
-}
-.container .section-title h2[data-scroll=in]::after {
-  width: 25%;
-  transform: translateX(-50%) translateY(0);
-  transition: 1s;
-  transition-delay: 0.5s;
-}
-@media (min-width: 768px) {
-  .container .section-title h2[data-scroll=in]::after {
-    width: 10vw;
-  }
-}
 .container main {
   min-height: 100vh;
   position: relative;
@@ -3726,6 +3676,51 @@
   .container main .section-pad .mobile-pad {
     display: none;
   }
+}
+
+.section-title {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.35rem;
+  padding: 5vh 0;
+  overflow: hidden;
+  width: max-content;
+  margin: 0 auto;
+}
+.section-title h2 {
+  font-weight: 500;
+  position: relative;
+}
+.section-title h2::after {
+  position: absolute;
+  content: "";
+  bottom: -0.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0.2rem;
+  background: linear-gradient(90deg, #f8650c, #ffa500, #f8650c);
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.section-title h2[data-scroll] {
+  transform: translateY(-10vh);
+  opacity: 0;
+  transition: 1s;
+}
+.section-title h2[data-scroll]::after {
+  transform: translateX(-50%) translateY(0);
+}
+.section-title h2[data-scroll=in] {
+  transition: 1.5s;
+  opacity: 1;
+  transform: translateY(0);
+}
+.section-title h2[data-scroll=in]::after {
+  width: 50%;
+  transform: translateX(-50%) translateY(0);
+  transition: 1s;
+  transition-delay: 0.5s;
 }
 
 [data-scroll] {
