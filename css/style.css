@@ -1867,12 +1867,11 @@
 .container .about .about-article p {
   font-size: 1rem;
   font-size: clamp(1rem, 1.5vw, 1.15rem);
-  font-weight: 400;
+  font-weight: 300;
   text-justify: inter-word;
 }
 @media (max-width: 768px) {
   .container .about .about-article p {
-    font-size: 0.95rem;
     line-height: 1.6;
   }
 }
@@ -2475,7 +2474,7 @@
   opacity: 1;
 }
 .services .section-description p {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1rem;
   font-size: clamp(1rem, 1vw, 1.05rem);
 }
