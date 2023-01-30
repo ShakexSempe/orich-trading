@@ -1425,6 +1425,9 @@
   color: #fafafa;
   font-weight: 100;
 }
+#hero .hero-title .slogan.thanks-message p {
+  font-weight: 400;
+}
 #hero #cta {
   transition: 0.25s;
 }

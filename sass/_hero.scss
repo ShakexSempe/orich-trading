@@ -124,6 +124,13 @@
                 color: $text-light;
                 font-weight: 100;
             }
+
+            // THANK YOU PAGE HERO
+            &.thanks-message {
+                p {
+                    font-weight: 400;
+                }
+            }
         }
     }
 
