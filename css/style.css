@@ -1938,27 +1938,14 @@
   font-weight: 400;
   text-decoration: none;
 }
-.container .about .about-article.io-item p {
+.container .about .about-article.io-item {
   opacity: 0;
   transform: translateY(5vh);
   transition: 1.5s;
 }
-.container .about .about-article.io-item ul {
-  opacity: 0;
-  transform: translateY(5vh);
-  transition: 1.5s;
-}
-.container .about .about-article.active-item p {
+.container .about .about-article.active-item {
   opacity: 1;
   transform: translateY(0vh);
-}
-.container .about .about-article.active-item p.last-p {
-  transition-delay: 0.75s;
-}
-.container .about .about-article.active-item ul {
-  opacity: 1;
-  transform: translateY(0vh);
-  transition-delay: 0.5s;
 }
 .container .about .vision-mission .vision {
   background: linear-gradient(0deg, #000, #111);

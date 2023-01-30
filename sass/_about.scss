@@ -110,31 +110,15 @@
 
             // IO CLASS
             &.io-item {
-                p {
-                    opacity: 0;
-                    transform: translateY(5vh);
-                    transition: 1.5s;
-                }
-                ul {
-                    opacity: 0;
-                    transform: translateY(5vh);
-                    transition: 1.5s;
-                }
+                opacity: 0;
+                transform: translateY(5vh);
+                transition: 1.5s;
             }
             // ACTIVE IO CLASS
             &.active-item {
-                p {
-                    opacity: 1;
-                    transform: translateY(0vh);
-                    &.last-p {
-                        transition-delay: .75s;
-                    }
-                }
-                ul {
-                    opacity: 1;
-                    transform: translateY(0vh);
-                    transition-delay: .5s;
-                }
+                opacity: 1;
+                transform: translateY(0vh);
+                
             }
         }
         .vision-mission {
