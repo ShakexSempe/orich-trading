@@ -4,6 +4,16 @@
     .about {
         // padding: 5vh 0;
         // border: 2px solid red;
+        position: relative;
+        @include xlg {
+            .flex-container {
+                // border: 2px solid blue;
+                display: flex;
+                align-items: center;
+                padding: 5vh 0;
+
+            }
+        }
         .about-article {
             // border: 1px solid $brand;
             background: $bg-main;
@@ -19,7 +29,7 @@
                 margin: 5vh 5vw;
             }
             @include xlg {
-                width: 70%;
+                width: 100%;
                 // margin: 5vh 5vw;
                 // margin: 5vh auto;
             }
@@ -32,6 +42,9 @@
                 text-justify: inter-word;
                 
                 &.article-intro {
+                    @include xlg {
+                        // text-align: center;
+                    }
                 &::first-letter {
                     font-size: 2rem;
                     // padding-right: 0.1em;
@@ -39,10 +52,11 @@
                     background: #000;
                     color: #fff;
                     float: left;
-                    margin-right: 0.1em;
+                    margin-right: 0.1rem;
                     border-radius: .25rem;
                     box-shadow: 2px 3px 3px hsla(211, 16%, 34%, 0.150);
                     text-shadow: 2px 2px 0px #f8650c;
+                    
                 }
             }
                 .article-link {
@@ -90,7 +104,7 @@
                     text-transform: capitalize;
                     font-weight: 500;
                     font-size: 1rem;
-                font-size: clamp(1rem, 1.25vw, 1.15rem);
+                font-size: clamp(1rem, 1.5vw, 1.15rem);
                     &::before {
                         content: "-";
                         font-weight: 300;
@@ -210,7 +224,6 @@
                 // border: 2px solid red;
                 // padding: 5vh 1rem;
                 // margin: 5vh 0 0;
-
                 h3 {
                     color:#000;
                     font-size: 1.5rem;
@@ -249,9 +262,9 @@
                     transition: 1s;
                     display: flex;
                     flex-direction: column-reverse;
-                    @include xlg {
-                        width: 70%;
-                        margin-inline: auto;
+                    @include lg {
+                        // width: 70%;
+                        // margin-inline: auto;
                         // flex-direction: row;
                         // flex-direction: column;
 

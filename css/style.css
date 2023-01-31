@@ -1834,6 +1834,16 @@
 .container {
   position: relative;
 }
+.container .about {
+  position: relative;
+}
+@media (min-width: 1024px) {
+  .container .about .flex-container {
+    display: flex;
+    align-items: center;
+    padding: 5vh 0;
+  }
+}
 .container .about .about-article {
   background: #fff;
   margin: 5vh 1rem 10vh 5vw;
@@ -1849,7 +1859,7 @@
 }
 @media (min-width: 1024px) {
   .container .about .about-article {
-    width: 70%;
+    width: 100%;
   }
 }
 .container .about .about-article p {
@@ -1864,7 +1874,7 @@
   background: #000;
   color: #fff;
   float: left;
-  margin-right: 0.1em;
+  margin-right: 0.1rem;
   border-radius: 0.25rem;
   box-shadow: 2px 3px 3px rgba(73, 86, 101, 0.15);
   text-shadow: 2px 2px 0px #f8650c;
@@ -1907,7 +1917,7 @@
   text-transform: capitalize;
   font-weight: 500;
   font-size: 1rem;
-  font-size: clamp(1rem, 1.25vw, 1.15rem);
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
 }
 .container .about .about-article ul li::before {
   content: "-";
@@ -2035,12 +2045,6 @@
   transition: 1s;
   display: flex;
   flex-direction: column-reverse;
-}
-@media (min-width: 1024px) {
-  .container .about .vision-mission .mission .statement {
-    width: 70%;
-    margin-inline: auto;
-  }
 }
 .container .about .vision-mission .mission .statement .mission-logo {
   overflow: hidden;
