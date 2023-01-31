@@ -1343,7 +1343,7 @@
   opacity: 0.8;
   background-image: linear-gradient(0deg, #000, #000a);
 }
-@media (min-width: 768px) {
+@media (min-width: 820px) {
   #hero {
     background-image: url(../img/shivendu-shukla-3yoTPuYR9ZY-unsplash-min.jpg);
     background-size: cover;
@@ -1363,7 +1363,6 @@
   }
 }
 #hero .hero-title {
-  position: absolute;
   position: relative;
   top: 50vh;
   background: rgba(0, 0, 0, 0.8);
@@ -1381,7 +1380,6 @@
     padding: 1rem;
     top: 25vh;
     width: max-content;
-    background: rgba(0, 0, 0, 0.85);
   }
 }
 #hero .hero-title .slogan {
@@ -1412,7 +1410,7 @@
   position: relative;
   isolation: isolate;
   font-size: 1.05rem;
-  font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
 }
 #hero .hero-title .slogan .slogan-p span {
   color: #ffa500;
@@ -1421,7 +1419,7 @@
 }
 #hero .hero-title .slogan p {
   font-size: 1rem;
-  font-size: clamp(1rem, 1.25vw, 1.15rem);
+  font-size: clamp(.95rem, 1.5vw, 1.15rem);
   color: #fafafa;
   font-weight: 100;
 }
