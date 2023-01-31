@@ -8,40 +8,40 @@
             // border: 1px solid $brand;
             background: $bg-main;
             // border-radius: 5px;
-            margin: 1rem 1rem;
+            margin: 5vh 1rem 10vh 5vw;
             text-transform: none;
             line-height: 1.6;
             // padding: .3em;
             // height: 40vh;
             overflow: hidden;
             text-align: left;
-            
+            @include sm {
+                margin: 5vh 5vw;
+            }
+            @include xlg {
+                width: 70%;
+                // margin: 5vh 5vw;
+                // margin: 5vh auto;
+            }
             p {
                 // margin-bottom: 1.5rem;
                 font-size: 1rem;
-                font-size: clamp(.95rem, 1.5vw, 1.15rem);
+                font-size: clamp(1rem, 1.5vw, 1.15rem);
                 font-weight: 300;
                 // text-align: justify;
                 text-justify: inter-word;
                 
-
-                // FONT-UBUNTU ON SMALL SCREENS
-                @media (max-width: 768px) {
-                    // font-family: $font-ubuntu;
-                    // font-size: .95rem;
-                    line-height: 1.6;
-                    // font-weight: 200;
-                }
                 &.article-intro {
                 &::first-letter {
                     font-size: 2rem;
-                    padding-right: 0.1em;
+                    // padding-right: 0.1em;
+                    padding: 0 .2rem 0 .05rem;
                     background: #000;
                     color: #fff;
                     float: left;
                     margin-right: 0.1em;
                     border-radius: .25rem;
-                    box-shadow: 2px 3px 3px #4855634b;
+                    box-shadow: 2px 3px 3px hsla(211, 16%, 34%, 0.150);
                     text-shadow: 2px 2px 0px #f8650c;
                 }
             }
@@ -104,6 +104,7 @@
                 // width: max-content;
                 color: $brand;
                 font-size: 1rem;
+                font-size: clamp(1rem, 1.5vw, 1.15rem);
                 font-weight: 400;
                 text-decoration: none;
             }
@@ -122,11 +123,17 @@
             }
         }
         .vision-mission {
-            // border: 1px solid $brand;
-        //     margin: 5vh 0;
-        //     padding: 1rem 0;
-        // min-height: none;
-            // display: flex;
+            padding: 5vh 5vw;
+            margin: 5vh 0;
+            // border: 2px solid blue;
+            @include sm {
+                // border: 2px solid yellow;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
             .vision {
                 // background: $brand;
                 // background: $brand-overlay-dark;
@@ -200,13 +207,14 @@
                 }
             }
             .mission {
-                // background: #f4f4f4;
-                padding: 5vh 1rem;
-                margin: 5vh 0 0;
+                // border: 2px solid red;
+                // padding: 5vh 1rem;
+                // margin: 5vh 0 0;
 
                 h3 {
                     color:#000;
                     font-size: 1.5rem;
+                    font-size: clamp(1.5rem, 2vw, 1.65rem);
                     font-weight: 500;
                     margin-bottom: 1rem;
                     font-family: $font-content;
@@ -223,18 +231,17 @@
                     }
                 }
 
-                p {
-                    margin-bottom: .5rem;
-                    line-height: 1.6;
-                    transition: .3s;
-                    font-weight: 300;
-                }
+                // p {
+                //     margin-bottom: .5rem;
+                //     line-height: 1.6;
+                //     transition: .3s;
+                //     font-weight: 300;
+                // }
 
                 .statement {
-                    border: 1px solid #000;
+                    border: 2px solid #000;
                     border-radius: 5px;
                     width: 100%;
-                    height: 10vh;
                     height: 50vh;
                     // height: auto;
                     overflow: hidden;
@@ -242,13 +249,12 @@
                     transition: 1s;
                     display: flex;
                     flex-direction: column-reverse;
-                    @media (min-width: 768px) {
-                        flex-direction: row;
-                        flex-direction: column;
-                        p {
-                            font-size: 1.15rem;
-                            text-align: center;
-                        }
+                    @include xlg {
+                        width: 70%;
+                        margin-inline: auto;
+                        // flex-direction: row;
+                        // flex-direction: column;
+
                     }
 
                     .mission-logo {
@@ -292,25 +298,33 @@
                 }
                     
                     .mission-content {
-                        background: #000;
                         flex-basis: 50%;
+                        background: #000;
                         text-align: center;
                         display: grid;
                         place-items: center;
                         place-content: center;
                         padding: .5rem;
-                        @media (min-width: 768px) {
+                        @include md {
+                            // border: 2px solid blue;
+                            padding: 1rem;
                             flex-basis: 20%;
+                        }
+                        @media (min-width: 768px) {
                             // border-right: 1px solid $brand;
-                            p {
-                                font-size: 1.2rem;
-                            }
+                            
                         }
                         p {
                             color: $text-second;
                             font-size: 1rem;
+                            font-size: clamp(1rem, 1.5vw, 1.15rem);
                             span {
                                 margin: 0 0rem;
+                            }
+                            @include md {
+                                br {
+                                    display: none;
+                                }
                             }
                         }
                         // VIEW SERVICES LINK
@@ -370,12 +384,7 @@
             }
 
             @media (min-width: 820px) {
-                padding: 5vh 0 5vh;
-                margin: 5vh 0;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                
                 // margin-top: 10vh;
                 .vision {
                     padding: 5vh .5rem;
@@ -396,27 +405,6 @@
                         }
                     }
                 }
-                .mission {
-                    padding: 10vh 5vw;
-                    width: 70%;
-
-                    .statement {
-                        border-radius: 5px;
-                        // padding: .5rem;
-                        width: 100%;
-                    }
-                }
-            }
-        }
-
-        
-
-        @media (min-width: 768px) {
-            .about-article {
-                width: 60%;
-                // height: 100vh;
-                margin: 5vh auto;
-
             }
         }
     }

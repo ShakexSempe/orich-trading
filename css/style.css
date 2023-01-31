@@ -1,29 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Red+Hat+Display&family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;800&display=swap");
 .toggle {
-  float: right;
+  position: fixed;
+  right: 1rem;
+  top: 0.5rem;
   font-size: 20px;
   border-radius: 50%;
   height: 1.5em;
   width: 1.5em;
-  outline-offset: -2px;
   border: none;
   outline: none;
   cursor: pointer;
   display: grid;
   place-items: center;
-  transition: 0.3s;
-  padding: 0.2em 0;
   overflow: hidden;
-  z-index: 5;
-  position: fixed;
-  right: 5vw;
-  right: 1rem;
-  top: 0.5rem;
   border-left-color: transparent;
   border-right-color: transparent;
-  border: none;
+  z-index: 5;
   transition: 0.5s;
+}
+@media (min-width: 576px) {
+  .toggle {
+    right: 5vw;
+  }
 }
 .toggle .bar {
   background-color: #f4f4f4;
@@ -485,59 +484,6 @@
   isolation: isolate;
   background: transparent;
 }
-#header::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  transition: 0.25s;
-  z-index: -1;
-}
-#header.index-header {
-  background-color: #fff;
-  background-color: #000a;
-  background: transparent;
-}
-#header .logo {
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 1rem;
-  padding: 0 0.2rem;
-  transition: 0.5s;
-  height: 100%;
-  display: grid;
-  place-items: center;
-  border-radius: 5px;
-}
-@media (min-width: 768px) {
-  #header .logo {
-    left: 5vw;
-  }
-}
-#header .logo a {
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  overflow: hidden;
-  width: 15rem;
-  height: 100%;
-  transition: 0.3s;
-}
-#header .logo a img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-  object-position: left;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-}
-#header .navigation {
-  text-transform: capitalize;
-}
 @media (max-width: 1024px) {
   #header {
     height: 7vh;
@@ -865,6 +811,59 @@
     width: 15vw;
     overflow-y: auto;
   }
+}
+#header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  transition: 0.25s;
+  z-index: -1;
+}
+#header.index-header {
+  background-color: #fff;
+  background-color: #000a;
+  background: transparent;
+}
+#header .logo {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  padding: 0 0.2rem;
+  transition: 0.5s;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+}
+@media (min-width: 576px) {
+  #header .logo {
+    left: 5vw;
+  }
+}
+#header .logo a {
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+  width: 15rem;
+  height: 100%;
+  transition: 0.3s;
+}
+#header .logo a img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: left;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+#header .navigation {
+  text-transform: capitalize;
 }
 #header.hero-header {
   background-color: #000a;
@@ -1839,32 +1838,37 @@
 }
 .container .about .about-article {
   background: #fff;
-  margin: 1rem 1rem;
+  margin: 5vh 1rem 10vh 5vw;
   text-transform: none;
   line-height: 1.6;
   overflow: hidden;
   text-align: left;
 }
+@media (min-width: 576px) {
+  .container .about .about-article {
+    margin: 5vh 5vw;
+  }
+}
+@media (min-width: 1024px) {
+  .container .about .about-article {
+    width: 70%;
+  }
+}
 .container .about .about-article p {
   font-size: 1rem;
-  font-size: clamp(.95rem, 1.5vw, 1.15rem);
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
   font-weight: 300;
   text-justify: inter-word;
 }
-@media (max-width: 768px) {
-  .container .about .about-article p {
-    line-height: 1.6;
-  }
-}
 .container .about .about-article p.article-intro::first-letter {
   font-size: 2rem;
-  padding-right: 0.1em;
+  padding: 0 0.2rem 0 0.05rem;
   background: #000;
   color: #fff;
   float: left;
   margin-right: 0.1em;
   border-radius: 0.25rem;
-  box-shadow: 2px 3px 3px #4855634b;
+  box-shadow: 2px 3px 3px rgba(73, 86, 101, 0.15);
   text-shadow: 2px 2px 0px #f8650c;
 }
 .container .about .about-article p .article-link {
@@ -1916,6 +1920,7 @@
   display: block;
   color: #f8650c;
   font-size: 1rem;
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
   font-weight: 400;
   text-decoration: none;
 }
@@ -1927,6 +1932,19 @@
 .container .about .about-article.active-item {
   opacity: 1;
   transform: translateY(0vh);
+}
+.container .about .vision-mission {
+  padding: 5vh 5vw;
+  margin: 5vh 0;
+}
+@media (min-width: 576px) {
+  .container .about .vision-mission {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .container .about .vision-mission .vision {
   background: linear-gradient(0deg, #000, #111);
@@ -1990,13 +2008,10 @@
 .container .about .vision-mission .vision ul li[data-scroll=in] {
   transform: scale(1) translateX(0);
 }
-.container .about .vision-mission .mission {
-  padding: 5vh 1rem;
-  margin: 5vh 0 0;
-}
 .container .about .vision-mission .mission h3 {
   color: #000;
   font-size: 1.5rem;
+  font-size: clamp(1.5rem, 2vw, 1.65rem);
   font-weight: 500;
   margin-bottom: 1rem;
   font-family: "Prompt", sans-serif;
@@ -2012,17 +2027,10 @@
 .container .about .vision-mission .mission h3[data-scroll=in] {
   letter-spacing: normal;
 }
-.container .about .vision-mission .mission p {
-  margin-bottom: 0.5rem;
-  line-height: 1.6;
-  transition: 0.3s;
-  font-weight: 300;
-}
 .container .about .vision-mission .mission .statement {
-  border: 1px solid #000;
+  border: 2px solid #000;
   border-radius: 5px;
   width: 100%;
-  height: 10vh;
   height: 50vh;
   overflow: hidden;
   margin-bottom: 1rem;
@@ -2030,14 +2038,10 @@
   display: flex;
   flex-direction: column-reverse;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .container .about .vision-mission .mission .statement {
-    flex-direction: row;
-    flex-direction: column;
-  }
-  .container .about .vision-mission .mission .statement p {
-    font-size: 1.15rem;
-    text-align: center;
+    width: 70%;
+    margin-inline: auto;
   }
 }
 .container .about .vision-mission .mission .statement .mission-logo {
@@ -2067,8 +2071,8 @@
   transform: scale(1) translateY(0);
 }
 .container .about .vision-mission .mission .statement .mission-content {
-  background: #000;
   flex-basis: 50%;
+  background: #000;
   text-align: center;
   display: grid;
   place-items: center;
@@ -2077,18 +2081,22 @@
 }
 @media (min-width: 768px) {
   .container .about .vision-mission .mission .statement .mission-content {
+    padding: 1rem;
     flex-basis: 20%;
-  }
-  .container .about .vision-mission .mission .statement .mission-content p {
-    font-size: 1.2rem;
   }
 }
 .container .about .vision-mission .mission .statement .mission-content p {
   color: #f4f4f4;
   font-size: 1rem;
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
 }
 .container .about .vision-mission .mission .statement .mission-content p span {
   margin: 0 0rem;
+}
+@media (min-width: 768px) {
+  .container .about .vision-mission .mission .statement .mission-content p br {
+    display: none;
+  }
 }
 .container .about .vision-mission .mission .statement .mission-content a {
   text-transform: capitalize;
@@ -2132,14 +2140,6 @@
   }
 }
 @media (min-width: 820px) {
-  .container .about .vision-mission {
-    padding: 5vh 0 5vh;
-    margin: 5vh 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   .container .about .vision-mission .vision {
     padding: 5vh 0.5rem;
     margin: 0 5vw;
@@ -2153,20 +2153,6 @@
   }
   .container .about .vision-mission .vision ul li::marker {
     color: #f4f4f4;
-  }
-  .container .about .vision-mission .mission {
-    padding: 10vh 5vw;
-    width: 70%;
-  }
-  .container .about .vision-mission .mission .statement {
-    border-radius: 5px;
-    width: 100%;
-  }
-}
-@media (min-width: 768px) {
-  .container .about .about-article {
-    width: 60%;
-    margin: 5vh auto;
   }
 }
 .container#about-page main {

@@ -1,30 +1,25 @@
 .toggle {
-    float: right;
+    position: fixed;
+    right: 1rem;
+    top: .5rem;
     font-size: 20px;
     border-radius: 50%;
     height: 1.5em;
     width: 1.5em;
-    // outline: 2px solid #000a;
-    outline-offset: -2px;
+    // padding: .2em 0;
     border: none;
     outline: none;
     cursor: pointer;
     display: grid;
     place-items: center;
-    transition: .3s;
-    padding: .2em 0;
     overflow: hidden;
-    z-index: 5;
-    position: fixed;
-    right: 5vw;
-    right: 1rem;
-    top: .5rem;
     border-left-color: transparent;
     border-right-color: transparent;
-    border: none;
-    // border: 2px solid #000a;
+    z-index: 5;
     transition: .5s;
-    // transform: rotate(90deg);
+    @include sm {
+        right: 5vw;
+    }
 
     .bar {
         background-color: $toggle;
