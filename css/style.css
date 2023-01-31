@@ -381,7 +381,6 @@
 }
 .footer-nav .item a i {
   font-size: 1.05rem;
-  color: #f8650c;
   color: #fff8;
   transition: 1s;
 }
@@ -470,7 +469,7 @@
   }
 }
 .footer-nav.menu-footer .item.menu-target i {
-  color: #ffa500;
+  color: #fff;
   transform: scale(1.05);
   transition: 0.5s;
 }

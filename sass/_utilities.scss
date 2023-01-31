@@ -416,7 +416,6 @@
             place-content: center;
             i {
                 font-size: 1.05rem;
-                color: $brand;
                 color: #fff8;
                 transition: 1s;
             }
@@ -519,7 +518,7 @@
         .item {
             &.menu-target {
                 i {
-                    color: $brand-light;
+                    color: #fff;
                     transform: scale(1.05);
                     transition: .5s;
                 }
