@@ -1095,23 +1095,22 @@
 .menu {
   padding: 5vh 5vw;
 }
-.menu .menu-title {
-  border: 2px solid red;
-}
 .menu .menu-grid {
   margin-top: 5vh;
   gap: 10vh;
   display: grid;
 }
-@media (min-width: 576px) {
+@media (min-width: 820px) {
   .menu .menu-grid {
     grid-template-columns: 1fr 1fr;
-    padding: 10vh 5vw;
+    gap: 1rem;
+    margin-top: 10vh;
   }
 }
 @media (min-width: 1024px) {
   .menu .menu-grid {
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
   }
 }
 .menu .menu-item {
@@ -1144,7 +1143,7 @@
   opacity: 0.6;
 }
 .menu .menu-item .menu-image {
-  height: 40vh;
+  height: 50vh;
   border-radius: 0.5rem;
   overflow: hidden;
   cursor: pointer;
@@ -1193,6 +1192,7 @@
   transition: 0.5s;
 }
 .menu .menu-item .menu-image figcaption .cta-flex a {
+  font-size: 1rem;
   background: #f8650c;
   margin-left: 1rem;
   padding: 0.5rem;

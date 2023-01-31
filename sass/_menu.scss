@@ -2,7 +2,7 @@
     // border: .25rem solid $brand;
     padding: 5vh 5vw;
     .menu-title {
-        border: 2px solid red;
+        // border: 2px solid red;
         
     }
     .menu-grid {
@@ -11,13 +11,16 @@
         gap: 10vh;
         display: grid;
 
-        @include sm {
+        @include lg {
             grid-template-columns: 1fr 1fr;
-            padding: 10vh 5vw;
+            gap: 1rem;
+            margin-top: 10vh;
         }
 
         @include xlg {
             grid-template-columns: 1fr 1fr 1fr;
+            gap: 2rem;
+            
         }
 
     }
@@ -69,7 +72,7 @@
         // MENU IMAGE
         .menu-image {
             // border: 2px solid red;
-            height: 40vh;
+            height: 50vh;
             border-radius: .5rem;
             overflow: hidden;
             cursor: pointer;
@@ -130,6 +133,7 @@
 
                     a {
                         // border: 1px solid red;
+                        font-size: 1rem;
                         background: $brand;
                         margin-left: 1rem;
                         padding: .5rem;
