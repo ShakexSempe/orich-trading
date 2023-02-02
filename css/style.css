@@ -2558,6 +2558,13 @@
   color: #0005;
   transition: 0.3s;
 }
+.services .service-container .service-item .service-type ul li:last-child::marker {
+  color: transparent;
+}
+.services .service-container .service-item .service-type ul li a {
+  color: #f8650c;
+  text-decoration: none;
+}
 .services .service-container .service-item:hover .service-core h4 {
   color: #f8650c;
   transition: 0.25s;
