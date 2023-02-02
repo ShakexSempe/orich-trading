@@ -289,14 +289,7 @@
                             transition: .3s;
                         }
                         &:last-child {
-                            &::marker {
-                                color: transparent;
-                            }
-                        }
-
-                        a {
-                            color: $brand;
-                            text-decoration: none;
+                            display: none;
                         }
                     }
                 }
