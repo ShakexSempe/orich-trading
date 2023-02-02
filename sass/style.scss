@@ -159,6 +159,110 @@
         }
     }
 }
+ // CTA 
+.cta {
+    transition: .25s;
+    .cta-btn {
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        font-size: clamp(1rem, 1.5vw, 1.5rem);
+        margin: .5rem 0;
+        cursor: pointer;
+        border: none;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: $text-second;
+        background: $brand-light;
+        display: block;
+        // width: 18rem;
+        width: max-content;
+        position: relative;
+        isolation: isolate;
+        border-radius: $border-radius-sm;
+        transition: .3s;
+        i {
+            font-size: 1rem;
+            margin-left: .5rem;
+            animation: arrow 1.5s infinite;
+            @keyframes arrow {
+                0%, 100% {
+                    opacity: .5;
+                }
+                50% {
+                    transform: translateX(.25rem);
+                    opacity: 1;
+                }
+            }
+        }
+        
+        
+
+        // CTA BACKGROUND & BOX SHADOW HOVER STATES
+        &::before,
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: $border-radius-sm;
+            z-index: -1;
+            transition: .3s;
+        }
+
+        &::before {
+            background: $brand-btn;
+            box-shadow: $box-shadow-sm;
+        }
+
+        &::after {
+            opacity: 0;
+            background: $brand-btn-hover;
+            box-shadow: $box-shadow-sm-hover;
+        }
+        // &:hover, &:active {
+        //     i {
+        //         animation: none;
+        //     }
+        // }
+        @media (max-width:1024px){
+            &:active {
+                transform: scale(.97);
+                letter-spacing: normal;
+                i {
+                    animation: none;
+                }
+                &::before {
+                    opacity: 0
+                }
+
+                &::after {
+                    opacity: 1
+                }
+            }
+        }
+        @media (min-width: 1024px){
+            &:hover {
+                transform: scale(.97);
+                letter-spacing: normal;
+                i {
+                    animation: none;
+                }
+                &::before {
+                    opacity: 0
+                }
+
+                &::after {
+                    opacity: 1
+                }
+            }
+
+        }
+    }
+}
+
 // SCROLL OUT
 [data-scroll] {
     transition: 1.5s ease;

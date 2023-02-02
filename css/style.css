@@ -1426,92 +1426,6 @@
 #hero .hero-title .slogan.thanks-message p {
   font-weight: 400;
 }
-#hero #cta {
-  transition: 0.25s;
-}
-#hero #cta .cta-btn {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  font-size: clamp(1rem, 1.5vw, 1.5rem);
-  margin: 0.5rem 0;
-  cursor: pointer;
-  border: none;
-  text-decoration: none;
-  text-transform: capitalize;
-  color: #f4f4f4;
-  background: #ffa500;
-  display: block;
-  width: max-content;
-  position: relative;
-  isolation: isolate;
-  border-radius: 0.5rem;
-  transition: 0.3s;
-}
-#hero #cta .cta-btn i {
-  font-size: 1rem;
-  margin-left: 0.5rem;
-  animation: arrow 1.5s infinite;
-}
-@keyframes arrow {
-  0%, 100% {
-    opacity: 0.5;
-  }
-  50% {
-    transform: translateX(0.25rem);
-    opacity: 1;
-  }
-}
-#hero #cta .cta-btn::before, #hero #cta .cta-btn::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  border-radius: 0.5rem;
-  z-index: -1;
-  transition: 0.3s;
-}
-#hero #cta .cta-btn::before {
-  background: linear-gradient(0deg, #f8650c, #ffa500);
-  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 2px 3px 2px rgba(0, 0, 0, 0.15);
-}
-#hero #cta .cta-btn::after {
-  opacity: 0;
-  background: linear-gradient(0deg, #ffa500, #f8650c);
-  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.25), inset -2px -2px 2px rgba(255, 255, 255, 0.152), 1px 2px 2px rgba(0, 0, 0, 0.3);
-}
-@media (max-width: 1024px) {
-  #hero #cta .cta-btn:active {
-    transform: scale(0.97);
-    letter-spacing: normal;
-  }
-  #hero #cta .cta-btn:active i {
-    animation: none;
-  }
-  #hero #cta .cta-btn:active::before {
-    opacity: 0;
-  }
-  #hero #cta .cta-btn:active::after {
-    opacity: 1;
-  }
-}
-@media (min-width: 1024px) {
-  #hero #cta .cta-btn:hover {
-    transform: scale(0.97);
-    letter-spacing: normal;
-  }
-  #hero #cta .cta-btn:hover i {
-    animation: none;
-  }
-  #hero #cta .cta-btn:hover::before {
-    opacity: 0;
-  }
-  #hero #cta .cta-btn:hover::after {
-    opacity: 1;
-  }
-}
 #hero.active {
   background: linear-gradient(45deg, #f8650c, #ffa500);
   background: #f8650c;
@@ -1926,7 +1840,6 @@
 }
 .container .about .about-article a {
   display: block;
-  color: #f8650c;
   font-size: 1rem;
   font-size: clamp(1rem, 1.5vw, 1.15rem);
   font-weight: 400;
@@ -2789,6 +2702,11 @@
 }
 .services .section-btn {
   margin: 10vh auto;
+}
+@media (min-width: 820px) {
+  .services .cta .cta-btn {
+    margin-inline: auto;
+  }
 }
 @media (min-width: 768px) {
   .services {
@@ -3675,6 +3593,93 @@
   transform: translateX(-50%) translateY(0);
   transition: 1s;
   transition-delay: 0.5s;
+}
+
+.cta {
+  transition: 0.25s;
+}
+.cta .cta-btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  margin: 0.5rem 0;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #f4f4f4;
+  background: #ffa500;
+  display: block;
+  width: max-content;
+  position: relative;
+  isolation: isolate;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+.cta .cta-btn i {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  animation: arrow 1.5s infinite;
+}
+@keyframes arrow {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateX(0.25rem);
+    opacity: 1;
+  }
+}
+.cta .cta-btn::before, .cta .cta-btn::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  z-index: -1;
+  transition: 0.3s;
+}
+.cta .cta-btn::before {
+  background: linear-gradient(0deg, #f8650c, #ffa500);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 2px 3px 2px rgba(0, 0, 0, 0.15);
+}
+.cta .cta-btn::after {
+  opacity: 0;
+  background: linear-gradient(0deg, #ffa500, #f8650c);
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.25), inset -2px -2px 2px rgba(255, 255, 255, 0.152), 1px 2px 2px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 1024px) {
+  .cta .cta-btn:active {
+    transform: scale(0.97);
+    letter-spacing: normal;
+  }
+  .cta .cta-btn:active i {
+    animation: none;
+  }
+  .cta .cta-btn:active::before {
+    opacity: 0;
+  }
+  .cta .cta-btn:active::after {
+    opacity: 1;
+  }
+}
+@media (min-width: 1024px) {
+  .cta .cta-btn:hover {
+    transform: scale(0.97);
+    letter-spacing: normal;
+  }
+  .cta .cta-btn:hover i {
+    animation: none;
+  }
+  .cta .cta-btn:hover::before {
+    opacity: 0;
+  }
+  .cta .cta-btn:hover::after {
+    opacity: 1;
+  }
 }
 
 [data-scroll] {
