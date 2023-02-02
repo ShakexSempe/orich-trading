@@ -2461,9 +2461,6 @@
   background: #ffff;
   border-radius: 5px;
 }
-.services .service-container.index-container .service-item .service-type ul {
-  list-style: none;
-}
 .services .service-container .container-title {
   text-align: center;
   padding: 1rem 0;
@@ -2482,7 +2479,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5vh 0;
+  padding: 5vh 0 1rem;
   margin: 0 auto 5vh;
   border-radius: 0.5rem;
   width: 100%;
@@ -2543,7 +2540,7 @@
 }
 .services .service-container .service-item .service-type ul {
   color: #f4f4f4;
-  list-style: none;
+  padding: 1rem 0.5rem;
   font-weight: 500;
   width: 100%;
   margin: 1rem auto;
@@ -2551,80 +2548,24 @@
   position: relative;
 }
 .services .service-container .service-item .service-type ul li {
-  padding: 0.5rem 0;
+  padding: 0 0 1rem 0;
   text-transform: capitalize;
   font-weight: 400;
   color: #000;
   transition: 1.5s;
-  cursor: pointer;
 }
 .services .service-container .service-item .service-type ul li::marker {
-  color: #000;
+  color: #0005;
   transition: 0.3s;
 }
-.services .service-container .service-item .service-type ul li:last-child {
-  margin-top: 1rem;
+.services .service-container .service-item:hover .service-core h4 {
+  color: #f8650c;
+  transition: 0.25s;
 }
-.services .service-container .service-item .service-type ul li a {
-  display: none;
-  width: 8rem;
-  text-align: center;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  margin: 5rem auto 0.5rem;
-  border-radius: 0.5rem;
-  outline: none;
-  color: #fff;
-  position: relative;
-  isolation: isolate;
-  transition: 0.3s;
+.services .service-container .service-item:hover .service-core i {
+  animation: none;
 }
-.services .service-container .service-item .service-type ul li a::before, .services .service-container .service-item .service-type ul li a::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #f8650c;
-  border-radius: 0.5rem;
-  z-index: -1;
-  transition: 0.2s;
-}
-.services .service-container .service-item .service-type ul li a::before {
-  background: linear-gradient(0deg, #f8650c, #ffa500);
-  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 2px 3px 2px rgba(0, 0, 0, 0.15);
-}
-.services .service-container .service-item .service-type ul li a::after {
-  background: linear-gradient(0deg, #ffa500, #f8650c);
-  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.25), inset -2px -2px 2px rgba(255, 255, 255, 0.152), 1px 2px 2px rgba(0, 0, 0, 0.3);
-  opacity: 0;
-}
-@media (min-width: 1024px) {
-  .services .service-container .service-item .service-type ul li a:hover {
-    transition: 0.2s;
-    transform: scale(0.98);
-  }
-  .services .service-container .service-item .service-type ul li a:hover::before {
-    opacity: 0;
-  }
-  .services .service-container .service-item .service-type ul li a:hover::after {
-    opacity: 1;
-  }
-}
-@media (max-width: 1024px) {
-  .services .service-container .service-item .service-type ul li a:active {
-    transition: 0.2s;
-    transform: scale(0.98);
-  }
-  .services .service-container .service-item .service-type ul li a:active::before {
-    opacity: 0;
-  }
-  .services .service-container .service-item .service-type ul li a:active::after {
-    opacity: 1;
-  }
-}
-.services .service-container .service-item .service-type:hover ul li::marker {
+.services .service-container .service-item:hover .service-type ul li::marker {
   color: #f8650c;
 }
 .services .service-container .service-item[data-scroll] {
