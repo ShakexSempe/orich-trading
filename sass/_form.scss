@@ -4,9 +4,9 @@
         width: 70%;
         margin: 0 auto;
     }
-    // min-height: 100vh;
-    padding: 10vh 0;
-    margin: 5vh 5vw;
+    min-height: 100vh;
+    padding: 10vh 5vw;
+    // margin: 5vh 5vw;
     overflow: hidden;
     // border: 2px solid blue;
     // width: 100%;
@@ -64,19 +64,22 @@
     input, textarea {
         display: block;
         padding: .5rem;
-        margin-bottom: 1.5rem;
+        margin: .25rem 0 2rem;
         width: 100%;
-        border: 1px solid #000;
+        border: none;
+        outline: 1px solid #000;
         border-radius: $border-radius-sm;
         resize: none;
+        transition: outline .5s;
 
         &:valid {
-            border-color: $brand;
+            outline-color: $brand;
+            // border-color: $brand;
         }
 
         &::placeholder {
             opacity: .5;
-            letter-spacing: .05rem;
+            // letter-spacing: .05rem;
             transition: .25s;
         }
         
@@ -84,7 +87,7 @@
         &:hover, &:focus {
             &::placeholder {
                 opacity: 1;
-                letter-spacing: normal;
+                // letter-spacing: normal;
             }
         }
     }
