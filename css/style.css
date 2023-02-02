@@ -196,7 +196,7 @@
   top: 0;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(0deg, #000 10%, #111 40%);
+  background-color: #000;
   z-index: 999;
   display: grid;
   place-items: center;
@@ -259,8 +259,8 @@
   place-items: center;
 }
 .loader_bg .spinner .circle {
-  height: 6rem;
-  width: 6rem;
+  height: 4.5rem;
+  width: 4.5rem;
   border: 0.35rem solid transparent;
   border-radius: 50%;
   position: absolute;
