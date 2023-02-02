@@ -1840,6 +1840,7 @@
 }
 .container .about .about-article a {
   display: block;
+  color: #f8650c;
   font-size: 1rem;
   font-size: clamp(1rem, 1.5vw, 1.15rem);
   font-weight: 400;

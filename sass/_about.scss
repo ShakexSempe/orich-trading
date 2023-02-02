@@ -116,7 +116,8 @@
                 // border: 1px solid red;
                 display: block;
                 // width: max-content;
-                // color: $brand;
+                color: $brand;
+                // text-transform: capitalize;
                 font-size: 1rem;
                 font-size: clamp(1rem, 1.5vw, 1.15rem);
                 font-weight: 400;
