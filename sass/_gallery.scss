@@ -36,8 +36,10 @@
         }
         &.big {
             // border: 2px solid pink;
-            grid-row: span 2;
-            grid-row: span 2;
+            @include sm {
+                grid-row: span 2;
+                grid-row: span 2;
+            }
         }
         img {
             width: 100%;

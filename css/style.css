@@ -505,9 +505,11 @@
     grid-row: span 2;
   }
 }
-.grid-gallery .gallery-figure.big {
-  grid-row: span 2;
-  grid-row: span 2;
+@media (min-width: 576px) {
+  .grid-gallery .gallery-figure.big {
+    grid-row: span 2;
+    grid-row: span 2;
+  }
 }
 .grid-gallery .gallery-figure img {
   width: 100%;
