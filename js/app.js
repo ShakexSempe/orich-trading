@@ -58,7 +58,7 @@ logo.addEventListener("click", () => {
 // HERO INTERSECTION OBSERVER
     // OPTIONS = TRANSITION TAKES PLACE AT -100% MARGIN TOP
         // TRANSITIONS = 1) HEADER BACKGROUND.  2) LOGO HEIGHT
-const indexHeader = document.querySelector(".index-header");
+const pageHeader = document.querySelector("[data-header]");
 const heroOptions = {
     rootMargin: "-100% 0px 0px 0px"
 };
@@ -69,11 +69,11 @@ const heroObserver = new IntersectionObserver(
         entries.forEach(entry => {
             if(!entry.isIntersecting) {
                 console.log("hero NOT intersecting");
-                indexHeader.classList.remove("hero-header");
+                pageHeader.classList.remove("hero-header");
                 logo.classList.remove("active-logo");
             } else {
                 console.log("hero intersecting");
-                indexHeader.classList.add("hero-header");
+                pageHeader.classList.add("hero-header");
                 logo.classList.add("active-logo");
             }
         });
