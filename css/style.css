@@ -474,6 +474,11 @@
   transition: 0.5s;
 }
 
+.grid-gallery {
+  border: 2px solid red;
+  padding: 5vh 5vw;
+}
+
 #header {
   position: fixed;
   top: 0;
