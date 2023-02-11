@@ -405,6 +405,8 @@
     .item {
         // border: 1px solid yellow;
         width: 100%;
+        transform: translateY(9vh);
+        transition: .5s;
         a {
             transition: 1s;
             text-transform: capitalize;
@@ -415,7 +417,7 @@
             place-items: center;
             place-content: center;
             i {
-                font-size: 1.05rem;
+                font-size: 1rem;
                 color: #fff8;
                 transition: 1s;
             }
@@ -498,6 +500,20 @@
     // FOOTER NAV IO
     &.active-footer {
         transform: translateY(0);
+        .item {
+            transform: translateY(0);
+            &:nth-child(1){
+                transition: .5s;
+            }
+            &:nth-child(2){
+                transition: .75s;
+            }
+            &:nth-child(3){
+                transition: .95s;
+            }
+        }
+
+
         @include md {
             transform: translateX(0);
             .item {
