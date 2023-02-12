@@ -1359,15 +1359,15 @@
   transform: scale(0.98);
   transition: 0.25s;
 }
-.menu .menu-item.active-item:hover .menu-image::after {
+.menu .menu-item.active-item .menu-image:hover::after {
   transition: 0.25s;
   opacity: 0.3;
 }
-.menu .menu-item.active-item:hover .menu-image figcaption .cta-flex a {
+.menu .menu-item.active-item .menu-image:hover figcaption .cta-flex a {
   transform: scaleY(1);
   transition: 0.5s;
 }
-.menu .menu-item.active-item:hover img {
+.menu .menu-item.active-item .menu-image:hover img {
   transform: scale(1.05);
   transition: 1s;
   transition-delay: 0;

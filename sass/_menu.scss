@@ -304,34 +304,31 @@
                         }
                     }
                 }
-            }
-
-            &:hover {
-                
-
-                .menu-image {
+                &:hover {
                     &::after {
                         transition: .25s;
                         opacity: .3;
                     }
-
-                    figcaption {
-                        .cta-flex {
-                            // border: 2px solid red;
-                            a {
-                                transform: scaleY(1);
-                                transition: .5s;
+                    
+                        figcaption {
+                            .cta-flex {
+                                // border: 2px solid red;
+                                a {
+                                    transform: scaleY(1);
+                                    transition: .5s;
+                                }
                             }
                         }
+                    
+    
+                    img {
+                        transform: scale(1.05);
+                        transition: 1s;
+                        transition-delay: 0;
                     }
                 }
-
-                img {
-                    transform: scale(1.05);
-                    transition: 1s;
-                    transition-delay: 0;
-                }
             }
+
         }
     }
     
