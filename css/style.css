@@ -1361,7 +1361,7 @@
 }
 .menu .menu-item.active-item:hover .menu-image::after {
   transition: 0.25s;
-  opacity: 0.45;
+  opacity: 0.3;
 }
 .menu .menu-item.active-item:hover .menu-image figcaption .cta-flex a {
   transform: scaleY(1);
