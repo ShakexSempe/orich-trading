@@ -450,10 +450,11 @@
         padding: 0 .2rem;
         transition: .5s;
         height: 100%;
+        width: auto;
         // overflow: hidden;
-        display: grid;
-        place-items: center;
-        border-radius: 5px;
+        // display: grid;
+        // place-items: center;
+        border-radius: $border-radius-sm;
 
         // border: 1px solid blue;
         @include sm {

@@ -913,9 +913,8 @@
   padding: 0 0.2rem;
   transition: 0.5s;
   height: 100%;
-  display: grid;
-  place-items: center;
-  border-radius: 5px;
+  width: auto;
+  border-radius: 0.5rem;
 }
 @media (min-width: 576px) {
   #header .logo {
