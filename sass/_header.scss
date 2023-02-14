@@ -7,7 +7,7 @@
     isolation: isolate;
     background: transparent;
      // MOBILE HEADER 
-     @media (max-width: 1024px) {
+    @media (max-width: 1024px) {
         height: 7vh;
         padding: .3rem 1rem;
         
@@ -260,7 +260,7 @@
                         a {
                             opacity: 1;
                             transform: translateY(0);
-                            transition-delay: calc(.85s + .15s * var(--i)) ;
+                            transition-delay: calc(.8s + .125s * var(--i)) ;
                         }
                     }
                 }

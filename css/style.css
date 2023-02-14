@@ -765,7 +765,7 @@
   #header .navigation aside.active .social-links a {
     opacity: 1;
     transform: translateY(0);
-    transition-delay: calc(.85s + .15s * var(--i));
+    transition-delay: calc(.8s + .125s * var(--i));
   }
 }
 @media (min-width: 1024px) {
