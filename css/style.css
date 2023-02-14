@@ -914,7 +914,6 @@
   transition: 0.5s;
   height: 100%;
   width: auto;
-  border-radius: 0.5rem;
 }
 @media (min-width: 576px) {
   #header .logo {
