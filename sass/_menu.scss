@@ -98,7 +98,7 @@
                 position: absolute;
                 // border: 2px solid yellow;
                 display: grid;
-                // place-content: center;
+                place-content: center;
                 // place-items: center;
                 gap: 1.5rem;
                 padding: 1rem;
@@ -112,7 +112,7 @@
                 z-index: 1;
 
                 p {
-                    display: none;
+                    // display: none;
                     font-weight: 400;
                     padding: .25rem;
                     border-radius: $border-radius-sm;
@@ -311,6 +311,11 @@
                     }
                     
                         figcaption {
+                            p {
+                                transform: scale(1);
+                                opacity: 1;
+                                transition: 1s;
+                            }
                             .cta-flex {
                                 // border: 2px solid red;
                                 a {
@@ -322,7 +327,7 @@
                     
     
                     img {
-                        // transform: scale(1.05);
+                        transform: scale(1.05);
                         transition: 1s;
                         transition-delay: 0;
                     }

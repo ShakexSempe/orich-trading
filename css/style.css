@@ -1239,6 +1239,7 @@
 .menu .menu-item .menu-image figcaption {
   position: absolute;
   display: grid;
+  place-content: center;
   gap: 1.5rem;
   padding: 1rem;
   top: 0;
@@ -1251,7 +1252,6 @@
   z-index: 1;
 }
 .menu .menu-item .menu-image figcaption p {
-  display: none;
   font-weight: 400;
   padding: 0.25rem;
   border-radius: 0.5rem;
@@ -1361,11 +1361,17 @@
   transition: 0.25s;
   opacity: 0.3;
 }
+.menu .menu-item.active-item .menu-image:hover figcaption p {
+  transform: scale(1);
+  opacity: 1;
+  transition: 1s;
+}
 .menu .menu-item.active-item .menu-image:hover figcaption .cta-flex a {
   transform: scaleY(1);
   transition: 0.5s;
 }
 .menu .menu-item.active-item .menu-image:hover img {
+  transform: scale(1.05);
   transition: 1s;
   transition-delay: 0;
 }
