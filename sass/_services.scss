@@ -182,68 +182,69 @@
         .service-item {
             // border: 1px solid $brand;
             // min-height: 100vh;
-            background-color: #f4f4f4;
+            background-color: #fafafa;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            padding: 5vh 0 1rem;
-            margin: 0 auto 5vh;
+            padding: 1rem .5rem;
+            margin: 10vh auto;
             border-radius: $border-radius-sm;
             width: 100%;
-            overflow: hidden;
+            // overflow: hidden;
             
             @media (min-width: 768px) {
                 // border-bottom: 1px solid $brand;
             }
             .service-core {
                 flex-basis: 50%;
-                overflow: hidden;
+                // overflow: hidden;
                 display: flex;
-                flex-direction: column;
-                align-items: center;
+                flex-direction: column-reverse;
+                // align-items: center;
                 padding: 0 .5rem;
                 h4 {
-                    text-align: center;
-                    margin: 1rem auto 1rem;
+                    // text-align: center;
+                    // margin: 1rem auto 1rem;
                     text-transform: capitalize;
-                    font-size: 1.5rem;
+                    font-size: 1.25rem;
                     color: $brand;
                     font-weight: 500;
                 }
                 i {
-                    margin-bottom: 1.5rem;
+                    // margin-bottom: 1.5rem;
+                    margin-top: -2rem;
+                    margin: -2rem 0 1rem;
                     padding: 0;
-                    font-size: 4em;
+                    font-size: 2.5rem;
                     transition: .3s;
-                    animation: general 2s infinite;
-                    &.fa-wrench {
-                        animation: rotate 2s infinite;
-                    }
-                    &.fa-paint-roller,
-                    &.fa-plug {
-                        animation: rollUp 2s infinite;
+                    // animation: general 2s infinite;
+                    // &.fa-wrench {
+                    //     animation: rotate 2s infinite;
+                    // }
+                    // &.fa-paint-roller,
+                    // &.fa-plug {
+                    //     animation: rollUp 2s infinite;
 
-                    }
-                    @keyframes rollUp {
-                        0%, 100% {
-                            color: #000a;
-                        }
-                        50% {
-                            transform: translateY(1rem);
-                            color: #000;
-                        }
-                    }
-                    @keyframes rotate {
-                        50% {
-                            transform: rotate(20deg);
-                            color: #000a;
-                        }
-                    }
-                    @keyframes general {
-                        50% {
-                            color: #000a;
-                        }
-                    }
+                    // }
+                    // @keyframes rollUp {
+                    //     0%, 100% {
+                    //         color: #000a;
+                    //     }
+                    //     50% {
+                    //         transform: translateY(1rem);
+                    //         color: #000;
+                    //     }
+                    // }
+                    // @keyframes rotate {
+                    //     50% {
+                    //         transform: rotate(20deg);
+                    //         color: #000a;
+                    //     }
+                    // }
+                    // @keyframes general {
+                    //     50% {
+                    //         color: #000a;
+                    //     }
+                    // }
                     // ICON ANIMATIONS
 
 
@@ -303,6 +304,7 @@
                     }
                     i {
                         animation: none;
+                        color: $brand;
                         // animation-iteration-count: 2;
                         // animation-fill-mode: backwards;
                     }
@@ -312,10 +314,10 @@
                     ul {
                         li {
                             &::marker {
-                                color: $brand;
+                                color: #000;
                             }
                         }
-                    }
+                    }   
                 }
             }
             // SCROLL 

@@ -2533,64 +2533,32 @@
   border-top-left-radius: 5px;
 }
 .services .service-container .service-item {
-  background-color: #f4f4f4;
+  background-color: #fafafa;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 5vh 0 1rem;
-  margin: 0 auto 5vh;
+  padding: 1rem 0.5rem;
+  margin: 10vh auto;
   border-radius: 0.5rem;
   width: 100%;
-  overflow: hidden;
 }
 .services .service-container .service-item .service-core {
   flex-basis: 50%;
-  overflow: hidden;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column-reverse;
   padding: 0 0.5rem;
 }
 .services .service-container .service-item .service-core h4 {
-  text-align: center;
-  margin: 1rem auto 1rem;
   text-transform: capitalize;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #f8650c;
   font-weight: 500;
 }
 .services .service-container .service-item .service-core i {
-  margin-bottom: 1.5rem;
+  margin-top: -2rem;
+  margin: -2rem 0 1rem;
   padding: 0;
-  font-size: 4em;
+  font-size: 2.5rem;
   transition: 0.3s;
-  animation: general 2s infinite;
-}
-.services .service-container .service-item .service-core i.fa-wrench {
-  animation: rotate 2s infinite;
-}
-.services .service-container .service-item .service-core i.fa-paint-roller, .services .service-container .service-item .service-core i.fa-plug {
-  animation: rollUp 2s infinite;
-}
-@keyframes rollUp {
-  0%, 100% {
-    color: #000a;
-  }
-  50% {
-    transform: translateY(1rem);
-    color: #000;
-  }
-}
-@keyframes rotate {
-  50% {
-    transform: rotate(20deg);
-    color: #000a;
-  }
-}
-@keyframes general {
-  50% {
-    color: #000a;
-  }
 }
 .services .service-container .service-item .service-type {
   width: 100%;
@@ -2625,9 +2593,10 @@
 }
 .services .service-container .service-item:hover .service-core i {
   animation: none;
+  color: #f8650c;
 }
 .services .service-container .service-item:hover .service-type ul li::marker {
-  color: #f8650c;
+  color: #000;
 }
 .services .service-container .service-item[data-scroll] {
   transform: scale(1);
