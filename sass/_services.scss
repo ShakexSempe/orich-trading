@@ -202,11 +202,11 @@
                 h4 {
                     text-transform: capitalize;
                     font-size: 1.25rem;
-                    color: $brand;
+                    font-size: clamp(1.25rem, 2vw, 1.4rem);
                     font-weight: 500;
-                    // @include md {
-                    //     text-align: center;
-                    // }
+                    @include md {
+                        text-align: center;
+                    }
                 }
                 i {
                     // margin-bottom: 1.5rem;
@@ -215,9 +215,11 @@
                     padding: 0;
                     font-size: 2.5rem;
                     transition: .3s;
-                    // @include md {
-                    //     margin: -2rem auto 1rem;
-                    // }
+                    @include md {
+                        margin: -2rem auto 1rem;
+                        margin: 0 auto ;
+                        transform: translateY(-2rem);
+                    }
                     // animation: general 2s infinite;
                     // &.fa-wrench {
                     //     animation: rotate 2s infinite;
@@ -281,12 +283,13 @@
                     //     border-radius: 5px;
                     // }
                     li {
-                        // margin: .5rem 0;
-                        padding: 0 0 1rem 0;
+                        margin: .5rem 0;
+                        // padding: 0 0 .25rem 0;
                         text-transform: capitalize;
                         font-weight: 400;
                         color: #000;
                         transition: 1.5s;
+                        // border-bottom: 1px solid #ddd;
                         &::marker {
                             color: #0005;
                             transition: .3s;
@@ -299,16 +302,15 @@
             }
             // ITEM HOVER EFFECT
             &:hover {
+                transition: .5s;
+                background-color: #fafafa;
+                @include md {
+                    background: transparent;
+                }
                 .service-core {
-                    h4 {
-                        color: $brand;
-                        transition: .25s;
-                    }
                     i {
-                        animation: none;
-                        color: $brand;
-                        // animation-iteration-count: 2;
-                        // animation-fill-mode: backwards;
+                        transform: translateY(0);
+                        transition: 1s;
                     }
                 }
 
@@ -333,10 +335,6 @@
                 }
             }
             &[data-scroll="in"] {
-                h4 {
-                    transition: 1.8s;
-                    color: #000;
-                }
                 .service-type {
                     ul {
                         // PSUEDO UNDERLINE
@@ -445,27 +443,10 @@
                     flex-basis: 50%;
                     // overflow: hidden;
                     height: 100%;
-                    width: 100%;
+                    // width: 100%;
                     // border: 2px solid red;
                     // margin: 5vh 0;
 
-                    figure {
-                        margin: 0 auto;
-                        height: 100%;
-                        width: 80%;
-                        overflow: hidden;
-                        // border: 1px solid red;
-                        figcaption {
-                            text-align: center;
-                            margin: 1rem auto;
-                        }
-                        img {
-                            width: 100%;
-                            height: 70%;
-                            object-fit: contain;
-                            // border: 2px solid green;
-                        }
-                    }
                 }
                 .service-type {
                     width: 50%;
