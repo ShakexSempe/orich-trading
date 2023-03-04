@@ -3250,9 +3250,8 @@
 #footer .footer-contact .contact-item .contact-info {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   text-overflow: ellipsis;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
 }
 #footer .footer-contact .contact-item .contact-info .address {
   display: flex;
@@ -3303,6 +3302,9 @@
 #footer .footer-contact .contact-item .contact-info p {
   color: #000;
   text-overflow: ellipsis;
+}
+#footer .footer-contact .contact-item .contact-info p i {
+  margin-right: 0.25rem;
 }
 #footer .footer-contact .contact-item .contact-info a {
   color: #f8650c;
