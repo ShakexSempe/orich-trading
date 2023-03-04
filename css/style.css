@@ -1220,7 +1220,7 @@
 }
 .menu .menu-item .menu-image {
   height: 50vh;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   overflow: hidden;
   cursor: pointer;
   position: relative;
@@ -1234,6 +1234,7 @@
   width: 100%;
   height: 100%;
   background: #000;
+  border-radius: 0.25rem;
   transition: 0.5s;
 }
 .menu .menu-item .menu-image figcaption {
@@ -1321,7 +1322,6 @@
   opacity: 0;
 }
 .menu .menu-item.io-item .menu-image img {
-  transform: scale(1.25);
   opacity: 0;
 }
 .menu .menu-item.io-item .menu-image figcaption p {
@@ -2693,14 +2693,11 @@
   .services .service-container .service-item {
     display: flex;
     flex-direction: row;
-    height: 50vh;
     height: auto;
-    overflow: hidden;
     position: relative;
   }
   .services .service-container .service-item .service-core {
     flex-basis: 50%;
-    overflow: hidden;
     height: 100%;
     width: 100%;
   }
