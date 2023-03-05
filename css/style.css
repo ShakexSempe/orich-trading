@@ -1362,6 +1362,9 @@
   transform: scale(0.98);
   transition: 0.25s;
 }
+.menu .menu-item.active-item .menu-image figcaption p {
+  opacity: 0.5;
+}
 .menu .menu-item.active-item .menu-image:hover::after {
   transition: 0.25s;
   opacity: 0.3;
@@ -1377,7 +1380,7 @@
 }
 .menu .menu-item.active-item .menu-image:hover img {
   transform: scale(1.05);
-  transition: 1s;
+  transition: 1.5s;
   transition-delay: 0;
 }
 

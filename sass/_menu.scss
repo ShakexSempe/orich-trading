@@ -6,7 +6,6 @@
     }
     .menu-title {
         // border: 2px solid red;
-        
     }
     .menu-grid {
         // border: 2px solid blue;
@@ -307,6 +306,9 @@
                             }
                         }
                     }
+                    p {
+                        opacity: .5;
+                    }
                 }
                 &:hover {
                     &::after {
@@ -332,7 +334,7 @@
     
                     img {
                         transform: scale(1.05);
-                        transition: 1s;
+                        transition: 1.5s;
                         transition-delay: 0;
                     }
                 }
