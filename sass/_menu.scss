@@ -1,6 +1,9 @@
 .menu {
     // border: .25rem solid $brand;
     padding: 5vh 5vw;
+    @include lg {
+        padding: 10vh 5vw;
+    }
     .menu-title {
         // border: 2px solid red;
         
