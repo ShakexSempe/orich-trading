@@ -6,6 +6,18 @@
     transition: all .25s;
     isolation: isolate;
     background: transparent;
+    // BACKGROUND COLORS
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        transition: .25s;
+        z-index: -1;
+    }
      // MOBILE HEADER 
     @media (max-width: 1024px) {
         height: 7vh;
@@ -418,18 +430,7 @@
         }
 
     }
-    // BACKGROUND COLORS
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: transparent;
-        transition: .25s;
-        z-index: -1;
-    }
+    
     // CHANGE BG COLOR ON SCROLL
     // HEADER CLASSES FOR IO
     &.index-header {
@@ -491,9 +492,10 @@
 
     // HEADER ACTIVE CLASS
     &.hero-header {
-        background-color: #000a;
-        background-color: transparent;
         height: 25vh;
+        &::after {
+            background: transparent;
+        }
         @media (min-width: 768px) {
             background-color: transparent;
             // background-color: #ffee00b6;
@@ -568,19 +570,16 @@
         }
     }
     &.toggle-header {
-        // background-color: #000;
         &::after {
             background: #000;
         }
     }
     &.main-header {
-        background: #fff;
         &::after {
             background: #fff;
         }
     }
     &.menu-header {
-        background: none;
         &::after {
             background: transparent;
             background: #fff;

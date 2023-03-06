@@ -91,9 +91,8 @@
                 height: 100%;
                 background: #000;
                 border-radius: $border-radius-xsm;
-                // opacity: .25;
+                opacity: 0;
                 transition: .5s;
-                // z-index: -1;
 
             }
 
@@ -117,6 +116,7 @@
                 p {
                     // display: none;
                     font-weight: 400;
+                    line-height: 1.5;
                     padding: .25rem;
                     border-radius: $border-radius-sm;
                     transition: .5s;
@@ -197,40 +197,6 @@
             }
         }
 
-        // HOVER EFFECT
-        // &:hover {
-
-        //     .menu-image {
-        //         &::after {
-        //             opacity: 1;
-        //         }
-
-        //         figcaption {
-        //             p {
-        //                 opacity: 1;
-        //                 transform: scale(1);
-        //                 transition: .5s;
-        //             }
-
-        //             .cta-flex {
-        //                 i {
-        //                     opacity: 1;
-        //                     transform: translateX(0);
-        //                 }
-
-        //                 a {
-        //                     opacity: 1;
-        //                     transform: translateY(0);
-        //                 }
-        //             }
-        //         }
-
-        //         img {
-        //             transform: scale(1.2);
-        //         }
-        //     }
-        // }
-
         // IO CLASS
         &.io-item {
             .menu-item-title {
@@ -242,15 +208,6 @@
             }
 
             .menu-image {
-                &::after {
-                    opacity: 0;
-                }
-
-                img {
-                    // transform: scale(1.5);
-                    opacity: 0;
-                }
-
                 figcaption {
                     p {
                         opacity: 0;
@@ -261,6 +218,7 @@
                         i {
                             opacity: 0;
                         }
+
                         a {
                             transform: scaleY(0);
                         }
@@ -285,12 +243,6 @@
             }
 
             .menu-image {
-                img {
-                    transform: scale(1);
-                    opacity: 1;
-                    transition: 1.5s;
-                    transition-delay: .5s;
-                }
 
                 figcaption {
                     .cta-flex {
@@ -307,20 +259,20 @@
                         }
                     }
                     p {
-                        opacity: .5;
+                        opacity: .8;
                     }
                 }
                 &:hover {
                     &::after {
-                        transition: .25s;
-                        opacity: .3;
+                        transition: 0s;
+                        opacity: .4;
                     }
                     
                         figcaption {
                             p {
                                 transform: scale(1);
                                 opacity: 1;
-                                transition: 1s;
+                                transition: .5s;
                             }
                             .cta-flex {
                                 // border: 2px solid red;
