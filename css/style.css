@@ -3239,7 +3239,7 @@
   }
 }
 #footer .footer-contact .contact-item {
-  background-color: #f4f4f4;
+  background-color: #fafafa;
   border-radius: 0.5rem;
   margin: 1rem auto;
   padding: 1rem;
@@ -3311,7 +3311,7 @@
 #footer .footer-contact .contact-item .contact-info button {
   display: flex;
   align-items: center;
-  margin: 0.25rem 0;
+  margin: 0.25rem 0 0.5rem;
   transition: 0.5s;
   border: none;
   text-transform: capitalize;
@@ -3323,29 +3323,46 @@
 }
 #footer .footer-contact .contact-item .contact-info button a {
   color: #f4f4f4;
-  text-overflow: ellipsis;
   text-decoration: none;
-  background-image: linear-gradient(0deg, #f8650c, #ffa500);
+  background: #ffa500;
   padding: 0.5em 1rem;
   border-radius: 0.5rem;
   transition: 0.5s;
+  isolation: isolate;
+  position: relative;
+}
+#footer .footer-contact .contact-item .contact-info button a::before, #footer .footer-contact .contact-item .contact-info button a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  transition: 0.25s ease;
+  z-index: -1;
+}
+#footer .footer-contact .contact-item .contact-info button a::before {
+  background: linear-gradient(0deg, #f8650c, #ffa500);
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 2px 3px 2px rgba(0, 0, 0, 0.15);
+}
+#footer .footer-contact .contact-item .contact-info button a::after {
+  background: linear-gradient(0deg, #ffa500, #f8650c);
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.25), inset -2px -2px 2px rgba(255, 255, 255, 0.152), 1px 2px 2px rgba(0, 0, 0, 0.3);
+  opacity: 0;
 }
 #footer .footer-contact .contact-item .contact-info button a i {
   margin-left: 0.5rem;
 }
 #footer .footer-contact .contact-item .contact-info button:hover a {
+  transform: scale(0.98);
   color: #fff;
 }
-#footer .footer-contact .contact-item:hover {
-  transform: scale(1);
-  border-color: #f8650c;
-  background: #fafafa;
-  border-color: transparent;
+#footer .footer-contact .contact-item .contact-info button:hover a::before {
+  opacity: 0;
 }
-#footer .footer-contact .contact-item:hover .contact-info-item {
-  background: #f4f4f4;
-  transition: 1s;
+#footer .footer-contact .contact-item .contact-info button:hover a::after {
+  opacity: 1;
 }
 
 * {

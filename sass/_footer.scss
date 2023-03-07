@@ -24,7 +24,7 @@
 
         .contact-item {
             // border: 1px solid #000;
-            background-color: #f4f4f4;
+            background-color: #fafafa;
             border-radius: .5rem;
             margin: 1rem auto;
             padding: 1rem;
@@ -105,7 +105,7 @@
                     display: flex;
                     align-items: center;
                     // width: 100%;
-                    margin: .25rem 0;
+                    margin: .25rem 0 .5rem;
                     transition: .5s;
                     border: none;
                     // background: #fafafa;
@@ -118,36 +118,49 @@
                     }
                     a {
                         color: $text-second;
-                        text-overflow: ellipsis;
                         text-decoration: none;
-                        background-image: linear-gradient(0deg, $brand, $brand-light);
+                        background: $brand-light;
                         padding: .5em 1rem;
                         border-radius: $border-radius-sm;
                         transition: .5s;
-                        box-shadow: $box-shadow-sm;
-                    
+                        isolation: isolate;
+                        position: relative;
+                        &::before, &::after {
+                            content: ''; 
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            border-radius: $border-radius-sm;
+                            transition: .25s ease;
+                            z-index: -1;
+                        }
+                        &::before {
+                            background: $brand-btn;
+                            box-shadow: $box-shadow-sm;
+                        }
+                        &::after {
+                            background: $brand-btn-hover;
+                            box-shadow: $box-shadow-sm-hover;
+                            opacity: 0;
+                        }
+                        
                         i {
                             margin-left: .5rem;
                         }
                     }
+                    
                     &:hover {
                         a {
+                            transform: scale(.98);
                             color: #fff;
+                            &::before {opacity: 0;}
+                            &::after {opacity: 1;}
                         }
                     }
                 }
                 
-            }
-
-            &:hover {
-                transform: scale(1);
-                border-color: $brand;
-                background: #fafafa;
-                border-color: transparent;
-                .contact-info-item {
-                    background: #f4f4f4;
-                    transition: 1s;
-                }
             }
         }
     }
