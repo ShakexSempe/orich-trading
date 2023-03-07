@@ -24,7 +24,7 @@
 
         .contact-item {
             // border: 1px solid #000;
-            background-color: #f4f4f4;
+            background-color: #fafafa;
             border-radius: .5rem;
             margin: 1rem auto;
             padding: 1rem;
@@ -74,7 +74,7 @@
                 flex-direction: column;
                 gap: 1rem;
                 .contact-info-item {
-                    // border: 1px solid blue;
+                    border: 1px solid #ddd5;
                     border-radius: $border-radius-sm;
                     margin-bottom: 1rem;
                     background: #fafafa;
