@@ -56,13 +56,16 @@
             // ITEM HEADER = ICON + TITLE
 
             .contact-item-title {
-                margin: -1.85rem 0 1rem;
+                margin: -1.85rem 0 1.5rem;
                 h3 {
                     text-transform: capitalize;
-                    font-weight: 600;
+                    font-weight: 500;
+                    font-size: 1.25rem;
+                    font-size: clamp(1.25rem, 2.25vw, 1.4rem);
                 }
                 i {
                     font-size: 2rem;
+                    margin-bottom: .5rem;
                 }
             }
             .contact-info {
@@ -75,7 +78,7 @@
                     border-radius: $border-radius-sm;
                     margin-bottom: 1rem;
                     background: #fafafa;
-                    padding: .25rem;
+                    padding: .5rem .25rem;
                 }
                 .address {
                     display: flex;
