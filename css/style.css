@@ -3239,7 +3239,7 @@
   }
 }
 #footer .footer-contact .contact-item {
-  background-color: #fafafa;
+  background-color: #f4f4f4;
   border-radius: 0.5rem;
   margin: 1rem auto;
   padding: 1rem;
@@ -3283,7 +3283,6 @@
   gap: 1rem;
 }
 #footer .footer-contact .contact-item .contact-info .contact-info-item {
-  border: 1px solid #ddd5;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
   background: #fafafa;
