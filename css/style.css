@@ -1348,7 +1348,7 @@
   transition: 0.25s;
 }
 .menu .menu-item.active-item .menu-image figcaption p {
-  opacity: 0.8;
+  opacity: 0.5;
 }
 .menu .menu-item.active-item .menu-image:hover::after {
   transition: 0s;
