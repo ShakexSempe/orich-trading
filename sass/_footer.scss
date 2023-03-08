@@ -1,11 +1,12 @@
 .footer {
     // border: 2px solid $brand;
-    padding: 5vh 5vw 10vh;
+    padding: 5vh 5vw 15vh;
     background: linear-gradient(0deg, #fafafa, #ffff);
     display: flex;
     flex-direction: column;
     gap: 1rem;
     @include xlg {
+        padding: 5vh 5vw 5vh;
         background: linear-gradient(90deg, #ffff, #fafafa);
         flex-direction: row;
         justify-content: space-between;
@@ -13,9 +14,9 @@
     a {
         text-decoration: none;
         color: #000;
+        transition: .25s;
         &:hover {
             color: $brand;
-            transition: .25s;
         }
     }
 

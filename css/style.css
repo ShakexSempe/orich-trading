@@ -3369,7 +3369,7 @@
 }
 
 .footer {
-  padding: 5vh 5vw 10vh;
+  padding: 5vh 5vw 15vh;
   background: linear-gradient(0deg, #fafafa, #ffff);
   display: flex;
   flex-direction: column;
@@ -3377,6 +3377,7 @@
 }
 @media (min-width: 1024px) {
   .footer {
+    padding: 5vh 5vw 5vh;
     background: linear-gradient(90deg, #ffff, #fafafa);
     flex-direction: row;
     justify-content: space-between;
@@ -3385,10 +3386,10 @@
 .footer a {
   text-decoration: none;
   color: #000;
+  transition: 0.25s;
 }
 .footer a:hover {
   color: #f8650c;
-  transition: 0.25s;
 }
 .footer .footer-logo {
   display: grid;
