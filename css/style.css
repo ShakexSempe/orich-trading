@@ -351,7 +351,7 @@
   text-decoration: underline;
 }
 
-.footer-nav {
+.bottom-nav {
   position: fixed;
   z-index: 5;
   bottom: 0;
@@ -366,12 +366,12 @@
   transform: translateY(8vh);
   transition: 0.5s;
 }
-.footer-nav .item {
+.bottom-nav .item {
   width: 100%;
   transform: translateY(9vh);
   transition: 0.5s;
 }
-.footer-nav .item a {
+.bottom-nav .item a {
   transition: 1s;
   text-transform: capitalize;
   text-decoration: none;
@@ -381,65 +381,65 @@
   place-items: center;
   place-content: center;
 }
-.footer-nav .item a i {
+.bottom-nav .item a i {
   font-size: 1rem;
   color: #fff8;
   transition: 1s;
 }
 @media (min-width: 820px) {
-  .footer-nav .item:hover a {
+  .bottom-nav .item:hover a {
     opacity: 0.7;
   }
-  .footer-nav .item:hover i {
+  .bottom-nav .item:hover i {
     color: #f8650c;
     transition: 0.25s;
   }
 }
 @media (max-width: 820px) {
-  .footer-nav .item:active a {
+  .bottom-nav .item:active a {
     opacity: 0.7;
   }
-  .footer-nav .item:active i {
+  .bottom-nav .item:active i {
     color: #f8650c;
     transition: 0.25s;
   }
 }
 @media (min-width: 1024px) {
-  .footer-nav .item {
+  .bottom-nav .item {
     transform: translateX(-2rem);
     transition: 1s;
   }
-  .footer-nav .item a {
+  .bottom-nav .item a {
     background-color: transparent;
     border-radius: 50%;
     height: 3.5rem;
     width: 3.5rem;
     color: #000;
   }
-  .footer-nav .item a i {
+  .bottom-nav .item a i {
     font-size: 1.25rem;
     color: #f8650c;
   }
-  .footer-nav .item:hover a {
+  .bottom-nav .item:hover a {
     transition: 0.25s;
   }
-  .footer-nav .item:hover a i {
+  .bottom-nav .item:hover a i {
     transform: scale(1.1);
     transition: 0.25s;
   }
 }
 @media (max-width: 1024px) {
-  .footer-nav .item .desktop-contact-item {
+  .bottom-nav .item .desktop-contact-item {
     display: none;
   }
 }
 @media (min-width: 1024px) {
-  .footer-nav .item .mobile-contact-item {
+  .bottom-nav .item .mobile-contact-item {
     display: none;
   }
 }
 @media (min-width: 1024px) {
-  .footer-nav {
+  .bottom-nav {
     height: 100vh;
     width: 5vw;
     flex-direction: column;
@@ -450,39 +450,39 @@
     display: none;
   }
 }
-.footer-nav.active-footer {
+.bottom-nav.active-footer {
   transform: translateY(0);
 }
-.footer-nav.active-footer .item {
+.bottom-nav.active-footer .item {
   transform: translateY(0);
 }
-.footer-nav.active-footer .item:nth-child(1) {
+.bottom-nav.active-footer .item:nth-child(1) {
   transition: 0.5s;
 }
-.footer-nav.active-footer .item:nth-child(2) {
+.bottom-nav.active-footer .item:nth-child(2) {
   transition: 0.75s;
 }
-.footer-nav.active-footer .item:nth-child(3) {
+.bottom-nav.active-footer .item:nth-child(3) {
   transition: 0.95s;
 }
 @media (min-width: 768px) {
-  .footer-nav.active-footer {
+  .bottom-nav.active-footer {
     transform: translateX(0);
   }
-  .footer-nav.active-footer .item {
+  .bottom-nav.active-footer .item {
     transform: translateX(0);
   }
-  .footer-nav.active-footer .item:nth-child(1) {
+  .bottom-nav.active-footer .item:nth-child(1) {
     transition-delay: 0.25s;
   }
-  .footer-nav.active-footer .item:nth-child(2) {
+  .bottom-nav.active-footer .item:nth-child(2) {
     transition-delay: 0.35s;
   }
-  .footer-nav.active-footer .item:nth-child(3) {
+  .bottom-nav.active-footer .item:nth-child(3) {
     transition-delay: 0.45s;
   }
 }
-.footer-nav.menu-footer .item.menu-target i {
+.bottom-nav.menu-footer .item.menu-target i {
   color: #fff;
   transform: scale(1.05);
   transition: 0.5s;
@@ -3055,6 +3055,158 @@
   }
 }
 
+#contact {
+  background: #fff;
+  padding: 10vh 0 5vh;
+}
+#contact .contact-items {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5vh 0;
+  margin: 0 1rem;
+}
+@media (min-width: 820px) {
+  #contact .contact-items {
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10vh 5vw 5vh;
+    gap: 1rem;
+  }
+}
+#contact .contact-items .contact-item {
+  background-color: #f4f4f4;
+  border-radius: 0.5rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  padding: 1rem 0.5rem;
+  height: 70%;
+  width: 100%;
+  transform: scale(0.98);
+  transition: 0.3s;
+}
+@media (min-width: 820px) {
+  #contact .contact-items .contact-item {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 1rem;
+    z-index: 2;
+  }
+  #contact .contact-items .contact-item header {
+    font-size: 1.5rem;
+  }
+  #contact .contact-items .contact-item button a {
+    font-size: 1rem;
+  }
+}
+#contact .contact-items .contact-item .contact-item-title {
+  margin: -1.85rem 0 1.5rem;
+}
+#contact .contact-items .contact-item .contact-item-title h3 {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.25rem;
+  font-size: clamp(1.25rem, 2.25vw, 1.4rem);
+}
+#contact .contact-items .contact-item .contact-item-title i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+#contact .contact-items .contact-item .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#contact .contact-items .contact-item .contact-info .contact-info-item {
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  background: #fafafa;
+  padding: 0.5rem 0.25rem;
+}
+#contact .contact-items .contact-item .contact-info .address {
+  display: flex;
+  flex-direction: column;
+}
+#contact .contact-items .contact-item .contact-info p {
+  color: #000;
+  text-overflow: ellipsis;
+  line-height: 2;
+}
+#contact .contact-items .contact-item .contact-info p span {
+  font-weight: 600;
+}
+#contact .contact-items .contact-item .contact-info p i {
+  margin-right: 0.5rem;
+}
+#contact .contact-items .contact-item .contact-info a {
+  color: inherit;
+  text-decoration: none;
+}
+#contact .contact-items .contact-item .contact-info a:hover {
+  color: #f8650c;
+  transition: 0.25s;
+}
+#contact .contact-items .contact-item .contact-info button {
+  display: flex;
+  align-items: center;
+  margin: 0.25rem 0 0.5rem;
+  transition: 0.5s;
+  border: none;
+  text-transform: capitalize;
+}
+@media (min-width: 768px) {
+  #contact .contact-items .contact-item .contact-info button {
+    background-color: transparent;
+  }
+}
+#contact .contact-items .contact-item .contact-info button a {
+  color: #f4f4f4;
+  text-decoration: none;
+  background: #ffa500;
+  padding: 0.5em 1rem;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+  isolation: isolate;
+  position: relative;
+}
+#contact .contact-items .contact-item .contact-info button a::before, #contact .contact-items .contact-item .contact-info button a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  transition: 0.25s ease;
+  z-index: -1;
+}
+#contact .contact-items .contact-item .contact-info button a::before {
+  background: linear-gradient(0deg, #f8650c, #ffa500);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 2px 3px 2px rgba(0, 0, 0, 0.15);
+}
+#contact .contact-items .contact-item .contact-info button a::after {
+  background: linear-gradient(0deg, #ffa500, #f8650c);
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.25), inset -2px -2px 2px rgba(255, 255, 255, 0.152), 1px 2px 2px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+}
+#contact .contact-items .contact-item .contact-info button a i {
+  margin-left: 0.5rem;
+}
+#contact .contact-items .contact-item .contact-info button:hover a {
+  transform: scale(0.98);
+  color: #fff;
+}
+#contact .contact-items .contact-item .contact-info button:hover a::before {
+  opacity: 0;
+}
+#contact .contact-items .contact-item .contact-info button:hover a::after {
+  opacity: 1;
+}
+
 #form {
   min-height: 100vh;
   padding: 10vh 5vw;
@@ -3216,158 +3368,57 @@
   }
 }
 
-#footer {
-  background: #fff;
-  padding: 10vh 0 7vh;
-}
-#footer .footer-contact {
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 5vh 0;
-  margin: 0 1rem;
-}
-@media (min-width: 820px) {
-  #footer .footer-contact {
-    border: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 10vh 5vw 5vh;
-    gap: 1rem;
-  }
-}
-#footer .footer-contact .contact-item {
-  background-color: #f4f4f4;
-  border-radius: 0.5rem;
-  margin: 1rem auto;
-  padding: 1rem;
-  padding: 1rem 0.5rem;
-  height: 70%;
-  width: 100%;
-  transform: scale(0.98);
-  transition: 0.3s;
-}
-@media (min-width: 820px) {
-  #footer .footer-contact .contact-item {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 1rem;
-    z-index: 2;
-  }
-  #footer .footer-contact .contact-item header {
-    font-size: 1.5rem;
-  }
-  #footer .footer-contact .contact-item button a {
-    font-size: 1rem;
-  }
-}
-#footer .footer-contact .contact-item .contact-item-title {
-  margin: -1.85rem 0 1.5rem;
-}
-#footer .footer-contact .contact-item .contact-item-title h3 {
-  text-transform: capitalize;
-  font-weight: 500;
-  font-size: 1.25rem;
-  font-size: clamp(1.25rem, 2.25vw, 1.4rem);
-}
-#footer .footer-contact .contact-item .contact-item-title i {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-#footer .footer-contact .contact-item .contact-info {
+.footer {
+  padding: 5vh 5vw 10vh;
+  background: linear-gradient(0deg, #fafafa, #ffff);
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-#footer .footer-contact .contact-item .contact-info .contact-info-item {
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
-  background: #fafafa;
-  padding: 0.5rem 0.25rem;
+@media (min-width: 1024px) {
+  .footer {
+    background: linear-gradient(90deg, #ffff, #fafafa);
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
-#footer .footer-contact .contact-item .contact-info .address {
-  display: flex;
-  flex-direction: column;
-}
-#footer .footer-contact .contact-item .contact-info p {
-  color: #000;
-  text-overflow: ellipsis;
-  line-height: 2;
-}
-#footer .footer-contact .contact-item .contact-info p span {
-  font-weight: 600;
-}
-#footer .footer-contact .contact-item .contact-info p i {
-  margin-right: 0.5rem;
-}
-#footer .footer-contact .contact-item .contact-info a {
-  color: inherit;
+.footer a {
   text-decoration: none;
+  color: #000;
 }
-#footer .footer-contact .contact-item .contact-info a:hover {
+.footer a:hover {
   color: #f8650c;
   transition: 0.25s;
 }
-#footer .footer-contact .contact-item .contact-info button {
-  display: flex;
-  align-items: center;
-  margin: 0.25rem 0 0.5rem;
-  transition: 0.5s;
-  border: none;
-  text-transform: capitalize;
+.footer .footer-logo {
+  display: grid;
+  place-content: center;
 }
-@media (min-width: 768px) {
-  #footer .footer-contact .contact-item .contact-info button {
-    background-color: transparent;
+.footer .footer-logo img {
+  width: 100%;
+  width: 15rem;
+}
+@media (min-width: 576px) {
+  .footer .footer-logo img {
+    width: 10rem;
   }
 }
-#footer .footer-contact .contact-item .contact-info button a {
-  color: #f4f4f4;
-  text-decoration: none;
-  background: #ffa500;
-  padding: 0.5em 1rem;
-  border-radius: 0.5rem;
-  transition: 0.5s;
-  isolation: isolate;
-  position: relative;
+.footer .footer-copyright {
+  text-transform: capitalize;
 }
-#footer .footer-contact .contact-item .contact-info button a::before, #footer .footer-contact .contact-item .contact-info button a::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 0.5rem;
-  transition: 0.25s ease;
-  z-index: -1;
+.footer .footer-item .footer-item-title {
+  text-transform: capitalize;
+  margin-bottom: 0.25rem;
 }
-#footer .footer-contact .contact-item .contact-info button a::before {
-  background: linear-gradient(0deg, #f8650c, #ffa500);
-  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 2px 3px 2px rgba(0, 0, 0, 0.15);
+.footer .footer-item .footer-list {
+  list-style: none;
 }
-#footer .footer-contact .contact-item .contact-info button a::after {
-  background: linear-gradient(0deg, #ffa500, #f8650c);
-  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.25), inset -2px -2px 2px rgba(255, 255, 255, 0.152), 1px 2px 2px rgba(0, 0, 0, 0.3);
-  opacity: 0;
+.footer .footer-item .footer-list.page-links {
+  text-transform: capitalize;
 }
-#footer .footer-contact .contact-item .contact-info button a i {
-  margin-left: 0.5rem;
+.footer .footer-item .footer-list li a i {
+  margin-right: 0.5rem;
 }
-#footer .footer-contact .contact-item .contact-info button:hover a {
-  transform: scale(0.98);
-  color: #fff;
-}
-#footer .footer-contact .contact-item .contact-info button:hover a::before {
-  opacity: 0;
-}
-#footer .footer-contact .contact-item .contact-info button:hover a::after {
-  opacity: 1;
-}
-
 * {
   padding: 0;
   margin: 0;

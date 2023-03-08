@@ -5,7 +5,7 @@ const toggle = document.querySelector(".toggle");
 const header = document.getElementById("header");
 const main = document.querySelector(".main");
 const logo = document.querySelector(".logo");
-const footerNav = document.querySelector(".footer-nav");
+const bottomNav = document.querySelector(".bottom-nav");
 const topBtn = document.getElementById("top-btn");
 const aside = document.querySelector("aside");
 const dropdownBtn = document.querySelectorAll(".aside-dropdown")
@@ -94,12 +94,12 @@ const mainObserver = new IntersectionObserver(
             if(!entry.isIntersecting){
                 console.log('MAIN NOT IO');
                 header.classList.remove("main-header");
-                footerNav.classList.remove("active-footer");
+                bottomNav.classList.remove("active-footer");
 
             } else {
                 console.log('MAIN IS IO');
                 header.classList.add("main-header");
-                footerNav.classList.add("active-footer");
+                bottomNav.classList.add("active-footer");
 
             }
         });
@@ -121,11 +121,11 @@ menu.forEach(menu => {
                 if(!entry.isIntersecting){
                     console.log('Menu NOT io');
                     header.classList.remove('menu-header');
-                    footerNav.classList.remove('menu-footer');
+                    bottomNav.classList.remove('menu-footer');
                 } else {
                     console.log('menu IS io');
                     header.classList.add('menu-header');
-                    footerNav.classList.add('menu-footer');
+                    bottomNav.classList.add('menu-footer');
                 }
             })
         }, menuOptions
