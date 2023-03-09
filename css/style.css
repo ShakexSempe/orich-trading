@@ -3361,7 +3361,7 @@
 }
 
 .footer {
-  padding: 5vh 5vw 12vh;
+  padding: 5vh 5vw 15vh;
   background: linear-gradient(0deg, #fafafa, #ffff);
   display: flex;
   flex-direction: column;
