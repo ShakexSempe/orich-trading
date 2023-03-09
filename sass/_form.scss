@@ -68,7 +68,7 @@
         width: 100%;
         border: none;
         outline: 1px solid #000;
-        border-radius: $border-radius-sm;
+        border-radius: $border-radius-xsm;
         resize: none;
         transition: outline .5s;
 
@@ -78,15 +78,17 @@
         }
 
         &::placeholder {
-            opacity: .5;
+            opacity: 0;
+            transform: translateX(.5rem);
             // letter-spacing: .05rem;
-            transition: .25s;
+            transition: .5s;
         }
         
         // INPUT HOVER EFFECT
         &:hover, &:focus {
             &::placeholder {
                 opacity: 1;
+            transform: translateX(0rem);
                 // letter-spacing: normal;
             }
         }

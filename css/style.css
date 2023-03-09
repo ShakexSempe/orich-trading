@@ -2821,6 +2821,11 @@
   isolation: isolate;
   letter-spacing: 0.05rem;
 }
+@media (min-width: 820px) {
+  #projects .gallery .gallery-title a span {
+    padding: 0.5rem;
+  }
+}
 #projects .gallery .gallery-title a span::after, #projects .gallery .gallery-title a span::before {
   position: absolute;
   content: "";
@@ -3277,7 +3282,7 @@
   width: 100%;
   border: none;
   outline: 1px solid #000;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   resize: none;
   transition: outline 0.5s;
 }
@@ -3285,11 +3290,13 @@
   outline-color: #f8650c;
 }
 #form input::placeholder, #form textarea::placeholder {
-  opacity: 0.5;
-  transition: 0.25s;
+  opacity: 0;
+  transform: translateX(0.5rem);
+  transition: 0.5s;
 }
 #form input:hover::placeholder, #form input:focus::placeholder, #form textarea:hover::placeholder, #form textarea:focus::placeholder {
   opacity: 1;
+  transform: translateX(0rem);
 }
 #form button {
   padding: 0.5rem;

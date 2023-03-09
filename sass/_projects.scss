@@ -82,7 +82,9 @@
                     transition: .2s;
                     isolation: isolate;
                     letter-spacing: .05rem;
-
+                    @include lg {
+                        padding: .5rem;
+                    }
                     // PSEUDO BG
                     &::after, &::before {
                         position: absolute;
