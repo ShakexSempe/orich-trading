@@ -45,7 +45,7 @@
             align-items: center;
             justify-content: space-between;
 
-            h2 {
+            h3 {
                 overflow: hidden;
                 font-size: 1.25rem;
                 font-size: clamp(1.45rem, 2.25vw, 1.5rem);
@@ -202,7 +202,7 @@
         // IO CLASS
         &.io-item {
             .menu-item-title {
-                h2 {
+                h3 {
                     opacity: 0;
                     transform: translateY(-5vh);
                     transition: 1s;
@@ -217,7 +217,6 @@
                     }
 
                     .cta-flex {
-                        opacity: 0;
                         i {
                         }
 
@@ -232,7 +231,7 @@
         // ACTIVE IO ITEM
         &.active-item {
             .menu-item-title {
-                h2 {
+                h3 {
                     opacity: 1;
                     transform: translateY(0);
                 }
@@ -261,7 +260,7 @@
                         }
                     }
                     p {
-                        opacity: 0;
+                        opacity: .3;
                     }
                 }
                 &:hover, &:focus {

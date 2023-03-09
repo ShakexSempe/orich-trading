@@ -1203,7 +1203,7 @@
   align-items: center;
   justify-content: space-between;
 }
-.menu .menu-item .menu-item-title h2 {
+.menu .menu-item .menu-item-title h3 {
   overflow: hidden;
   font-size: 1.25rem;
   font-size: clamp(1.45rem, 2.25vw, 1.5rem);
@@ -1315,7 +1315,7 @@
   border-radius: 0.25rem;
   transition: 0.5s;
 }
-.menu .menu-item.io-item .menu-item-title h2 {
+.menu .menu-item.io-item .menu-item-title h3 {
   opacity: 0;
   transform: translateY(-5vh);
   transition: 1s;
@@ -1324,10 +1324,7 @@
   opacity: 0;
   transform: scale(0.95);
 }
-.menu .menu-item.io-item .menu-image figcaption .cta-flex {
-  opacity: 0;
-}
-.menu .menu-item.active-item .menu-item-title h2 {
+.menu .menu-item.active-item .menu-item-title h3 {
   opacity: 1;
   transform: translateY(0);
 }
@@ -1345,7 +1342,7 @@
   transition: 0.25s;
 }
 .menu .menu-item.active-item .menu-image figcaption p {
-  opacity: 0;
+  opacity: 0.3;
 }
 .menu .menu-item.active-item .menu-image:hover::after, .menu .menu-item.active-item .menu-image:focus::after {
   transition: 0s;
@@ -2505,19 +2502,6 @@
   background: #ffff;
   border-radius: 5px;
 }
-.services .service-container .container-title {
-  text-align: center;
-  padding: 1rem 0;
-  font-weight: 400;
-  color: #f4f4f4;
-  text-transform: capitalize;
-  font-size: 1.5rem;
-  letter-spacing: 0.2rem;
-  background: #f8650c;
-  background: #000;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-}
 .services .service-container .service-item {
   display: flex;
   flex-direction: column;
@@ -3438,7 +3422,22 @@
 .container {
   max-width: 100%;
 }
+.container .container-title {
+  text-align: center;
+  padding: 1rem 0;
+  font-weight: 400;
+  color: #f4f4f4;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 3vw, 1.8rem);
+  letter-spacing: 0.05rem;
+  background: #000;
+  background: linear-gradient(0deg, #000, #050505, #000);
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
 .container main {
+  padding: 7vh 0 0;
   min-height: 100vh;
   position: relative;
 }
