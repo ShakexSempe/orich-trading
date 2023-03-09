@@ -3361,7 +3361,7 @@
 }
 
 .footer {
-  padding: 5vh 5vw 15vh;
+  padding: 5vh 5vw 10vh;
   background: linear-gradient(0deg, #fafafa, #ffff);
   display: flex;
   flex-direction: column;
@@ -3389,7 +3389,7 @@
 }
 .footer .footer-logo img {
   width: 100%;
-  width: 15rem;
+  width: 10rem;
 }
 @media (min-width: 576px) {
   .footer .footer-logo img {
