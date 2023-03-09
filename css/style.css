@@ -842,7 +842,6 @@
     padding: 0.5rem;
     border-radius: 5px;
     background-color: transparent;
-    outline: none;
     border: none;
     text-transform: capitalize;
     cursor: pointer;
@@ -1264,13 +1263,13 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  overflow: hidden;
 }
 .menu .menu-item .menu-image figcaption .cta-flex i {
   opacity: 1;
   transition: 0.5s;
 }
 .menu .menu-item .menu-image figcaption .cta-flex a {
+  border: none;
   font-size: 1rem;
   background: #f8650c;
   margin-left: 1rem;
@@ -1287,6 +1286,7 @@
 .menu .menu-item .menu-image figcaption .cta-flex a::after, .menu .menu-item .menu-image figcaption .cta-flex a::before {
   content: "";
   position: absolute;
+  border: none;
   top: 0;
   left: 0;
   width: 100%;
@@ -1312,7 +1312,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   transition: 0.5s;
 }
 .menu .menu-item.io-item .menu-item-title h2 {
@@ -1324,11 +1324,8 @@
   opacity: 0;
   transform: scale(0.95);
 }
-.menu .menu-item.io-item .menu-image figcaption .cta-flex i {
+.menu .menu-item.io-item .menu-image figcaption .cta-flex {
   opacity: 0;
-}
-.menu .menu-item.io-item .menu-image figcaption .cta-flex a {
-  transform: scaleY(0);
 }
 .menu .menu-item.active-item .menu-item-title h2 {
   opacity: 1;
@@ -1348,22 +1345,26 @@
   transition: 0.25s;
 }
 .menu .menu-item.active-item .menu-image figcaption p {
-  opacity: 0.5;
+  opacity: 0;
 }
-.menu .menu-item.active-item .menu-image:hover::after {
+.menu .menu-item.active-item .menu-image:hover::after, .menu .menu-item.active-item .menu-image:focus::after {
   transition: 0s;
   opacity: 0.4;
 }
-.menu .menu-item.active-item .menu-image:hover figcaption p {
+.menu .menu-item.active-item .menu-image:hover figcaption p, .menu .menu-item.active-item .menu-image:focus figcaption p {
   transform: scale(1);
   opacity: 1;
   transition: 0.5s;
 }
-.menu .menu-item.active-item .menu-image:hover figcaption .cta-flex a {
+.menu .menu-item.active-item .menu-image:hover figcaption .cta-flex, .menu .menu-item.active-item .menu-image:focus figcaption .cta-flex {
+  opacity: 1;
+  transition: 1s;
+}
+.menu .menu-item.active-item .menu-image:hover figcaption .cta-flex a, .menu .menu-item.active-item .menu-image:focus figcaption .cta-flex a {
   transform: scaleY(1);
   transition: 0.5s;
 }
-.menu .menu-item.active-item .menu-image:hover img {
+.menu .menu-item.active-item .menu-image:hover img, .menu .menu-item.active-item .menu-image:focus img {
   transform: scale(1.05);
   transition: 1.5s;
   transition-delay: 0;

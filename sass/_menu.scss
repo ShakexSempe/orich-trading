@@ -127,7 +127,7 @@
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
-                    overflow: hidden;
+                    // overflow: hidden;
 
                     i {
                         opacity: 1;
@@ -137,6 +137,7 @@
 
                     a {
                         // border: 1px solid red;
+                        border: none;
                         font-size: 1rem;
                         background: $brand;
                         margin-left: 1rem;
@@ -157,6 +158,7 @@
                         &::before {
                             content: '';
                             position: absolute;
+                            border: none;
                             top: 0;
                             left: 0;
                             width: 100%;
@@ -192,7 +194,7 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                border-radius: .5rem;
+                border-radius: $border-radius-xsm;
                 transition: .5s;
             }
         }
@@ -215,12 +217,12 @@
                     }
 
                     .cta-flex {
+                        opacity: 0;
                         i {
-                            opacity: 0;
                         }
 
                         a {
-                            transform: scaleY(0);
+                            // transform: scaleY(0);
                         }
                     }
                 }
@@ -259,10 +261,10 @@
                         }
                     }
                     p {
-                        opacity: .5;
+                        opacity: 0;
                     }
                 }
-                &:hover {
+                &:hover, &:focus {
                     &::after {
                         transition: 0s;
                         opacity: .4;
@@ -275,6 +277,8 @@
                                 transition: .5s;
                             }
                             .cta-flex {
+                                opacity: 1;
+                                transition: 1s;
                                 // border: 2px solid red;
                                 a {
                                     transform: scaleY(1);
