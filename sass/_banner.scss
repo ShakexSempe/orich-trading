@@ -166,7 +166,7 @@
                     }
                 }
             }
-            &:hover {
+            &:hover, &:focus {
                 figcaption {
                 background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 30%, #0001 55%);
 
