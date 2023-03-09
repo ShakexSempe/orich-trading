@@ -3410,6 +3410,7 @@
   text-transform: capitalize;
 }
 .footer .footer-item .footer-list li a i {
+  width: 1rem;
   margin-right: 0.5rem;
 }
 * {
