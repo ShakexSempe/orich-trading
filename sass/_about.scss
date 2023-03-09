@@ -364,8 +364,8 @@
                             }
 
                             a {
-                                letter-spacing: .25rem;
-                                opacity: 0;
+                                opacity: .0;
+                                transform: translateY(-5vh);
                             }
                         }
 
@@ -380,7 +380,7 @@
 
                             a {
                                 opacity: 1;
-                                letter-spacing: normal;
+                                transform: translateY(0);
                                 transition: 1.5s 1s;
                                 @media (max-width: 820px){
                                     &:active {
