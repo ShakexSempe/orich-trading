@@ -40,12 +40,12 @@
 
 <body>
     <!-- LOADER -->
-    <div class="loader_bg">
+    <!-- <div class="loader_bg">
         <div class="spinner">
             <div class="circle circle-1"></div>
             <div class="circle circle-2"></div>
         </div>
-    </div>
+    </div> -->
     <div class="container">
         <!-- HEADER = 1) LOGO 2) SECTION & PAGE NAVIGATION LINKS -->
         <header id="header" data-header class="index-header hero-header">
@@ -169,7 +169,8 @@
                 <!-- <header class="section-title">
                     <h2 title="About Orich Trading and Projects" data-scroll>what we do</h2>
                 </header> -->
-                <h2 class="container-title">core services</h2>
+                <div class="container-title io-item">
+                    <h2>core services</h2></div>
                 <div class="menu-grid">
                     <!-- MENUT ITEM 1 -->
                     <div class="menu-item menu1 io-item">
@@ -302,7 +303,9 @@
                     </p>
                 </div>
                 <div class="service-container index-container" id="service-container">
-                    <h3 class="container-title">our services</h3>
+                    <div class="container-title io-item">
+                        <h3>our services</h3>
+                    </div>
                     <!-- EACH SERVICE = 1) SERVICE CORE: TITLE & IMAGE. || 2) SERVICE TYPE = UL WITH 1 LINK TO ENQUIRY PAGE  -->
                     <!-- GENERAL BUILDING -->
                     <div data-scroll id="general" class="service-item">
@@ -444,9 +447,10 @@
             </section>
             <!-- BANNER -->
             <div id="banner" data-active-footer class="banner active-footer">
-                <header class="section-title">
-                    <h2 title="Orich PArtners and Team" data-scroll>meet the team</h2>
-                </header>
+                <div class="container-title io-item">
+                    <h2>meet the team</h2>
+                </div>
+
                 <div class="banner-image-container">
                     <figure>
                         <img src="img/orich-partners2.jpg" loading="lazy" alt="Orich Partners">
@@ -665,9 +669,9 @@
             </section>
             <!-- CERTIFICATES -->
             <section id="references">
-                <header class="section-title">
-                    <h2 title="Work and projects references" data-scroll>certificates</h2>
-                </header>
+                <div class="container-title io-item">
+                    <h2>certificates</h2>
+                </div>
                 <!-- EACH REFERENCE = CERTIFICATE -->
                 <div class="references">
                     <div data-scroll class="reference">
@@ -791,7 +795,9 @@
                 <!-- FORM -->
                 <form id="form" class="contact-form" target="_blank" action="https://formsubmit.co/info@orichtrading.co.za"
                     method="POST">
-                    <h2 data-scroll class="contact-title">Get In Touch</h2>
+                    <div class="container-title io-item">
+                        <h2>get in touch</h2>
+                    </div>
                     <!-- NAME -->
                     <label for="name">name :</label>
                     <input type="text" name="Name" id="username" placeholder="Enter your full name.." minlength="2"

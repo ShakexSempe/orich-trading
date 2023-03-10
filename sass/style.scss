@@ -50,7 +50,6 @@
         // background-color: $bg-main;
         // MAIN SECTION ON PAGES
         &.page-main {
-            margin-top: 10vh;
         }
         &::after {
             position: fixed;
@@ -169,18 +168,40 @@
     }
 }
 .container-title {
-    text-align: center;
     padding: 1rem 0;
-    font-weight: 400;
-    color: $text-second;
-    text-transform: capitalize;
-    font-size: 1.5rem;
-    font-size: clamp(1.5rem, 3vw, 1.8rem);
-    letter-spacing: .05rem;
+    // margin: 1rem 0;
     background: #000;
-    background: linear-gradient(0deg, #000, hsl(0, 0%, 2%), #000);
+    background: linear-gradient(0deg, #000, hsl(0, 0%, 5%), #000);
     border-top-right-radius: $border-radius-sm;
     border-top-left-radius: $border-radius-sm;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    
+    h2,
+    h3 {
+        color: $text-light;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-size: clamp(1.5rem, 3vw, 1.8rem);
+        transition: 1.5s ease;
+    }
+
+    &.io-item {
+        :nth-child(1){
+            letter-spacing: .05rem;
+            opacity: 0;
+        }
+    }
+    &.active-item {
+        :nth-child(1){
+            letter-spacing: normal;
+            opacity: 1;
+        }
+    }
+
 }
  // CTA 
 .cta {
