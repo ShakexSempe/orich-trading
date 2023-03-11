@@ -145,8 +145,8 @@
         }
 
         &[data-scroll] {
-                transform: translateY(-10vh);
-                opacity: 0;
+                transform: translateY(5vh);
+                opacity: 1;
                 transition: 1s;
                 &::after {
                     transform: translateX(-50%) translateY(0);

@@ -1891,6 +1891,23 @@
   font-weight: 300;
   margin-right: 0.25rem;
 }
+.container .about .about-article ul.io-item li {
+  transform: translateX(1rem);
+  transition: 1s;
+  opacity: 0;
+}
+.container .about .about-article ul.io-item li::before {
+  color: transparent;
+  transition: 1.5s;
+}
+.container .about .about-article ul.active-item li {
+  opacity: 1;
+  transform: translateX(0);
+  transition: calc(1s + .2s * var(--li));
+}
+.container .about .about-article ul.active-item li::before {
+  color: #000;
+}
 .container .about .about-article a {
   display: block;
   color: #f8650c;
@@ -1898,15 +1915,6 @@
   font-size: clamp(1rem, 1.5vw, 1.15rem);
   font-weight: 400;
   text-decoration: none;
-}
-.container .about .about-article.io-item {
-  opacity: 0;
-  transform: translateY(5vh);
-  transition: 1.5s;
-}
-.container .about .about-article.active-item {
-  opacity: 1;
-  transform: translateY(0vh);
 }
 .container .about .vision-mission {
   padding: 5vh 5vw;
@@ -3470,8 +3478,8 @@
   transition: 0.5s;
 }
 .section-title h2[data-scroll] {
-  transform: translateY(-10vh);
-  opacity: 0;
+  transform: translateY(5vh);
+  opacity: 1;
   transition: 1s;
 }
 .section-title h2[data-scroll]::after {

@@ -103,16 +103,40 @@
             ul {
                 // border: 1px solid red;
                 margin: .5rem 0;
+
                 li {
                     list-style: none;
                     text-transform: capitalize;
                     font-weight: 500;
                     font-size: 1rem;
-                font-size: clamp(1rem, 1.5vw, 1.15rem);
+                    font-size: clamp(1rem, 1.5vw, 1.15rem);
+
                     &::before {
                         content: "-";
                         font-weight: 300;
                         margin-right: .25rem;
+                    }
+                }
+                
+                &.io-item {
+                    li {
+                        transform: translateX(1rem);
+                        transition: 1s;
+                        opacity: 0;
+                        &::before {
+                            color: transparent;
+                            transition: 1.5s;
+                        }
+                    }
+                }
+                &.active-item {
+                    li {
+                        opacity: 1;
+                        transform: translateX(0);
+                        transition: calc(1s + .2s * var(--li));
+                        &::before {
+                            color: #000;
+                        }
                     }
                 }
             }
@@ -126,19 +150,6 @@
                 font-size: clamp(1rem, 1.5vw, 1.15rem);
                 font-weight: 400;
                 text-decoration: none;
-            }
-
-            // IO CLASS
-            &.io-item {
-                opacity: 0;
-                transform: translateY(5vh);
-                transition: 1.5s;
-            }
-            // ACTIVE IO CLASS
-            &.active-item {
-                opacity: 1;
-                transform: translateY(0vh);
-                
             }
         }
         .vision-mission {
