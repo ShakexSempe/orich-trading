@@ -105,37 +105,40 @@
                 margin: .5rem 0;
 
                 li {
+                    position: relative;
                     list-style: none;
                     text-transform: capitalize;
                     font-weight: 500;
                     font-size: 1rem;
                     font-size: clamp(1rem, 1.5vw, 1.15rem);
 
-                    &::before {
-                        content: "-";
-                        font-weight: 300;
-                        margin-right: .25rem;
-                    }
+                    // &::before {
+                    //     content: "-";
+                    //     font-weight: 500;
+                    //     margin-right: .25rem;
+                    // }
                 }
                 
                 &.io-item {
                     li {
                         transform: translateX(1rem);
                         transition: 1s;
-                        opacity: 0;
+                        font-weight: 400;
                         &::before {
                             color: transparent;
-                            transition: 1.5s;
+                            transition: 1.5s .25s;
+
                         }
                     }
                 }
                 &.active-item {
                     li {
-                        opacity: 1;
+                        font-weight: 500;
                         transform: translateX(0);
-                        transition: calc(1s + .2s * var(--li));
+                        transition: calc(.5s + .5s * var(--li));
                         &::before {
                             color: #000;
+                            transform: translateX(0);
                         }
                     }
                 }
