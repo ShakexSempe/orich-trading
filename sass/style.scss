@@ -243,11 +243,11 @@
             animation: arrow 1.5s infinite;
             @keyframes arrow {
                 0%, 100% {
-                    opacity: .5;
+                    opacity: 1;
                 }
                 50% {
-                    transform: translateX(.25rem);
-                    opacity: 1;
+                    transform: translateX(.15rem);
+                    opacity: .7;
                 }
             }
         }
