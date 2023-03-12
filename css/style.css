@@ -1828,14 +1828,12 @@
 .container .about .about-article ul.io-item li {
   transform: translateX(1rem);
   transition: 1s;
-  font-weight: 400;
 }
 .container .about .about-article ul.io-item li::before {
   color: transparent;
   transition: 1.5s 0.25s;
 }
 .container .about .about-article ul.active-item li {
-  font-weight: 500;
   transform: translateX(0);
   transition: calc(.5s + .5s * var(--li));
 }
