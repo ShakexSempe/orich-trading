@@ -171,7 +171,7 @@
     padding: 1rem 0;
     // margin: 1rem 0;
     background: #000;
-    background: linear-gradient(0deg, #000, hsl(0, 0%, 5%), #000);
+    background: linear-gradient(0deg, #000, hsl(0, 0%, 10%), #000);
     border-top-right-radius: $border-radius-sm;
     border-top-left-radius: $border-radius-sm;
     position: relative;
@@ -183,9 +183,9 @@
         color: $text-light;
         text-align: center;
         text-transform: capitalize;
-        font-size: 1.5rem;
         font-weight: 400;
-        font-size: clamp(1.5rem, 3vw, 1.8rem);
+        font-size: 1.25rem;
+        font-size: clamp(1.25rem, 2.5vw, 1.8rem);
         transition: 1.5s ease;
     }
 

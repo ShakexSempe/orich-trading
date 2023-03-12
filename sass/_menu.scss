@@ -37,25 +37,16 @@
         // MENU TITLE
         .menu-item-title {
             // border: 3px solid blue;
-            // overflow: hidden;
             position: relative;
             isolation: isolate;
             margin-bottom: 5vh;
-            // display: flex;
-            // align-items: center;
-            // justify-content: space-between;
 
             h3 {
                 overflow: hidden;
                 font-size: 1.25rem;
-                font-size: clamp(1.45rem, 2.25vw, 1.5rem);
-                // color: $brand;
+                font-size: clamp(1.2rem, 2.2vw, 1.4rem);
                 font-weight: 500;
-                line-height: 1.25;
                 text-transform: capitalize;
-                // @include md {
-                //     font-size: 1.5rem;
-                // }
             }
             p {
                 margin: .5rem 0;

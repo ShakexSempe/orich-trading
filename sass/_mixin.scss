@@ -73,9 +73,11 @@ $screen-xlg-min: 1024px;
 
     &::before {
         background: red;
+        box-shadow: $box-shadow-sm;
     }
     &::after {
         background: blue;
+        box-shadow: $box-shadow-sm-hover;
         opacity: 0;
     }
     // HOVER AND ACTIVE CLASSES
