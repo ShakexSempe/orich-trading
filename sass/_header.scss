@@ -251,16 +251,16 @@
                             transition-delay: .3s;
                         }
                         :nth-child(2) {
-                            transition-delay: .4s;
+                            transition-delay: .35s;
                         }
                         :nth-child(3) {
-                            transition-delay: .5s;
+                            transition-delay: .4s;
                         }
                         :nth-child(4) {
-                            transition-delay: .6s;
+                            transition-delay: .45s;
                         }
                         :nth-child(5) {
-                            transition-delay: .7s;
+                            transition-delay: .5s;
                         }
                         :nth-child(6) {
                             transition-delay: .8s;
@@ -272,7 +272,7 @@
                         a {
                             opacity: 1;
                             transform: translateY(0);
-                            transition-delay: calc(.8s + .125s * var(--i)) ;
+                            transition-delay: calc(.35s + .1s * var(--i)) ;
                         }
                     }
                 }
