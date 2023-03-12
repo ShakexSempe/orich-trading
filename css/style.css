@@ -1,5 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Red+Hat+Display&family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;800&display=swap");
+.button-bg {
+  position: relative;
+  isolation: isolate;
+}
+.button-bg::before, .button-bg::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.25s ease;
+  border-radius: inherit;
+  z-index: -1;
+}
+.button-bg::before {
+  background: red;
+}
+.button-bg::after {
+  background: blue;
+  opacity: 0;
+}
+@media (min-width: 768px) {
+  .button-bg:hover {
+    transform: scale(0.98);
+  }
+  .button-bg:hover::before {
+    opacity: 0;
+  }
+  .button-bg:hover::after {
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  .button-bg:active {
+    transform: scale(0.98);
+  }
+  .button-bg:active::before {
+    opacity: 0;
+  }
+  .button-bg:active::after {
+    opacity: 1;
+  }
+}
+.button-bg.brand-bg::before {
+  background: linear-gradient(0deg, #f8650c, #ffa500);
+}
+.button-bg.brand-bg::after {
+  background: linear-gradient(0deg, #ffa500, #f8650c);
+}
+
 .toggle {
   position: fixed;
   right: 1rem;
@@ -1195,13 +1246,9 @@
   justify-content: space-between;
 }
 .menu .menu-item .menu-item-title {
-  overflow: hidden;
   position: relative;
   isolation: isolate;
   margin-bottom: 5vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 .menu .menu-item .menu-item-title h3 {
   overflow: hidden;
@@ -1211,14 +1258,23 @@
   line-height: 1.25;
   text-transform: capitalize;
 }
-.menu .menu-item .menu-item-title i {
-  display: none;
-  font-size: 1.5rem;
+.menu .menu-item .menu-item-title p {
+  margin: 0.5rem 0;
+}
+.menu .menu-item .menu-item-title a {
+  display: block;
+  width: max-content;
+  padding: 0.25rem 0.5rem;
+  text-decoration: none;
+  text-transform: capitalize;
   color: #000;
-  opacity: 0.6;
+  border-radius: 0.25rem;
+}
+.menu .menu-item .menu-item-title a i {
+  margin-left: 0.5rem;
 }
 .menu .menu-item .menu-image {
-  height: 50vh;
+  height: 45vh;
   border-radius: 0.25rem;
   overflow: hidden;
   cursor: pointer;
@@ -1252,119 +1308,12 @@
   opacity: 1;
   z-index: 1;
 }
-.menu .menu-item .menu-image figcaption p {
-  font-weight: 400;
-  line-height: 1.5;
-  padding: 0.25rem;
-  border-radius: 0.5rem;
-  transition: 0.5s;
-}
-.menu .menu-item .menu-image figcaption .cta-flex {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.menu .menu-item .menu-image figcaption .cta-flex i {
-  opacity: 1;
-  transition: 0.5s;
-}
-.menu .menu-item .menu-image figcaption .cta-flex a {
-  border: none;
-  font-size: 1rem;
-  background: #f8650c;
-  margin-left: 1rem;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  color: #fff;
-  display: block;
-  font-weight: 500;
-  text-decoration: none;
-  transition: 1s;
-  position: relative;
-  isolation: isolate;
-}
-.menu .menu-item .menu-image figcaption .cta-flex a::after, .menu .menu-item .menu-image figcaption .cta-flex a::before {
-  content: "";
-  position: absolute;
-  border: none;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 0.5rem;
-  z-index: -1;
-  transition: 0.25s;
-}
-.menu .menu-item .menu-image figcaption .cta-flex a::before {
-  background: linear-gradient(0deg, #f8650c, #ffa500);
-}
-.menu .menu-item .menu-image figcaption .cta-flex a::after {
-  opacity: 0;
-  background: linear-gradient(0deg, #ffa500, #f8650c);
-}
-.menu .menu-item .menu-image figcaption .cta-flex a:hover::before {
-  opacity: 0;
-}
-.menu .menu-item .menu-image figcaption .cta-flex a:hover::after {
-  opacity: 1;
-}
 .menu .menu-item .menu-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 0.25rem;
   transition: 0.5s;
-}
-.menu .menu-item.io-item .menu-item-title h3 {
-  opacity: 0;
-  transform: translateY(-5vh);
-  transition: 1s;
-}
-.menu .menu-item.io-item .menu-image figcaption p {
-  opacity: 0;
-  transform: scale(0.95);
-}
-.menu .menu-item.active-item .menu-item-title h3 {
-  opacity: 1;
-  transform: translateY(0);
-}
-.menu .menu-item.active-item .menu-item-title i {
-  transform: translateX(0);
-  opacity: 1;
-  transition-delay: 0.25s;
-}
-.menu .menu-item.active-item .menu-image figcaption .cta-flex i {
-  opacity: 1;
-  transition-delay: 1s;
-}
-.menu .menu-item.active-item .menu-image figcaption .cta-flex a:hover {
-  transform: scale(0.98);
-  transition: 0.25s;
-}
-.menu .menu-item.active-item .menu-image figcaption p {
-  opacity: 0.2;
-}
-.menu .menu-item.active-item .menu-image:hover::after, .menu .menu-item.active-item .menu-image:focus::after {
-  transition: 0s;
-  opacity: 0.4;
-}
-.menu .menu-item.active-item .menu-image:hover figcaption p, .menu .menu-item.active-item .menu-image:focus figcaption p {
-  transform: scale(1);
-  opacity: 1;
-  transition: 0.5s;
-}
-.menu .menu-item.active-item .menu-image:hover figcaption .cta-flex, .menu .menu-item.active-item .menu-image:focus figcaption .cta-flex {
-  opacity: 1;
-  transition: 1s;
-}
-.menu .menu-item.active-item .menu-image:hover figcaption .cta-flex a, .menu .menu-item.active-item .menu-image:focus figcaption .cta-flex a {
-  transform: scaleY(1);
-  transition: 0.5s;
-}
-.menu .menu-item.active-item .menu-image:hover img, .menu .menu-item.active-item .menu-image:focus img {
-  transform: scale(1.05);
-  transition: 1.5s;
-  transition-delay: 0;
 }
 
 #hero {
@@ -3535,7 +3484,7 @@
   border: none;
   text-decoration: none;
   text-transform: capitalize;
-  color: #f4f4f4;
+  color: #000;
   background: #ffa500;
   display: block;
   width: max-content;

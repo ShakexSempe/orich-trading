@@ -37,13 +37,13 @@
         // MENU TITLE
         .menu-item-title {
             // border: 3px solid blue;
-            overflow: hidden;
+            // overflow: hidden;
             position: relative;
             isolation: isolate;
             margin-bottom: 5vh;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            // display: flex;
+            // align-items: center;
+            // justify-content: space-between;
 
             h3 {
                 overflow: hidden;
@@ -57,24 +57,28 @@
                 //     font-size: 1.5rem;
                 // }
             }
-
-            i {
-                display: none;
-                // position: absolute;
-                font-size: 1.5rem;
+            p {
+                margin: .5rem 0;
+            }
+            a {
+                display: block;
+                width: max-content;
+                padding: .25rem .5rem;
+                text-decoration: none;
+                text-transform: capitalize;
                 color: #000;
-                opacity: .6;
-                // right: 0;
-                // top: 50%;
-                // transform: translateX(-50%);
-                // z-index: -1;
+                border-radius: $border-radius-xsm;
+
+                i {
+                    margin-left: .5rem;
+                }
             }
         }
 
         // MENU IMAGE
         .menu-image {
             // border: 2px solid red;
-            height: 50vh;
+            height: 45vh;
             border-radius: $border-radius-xsm;
             overflow: hidden;
             cursor: pointer;
@@ -113,81 +117,6 @@
                 opacity: 1;
                 z-index: 1;
 
-                p {
-                    // display: none;
-                    font-weight: 400;
-                    line-height: 1.5;
-                    padding: .25rem;
-                    border-radius: $border-radius-sm;
-                    transition: .5s;
-                }
-
-                .cta-flex {
-                    // border: 2px solid blue;
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: center;
-                    // overflow: hidden;
-
-                    i {
-                        opacity: 1;
-                        // transform: translateX(-5vw);
-                        transition: .5s;
-                    }
-
-                    a {
-                        // border: 1px solid red;
-                        border: none;
-                        font-size: 1rem;
-                        background: $brand;
-                        margin-left: 1rem;
-                        padding: .5rem;
-                        border-radius: .5rem;
-                        color: #fff;
-                        display: block;
-                        font-weight: 500;
-                        // width: fit-content;
-                        text-decoration: none;
-                        // opacity: 0;
-                        // transform: translateY(5rem);
-                        transition: 1s;
-                        position: relative;
-                        isolation: isolate;
-
-                        &::after,
-                        &::before {
-                            content: '';
-                            position: absolute;
-                            border: none;
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            height: 100%;
-                            border-radius: .5rem;
-                            z-index: -1;
-                            transition: .25s;
-                        }
-
-                        &::before {
-                            background: $brand-btn;
-                        }
-
-                        &::after {
-                            opacity: 0;
-                            background: $brand-btn-hover;
-                        }
-
-                        &:hover {
-                            &::before {
-                                opacity: 0;
-                            }
-
-                            &::after {
-                                opacity: 1;
-                            }
-                        }
-                    }
-                }
             }
 
             img {
@@ -200,102 +129,102 @@
         }
 
         // IO CLASS
-        &.io-item {
-            .menu-item-title {
-                h3 {
-                    opacity: 0;
-                    transform: translateY(-5vh);
-                    transition: 1s;
-                }
-            }
+        // &.io-item {
+        //     .menu-item-title {
+        //         h3 {
+        //             opacity: 0;
+        //             transform: translateY(-5vh);
+        //             transition: 1s;
+        //         }
+        //     }
 
-            .menu-image {
-                figcaption {
-                    p {
-                        opacity: 0;
-                        transform: scale(.95);
-                    }
+        //     .menu-image {
+        //         figcaption {
+        //             p {
+        //                 opacity: 0;
+        //                 transform: scale(.95);
+        //             }
 
-                    .cta-flex {
-                        i {
-                        }
+        //             .cta-flex {
+        //                 i {
+        //                 }
 
-                        a {
-                            // transform: scaleY(0);
-                        }
-                    }
-                }
-            }
-        }
+        //                 a {
+        //                     // transform: scaleY(0);
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
 
         // ACTIVE IO ITEM
-        &.active-item {
-            .menu-item-title {
-                h3 {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
+        // &.active-item {
+        //     .menu-item-title {
+        //         h3 {
+        //             opacity: 1;
+        //             transform: translateY(0);
+        //         }
 
-                i {
-                    transform: translateX(0);
-                    opacity: 1;
-                    transition-delay: .25s;
-                }
-            }
+        //         i {
+        //             transform: translateX(0);
+        //             opacity: 1;
+        //             transition-delay: .25s;
+        //         }
+        //     }
 
-            .menu-image {
+        //     .menu-image {
 
-                figcaption {
-                    .cta-flex {
-                        i {
-                            opacity: 1;
-                            transition-delay: 1s;
-                        }
+        //         figcaption {
+        //             .cta-flex {
+        //                 i {
+        //                     opacity: 1;
+        //                     transition-delay: 1s;
+        //                 }
 
-                        a {
-                            &:hover {
-                                transform: scale(.98);
-                                transition: .25s;
-                            }
-                        }
-                    }
-                    p {
-                        opacity: .2;
-                    }
-                }
-                &:hover, &:focus {
-                    &::after {
-                        transition: 0s;
-                        opacity: .4;
-                    }
+        //                 a {
+        //                     &:hover {
+        //                         transform: scale(.98);
+        //                         transition: .25s;
+        //                     }
+        //                 }
+        //             }
+        //             p {
+        //                 opacity: .2;
+        //             }
+        //         }
+        //         &:hover, &:focus {
+        //             &::after {
+        //                 transition: 0s;
+        //                 opacity: .4;
+        //             }
                     
-                        figcaption {
-                            p {
-                                transform: scale(1);
-                                opacity: 1;
-                                transition: .5s;
-                            }
-                            .cta-flex {
-                                opacity: 1;
-                                transition: 1s;
-                                // border: 2px solid red;
-                                a {
-                                    transform: scaleY(1);
-                                    transition: .5s;
-                                }
-                            }
-                        }
+        //                 figcaption {
+        //                     p {
+        //                         transform: scale(1);
+        //                         opacity: 1;
+        //                         transition: .5s;
+        //                     }
+        //                     .cta-flex {
+        //                         opacity: 1;
+        //                         transition: 1s;
+        //                         // border: 2px solid red;
+        //                         a {
+        //                             transform: scaleY(1);
+        //                             transition: .5s;
+        //                         }
+        //                     }
+        //                 }
                     
     
-                    img {
-                        transform: scale(1.05);
-                        transition: 1.5s;
-                        transition-delay: 0;
-                    }
-                }
-            }
+        //             img {
+        //                 transform: scale(1.05);
+        //                 transition: 1.5s;
+        //                 transition-delay: 0;
+        //             }
+        //         }
+        //     }
 
-        }
+        // }
     }
     
 }
