@@ -3096,6 +3096,7 @@
   }
 }
 #contact .contact-items .contact-item .contact-info button a {
+  font-size: 1rem;
   color: #000;
   text-decoration: none;
   background: #ffa500;
