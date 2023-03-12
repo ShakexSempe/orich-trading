@@ -1293,27 +1293,15 @@
   opacity: 0;
   transition: 0.5s;
 }
-.menu .menu-item .menu-image figcaption {
-  position: absolute;
-  display: grid;
-  place-content: center;
-  gap: 1.5rem;
-  padding: 1rem;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  text-align: left;
-  opacity: 1;
-  z-index: 1;
-}
 .menu .menu-item .menu-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 0.25rem;
   transition: 0.5s;
+}
+.menu .menu-item .menu-image:hover img {
+  transform: scale(1.05);
 }
 
 #hero {
