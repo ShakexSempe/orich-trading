@@ -3448,12 +3448,21 @@
 .container-title {
   padding: 1rem 0;
   background: #000;
-  background: linear-gradient(0deg, #000, #1a1a1a, #000);
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
   position: relative;
   overflow: hidden;
   isolation: isolate;
+}
+.container-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #000, #0d0d0d, #000);
+  transform: scaleX(0.5);
+  z-index: -1;
 }
 .container-title h2,
 .container-title h3 {
@@ -3468,6 +3477,10 @@
 .container-title.io-item :nth-child(1) {
   letter-spacing: 0.05rem;
   opacity: 0;
+}
+.container-title.active-item::after {
+  transition: 1.5s;
+  transform: scaleX(1);
 }
 .container-title.active-item :nth-child(1) {
   letter-spacing: normal;
