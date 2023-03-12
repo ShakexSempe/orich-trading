@@ -1255,8 +1255,8 @@
 .menu .menu-item .menu-item-title h3 {
   overflow: hidden;
   font-size: 1.25rem;
-  font-size: clamp(1.2rem, 2.2vw, 1.4rem);
-  font-weight: 500;
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-weight: 600;
   text-transform: capitalize;
 }
 .menu .menu-item .menu-item-title p {
@@ -3470,8 +3470,8 @@
   text-align: center;
   text-transform: capitalize;
   font-weight: 400;
-  font-size: 1.25rem;
-  font-size: clamp(1.25rem, 2.5vw, 1.8rem);
+  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 2.5vw, 1.8rem);
   transition: 1.5s ease;
 }
 .container-title.io-item :nth-child(1) {
