@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Red+Hat+Display&family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;800&display=swap");
 .button-bg {
@@ -3487,7 +3488,7 @@
   transition: 0.25s;
 }
 .cta .cta-btn {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem 0.5rem 1rem;
   font-size: 1rem;
   font-size: clamp(1rem, 1.5vw, 1.5rem);
   margin: 0.5rem 0;
@@ -3495,7 +3496,7 @@
   border: none;
   text-decoration: none;
   text-transform: capitalize;
-  color: #000;
+  color: #fff;
   background: #ffa500;
   display: block;
   width: max-content;
@@ -3507,17 +3508,39 @@
 .cta .cta-btn i {
   font-size: 1rem;
   margin-left: 0.5rem;
+}
+.cta .cta-btn i.hero-cta-icon {
+  color: transparent;
+}
+.cta .cta-btn i.hero-cta-icon::before, .cta .cta-btn i.hero-cta-icon::after {
+  position: absolute;
+  color: #f4f4f4;
+  opacity: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.8rem;
+  transition: 0.25s;
+}
+.cta .cta-btn i.hero-cta-icon::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
   animation: arrow 1.5s infinite;
 }
+.cta .cta-btn i.hero-cta-icon::after {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  animation: arrow-2 1.5s infinite;
+}
 @keyframes arrow {
-  0%, 100% {
-    opacity: 1;
+  30%, 60% {
+    opacity: 0;
   }
   50% {
-    transform: translateX(0.15rem);
-    opacity: 0.7;
+    transform: translateY(-50%) translateX(0.25rem);
+    opacity: 0;
   }
 }
+@keyframes arrow-2 {}
 .cta .cta-btn::before, .cta .cta-btn::after {
   position: absolute;
   content: "";
