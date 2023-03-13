@@ -3496,7 +3496,7 @@
   border: none;
   text-decoration: none;
   text-transform: capitalize;
-  color: #fff;
+  color: #000;
   background: #ffa500;
   display: block;
   width: max-content;
@@ -3514,7 +3514,7 @@
 }
 .cta .cta-btn i.hero-cta-icon::before, .cta .cta-btn i.hero-cta-icon::after {
   position: absolute;
-  color: #f4f4f4;
+  color: #000;
   opacity: 1;
   top: 50%;
   transform: translateY(-50%);

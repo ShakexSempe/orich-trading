@@ -228,7 +228,7 @@
         border: none;
         text-decoration: none;
         text-transform: capitalize;
-        color: $text-light;
+        color: #000;
         background: $brand-light;
         display: block;
         // width: 18rem;
@@ -244,7 +244,7 @@
             color: transparent;
             &::before, &::after {
                 position: absolute;
-                color: #f4f4f4;
+                color: #000;
                 opacity: 1;
                 top: 50%;
                 transform: translateY(-50%);
@@ -273,7 +273,6 @@
                     transform: translateY(-50%) translateX(.25rem);
                     opacity: 0;
                 }
-                
             }
 
             @keyframes arrow-2 {
