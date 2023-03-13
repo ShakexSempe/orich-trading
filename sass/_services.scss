@@ -422,12 +422,7 @@
         margin: 10vh auto;
     }
     .cta {
-        // border: 2px solid blue;
-        .cta-btn {
-            @include lg {
-            margin-inline: auto;
-        }
-    }
+        
     }
     @media (min-width:768px) {
         padding: 0 5vw 5vh;

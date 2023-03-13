@@ -2624,11 +2624,6 @@
 .services .section-btn {
   margin: 10vh auto;
 }
-@media (min-width: 820px) {
-  .services .cta .cta-btn {
-    margin-inline: auto;
-  }
-}
 @media (min-width: 768px) {
   .services {
     padding: 0 5vw 5vh;
@@ -2745,6 +2740,9 @@
   transition: 0.2s;
   isolation: isolate;
   letter-spacing: 0.05rem;
+}
+#projects .gallery .gallery-title a span i {
+  margin-left: 0.25rem;
 }
 @media (min-width: 820px) {
   #projects .gallery .gallery-title a span {
@@ -3187,7 +3185,7 @@
   font-size: 1.025rem;
   text-transform: capitalize;
   cursor: pointer;
-  width: 100%;
+  width: 50%;
   color: #000;
   border: none;
   position: relative;

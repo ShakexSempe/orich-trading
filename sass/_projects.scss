@@ -82,6 +82,10 @@
                     transition: .2s;
                     isolation: isolate;
                     letter-spacing: .05rem;
+
+                    i {
+                        margin-left: .25rem;
+                    }
                     @include lg {
                         padding: .5rem;
                     }
