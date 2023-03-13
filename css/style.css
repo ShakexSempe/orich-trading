@@ -18,7 +18,7 @@
 }
 .button-bg::before {
   background: red;
-  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 2px 3px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 4px 4px 5px rgba(0, 0, 0, 0.15);
 }
 .button-bg::after {
   background: blue;
@@ -141,7 +141,7 @@
 }
 .section-btn::before {
   background: linear-gradient(0deg, #f8650c, #ffa500);
-  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 2px 3px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 4px 4px 5px rgba(0, 0, 0, 0.15);
 }
 .section-btn::after {
   opacity: 0;
@@ -1411,6 +1411,11 @@
   color: #fff;
   font-weight: 100;
 }
+@media (min-width: 768px) {
+  #hero .hero-title .slogan .cta {
+    margin-top: 5vh;
+  }
+}
 #hero .hero-title .slogan.thanks-message p {
   font-weight: 400;
 }
@@ -1565,7 +1570,7 @@
   z-index: -1;
 }
 #menu .menu-section figure figcaption.cta a.enquiry::before {
-  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 2px 3px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 4px 4px 5px rgba(0, 0, 0, 0.15);
   background-color: rgba(0, 0, 0, 0.9);
 }
 #menu .menu-section figure figcaption.cta a.enquiry:after {
@@ -1616,7 +1621,7 @@
 }
 #menu .menu-section figure figcaption.cta a.view::before {
   background: linear-gradient(0deg, #f8650c, #ffa500);
-  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 2px 3px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 4px 4px 5px rgba(0, 0, 0, 0.15);
 }
 #menu .menu-section figure figcaption.cta a.view::after {
   background: linear-gradient(0deg, #ffa500, #f8650c);
@@ -2763,7 +2768,7 @@
 }
 #projects .gallery .gallery-title a span::before {
   background: linear-gradient(0deg, #f8650c, #ffa500);
-  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 2px 3px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 4px 4px 5px rgba(0, 0, 0, 0.15);
 }
 #projects .gallery .gallery-title a span::after {
   background: linear-gradient(0deg, #ffa500, #f8650c);
@@ -3117,7 +3122,7 @@
 }
 #contact .contact-items .contact-item .contact-info button a::before {
   background: linear-gradient(0deg, #f8650c, #ffa500);
-  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 2px 3px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 4px 4px 5px rgba(0, 0, 0, 0.15);
 }
 #contact .contact-items .contact-item .contact-info button a::after {
   background: linear-gradient(0deg, #ffa500, #f8650c);
@@ -3218,7 +3223,7 @@
 }
 #form button::before {
   background: linear-gradient(0deg, #f8650c, #ffa500);
-  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 2px 3px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 4px 4px 5px rgba(0, 0, 0, 0.15);
 }
 #form button::after {
   background: linear-gradient(0deg, #ffa500, #f8650c);
@@ -3541,6 +3546,9 @@
   }
 }
 @keyframes arrow-2 {}
+.cta .cta-btn:hover i::before {
+  animation: none;
+}
 .cta .cta-btn::before, .cta .cta-btn::after {
   position: absolute;
   content: "";
@@ -3555,7 +3563,7 @@
 }
 .cta .cta-btn::before {
   background: linear-gradient(0deg, #f8650c, #ffa500);
-  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 2px 3px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 4px 4px 5px rgba(0, 0, 0, 0.15);
 }
 .cta .cta-btn::after {
   opacity: 0;

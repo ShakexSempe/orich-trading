@@ -119,7 +119,11 @@
                 color: $text-light;
                 font-weight: 100;
             }
-
+            .cta {
+                @include md {
+                    margin-top: 5vh;
+                }
+            }
             // THANK YOU PAGE HERO
             &.thanks-message {
                 p {
