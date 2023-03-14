@@ -587,14 +587,15 @@
         &::after {
             background-color: #fff;
             box-shadow: .05rem .05rem .5rem rgba(255, 166, 0, 0.150), .25rem .25rem 1rem rgba(0, 0, 0, .100);
-            transition: box-shadow 1s;
+            transition: box-shadow 1s, background-color .05s;
+            
         }
         .navigation {
             .toggle {
                 .bar {
-                    background-color: #000;
+                    background-color: $brand;
                     &::before, &::after {
-                        background-color: #000;
+                        background-color: $brand;
                     }
                 }
             }
