@@ -829,7 +829,7 @@
   #header .navigation aside.active .social-links a {
     opacity: 1;
     transform: translateY(0);
-    transition-delay: calc(.35s + .1s * var(--i));
+    transition-delay: calc(.35s + .05s * var(--i));
   }
 }
 @media (min-width: 1024px) {
