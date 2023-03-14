@@ -1058,7 +1058,7 @@
 #header.main-header::after {
   background-color: #fff;
   box-shadow: 0.05rem 0.05rem 0.5rem rgba(255, 166, 0, 0.15), 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
-  transition: box-shadow 1s, background-color 0.05s;
+  transition: box-shadow 1s, background-color 0.5s;
 }
 #header.main-header .navigation .toggle .bar {
   background-color: #f8650c;
