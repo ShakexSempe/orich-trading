@@ -478,8 +478,7 @@
                 width: 100%;
                 object-fit: contain;
                 object-position: left;
-                border-bottom-left-radius: $border-radius-sm;
-                border-bottom-right-radius: $border-radius-sm;
+                
             }
         }
     }
@@ -563,6 +562,13 @@
                         background-color: #ffffff;
                     }
                 }
+            }
+        }
+        // LOGO 
+        .logo {
+            img {
+                border-bottom-left-radius: $border-radius-sm;
+                border-bottom-right-radius: $border-radius-sm;
             }
         }
     }

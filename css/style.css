@@ -986,8 +986,6 @@
   width: 100%;
   object-fit: contain;
   object-position: left;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
 }
 #header .navigation {
   text-transform: capitalize;
@@ -1041,6 +1039,10 @@
 }
 #header.hero-header .navigation .toggle .bar::after, #header.hero-header .navigation .toggle .bar::before {
   background-color: #ffffff;
+}
+#header.hero-header .logo img {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 #header.toggle-header::after {
   background-color: #000;
