@@ -562,7 +562,10 @@
                 top: 1rem;
 
                 .bar {
-                    background-color: #fff;
+                    background-color: #ffffff;
+                    &::after, &::before {
+                        background-color: #ffffff;
+                    }
                 }
             }
         }
@@ -574,7 +577,12 @@
         .navigation {
             .toggle {
                 .bar {
-                background: $brand;
+                    background-color: $brand;
+                    transition: .5s;
+                    &::before, &::after {
+                        background-color: $brand;
+                        transition: .5s;
+                    }
                 }
             }
         }
@@ -582,6 +590,16 @@
     &.main-header {
         &::after {
             background: #fff;
+        }
+        .navigation {
+            .toggle {
+                .bar {
+                    background-color: #000;
+                    &::before, &::after {
+                        background-color: #000;
+                    }
+                }
+            }
         }
     }
     
