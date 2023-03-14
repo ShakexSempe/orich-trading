@@ -2719,7 +2719,8 @@
   text-transform: capitalize;
   color: #000;
   font-size: 1.3rem;
-  font-weight: 400;
+  font-size: clamp(1.3rem, 2vw, 1.5rem);
+  font-weight: 500;
   padding: 0.5rem 0;
   background-color: #fff;
   z-index: 5;
@@ -2727,7 +2728,6 @@
 @media (min-width: 768px) {
   #projects .gallery .gallery-title {
     top: 8vh;
-    font-size: 1.5rem;
   }
 }
 #projects .gallery .gallery-title a {
