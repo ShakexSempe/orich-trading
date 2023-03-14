@@ -6,7 +6,7 @@
     flex-direction: column;
     gap: 1rem;
     @include xlg {
-        padding: 5vh 5vw 10vh;
+        padding: 5vh 5vw;
         background: linear-gradient(90deg, #ffff, #fafafa);
         flex-direction: row;
         justify-content: space-between;

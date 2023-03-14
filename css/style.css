@@ -3280,7 +3280,7 @@
 }
 @media (min-width: 1024px) {
   .footer {
-    padding: 5vh 5vw 10vh;
+    padding: 5vh 5vw;
     background: linear-gradient(90deg, #ffff, #fafafa);
     flex-direction: row;
     justify-content: space-between;
@@ -3342,14 +3342,13 @@
   max-width: 100%;
 }
 .container main {
-  padding: 7vh 0 0;
+  padding: 10vh 0 5vh;
   min-height: 100vh;
   position: relative;
 }
 @media (min-width: 768px) {
   .container main {
-    padding: 5vh 0;
-    padding: 0;
+    padding: 5vh 0 0;
   }
 }
 .container main::after {
