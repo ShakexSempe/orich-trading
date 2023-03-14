@@ -1411,8 +1411,11 @@
   color: #fff;
   font-weight: 100;
 }
+#hero .hero-title .slogan #cta .cta-btn {
+  width: 8.5rem;
+}
 @media (min-width: 768px) {
-  #hero .hero-title .slogan .cta {
+  #hero .hero-title .slogan #cta .cta-btn {
     margin-top: 5vh;
   }
 }
@@ -1753,7 +1756,7 @@
 }
 .container .about .about-article {
   background: #fff;
-  margin: 0vh 1rem 10vh 5vw;
+  margin: 5vh 1rem 10vh 5vw;
   text-transform: none;
   line-height: 1.6;
   overflow: hidden;
@@ -1761,7 +1764,7 @@
 }
 @media (min-width: 576px) {
   .container .about .about-article {
-    margin: 0vh 5vw;
+    margin: 5vh 5vw;
   }
 }
 @media (min-width: 1024px) {
@@ -2627,7 +2630,7 @@
     background: green;
   }
 }
-.services .section-btn {
+.services .cta-btn {
   margin: 10vh auto;
 }
 @media (min-width: 768px) {

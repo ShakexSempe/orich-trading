@@ -18,7 +18,7 @@
             // border: 1px solid $brand;
             background: $bg-main;
             // border-radius: 5px;
-            margin: 0vh 1rem 10vh 5vw;
+            margin: 5vh 1rem 10vh 5vw;
             text-transform: none;
             line-height: 1.6;
             // padding: .3em;
@@ -26,7 +26,7 @@
             overflow: hidden;
             text-align: left;
             @include sm {
-                margin: 0vh 5vw;
+                margin: 5vh 5vw;
             }
             @include xlg {
                 width: 100%;
