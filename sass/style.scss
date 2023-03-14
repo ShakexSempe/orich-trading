@@ -237,6 +237,13 @@
         isolation: isolate;
         border-radius: $border-radius-sm;
         transition: .3s;
+
+        &.section-btn {
+            width: 12rem;
+            @include md {
+                width: 15rem;
+            }
+        }
         i {
             font-size: 1rem;
             margin-left: .5rem;

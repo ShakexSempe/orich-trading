@@ -3496,6 +3496,14 @@
   border-radius: 0.5rem;
   transition: 0.3s;
 }
+.cta .cta-btn.section-btn {
+  width: 12rem;
+}
+@media (min-width: 768px) {
+  .cta .cta-btn.section-btn {
+    width: 15rem;
+  }
+}
 .cta .cta-btn i {
   font-size: 1rem;
   margin-left: 0.5rem;
