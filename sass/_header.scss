@@ -6,6 +6,7 @@
     transition: all .25s;
     isolation: isolate;
     background: transparent;
+
     // BACKGROUND COLORS
     &::after {
         content: '';
@@ -24,6 +25,7 @@
         padding: .3rem 1rem;
         
         .navigation {
+
             border: none;
             nav {
                 display: none;
@@ -590,6 +592,8 @@
     &.main-header {
         &::after {
             background: #fff;
+            box-shadow: .05rem .05rem .5rem rgba(255, 166, 0, 0.150), .25rem .25rem 1rem rgba(0, 0, 0, .100);
+            transition: box-shadow 1s;
         }
         .navigation {
             .toggle {

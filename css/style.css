@@ -1055,6 +1055,8 @@
 }
 #header.main-header::after {
   background: #fff;
+  box-shadow: 0.05rem 0.05rem 0.5rem rgba(255, 166, 0, 0.15), 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  transition: box-shadow 1s;
 }
 #header.main-header .navigation .toggle .bar {
   background-color: #000;
