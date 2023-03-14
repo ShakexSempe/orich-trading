@@ -120,12 +120,8 @@ menu.forEach(menu => {
             entries.forEach(entry => {
                 if(!entry.isIntersecting){
                     console.log('Menu NOT io');
-                    header.classList.remove('menu-header');
-                    bottomNav.classList.remove('menu-footer');
                 } else {
                     console.log('menu IS io');
-                    header.classList.add('menu-header');
-                    bottomNav.classList.add('menu-footer');
                 }
             })
         }, menuOptions

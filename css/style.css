@@ -79,12 +79,11 @@
   }
 }
 .toggle .bar {
-  background-color: #f4f4f4;
-  background-color: #f8650c;
+  background-color: #000;
   width: 60%;
   height: 0.1em;
   position: relative;
-  transition: 0.2s;
+  transition: 0.25s;
 }
 .toggle .bar::before, .toggle .bar::after {
   position: absolute;
@@ -93,8 +92,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  transition: 0.2s;
   background-color: inherit;
+  transition: 0.25s;
 }
 .toggle .bar::before {
   transform: translateY(-0.25em);
@@ -1036,7 +1035,6 @@
 }
 #header.hero-header .navigation .toggle {
   top: 1rem;
-  transition: 0.5s;
 }
 #header.hero-header .navigation .toggle .bar {
   background-color: #fff;
@@ -1044,16 +1042,11 @@
 #header.toggle-header::after {
   background: #000;
 }
+#header.toggle-header .navigation .toggle .bar {
+  background: #f8650c;
+}
 #header.main-header::after {
   background: #fff;
-}
-#header.menu-header::after {
-  background: transparent;
-  background: #fff;
-}
-#header.menu-header .toggle .bar {
-  background: #000;
-  transition: 0.25s;
 }
 
 #banner {
