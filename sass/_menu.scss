@@ -79,19 +79,19 @@
             isolation: isolate;
 
             // OVERLAY 
-            &::after {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: #000;
-                border-radius: $border-radius-xsm;
-                opacity: 0;
-                transition: .5s;
+            // &::after {
+            //     content: '';
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     width: 100%;
+            //     height: 100%;
+            //     background: #000;
+            //     border-radius: $border-radius-xsm;
+            //     opacity: 0;
+            //     transition: .5s;
 
-            }
+            // }
 
 
             img {

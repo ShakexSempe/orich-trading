@@ -1277,18 +1277,6 @@
   position: relative;
   isolation: isolate;
 }
-.menu .menu-item .menu-image::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  border-radius: 0.25rem;
-  opacity: 0;
-  transition: 0.5s;
-}
 .menu .menu-item .menu-image img {
   width: 100%;
   height: 100%;
