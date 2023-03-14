@@ -43,7 +43,6 @@
     }
     .gallery {
         // border: 1px solid red;
-        // min-height: 100vh;
         margin: 5vh auto;
         .gallery-title {
             position: sticky;
@@ -55,7 +54,6 @@
             font-weight: 500;
             padding: .5rem 0;
             background-color: #fff;
-            // border-top: 1px solid $brand;
             z-index: 5;
 
             @media (min-width: 768px) {

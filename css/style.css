@@ -799,7 +799,7 @@
     color: #ffa500;
   }
   #header .navigation aside.active {
-    right: -10vw;
+    right: -1rem;
   }
   #header .navigation aside.active ul li {
     transform: translateX(0);
