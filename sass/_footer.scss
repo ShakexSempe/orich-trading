@@ -46,10 +46,21 @@
 
         .footer-list {
             list-style: none;
+            // PAGE LINKS LI
             &.page-links {
                 text-transform: capitalize;
+                li {
+                    i {
+                        transition: .25s;
+                    }
+                    &:hover {
+                        i {
+                            transform: translateX(.25rem);
+                            color: $brand;
+                        }
+                    }
+                }
             }
-
             li {
                 margin-bottom: .15rem;
                 a {

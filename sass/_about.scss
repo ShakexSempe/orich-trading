@@ -214,12 +214,10 @@
                     li {
                         padding-bottom: 1rem;
                         font-size: 1rem;
+                        font-weight: 400;
                         // FONT-UBUNTU ON SMALL SCREENS
                         @media (max-width: 768px) {
-                            font-weight: 200;
                             font-size: .95rem;
-                            font-family: $font-ubuntu;
-                            font-family: $font-content;
                         }
                         &::marker {
                             color: $marker;
@@ -588,7 +586,6 @@
                             font-weight: 400;
 
                             &::marker {
-                                color: $marker;
                                 color: #fff6;
                             }
 
@@ -599,7 +596,7 @@
                             // DATA SCROLL
                             &[data-scroll] {
                                 transform: scale(1) translateX(3rem);
-                                transition: 2s;
+                                transition: 1.5s;
                             }
                             &[data-scroll="in"] {
                                 transform: scale(1) translateX(0);

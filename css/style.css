@@ -1913,13 +1913,11 @@
 .container .about .vision-mission .vision ul li {
   padding-bottom: 1rem;
   font-size: 1rem;
+  font-weight: 400;
 }
 @media (max-width: 768px) {
   .container .about .vision-mission .vision ul li {
-    font-weight: 200;
     font-size: 0.95rem;
-    font-family: "Ubuntu", sans-serif;
-    font-family: "Prompt", sans-serif;
   }
 }
 .container .about .vision-mission .vision ul li::marker {
@@ -2192,12 +2190,11 @@
   font-weight: 400;
 }
 .container#about-page main .vision-mission .vision ul li::marker {
-  color: #f4f4f4;
   color: #fff6;
 }
 .container#about-page main .vision-mission .vision ul li[data-scroll] {
   transform: scale(1) translateX(3rem);
-  transition: 2s;
+  transition: 1.5s;
 }
 .container#about-page main .vision-mission .vision ul li[data-scroll=in] {
   transform: scale(1) translateX(0);
@@ -3319,6 +3316,13 @@
 }
 .footer .footer-item .footer-list.page-links {
   text-transform: capitalize;
+}
+.footer .footer-item .footer-list.page-links li i {
+  transition: 0.25s;
+}
+.footer .footer-item .footer-list.page-links li:hover i {
+  transform: translateX(0.25rem);
+  color: #f8650c;
 }
 .footer .footer-item .footer-list li {
   margin-bottom: 0.15rem;
