@@ -1380,7 +1380,7 @@
   color: #fff;
   font-weight: 500;
   font-size: 1.05rem;
-  font-size: clamp(1.05rem, 4vw, 2rem);
+  font-size: clamp(1.025rem, 3.5vw, 2rem);
   text-transform: capitalize;
   line-height: 1.6;
   margin-bottom: 0.5rem;
@@ -1411,7 +1411,7 @@
   font-weight: 100;
 }
 #hero .hero-title .slogan #cta .cta-btn {
-  width: 10rem;
+  width: 9rem;
 }
 @media (min-width: 768px) {
   #hero .hero-title .slogan #cta .cta-btn {
