@@ -121,9 +121,11 @@
             }
             #cta {
                 .cta-btn {
-                width: 10rem;
+                    width: clamp(10rem, 10vw, 12rem);
+                    font-size: 1rem;
                 @include md {
-                    width: 12rem;
+                    font-size: 1.15rem;
+                    // width: 12rem;
                     margin-top: 5vh;
                 }
             }
