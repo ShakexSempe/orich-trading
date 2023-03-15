@@ -1411,11 +1411,11 @@
   font-weight: 100;
 }
 #hero .hero-title .slogan #cta .cta-btn {
-  width: 9.5rem;
+  width: 10rem;
 }
 @media (min-width: 768px) {
   #hero .hero-title .slogan #cta .cta-btn {
-    width: 10rem;
+    width: 12rem;
     margin-top: 5vh;
   }
 }
