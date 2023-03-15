@@ -3346,9 +3346,10 @@
   max-width: 100%;
 }
 .container main {
-  padding: 10vh 0 5vh;
+  padding: 10vh 0 0vh;
   min-height: 100vh;
   position: relative;
+  border: 3px solid red;
 }
 @media (min-width: 768px) {
   .container main {
