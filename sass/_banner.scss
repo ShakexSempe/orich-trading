@@ -1,33 +1,30 @@
 #banner {
     // min-height: 100vh;
-    padding: 10vh 5vw;
+    // height: 100%;
+    // padding: 10vh 5vw;
     // border: 2px solid red;
     background-color: #fff;
     isolation: isolate;
-    // margin: 0 5vw;
+    margin: 5vh 5vw;
     @media (min-width: 768px) {
-        margin: 0 5vw;
-        padding: 10vh 0vw;  
+        margin: 10vh 5vw;
+        // padding: 10vh 0vw;  
 
     }
 
     .banner-image-container {
+        // overflow: hidden;
+        min-height: 100vh;
         // border: 2px solid blue;
-        margin-top: 10vh;
-        width: 100%;
+        margin: 10vh 0;
         display: flex;
         flex-direction: column;
         gap: 5vh;
-        @include md {
-        // width: 20rem;
-        flex-direction: row;
-        height: 70vh;
+        @include lg {
+            gap: 10vh;
         }
         figure {
-            width: 100%;
-            width: auto;
-            height: 55vh;
-            border-radius: .5rem;
+            border-radius: $border-radius-sm;
             // border: 2px solid yellow;
             position: relative;
             overflow: hidden;
@@ -36,6 +33,147 @@
                 height: auto;
                 width: 100%;
             }
+            // FIRST BANNER - FOUNDER
+            &.intro-banner {
+                background-color: #000;
+                border: 2px solid #000;
+                @include lg {
+                    // height: 70vh;
+                    background-color: #fff;
+                }
+                @include md {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                img {
+                    width: 100%;
+                    border-radius: 0;
+                    border-top-right-radius: $border-radius-sm;
+                    border-top-left-radius: $border-radius-sm;
+
+                    @include md {
+                        // border: 2px solid blue;
+                        width: 35%;
+                        border-radius: 0;
+                    }
+                }
+
+                .banner-content {
+                    background-color: #000;
+                    color: #f4f4f4;
+                    padding: 1rem .5rem;
+                    @include md {
+                        background-color: #fff;
+                        color: #000;
+                        width: 100%;
+                        // border: 2px solid yellow;
+                        display: grid;
+                        place-items: center;
+                    }
+                    .banner-image-title {
+                        // border: 2px solid red;
+                        // width: 90%;
+                        // margin: 0 auto;
+                        .flex-container {
+                            // border: 2px solid blue;
+                            display: flex;
+                            justify-content: space-between;
+                            flex-direction: column;
+                            gap: 1rem;
+                            @include md {
+                                // flex-direction: row;
+                                // align-items: center;
+                                justify-content: space-between;
+                            }
+                        }
+                        .flex-item {
+                            // border: 1px solid yellow;
+                            background: #111;
+                            border-radius: $border-radius-xsm;
+                            padding: .5rem;
+                            @include md {
+                            background: #f4f4f4;
+                            }
+                            &.item2 {
+                                // border: 2px solid green;
+                                // text-align: right;
+                            }
+                        }
+                        h3 {
+                            // color: $text-light;
+                            text-transform: capitalize;
+                            font-size: 1.5rem;
+                            font-size: clamp(1.5rem, 1.5vw, 1.5rem);
+                            margin-bottom: .5rem;
+                            font-weight: 600;
+                        }
+                        h4 {
+                            // color: $brand;
+                            font-weight: 500;
+                            margin-bottom: .5rem;
+                            span {
+                                // color: $text-light;
+                            }
+                        }
+    
+                        p {
+                            i {
+                                margin-right: .25rem;
+                                color: $brand;
+                            }
+                            // color: $text-light;
+                            line-height: 1.6;
+                            span {
+                                color: $brand;
+                                margin-left: .25rem;
+                            }
+                            a {
+                                display: block;
+                                color: inherit;
+                                text-decoration: none;
+                            }
+                            &:hover {
+                                a {
+                                    color: $brand;
+                                    transition: .25s;
+                                }
+                            }
+                        }
+                        a {
+                            color: $text-light;
+                            @include md {
+                                color: #000;
+                            }
+                            text-decoration: none;
+                            i {
+                                color: $brand;
+                                margin-right: .25rem;
+                            }
+                            &:hover {
+                                color: $brand;
+                                transition: .25s;
+    
+                                i {
+                                    color: $text-light;
+                                    transition: .25s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // SECOND BANNER - TEAM
+            &.secondary-banner {
+                height: 55vh;
+                @include sm {
+                    height: auto;
+                }
+                @include lg {
+                    width: 70%;
+                    height: auto;
+                    margin-inline: auto;
+                }
+            
             img {
                 width: 100%;
                 border-radius: .5rem;
@@ -62,11 +200,13 @@
                 // border: 3px solid green;
                 // font-size: 1rem;
                 // background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 30%, #0001 55%);
-                clip-path: circle(5% at 90% 95%);
-                background: #0005;
+                // clip-path: circle(5% at 90% 95%);
+                // background: #0005;
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.85) 30%, #0001 45%);
+
                 transition: .5s ease-in-out;
                 cursor: pointer;
-                animation: pulse 2s infinite ease .5s;
+                // animation: pulse 2s infinite ease .5s;
                 @keyframes pulse {
                     50% {
                         background: $brand;
@@ -178,7 +318,7 @@
                     transform: scale(1.05);
                 }
             }
-            
+        }
         }
     }
 
