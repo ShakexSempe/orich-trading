@@ -122,7 +122,7 @@
             #cta {
                 .cta-btn {
                     width: clamp(10rem, 10vw, 12rem);
-                    font-size: 1rem;
+                    font-size: 1.015rem;
                 @include md {
                     font-size: 1.15rem;
                     // width: 12rem;
