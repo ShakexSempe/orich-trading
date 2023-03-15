@@ -2866,6 +2866,7 @@
   transition: 0.2s;
   isolation: isolate;
   letter-spacing: 0.05rem;
+  font-weight: 400;
 }
 #projects .gallery .gallery-title a span i {
   margin-left: 0.25rem;
