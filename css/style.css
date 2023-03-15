@@ -1411,7 +1411,7 @@
   font-weight: 100;
 }
 #hero .hero-title .slogan #cta .cta-btn {
-  width: 8.5rem;
+  width: 11rem;
 }
 @media (min-width: 768px) {
   #hero .hero-title .slogan #cta .cta-btn {
@@ -2627,10 +2627,6 @@
     background: green;
   }
 }
-.services .cta-btn {
-  width: 11rem;
-  margin: 10vh auto;
-}
 @media (min-width: 768px) {
   .services {
     padding: 0 5vw 5vh;
@@ -3187,12 +3183,13 @@
 }
 #form button {
   padding: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 1rem 1rem;
   font-weight: 400;
   font-size: 1.025rem;
   text-transform: capitalize;
   cursor: pointer;
   width: 50%;
+  width: 13rem;
   color: #000;
   border: none;
   position: relative;
@@ -3567,7 +3564,7 @@
 .cta .cta-btn {
   padding: 0.5rem 1.5rem 0.5rem 1rem;
   font-size: 1rem;
-  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  font-size: clamp(1rem, 1.25vw, 1.15rem);
   margin: 0.5rem 0;
   cursor: pointer;
   border: none;
@@ -3583,7 +3580,7 @@
   transition: 0.3s;
 }
 .cta .cta-btn.section-btn {
-  width: 12rem;
+  width: 14rem;
 }
 @media (min-width: 768px) {
   .cta .cta-btn.section-btn {
