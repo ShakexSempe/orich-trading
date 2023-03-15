@@ -1411,7 +1411,7 @@
   font-weight: 100;
 }
 #hero .hero-title .slogan #cta .cta-btn {
-  width: 11rem;
+  width: 10rem;
 }
 @media (min-width: 768px) {
   #hero .hero-title .slogan #cta .cta-btn {
