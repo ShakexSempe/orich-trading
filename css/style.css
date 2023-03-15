@@ -1155,11 +1155,12 @@
 #banner .banner-image-container figure.intro-banner .banner-content .banner-image-title .flex-item {
   background: #111;
   border-radius: 0.25rem;
-  padding: 0.5rem;
+  padding: 0.5rem 0.25rem;
 }
 @media (min-width: 768px) {
   #banner .banner-image-container figure.intro-banner .banner-content .banner-image-title .flex-item {
     background: #f4f4f4;
+    padding: 0.5rem;
   }
 }
 #banner .banner-image-container figure.intro-banner .banner-content .banner-image-title h3 {
@@ -1399,7 +1400,7 @@
 .menu .menu-item .menu-item-title a {
   display: block;
   width: max-content;
-  width: 11rem;
+  width: 12rem;
   padding: 0.5rem 1rem;
   text-decoration: none;
   text-transform: capitalize;

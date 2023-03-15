@@ -90,9 +90,10 @@
                             // border: 1px solid yellow;
                             background: #111;
                             border-radius: $border-radius-xsm;
-                            padding: .5rem;
+                            padding: .5rem .25rem;
                             @include md {
                             background: #f4f4f4;
+                            padding: .5rem;
                             }
                             &.item2 {
                                 // border: 2px solid green;
