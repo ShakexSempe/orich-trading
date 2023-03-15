@@ -1411,7 +1411,7 @@
   font-weight: 100;
 }
 #hero .hero-title .slogan #cta .cta-btn {
-  width: 9rem;
+  width: 9.5rem;
 }
 @media (min-width: 768px) {
   #hero .hero-title .slogan #cta .cta-btn {
@@ -3562,7 +3562,7 @@
   transition: 0.25s;
 }
 .cta .cta-btn {
-  padding: 0.5rem 1.5rem 0.5rem 1rem;
+  padding: 0.6rem 1.5rem 0.6rem 1rem;
   font-size: 1rem;
   font-size: clamp(1rem, 1.25vw, 1.15rem);
   margin: 0.5rem 0;
