@@ -3376,6 +3376,7 @@
   padding-top: 5vh;
 }
 .container main .section-pad {
+  display: none;
   border: none;
   overflow: hidden;
   background-repeat: no-repeat;
