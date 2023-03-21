@@ -53,13 +53,23 @@
                 color: $brand-light;
                 opacity: .7;
             }
-
+            
             h3 {
+                i {
+                    font-size: 7rem;
+                    position: absolute;
+                    top: 0;
+                    // top: 50%;
+                    right: 10vw;
+                    transform: translateY(-1rem);
+                    color: #0003;
+                }
                 text-transform: capitalize;
-                // margin: .5rem auto;
+                margin: 1rem 0 .5rem;
                 color: #000;
                 font-size: 1rem;
                 font-weight: 600;
+
             }
 
             .ref-name {

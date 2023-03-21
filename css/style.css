@@ -2447,6 +2447,7 @@
 
 .services {
   background: #f4f4f4;
+  background: #fafafa;
   padding: 10vh 5vw;
 }
 .services .section-description {
@@ -3071,9 +3072,18 @@
 }
 #references .references .reference h3 {
   text-transform: capitalize;
+  margin: 1rem 0 0.5rem;
   color: #000;
   font-size: 1rem;
   font-weight: 600;
+}
+#references .references .reference h3 i {
+  font-size: 7rem;
+  position: absolute;
+  top: 0;
+  right: 10vw;
+  transform: translateY(-1rem);
+  color: #0003;
 }
 #references .references .reference .ref-name {
   margin: 0.5rem auto;
