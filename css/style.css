@@ -3083,7 +3083,12 @@
   top: 0;
   right: 10vw;
   transform: translateY(-1rem);
-  color: #0003;
+  color: #0001;
+}
+@media (min-width: 820px) {
+  #references .references .reference h3 i {
+    right: 5vw;
+  }
 }
 #references .references .reference .ref-name {
   margin: 0.5rem auto;
