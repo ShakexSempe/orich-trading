@@ -18,6 +18,10 @@
         background-color: transparent;
         transition: .25s;
         z-index: -1;
+        box-shadow: 0rem 1rem 1rem transparent;
+
+        // box-shadow: .015rem .015rem .5rem transparent,
+        //             0rem 1rem .5rem transparent;
     }
      // MOBILE HEADER 
     @media (max-width: 1024px) {
@@ -592,8 +596,10 @@
     &.main-header {
         &::after {
             background-color: #fff;
-            box-shadow: .05rem .05rem .5rem rgba(255, 166, 0, 0.150), .25rem .25rem 1rem rgba(0, 0, 0, .100);
-            transition: box-shadow 1.5s, background-color .5s;
+            box-shadow: 0rem .0125rem .5rem rgba(0, 0, 0, .20) , 0rem .25rem 1rem rgba(0, 0, 0, .15);
+            // box-shadow: .015rem .015rem .5rem hsla(0, 0%, 0%, .2),
+            //         .25rem .25rem 1rem rgba(0, 0, 0, 5);
+            transition: box-shadow .5s ease, background-color .25s;
             
         }
         .navigation {
