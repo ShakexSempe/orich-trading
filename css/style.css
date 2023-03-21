@@ -1874,7 +1874,6 @@
 }
 @media (min-width: 1024px) {
   .container .about .flex-container {
-    border: 2px solid blue;
     display: flex;
     align-items: center;
     padding: 5vh 0;
