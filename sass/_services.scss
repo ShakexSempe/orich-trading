@@ -1,6 +1,7 @@
 .services {
-    background-color: #fff;
+    background: #f4f4f4;
     padding: 10vh 5vw;
+    // border: 2px solid red;
     .section-description {
         // border: 1px solid red;
         margin: 5vh 0;
@@ -153,7 +154,7 @@
     .service-container {
         // border: 1px solid $brand;
         margin: 1rem auto 0;
-        background: #ffff;
+        // background: #;
         // padding-bottom: 1vh;
         border-radius: 5px;
         // REMOVE LIST STYLE FROM INDEX PAGE LINK BUTTONS
@@ -191,6 +192,7 @@
             &::before {
                 background: linear-gradient(130deg, #fff000, #ff0000);
                 background: linear-gradient(130deg, #f4f4f4, #fafafa);
+                background: #ffff;
             }
             &::after {
                 opacity: 0;
