@@ -42,8 +42,6 @@
                 font-size: 1rem;
                 font-size: clamp(1rem, 1.5vw, 1.15rem);
                 font-weight: 300;
-                // text-align: justify;
-                text-justify: inter-word;
                 
                 &.article-intro {
                     @include xlg {
