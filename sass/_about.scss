@@ -7,11 +7,20 @@
         position: relative;
         @include xlg {
             .flex-container {
-                // border: 2px solid blue;
+                border: 2px solid blue;
                 display: flex;
                 align-items: center;
                 padding: 5vh 0;
+                @include lg {
+                    padding: 0;
+                }
 
+            }
+        }
+        .section-title {
+            padding: 5vh 5vw;
+            @include lg {
+                padding: 10vh 5vw 0;
             }
         }
         .about-article {

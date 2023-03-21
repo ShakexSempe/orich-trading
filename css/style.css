@@ -1874,9 +1874,23 @@
 }
 @media (min-width: 1024px) {
   .container .about .flex-container {
+    border: 2px solid blue;
     display: flex;
     align-items: center;
     padding: 5vh 0;
+  }
+}
+@media (min-width: 1024px) and (min-width: 820px) {
+  .container .about .flex-container {
+    padding: 0;
+  }
+}
+.container .about .section-title {
+  padding: 5vh 5vw;
+}
+@media (min-width: 820px) {
+  .container .about .section-title {
+    padding: 10vh 5vw 0;
   }
 }
 .container .about .about-article {
@@ -3116,6 +3130,9 @@
   background: #fff;
   padding: 10vh 0 5vh;
 }
+#contact .section-title {
+  padding: 5vh 5vw;
+}
 #contact .contact-items {
   border-radius: 5px;
   display: flex;
@@ -3596,12 +3613,10 @@
 }
 
 .section-title {
-  text-align: center;
   text-transform: capitalize;
   padding: 5vh 0;
   overflow: hidden;
   width: max-content;
-  margin: 0 auto;
 }
 .section-title h2 {
   font-weight: 500;
