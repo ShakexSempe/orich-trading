@@ -173,7 +173,9 @@
         background: #000;
         opacity: .7;
     }
-
+    @include lg {
+        background-attachment: fixed;
+    }
     h3 {
         text-transform: capitalize;
         margin-bottom: 5vh;
