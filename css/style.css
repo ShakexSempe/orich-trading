@@ -1386,7 +1386,6 @@
 .menu .menu-item .menu-item-title {
   position: relative;
   isolation: isolate;
-  margin-bottom: 5vh;
 }
 .menu .menu-item .menu-item-title h3 {
   overflow: hidden;
@@ -1396,7 +1395,19 @@
   text-transform: capitalize;
 }
 .menu .menu-item .menu-item-title p {
-  margin: 0.5rem 0;
+  margin: 1rem 0 0rem;
+  padding: 0 0rem 0.25rem 0.5rem;
+  position: relative;
+}
+.menu .menu-item .menu-item-title p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0.2rem;
+  background: linear-gradient(0deg, #f8650c, #ffa500, #f8650c);
+  transition: 1s ease;
 }
 .menu .menu-item .menu-item-title a {
   display: block;
