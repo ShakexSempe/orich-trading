@@ -2979,7 +2979,8 @@
   text-transform: capitalize;
   margin: 1rem 0 0.5rem;
   color: #000;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
+  font-size: clamp(1.125rem, 1.5vw, 1.25rem);
   font-weight: 600;
 }
 #references .references .reference h3 i {
