@@ -1886,7 +1886,7 @@
   }
 }
 .container .about .section-title {
-  padding: 5vh 5vw 0;
+  padding: 5vh 5vw;
 }
 @media (min-width: 820px) {
   .container .about .section-title {
