@@ -5,40 +5,40 @@
     // border: 2px solid red;
     .section-description {
         // border: 1px solid red;
-        margin: 5vh 0;
         line-height: 1.6;
+        margin-bottom: 1rem;
 
         h3 {
             color: #000;
-            margin-bottom: 1rem;
+            margin-bottom: .5rem;
             font-size: 1.25rem;
             font-size: clamp(1.25rem, 2vw, 1.5rem);
             font-weight: 500;
-            &[data-scroll]{
-                transform: scale(1);
-                opacity: .7;
-                letter-spacing: .2rem;
-            }
-            &[data-scroll="in"] {
-                letter-spacing: .05rem;
-                opacity: 1;
-            }
+            // &[data-scroll]{
+            //     transform: scale(1);
+            //     opacity: .7;
+            //     letter-spacing: .2rem;
+            // }
+            // &[data-scroll="in"] {
+            //     letter-spacing: .05rem;
+            //     opacity: 1;
+            // }
         }
         p {
-            font-weight: 300;
+            font-weight: 400;
             font-size: 1rem;
             font-size: clamp(1rem, 1vw, 1.05rem);
             @media (min-width: 768px) {
                 font-size: 1.15rem;
                 width: 50%;
             }
-            &[data-scroll] {
-                transition: 1.5s;
-                transform: scale(1) translateY(5vh);
-            }
-            &[data-scroll="in"] {
-                transform: scale(1) translateY(0);
-            }
+            // &[data-scroll] {
+            //     transition: 1.5s;
+            //     transform: scale(1) translateY(5vh);
+            // }
+            // &[data-scroll="in"] {
+            //     transform: scale(1) translateY(0);
+            // }
             
         }
         &.promise {
@@ -154,7 +154,7 @@
     }
     .service-container {
         // border: 1px solid $brand;
-        margin: 1rem auto 0;
+        margin: 0 auto 0;
         // background: #;
         // padding-bottom: 1vh;
         border-radius: 5px;
@@ -213,6 +213,8 @@
                     font-size: 1.25rem;
                     font-size: clamp(1.25rem, 2vw, 1.4rem);
                     font-weight: 500;
+                    transition: .5s ease;
+
                     @include md {
                         text-align: center;
                     }
@@ -224,7 +226,7 @@
                     padding: 0;
                     font-size: 2.5rem;
                     transition: .3s;
-                    filter: drop-shadow(.1rem .5rem .5rem rgba(0,0, 0, .150));
+                    filter: drop-shadow(.1rem .5rem .5rem rgba(0,0, 0, .10));
                     @include md {
                         margin: -2rem auto 1rem;
                         margin: 0 auto ;
@@ -317,9 +319,15 @@
                 &::after {opacity: 1;}
                 .service-core {
                     i {
+                        transform: translateY(1rem);
+                        @include md {
                         transform: translateY(0);
-                        filter: drop-shadow(0rem .25rem .2rem rgba(0,0, 0, .150));
-                        transition: 1s;
+                        }
+                        filter: drop-shadow(.15rem .25rem .1rem rgba(0,0, 0, .250));
+                        transition: .5s ease;
+                    }
+                    h4 {
+                        color: $brand;
                     }
                 }
 

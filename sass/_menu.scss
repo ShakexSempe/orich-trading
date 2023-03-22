@@ -49,8 +49,8 @@
                 text-transform: capitalize;
             }
             p {
-                margin: 1rem 0 0rem;
-                padding: 0 0rem .25rem .5rem;
+                margin: 1rem 0 1rem;
+                padding: 0 0rem 0rem .5rem;
                 position: relative;
                 // BLOCK DECORATION
                 &::before {
@@ -58,8 +58,9 @@
                     position: absolute;
                     left: 0;
                     top: 0;
+                    // transform: translateY(-50%);
                     height: 100%;
-                    width: .2rem;
+                    width: .15rem;
                     background: linear-gradient(0deg, $brand, $brand-light, $brand);
                     transition: 1s ease;
                 }
