@@ -2597,6 +2597,8 @@
   border-radius: 0.5rem;
   width: 100%;
   position: relative;
+  background: #fff;
+  transition: 0.5s;
 }
 .services .service-container .service-item::after, .services .service-container .service-item::before {
   position: absolute;
@@ -2608,16 +2610,14 @@
   isolation: isolate;
   z-index: -1;
   border-radius: 0.5rem;
-  transition: 1s;
+  transition: 0.5s;
 }
 .services .service-container .service-item::before {
-  background: linear-gradient(130deg, #fff000, #ff0000);
-  background: linear-gradient(130deg, #f4f4f4, #fafafa);
-  background: #ffff;
+  box-shadow: 0.25rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 .services .service-container .service-item::after {
+  box-shadow: 0.15rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
   opacity: 0;
-  background: linear-gradient(130deg, #fafafa, #f4f4f4);
 }
 .services .service-container .service-item .service-core {
   flex-basis: 50%;
@@ -2677,19 +2677,11 @@
 .services .service-container .service-item .service-type ul li:last-child {
   display: none;
 }
-.services .service-container .service-item:hover {
-  transition: 1s;
-}
 .services .service-container .service-item:hover::before {
   opacity: 0;
 }
 .services .service-container .service-item:hover::after {
   opacity: 1;
-}
-@media (min-width: 768px) {
-  .services .service-container .service-item:hover {
-    background: transparent;
-  }
 }
 .services .service-container .service-item:hover .service-core i {
   transform: translateY(0);

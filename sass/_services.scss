@@ -178,6 +178,8 @@
             border-radius: $border-radius-sm;
             width: 100%;
             position: relative;
+            background: #fff;
+            transition: .5s;
             &::after, &::before {
                 position: absolute;
                 content: '';
@@ -188,16 +190,14 @@
                 isolation: isolate;
                 z-index: -1;
                 border-radius: $border-radius-sm;
-                transition: 1s;
+                transition: .5s;
             }
             &::before {
-                background: linear-gradient(130deg, #fff000, #ff0000);
-                background: linear-gradient(130deg, #f4f4f4, #fafafa);
-                background: #ffff;
+                box-shadow: .25rem .5rem 1rem rgba(0, 0, 0, .10);
             }
             &::after {
+                box-shadow: .15rem .25rem .5rem rgba(0, 0, 0, .15);
                 opacity: 0;
-                background: linear-gradient(130deg, #fafafa, #f4f4f4);
             }
             
             @media (min-width: 768px) {
@@ -311,12 +311,9 @@
             }
             // ITEM HOVER EFFECT
             &:hover {
-                transition: 1s;
+                // transition: .5s;
                 &::before {opacity: 0;}
                 &::after {opacity: 1;}
-                @include md {
-                    background: transparent;
-                }
                 .service-core {
                     i {
                         transform: translateY(0);
