@@ -47,7 +47,6 @@
                 font-size: 1.25rem;
             }
             p {
-                // margin-bottom: 1.5rem;
                 font-size: 1rem;
                 font-size: clamp(1rem, 1.5vw, 1.15rem);
                 font-weight: 400;
@@ -112,23 +111,12 @@
                 margin: .5rem 0;
                 padding-left: .5rem;
                 position: relative;
-                // BLOCK DECORATION
-                // &::before {
-                //     content: '';
-                //     position: absolute;
-                //     left: 0;
-                //     top: 0;
-                //     height: 100%;
-                //     width: .2rem;
-                //     background: linear-gradient(0deg, $brand, $brand-light, $brand);
-                //     transition: 1s ease;
-                // }
 
                 li {
                     position: relative;
                     list-style: none;
                     text-transform: capitalize;
-                    font-weight: 500;
+                    font-weight: 400;
                     font-size: 1rem;
                     font-size: clamp(1rem, 1.5vw, 1.15rem);
 
