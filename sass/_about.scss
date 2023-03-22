@@ -18,7 +18,7 @@
             }
         }
         .section-title {
-            padding: 5vh 5vw;
+            padding: 5vh 5vw 0;
             @include lg {
                 padding: 10vh 5vw 0;
             }
@@ -110,6 +110,19 @@
             ul {
                 // border: 1px solid red;
                 margin: .5rem 0;
+                padding-left: .5rem;
+                position: relative;
+                // BLOCK DECORATION
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: .2rem;
+                    background: linear-gradient(0deg, $brand, $brand-light, $brand);
+                    transition: 1s ease;
+                }
 
                 li {
                     position: relative;
@@ -127,24 +140,15 @@
                 }
                 
                 &.io-item {
-                    li {
-                        transform: translateX(1rem);
-                        transition: 1s;
-                        &::before {
-                            color: transparent;
-                            transition: 1.5s .25s;
-
-                        }
+                    &::before {
+                        transform: scale(0);
                     }
+                    
                 }
                 &.active-item {
-                    li {
-                        transform: translateX(0);
-                        transition: calc(.5s + .5s * var(--li));
-                        &::before {
-                            color: #000;
-                            transform: translateX(0);
-                        }
+                    &::before {
+                        transform: scale(1);
+                        transition: 2s;
                     }
                 }
             }
