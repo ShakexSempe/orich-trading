@@ -1918,7 +1918,7 @@
 .container .about .about-article p {
   font-size: 1rem;
   font-size: clamp(1rem, 1.5vw, 1.15rem);
-  font-weight: 300;
+  font-weight: 400;
 }
 .container .about .about-article p.article-intro::first-letter {
   font-size: 2rem;
@@ -1996,7 +1996,6 @@
   color: #f8650c;
   font-size: 1rem;
   font-size: clamp(1rem, 1.5vw, 1.15rem);
-  font-weight: 400;
   text-decoration: none;
 }
 .container .about .vision-mission {

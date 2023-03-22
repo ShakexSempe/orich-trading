@@ -50,7 +50,7 @@
                 // margin-bottom: 1.5rem;
                 font-size: 1rem;
                 font-size: clamp(1rem, 1.5vw, 1.15rem);
-                font-weight: 300;
+                font-weight: 400;
                 
                 &.article-intro {
                     @include xlg {
@@ -160,7 +160,6 @@
                 // text-transform: capitalize;
                 font-size: 1rem;
                 font-size: clamp(1rem, 1.5vw, 1.15rem);
-                font-weight: 400;
                 text-decoration: none;
             }
         }
