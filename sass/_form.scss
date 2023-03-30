@@ -27,7 +27,7 @@
 
     input, textarea {
         display: block;
-        padding: .5rem;
+        padding: .65rem .5rem;
         margin: .25rem 0 2rem;
         width: 100%;
         border: none;
@@ -130,27 +130,32 @@
 
     // SUBMIT BUTTON
     button {
-        padding:  .5rem;
+        padding: .65rem 1rem;
         margin-top: 1rem 1rem;
+        width: 12rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        background: $brand;
+        color: #000;
+        text-align: left;
         font-weight: 400;
         font-size: 1.025rem;
         text-transform: capitalize;
+
         cursor: pointer;
-        width: 50%;
-        width: 13rem;
-        background: $brand;
-        color: #000;
         border: none;
+        border-radius: $border-radius-sm;
         position: relative;
         isolation: isolate;
         transition: .25s;
-        border-radius: $border-radius-sm;
         @include lg {
-            width: 50%;
+            width: 12rem;
             padding: .65rem;
         }
         i {
-            margin-left: .5rem;
+            // margin-left: .5rem;
         }
         // BUTTON BOX SHADOW
         &::before, &::after {
