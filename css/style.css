@@ -2920,6 +2920,7 @@
 }
 
 #references {
+  background-color: #f4f4f4;
   padding: 10vh 1rem;
 }
 #references .references {
@@ -2933,6 +2934,7 @@
   width: 100%;
 }
 #references .references .reference {
+  background-color: #fff;
   border-radius: 0.5rem;
   width: 100%;
   height: 100%;
@@ -2942,42 +2944,14 @@
   position: relative;
   isolation: isolate;
   display: block;
-}
-#references .references .reference::after, #references .references .reference::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  border-radius: 0.5rem;
-  transition: 0.5s;
-}
-#references .references .reference::before {
-  background: linear-gradient(0deg, #f4f4f4, #fafafa);
-}
-#references .references .reference::after {
-  background: #fafafa;
-  opacity: 0;
-}
-#references .references .reference:hover {
-  transform: scale(1);
-}
-#references .references .reference:hover::before {
-  opacity: 0;
-}
-#references .references .reference:hover::after {
-  opacity: 1;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.125);
 }
 #references .references .reference i {
   margin-right: 0.5rem;
   color: #ffa500;
-  opacity: 0.7;
 }
 #references .references .reference h3 {
   text-transform: capitalize;
-  margin: 1rem 0 0.5rem;
   color: #000;
   font-size: 1.125rem;
   font-size: clamp(1.125rem, 1.5vw, 1.25rem);
@@ -2986,10 +2960,10 @@
 #references .references .reference h3 i {
   font-size: 7rem;
   position: absolute;
-  top: 0;
+  top: 1rem;
   right: 10vw;
-  transform: translateY(-1rem);
-  color: #0001;
+  color: #f4f4f4;
+  z-index: -1;
 }
 @media (min-width: 820px) {
   #references .references .reference h3 i {
@@ -3008,13 +2982,13 @@
   text-transform: capitalize;
 }
 #references .references .reference[data-scroll] {
-  transform: scale(0.98);
   transition: 1.5s;
 }
 #references .references .reference[data-scroll]:hover {
-  transform: scale(1);
+  transform: scale(0.98);
   transition: 0.25s;
   transition-delay: 0;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.15);
 }
 @media (min-width: 1024px) {
   #references .references .reference:nth-child(1) {
