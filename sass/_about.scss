@@ -121,19 +121,6 @@
                     font-size: clamp(1rem, 1.5vw, 1.15rem);
 
                 }
-                
-                &.io-item {
-                    &::before {
-                        transform: scale(0);
-                    }
-                    
-                }
-                &.active-item {
-                    &::before {
-                        transform: scale(1);
-                        transition: 2s;
-                    }
-                }
             }
             a {
                 // border: 1px solid red;

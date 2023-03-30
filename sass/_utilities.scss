@@ -129,10 +129,24 @@
         position: absolute;
         left: 0;
         top: 0;
-        height: 100%;
+        height: 95%;
         width: .2rem;
         background: linear-gradient(0deg, $brand, $brand-light, $brand);
         transition: 1s ease;
+    }
+    &.io-item {
+        &::before {
+            // transform: scale(0);
+            height: 0;
+        }
+        
+    }
+    &.active-item {
+        &::before {
+            // transform: scale(1);
+            height: 90%;
+            // transition: 2s;
+        }
     }
 }
 #top-btn {

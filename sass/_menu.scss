@@ -51,19 +51,19 @@
             p {
                 margin: 1rem 0 1rem;
                 padding: 0 0rem 0rem .5rem;
-                position: relative;
+                // position: relative;
                 // BLOCK DECORATION
-                &::before {
-                    content: '';
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    // transform: translateY(-50%);
-                    height: 100%;
-                    width: .15rem;
-                    background: linear-gradient(0deg, $brand, $brand-light, $brand);
-                    transition: 1s ease;
-                }
+                // &::before {
+                //     content: '';
+                //     position: absolute;
+                //     left: 0;
+                //     top: .25rem;
+                //     // transform: translateY(-50%);
+                //     height: 90%;
+                //     width: .15rem;
+                //     background: linear-gradient(0deg, $brand, $brand-light, $brand);
+                //     transition: 1s ease;
+                // }
             }
             a {
                 display: block;
