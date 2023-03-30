@@ -1346,26 +1346,24 @@
 }
 .menu-cta ul {
   list-style: none;
-  margin-bottom: 1rem;
+  margin-bottom: 5vh;
+}
+.menu-cta ul h4 {
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-size: clamp(1.25rem, 4vw, 1.8rem);
 }
 .menu-cta ul li {
   margin-bottom: 0.25rem;
 }
 .menu-cta ul li i {
   width: 1.5rem;
+  color: #f8650c;
 }
 .menu-cta ul li a {
   color: #f4f4f4;
   text-decoration: none;
-}
-.menu-cta ul.contact-cta-list li i {
-  color: #f8650c;
-}
-.menu-cta ul.social-cta-list li a {
-  color: #f8650c;
-}
-.menu-cta ul.social-cta-list li i {
-  transform: scale(1.25);
 }
 
 #hero {

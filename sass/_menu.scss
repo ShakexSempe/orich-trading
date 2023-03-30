@@ -190,13 +190,22 @@
         }
     }
 
+
     ul {
         list-style: none;
-        margin-bottom: 1rem;
+        margin-bottom: 5vh;
+
+        h4 {
+            text-transform: capitalize;
+            margin-bottom: .5rem;
+            font-size: 1.25rem;
+            font-size: clamp(1.25rem, 4vw, 1.8rem);
+        }
         li {
             margin-bottom: .25rem;
             i {
                 width: 1.5rem;
+                color: $brand;
             }
             a {
                 color: #f4f4f4;
@@ -204,23 +213,6 @@
             }
         }
 
-        &.contact-cta-list {
-            li {
-                i {
-                    color: $brand;
-                }
-            }
-        }
-        &.social-cta-list {
-            li {
-                a {
-                    color: $brand;
-                }
-                i {
-                    transform: scale(1.25);
-                }
-            }
-        }
 
     }
 }
