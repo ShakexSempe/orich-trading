@@ -1327,6 +1327,7 @@
 @media (min-width: 820px) {
   .menu-cta {
     background-attachment: fixed;
+    padding: 20vh 5vw;
   }
 }
 .menu-cta h3 {
@@ -1338,6 +1339,13 @@
 }
 .menu-cta h3 span {
   color: #f8650c;
+}
+@media (min-width: 820px) {
+  .menu-cta .flex-container {
+    display: flex;
+    gap: 10vw;
+    margin-top: 10vh;
+  }
 }
 .menu-cta ul {
   list-style: none;

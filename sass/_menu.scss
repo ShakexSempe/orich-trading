@@ -175,6 +175,7 @@
     }
     @include lg {
         background-attachment: fixed;
+        padding: 20vh 5vw;
     }
     h3 {
         text-transform: capitalize;
@@ -190,7 +191,14 @@
         }
     }
 
-
+    @include lg {
+        .flex-container {
+            // border: 2px solid red;
+            display: flex;
+            gap: 10vw;
+            margin-top: 10vh;
+        }
+    }
     ul {
         list-style: none;
         margin-bottom: 5vh;
