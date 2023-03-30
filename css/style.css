@@ -1296,8 +1296,12 @@
   object-fit: cover;
   transition: 0.5s;
 }
-.menu .menu-item .menu-image:hover img {
-  transform: scale(1.05);
+.menu .menu-item .menu-image.io-item img {
+  transform: scale(1.1);
+}
+.menu .menu-item .menu-image.active-item img {
+  transform: scale(1);
+  transition: 2s;
 }
 
 .menu-cta {
