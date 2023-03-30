@@ -1337,23 +1337,35 @@
 .menu-cta h3 {
   text-transform: capitalize;
   margin-bottom: 5vh;
-  font-size: 1.5rem;
-  font-size: clamp(2rem, 4vw, 2rem);
+  font-size: 2.5rem;
+  font-size: clamp(2.5rem, 4vw, 2rem);
+  color: #fff;
+}
+.menu-cta h3 span {
   color: #f8650c;
 }
 .menu-cta ul {
   list-style: none;
+  margin-bottom: 1rem;
 }
 .menu-cta ul li {
   margin-bottom: 0.25rem;
 }
 .menu-cta ul li i {
   width: 1.5rem;
-  color: #f8650c;
 }
 .menu-cta ul li a {
   color: #f4f4f4;
   text-decoration: none;
+}
+.menu-cta ul.contact-cta-list li i {
+  color: #f8650c;
+}
+.menu-cta ul.social-cta-list li a {
+  color: #f8650c;
+}
+.menu-cta ul.social-cta-list li i {
+  transform: scale(1.25);
 }
 
 #hero {

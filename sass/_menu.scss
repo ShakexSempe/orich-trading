@@ -178,24 +178,49 @@
     }
     h3 {
         text-transform: capitalize;
+        // text-transform: uppercase;
+        // letter-spacing: .025rem;
         margin-bottom: 5vh;
-        font-size: 1.5rem;
-        font-size: clamp(2rem, 4vw, 2rem);
-        color: $brand;
+        font-size: 2.5rem;
+        font-size: clamp(2.5rem, 4vw, 2rem);
+        color: #fff;
+        
+        span {
+            color: $brand;
+        }
     }
 
     ul {
         list-style: none;
+        margin-bottom: 1rem;
         li {
             margin-bottom: .25rem;
             i {
                 width: 1.5rem;
-                color: $brand;
             }
             a {
                 color: #f4f4f4;
                 text-decoration: none;
             }
         }
+
+        &.contact-cta-list {
+            li {
+                i {
+                    color: $brand;
+                }
+            }
+        }
+        &.social-cta-list {
+            li {
+                a {
+                    color: $brand;
+                }
+                i {
+                    transform: scale(1.25);
+                }
+            }
+        }
+
     }
 }
