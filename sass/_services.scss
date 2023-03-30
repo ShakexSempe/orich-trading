@@ -346,43 +346,57 @@
                 transform: scale(1);
                 opacity: 1;
 
-                li {
-                    transform: translateX(2rem);
-                    opacity: 0;
-                }
+                // li {
+                //     transform: translateX(2rem);
+                //     opacity: 0;
+                // }
             }
             &[data-scroll="in"] {
-                .service-type {
-                    ul {
-                        // PSUEDO UNDERLINE
-                        &::after {
-                            transition: 2s;
-                            transition-delay: 1s;
-                            transform: scale(1);
-                        }
-                        li {
-                            transform: translateX(0);
-                            opacity: 1;
-                            &:nth-child(1) {
-                                transition-delay: .5s;
-                            }
-                            &:nth-child(2) {
-                                transition-delay: .6s;
-                            }
-                            &:nth-child(3) {
-                                transition-delay: .7s;
-                            }
-                            &:nth-child(4) {
-                                transition-delay: .8s;
-                            }
-                            &:nth-child(5) {
-                                transition-delay: .9s;
-                            }
-                            &:nth-child(6) {
-                                transition-delay: 1s;
-                            }
-                        }
+                // .service-type {
+                //     ul {
+                //         // PSUEDO UNDERLINE
+                //         &::after {
+                //             transition: 2s;
+                //             transition-delay: 1s;
+                //             transform: scale(1);
+                //         }
+                //         li {
+                //             transform: translateX(0);
+                //             opacity: 1;
+                //             &:nth-child(1) {
+                //                 transition-delay: .5s;
+                //             }
+                //             &:nth-child(2) {
+                //                 transition-delay: .6s;
+                //             }
+                //             &:nth-child(3) {
+                //                 transition-delay: .7s;
+                //             }
+                //             &:nth-child(4) {
+                //                 transition-delay: .8s;
+                //             }
+                //             &:nth-child(5) {
+                //                 transition-delay: .9s;
+                //             }
+                //             &:nth-child(6) {
+                //                 transition-delay: 1s;
+                //             }
+                //         }
                         
+                //     }
+                // }
+                .service-core {
+                    i {
+                        transform: translateY(.5rem);
+                        @include md {
+                        transform: translateY(0);
+                        }
+                        filter: drop-shadow(.15rem .25rem .1rem rgba(0,0, 0, .250));
+                        transition: 1s ease;
+                    }
+                    h4 {
+                        color: $brand;
+                        transition: 1.5s;
                     }
                 }
             }
