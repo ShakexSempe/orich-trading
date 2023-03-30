@@ -1,8 +1,8 @@
 #form {
     @media (min-width: 768px) {
-        padding: 10vh 10vw;
-        width: 70%;
-        margin: 0 auto;
+        // padding: 10vh 10vw;
+        width: 50%;
+        // margin: 0 auto;
     }
     min-height: 100vh;
     padding: 10vh 5vw;
@@ -10,9 +10,14 @@
     overflow: hidden;
     // border: 2px solid blue;
     // width: 100%;
-    .container-title {
+    .form-container-title {
         // border: 2px solid blue;
         margin-bottom: 5vh;
+        h2 {
+            text-align: left;
+            font-size: 2rem;
+            font-size: clamp(2rem, 5vw, 2.25rem);
+        }
     }
     
     
@@ -133,7 +138,7 @@
         cursor: pointer;
         width: 50%;
         width: 13rem;
-        // background: $brand-overlay;
+        background: $brand;
         color: #000;
         border: none;
         position: relative;
