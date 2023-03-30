@@ -116,15 +116,10 @@
                     position: relative;
                     list-style: none;
                     text-transform: capitalize;
-                    font-weight: 400;
+                    font-weight: 500;
                     font-size: 1rem;
                     font-size: clamp(1rem, 1.5vw, 1.15rem);
 
-                    // &::before {
-                    //     content: "-";
-                    //     font-weight: 500;
-                    //     margin-right: .25rem;
-                    // }
                 }
                 
                 &.io-item {
