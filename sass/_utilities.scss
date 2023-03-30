@@ -59,66 +59,7 @@
     }
 }
 
-.section-btn {
-    display: block;
-    width: 18rem;
-    text-align: center;
-    margin: 5vh auto;
-    border-radius: $border-radius-sm;
-    background: $brand-btn;
-    background: transparent;
-    color: #f4f4f4;
-    text-decoration: none;
-    text-transform: capitalize;
-    padding: .7rem 0;
-    position: relative;
-    letter-spacing: .05rem;
-    transition: .2s;
-    isolation: isolate;
-    // font-family: $font-header;
-    
 
-    &::before, &::after {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        transition: .5s ease;
-        z-index: -1;
-        border-radius: $border-radius-sm;
-        border: none;
-        outline: none;
-    }
-    &::before {
-        background: $brand-btn;
-        box-shadow: $box-shadow-sm;
-    }
-    &::after{
-        opacity: 0;
-        background: $brand-btn-hover;
-        box-shadow: $box-shadow-sm-hover;
-    }
-        
-    @media (min-width: 820px){
-        padding: 1rem;
-        &:hover {
-            letter-spacing: normal;
-            transform: scale(.98);
-            &::before {opacity: 0;}
-            &::after {opacity: 1;}
-        }
-    }
-    @media (max-width: 820px){
-        &:active {
-            letter-spacing: normal;
-            transform: scale(.98);
-            &::before {opacity: 0;}
-            &::after {opacity: 1;}
-        }
-    }
-}
 
 // BLOCK DECORATION
 .block-line {

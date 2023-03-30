@@ -288,33 +288,38 @@
 .cta {
     transition: .25s;
     .cta-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        width: 11rem;
         padding: .6rem 1.5rem .6rem 1rem;
+        margin: .5rem 0;
+        
+        background: $brand-light;
+        color: #000;
+        
         font-size: 1rem;
         font-size: clamp(1rem, 1.25vw, 1.15rem);
-        margin: .5rem 0;
-        cursor: pointer;
-        border: none;
         text-decoration: none;
         text-transform: capitalize;
-        color: #000;
-        background: $brand-light;
-        display: block;
-        width: 11rem;
-        // width: max-content;
+        
+        cursor: pointer;
+        border: none;
+        border-radius: $border-radius-sm;
         position: relative;
         isolation: isolate;
-        border-radius: $border-radius-sm;
         transition: .3s;
 
         &.section-btn {
-            width: 14rem;
+            width: 12rem;
             @include md {
-                width: 15rem;
+                width: 12rem;
             }
         }
         i {
             font-size: 1rem;
-            margin-left: .5rem;
+            // margin-left: .5rem;
             &.hero-cta-icon {
             color: transparent;
             &::before, &::after {
