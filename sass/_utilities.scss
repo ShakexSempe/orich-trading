@@ -136,16 +136,13 @@
     }
     &.io-item {
         &::before {
-            // transform: scale(0);
             height: 0;
         }
         
     }
     &.active-item {
         &::before {
-            // transform: scale(1);
-            height: 90%;
-            // transition: 2s;
+            height: 95%;
         }
     }
 }
