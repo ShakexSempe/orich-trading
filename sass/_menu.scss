@@ -205,11 +205,23 @@
             margin-bottom: .25rem;
             i {
                 width: 1.5rem;
-                color: $brand;
+                color: $brand-light;
+                transition: .25s;
             }
             a {
                 color: #f4f4f4;
                 text-decoration: none;
+                transition: .25s;
+            }
+
+            &:hover {
+                i {
+                    transform: translateX(.25rem);
+                    color: #fafafa;
+                }
+                a {
+                    color: $brand-light;
+                }
             }
         }
 

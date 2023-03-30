@@ -1354,11 +1354,20 @@
 }
 .menu-cta ul li i {
   width: 1.5rem;
-  color: #f8650c;
+  color: #ffa500;
+  transition: 0.25s;
 }
 .menu-cta ul li a {
   color: #f4f4f4;
   text-decoration: none;
+  transition: 0.25s;
+}
+.menu-cta ul li:hover i {
+  transform: translateX(0.25rem);
+  color: #fafafa;
+}
+.menu-cta ul li:hover a {
+  color: #ffa500;
 }
 
 #hero {
