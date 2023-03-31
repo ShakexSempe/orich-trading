@@ -49,24 +49,22 @@
             // PAGE LINKS LI
             &.page-links {
                 text-transform: capitalize;
-                li {
-                    i {
-                        transition: .25s;
-                    }
-                    &:hover {
-                        i {
-                            transform: translateX(.25rem);
-                            color: $brand;
-                        }
-                    }
-                }
             }
+            
             li {
                 margin-bottom: .15rem;
+                i {
+                    width: 1rem;
+                    margin-right: .5rem;
+                    transition: .25s;
+                }
                 a {
+                    transition: .25s;
+                }
+                &:hover {
                     i {
-                        width: 1rem;
-                        margin-right: .5rem;
+                        transform: translateX(.25rem);
+                        color: $brand;
                     }
                 }
             }
