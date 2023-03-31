@@ -2452,25 +2452,6 @@
   background: #fff;
   transition: 0.5s;
 }
-.services .service-container .service-item::after, .services .service-container .service-item::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  isolation: isolate;
-  z-index: -1;
-  border-radius: 0.5rem;
-  transition: 0.5s;
-}
-.services .service-container .service-item::before {
-  box-shadow: 0.25rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
-}
-.services .service-container .service-item::after {
-  box-shadow: 0.15rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
-  opacity: 0;
-}
 .services .service-container .service-item .service-core {
   flex-basis: 50%;
   display: flex;
@@ -2531,45 +2512,22 @@
 .services .service-container .service-item .service-type ul li:last-child {
   display: none;
 }
-.services .service-container .service-item:hover::before {
-  opacity: 0;
-}
-.services .service-container .service-item:hover::after {
-  opacity: 1;
-}
-.services .service-container .service-item:hover .service-core i {
-  transform: translateY(1rem);
-  filter: drop-shadow(0.15rem 0.25rem 0.1rem rgba(0, 0, 0, 0.25));
-  transition: 0.5s ease;
-}
-@media (min-width: 768px) {
-  .services .service-container .service-item:hover .service-core i {
-    transform: translateY(0);
-  }
-}
-.services .service-container .service-item:hover .service-core h4 {
-  color: #f8650c;
-}
-.services .service-container .service-item:hover .service-type ul li::marker {
-  color: #000;
-}
-.services .service-container .service-item[data-scroll] {
-  transform: scale(1);
-  opacity: 1;
-}
-.services .service-container .service-item[data-scroll=in] .service-core i {
+.services .service-container .service-item.active-item .service-core i {
   transform: translateY(0.5rem);
   filter: drop-shadow(0.15rem 0.25rem 0.1rem rgba(0, 0, 0, 0.25));
   transition: 1s ease;
 }
 @media (min-width: 768px) {
-  .services .service-container .service-item[data-scroll=in] .service-core i {
+  .services .service-container .service-item.active-item .service-core i {
     transform: translateY(0);
   }
 }
-.services .service-container .service-item[data-scroll=in] .service-core h4 {
+.services .service-container .service-item.active-item .service-core h4 {
   color: #f8650c;
   transition: 1.5s;
+}
+.services .service-container .service-item:hover .service-type ul li::marker {
+  color: #000;
 }
 .services .service-section-pad {
   border-radius: 5px;

@@ -180,25 +180,6 @@
             position: relative;
             background: #fff;
             transition: .5s;
-            &::after, &::before {
-                position: absolute;
-                content: '';
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                isolation: isolate;
-                z-index: -1;
-                border-radius: $border-radius-sm;
-                transition: .5s;
-            }
-            &::before {
-                box-shadow: .25rem .5rem 1rem rgba(0, 0, 0, .10);
-            }
-            &::after {
-                box-shadow: .15rem .25rem .5rem rgba(0, 0, 0, .15);
-                opacity: 0;
-            }
             
             @media (min-width: 768px) {
                 // border-bottom: 1px solid $brand;
@@ -312,79 +293,11 @@
                     }
                 }
             }
-            // ITEM HOVER EFFECT
-            &:hover {
-                // transition: .5s;
-                &::before {opacity: 0;}
-                &::after {opacity: 1;}
-                .service-core {
-                    i {
-                        transform: translateY(1rem);
-                        @include md {
-                        transform: translateY(0);
-                        }
-                        filter: drop-shadow(.15rem .25rem .1rem rgba(0,0, 0, .250));
-                        transition: .5s ease;
-                    }
-                    h4 {
-                        color: $brand;
-                    }
-                }
-
-                .service-type {
-                    ul {
-                        li {
-                            &::marker {
-                                color: #000;
-                            }
-                        }
-                    }   
-                }
-            }
+            
             // SCROLL 
-            &[data-scroll] {
-                transform: scale(1);
-                opacity: 1;
-
-                // li {
-                //     transform: translateX(2rem);
-                //     opacity: 0;
-                // }
+            &.io-item {
             }
-            &[data-scroll="in"] {
-                // .service-type {
-                //     ul {
-                //         // PSUEDO UNDERLINE
-                //         &::after {
-                //             transition: 2s;
-                //             transition-delay: 1s;
-                //             transform: scale(1);
-                //         }
-                //         li {
-                //             transform: translateX(0);
-                //             opacity: 1;
-                //             &:nth-child(1) {
-                //                 transition-delay: .5s;
-                //             }
-                //             &:nth-child(2) {
-                //                 transition-delay: .6s;
-                //             }
-                //             &:nth-child(3) {
-                //                 transition-delay: .7s;
-                //             }
-                //             &:nth-child(4) {
-                //                 transition-delay: .8s;
-                //             }
-                //             &:nth-child(5) {
-                //                 transition-delay: .9s;
-                //             }
-                //             &:nth-child(6) {
-                //                 transition-delay: 1s;
-                //             }
-                //         }
-                        
-                //     }
-                // }
+            &.active-item {
                 .service-core {
                     i {
                         transform: translateY(.5rem);
@@ -400,7 +313,33 @@
                     }
                 }
             }
-            // END OF SCROLL 
+            // END OF SCROLL
+            // ITEM HOVER EFFECT
+            &:hover {
+                // .service-core {
+                //     i {
+                //         transform: translateY(1rem);
+                //         @include md {
+                //         transform: translateY(0);
+                //         }
+                //         filter: drop-shadow(.15rem .25rem .1rem rgba(0,0, 0, .250));
+                //         transition: .5s ease;
+                //     }
+                //     h4 {
+                //         color: $brand;
+                //     }
+                // }
+
+                .service-type {
+                    ul {
+                        li {
+                            &::marker {
+                                color: #000;
+                            }
+                        }
+                    }   
+                }
+            } 
         }
 
         
