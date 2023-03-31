@@ -79,10 +79,11 @@
                     padding: .25rem .5rem;
                     transition: .2s;
                     isolation: isolate;
-                    font-weight: 400;
-
                     i {
-                        margin-left: .5rem;
+                        position: absolute;
+                        top: 50%;
+                        right: .5rem;
+                        transform: translateY(-50%);
                     }
                     @include lg {
                         padding: .5rem;

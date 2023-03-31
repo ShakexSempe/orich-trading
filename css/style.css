@@ -2719,10 +2719,12 @@
   padding: 0.25rem 0.5rem;
   transition: 0.2s;
   isolation: isolate;
-  font-weight: 400;
 }
 #projects .gallery .gallery-title a span i {
-  margin-left: 0.5rem;
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
 }
 @media (min-width: 820px) {
   #projects .gallery .gallery-title a span {
