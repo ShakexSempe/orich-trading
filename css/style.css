@@ -2335,13 +2335,15 @@
   font-weight: 400;
   font-size: 1rem;
   font-size: clamp(1rem, 1vw, 1.05rem);
-  padding-left: 0.5rem;
 }
 @media (min-width: 768px) {
   .services .section-description p {
     font-size: 1.15rem;
     width: 50%;
   }
+}
+.services .section-description p.block-line {
+  padding-left: 0.5rem;
 }
 .services .section-description.promise {
   min-height: 100vh;
