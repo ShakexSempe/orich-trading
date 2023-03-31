@@ -28,6 +28,7 @@
             font-weight: 400;
             font-size: 1rem;
             font-size: clamp(1rem, 1vw, 1.05rem);
+            padding-left: .5rem;
             @media (min-width: 768px) {
                 font-size: 1.15rem;
                 width: 50%;
