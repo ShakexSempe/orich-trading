@@ -156,19 +156,7 @@
     .service-container {
         // border: 1px solid $brand;
         margin: 0 auto 0;
-        // background: #;
-        // padding-bottom: 1vh;
         border-radius: 5px;
-        // REMOVE LIST STYLE FROM INDEX PAGE LINK BUTTONS
-        // &.index-container {
-        //     .service-item {
-        //         .service-type {
-        //             ul {
-        //                 list-style: none;
-        //             }
-        //         }
-        //     }
-        // }
         
         .service-item {
             // border: 1px solid $brand;
@@ -192,7 +180,7 @@
                 height: 100%;
                 border-radius: $border-radius-sm;
                 z-index: -1;
-                transition: .5s;
+                transition: 1s;
             }
             &::before {
                 box-shadow: .0125rem .25rem 1rem rgba(0, 0,0, .1);
@@ -317,14 +305,16 @@
             // SCROLL 
             &.io-item {
                 &::before {opacity: 0;}
+                transform: scale(.98);
             }
             &.active-item {
+                transform: scale(1);
                 &::before {opacity: 1;}
                 .service-core {
                     i {
-                        transform: translateY(.5rem);
+                        // transform: translateY(.5rem);
                         @include md {
-                        transform: translateY(0);
+                        // transform: translateY(0);
                         }
                         filter: drop-shadow(.15rem .25rem .1rem rgba(0,0, 0, .250));
                         transition: 1s ease;
@@ -338,14 +328,15 @@
             // END OF SCROLL
             // ITEM HOVER EFFECT
             &:hover {
-                transform: scale(.985);
+                transform: scale(.99);
+                transition: .5s;
                 &::before { opacity: 0;}
                 &::after { opacity: 1;}
                 .service-core {
                     i {
-                        transform: translateY(1rem);
+                        // transform: translateY(1rem);
                         @include md {
-                        transform: translateY(0);
+                        // transform: translateY(0);
                         }
                         filter: drop-shadow(.15rem .25rem .1rem rgba(0,0, 0, .250));
                         transition: .5s ease;

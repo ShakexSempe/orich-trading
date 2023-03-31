@@ -2463,7 +2463,7 @@
   height: 100%;
   border-radius: 0.5rem;
   z-index: -1;
-  transition: 0.5s;
+  transition: 1s;
 }
 .services .service-container .service-item::before {
   box-shadow: 0.0125rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
@@ -2532,24 +2532,25 @@
 .services .service-container .service-item .service-type ul li:last-child {
   display: none;
 }
+.services .service-container .service-item.io-item {
+  transform: scale(0.98);
+}
 .services .service-container .service-item.io-item::before {
   opacity: 0;
+}
+.services .service-container .service-item.active-item {
+  transform: scale(1);
 }
 .services .service-container .service-item.active-item::before {
   opacity: 1;
 }
 .services .service-container .service-item.active-item .service-core i {
-  transform: translateY(0.5rem);
   filter: drop-shadow(0.15rem 0.25rem 0.1rem rgba(0, 0, 0, 0.25));
   transition: 1s ease;
 }
-@media (min-width: 768px) {
-  .services .service-container .service-item.active-item .service-core i {
-    transform: translateY(0);
-  }
-}
 .services .service-container .service-item:hover {
-  transform: scale(0.985);
+  transform: scale(0.99);
+  transition: 0.5s;
 }
 .services .service-container .service-item:hover::before {
   opacity: 0;
@@ -2558,14 +2559,8 @@
   opacity: 1;
 }
 .services .service-container .service-item:hover .service-core i {
-  transform: translateY(1rem);
   filter: drop-shadow(0.15rem 0.25rem 0.1rem rgba(0, 0, 0, 0.25));
   transition: 0.5s ease;
-}
-@media (min-width: 768px) {
-  .services .service-container .service-item:hover .service-core i {
-    transform: translateY(0);
-  }
 }
 .services .service-container .service-item:hover .service-core h4 {
   color: #f8650c;
