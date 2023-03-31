@@ -257,13 +257,6 @@
                     transition: 1s;
                     display: flex;
                     flex-direction: column-reverse;
-                    @include lg {
-                        // width: 70%;
-                        // margin-inline: auto;
-                        // flex-direction: row;
-                        // flex-direction: column;
-
-                    }
 
                     .mission-logo {
                         overflow: hidden;

@@ -180,7 +180,26 @@
             position: relative;
             background: #fff;
             transition: .5s;
+            isolation: isolate;
             
+            &::before, &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: $border-radius-sm;
+                z-index: -1;
+                transition: .5s;
+            }
+            &::before {
+                box-shadow: .0125rem .25rem 1rem rgba(0, 0,0, .1);
+            }
+            &::after {
+                box-shadow: 0rem .215rem .5rem rgba(0, 0,0, .2);
+                opacity: 0;
+            }
             @media (min-width: 768px) {
                 // border-bottom: 1px solid $brand;
             }
@@ -296,8 +315,10 @@
             
             // SCROLL 
             &.io-item {
+                &::before {opacity: 0;}
             }
             &.active-item {
+                &::before {opacity: 1;}
                 .service-core {
                     i {
                         transform: translateY(.5rem);
@@ -307,29 +328,32 @@
                         filter: drop-shadow(.15rem .25rem .1rem rgba(0,0, 0, .250));
                         transition: 1s ease;
                     }
-                    h4 {
-                        color: $brand;
-                        transition: 1.5s;
-                    }
+                    // h4 {
+                    //     color: $brand;
+                    //     transition: 1.5s;
+                    // }
                 }
             }
             // END OF SCROLL
             // ITEM HOVER EFFECT
             &:hover {
-                // .service-core {
-                //     i {
-                //         transform: translateY(1rem);
-                //         @include md {
-                //         transform: translateY(0);
-                //         }
-                //         filter: drop-shadow(.15rem .25rem .1rem rgba(0,0, 0, .250));
-                //         transition: .5s ease;
-                //     }
-                //     h4 {
-                //         color: $brand;
-                //     }
-                // }
-
+                transform: scale(.985);
+                &::before { opacity: 0;}
+                &::after { opacity: 1;}
+                .service-core {
+                    i {
+                        transform: translateY(1rem);
+                        @include md {
+                        transform: translateY(0);
+                        }
+                        filter: drop-shadow(.15rem .25rem .1rem rgba(0,0, 0, .250));
+                        transition: .5s ease;
+                    }
+                    h4 {
+                        color: $brand;
+                    }
+                }
+                
                 .service-type {
                     ul {
                         li {

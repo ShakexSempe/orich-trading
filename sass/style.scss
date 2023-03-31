@@ -251,7 +251,6 @@
         width: 100%;
         height: 100%;
         background: linear-gradient(0deg, #000, hsl(0, 0%, 5%), #000);
-        transform: scaleX(.5);
         z-index: -1;
     }
     h2,
@@ -267,9 +266,12 @@
 
 
     &.io-item {
+        &::after {
+            transition: 1.5s;
+            transform: scaleX(.5);
+        }
         :nth-child(1){
             letter-spacing: .05rem;
-            opacity: 0;
         }
     }
     &.active-item {
@@ -279,7 +281,6 @@
         }
         :nth-child(1){
             letter-spacing: normal;
-            opacity: 1;
         }
     }
 

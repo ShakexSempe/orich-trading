@@ -2451,6 +2451,25 @@
   position: relative;
   background: #fff;
   transition: 0.5s;
+  isolation: isolate;
+}
+.services .service-container .service-item::before, .services .service-container .service-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  z-index: -1;
+  transition: 0.5s;
+}
+.services .service-container .service-item::before {
+  box-shadow: 0.0125rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+}
+.services .service-container .service-item::after {
+  box-shadow: 0rem 0.215rem 0.5rem rgba(0, 0, 0, 0.2);
+  opacity: 0;
 }
 .services .service-container .service-item .service-core {
   flex-basis: 50%;
@@ -2512,6 +2531,12 @@
 .services .service-container .service-item .service-type ul li:last-child {
   display: none;
 }
+.services .service-container .service-item.io-item::before {
+  opacity: 0;
+}
+.services .service-container .service-item.active-item::before {
+  opacity: 1;
+}
 .services .service-container .service-item.active-item .service-core i {
   transform: translateY(0.5rem);
   filter: drop-shadow(0.15rem 0.25rem 0.1rem rgba(0, 0, 0, 0.25));
@@ -2522,9 +2547,27 @@
     transform: translateY(0);
   }
 }
-.services .service-container .service-item.active-item .service-core h4 {
+.services .service-container .service-item:hover {
+  transform: scale(0.985);
+}
+.services .service-container .service-item:hover::before {
+  opacity: 0;
+}
+.services .service-container .service-item:hover::after {
+  opacity: 1;
+}
+.services .service-container .service-item:hover .service-core i {
+  transform: translateY(1rem);
+  filter: drop-shadow(0.15rem 0.25rem 0.1rem rgba(0, 0, 0, 0.25));
+  transition: 0.5s ease;
+}
+@media (min-width: 768px) {
+  .services .service-container .service-item:hover .service-core i {
+    transform: translateY(0);
+  }
+}
+.services .service-container .service-item:hover .service-core h4 {
   color: #f8650c;
-  transition: 1.5s;
 }
 .services .service-container .service-item:hover .service-type ul li::marker {
   color: #000;
@@ -3463,7 +3506,6 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(0deg, #000, #0d0d0d, #000);
-  transform: scaleX(0.5);
   z-index: -1;
 }
 .container-title h2,
@@ -3476,9 +3518,12 @@
   font-size: clamp(1.5rem, 4vw, 2rem);
   transition: 1.5s ease;
 }
+.container-title.io-item::after {
+  transition: 1.5s;
+  transform: scaleX(0.5);
+}
 .container-title.io-item :nth-child(1) {
   letter-spacing: 0.05rem;
-  opacity: 0;
 }
 .container-title.active-item::after {
   transition: 1.5s;
@@ -3486,7 +3531,6 @@
 }
 .container-title.active-item :nth-child(1) {
   letter-spacing: normal;
-  opacity: 1;
 }
 
 .cta {
