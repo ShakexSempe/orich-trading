@@ -42,9 +42,14 @@
                 // margin: 5vh 5vw;
                 // margin: 5vh auto;
             }
-            h3 {
-                text-transform: capitalize;
-                font-size: 1.25rem;
+
+            .article-body {
+                margin-bottom: 5vh;
+                h3 {
+                    text-transform: capitalize;
+                    font-size: 1.15rem;
+                }
+
             }
             p {
                 font-size: 1rem;
@@ -413,22 +418,27 @@
     // ABOUT PAGE
     &#about-page {
         main {
-            padding-top: 5vh;
             .article-container {
                 padding: 0vh 0 5vh;
 
                 .page-article {
                     // border: 2px solid red;
+                    position: relative;
+                    isolation: isolate;
+                    .article-intro {
+                        // border: 1px solid blue;
+                    }
                     p {
-                        margin-bottom: 1rem;
                         font-size: 1rem;
                         line-height: 1.6;
                         font-weight: 300;
                         // text-align: justify;
 
                         &.article-intro {
-                            margin-bottom: 10vh;
                             line-height: 1.6;
+                            @include md {
+                                width: 60%;
+                            }
                         }
 
                             &[data-scroll] {
@@ -467,7 +477,6 @@
                 @media (min-width: 768px) {
                     // padding: 0 5vw;
                     .page-article {
-                            // border: 2px solid yellow;
                             width: auto;
                             p {
                                 font-size: 1.15rem;
@@ -649,18 +658,18 @@
                                 transition: 1.5s;
                                 opacity: 1;
                             }
-                            &:hover {
-                                background: #fff;
-                                background: #000;
+                        }
+                        &:hover {
+                            background: #fff;
+                            background: #000;
+                            transition: .5s;
+                            border: 1px solid transparent;
+                            h4 {
+                                color: $brand;
                                 transition: .5s;
-                                border: 1px solid transparent;
-                                h4 {
-                                    color: $brand;
-                                    transition: .5s;
-                                }
-                                p {
-                                    transition: .1s;
-                                }
+                            }
+                            p {
+                                transition: .1s;
                             }
                         }
                     }

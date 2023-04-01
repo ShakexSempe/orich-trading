@@ -1796,9 +1796,12 @@
     width: 100%;
   }
 }
-.container .about .about-article h3 {
+.container .about .about-article .article-body {
+  margin-bottom: 5vh;
+}
+.container .about .about-article .article-body h3 {
   text-transform: capitalize;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
 }
 .container .about .about-article p {
   font-size: 1rem;
@@ -2080,21 +2083,25 @@
     color: #f4f4f4;
   }
 }
-.container#about-page main {
-  padding-top: 5vh;
-}
 .container#about-page main .article-container {
   padding: 0vh 0 5vh;
 }
+.container#about-page main .article-container .page-article {
+  position: relative;
+  isolation: isolate;
+}
 .container#about-page main .article-container .page-article p {
-  margin-bottom: 1rem;
   font-size: 1rem;
   line-height: 1.6;
   font-weight: 300;
 }
 .container#about-page main .article-container .page-article p.article-intro {
-  margin-bottom: 10vh;
   line-height: 1.6;
+}
+@media (min-width: 768px) {
+  .container#about-page main .article-container .page-article p.article-intro {
+    width: 60%;
+  }
 }
 .container#about-page main .article-container .page-article p[data-scroll] {
   transition: 1.5s;
@@ -2267,17 +2274,17 @@
   transition: 1.5s;
   opacity: 1;
 }
-.container#about-page main .vision-mission .mission .ms-item[data-scroll=in]:hover {
+.container#about-page main .vision-mission .mission .ms-item:hover {
   background: #fff;
   background: #000;
   transition: 0.5s;
   border: 1px solid transparent;
 }
-.container#about-page main .vision-mission .mission .ms-item[data-scroll=in]:hover h4 {
+.container#about-page main .vision-mission .mission .ms-item:hover h4 {
   color: #f8650c;
   transition: 0.5s;
 }
-.container#about-page main .vision-mission .mission .ms-item[data-scroll=in]:hover p {
+.container#about-page main .vision-mission .mission .ms-item:hover p {
   transition: 0.1s;
 }
 @media (min-width: 768px) {
