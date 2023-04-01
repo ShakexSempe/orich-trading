@@ -324,13 +324,12 @@
             // END OF SCROLL
             // ITEM HOVER EFFECT
             &:hover {
-                transform: scale(.99);
                 transition: .5s;
                 &::before { opacity: 0;}
                 &::after { opacity: 1;}
                 .service-core {
                     i {
-                        // transform: translateY(1rem);
+                        transform: translateY(.5rem);
                         @include md {
                         // transform: translateY(0);
                         }
