@@ -3041,9 +3041,11 @@
   color: #fff;
   padding: 0.5rem 0.5rem;
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+  outline: 1px solid #fff1;
+  transition: 0.25s;
 }
 #contact .contact-items .contact-item .contact-info .contact-info-item:hover {
-  outline: 1px solid #fff2;
+  outline-color: #fff5;
 }
 #contact .contact-items .contact-item .contact-info .address {
   display: flex;
