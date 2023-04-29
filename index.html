@@ -39,12 +39,12 @@
 
 <body>
     <!-- LOADER -->
-    <div class="loader_bg">
+    <!-- <div class="loader_bg">
         <div class="spinner">
             <div class="circle circle-1"></div>
             <div class="circle circle-2"></div>
         </div>
-    </div>
+    </div> -->
     <div class="container">
         <!-- HEADER = 1) LOGO 2) SECTION & PAGE NAVIGATION LINKS -->
         <header id="header" data-header class="index-header hero-header">
@@ -66,9 +66,10 @@
                 <nav id="nav">
                     <ul>
                         <!-- ABOUT -->
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#services">services</a></li>
-                        <li><a href="#projects">projects</a></li>
+                        <li><a class="nav-link" href="#">home</a></li>
+                        <li><a class="nav-link" href="pages/about.html">about</a></li>
+                        <li><a class="nav-link" href="pages/services.html">services</a></li>
+                        <li><a class="nav-link" href="pages/projects.html">projects</a></li>
                         
                         <!-- CONTACT DROPDOWN BUTTON -->
                         <li title="Contact Dropdown" class="dropdown">
@@ -86,51 +87,14 @@
                 <!-- SIDEBAR ACTIVATED BY JAVASCRIPT CLICK EVENT LISTENER -->
                 <aside id="aside" class="aside" >
                     <ul>
+                        <!-- HOME DROPDOWN -->
+                        <li><a href="#" class="nav-link"><i class="fas fa-house"></i>home</a></li>
                         <!-- ABOUT DROPDOWN -->
-                        <li class="aside-dropdown">
-                            <button>
-                                <i class="fas fa-user"></i>about
-                                <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="aside-dropdown-content">
-                                <a href="#about"><i class="fa-solid fa-angles-right"></i>section</a>
-                                <a href="pages/about.html"><i class="fa-solid fa-up-right-from-square"></i>full page</a>
-                            </div>
-                        </li>
+                        <li><a href="pages/about.html" class="nav-link"><i class="fas fa-user"></i>about</a></li>
                         <!-- SERVICES DROPDOWN -->
-                        <li class="aside-dropdown">
-                            <button>
-                                <i class="fas fa-tools"></i>services
-                                <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="aside-dropdown-content">
-                                <a href="#services"><i class="fas fa-angles-right"></i>section</a>
-                                <a href="pages/services.html"><i class="fa-solid fa-up-right-from-square"></i>full page</a>
-                            </div>
-                        </li>
+                        <li><a href="pages/services.html" class="nav-link"><i class="fas fa-screwdriver-wrench"></i>services</a></li>
                         <!-- PROJECTS DROPDOWN -->
-                        <li class="aside-dropdown">
-                            <button>
-                                <i class="fas fa-hard-hat"></i>projects
-                                <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="aside-dropdown-content">
-                                <a href="#projects"><i class="fas fa-angles-right"></i>section</a>
-                                <a href="pages/projects.html"><i class="fa-solid fa-up-right-from-square"></i>full page</a>
-                            </div>
-                        </li>
-                        <!-- CONTACT DROPDOWN -->
-                        <li class="aside-dropdown">
-                            <button>
-                                <i class="fas fa-phone"></i>contact
-                                <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="aside-dropdown-content">
-                                <a href="#contact"><i class="fas fa-angles-right"></i>contact-info</a>
-                                <a href="pages/contact.html"><i class="fa-solid fa-up-right-from-square"></i>make enquiry</a>
-                            </div>
-                        </li>
-                        
+                        <li><a href="pages/projects.html" class="nav-link"><i class="fa-solid fa-list-check"></i>projects</a></li>
                     </ul>
                     <!-- SOCIAL & CONTACT DETAILS -->
                     <div class="social-links">

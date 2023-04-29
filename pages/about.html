@@ -45,84 +45,62 @@
 <body>
     <div class="container" id="about-page">
         <!-- HEADER -->
-        <header id="header" class="about-header index-header">
+        <header id="header" data-header class="index-header hero-header">
             <!-- SKIP LINK -->
             <a href="#main" class="skip-link" tabindex="1">skip to main content</a>
+            <!-- LOGO = LINK TO TOP OF THE PAGE -->
             <div class="logo">
-                <a href="../index.html" title="Homepage">
-                    <img src="../img/orich.jpg" alt="Orich Trading logo">
-                </a>
+                    <a href="#">
+                        <img src="../img/orich.jpg" loading="lazy" alt="Orich Trading & Projects logo">
+                    </a>
             </div>
+            <!-- DESKTOP NAVBAR & MOBILE HAMBURGER MENU -->
             <div class="navigation">
-                <div class="toggle">
+                <!-- HAMBURGER MENU = HIDDEN ON DESKTOPS -->
+                <div id="toggle" class="toggle">
                     <div class="bar"></div>
                 </div>
                 <!-- NAVBAR = HIDDEN ON MOBILE SCREENS -->
                 <nav id="nav">
                     <ul>
                         <!-- ABOUT -->
-                        <li>
-                            <a href="../index.html">Home</a>
-                        </li>
-                        <!-- SERVICES -->
-                        <li class="dropdown">
-                            <a href="services.html">services</a>
-                        </li>
-                        <!-- PROJECTS -->
-                        <li class="dropdown">
-                            <a href="projects.html">projects</a>
-                        </li>
+                        <li><a class="nav-link" href="../index.html">home</a></li>
+                        <li><a class="nav-link" href="about.html">about</a></li>
+                        <li><a class="nav-link" href="services.html">services</a></li>
+                        <li><a class="nav-link" href="projects.html">projects</a></li>
+                        
                         <!-- CONTACT DROPDOWN BUTTON -->
                         <li title="Contact Dropdown" class="dropdown">
                             <button class="dropdown-btn">contact
                                 <i class="fa fa-caret-down"></i>
                             </button>
                             <div class="dropdown-content">
-                                <a title="Contact-info" href="#footer">contact info</a>
-                                <a title="Contact-form" href="contact.html">contact form</a>
+                                <a title="Contact-info" href="#contact">contact info</a>
+                                <a title="Contact-page" href="pages/contact.html">contact page</a>
                             </div>
                         </li>
                     </ul>
                 </nav>
-                <aside id="aside" class="aisde">
+                <!-- SIDEBAR = HIDDEN ON DESKTOPS -->
+                <!-- SIDEBAR ACTIVATED BY JAVASCRIPT CLICK EVENT LISTENER -->
+                <aside id="aside" class="aside" >
                     <ul>
-                        <li>
-                            <i class="fas fa-house"></i>
-                            <a href="../index.html#about" title="Homepage">home</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-hard-hat"></i>
-                            <a href="projects.html">projects</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-tools"></i>
-                            <a href="services.html">services</a>
-                        </li>
-                        <li class="aside-dropdown">
-                            <button>
-                                <i class="fas fa-users"></i>contact
-                                <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="aside-dropdown-content">
-                                <a href="#contact-info"><i class="fas fa-address-book"></i>contact-info</a>
-                                <a href="#form"><i class="fas fa-id-card"></i>form</a>
-                            </div>
-                        </li>
+                        <!-- HOME DROPDOWN -->
+                        <li><a href="../index.html" class="nav-link"><i class="fas fa-house"></i>home</a></li>
+                        <!-- ABOUT DROPDOWN -->
+                        <li><a href="about.html" class="nav-link"><i class="fas fa-user"></i>about</a></li>
+                        <!-- SERVICES DROPDOWN -->
+                        <li><a href="services.html" class="nav-link"><i class="fas fa-screwdriver-wrench"></i>services</a></li>
+                        <!-- PROJECTS DROPDOWN -->
+                        <li><a href="projects.html" class="nav-link"><i class="fa-solid fa-list-check"></i>projects</a></li>
                     </ul>
                     <!-- SOCIAL & CONTACT DETAILS -->
                     <div class="social-links">
-                        <a target="_blank" style="--i:1;" href="https://wa.me/27729270758"><i
-                                class="fa-brands fa-whatsapp"></i>072 927 0758</a>
-                        <a target="_blank" style="--i:2;" href="tel:0734811460"><i class="fas fa-phone-volume"></i>073
-                            481 1460</a>
-                        <a target="_blank" style="--i:3;" href="mailto:info@orichtrading.co.za"><i
-                                class="fas fa-envelope"></i>info@orichtrading.co.za</a>
-                        <a target="_blank" style="--i:4;"
-                            href="https://www.facebook.com/photo/?fbid=130044952743326&set=a.130045042743317"><i
-                                class="fa-brands fa-facebook"></i>facebook</a>
-                        <a target="_blank" style="--i:5;"
-                            href="https://www.instagram.com/orichtradingprojects/?fbclid=IwAR3F4lHFYwmHfR52gYtnQj-8hMbTLDAuQd9yX4IndLP05Ocfu3ZUZQkSpyk"><i
-                                class="fa-brands fa-instagram"></i>Instagram</a>
+                        <a target="_blank" style="--i:1;" href="https://wa.me/27729270758"><i class="fa-brands fa-whatsapp"></i>072 927 0758</a>
+                        <a target="_blank" style="--i:2;" href="tel:0734811460"><i class="fas fa-phone-volume"></i>073 481 1460</a>
+                        <a target="_blank" style="--i:3;" href="mailto:info@orichtrading.co.za"><i class="fas fa-envelope"></i>info@orichtrading.co.za</a>
+                        <a target="_blank" style="--i:4;" href="https://www.facebook.com/photo/?fbid=130044952743326&set=a.130045042743317"><i class="fa-brands fa-facebook"></i>facebook</a>
+                        <a target="_blank" style="--i:5;" href="https://www.instagram.com/orichtradingprojects/?fbclid=IwAR3F4lHFYwmHfR52gYtnQj-8hMbTLDAuQd9yX4IndLP05Ocfu3ZUZQkSpyk"><i class="fa-brands fa-instagram"></i>Instagram</a>
                     </div>
                 </aside>
             </div>

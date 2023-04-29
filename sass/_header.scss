@@ -73,40 +73,47 @@
                         opacity: 0;
 
                         &.aside-dropdown {
-                        margin: 0 1rem 1rem;
-                        padding: 0 1rem 0 0;
-                        position: relative;
-                        display: flex;
-                        flex-direction: column;
-                        // ASIDE BUTTON LINKS
-                        button {
+                            // margin: 0 1rem 1rem;
+                            // padding: 0 1rem 0 0;
+                            position: relative;
                             display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            float: left;
-                            margin-right: auto;
-                            width: 100%;
-                            padding: .5rem 0;
-                            background-color: transparent;
-                            color: $nav-links;
-                            font-size: 1rem;
-                            text-transform: capitalize;
-                            text-decoration: none;
-                            letter-spacing: .025rem;
-                            transition: .2s;
-                            border: none;
-                            // background-color: pink;
+                            flex-direction: column;
 
+                            // ASIDE BUTTON LINKS
+                            button {
+                                display: flex;
+                                // justify-content: space-between;
+                                align-items: center;
+                                // float: left;
+                                // margin-right: auto;
+                                width: 100%;
+                                padding: .5rem 0;
+                                background-color: transparent;
+                                color: $nav-links;
+                                font-size: 1rem;
+                                text-transform: capitalize;
+                                text-decoration: none;
+                                letter-spacing: .025rem;
+                                transition: .2s;
+                                border: none;
+                                // background-color: pink;
 
-                            i {
-                                position: relative;
-                                color: #fff9;
-                                &.fa-caret-down {
-                                    transition: .3s;
+                                i {
+                                    position: relative;
+                                    color: #fff9;
+                                    width: 1.5rem;
+                                    border: 2px solid red;
+                                    &.fa-caret-down {
+                                        transition: .3s;
+                                        margin-left: auto;
+                                    }
+                                    &:first-of-type {
+                                        margin-right: 1rem;
+                                    }
                                 }
-                            }
-                            }
 
+
+                            }
 
                             .aside-dropdown-content {
                                 position: relative;
@@ -115,22 +122,25 @@
                                 width: 100%;
                                 height: 0;
                                 // padding: 1rem;
-                                overflow:hidden;
+                                overflow: hidden;
                                 background-color: $bg-second;
                                 display: flex;
                                 flex-direction: column;
                                 transition: .5s;
+
                                 a {
                                     text-transform: capitalize;
                                     margin-left: auto;
                                     width: auto;
                                     letter-spacing: .025rem;
                                     font-weight: 300;
+
                                     &:hover {
                                         color: $text-second;
                                         transition: .2s;
                                     }
                                 }
+
                                 // SERVICE PAGE ASIDE MENU ITEMS
                                 &.services-dropdown {
                                     a {
@@ -139,6 +149,16 @@
                                         text-transform: capitalize;
                                     }
                                 }
+                            }
+
+                            i {
+                                color: $brand-light;
+                                // width: 20%;
+                                opacity: .7;
+                                // padding: .1em;
+                                // margin-right: auto;
+                                position: absolute;
+                                left: .5rem;
                             }
 
                             &:hover {
@@ -163,6 +183,7 @@
                                 .aside-dropdown-content {
                                     // display: block;
                                     height: 18vh;
+
                                     a {
                                         &:hover {
                                             color: $brand-light;
@@ -181,26 +202,28 @@
                                 }
 
                             }
+                            
                         }
 
                         a {
                             color: $nav-links;
                             text-decoration: none;
                             width: 100%;
-                            text-align: center;
+                            // text-align: center;
+                            // margin-right: auto;
                             padding: .5rem;
                             transition: .2s;
+
+                            i {
+                                margin-right: .5rem;
+                                width: 1.5rem;
+                                // border: 2px solid blue;
+                            }
+
+                            
                         }
 
-                        i {
-                            color: $brand-light;
-                            // width: 20%;
-                            opacity: .7;
-                            // padding: .1em;
-                            // margin-right: auto;
-                            position: absolute;
-                            left: .5rem;
-                        }
+                        
                     }
                 }
 
@@ -283,7 +306,6 @@
                     }
                 }
             }
-
         }
     }
     // END OF MOBILE HEADER 
@@ -491,6 +513,15 @@
         // border: 1px solid yellow;
         // position: relative;
         text-transform: capitalize;
+
+        .nav-link {
+            &.active {
+                color: $brand;
+                i {
+                    color: #fff9;
+                }
+            }
+        }
     }
 
 

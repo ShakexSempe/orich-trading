@@ -11,6 +11,18 @@ const aside = document.querySelector("aside");
 const dropdownBtn = document.querySelectorAll(".aside-dropdown")
 const links = document.querySelectorAll('#aside ul li a');
 
+// ACTIVE PAGE LINKS
+const activePage = window.location.pathname;
+const navLinks = document.querySelectorAll('.nav-link');
+console.log(activePage);
+console.log(navLinks);
+
+navLinks.forEach(link => {
+    if(link.href.includes(`${activePage}`)) {
+        link.classList.add('active');
+    }
+})
+
 // HAMBURGER TOGGLE
 toggle.addEventListener("click",  () => {
     // ADD ACTIVE CLASS TO : 
