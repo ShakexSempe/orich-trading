@@ -2568,8 +2568,13 @@
 }
 .services .service-container .service-item:hover .service-core i {
   transform: translateY(0.5rem);
-  filter: drop-shadow(0.15rem 0.25rem 0.1rem rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0rem 0.25rem 0.1rem rgba(0, 0, 0, 0.25));
   transition: 0.5s ease;
+}
+@media (min-width: 768px) {
+  .services .service-container .service-item:hover .service-core i {
+    transform: translateY(0);
+  }
 }
 .services .service-container .service-item:hover .service-core h4 {
   color: #f8650c;

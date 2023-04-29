@@ -298,9 +298,9 @@
                     i {
                         transform: translateY(.5rem);
                         @include md {
-                        // transform: translateY(0);
+                        transform: translateY(0);
                         }
-                        filter: drop-shadow(.15rem .25rem .1rem rgba(0,0, 0, .250));
+                        filter: drop-shadow(0rem .25rem .1rem rgba(0,0, 0, .250));
                         transition: .5s ease;
                     }
                     h4 {
