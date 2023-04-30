@@ -2995,6 +2995,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  gap: 10vh;
   padding: 5vh 0;
   margin: 0 1rem;
 }
@@ -3011,7 +3012,6 @@
   background-color: #f4f4f4;
   background-color: #333;
   border-radius: 0.5rem;
-  margin: 1rem auto 5vh;
   padding: 1rem;
   padding: 1rem 0.5rem;
   height: 70%;
@@ -3035,7 +3035,7 @@
   }
 }
 #contact .contact-items .contact-item .contact-item-title {
-  margin: -1.85rem 0 1.5rem;
+  margin: -2rem 0 1.5rem;
 }
 #contact .contact-items .contact-item .contact-item-title h3 {
   text-transform: capitalize;
@@ -3081,6 +3081,7 @@
 }
 #contact .contact-items .contact-item .contact-info p i {
   margin-right: 0.5rem;
+  color: #fff9;
 }
 #contact .contact-items .contact-item .contact-info a {
   color: inherit;
@@ -3093,7 +3094,7 @@
 #contact .contact-items .contact-item .contact-info button {
   display: flex;
   align-items: center;
-  margin: 0.25rem 0 0.5rem;
+  margin: 1rem 0 0.5rem;
   transition: 0.5s;
   border: none;
   border-radius: 0.5rem;

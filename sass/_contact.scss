@@ -15,6 +15,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        gap: 10vh;
         // align-items: center;
         padding: 5vh 0;
         margin: 0 1rem;
@@ -32,7 +33,7 @@
             background-color: #f4f4f4;
             background-color: #333;
             border-radius: .5rem;
-            margin: 1rem auto 5vh;
+            // margin: 1rem auto 5vh;
             padding: 1rem;
             padding: 1rem .5rem;
             height: 70%;
@@ -62,7 +63,7 @@
             // ITEM HEADER = ICON + TITLE
 
             .contact-item-title {
-                margin: -1.85rem 0 1.5rem;
+                margin: -2rem 0 1.5rem;
                 h3 {
                     text-transform: capitalize;
                     font-weight: 500;
@@ -111,6 +112,7 @@
                     }
                     i {
                         margin-right: .5rem;
+                        color: #fff9;
                     }
                 }
                 a {
@@ -126,7 +128,7 @@
                     display: flex;
                     align-items: center;
                     // width: 100%;
-                    margin: .25rem 0 .5rem;
+                    margin: 1rem 0 .5rem;
                     transition: .5s;
                     border: none;
                     // background: #fafafa;
