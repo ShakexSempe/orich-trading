@@ -126,7 +126,7 @@
         <main id="main" class="main page-main">
             <section class="article-container about">
                 <header class="section-title">
-                    <h2 >about us</h2>
+                    <h2 title="About Orich Trading and Projects" data-scroll>about us</h2>
                 </header>
                 <article  class="about-article page-article">
                     <p class="article-intro">
@@ -343,7 +343,9 @@
                 <!-- FORM -->
                 <form id="form" class="contact-form" target="_blank" action="https://formsubmit.co/info@orichtrading.co.za"
                     method="POST">
-                    <h2  class="contact-title">Get In Touch</h2>
+                    <div class="container-title form-container-title io-item">
+                        <h2>let's talk</h2>
+                    </div>
                     <!-- NAME -->
                     <label for="name">name :</label>
                     <input type="text" name="Name" id="username" placeholder="Enter your full name.." minlength="2"
@@ -371,10 +373,6 @@
 
                 </form>
                 <!-- END OF FORM -->
-                <!-- COPYRIGHT -->
-                <div class="footer-info">
-
-                </div>
             </div>
             <!-- FOOTER -->
             <div class="footer" id="footer">
@@ -419,15 +417,15 @@
         </main>
         <!-- FOOTER-NAVIGATION -->
         <div class="bottom-nav">
-            <div class="item item1">
-                <!-- <a href="tel:073 481 1460"><i class="fa-solid fa-phone-volume"></i>call now</a> -->
-                <a href="contact.html"><i class="fa-solid fa-phone"></i>contact</a>
+            <div class="item item1 menu-target">
+                <a class="contact-item mobile-contact-item"
+                    title="Contact" href="#contact"><i class="fas fa-envelope"></i></a>
             </div>
             <div class="item item2">
-                <a href="../index.html"><i class="fa-solid fa-house"></i>home</a>
+                <a href="../index.html" title="Home"><i class="fa-solid fa-house"></i></a>
             </div>
-            <div class="item item3">
-                <a href="projects.html"><i class="fa-solid fa-camera"></i>work</a>
+            <div class="item item3 menu-target">
+                <a class="contact-item" title="Footer" href="#footer"><i class="fa-solid fa-circle-info"></i></a>
             </div>
         </div>
     </div>
