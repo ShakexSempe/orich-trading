@@ -627,7 +627,7 @@
     &.main-header {
         &::after {
             background-color: #fff;
-            box-shadow: 0rem .0125rem .5rem hsla(39, 100%, 50%, .125), 0rem .25rem 1rem rgba(0, 0, 0, .05);
+            box-shadow: 0rem .0125rem .5rem hsla(39, 100%, 50%, .1), 0rem .25rem 1rem rgba(0, 0, 0, .05);
             // box-shadow: .015rem .015rem .5rem hsla(0, 0%, 0%, .2),
             //         .25rem .25rem 1rem rgba(0, 0, 0, 5);
             transition: box-shadow .5s ease, background-color .25s;
