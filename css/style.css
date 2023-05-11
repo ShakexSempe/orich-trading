@@ -1170,7 +1170,7 @@
 }
 
 .menu {
-  padding: 5vh 5vw;
+  padding: 10vh 5vw 5vh;
   background: #f4f4f4;
 }
 @media (min-width: 820px) {
@@ -1210,15 +1210,15 @@
 }
 .menu .menu-item .menu-item-title h3 {
   overflow: hidden;
-  font-size: 1.125rem;
-  font-size: clamp(1.125rem, 2vw, 1.25rem);
+  font-size: 1.25rem;
+  font-size: clamp(1.25rem, 2vw, 1.25rem);
   font-weight: 600;
   text-transform: capitalize;
   margin-bottom: 0.5rem;
 }
 .menu .menu-item .menu-item-title p {
   font-weight: 400;
-  margin-bottom: 1rem;
+  color: #333;
   line-height: 1.4;
 }
 @media (min-width: 820px) {
@@ -1233,6 +1233,7 @@
 }
 .menu .menu-item .menu-item-title a {
   display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   width: 12rem;
@@ -1247,6 +1248,7 @@
   margin-left: 0.5rem;
 }
 .menu .menu-item .menu-image {
+  border-top: 3px solid #f8650c;
   height: 40vh;
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
@@ -1273,7 +1275,6 @@
   border: 2px solid #000;
   padding: 1rem;
   padding: 10vh 5vw;
-  margin: 5vh 0;
   background-image: url("../img/ben-allan-BIeC4YK2MTA-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -3381,15 +3382,9 @@
   max-width: 100%;
 }
 .container main {
-  padding: 10vh 0 0vh;
   min-height: 100vh;
   position: relative;
   background: #fff;
-}
-@media (min-width: 768px) {
-  .container main {
-    padding: 5vh 0 0;
-  }
 }
 .container main::after {
   position: fixed;
