@@ -1228,22 +1228,6 @@
     height: 5rem;
   }
 }
-.menu .menu-item .menu-item-title a {
-  display: flex;
-  display: none;
-  justify-content: space-between;
-  align-items: center;
-  width: 12rem;
-  padding: 0.5rem 1rem;
-  margin: 0.5rem 0;
-  text-decoration: none;
-  text-transform: capitalize;
-  color: #000;
-  border-radius: 0.5rem;
-}
-.menu .menu-item .menu-item-title a i {
-  margin-left: 0.5rem;
-}
 .menu .menu-item .menu-image {
   height: 40vh;
   border-bottom-left-radius: 0.25rem;
@@ -1258,6 +1242,39 @@
   object-fit: cover;
   transition: 0.5s;
 }
+.menu .menu-item .menu-image a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 12rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #000;
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(5rem);
+  transition: 0.5s ease;
+  z-index: 1;
+}
+.menu .menu-item .menu-image a i {
+  margin-left: 0.5rem;
+}
+.menu .menu-item .menu-image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #0007;
+  opacity: 0;
+  transition: 0.25s;
+  z-index: 1;
+}
 .menu .menu-item .menu-image::after {
   content: "";
   position: absolute;
@@ -1267,6 +1284,7 @@
   height: 0.125rem;
   background: linear-gradient(90deg, #f8650c, #ffa500, #f8650c);
   transition: 1s;
+  z-index: 3;
 }
 .menu .menu-item .menu-image.io-item img {
   transform: scale(1.1);
@@ -1281,6 +1299,13 @@
 .menu .menu-item .menu-image.active-item::after {
   transform: scaleX(1);
   transition: 1.5s;
+}
+.menu .menu-item .menu-image:hover a, .menu .menu-item .menu-image:focus a {
+  transform: translateX(-50%) translateY(0);
+}
+.menu .menu-item .menu-image:hover::before, .menu .menu-item .menu-image:focus::before {
+  opacity: 1;
+  transition: 0.5s;
 }
 
 .menu-cta {
