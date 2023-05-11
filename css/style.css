@@ -925,7 +925,7 @@
   position: absolute;
   top: 0;
   left: 1rem;
-  padding: 0 0.2rem;
+  padding: 0.25rem;
   transition: 0.5s;
   height: 100%;
   width: auto;
@@ -1006,9 +1006,12 @@
 #header.hero-header .navigation .toggle .bar::after, #header.hero-header .navigation .toggle .bar::before {
   background-color: #ffffff;
 }
+#header.hero-header .logo {
+  padding: 0;
+}
 #header.hero-header .logo img {
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
 }
 #header.toggle-header::after {
   background-color: #000;

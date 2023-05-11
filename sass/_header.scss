@@ -475,7 +475,7 @@
         position: absolute;
         top: 0;
         left: 1rem;
-        padding: 0 .2rem;
+        padding: .25rem;
         transition: .5s;
         height: 100%;
         width: auto;
@@ -601,9 +601,10 @@
         }
         // LOGO 
         .logo {
+            padding: 0;
             img {
-                border-bottom-left-radius: $border-radius-sm;
-                border-bottom-right-radius: $border-radius-sm;
+                border-bottom-left-radius: $border-radius-xsm;
+                border-bottom-right-radius: $border-radius-xsm;
             }
         }
     }
