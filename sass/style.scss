@@ -254,40 +254,40 @@
         border-top-right-radius: $border-radius-sm;
         border-top-left-radius: $border-radius-sm;
         background: #000;
-        // background: linear-gradient(0deg, #000, hsl(0, 0%, 5%), #000);
+        background: linear-gradient(0deg, #000, hsl(0, 0%, 5%), #000);
         z-index: -1;
         transition: 1s;
     }
     h2,
     h3 {
         color: $text-light;
-        // text-align: center;
-        color: #ddd;
-        mix-blend-mode: difference;
         text-transform: capitalize;
         font-weight: 500;
         font-size: 1.65rem;
         font-size: clamp(1.65rem, 4vw, 1.8rem);
         transition: 1.5s ease;
+        // text-align: center;
+        // color: #ddd;
+        // mix-blend-mode: difference;
     }
 
 
     &.io-item {
         &::after {
             transition: 1.5s;
-            transform: scaleX(.25);
+            // transform: scaleX(.25);
         }
         :nth-child(1){
-            // letter-spacing: .05rem;
+            letter-spacing: .05rem;
         }
     }
     &.active-item {
         &::after {
             transition: 1.5s;
-            transform: scaleX(1);
+            // transform: scaleX(1);
         }
         :nth-child(1){
-            // letter-spacing: normal;
+            letter-spacing: normal;
         }
     }
 

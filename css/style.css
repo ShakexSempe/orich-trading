@@ -949,6 +949,8 @@
   width: 100%;
   object-fit: contain;
   object-position: left;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
 }
 #header .navigation {
   text-transform: capitalize;
@@ -3563,14 +3565,13 @@
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
   background: #000;
+  background: linear-gradient(0deg, #000, #0d0d0d, #000);
   z-index: -1;
   transition: 1s;
 }
 .container-title h2,
 .container-title h3 {
   color: #fff;
-  color: #ddd;
-  mix-blend-mode: difference;
   text-transform: capitalize;
   font-weight: 500;
   font-size: 1.65rem;
@@ -3579,12 +3580,17 @@
 }
 .container-title.io-item::after {
   transition: 1.5s;
-  transform: scaleX(0.25);
+}
+.container-title.io-item :nth-child(1) {
+  letter-spacing: 0.05rem;
 }
 .container-title.active-item::after {
   transition: 1.5s;
-  transform: scaleX(1);
 }
+.container-title.active-item :nth-child(1) {
+  letter-spacing: normal;
+}
+
 .cta {
   transition: 0.25s;
 }

@@ -504,7 +504,8 @@
                 width: 100%;
                 object-fit: contain;
                 object-position: left;
-                
+                border-bottom-left-radius: $border-radius-xsm;
+                border-bottom-right-radius: $border-radius-xsm;
             }
         }
     }
