@@ -449,7 +449,7 @@
     display: none;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .bottom-nav {
     height: 100vh;
     width: 5vw;
@@ -584,7 +584,7 @@
   z-index: -1;
   box-shadow: 0rem 1rem 1rem transparent;
 }
-@media (max-width: 1024px) {
+@media (max-width: 820px) {
   #header {
     height: 7vh;
     padding: 0.3rem 1rem;
@@ -795,13 +795,14 @@
     transition-delay: calc(.35s + .05s * var(--i));
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 820px) {
   #header {
     height: 8vh;
     padding: 0.25rem 5vw;
   }
   #header .navigation {
     float: right;
+    padding: 0.25rem;
   }
   #header .navigation .toggle {
     display: none;
@@ -816,29 +817,26 @@
   #header .navigation nav ul {
     display: flex;
     align-items: center;
+    gap: 1rem;
   }
   #header .navigation nav ul li {
-    padding-left: 1em;
     list-style: none;
-    float: left;
     position: relative;
   }
   #header .navigation nav ul li a {
+    font-size: 0.85rem;
     color: #000;
     text-decoration: none;
     transition: 0.3s;
-    padding: 0.3rem;
-    font-size: 1rem;
-    border-radius: 5px;
     position: relative;
     display: block;
   }
   #header .navigation nav ul li a::after {
     position: absolute;
     content: "";
-    bottom: 0;
+    bottom: -0.25rem;
     left: 50%;
-    transform: translateX(-50%) scale(0.1);
+    transform: translateX(-50%) scale(0);
     width: 70%;
     height: 0.15rem;
     background-color: #f8650c;
@@ -847,15 +845,17 @@
   #header .navigation nav ul li a:hover::after {
     transform: translateX(-50%) scale(1);
   }
+  #header .navigation nav ul .dropdown {
+    position: relative;
+  }
   #header .navigation nav ul .dropdown button {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     display: flex;
     align-items: center;
     float: left;
     color: #000;
     text-decoration: none;
     transition: 0.3s;
-    padding: 0.5rem;
     border-radius: 5px;
     background-color: transparent;
     border: none;
@@ -907,7 +907,7 @@
     border: 2px solid #000;
   }
 }
-@media (min-width: 1024px) and (min-width: 820px) {
+@media (min-width: 820px) and (min-width: 820px) {
   #header .navigation nav ul .dropdown:hover .dropdown-content {
     height: 55vh;
     height: auto;
@@ -965,12 +965,9 @@
 #header.hero-header::after {
   background-color: transparent;
 }
-@media (min-width: 768px) {
+@media (min-width: 820px) {
   #header.hero-header {
     background-color: transparent;
-  }
-  #header.hero-header .navigation nav ul {
-    border-radius: 0.5rem;
   }
   #header.hero-header .navigation nav ul li a {
     opacity: 0.7;
@@ -1186,7 +1183,7 @@
 @media (min-width: 820px) {
   .menu .menu-grid {
     grid-template-columns: auto auto auto;
-    column-gap: 1rem;
+    column-gap: 1.5rem;
   }
 }
 .menu .menu-item {
@@ -1223,7 +1220,7 @@
 }
 @media (min-width: 820px) {
   .menu .menu-item .menu-item-title p {
-    height: 7rem;
+    height: 8rem;
   }
 }
 @media (min-width: 1024px) {
@@ -1265,9 +1262,15 @@
 .menu .menu-item .menu-image.io-item img {
   transform: scale(1.1);
 }
+.menu .menu-item .menu-image.io-item::after {
+  transform: translateX(-50%) scaleX(0);
+}
 .menu .menu-item .menu-image.active-item img {
   transform: scale(1);
   transition: 2s;
+}
+.menu .menu-item .menu-image.active-item::after {
+  transform: translateX(-50%) scaleX(1);
 }
 
 .menu-cta {
@@ -3539,7 +3542,7 @@
 }
 
 .container-title {
-  padding: 1rem 0;
+  padding: 0.5rem 1rem;
   background: #000;
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
@@ -3559,11 +3562,10 @@
 .container-title h2,
 .container-title h3 {
   color: #fff;
-  text-align: center;
   text-transform: capitalize;
   font-weight: 500;
-  font-size: 1.5rem;
-  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-size: 1.65rem;
+  font-size: clamp(1.65rem, 4vw, 1.8rem);
   transition: 1.5s ease;
 }
 .container-title.io-item::after {
