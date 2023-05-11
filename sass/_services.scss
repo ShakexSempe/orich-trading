@@ -3,6 +3,12 @@
     background: #f4f4f4;
     padding: 10vh 5vw;
     // border: 2px solid red;
+    .container-title {
+        // border: 2px solid red;
+        @include sm {
+            text-align: center;
+        }
+    }
     .section-description {
         // border: 1px solid red;
         line-height: 1.6;
@@ -14,22 +20,12 @@
             font-size: 1.25rem;
             font-size: clamp(1.25rem, 2vw, 1.5rem);
             font-weight: 600;
-            // &[data-scroll]{
-            //     transform: scale(1);
-            //     opacity: .7;
-            //     letter-spacing: .2rem;
-            // }
-            // &[data-scroll="in"] {
-            //     letter-spacing: .05rem;
-            //     opacity: 1;
-            // }
         }
         p {
             font-weight: 400;
             font-size: 1rem;
-            font-size: clamp(1rem, 1vw, 1.05rem);
+            color: #222;
             @media (min-width: 768px) {
-                font-size: 1.15rem;
                 width: 50%;
             }
 
@@ -187,7 +183,7 @@
                             0rem .215rem .5rem rgba(0, 0,0, .2);
                 opacity: 0;
             }
-            @media (min-width: 768px) {
+            @include md {
                 // border-bottom: 1px solid $brand;
             }
             .service-core {
@@ -360,8 +356,9 @@
         }
     }
     }
-    @media (min-width:768px) {
+    @include md {
         padding: 0 5vw 5vh;
+        // border: 2px solid red;
         .section-description {
             margin: 5vh auto 10vh;
         }

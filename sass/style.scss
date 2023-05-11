@@ -266,9 +266,12 @@
         font-size: 1.65rem;
         font-size: clamp(1.65rem, 4vw, 1.8rem);
         transition: 1.5s ease;
-        // text-align: center;
         // color: #ddd;
         // mix-blend-mode: difference;
+        @include md {
+            text-align: center;
+
+        }
     }
 
 

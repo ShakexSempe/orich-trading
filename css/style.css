@@ -73,7 +73,7 @@
   z-index: 5;
   transition: 0.5s;
 }
-@media (min-width: 576px) {
+@media (min-width: 500px) {
   .toggle {
     right: 5vw;
   }
@@ -508,7 +508,7 @@
   grid-auto-rows: 50vh;
   grid-auto-flow: dense;
 }
-@media (min-width: 576px) {
+@media (min-width: 500px) {
   .grid-gallery {
     grid-auto-rows: 200px;
   }
@@ -520,17 +520,17 @@
   border-radius: 0.25rem;
   overflow: hidden;
 }
-@media (min-width: 576px) {
+@media (min-width: 500px) {
   .grid-gallery .gallery-figure.wide {
     grid-column: span 1;
   }
 }
-@media (min-width: 576px) {
+@media (min-width: 500px) {
   .grid-gallery .gallery-figure.tall {
     grid-row: span 2;
   }
 }
-@media (min-width: 576px) {
+@media (min-width: 500px) {
   .grid-gallery .gallery-figure.big {
     grid-row: span 2;
     grid-row: span 2;
@@ -930,7 +930,7 @@
   height: 100%;
   width: auto;
 }
-@media (min-width: 576px) {
+@media (min-width: 500px) {
   #header .logo {
     left: 5vw;
   }
@@ -1055,7 +1055,7 @@
   flex-direction: column;
   gap: 5vh;
 }
-@media (min-width: 576px) {
+@media (min-width: 500px) {
   #banner .banner-image-container {
     gap: 10vh;
   }
@@ -1406,7 +1406,7 @@
   border-radius: 0.5rem;
   padding: 0.25rem 0;
 }
-@media (min-width: 576px) {
+@media (min-width: 500px) {
   #hero .hero-title {
     top: 55vh;
     background: rgba(0, 0, 0, 0.9);
@@ -1826,7 +1826,7 @@
   overflow: hidden;
   text-align: left;
 }
-@media (min-width: 576px) {
+@media (min-width: 500px) {
   .container .about .about-article {
     margin: 5vh 5vw;
   }
@@ -1913,7 +1913,7 @@
   padding: 5vh 5vw;
   margin: 5vh 0;
 }
-@media (min-width: 576px) {
+@media (min-width: 500px) {
   .container .about .vision-mission {
     margin: 0;
     display: flex;
@@ -2367,6 +2367,11 @@
   background: #f4f4f4;
   padding: 10vh 5vw;
 }
+@media (min-width: 500px) {
+  .services .container-title {
+    text-align: center;
+  }
+}
 .services .section-description {
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -2381,11 +2386,10 @@
 .services .section-description p {
   font-weight: 400;
   font-size: 1rem;
-  font-size: clamp(1rem, 1vw, 1.05rem);
+  color: #222;
 }
 @media (min-width: 768px) {
   .services .section-description p {
-    font-size: 1.15rem;
     width: 50%;
   }
 }
@@ -3342,7 +3346,7 @@
   width: 100%;
   width: 15rem;
 }
-@media (min-width: 576px) {
+@media (min-width: 500px) {
   .footer .footer-logo img {
     width: 10rem;
   }
@@ -3480,7 +3484,7 @@
 .container main .section-pad figure figcaption span {
   color: #f8650c;
 }
-@media (min-width: 576px) {
+@media (min-width: 500px) {
   .container main .section-pad figure figcaption {
     display: none;
   }
@@ -3577,6 +3581,12 @@
   font-size: 1.65rem;
   font-size: clamp(1.65rem, 4vw, 1.8rem);
   transition: 1.5s ease;
+}
+@media (min-width: 768px) {
+  .container-title h2,
+.container-title h3 {
+    text-align: center;
+  }
 }
 .container-title.io-item::after {
   transition: 1.5s;
