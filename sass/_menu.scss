@@ -123,8 +123,8 @@
 
                 position: absolute;
                 bottom: 1rem;
-                left: 50%;
-                transform: translateX(-50%) translateY(5rem);
+                left: 1rem;
+                transform: translateY(5rem);
                 transition: .5s ease;
                 z-index: 1;
 
@@ -139,7 +139,7 @@
                 height: 100%;
                 top: 0;
                 left: 0;
-                background: #0007;
+                background: #0004;
                 opacity: 0;
                 transition: .25s;
                 z-index: 1;
@@ -177,7 +177,7 @@
 
             &:hover , &:focus {
                 a {
-                    transform: translateX(-50%) translateY(0);
+                    transform: translateY(0);
                 }
                 &::before {
                     opacity: 1;

@@ -1264,8 +1264,8 @@
   border-radius: 0.5rem;
   position: absolute;
   bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%) translateY(5rem);
+  left: 1rem;
+  transform: translateY(5rem);
   transition: 0.5s ease;
   z-index: 1;
 }
@@ -1279,7 +1279,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: #0007;
+  background: #0004;
   opacity: 0;
   transition: 0.25s;
   z-index: 1;
@@ -1310,7 +1310,7 @@
   transition: 1.5s;
 }
 .menu .menu-item .menu-image:hover a, .menu .menu-item .menu-image:focus a {
-  transform: translateX(-50%) translateY(0);
+  transform: translateY(0);
 }
 .menu .menu-item .menu-image:hover::before, .menu .menu-item .menu-image:focus::before {
   opacity: 1;
