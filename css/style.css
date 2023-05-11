@@ -2510,10 +2510,11 @@
   transition: 1s;
 }
 .services .service-container .service-item::before {
-  box-shadow: 0.0125rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  box-shadow: 0.0125rem 0.5rem 0.5rem rgba(0, 0, 0, 0.05);
 }
 .services .service-container .service-item::after {
-  box-shadow: 0rem 0.15rem 0.25rem #fff6e6, 0rem 0.215rem 0.5rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0rem 0.215rem 0.5rem rgba(0, 0, 0, 0.2);
   opacity: 0;
 }
 .services .service-container .service-item .service-core {
