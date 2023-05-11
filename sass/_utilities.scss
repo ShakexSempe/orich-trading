@@ -1,18 +1,18 @@
 .toggle {
-    position: fixed;
-    right: 1rem;
-    top: .5rem;
+    // position: fixed;
+    // right: 1rem;
+    // top: .5rem;
     font-size: 20px;
     border-radius: 50%;
-    height: 1.5em;
-    width: 1.5em;
+    height: 1rem;
+    width: 2rem;
     // padding: .2em 0;
     border: none;
     outline: none;
     cursor: pointer;
     display: grid;
     place-items: center;
-    overflow: hidden;
+    // overflow: hidden;
     border-left-color: transparent;
     border-right-color: transparent;
     z-index: 5;
