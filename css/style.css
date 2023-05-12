@@ -2574,7 +2574,7 @@
   transition: 1s;
 }
 .services .service-container .service-item::before {
-  border: 1px solid #ddd;
+  border: 1px solid #0001;
   box-shadow: 0.0125rem 0.5rem 0.5rem rgba(0, 0, 0, 0.05);
 }
 .services .service-container .service-item::after {
