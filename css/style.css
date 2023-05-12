@@ -954,7 +954,12 @@
   transition: 0.5s;
 }
 #header .navigation .nav-link.active {
-  color: #f8650c;
+  color: #ffa500;
+}
+@media (min-width: 768px) {
+  #header .navigation .nav-link.active {
+    color: #f8650c;
+  }
 }
 #header .navigation .nav-link.active i {
   color: #fff9;

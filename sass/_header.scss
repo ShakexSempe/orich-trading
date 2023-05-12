@@ -522,7 +522,10 @@
 
         .nav-link {
             &.active {
-                color: $brand;
+                color: $brand-light;
+                @include md {
+                    color: $brand;
+                }
                 i {
                     color: #fff9;
                 }
