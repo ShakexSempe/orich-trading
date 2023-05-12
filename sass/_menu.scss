@@ -132,6 +132,7 @@
                     margin-left: .5rem;
                 }
             }
+            // BG OVERLAY
             &::before {
                 content: '';
                 position: absolute;
@@ -139,11 +140,12 @@
                 height: 100%;
                 top: 0;
                 left: 0;
-                background: #0004;
+                background: #0005;
                 opacity: 0;
                 transition: .25s;
                 z-index: 1;
             }
+            // GRADIENT BORDER
             &::after {
                 content: '';
                 position: absolute;
