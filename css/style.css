@@ -954,7 +954,7 @@
   transition: 0.5s;
 }
 #header .navigation .nav-link.active {
-  color: #ffa500;
+  color: #f8650c;
 }
 #header .navigation .nav-link.active i {
   color: #fff9;
