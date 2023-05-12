@@ -321,7 +321,7 @@
         .navigation {
             // border: 1px solid yellow;
             float: right;
-            padding: .25rem;
+            // padding: .25rem;
             .toggle {
                 display: none;
             }
@@ -402,16 +402,18 @@
                             width: 15vw;
                             overflow-y: auto;
                             position: absolute;
-                            top: 5vh;
+                            top: 1.25rem;
                             left: -5vw;
                             width: max-content;
                             background-color: $brand;
                             transition: .25s;
                             border-radius: .25rem;
+                            // padding: .25rem;
 
                             a {
                                 display: block;
                                 border-radius: 0;
+                                padding: .25rem;
                                 &::after {
                                     display: none;
                                 }
@@ -436,7 +438,7 @@
                                 i {
                                     transition: .3s;
                                     transform: scale(.9) rotate(180deg);
-                                    // color: #ddd;
+                                    color: $brand
                                 }
                             }
                             .dropdown-content {
@@ -515,6 +517,8 @@
         // border: 1px solid yellow;
         // position: relative;
         text-transform: capitalize;
+        transition: .5s;
+
 
         .nav-link {
             &.active {
@@ -537,13 +541,15 @@
             background-color: transparent;
             // background-color: #ffee00b6;
             .navigation {
+                // ADD PADDING BOTTOM TO LIFT UL UP THE SECTION
+                padding-bottom: 2rem;
                 nav {
                     ul {
                         // background: #000;
                         // border-radius: .5rem;
                         li {
                             a {
-                                opacity: .7;
+                                // opacity: .8;
 
                                 &:hover {
                                     opacity: 1;
@@ -552,7 +558,7 @@
                         }
                         .dropdown {
                             button {
-                                opacity: .7;
+                                // opacity: .7;
                             }
                         }
                     }
