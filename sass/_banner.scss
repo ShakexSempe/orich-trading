@@ -104,24 +104,87 @@
                     }
 
                     .flex-item {
-                        // border: 1px solid yellow;
+                        outline: 1px solid transparent;
                         background: #222;
                         border-radius: $border-radius-xsm;
                         padding: .5rem .25rem;
+                        transition: .25s;
 
                         @include md {
                             // background: #f4f4f4;
                             padding: .5rem;
                         }
+                        h4 {
+                            text-transform: capitalize;
+                            font-weight: 500;
+                            margin-bottom: .5rem;
+                        }
+    
+                        p {
+                            i {
+                                margin-right: .25rem;
+                                color: $brand-light;
+                            }
+    
+                            // color: $text-light;
+                            line-height: 1.6;
+    
+                            span {
+                                color: $brand;
+                                margin-left: .25rem;
+                            }
+    
+                            a {
+                                display: block;
+                                color: inherit;
+                                text-decoration: none;
+                            }
+    
+                            &:hover {
+                                a {
+                                    color: $brand;
+                                    transition: .25s;
+                                }
+                            }
+                        }
+    
+                        a {
+                            color: $text-light;
+                            text-decoration: none;
+    
+                            i {
+                                color: $brand-light;
+                                margin-right: .5rem;
+                                transition: .25s;
+                            }
+    
+                            &:hover {
+                                opacity: .9;
+                                transition: .25s;
+    
+                                i {
+                                    color: $brand;
+                                }
+                            }
+                        }
 
-                        &.item2 {
-                            // border: 2px solid green;
-                            // text-align: right;
+                        // LI ITEM HOVER
+                        &:hover {
+                            outline-color: $brand-light;
+                            span {
+                                color: $brand-light;
+                                transition: .25s;
+                            }
+                            a {
+                                i {
+                                    transform: translateX(.25rem);
+                                    color: $brand;
+                                }
+                            }
                         }
                     }
 
                     h3 {
-                        // color: $text-light;
                         text-transform: capitalize;
                         color: $brand-light;
                         font-size: 1.5rem;
@@ -129,69 +192,7 @@
                         font-weight: 600;
                     }
 
-                    h4 {
-                        // color: $brand;
-                        text-transform: capitalize;
-                        font-weight: 500;
-                        margin-bottom: .5rem;
-
-                        span {
-                            // color: $text-light;
-                        }
-                    }
-
-                    p {
-                        i {
-                            margin-right: .25rem;
-                            color: $brand;
-                        }
-
-                        // color: $text-light;
-                        line-height: 1.6;
-
-                        span {
-                            color: $brand;
-                            margin-left: .25rem;
-                        }
-
-                        a {
-                            display: block;
-                            color: inherit;
-                            text-decoration: none;
-                        }
-
-                        &:hover {
-                            a {
-                                color: $brand;
-                                transition: .25s;
-                            }
-                        }
-                    }
-
-                    a {
-                        color: $text-light;
-
-                        @include md {
-                            // color: #000;
-                        }
-
-                        text-decoration: none;
-
-                        i {
-                            color: $brand;
-                            margin-right: .5rem;
-                        }
-
-                        &:hover {
-                            color: $brand;
-                            transition: .25s;
-
-                            i {
-                                color: $text-light;
-                                transition: .25s;
-                            }
-                        }
-                    }
+                   
                 }
             }
 
