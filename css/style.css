@@ -55,6 +55,9 @@
 }
 
 .toggle {
+  position: fixed;
+  right: 5vw;
+  top: 1rem;
   font-size: 20px;
   border-radius: 50%;
   height: 1rem;
