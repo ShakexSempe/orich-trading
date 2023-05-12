@@ -3131,9 +3131,6 @@
   outline: 1px solid transparent;
   transition: 0.25s;
 }
-#contact .contact-items .contact-item .contact-info .contact-info-item:hover {
-  outline-color: #fff5;
-}
 #contact .contact-items .contact-item .contact-info .address {
   display: flex;
   flex-direction: column;
@@ -3149,6 +3146,7 @@
 #contact .contact-items .contact-item .contact-info p i {
   margin-right: 0.5rem;
   color: #fff9;
+  transition: 0.25s;
 }
 #contact .contact-items .contact-item .contact-info a {
   color: inherit;
@@ -3215,6 +3213,25 @@
 }
 #contact .contact-items .contact-item .contact-info button:hover a::after {
   opacity: 1;
+}
+#contact .contact-items .contact-item:hover .contact-info .contact-info-item {
+  outline-color: #fff4;
+}
+#contact .contact-items .contact-item:hover .contact-info .contact-info-item:hover {
+  outline-color: #ffa500;
+}
+#contact .contact-items .contact-item:hover .contact-info .contact-info-item:hover p {
+  color: #ffa500;
+}
+#contact .contact-items .contact-item:hover .contact-info .contact-info-item:hover p a {
+  color: #fff;
+}
+#contact .contact-items .contact-item:hover .contact-info .contact-info-item:hover p span {
+  color: #fff8;
+}
+#contact .contact-items .contact-item:hover .contact-info .contact-info-item:hover p i {
+  color: #fff;
+  transform: translateX(0.125rem);
 }
 
 #form {

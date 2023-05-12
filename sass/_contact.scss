@@ -40,6 +40,7 @@
             width: 100%;
             transform: scale(.98);
             transition: .3s;
+
             @include lg {
                     width: 100%;
                     height: auto;
@@ -56,12 +57,9 @@
                             font-size: 1rem;
                         }
                     }
-                    
-                    
-                
             }
-            // ITEM HEADER = ICON + TITLE
 
+            // ITEM HEADER = ICON + TITLE
             .contact-item-title {
                 margin: -2rem 0 1.5rem;
                 h3 {
@@ -91,11 +89,8 @@
                     box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .25);
                     outline: 1px solid transparent;
                     transition: .25s;
-
-                    &:hover {
-                        outline-color: #fff5;
-                    }
                 }
+
                 .address {
                     display: flex;
                     flex-direction: column;
@@ -113,6 +108,7 @@
                     i {
                         margin-right: .5rem;
                         color: #fff9;
+                        transition: .25s;
                     }
                 }
                 a {
@@ -186,7 +182,32 @@
                         }
                     }
                 }
-                
+            }
+
+            // CONTACT ITEM HOVER 
+            &:hover {
+                .contact-info {
+                    .contact-info-item {
+                        outline-color: #fff4;
+                        // ITEM HOVER
+                        &:hover {
+                            outline-color: $brand-light;
+                            p {
+                                color: $brand-light;
+                                a {
+                                    color: $text-light;
+                                }
+                                span {
+                                    color: #fff8;
+                                }
+                                i {
+                                    color: $text-light;
+                                    transform: translateX(.125rem);
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
