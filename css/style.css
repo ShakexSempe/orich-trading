@@ -2822,10 +2822,11 @@
   font-weight: 500;
 }
 #projects .gallery .gallery-title a {
-  text-transform: lowercase;
+  text-transform: capitalize;
   text-decoration: none;
   width: 6rem;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  font-weight: 400;
   border-radius: 0.5rem;
   background: linear-gradient(0deg, #f8650c, #ffa500);
   color: #000;
