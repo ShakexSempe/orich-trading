@@ -55,7 +55,7 @@
                     right: 1rem;
                     // transform: translateY(-1rem);
                     color: #f4f4f4;
-                    color: hsl(39, 100%, 95%);
+                    color: hsla(39, 100%, 35%, .1);
                     z-index: -1;
                     @include lg {
                         // right: 5vw;

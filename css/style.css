@@ -3003,7 +3003,7 @@
   right: 10vw;
   right: 1rem;
   color: #f4f4f4;
-  color: #fff6e6;
+  color: rgba(179, 116, 0, 0.1);
   z-index: -1;
 }
 #references .references .reference .ref-name {
