@@ -1439,9 +1439,12 @@
 }
 @media (min-width: 820px) {
   #hero {
+    background-color: #000;
     background-image: url(../img/shivendu-shukla-3yoTPuYR9ZY-unsplash-min.jpg);
     background-size: cover;
+    background-size: 55%;
     background-position: center 15%;
+    background-position: right top;
     background-attachment: fixed;
     z-index: 10;
   }
@@ -1471,7 +1474,8 @@
 }
 @media (min-width: 820px) {
   #hero .hero-title {
-    padding: 1rem;
+    border: 1px solid rgba(248, 103, 13, 0.4);
+    padding: 0.5rem;
     top: 25vh;
     width: max-content;
   }
@@ -1486,30 +1490,25 @@
   text-transform: capitalize;
   color: #fff;
   font-weight: 500;
-  font-size: 1.05rem;
   font-size: clamp(1.025rem, 3.5vw, 2rem);
+  font-size: 1.05rem;
+  font-size: 2.25rem;
+  font-size: 3.25vw;
+  font-size: clamp(1.025rem, 3.25vw, 2.25rem);
   text-transform: capitalize;
-  line-height: 1.6;
-  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  margin-bottom: 0.25rem;
+}
+#hero .hero-title .slogan h1 br {
+  display: none;
 }
 @media (min-width: 820px) {
   #hero .hero-title .slogan h1 {
-    margin: 0;
+    margin-bottom: 1rem;
   }
-}
-#hero .hero-title .slogan .slogan-p {
-  text-transform: capitalize;
-  font-weight: 300;
-  color: #f4f4f4;
-  position: relative;
-  isolation: isolate;
-  font-size: 1.05rem;
-  font-size: clamp(1.05rem, 2vw, 1.25rem);
-}
-#hero .hero-title .slogan .slogan-p span {
-  color: #ffa500;
-  font-weight: 400;
-  font-family: inherit;
+  #hero .hero-title .slogan h1 br {
+    display: block;
+  }
 }
 #hero .hero-title .slogan p {
   font-size: 1rem;
@@ -1517,14 +1516,37 @@
   color: #fff;
   font-weight: 100;
 }
+#hero .hero-title .slogan p i {
+  width: 1rem;
+  opacity: 0.5;
+}
+#hero .hero-title .slogan #cta {
+  width: max-content;
+}
+#hero .hero-title .slogan #cta .slogan-p {
+  text-transform: capitalize;
+  font-weight: 300;
+  color: #f4f4f4;
+  position: relative;
+  isolation: isolate;
+  font-size: 1.05rem;
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  margin: 1rem 0 0.5rem;
+  letter-spacing: 0.0125rem;
+}
+#hero .hero-title .slogan #cta .slogan-p span {
+  color: #ffa500;
+  font-weight: 400;
+  font-family: inherit;
+}
 #hero .hero-title .slogan #cta .cta-btn {
   width: clamp(10rem, 10vw, 12rem);
+  width: 100%;
   font-size: 1.015rem;
 }
 @media (min-width: 768px) {
   #hero .hero-title .slogan #cta .cta-btn {
     font-size: 1.15rem;
-    margin-top: 5vh;
   }
 }
 #hero .hero-title .slogan.thanks-message p {

@@ -31,9 +31,12 @@
     // DESKTOP HERO
     @include lg {
     // background-image: url(../img/work.jpg);
+        background-color: #000;
         background-image: url(../img/shivendu-shukla-3yoTPuYR9ZY-unsplash-min.jpg);
         background-size: cover;
+        background-size: 55%;
         background-position: center 15%;
+        background-position: right top;
         background-attachment: fixed;
         z-index: 10;
         // display: grid;
@@ -65,8 +68,8 @@
             background: rgba(0, 0, 0, .9);
         }
         @include lg {
-            // border: 1px solid $brand;
-            padding: 1rem;
+            border: 1px solid $brand-light-border;
+            padding: .5rem;
             top: 25vh;
             width: max-content;
         }
@@ -83,34 +86,24 @@
                 // padding: .5rem 0;
                 color: $text-light;
                 font-weight: 500;
-                font-size: 1.05rem;
                 font-size: clamp(1.025rem, 3.5vw, 2rem);
+                font-size: 1.05rem;
+                font-size: 2.25rem;
+                font-size: 3.25vw;
+                font-size: clamp(1.025rem, 3.25vw, 2.25rem);
                 text-transform: capitalize;
-                line-height: 1.6;
+                line-height: 1.4;
                 // margin: .25rem 0;
-                margin-bottom: .5rem;
+                margin-bottom: .25rem;
+                br {
+                    display: none;
+                }
                 @include lg {
                     // font-size: 2rem;
-                    margin: 0;
-                }
-            }
-            // QUALITY OR NOTHING
-            .slogan-p {
-                text-transform: capitalize;
-                font-weight: 300;
-                color: $text-second;
-                position: relative;
-                isolation: isolate;
-                font-size: 1.05rem;
-                font-size: clamp(1.05rem, 2vw, 1.25rem);
-                // line-height: 1;
-                span {
-                    color: $brand-light;
-                    font-weight: 400;
-                    font-family: inherit;
-                }
-                @include lg {
-                    // font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                    br {
+                        display: block;
+                    }
                 }
             }
             p {
@@ -118,15 +111,47 @@
                 font-size: clamp(.95rem, 1.5vw, 1.15rem);
                 color: $text-light;
                 font-weight: 100;
+
+                i {
+                    width: 1rem;
+                    opacity: .5;
+                }
             }
+            // QUALITY OR NOTHING
             #cta {
+                // border: 2px solid red;
+                width: max-content;
+                .slogan-p {
+                    text-transform: capitalize;
+                    font-weight: 300;
+                    color: $text-second;
+                    position: relative;
+                    isolation: isolate;
+                    font-size: 1.05rem;
+                    font-size: clamp(1.05rem, 2vw, 1.25rem);
+                    margin: 1rem 0 .5rem;
+                    // border: 1px solid red;
+                    letter-spacing: .0125rem;
+                    // line-height: 1;
+                    span {
+                        color: $brand-light;
+                        font-weight: 400;
+                        font-family: inherit;
+                    }
+                    @include lg {
+                        // font-size: 1.5rem;
+                    }
+                }
+                // border: 2px solid blue;
                 .cta-btn {
                     width: clamp(10rem, 10vw, 12rem);
+                    width: 100%;
                     font-size: 1.015rem;
+                    // margin-top: .5rem;
                 @include md {
                     font-size: 1.15rem;
                     // width: 12rem;
-                    margin-top: 5vh;
+                    // margin-top: 5vh;
                 }
             }
             }
