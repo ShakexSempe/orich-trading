@@ -120,7 +120,7 @@
             // QUALITY OR NOTHING
             #cta {
                 // border: 2px solid red;
-                width: max-content;
+                // width: max-content;
                 .slogan-p {
                     text-transform: capitalize;
                     font-weight: 300;
@@ -145,7 +145,6 @@
                 // border: 2px solid blue;
                 .cta-btn {
                     width: clamp(10rem, 10vw, 12rem);
-                    width: 100%;
                     font-size: 1.015rem;
                     // margin-top: .5rem;
                 @include md {
