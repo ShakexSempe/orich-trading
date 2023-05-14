@@ -956,11 +956,6 @@
 #header .navigation .nav-link.active {
   color: #ffa500;
 }
-@media (min-width: 768px) {
-  #header .navigation .nav-link.active {
-    color: #f8650c;
-  }
-}
 #header .navigation .nav-link.active i {
   color: #fff9;
 }
