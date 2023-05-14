@@ -120,7 +120,7 @@
             // QUALITY OR NOTHING
             #cta {
                 // border: 2px solid red;
-                // width: max-content;
+                width: max-content;
                 .slogan-p {
                     text-transform: capitalize;
                     font-weight: 300;
@@ -144,14 +144,9 @@
                 }
                 // border: 2px solid blue;
                 .cta-btn {
-                    width: clamp(9.5rem, 10vw, 12rem);
+                    // width: clamp(9.5rem, 12vw, 12rem);
                     font-size: 1.015rem;
-                    // margin-top: .5rem;
-                @include md {
-                    font-size: 1.15rem;
-                    // width: 12rem;
-                    // margin-top: 5vh;
-                }
+                    width: 100%;
             }
             }
             // THANK YOU PAGE HERO
