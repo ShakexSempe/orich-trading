@@ -128,7 +128,7 @@
                     position: relative;
                     isolation: isolate;
                     font-size: 1.05rem;
-                    font-size: clamp(1.05rem, 2vw, 1.25rem);
+                    font-size: clamp(1.05rem, 1.8vw, 1.25rem);
                     margin: .5rem 0 .5rem;
                     // border: 1px solid red;
                     letter-spacing: .0125rem;
@@ -144,9 +144,9 @@
                 }
                 // border: 2px solid blue;
                 .cta-btn {
-                    // width: clamp(9.5rem, 12vw, 12rem);
                     font-size: 1.015rem;
                     width: 100%;
+                    width: clamp(9rem, 15vw, 12rem);
             }
             }
             // THANK YOU PAGE HERO

@@ -1527,7 +1527,7 @@
   position: relative;
   isolation: isolate;
   font-size: 1.05rem;
-  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
   margin: 0.5rem 0 0.5rem;
   letter-spacing: 0.0125rem;
 }
@@ -1539,6 +1539,7 @@
 #hero .hero-title .slogan #cta .cta-btn {
   font-size: 1.015rem;
   width: 100%;
+  width: clamp(9rem, 15vw, 12rem);
 }
 #hero .hero-title .slogan.thanks-message p {
   font-weight: 400;
