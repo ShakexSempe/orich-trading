@@ -1179,7 +1179,7 @@
   color: #f8650c;
 }
 #banner .banner-image-container figure .banner-content .banner-image-title .flex-item:hover {
-  outline-color: rgba(248, 103, 13, 0.4);
+  outline-color: #ffa500;
 }
 #banner .banner-image-container figure .banner-content .banner-image-title .flex-item:hover span {
   color: #ffa500;
@@ -3243,7 +3243,7 @@
   outline-color: #fff4;
 }
 #contact .contact-items .contact-item:hover .contact-info .contact-info-item:hover {
-  outline-color: rgba(248, 103, 13, 0.4);
+  outline-color: #ffa500;
 }
 #contact .contact-items .contact-item:hover .contact-info .contact-info-item:hover p {
   color: #ffa500;
