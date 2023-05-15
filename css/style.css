@@ -961,6 +961,7 @@
 }
 #header.hero-header {
   height: 25vh;
+  padding: 1rem 5vw;
 }
 #header.hero-header::after {
   background-color: transparent;

@@ -537,6 +537,7 @@
     // HEADER ACTIVE CLASS
     &.hero-header {
         height: 25vh;
+        padding: 1rem 5vw;
         &::after {
             background-color: transparent;
         }
