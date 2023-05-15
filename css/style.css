@@ -1179,7 +1179,7 @@
   color: #f8650c;
 }
 #banner .banner-image-container figure .banner-content .banner-image-title .flex-item:hover {
-  outline-color: #ffa500;
+  outline-color: rgba(248, 103, 13, 0.4);
 }
 #banner .banner-image-container figure .banner-content .banner-image-title .flex-item:hover span {
   color: #ffa500;
