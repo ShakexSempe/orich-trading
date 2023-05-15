@@ -1536,10 +1536,15 @@
   font-weight: 400;
   font-family: inherit;
 }
+@media (min-width: 820px) {
+  #hero .hero-title .slogan #cta .slogan-p {
+    margin: 1rem 0 0.5rem;
+  }
+}
 #hero .hero-title .slogan #cta .cta-btn {
   font-size: 1.015rem;
-  width: 100%;
-  width: clamp(9rem, 15vw, 12rem);
+  width: 12rem;
+  width: clamp(11rem, 15vw, 15rem);
 }
 #hero .hero-title .slogan.thanks-message p {
   font-weight: 400;

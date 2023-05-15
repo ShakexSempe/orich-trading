@@ -139,14 +139,14 @@
                         font-family: inherit;
                     }
                     @include lg {
-                        // font-size: 1.5rem;
+                        margin: 1rem 0 .5rem;
                     }
                 }
                 // border: 2px solid blue;
                 .cta-btn {
                     font-size: 1.015rem;
-                    width: 100%;
-                    width: clamp(9rem, 15vw, 12rem);
+                    width: 12rem;
+                    width: clamp(11rem, 15vw, 15rem);
             }
             }
             // THANK YOU PAGE HERO
