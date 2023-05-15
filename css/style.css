@@ -1106,6 +1106,13 @@
     place-items: center;
   }
 }
+#banner .banner-image-container figure .banner-content .banner-image-title h3 {
+  text-transform: capitalize;
+  color: #f8650c;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
 #banner .banner-image-container figure .banner-content .banner-image-title .flex-container {
   display: flex;
   justify-content: space-between;
@@ -1180,13 +1187,6 @@
 #banner .banner-image-container figure .banner-content .banner-image-title .flex-item:hover a i {
   transform: translateX(0.25rem);
   color: #f8650c;
-}
-#banner .banner-image-container figure .banner-content .banner-image-title h3 {
-  text-transform: capitalize;
-  color: #ffa500;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
 }
 
 .menu {
@@ -2859,7 +2859,7 @@
 }
 @media (min-width: 820px) {
   #projects .gallery .gallery-title a {
-    padding: 0.5rem;
+    padding: 0.25rem 0.5rem;
   }
 }
 #projects .gallery .gallery-title a::after, #projects .gallery .gallery-title a::before {

@@ -87,7 +87,7 @@
                         
                     }
                     @include lg {
-                        padding: .5rem;
+                        padding: .25rem .5rem;
                     }
                     // PSEUDO BG
                     &::after, &::before {
