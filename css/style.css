@@ -3243,7 +3243,7 @@
   outline-color: #fff4;
 }
 #contact .contact-items .contact-item:hover .contact-info .contact-info-item:hover {
-  outline-color: #ffa500;
+  outline-color: rgba(248, 103, 13, 0.4);
 }
 #contact .contact-items .contact-item:hover .contact-info .contact-info-item:hover p {
   color: #ffa500;
