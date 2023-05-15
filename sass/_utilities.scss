@@ -69,9 +69,10 @@
         content: '';
         position: absolute;
         left: 0;
-        top: 0;
+        top: 50%;
+        transform: translateY(-50%);
         height: 95%;
-        width: .2rem;
+        width: .15rem;
         background: linear-gradient(0deg, $brand, $brand-light, $brand);
         transition: 1s ease;
     }
@@ -83,7 +84,7 @@
     }
     &.active-item {
         &::before {
-            height: 95%;
+            height: 90%;
         }
     }
 }
