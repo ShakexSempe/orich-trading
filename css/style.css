@@ -961,7 +961,7 @@
   color: #fff9;
 }
 #header.hero-header {
-  height: 25vh;
+  height: 30vh;
   padding: 1rem 5vw;
 }
 #header.hero-header::after {
