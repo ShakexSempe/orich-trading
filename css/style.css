@@ -824,7 +824,7 @@
     position: relative;
   }
   #header .navigation nav ul li a {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     color: #000;
     text-decoration: none;
     transition: 0.3s;
