@@ -55,9 +55,6 @@
 }
 
 .toggle {
-  position: fixed;
-  right: 5vw;
-  top: 1rem;
   font-size: 20px;
   height: 1rem;
   width: 1.25rem;
@@ -3605,6 +3602,9 @@
   font-size: 2.25rem;
   font-size: clamp(2.25rem, 4vw, 2.5rem);
 }
+.section-title h2 span {
+  color: #f8650c;
+}
 .section-title h2::after {
   position: absolute;
   content: "";
@@ -3615,6 +3615,7 @@
   background: linear-gradient(90deg, #f8650c, #ffa500, #f8650c);
   border-radius: 5px;
   transition: 0.5s;
+  display: none;
 }
 .section-title h2[data-scroll] {
   transform: translate(0);
