@@ -968,18 +968,12 @@
   #header.hero-header {
     background-color: transparent;
   }
-  #header.hero-header .navigation {
-    padding-bottom: 2rem;
-  }
   #header.hero-header .navigation nav ul li a:hover {
     opacity: 1;
   }
 }
 #header.hero-header .navigation {
   z-index: 5;
-}
-#header.hero-header .navigation nav {
-  transform: translateY(5vh);
 }
 #header.hero-header .navigation nav ul li a {
   color: #f4f4f4;
@@ -1469,7 +1463,6 @@
 }
 @media (min-width: 820px) {
   #hero .hero-title {
-    border: 1px solid rgba(248, 103, 13, 0.4);
     padding: 0.5rem;
     top: 25vh;
     width: max-content;
