@@ -201,8 +201,8 @@
     h2 {
         font-weight: 500;
         position: relative;
-        font-size: 2.25rem;
         font-size: clamp(2.25rem, 4vw, 2.5rem);
+        font-size: 2rem;
         text-transform: uppercase;
 
         span {
@@ -216,12 +216,13 @@
             left: 0;
             width: 100%;
             // transform: scaleX(.1);
-            height: .2rem;
+            height: .25rem;
             background: $brand-border;
-            border-radius: 5px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
             transition: .5s;
 
-            display: none;
+            // display: none;
         }
 
         &[data-scroll] {
@@ -231,7 +232,12 @@
                 transition: .5s;
 
                 span {
-                    margin: 0 .25rem;
+                    color: $brand;
+                    transition: 1s;
+                }
+
+                &::after {
+                    transform: scale(0);
                 }
         }
 
@@ -239,9 +245,13 @@
             // letter-spacing: normal;
             transition: 1s;
             span {
-                color: $brand;
-                margin: 0;
-                transition: margin 1s, color 1.5s;
+                color: $text-main;
+                transition: 1.5s;
+            }
+            &::after {
+                transform: scale(1);
+                transition: 1.5s;
+                transition-delay: .5s;
             }
         }
     }
