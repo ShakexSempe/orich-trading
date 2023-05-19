@@ -203,9 +203,10 @@
         position: relative;
         font-size: 2.25rem;
         font-size: clamp(2.25rem, 4vw, 2.5rem);
+        text-transform: uppercase;
 
         span {
-            color: $brand;
+            position: relative;
         }
         // TITLE UNDERLINE
         &::after {
@@ -225,18 +226,22 @@
 
         &[data-scroll] {
                 transform: translate(0);
-                // width: 0;
                 opacity: 1;
-                transition: 1s;
-                &::after {
-                    width: 10%;
+                // letter-spacing: .25rem;
+                transition: .5s;
+
+                span {
+                    margin: 0 .25rem;
                 }
         }
 
         &[data-scroll="in"] {
-            &::after {
-                width: 100%;
-                transition: 1s ease-out;
+            // letter-spacing: normal;
+            transition: 1s;
+            span {
+                color: $brand;
+                margin: 0;
+                transition: margin 1s, color 1.5s;
             }
         }
     }
