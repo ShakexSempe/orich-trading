@@ -22,6 +22,7 @@ $bg-second: #000;
 
 $brand-border: linear-gradient(90deg, $brand-dark, $brand-light, $brand-dark);
 
+$font-clamp-sm: clamp(1.05rem, 2vw, 1.15rem) ;
 
 $text-main: #000;
 $text-second: #f4f4f4;

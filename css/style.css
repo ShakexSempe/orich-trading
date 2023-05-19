@@ -1494,16 +1494,12 @@
 }
 #hero .hero-title .slogan p {
   font-size: 1rem;
-  font-size: 2vw;
-  font-size: clamp(1rem, 2vw, 1.15rem);
+  font-size: clamp(1.05rem, 2vw, 1.15rem);
   color: #fff9;
   font-weight: 200;
 }
 #hero .hero-title .slogan p i {
   width: 1.25rem;
-}
-#hero .hero-title .slogan #cta {
-  width: max-content;
 }
 #hero .hero-title .slogan #cta .slogan-p {
   text-transform: capitalize;
@@ -1512,7 +1508,6 @@
   position: relative;
   isolation: isolate;
   font-size: 1.05rem;
-  font-size: 2vw;
   font-size: clamp(1.05rem, 2vw, 1.15rem);
   margin: 0.5rem 0 0.5rem;
   letter-spacing: 0.0125rem;
@@ -1529,7 +1524,8 @@
 }
 #hero .hero-title .slogan #cta .cta-btn {
   font-size: 1.015rem;
-  font-weight: 400;
+  font-size: clamp(1.05rem, 2vw, 1.15rem);
+  font-weight: 500;
   width: 12rem;
   width: clamp(11rem, 15vw, 15rem);
 }
