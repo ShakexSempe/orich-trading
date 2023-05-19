@@ -55,6 +55,9 @@
 }
 
 .toggle {
+  position: fixed;
+  right: 5vw;
+  top: 1rem;
   font-size: 20px;
   height: 1rem;
   width: 1.25rem;
@@ -69,7 +72,9 @@
 }
 @media (min-width: 500px) {
   .toggle {
-    right: 5vw;
+    position: relative;
+    right: unset;
+    top: unset;
   }
 }
 .toggle .bar {
@@ -1525,7 +1530,6 @@
 #hero .hero-title .slogan #cta .cta-btn {
   font-size: 1.015rem;
   font-size: clamp(1.05rem, 2vw, 1.15rem);
-  font-weight: 500;
   width: 12rem;
   width: clamp(11rem, 15vw, 15rem);
 }
