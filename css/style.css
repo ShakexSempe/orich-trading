@@ -3629,7 +3629,7 @@
 .section-title h2[data-scroll=in]::after {
   transform: scale(1);
   transition: 1.5s;
-  transition-delay: 0.5s;
+  transition-delay: 0.25s;
 }
 
 .container-title {
