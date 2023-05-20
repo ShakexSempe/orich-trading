@@ -3471,7 +3471,14 @@
   box-sizing: border-box;
   font-family: "Prompt", sans-serif;
   scroll-behavior: smooth;
+  scroll-padding-top: 8vh;
 }
+@media (max-width: 768px) {
+  * {
+    scroll-padding-top: 7vh;
+  }
+}
+
 .container {
   max-width: 100%;
 }
