@@ -1347,9 +1347,7 @@
 }
 
 .menu-cta {
-  border: 2px solid #000;
-  padding: 1rem;
-  padding: 10vh 5vw;
+  padding: 20vh 5vw;
   background-image: url("../img/ben-allan-BIeC4YK2MTA-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1972,8 +1970,10 @@
 }
 .container .about .about-article ul {
   margin: 0.5rem 0;
-  padding-left: 0.5rem;
+  padding: 0.5rem;
   position: relative;
+  background: #f4f4f4;
+  background: linear-gradient(90deg, #f4f4f4, #fff);
 }
 .container .about .about-article ul li {
   position: relative;

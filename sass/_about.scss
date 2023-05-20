@@ -114,9 +114,10 @@
             ul {
                 // border: 1px solid red;
                 margin: .5rem 0;
-                padding-left: .5rem;
+                padding: .5rem;
                 position: relative;
-
+                background: #f4f4f4;
+                background: linear-gradient(90deg, #f4f4f4, #fff);
                 li {
                     position: relative;
                     list-style: none;
