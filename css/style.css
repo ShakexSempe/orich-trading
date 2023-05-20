@@ -1973,6 +1973,7 @@
   padding: 0.5rem;
   position: relative;
   background: #f4f4f4;
+  border-radius: 0.25rem;
   background: linear-gradient(90deg, #f4f4f4, #fff);
 }
 .container .about .about-article ul li {
