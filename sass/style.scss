@@ -228,7 +228,7 @@
         &[data-scroll] {
                 transform: translate(0);
                 opacity: 1;
-                // letter-spacing: .25rem;
+                letter-spacing: .125rem;
                 transition: .5s;
 
                 span {
@@ -242,7 +242,7 @@
         }
 
         &[data-scroll="in"] {
-            // letter-spacing: normal;
+            letter-spacing: normal;
             transition: 1s;
             span {
                 color: $text-main;

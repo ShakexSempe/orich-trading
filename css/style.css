@@ -3628,6 +3628,7 @@
 .section-title h2[data-scroll] {
   transform: translate(0);
   opacity: 1;
+  letter-spacing: 0.125rem;
   transition: 0.5s;
 }
 .section-title h2[data-scroll] span {
@@ -3638,6 +3639,7 @@
   transform: scale(0);
 }
 .section-title h2[data-scroll=in] {
+  letter-spacing: normal;
   transition: 1s;
 }
 .section-title h2[data-scroll=in] span {
