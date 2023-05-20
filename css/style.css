@@ -376,6 +376,21 @@
   width: 100%;
   transform: translateY(9vh);
   border-radius: 0.25rem;
+  position: relative;
+  isolation: isolate;
+}
+.bottom-nav .item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  border-radius: 0.25rem;
+  transform: scaleX(0);
+  transition: 0.125s;
+  z-index: -1;
 }
 .bottom-nav .item a {
   transition: 1s;
@@ -388,14 +403,15 @@
   place-content: center;
   padding: 0.25rem 0;
   border-radius: 0.25rem;
+  cursor: default;
 }
 .bottom-nav .item a i {
   font-size: 1.1rem;
   color: #b3b3b3;
   transition: 1s;
 }
-.bottom-nav .item:hover {
-  background: #333;
+.bottom-nav .item:hover::after {
+  transform: scaleX(1);
 }
 @media (min-width: 820px) {
   .bottom-nav .item:hover a {
