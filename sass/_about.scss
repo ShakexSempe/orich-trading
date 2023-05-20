@@ -235,14 +235,6 @@
                     text-transform: capitalize;
                     transition: .3s;
                     text-align: center;
-                    &[data-scroll] {
-                        transition: 2s;
-                        transform: scale(1);
-                        letter-spacing: .2rem;
-                    }
-                    &[data-scroll="in"] {
-                        letter-spacing: normal;
-                    }
                 }
 
                 // p {
@@ -271,6 +263,7 @@
                         width: 100%;
                         height: 100%;
                         overflow: hidden;
+
                         // margin: 1rem auto;
                         @media (min-width: 768px) {
                             // width: 20%;
@@ -282,23 +275,19 @@
                             height: 100%;
                             object-fit: contain;
                             border-radius: 5px;
+                            transition: 1s;
                             // border: 3px solid blue;
                         }
-                    }
-                    &[data-scroll]{
-                        transform: scale(1);
-                        opacity: 1;
-                        figure {
+
+                        &.io-item {
                             img {
-                                transition: 1.5s;
-                                transform: scale(1) translateY(20vh);
+                                transform: translate(0) scale(.8);
                             }
                         }
-                    }
-                    &[data-scroll="in"]{
-                        figure {
+                        &.active-item {
                             img {
-                                transform: scale(1) translateY(0);
+                                transform: translate(0) scale(1);
+                                transition: 1s;
                             }
                         }
                     }
@@ -340,6 +329,18 @@
                             text-decoration: none;
                             color: $brand-light;
 
+                            i {
+                                margin-left: .5rem;
+                                font-size: .85rem;
+                                transition: .25s;
+                            }
+
+                            &:hover {
+                                i {
+                                    transform: translateY(.25rem);
+                                    color: $brand;
+                                }
+                            }
                         }
                         // DATA-SCROLL
                         &[data-scroll] {

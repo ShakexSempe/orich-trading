@@ -2074,14 +2074,6 @@
   transition: 0.3s;
   text-align: center;
 }
-.container .about .vision-mission .mission h3[data-scroll] {
-  transition: 2s;
-  transform: scale(1);
-  letter-spacing: 0.2rem;
-}
-.container .about .vision-mission .mission h3[data-scroll=in] {
-  letter-spacing: normal;
-}
 .container .about .vision-mission .mission .statement {
   border: 2px solid #000;
   border-radius: 5px;
@@ -2107,17 +2099,14 @@
   height: 100%;
   object-fit: contain;
   border-radius: 5px;
+  transition: 1s;
 }
-.container .about .vision-mission .mission .statement .mission-logo[data-scroll] {
-  transform: scale(1);
-  opacity: 1;
+.container .about .vision-mission .mission .statement .mission-logo figure.io-item img {
+  transform: translate(0) scale(0.8);
 }
-.container .about .vision-mission .mission .statement .mission-logo[data-scroll] figure img {
-  transition: 1.5s;
-  transform: scale(1) translateY(20vh);
-}
-.container .about .vision-mission .mission .statement .mission-logo[data-scroll=in] figure img {
-  transform: scale(1) translateY(0);
+.container .about .vision-mission .mission .statement .mission-logo figure.active-item img {
+  transform: translate(0) scale(1);
+  transition: 1s;
 }
 .container .about .vision-mission .mission .statement .mission-content {
   flex-basis: 50%;
@@ -2151,6 +2140,15 @@
   text-transform: capitalize;
   text-decoration: none;
   color: #ffa500;
+}
+.container .about .vision-mission .mission .statement .mission-content a i {
+  margin-left: 0.5rem;
+  font-size: 0.85rem;
+  transition: 0.25s;
+}
+.container .about .vision-mission .mission .statement .mission-content a:hover i {
+  transform: translateY(0.25rem);
+  color: #f8650c;
 }
 .container .about .vision-mission .mission .statement .mission-content[data-scroll] {
   transition: 1.5s;
