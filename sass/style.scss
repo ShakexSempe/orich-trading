@@ -237,7 +237,7 @@
                 }
 
                 &::after {
-                    transform: scale(0);
+                    transform: scaleX(0) scaleY(1);
                 }
         }
 
@@ -249,9 +249,9 @@
                 transition: 1.5s;
             }
             &::after {
-                transform: scale(1);
+                transform: scaleX(1) scaleY(1);
                 transition: 1.5s;
-                transition-delay: .25s;
+                transition-delay: .5s;
             }
         }
     }

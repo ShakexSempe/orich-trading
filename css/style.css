@@ -3641,7 +3641,7 @@
   transition: 1s;
 }
 .section-title h2[data-scroll]::after {
-  transform: scale(0);
+  transform: scaleX(0) scaleY(1);
 }
 .section-title h2[data-scroll=in] {
   letter-spacing: normal;
@@ -3652,9 +3652,9 @@
   transition: 1.5s;
 }
 .section-title h2[data-scroll=in]::after {
-  transform: scale(1);
+  transform: scaleX(1) scaleY(1);
   transition: 1.5s;
-  transition-delay: 0.25s;
+  transition-delay: 0.5s;
 }
 
 .container-title {
