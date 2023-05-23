@@ -3200,11 +3200,6 @@
 #form .form-container-title {
   margin-bottom: 5vh;
 }
-#form .form-container-title h2 {
-  text-align: left;
-  font-size: 2rem;
-  font-size: clamp(2rem, 5vw, 2.25rem);
-}
 #form label {
   text-transform: capitalize;
 }
@@ -3540,13 +3535,10 @@
   font-size: 2rem;
   text-transform: uppercase;
 }
-.section-title h2 span {
-  position: relative;
-}
 .section-title h2::after {
   position: absolute;
   content: "";
-  bottom: 0;
+  bottom: 0rem;
   left: 0;
   width: 100%;
   height: 0.25rem;
@@ -3555,31 +3547,19 @@
   border-top-right-radius: 20px;
   transition: 0.5s;
 }
-.section-title h2[data-scroll] {
-  transform: translate(0);
-  opacity: 1;
+.section-title.io-item h2 {
   letter-spacing: 0.125rem;
-  transition: 0.5s;
-}
-.section-title h2[data-scroll] span {
-  color: #f8650c;
   transition: 1s;
 }
-.section-title h2[data-scroll]::after {
-  transform: scaleX(0) scaleY(1);
+.section-title.io-item h2::after {
+  transform: scaleX(0);
+  transition: 1.5s;
 }
-.section-title h2[data-scroll=in] {
+.section-title.active-item h2 {
   letter-spacing: normal;
-  transition: 1s;
 }
-.section-title h2[data-scroll=in] span {
-  color: #000;
-  transition: 1.5s;
-}
-.section-title h2[data-scroll=in]::after {
-  transform: scaleX(1) scaleY(1);
-  transition: 1.5s;
-  transition-delay: 0.5s;
+.section-title.active-item h2::after {
+  transform: scaleX(1);
 }
 
 .container-title {
