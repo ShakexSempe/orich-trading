@@ -2072,7 +2072,7 @@
   transition: 0.25s;
 }
 .container .about .vision-mission .mission .statement .mission-content a:hover i {
-  transform: translateY(0.25rem);
+  transform: translateX(0.25rem);
   color: #f8650c;
 }
 .container .about .vision-mission .mission .statement .mission-content[data-scroll] {
