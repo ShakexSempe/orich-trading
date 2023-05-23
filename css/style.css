@@ -2204,7 +2204,7 @@
 .container#about-page main .vision-mission .vision {
   background: #000;
   color: #f4f4f4;
-  padding: 0.5rem 0.5rem;
+  padding: 1rem;
   border-radius: 0.25rem;
   margin: 0 1rem;
   overflow: hidden;
@@ -2216,47 +2216,27 @@
   position: relative;
   width: fit-content;
 }
-.container#about-page main .vision-mission .vision h3::after {
-  position: absolute;
-  content: "";
-  bottom: -0.1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 0.2rem;
-  border-radius: 5px;
-  background: #f4f4f4;
-  background: #f8650c;
-  transition: 1.5s;
-}
-.container#about-page main .vision-mission .vision h3[data-scroll] {
-  transform: scale(1);
-  opacity: 1;
-}
-.container#about-page main .vision-mission .vision h3[data-scroll=in]::after {
-  width: 25%;
-}
-@media (min-width: 768px) {
-  .container#about-page main .vision-mission .vision h3[data-scroll=in]::after {
-    width: 10%;
-  }
-}
-.container#about-page main .vision-mission .vision ul {
-  padding: 0.5rem 0 0 1rem;
-}
 .container#about-page main .vision-mission .vision ul li {
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.25rem 0rem 0.5rem 0.25rem;
   font-weight: 400;
+  list-style: none;
+  border-bottom: 2px solid rgba(255, 166, 0, 0.3);
+  transition: 0.5s;
 }
 .container#about-page main .vision-mission .vision ul li::marker {
   color: #fff6;
 }
-.container#about-page main .vision-mission .vision ul li[data-scroll] {
-  transform: scale(1) translateX(3rem);
-  transition: 1.5s;
+@media (min-width: 820px) {
+  .container#about-page main .vision-mission .vision ul li {
+    padding-bottom: 0.5rem;
+  }
 }
-.container#about-page main .vision-mission .vision ul li[data-scroll=in] {
-  transform: scale(1) translateX(0);
+.container#about-page main .vision-mission .vision ul li:hover {
+  background: #333;
+  border-color: transparent;
+  border-color: #f8650c;
+  border-radius: 0.25rem;
 }
 .container#about-page main .vision-mission .mission {
   background: #f4f4f4;
@@ -2337,17 +2317,12 @@
     margin-top: 10vh;
   }
   .container#about-page main .vision-mission .vision {
-    padding: 5vh 1rem;
     margin: 0 auto;
     width: 70%;
   }
   .container#about-page main .vision-mission .vision h3 {
-    text-align: center;
     font-size: 2.5rem;
     width: auto;
-  }
-  .container#about-page main .vision-mission .vision ul li {
-    padding-bottom: 1rem;
   }
   .container#about-page main .vision-mission .mission {
     padding: 10vh 5vw;
