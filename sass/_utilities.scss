@@ -182,63 +182,6 @@
     z-index: 999;
     display: grid;
     place-items: center;
-    // BAR LOADER
-    .loader {
-        position: absolute;
-        bottom: 15vh;
-        left: 50%;
-        transform: translateX(-50%);
-        height: 2.75rem;
-        width: 18rem;
-        border: none;
-        border-radius: $border-radius-sm;
-        background: orangered;
-        overflow: hidden;
-        background: #000;
-        // outline: 2px solid $brand;
-        display: grid;
-        place-items: center;
-        isolation: isolate;
-        @media (min-width: 1024px){
-            bottom: none;
-            top: 28vh;
-            width: 20rem;
-            height: 2.9rem;
-
-            padding: .5rem 1rem;
-        }
-        p {
-        color: #fff;
-        // z-index: 5;
-        }
-
-        &::before, &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: $border-radius-sm;
-            border: none;
-            outline: none;
-        }
-        &::before {
-            background: $brand-btn;
-            animation: loader 4s linear forwards;
-            // LOADER ANIMATION
-            @keyframes loader {
-                0% {
-                    transform: scaleX(0);
-                }
-                90% {
-                    // transform: scale(1);
-                    transform: scaleX(1);
-                }
-            }
-        }
-    }
-
     // SPINNER 
     .spinner {
         height: 6rem;
@@ -271,62 +214,6 @@
             }
             100% {
                 transform: rotate(360deg);
-            }
-        }
-    }
-
-    // LOGO 
-    .loader2 {
-        width: 8rem;
-        height: 8rem;
-        // border: 2px solid yellow;
-        place-items: center;
-        
-        .logo {
-            width: 50%;
-            height: 50%;
-            border-radius: 50%;
-            // border: 1px solid pink;
-            margin: 0 auto;
-            position: relative;
-            display: grid;
-            place-items: center;
-            
-            p {
-            color: #f4f4f4;
-            font-size: 3rem;
-            }
-        }
-        .bar {
-            border: 1px solid #000;
-            border: none;
-            overflow: hidden;
-            border-radius: 1rem;
-            margin: 0 auto;
-            width: 50%;
-            height: .5rem;
-            position: relative;
-
-            &::after {
-                position: absolute;
-                content: '';
-                width: 50%;
-                height: 100%;
-                background: $brand-border;
-                border-radius: 1rem;
-                animation: bar 1.5s infinite ease-in-out;
-            }
-
-            @keyframes bar {
-                0% {
-                    transform: translateX(-50%);
-                }
-                50% {
-                    transform: translateX(150%);
-                }
-                100% {
-                    transform: translateX(-50%);
-                }
             }
         }
     }
