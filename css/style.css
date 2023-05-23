@@ -1043,9 +1043,10 @@
 }
 #header.main-header .navigation .toggle .bar {
   background-color: #f8650c;
+  background-color: #000;
 }
 #header.main-header .navigation .toggle .bar::before, #header.main-header .navigation .toggle .bar::after {
-  background-color: #f8650c;
+  background-color: #000;
 }
 
 #banner {

@@ -649,8 +649,9 @@
             .toggle {
                 .bar {
                     background-color: $brand;
+                    background-color: #000;
                     &::before, &::after {
-                        background-color: $brand;
+                        background-color: #000;
                     }
                 }
             }
