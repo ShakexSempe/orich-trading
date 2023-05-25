@@ -264,7 +264,7 @@
   bottom: 0;
   height: auto;
   width: 100%;
-  padding: 0.5rem 5vw;
+  padding: 0.25rem 5vw;
   background: linear-gradient(0deg, #000, #111);
   display: flex;
   align-items: center;
@@ -282,12 +282,12 @@
   transition: 1s;
   text-transform: capitalize;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.0125rem;
   color: #f4f4f4;
   display: grid;
   place-items: center;
   place-content: center;
-  padding: 0.25rem 0;
+  padding: 0.5rem 0;
   border-radius: 0.25rem;
   cursor: default;
   position: relative;
@@ -302,7 +302,7 @@
   height: 100%;
   background: #333;
   border-radius: 0.25rem;
-  transform: scaleX(0);
+  transform: scaleX(0.5);
   opacity: 0;
   transition: opacity 0.125s, transform 10s;
   transition: 0.25s;
@@ -326,6 +326,9 @@
   0% {
     transform: scaleX(0);
     opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
   }
   100% {
     transform: scaleX(1);
