@@ -248,7 +248,7 @@
     height: auto;
     width: 100%;
     // border: 2px solid green;
-    padding: .25rem 5vw;
+    padding: .5rem 5vw;
     background: linear-gradient(0deg, #000, #111);
     display: flex;
     align-items: center;
@@ -286,8 +286,9 @@
                 height: 100%;
                 background: #333;
                 border-radius: .25rem;
-                transform: scaleX(.5);
+                transform: scaleX(0);
                 opacity: 0;
+                transition: opacity .125s, transform 10s;
                 transition: .125s;
                 z-index: -1;
             }
@@ -298,11 +299,39 @@
                 transition: 1s;
             }
 
+            
+
+            // &:hover {
+            //     i {
+            //         color: $text-light;
+            //         transition: .25s;
+            //     }
+            //     &::after {
+            //         animation: click .125s;
+            //         // opacity: 1;
+            //         // transform: scaleX(1);
+            //     }
+            // }
+
             &:active {
                 transition: .125s;
                 &::after {
+                    // animation: click .125s forwards;
                     opacity: 1;
                     transform: scaleX(1);
+                    transition: opacity .125s, transform .125s;
+
+
+                }
+            }
+
+            @keyframes click {
+                0% {
+                    transform: scaleX(0);
+                }
+                100% {
+                    transform: scaleX(1);
+                    opacity: 1;
                 }
             }
 
