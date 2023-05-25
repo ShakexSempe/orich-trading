@@ -305,7 +305,7 @@
   transform: scaleX(0);
   opacity: 0;
   transition: opacity 0.125s, transform 10s;
-  transition: 0.125s;
+  transition: 0.25s;
   z-index: -1;
 }
 .bottom-nav .item a i {
@@ -314,10 +314,10 @@
   transition: 0.25s;
 }
 .bottom-nav .item a:active {
-  transition: 0.125s;
+  transition: 0.25s;
 }
 .bottom-nav .item a:active::after {
-  animation: click 0.125s forwards;
+  animation: click 0.25s forwards;
 }
 .bottom-nav .item a:hover i {
   color: #fff;
