@@ -1250,14 +1250,18 @@
   transition: 1.25s;
 }
 .menu-cta h3 span {
+  color: #f8650c;
   transition: 1.25s;
 }
+.menu-cta h3.io-item::after {
+  transform: scaleX(0);
+}
 .menu-cta h3.active-item span {
-  color: #f8650c;
+  color: #fff;
   transition: 1.5s;
 }
 .menu-cta h3.active-item::after {
-  transform: scaleX(0);
+  transform: scaleX(1);
 }
 @media (min-width: 820px) {
   .menu-cta .flex-container {

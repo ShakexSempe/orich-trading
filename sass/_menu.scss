@@ -232,17 +232,23 @@
             transition: 1.25s;
         }
         span {
-            // color: $brand;
+            color: $brand;
             transition: 1.25s;
+        }
+
+        &.io-item {
+            &::after {
+                transform: scaleX(0);
+            }
         }
 
         &.active-item {
             span {
-                color: $brand;
+                color: $text-light;
                 transition: 1.5s;
             }
             &::after {
-                transform: scaleX(0);
+                transform: scaleX(1);
             }
         }
     }
