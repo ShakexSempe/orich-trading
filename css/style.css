@@ -301,7 +301,7 @@
   width: 100%;
   height: 100%;
   background: #333;
-  border-radius: 0.25rem;
+  border-radius: 1rem;
   transform: scaleX(0.5);
   opacity: 0;
   transition: opacity 0.125s, transform 10s;
