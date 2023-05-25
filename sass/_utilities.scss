@@ -296,7 +296,7 @@
             i {
                 font-size: 1rem;
                 color: hsl(0, 0%, 70%);
-                transition: 1s;
+                transition: .25s;
             }
 
             
@@ -316,18 +316,22 @@
             &:active {
                 transition: .125s;
                 &::after {
-                    // animation: click .125s forwards;
-                    opacity: 1;
-                    transform: scaleX(1);
-                    transition: opacity .125s, transform .125s;
-
-
+                    animation: click .125s forwards;
+                    // opacity: 1;
+                    // transform: scaleX(1);
+                    // transition: opacity .125s, transform .125s;
+                }
+            }
+            &:hover {
+                i {
+                    color: $text-light;
                 }
             }
 
             @keyframes click {
                 0% {
                     transform: scaleX(0);
+                    opacity: 0;
                 }
                 100% {
                     transform: scaleX(1);

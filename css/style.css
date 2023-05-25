@@ -311,19 +311,21 @@
 .bottom-nav .item a i {
   font-size: 1rem;
   color: #b3b3b3;
-  transition: 1s;
+  transition: 0.25s;
 }
 .bottom-nav .item a:active {
   transition: 0.125s;
 }
 .bottom-nav .item a:active::after {
-  opacity: 1;
-  transform: scaleX(1);
-  transition: opacity 0.125s, transform 0.125s;
+  animation: click 0.125s forwards;
+}
+.bottom-nav .item a:hover i {
+  color: #fff;
 }
 @keyframes click {
   0% {
     transform: scaleX(0);
+    opacity: 0;
   }
   100% {
     transform: scaleX(1);
