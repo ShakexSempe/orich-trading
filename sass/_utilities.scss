@@ -1,7 +1,7 @@
 .toggle {
     position: fixed;
     right: 5vw;
-    top: 1rem;
+    top: .5rem;
     font-size: 20px;
     // border-radius: 50%;
     height: 1rem;
@@ -17,10 +17,8 @@
     border-right-color: transparent;
     z-index: 5;
     transition: .5s;
-    @include sm {
-        position: relative;
-        right: unset;
-        top: unset;
+    @include xsm {
+        top: 1rem;
     }
 
     .bar {
