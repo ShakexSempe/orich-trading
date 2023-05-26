@@ -117,7 +117,7 @@
                 padding: .5rem;
                 position: relative;
                 border-radius: .25rem;
-                background: linear-gradient(90deg, #f4f4f4, #fff);
+                background: linear-gradient(90deg, #ddd, #fff);
                 li {
                     position: relative;
                     list-style: none;
@@ -125,7 +125,6 @@
                     font-weight: 500;
                     font-size: 1rem;
                     font-size: clamp(1rem, 1.5vw, 1.15rem);
-                    margin-bottom: .25rem;
                 }
             }
             a {
