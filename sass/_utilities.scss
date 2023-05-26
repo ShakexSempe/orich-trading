@@ -299,27 +299,10 @@
                 transition: .25s;
             }
 
-            
-
-            // &:hover {
-            //     i {
-            //         color: $text-light;
-            //         transition: .25s;
-            //     }
-            //     &::after {
-            //         animation: click .125s;
-            //         // opacity: 1;
-            //         // transform: scaleX(1);
-            //     }
-            // }
-
             &:active {
                 transition: .25s;
                 &::after {
                     animation: click .25s forwards;
-                    // opacity: 1;
-                    // transform: scaleX(1);
-                    // transition: opacity .125s, transform .125s;
                 }
             }
             &:hover {
