@@ -1878,6 +1878,7 @@
   font-weight: 500;
   font-size: 1rem;
   font-size: clamp(1rem, 1.5vw, 1.15rem);
+  font-size: clamp(1.05rem, 2vw, 1.15rem);
 }
 .container .about .about-article a {
   display: block;
