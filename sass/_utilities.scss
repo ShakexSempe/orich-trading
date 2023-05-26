@@ -303,6 +303,9 @@
                 transition: .25s;
                 &::after {
                     animation: click .25s forwards;
+                    // transform: scaleX(1);
+                    // transition: .25s;
+                    opacity: 1;
                 }
             }
             &:hover {
@@ -316,12 +319,9 @@
                     transform: scaleX(0);
                     opacity: 0;
                 }
-                50% {
-                    opacity: .5;
-                }
                 100% {
-                    transform: scaleX(1);
                     opacity: 1;
+                    transform: scaleX(1);
                 }
             }
 

@@ -318,6 +318,7 @@
 }
 .bottom-nav .item a:active::after {
   animation: click 0.25s forwards;
+  opacity: 1;
 }
 .bottom-nav .item a:hover i {
   color: #fff;
@@ -327,12 +328,9 @@
     transform: scaleX(0);
     opacity: 0;
   }
-  50% {
-    opacity: 0.5;
-  }
   100% {
-    transform: scaleX(1);
     opacity: 1;
+    transform: scaleX(1);
   }
 }
 @media (min-width: 768px) {
