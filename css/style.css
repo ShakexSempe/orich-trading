@@ -65,7 +65,6 @@
   border-right-color: transparent;
   z-index: 5;
   transition: 0.5s;
-  cursor: default;
 }
 .toggle .bar {
   background-color: #fff;
@@ -307,27 +306,19 @@
   transition: 0.25s;
 }
 .bottom-nav .item a:active::after {
-  transform: scaleX(1);
-  transition: 0.25s;
+  animation: click 0.25s forwards;
   opacity: 1;
 }
 .bottom-nav .item a:hover i {
   color: #fff;
-}
-.bottom-nav .item a:hover::after {
-  animation: click 0.25s;
 }
 @keyframes click {
   0% {
     transform: scaleX(0);
     opacity: 0;
   }
-  50% {
-    opacity: 1;
-    transform: scaleX(1);
-  }
   100% {
-    opacity: 0;
+    opacity: 1;
     transform: scaleX(1);
   }
 }

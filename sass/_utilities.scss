@@ -2,11 +2,10 @@
     // position: fixed;
     // right: 5vw;
     // top: .5rem;
+    // border: 1px solid red;
     font-size: 20px;
     height: 1rem;
     width: 1.25rem;
-    // border-radius: 50%;
-    // border: 1px solid red;
     border: none;
     display: grid;
     place-items: center;
@@ -15,7 +14,6 @@
     border-right-color: transparent;
     z-index: 5;
     transition: .5s;
-    cursor: default;
 
     .bar {
         background-color: #fff;
@@ -296,21 +294,15 @@
             &:active {
                 transition: .25s;
                 &::after {
-                    // animation: click .25s forwards;
-                    transform: scaleX(1);
-                    transition: .25s;
+                    animation: click .25s forwards;
+                    // transform: scaleX(1);
+                    // transition: .25s;
                     opacity: 1;
                 }
             }
             &:hover {
                 i {
                     color: $text-light;
-                }
-                &::after {
-                    animation: click .25s ;
-                    // transform: scaleX(1);
-                    // transition: .25s;
-                    // opacity: 1;
                 }
             }
 
@@ -319,12 +311,8 @@
                     transform: scaleX(0);
                     opacity: 0;
                 }
-                50% {
-                    opacity: 1;
-                    transform: scaleX(1);
-                }
                 100% {
-                    opacity: 0;
+                    opacity: 1;
                     transform: scaleX(1);
                 }
             }
