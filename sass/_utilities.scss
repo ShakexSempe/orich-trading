@@ -296,15 +296,21 @@
             &:active {
                 transition: .25s;
                 &::after {
-                    animation: click .25s forwards;
-                    // transform: scaleX(1);
-                    // transition: .25s;
+                    // animation: click .25s forwards;
+                    transform: scaleX(1);
+                    transition: .25s;
                     opacity: 1;
                 }
             }
             &:hover {
                 i {
                     color: $text-light;
+                }
+                &::after {
+                    animation: click .25s ;
+                    // transform: scaleX(1);
+                    // transition: .25s;
+                    // opacity: 1;
                 }
             }
 
@@ -313,8 +319,12 @@
                     transform: scaleX(0);
                     opacity: 0;
                 }
-                100% {
+                50% {
                     opacity: 1;
+                    transform: scaleX(1);
+                }
+                100% {
+                    opacity: 0;
                     transform: scaleX(1);
                 }
             }

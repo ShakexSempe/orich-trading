@@ -307,19 +307,27 @@
   transition: 0.25s;
 }
 .bottom-nav .item a:active::after {
-  animation: click 0.25s forwards;
+  transform: scaleX(1);
+  transition: 0.25s;
   opacity: 1;
 }
 .bottom-nav .item a:hover i {
   color: #fff;
+}
+.bottom-nav .item a:hover::after {
+  animation: click 0.25s;
 }
 @keyframes click {
   0% {
     transform: scaleX(0);
     opacity: 0;
   }
-  100% {
+  50% {
     opacity: 1;
+    transform: scaleX(1);
+  }
+  100% {
+    opacity: 0;
     transform: scaleX(1);
   }
 }
