@@ -2369,6 +2369,7 @@
   font-weight: 600;
   margin-bottom: 0.5rem;
   letter-spacing: 0.025rem;
+  transition: 0.5s;
 }
 .services .promise ul li p {
   color: #ddd;
@@ -2386,7 +2387,14 @@
   background: linear-gradient(40deg, #f8650c, #f8650c);
   border-radius: 5px;
   opacity: 0.5;
-  transition: 1.5s;
+  transition: 0.5s;
+}
+.services .promise ul li:hover h4 {
+  color: #ffa500;
+  letter-spacing: normal;
+}
+.services .promise ul li:hover:after {
+  background: linear-gradient(90deg, #f8650c, #ffa500, #f8650c);
 }
 .services .service-container {
   margin: 0 auto 0;
