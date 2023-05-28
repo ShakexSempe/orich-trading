@@ -545,7 +545,7 @@
                             font-weight: 400;
                             list-style: none;
                             border-bottom: 2px solid $brand-lightest-border;
-                            transition: .5s;
+                            transition: .25s;
                             &::marker {
                                 color: #fff6;
                             }
@@ -555,9 +555,9 @@
                             }
 
                             &:hover {
-                                background: #333;
+                                background: #161616;
                                 border-color: transparent;
-                                border-color: $brand;
+                                // border-color: $brand;
                                 border-radius: $border-radius-xsm;
                             }
                         }

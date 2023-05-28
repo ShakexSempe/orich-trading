@@ -2182,7 +2182,7 @@
   font-weight: 400;
   list-style: none;
   border-bottom: 2px solid rgba(255, 166, 0, 0.3);
-  transition: 0.5s;
+  transition: 0.25s;
 }
 .container#about-page main .vision-mission .vision ul li::marker {
   color: #fff6;
@@ -2193,9 +2193,8 @@
   }
 }
 .container#about-page main .vision-mission .vision ul li:hover {
-  background: #333;
+  background: #161616;
   border-color: transparent;
-  border-color: #f8650c;
   border-radius: 0.25rem;
 }
 .container#about-page main .vision-mission .mission {
