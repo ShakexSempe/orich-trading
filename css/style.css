@@ -1392,6 +1392,9 @@
   display: none;
 }
 @media (min-width: 820px) {
+  #hero .hero-title .slogan h1 {
+    margin-bottom: 0.5rem;
+  }
   #hero .hero-title .slogan h1 br {
     display: block;
   }
@@ -2332,6 +2335,7 @@
 .services .promise {
   background: #000;
   background: linear-gradient(90deg, #000, #000);
+  box-shadow: 0 0.5rem 1rem #0002;
   color: #fff;
   padding: 1rem;
   margin: 10vh 0;
