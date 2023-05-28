@@ -25,9 +25,9 @@
             font-weight: 400;
             font-size: 1rem;
             color: #222;
-            @media (min-width: 768px) {
-                width: 50%;
-            }
+            // @media (min-width: 768px) {
+            //     width: 50%;
+            // }
 
             &.block-line {
                 padding-left: .5rem;
@@ -49,8 +49,7 @@
         z-index: 1;
 
         @include md {
-            width: 50%;
-            margin: 10vh auto;
+            margin: 0;
         }
         
 
@@ -359,19 +358,26 @@
 }
 
 #services-page {
-    // background: pink;
-    
-    .main {
-        margin-top: 0;
-    }
-    .section-description {
-        p {
-            margin-bottom: 1rem;
-            font-size: 1.1rem;
+    .flex-container {
+        @include lg {
+            // border: 2px solid red;
+            border-radius: $border-radius-sm;
+            // background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            .section-description {
+                padding: 1rem;
+                margin: 0;
+                h3 {
+                    font-size: 1.8rem;
+                    margin-bottom: 5vh;
+                }
 
-            &[data-scroll] {
-                transition: 1.5s;
-                transform: scale(1);
+                p {
+                    font-size: 1.25rem;
+                    margin-bottom: 5vh;
+                }
             }
         }
     }
