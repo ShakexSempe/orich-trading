@@ -2388,6 +2388,7 @@
   border-radius: 5px;
   opacity: 0.5;
   transition: 0.5s;
+  transform: scaleX(0.8);
 }
 .services .promise ul li:hover h4 {
   color: #ffa500;
@@ -2395,6 +2396,7 @@
 }
 .services .promise ul li:hover:after {
   background: linear-gradient(90deg, #f8650c, #ffa500, #f8650c);
+  transform: scaleX(1);
 }
 .services .service-container {
   margin: 0 auto 0;
