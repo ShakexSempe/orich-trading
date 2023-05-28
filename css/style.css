@@ -2334,100 +2334,59 @@
 .services .section-description p.block-line {
   padding-left: 0.5rem;
 }
-.services .section-description.promise {
-  min-height: 100vh;
-  padding: 1rem 0.5rem 1rem;
-  border-radius: 5px;
+.services .promise {
+  background: #000;
+  background: linear-gradient(90deg, #000, #000);
+  color: #fff;
+  padding: 1rem;
+  margin: 10vh 0;
+  border-radius: 0.5rem;
   isolation: isolate;
   position: relative;
   z-index: 1;
-  margin: 0;
-}
-.services .section-description.promise.page-promise {
-  background: url(../img/logo.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
 }
 @media (min-width: 768px) {
-  .services .section-description.promise {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position: right;
-    padding: 10vh 0.5rem 1rem;
+  .services .promise {
+    width: 50%;
+    margin: 10vh auto;
   }
 }
-.services .section-description.promise::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  background: linear-gradient(30deg, rgba(0, 0, 0, 0.78), #f8650c);
-  background: linear-gradient(45deg, #000, #f8650c);
-  opacity: 0.9;
-  z-index: -2;
-}
-.services .section-description.promise h3 {
-  color: #f4f4f4;
+.services .promise h3 {
   text-transform: capitalize;
-  z-index: 4;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 600;
   text-align: center;
   margin-bottom: 5vh;
 }
-.services .section-description.promise h4 {
-  font-size: 1.25rem;
-  font-weight: 500;
-  letter-spacing: 0.05rem;
-  margin-bottom: 0.5rem;
+.services .promise ul li {
+  margin-bottom: 5vh;
+  padding-bottom: 0.5rem;
+  list-style: none;
   position: relative;
 }
-.services .section-description.promise h4::after {
+.services .promise ul li h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.025rem;
+}
+.services .promise ul li p {
+  color: #ddd;
+  font-weight: 400;
+}
+.services .promise ul li::after {
   position: absolute;
   content: "";
   bottom: 0;
   left: 0;
-  width: 90%;
+  width: 100%;
   height: 0.15rem;
   background: #f4f4f4;
   background: linear-gradient(90deg, #f4f4f4, #f8650c);
+  background: linear-gradient(40deg, #f8650c, #f8650c);
   border-radius: 5px;
   opacity: 0.5;
   transition: 1.5s;
-}
-.services .section-description.promise p {
-  transition: 2s;
-  transition-delay: 0.5s;
-}
-.services .section-description.promise ul li {
-  color: #fff;
-  margin-bottom: 5vh;
-  list-style: none;
-}
-.services .section-description.promise ul li[data-scroll] {
-  transform: scale(1);
-  opacity: 1;
-}
-.services .section-description.promise ul li[data-scroll] h4::after {
-  width: 0;
-}
-.services .section-description.promise ul li[data-scroll] p {
-  opacity: 0;
-}
-.services .section-description.promise ul li[data-scroll=in] h4::after {
-  width: 15%;
-}
-@media (min-width: 768px) {
-  .services .section-description.promise ul li[data-scroll=in] h4::after {
-    width: 5%;
-  }
-}
-.services .section-description.promise ul li[data-scroll=in] p {
-  opacity: 1;
 }
 .services .service-container {
   margin: 0 auto 0;
