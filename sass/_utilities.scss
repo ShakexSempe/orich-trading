@@ -255,7 +255,6 @@
         border-radius: .25rem;
         
         a {
-            transition: 1s;
             text-transform: capitalize;
             text-decoration: none;
             font-size: 1.125rem;
@@ -268,6 +267,7 @@
             cursor: default;
             position: relative;
             isolation: isolate;
+            transition: .25s;
 
             &::after {
                 content: '';
@@ -280,7 +280,7 @@
                 border-radius: 1.5rem;
                 transform: scaleX(.5);
                 opacity: 0;
-                transition: opacity .125s, transform 10s;
+                // transition: opacity .125s, transform 10s;
                 transition: .25s;
                 z-index: -1;
             }
@@ -294,27 +294,36 @@
             &:active {
                 transition: .25s;
                 &::after {
-                    animation: click .25s forwards;
-                    // transform: scaleX(1);
-                    // transition: .25s;
+                    // animation: click .25s forwards;
+                    transform: scaleX(1);
+                    transition: 0s;
                     opacity: 1;
                 }
             }
+            
             &:hover {
                 i {
                     color: $text-light;
+                }
+                &::after {
+                // animation: click .25s forwards;
+                animation: click .25s;
                 }
             }
 
             @keyframes click {
                 0% {
-                    transform: scaleX(0);
+                    transform: scaleX(.5);
                     opacity: 0;
                 }
-                100% {
+                50% {
                     opacity: 1;
                     transform: scaleX(1);
                 }
+                100% {
+                    opacity: 0;
+                    transform: scaleX(1);
+                }    
             }
 
         }

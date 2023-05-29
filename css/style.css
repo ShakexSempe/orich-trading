@@ -268,7 +268,6 @@
   border-radius: 0.25rem;
 }
 .bottom-nav .item a {
-  transition: 1s;
   text-transform: capitalize;
   text-decoration: none;
   font-size: 1.125rem;
@@ -281,6 +280,7 @@
   cursor: default;
   position: relative;
   isolation: isolate;
+  transition: 0.25s;
 }
 .bottom-nav .item a::after {
   content: "";
@@ -293,7 +293,6 @@
   border-radius: 1.5rem;
   transform: scaleX(0.5);
   opacity: 0;
-  transition: opacity 0.125s, transform 10s;
   transition: 0.25s;
   z-index: -1;
 }
@@ -306,19 +305,27 @@
   transition: 0.25s;
 }
 .bottom-nav .item a:active::after {
-  animation: click 0.25s forwards;
+  transform: scaleX(1);
+  transition: 0s;
   opacity: 1;
 }
 .bottom-nav .item a:hover i {
   color: #fff;
 }
+.bottom-nav .item a:hover::after {
+  animation: click 0.25s;
+}
 @keyframes click {
   0% {
-    transform: scaleX(0);
+    transform: scaleX(0.5);
     opacity: 0;
   }
-  100% {
+  50% {
     opacity: 1;
+    transform: scaleX(1);
+  }
+  100% {
+    opacity: 0;
     transform: scaleX(1);
   }
 }
