@@ -328,9 +328,13 @@
                             text-transform: capitalize;
                             text-decoration: none;
                             color: $brand-light;
+                            // border: 2px solid red;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            gap: .5rem;
 
                             i {
-                                margin-left: .5rem;
                                 font-size: .85rem;
                                 transition: .25s;
                             }

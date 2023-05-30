@@ -2035,9 +2035,12 @@
   text-transform: capitalize;
   text-decoration: none;
   color: #ffa500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
 }
 .container .about .vision-mission .mission .statement .mission-content a i {
-  margin-left: 0.5rem;
   font-size: 0.85rem;
   transition: 0.25s;
 }
