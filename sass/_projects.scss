@@ -1,46 +1,5 @@
 #projects {
     padding: 5vh 1rem;
-
-    .projects-article {
-        margin: 10vh 0;
-
-        h4 {
-            text-align: center;
-            margin-bottom: 1rem;
-            text-transform: capitalize;
-            font-size: 1.5rem;
-            color: $brand;
-            font-family: $font-header;
-
-            &[data-scroll] {
-                transform: scale(1);
-                letter-spacing: .2em;
-                opacity: 0;
-            }
-            &[data-scroll="in"] {
-                letter-spacing: 0;
-                transition: 2s;
-                opacity: 1;
-            }
-        }
-
-        .statement {
-            border: 1px solid $brand;
-            border-radius: 5px;
-            p {
-                padding: .5rem;
-                line-height: 1.6;
-                font-weight: 500;
-                font-size: 1.1rem;
-
-                &:nth-child(1) {
-                    background-color: $brand-dark;
-                    color: $text-second;
-                }
-
-            }
-        }
-    }
     .gallery {
         // border: 1px solid red;
         margin: 5vh auto;
@@ -61,7 +20,6 @@
             align-items: center;
             @media (min-width: 768px) {
                 top: 8vh;
-                // font-size: 1.5rem;
             }
 
             h3 {
@@ -83,9 +41,6 @@
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    i {
-                        
-                    }
                     @include lg {
                         padding: .25rem .5rem;
                     }
@@ -213,6 +168,4 @@
             }
         }
     }
-
-    
 }

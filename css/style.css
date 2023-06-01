@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Red+Hat+Display&family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;800&display=swap");
 .button-bg {
   position: relative;
@@ -488,7 +487,6 @@
     background-color: #000;
     padding: 0;
     transition: 0.5s;
-    z-index: -1;
     overflow: hidden;
     z-index: 1;
   }
@@ -618,7 +616,6 @@
     width: 1.5rem;
   }
   #header .navigation aside .social-links {
-    font-family: "Ubuntu", sans-serif;
     width: 85vw;
     display: flex;
     flex-direction: column;
@@ -2627,41 +2624,6 @@
 #projects {
   padding: 5vh 1rem;
 }
-#projects .projects-article {
-  margin: 10vh 0;
-}
-#projects .projects-article h4 {
-  text-align: center;
-  margin-bottom: 1rem;
-  text-transform: capitalize;
-  font-size: 1.5rem;
-  color: #f8650c;
-  font-family: "Ubuntu", sans-serif;
-}
-#projects .projects-article h4[data-scroll] {
-  transform: scale(1);
-  letter-spacing: 0.2em;
-  opacity: 0;
-}
-#projects .projects-article h4[data-scroll=in] {
-  letter-spacing: 0;
-  transition: 2s;
-  opacity: 1;
-}
-#projects .projects-article .statement {
-  border: 1px solid #f8650c;
-  border-radius: 5px;
-}
-#projects .projects-article .statement p {
-  padding: 0.5rem;
-  line-height: 1.6;
-  font-weight: 500;
-  font-size: 1.1rem;
-}
-#projects .projects-article .statement p:nth-child(1) {
-  background-color: #f8650c;
-  color: #f4f4f4;
-}
 #projects .gallery {
   margin: 5vh auto;
 }
@@ -3320,12 +3282,13 @@
 .container {
   max-width: 100%;
 }
-.container main {
+
+main {
   min-height: 100vh;
   position: relative;
   background: #fff;
 }
-.container main::after {
+main::after {
   position: fixed;
   content: "";
   top: 5vh;
@@ -3337,24 +3300,24 @@
   z-index: -1;
   transition: 0.2s;
 }
-.container main.active::after {
+main.active::after {
   z-index: 1;
   opacity: 0.7;
 }
-.container main section {
+main section {
   padding-top: 5vh;
 }
-.container main .section-pad {
+main .section-pad {
   display: none;
   border: none;
   overflow: hidden;
   background-repeat: no-repeat;
 }
-.container main .section-pad figure {
+main .section-pad figure {
   position: relative;
   isolation: isolate;
 }
-.container main .section-pad figure::after {
+main .section-pad figure::after {
   content: "";
   position: absolute;
   left: 0;
@@ -3378,7 +3341,7 @@
     opacity: 1;
   }
 }
-.container main .section-pad figure img {
+main .section-pad figure img {
   width: 100%;
   object-fit: cover;
   transition: 1s;
@@ -3392,7 +3355,7 @@
     opacity: 0;
   }
 }
-.container main .section-pad figure figcaption {
+main .section-pad figure figcaption {
   position: absolute;
   top: 1rem;
   left: 1rem;
@@ -3408,21 +3371,21 @@
     color: #fff;
   }
 }
-.container main .section-pad figure figcaption span {
+main .section-pad figure figcaption span {
   color: #f8650c;
 }
 @media (min-width: 500px) {
-  .container main .section-pad figure figcaption {
+  main .section-pad figure figcaption {
     display: none;
   }
 }
 @media (max-width: 768px) {
-  .container main .section-pad .desktop-pad {
+  main .section-pad .desktop-pad {
     display: none;
   }
 }
 @media (min-width: 768px) {
-  .container main .section-pad {
+  main .section-pad {
     display: none;
     height: 80vh;
     background-image: url(../img/orich-partners.jpg);
@@ -3434,10 +3397,10 @@
     background-attachment: fixed;
     background-color: #fff;
   }
-  .container main .section-pad .mobile-pad {
+  main .section-pad .mobile-pad {
     display: none;
   }
-  .container main .section-pad img {
+  main .section-pad img {
     display: none;
   }
 }
