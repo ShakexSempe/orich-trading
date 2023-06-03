@@ -1,5 +1,4 @@
 .services {
-    background: #fafafa;
     background: #f4f4f4;
     padding: 10vh 5vw;
     // border: 2px solid red;
@@ -15,19 +14,18 @@
         margin-bottom: 1rem;
 
         h3 {
-            color: #000;
-            margin-bottom: .5rem;
+            margin-bottom: 1rem;
             font-size: 1.25rem;
-            font-size: clamp(1.25rem, 2vw, 1.5rem);
+            font-size: clamp(1.25rem, 5vw, 1.5rem);
             font-weight: 600;
         }
         p {
             font-weight: 400;
             font-size: 1rem;
-            color: #222;
-            // @media (min-width: 768px) {
-            //     width: 50%;
-            // }
+            font-size: clamp(1rem, 1.5vw, 1.25rem);
+            @include lg {
+                width: 50%;
+            }
 
             &.block-line {
                 padding-left: .5rem;
@@ -323,7 +321,7 @@
     }
     }
     @include md {
-        padding: 0 5vw 5vh;
+        padding: 5vh 5vw 5vh;
         // border: 2px solid red;
         .section-description {
             margin: 5vh auto 10vh;
