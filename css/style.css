@@ -2749,17 +2749,10 @@
   object-fit: cover;
   object-position: center;
 }
-#projects .gallery .gallery-grid .project-item[data-scroll] {
-  transform: scale(1);
-  opacity: 1;
-}
-#projects .gallery .gallery-grid .project-item[data-scroll] figure img {
+#projects .gallery .gallery-grid .project-item figure.io-item img {
   transform: scale(1.1);
 }
-#projects .gallery .gallery-grid .project-item[data-scroll=in] {
-  transform: scale(1);
-}
-#projects .gallery .gallery-grid .project-item[data-scroll=in] figure img {
+#projects .gallery .gallery-grid .project-item figure.active-item img {
   transform: scale(1);
   transition: 1.5s;
 }

@@ -121,27 +121,21 @@
                         object-fit: cover;
                         object-position: center;
                     }
-                }
-
-                // DATA-SCROLL
-                &[data-scroll] {
-                    transform: scale(1);
-                    opacity: 1;
-                    figure {
-                        img {
-                            transform: scale(1.1);
-                        }
+                    // DATA-SCROLL
+                    &.io-item {
+                            img {
+                                transform: scale(1.1);
+                            }
+                        
                     }
-                }
-                &[data-scroll="in"] {
-                    transform: scale(1);
-                    figure {
+                    &.active-item {
                         img {
                             transform: scale(1);
                             transition: 1.5s;
                         }
                     }
                 }
+
             }
     }
     }
