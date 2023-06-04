@@ -841,7 +841,7 @@
   color: #fff9;
 }
 #header.hero-header {
-  height: 25vh;
+  height: 30vh;
   padding: 1rem 5vw;
 }
 #header.hero-header::after {
@@ -1319,30 +1319,34 @@
   z-index: 10;
 }
 #hero .hero-image {
-  background: #0006;
+  background: #0009;
   position: absolute;
   z-index: -1;
   inset: 0;
 }
 #hero .hero-image img {
   mix-blend-mode: darken;
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-  object-fit: cover;
 }
-@media (max-width: 820px) {
+@media (max-width: 819px) {
+  #hero .hero-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
   #hero .hero-image img.desktop-hero {
-    border: 20px solid yellow;
     display: none;
   }
 }
 @media (min-width: 820px) {
   #hero .hero-image img {
+    border-left: 1px solid #ffa500;
     position: absolute;
     right: 0;
     width: 60%;
+    height: 100%;
+    object-fit: contain;
     object-fit: cover;
+    object-position: top;
   }
   #hero .hero-image img.mobile-hero {
     display: none;
