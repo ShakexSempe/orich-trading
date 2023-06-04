@@ -123,13 +123,11 @@
             position: relative;
             h1 {
                 text-transform: capitalize;
-                // padding: .5rem 0;
                 color: $text-light;
                 font-weight: 600;
                 font-size: clamp(1.025rem, 3vw, 2.25rem);
                 text-transform: capitalize;
                 line-height: 1.4;
-                // margin: .25rem 0;
                 margin-bottom: .25rem;
                 br {
                     display: none;
