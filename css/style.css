@@ -854,6 +854,7 @@
 @media (min-width: 820px) {
   #header.hero-header {
     background-color: transparent;
+    height: 20vh;
   }
   #header.hero-header .navigation nav ul li a:hover {
     opacity: 1;
@@ -1332,6 +1333,7 @@
   object-fit: cover;
   object-position: 55% 50%;
   height: 100%;
+  width: 100%;
   mix-blend-mode: darken;
 }
 @media (min-width: 820px) {
@@ -1358,7 +1360,7 @@
     background: rgba(0, 0, 0, 0.9);
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 820px) {
   #hero .hero-title {
     padding: 0.5rem;
     padding: 1rem 0;
@@ -1376,7 +1378,7 @@
   text-transform: capitalize;
   color: #fff;
   font-weight: 600;
-  font-size: clamp(1.025rem, 3vw, 2.25rem);
+  font-size: clamp(1.025rem, 2.5vw, 2.25rem);
   text-transform: capitalize;
   line-height: 1.4;
   margin-bottom: 0.25rem;
@@ -1384,7 +1386,7 @@
 #hero .hero-title .slogan h1 br {
   display: none;
 }
-@media (min-width: 1024px) {
+@media (min-width: 820px) {
   #hero .hero-title .slogan h1 {
     margin-bottom: 0.5rem;
   }

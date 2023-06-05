@@ -25,6 +25,7 @@
             object-fit: cover;
             object-position: 55% 50%;
             height: 100%;
+            width: 100%;
             mix-blend-mode: darken;
 
             @include lg {
@@ -95,7 +96,7 @@
             top: 55vh;
             background: rgba(0, 0, 0, .9);
         }
-        @include xlg {
+        @include lg {
             // border: 1px solid $brand-light-border;
             padding: .5rem;
             padding: 1rem 0;
@@ -113,14 +114,14 @@
                 text-transform: capitalize;
                 color: $text-light;
                 font-weight: 600;
-                font-size: clamp(1.025rem, 3vw, 2.25rem);
+                font-size: clamp(1.025rem, 2.5vw, 2.25rem);
                 text-transform: capitalize;
                 line-height: 1.4;
                 margin-bottom: .25rem;
                 br {
                     display: none;
                 }
-                @include xlg {
+                @include lg {
                     margin-bottom: .5rem;
                     br {
                         display: block;
