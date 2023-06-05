@@ -113,10 +113,14 @@
             </div>
 
             <!-- HERO IMAGE -->
-            <figure class="hero-image">
-                <img src="../img/desktop-hero.jpg" class="mobile-hero" alt="Construction workers">
-                <img src="../img/shivendu-shukla-3yoTPuYR9ZY-unsplash.jpg" class="desktop-hero" alt="Construction">
-            </figure>
+            <picture class="hero-image">
+                <source
+                media="(min-width: 1024px)"
+                width="1920"
+                srcset="../img/desktop-hero.jpg"
+                >
+                <img src="../img/mobile-hero.jpg" width="820" alt="Construction workers">
+            </picture>
         </div>   
         <!-- END OF HERO -->
         <!-- MAIN -->
