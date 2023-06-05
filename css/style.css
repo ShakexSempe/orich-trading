@@ -854,7 +854,6 @@
 @media (min-width: 820px) {
   #header.hero-header {
     background-color: transparent;
-    height: 20vh;
   }
   #header.hero-header .navigation nav ul li a:hover {
     opacity: 1;
