@@ -323,6 +323,10 @@
     opacity: 1;
     transform: scaleX(1);
   }
+  80% {
+    opacity: 0.5;
+    transform: scaleX(1);
+  }
   100% {
     opacity: 0;
     transform: scaleX(1);
