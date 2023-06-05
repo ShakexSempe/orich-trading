@@ -305,8 +305,8 @@
 }
 .bottom-nav .item a:active::after {
   transform: scaleX(1);
-  transition: 0s;
-  opacity: 1;
+  transition: 0.125s;
+  opacity: 0.5;
 }
 .bottom-nav .item a:hover i {
   color: #fff;
