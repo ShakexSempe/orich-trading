@@ -3498,12 +3498,17 @@ main .section-pad figure figcaption span {
   font-size: clamp(1rem, 1.25vw, 1.15rem);
   text-decoration: none;
   text-transform: capitalize;
-  cursor: pointer;
+  cursor: default;
   border: none;
   border-radius: 0.5rem;
   position: relative;
   isolation: isolate;
   transition: 0.3s;
+}
+@media (min-width: 500px) {
+  .cta .cta-btn {
+    cursor: pointer;
+  }
 }
 .cta .cta-btn.section-btn {
   width: 12rem;
