@@ -1379,7 +1379,7 @@
 #hero .hero-title .slogan h1 br {
   display: none;
 }
-@media (min-width: 820px) {
+@media (min-width: 1024px) {
   #hero .hero-title .slogan h1 {
     margin-bottom: 0.5rem;
   }
