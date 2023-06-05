@@ -21,34 +21,21 @@
         inset: 0;
 
         img {
-            // border: 2px solid red;
+            // border: 3px solid red;
+            object-fit: cover;
+            object-position: 55% 50%;
+            height: 100%;
             mix-blend-mode: darken;
-            // MOBILE IMAGE BG
-            @media (max-width: 819px){
-                &.desktop-hero {
-                    display: none;
-                }
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-                // border: 2px solid red;
-            }
-            // DESKTOP IMAGE BG
-            @media (min-width: 820px) {
-                &.mobile-hero {
-                    display: none;
-                }
+
+            @include lg {
                 // border: 2px solid yellow;
-                border-left: 1px solid $brand-light;
+                width: 60%;
+                object-position: 90% 0%;
                 position: absolute;
+                top: 0;
                 right: 0;
                 width: 60%;
-                height: 100%;
-                object-fit: contain;
-                object-fit: cover;
-                object-position: top;
             }
-            // object-position: 50% 100%;
         }
     }
     // MOBILE HERO
@@ -107,7 +94,7 @@
             top: 55vh;
             background: rgba(0, 0, 0, .9);
         }
-        @include lg {
+        @include xlg {
             // border: 1px solid $brand-light-border;
             padding: .5rem;
             padding: 1rem 0;

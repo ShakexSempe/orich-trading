@@ -1325,31 +1325,19 @@
   inset: 0;
 }
 #hero .hero-image img {
+  object-fit: cover;
+  object-position: 55% 50%;
+  height: 100%;
   mix-blend-mode: darken;
-}
-@media (max-width: 819px) {
-  #hero .hero-image img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-  #hero .hero-image img.desktop-hero {
-    display: none;
-  }
 }
 @media (min-width: 820px) {
   #hero .hero-image img {
-    border-left: 1px solid #ffa500;
+    width: 60%;
+    object-position: 90% 0%;
     position: absolute;
+    top: 0;
     right: 0;
     width: 60%;
-    height: 100%;
-    object-fit: contain;
-    object-fit: cover;
-    object-position: top;
-  }
-  #hero .hero-image img.mobile-hero {
-    display: none;
   }
 }
 #hero .hero-title {
@@ -1365,7 +1353,7 @@
     background: rgba(0, 0, 0, 0.9);
   }
 }
-@media (min-width: 820px) {
+@media (min-width: 1024px) {
   #hero .hero-title {
     padding: 0.5rem;
     padding: 1rem 0;
