@@ -280,6 +280,11 @@
   isolation: isolate;
   transition: 0.25s;
 }
+@media (min-width: 500px) {
+  .bottom-nav .item a {
+    cursor: pointer;
+  }
+}
 .bottom-nav .item a::after {
   content: "";
   position: absolute;
@@ -333,13 +338,6 @@
 }
 @media (min-width: 768px) {
   .bottom-nav {
-    height: 100vh;
-    width: 5vw;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    transform: translateY(0) translateX(-15vw);
-    background: transparent;
     display: none;
   }
 }
