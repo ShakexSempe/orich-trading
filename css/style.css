@@ -1139,10 +1139,10 @@
   isolation: isolate;
 }
 .menu .menu-item .menu-image img {
-  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   transition: 0.5s;
 }
 .menu .menu-item .menu-image a {
@@ -2033,42 +2033,6 @@
 .container .about .vision-mission .mission .statement .mission-content a:hover i {
   transform: translateX(0.25rem);
   color: #f8650c;
-}
-.container .about .vision-mission .mission .statement .mission-content[data-scroll] {
-  transition: 1.5s;
-  opacity: 1;
-  transform: scale(1);
-}
-.container .about .vision-mission .mission .statement .mission-content[data-scroll] p {
-  opacity: 0;
-  transform: translateY(-5vh);
-}
-.container .about .vision-mission .mission .statement .mission-content[data-scroll] a {
-  opacity: 0;
-  transform: translateY(-5vh);
-}
-.container .about .vision-mission .mission .statement .mission-content[data-scroll=in] {
-  transform: scale(1);
-}
-.container .about .vision-mission .mission .statement .mission-content[data-scroll=in] p {
-  opacity: 1;
-  transform: translateY(0);
-  transition: 1.5s 0.5s;
-}
-.container .about .vision-mission .mission .statement .mission-content[data-scroll=in] a {
-  opacity: 1;
-  transform: translateY(0);
-  transition: 1.5s 1s;
-}
-@media (max-width: 820px) {
-  .container .about .vision-mission .mission .statement .mission-content[data-scroll=in] a:active {
-    opacity: 0.5;
-  }
-}
-@media (min-width: 820px) {
-  .container .about .vision-mission .mission .statement .mission-content[data-scroll=in] a:hover {
-    opacity: 0.5;
-  }
 }
 @media (min-width: 820px) {
   .container .about .vision-mission .vision {
@@ -3268,6 +3232,7 @@
   max-width: 100%;
 }
 .container img {
+  display: block;
   max-width: 100%;
 }
 
