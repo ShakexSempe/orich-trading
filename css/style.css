@@ -1334,13 +1334,13 @@
 }
 @media (min-width: 820px) {
   #hero .hero-image img {
-    width: 60%;
     object-position: 90% 0%;
     position: absolute;
     top: 0;
     right: 0;
     width: 60%;
     border-left: 2px solid #ffa500;
+    aspect-ratio: 216/9;
   }
 }
 #hero .hero-title {

@@ -30,57 +30,16 @@
 
             @include lg {
                 // border: 2px solid yellow;
-                width: 60%;
                 object-position: 90% 0%;
                 position: absolute;
                 top: 0;
                 right: 0;
                 width: 60%;
                 border-left: 2px solid $brand-light;
+                aspect-ratio: 216/9;
             }
         }
     }
-    // MOBILE HERO
-    // HERO OVERLAY
-    // &::before {
-    //     position: absolute;
-    //     content: '';
-    //     top: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     z-index: -1;
-    //     opacity: .8;
-    //     // background-image: linear-gradient(0deg, $brand, #000a, #000);
-    //     background-image: linear-gradient(0deg, #000, #000a);
-
-    // }
-
-    // DESKTOP HERO
-    // @include lg {
-    // // background-image: url(../img/work.jpg);
-    //     background-color: #000;
-    //     background-image: url(../img/shivendu-shukla-3yoTPuYR9ZY-unsplash-min.jpg);
-    //     background-size: cover;
-    //     background-size: 55%;
-    //     background-position: center 15%;
-    //     background-position: right top;
-    //     background-attachment: fixed;
-    //     z-index: 10;
-    //     // display: grid;
-    //     // border: 3px solid red;
-    //     &::after {
-    //         position: absolute;
-    //         content: '';
-    //         top: 0;
-    //         left: 0;
-    //         width: 100%;
-    //         height: 100%;
-    //         background: linear-gradient(90deg, rgba(0,0,0,.200), transparent);
-    //         z-index: -1;
-    //     }
-
-    // }
 
     // END OF DESKTOP HERO
     // HERO PAGE TITLE
