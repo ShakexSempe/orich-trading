@@ -21,12 +21,13 @@
         inset: 0;
 
         img {
-            border: 3px solid red;
+            // border: 3px solid blue;
             object-fit: cover;
             object-position: 55% 50%;
             height: 100%;
             width: 100%;
             mix-blend-mode: darken;
+            // aspect-ratio: 1/1;
 
             @include lg {
                 object-position: 90% 0%;
@@ -35,7 +36,7 @@
                 right: 0;
                 width: 60%;
                 border-left: 2px solid $brand-light;
-                border: 5px solid yellow;
+                // border: 5px solid green;
                 aspect-ratio: 16/9;
             }
         }

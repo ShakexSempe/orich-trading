@@ -1327,7 +1327,6 @@
   inset: 0;
 }
 #hero .hero-image img {
-  border: 3px solid red;
   object-fit: cover;
   object-position: 55% 50%;
   height: 100%;
@@ -1342,7 +1341,6 @@
     right: 0;
     width: 60%;
     border-left: 2px solid #ffa500;
-    border: 5px solid yellow;
     aspect-ratio: 16/9;
   }
 }
@@ -3234,7 +3232,6 @@
 }
 .container img {
   display: block;
-  aspect-ratio: 1/1;
   max-width: 100%;
 }
 
