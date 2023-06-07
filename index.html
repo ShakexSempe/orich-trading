@@ -60,12 +60,12 @@
 </head>
 <body>
     <!-- LOADER -->
-    <div class="loader_bg">
+    <!-- <div class="loader_bg">
         <div class="spinner">
             <div class="circle circle-1"></div>
             <div class="circle circle-2"></div>
         </div>
-    </div>
+    </div> -->
     <div class="container">
         <!-- HEADER = 1) LOGO 2) SECTION & PAGE NAVIGATION LINKS -->
         <header id="header" data-header class="index-header hero-header">
@@ -176,7 +176,16 @@
                         <figure class="menu-image io-item">
                             <a class="button-bg brand-bg" href="mailto:info@orichtrading.co.za?subject=Construction Project">make enquiry<i
                                 class="fas fa-envelope"></i></a>
-                            <img src="img/construction-min.jpg" width="450" height="450" loading="lazy" alt="Roofing & Painting">
+                            <picture>
+                                <source
+                                srcset="img/construction-min.jpg"
+                                media="(min-width: 820px)"
+                                width="500"
+                                height="375"
+                                >
+                                <img src="img/construction_350.jpg" width="350" height="350" loading="lazy"
+                                    alt="Roofing & Painting">
+                            </picture>
                         </figure>
                     </div>
                     <!-- MENU ITEM 2 -->
@@ -190,10 +199,19 @@
                         <figure class="menu-image io-item">
                             <a class="button-bg brand-bg" href="mailto:info@orichtrading.co.za?subject=Electrical Services">make enquiry<i
                                 class="fas fa-envelope"></i></a>
-                            <img src="img/electric-service-min.jpg" width="450" height="600" loading="lazy" alt="Electrical services">
+                                <picture>
+                                    <source
+                                    srcset="img/electric-service-min.jpg"
+                                    media="(min-width: 820px)"
+                                    width="450"
+                                    height="450"
+                                    >
+                                    <img src="img/electric-service_350.jpg" width="350" height="466" loading="lazy"
+                                        alt="Electrical services">
+                                </picture>
                         </figure>
                     </div>
-                    <!-- MENUT ITEM 3 -->
+                    <!-- MENU ITEM 3 -->
                     <div class="menu-item menu3">
                         <div class="menu-item-title">
                             <h3>General building</h3>
@@ -205,7 +223,15 @@
                             <a class="button-bg brand-bg"
                                 href="mailto:info@orichtrading.co.za?subject=General Building">make enquiry<i
                                     class="fas fa-envelope"></i></a>
-                            <img src="img/project-min.jpg" width="450" height="400" loading="lazy" alt="Building Construction ">
+                            <picture>
+                                <source 
+                                    srcset="img/project-min.jpg" 
+                                    media="(min-width: 820px)" width="500"
+                                    height="375">
+
+                                <img src="img/project_350.jpg" width="350" height="262" loading="lazy"
+                                    alt="Electrical services">
+                            </picture>
                         </figure>
                     </div>
                 </div>
