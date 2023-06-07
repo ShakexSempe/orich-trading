@@ -2087,7 +2087,6 @@
   margin: 1rem auto;
 }
 .container#about-page main .article-container .page-article .article-pad figure img {
-  width: 100%;
   border-radius: 0.5rem;
 }
 @media (min-width: 768px) {
