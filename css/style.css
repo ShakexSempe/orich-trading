@@ -1212,7 +1212,7 @@
 
 .menu-cta {
   padding: 10vh 5vw;
-  background-image: url("../img/ben-allan-BIeC4YK2MTA-unsplash.jpg");
+  background-image: url("../img/menu-bg_450.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1233,6 +1233,7 @@
 }
 @media (min-width: 820px) {
   .menu-cta {
+    background-image: url("../img/menu-bg-min.jpg");
     background-attachment: fixed;
     padding: 25vh 5vw;
   }
@@ -1326,6 +1327,7 @@
   inset: 0;
 }
 #hero .hero-image img {
+  border: 3px solid red;
   object-fit: cover;
   object-position: 55% 50%;
   height: 100%;
@@ -1340,7 +1342,8 @@
     right: 0;
     width: 60%;
     border-left: 2px solid #ffa500;
-    aspect-ratio: 216/9;
+    border: 5px solid yellow;
+    aspect-ratio: 16/9;
   }
 }
 #hero .hero-title {
@@ -3231,6 +3234,7 @@
 }
 .container img {
   display: block;
+  aspect-ratio: 1/1;
   max-width: 100%;
 }
 

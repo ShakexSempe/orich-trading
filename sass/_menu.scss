@@ -188,7 +188,8 @@
     // border: 2px solid blue;
     padding: 10vh 5vw;
     // border-radius: $border-radius-xsm;
-    background-image: url('../img/ben-allan-BIeC4YK2MTA-unsplash.jpg');
+    // background-image: url('../img/menu-bg_400.jpg');
+    background-image: url('../img/menu-bg_450.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -207,6 +208,7 @@
         opacity: .7;
     }
     @include lg {
+    background-image: url('../img/menu-bg-min.jpg');
         background-attachment: fixed;
         padding: 25vh 5vw;
     }

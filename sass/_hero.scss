@@ -21,7 +21,7 @@
         inset: 0;
 
         img {
-            // border: 3px solid red;
+            border: 3px solid red;
             object-fit: cover;
             object-position: 55% 50%;
             height: 100%;
@@ -29,14 +29,14 @@
             mix-blend-mode: darken;
 
             @include lg {
-                // border: 2px solid yellow;
                 object-position: 90% 0%;
                 position: absolute;
                 top: 0;
                 right: 0;
                 width: 60%;
                 border-left: 2px solid $brand-light;
-                aspect-ratio: 216/9;
+                border: 5px solid yellow;
+                aspect-ratio: 16/9;
             }
         }
     }
