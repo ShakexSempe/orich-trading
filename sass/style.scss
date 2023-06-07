@@ -13,45 +13,37 @@
 @import 'contact';
 @import 'form';
 @import 'footer';
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: $font-content;
+    // font-family: $font-content;
     scroll-behavior: smooth;
     scroll-padding-top: 8vh;
+
     @media (max-width:768px) {
         scroll-padding-top: 7vh;
     }
 }
 
-
 .container {
     max-width: 100%;
-
-    img {
-        display: block;
-        max-width: 100%;
-    }
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
 main {
-
-    // padding: 10vh 0 0vh;
-    @media (min-width: 768px) {
-        // margin-top: 10vh;
-        // padding: 5vh 0 0;
-    }
-
+    // border: 3px solid red;
     min-height: 100vh;
     position: relative;
     background: #fff;
 
-    // border: 3px solid red;
-    // background-color: $bg-main;
-    // MAIN SECTION ON PAGES
-    &.page-main {}
-
+    // ACTIVE HEADER OVERLAY TO MAIN SECTION
     &::after {
         position: fixed;
         content: '';
@@ -74,140 +66,12 @@ main {
     }
 
     section {
-        // min-height: 100vh;
-        // background: #fff;
         padding-top: 5vh;
-        // overflow: hidden;
     }
 
-    .section-pad {
-        display: none;
-        border: none;
-        overflow: hidden;
-        background-repeat: no-repeat;
-
-        figure {
-            // border: 2px solid blue;
-            position: relative;
-            isolation: isolate;
-
-            &::after {
-                content: '';
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                background-image: url('../img/orich-partners.jpg');
-                background-position: 35%;
-                background-size: cover;
-                background-repeat: no-repeat;
-                opacity: 0;
-                transition: 1s;
-                z-index: -1;
-                animation: image-pulse-2 5s infinite ease;
-
-                @keyframes image-pulse-2 {
-
-                    0%,
-                    100% {
-                        opacity: 0;
-                    }
-
-                    50% {
-                        opacity: 1;
-                    }
-                }
-            }
-
-            img {
-                width: 100%;
-                object-fit: cover;
-                transition: 1s;
-                animation: image-pulse 5s infinite ease;
-
-                @keyframes image-pulse {
-
-                    0%,
-                    100% {
-                        opacity: 1;
-                    }
-
-                    50% {
-                        opacity: 0;
-                    }
-                }
-            }
-
-            figcaption {
-                position: absolute;
-                top: 1rem;
-                left: 1rem;
-                font-size: 2rem;
-                font-size: clamp(2rem, 5vw, 3rem);
-                font-weight: 500;
-                columns: #fff;
-                mix-blend-mode: normal;
-                animation: figcaption-pulse 5s infinite ease;
-
-                @keyframes figcaption-pulse {
-                    50% {
-                        color: #fff;
-                    }
-                }
-
-                span {
-                    color: $brand;
-                }
-
-                @include sm {
-                    display: none;
-                }
-            }
-        }
-
-        // MOBILE PAD
-        @media (max-width: 768px) {
-
-            // background-image: url(../img/orich-project.jpg);
-            // hide desktop pad
-            .desktop-pad {
-                display: none;
-            }
-
-            // margin: 0 5vw;
-            // border-radius: $border-radius-xsm;
-            // background-size: 70%;
-            // background-size: 100%;
-            // background-position: center;
-        }
-
-        // DESKTOP PAD 
-        @media (min-width: 768px) {
-            // hide mobile pad
-            display: none;
-
-            .mobile-pad {
-                display: none;
-            }
-
-            img {
-                display: none;
-            }
-
-            height: 80vh;
-            background-image: url(../img/orich-partners.jpg);
-            background-size: 100%;
-            background-size: 90%;
-            margin: 0vh 5vw;
-            background-position: center 20%;
-            background-position: center;
-            background-attachment: fixed;
-            background-color: #fff;
-        }
-    }
 
 }
+
 .section-title {
     // text-align: center;
     text-transform: capitalize;
@@ -219,7 +83,7 @@ main {
     // padding: 1rem 0;
     // border: 1px solid red;
     // position: relative;
-    
+
     h2 {
         font-weight: 500;
         position: relative;
@@ -227,7 +91,7 @@ main {
         font-size: 2rem;
         text-transform: uppercase;
         // border: 2px solid red;
-        
+
         // TITLE UNDERLINE
         &::after {
             position: absolute;
@@ -242,25 +106,29 @@ main {
             transition: .5s;
         }
     }
+
     &.io-item {
-            h2 {
-                letter-spacing: .125rem;
-                transition: 1s;
-                &::after {
-                    transform: scaleX(0);
-                    transition: 1.5s;
-                }
+        h2 {
+            letter-spacing: .125rem;
+            transition: 1s;
+
+            &::after {
+                transform: scaleX(0);
+                transition: 1.5s;
             }
+        }
     }
+
     &.active-item {
         h2 {
             letter-spacing: normal;
+
             &::after {
                 transform: scaleX(1);
                 // transition-delay: .5s;
             }
         }
-}
+    }
 
     // &.active-item {
     //     h2 {
@@ -277,6 +145,7 @@ main {
     //     }
     // }
 }
+
 .container-title {
     padding: .5rem 1rem;
     // margin: 1rem 0;
@@ -286,6 +155,7 @@ main {
     position: relative;
     overflow: hidden;
     isolation: isolate;
+
     &::after {
         content: '';
         position: absolute;
@@ -300,6 +170,7 @@ main {
         z-index: -1;
         transition: 1s;
     }
+
     h2,
     h3 {
         color: $text-light;
@@ -308,6 +179,7 @@ main {
         font-size: 1.65rem;
         font-size: clamp(1.65rem, 4vw, 1.8rem);
         transition: 1.5s ease;
+
         // color: #ddd;
         // mix-blend-mode: difference;
         @include md {
@@ -322,111 +194,126 @@ main {
             transition: 1.5s;
             // transform: scaleX(.25);
         }
-        :nth-child(1){
+
+        :nth-child(1) {
             letter-spacing: .05rem;
         }
     }
+
     &.active-item {
         &::after {
             transition: 1.5s;
             // transform: scaleX(1);
         }
-        :nth-child(1){
+
+        :nth-child(1) {
             letter-spacing: normal;
         }
     }
 
 }
- // CTA 
+
+// CTA 
 .cta {
     transition: .25s;
+
     .cta-btn {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+
         width: 11rem;
         padding: .6rem 1.5rem .6rem 1rem;
         margin: .5rem 0;
-        
+
         background: $brand-light;
         color: #000;
-        
+
         font-size: 1rem;
         font-size: clamp(1rem, 1.25vw, 1.15rem);
         text-decoration: none;
         text-transform: capitalize;
-        
+
         cursor: default;
         border: none;
         border-radius: $border-radius-sm;
         position: relative;
         isolation: isolate;
         transition: .3s;
+
         @include sm {
             cursor: pointer;
         }
 
         &.section-btn {
             width: 12rem;
+
             @include md {
                 width: 12rem;
             }
         }
+
         i {
             font-size: 1rem;
+
             // margin-left: .5rem;
             &.hero-cta-icon {
-            color: transparent;
-            &::before, &::after {
-                position: absolute;
-                color: #000;
-                opacity: 1;
-                top: 50%;
-                transform: translateY(-50%);
-                right: .8rem;
-                transition: .25s;
-            }
-            &::before {
-                content: '\f101';
-                font-family: "Font Awesome 6 Free";
-                // opacity: 0;
-                animation: arrow 1.5s infinite;
-            }
-            &::after {
-                content: '\f105';
-                font-family: "Font Awesome 6 Free";
-                opacity: 0;
-                // color: green;
-                animation: arrow-2 1.5s infinite;
-            }
+                color: transparent;
 
-            @keyframes arrow {
-                // 30%, 60% {
-                //     opacity: 0;
-                // }
-                50% {
-                    transform: translateY(-50%) translateX(.125rem);
-                    opacity: 0;
-                }
-            }
-
-            @keyframes arrow-2 {
-                50% {
+                &::before,
+                &::after {
+                    position: absolute;
+                    color: #000;
                     opacity: 1;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: .8rem;
+                    transition: .25s;
+                }
+
+                &::before {
+                    content: '\f101';
+                    font-family: "Font Awesome 6 Free";
+                    // opacity: 0;
+                    animation: arrow 1.5s infinite;
+                }
+
+                &::after {
+                    content: '\f105';
+                    font-family: "Font Awesome 6 Free";
+                    opacity: 0;
+                    // color: green;
+                    animation: arrow-2 1.5s infinite;
+                }
+
+                @keyframes arrow {
+
+                    // 30%, 60% {
+                    //     opacity: 0;
+                    // }
+                    50% {
+                        transform: translateY(-50%) translateX(.125rem);
+                        opacity: 0;
+                    }
+                }
+
+                @keyframes arrow-2 {
+                    50% {
+                        opacity: 1;
+                    }
                 }
             }
         }
-    }
-    &:hover {
-        i {
-            &::before {
-                animation: none;
+
+        &:hover {
+            i {
+                &::before {
+                    animation: none;
+                }
             }
         }
-    }
-        
-        
+
+
 
         // CTA BACKGROUND & BOX SHADOW HOVER STATES
         &::before,
@@ -453,13 +340,16 @@ main {
             background: $brand-btn-hover;
             box-shadow: $box-shadow-sm-hover;
         }
-        @media (max-width:1024px){
+
+        @media (max-width:1024px) {
             &:active {
                 transform: scale(.97);
                 letter-spacing: normal;
+
                 i {
                     animation: none;
                 }
+
                 &::before {
                     opacity: 0
                 }
@@ -469,13 +359,16 @@ main {
                 }
             }
         }
-        @media (min-width: 1024px){
+
+        @media (min-width: 1024px) {
             &:hover {
                 transform: scale(.97);
                 letter-spacing: normal;
+
                 i {
                     animation: none;
                 }
+
                 &::before {
                     opacity: 0
                 }
@@ -488,19 +381,3 @@ main {
         }
     }
 }
-
-// SCROLL OUT
-[data-scroll] {
-    transition: 1.5s ease;
-    transform: scale(1) translateY(10vh);
-}
-
-[data-scroll="in"] {
-    opacity: 1;
-    transform: scale(1) translateY(0);
-}
-
-[data-scroll="out"] {
-    opacity: 0;
-}
-// END OF SCROLL OUT
