@@ -1,20 +1,12 @@
 #hero {
     min-height: 100vh;
     padding: 5vh 5vw;
-    // background-color: $primary-color;
     background: #000;
-    transition: 1.5s;
-    // background-image: url(../img/orich-hero.jpg);
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: 30% top;
-    // background-position: 55% 50%;
+    transition: .25s;
     position: relative;
     isolation: isolate;
-    z-index: 10;
 
     .hero-image {
-        // border: 2px solid blue;
         background: #0009;
         position: absolute;
         z-index: -1;
@@ -27,7 +19,6 @@
             height: 100%;
             width: 100%;
             mix-blend-mode: darken;
-            // aspect-ratio: 1/1;
 
             @include lg {
                 object-position: 90% 0%;
@@ -36,28 +27,21 @@
                 right: 0;
                 width: 60%;
                 border-left: 2px solid $brand-light;
-                // border: 5px solid green;
-                aspect-ratio: 16/9;
             }
         }
     }
-
-    // END OF DESKTOP HERO
     // HERO PAGE TITLE
     .hero-title {
-        // border: 2px solid $brand;
         position: relative;
         top: 50vh;
         background: rgba(0, 0, 0, .8);
         border-radius: $border-radius-sm;
         padding: .25rem 0;
-        // border: 2px solid red;
         @include sm {
             top: 55vh;
             background: rgba(0, 0, 0, .9);
         }
         @include lg {
-            // border: 1px solid $brand-light-border;
             padding: .5rem;
             padding: 1rem 0;
             top: 25vh;
@@ -141,373 +125,9 @@
         }
     }
 
-    // DESKTOP PAGE TITLE
-
     // HERO ACTIVE BACKGROUND CLASS
     &.active {
         background: $brand-overlay-dark;
         background: $brand;
-    }
-
-
-}
-
-#menu {
-    display: none;
-    min-height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    background-color: #ddd;
-    // border: 2px solid blue;
-
-    .menu-section {
-        // border: 1px solid red;
-        height: 100vh;
-        figure {
-            
-            width: 100%;
-            height: 100%;
-            position: relative;
-            isolation: isolate;
-            // OVERLAY
-            &::after {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-image: radial-gradient(transparent, rgba(0, 0, 0, .45));
-                // z-index: -1;
-            }
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                // HIDE IMG ON DESKTOP TO ENABLE FIXED BG IMAGE
-                @media (min-width: 820px){
-                    display: none;
-                }
-
-                &.roof-img {
-                    object-position: center 45%;
-                }
-            }
-
-            figcaption {
-                position: absolute;
-                left: 50%;
-                width: 18rem;
-                transform: translateX(-50%);
-                z-index: 5;
-                // border: 2px solid #fff;
-
-                &.menu-title {
-                top: 10vh;
-                text-align: center;
-                width: 100%;
-                    .cta-content {
-                        // border: 2px solid red;
-                        text-transform: capitalize;
-                        h2 {
-                            color: #fff;
-                            font-size: 1.8rem;
-                            font-weight: 600;
-                            letter-spacing: .05rem;
-                            margin-bottom: 0;
-                            transition: 1s;
-                        }
-                        p {
-                            color: #fff;
-                            font-weight: 300;
-                            transition: 1.5s;
-                            a {
-                                color: #f4f4f4;
-                                font-weight: 400;
-                                // text-decoration: none;
-                                text-underline-offset: .2rem;
-                            }
-                        }
-                        // IO-ITEM 
-                        &.io-item {
-                            h2 {
-                                letter-spacing: .05rem;
-                            }
-                            p {
-                                transform: translateY(5vh);
-                            }
-                        }
-                        // ACTIVE ITEM 
-                        &.active-item {
-                            h2 {
-                                letter-spacing: normal;
-                            }
-                            p {
-                                transform: translateY(0);
-                            }
-                        }
-                        // DESKTOP
-                        @media (min-width: 820px) {
-                            h2 {
-                                font-size: 2.3rem;
-                                margin-bottom: .5rem;
-                            }
-
-                            p {
-                                font-size: 1.15rem;
-                                a {
-                                    transition: .25s;
-                                    &:hover {
-                                        color: $text-brand;
-                                    }
-                                }
-                            }
-                        } 
-                        // DATA SCROLL TITLE
-                        &[data-scroll] {
-                            transform: scale(1) translateY(0);
-                            h2 {
-                                transform: translateX(-2rem);
-                            }
-                            p {
-                                transform: translateX(2rem);
-                            }
-                        }
-                        &[data-scroll="in"] {
-                            transform: scale(1) translateY(0);
-                            h2 {
-                                transform: translateX(0);
-                            }
-                            p {
-                                transform: translateX(0);
-                            }
-                        }
-                    }
-                }
-                &.cta {
-                    bottom: 20vh;
-                    display: flex;
-                    flex-direction: column;
-
-                    a {
-                        padding: .7rem 0;
-                        margin: .25rem 0;
-                        // border: 2px solid #fff;
-                        border-radius: $border-radius-md;
-                        text-align: center;
-                        color: #fff;
-                        text-decoration: none;
-                        text-transform: capitalize;
-                        position: relative;
-                        isolation: isolate;
-                        letter-spacing: .05rem;
-                        transition: .3s;
-
-                        &.enquiry {
-
-                            &::after, &::before {
-                                content: '';
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                width: 100%;
-                                height: 100%;
-                                border-radius: $border-radius-md;
-                                transition: .3s;
-                                z-index: -1;
-                            }
-                            &::before {
-                                box-shadow: $box-shadow-sm;
-                                background-color: rgba(0, 0, 0, 0.90);
-                            }
-                            &:after {
-                                opacity: 0;
-                                box-shadow: $box-shadow-sm-hover;
-                                background-color: #000;
-                            }
-
-                            // HOVER AND ACTIVE STATE
-                            // MOBILE
-                            @media (max-width: 820px) {
-                                &:active {
-                                    letter-spacing: normal;
-                                    transform: scale(.98);
-                                    letter-spacing: normal;
-                                    &::before {opacity: 0;}
-                                    &::after {opacity: 1;}
-                                }
-                            }
-
-                            // DESKTOP
-                            @media (min-width: 820px) {
-                                &:hover {
-                                    color: $brand;
-                                    letter-spacing: normal;
-                                    transform: scale(.98);
-                                    letter-spacing: normal;
-                                    &::before {opacity: 0;}
-                                    &::after {opacity: 1;}
-                                }
-                            }
-                        }
-
-                        &.view {
-                            background-color: $brand;
-                            &::before,
-                            &::after {
-                                content: '';
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                width: 100%;
-                                height: 100%;
-                                border-radius: $border-radius-md;
-                                transition: .3s;
-                                z-index: -1;
-                            }
-
-                            &::before {
-                                background: $brand-btn;
-                                box-shadow: $box-shadow-sm;
-                            }
-
-                            &::after {
-                                background: $brand-btn-hover;
-                                box-shadow: $box-shadow-sm-hover;
-                                opacity: 0;
-                            }
-
-                            // HOVER AND ACTIVE STATE
-                            // MOBILE
-                            @media (max-width: 820px) {
-                                &:active {
-                                    transform: scale(.98);
-                                    letter-spacing: normal;
-
-                                    &::before {
-                                        opacity: 0;
-                                    }
-
-                                    &::after {
-                                        opacity: 1;
-                                    }
-                                }
-                            }
-
-                            // DESKTOP
-                            @media (min-width: 820px) {
-                                &:hover {
-                                    transform: scale(.98);
-                                    letter-spacing: normal;
-
-                                    &::before {
-                                        opacity: 0;
-                                    }
-
-                                    &::after {
-                                        opacity: 1;
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    @media (min-width: 820px) {
-                        flex-direction: row;
-                        // border: 2px solid red;
-                        width: 100%;
-                        justify-content: center;
-                        gap: 1rem;
-                        bottom: 20vh;
-                        a {
-                            padding: 1rem;
-                            width: 20rem;
-                        }
-                    }
-                }
-            }
-            .page-link {
-                position: absolute;
-                overflow: hidden;
-                bottom: 12vh;
-                z-index: 5;
-                // border: 1px solid #000;
-                background-color: #000a;
-                border-radius: 1.5rem;
-                width: 5rem;
-                text-align: center;
-                padding: .5rem;
-                text-decoration: none;
-                transition: .2s;
-                // width: 2rem;
-                // height
-                left: 50%;
-                transform: translateX(-50%);
-
-                i {
-                    font-size: 1rem;
-                    color: $brand;
-                    transition: .25s;
-                }
-                // HOVER AND ACTIVE STATE
-                @media (max-width: 820px) {
-                    &:active {
-                        transform: translateX(-50%) scale(.97);
-                    }
-                }
-                @media (min-width: 820px) {
-                    bottom: 10vh;
-                    &:hover {
-                        transform: translateX(-50%) scale(.97);
-                        i {
-                            transform: translateY(.5rem);
-                            color: #eee;
-                        }
-                    }
-                }
-
-            }
-            
-        }
-
-        @media (min-width: 820px){
-            background-repeat: no-repeat;
-            background-size: cover;
-            // border: 2px solid red;
-            height: 110vh;
-            &#menu-1 {
-                background-image: url('../img/work.jpg');
-                background-image: url('../img/project.jpg');
-                background-attachment: fixed;
-                background-position: center;
-            }
-
-            &#menu-2 {
-                background: #ff0000;
-                background-image: url('../img/electric.jpg');
-                background-size: 100%;
-                background-attachment: fixed;
-                background-position: left;
-            }
-
-            &#menu-3 {
-                background: #0000ff;
-                background-image: url('../img/project-4.jpg');
-            background-repeat: no-repeat;
-                background-position: center top;
-                background-size: cover;
-                // background-attachment: fixed;
-            }
-            &#menu-4 {
-                background: #fff000;
-                background-image: url('../img/project.jpg');
-                background-image: url('../projects/solar-3.jpg');
-                // background-position: center bottom;
-                background-position: center bottom;
-                background-size: cover;
-                background-attachment: fixed;
-            }
-        }
     }
 }
