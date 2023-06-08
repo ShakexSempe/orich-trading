@@ -195,8 +195,6 @@
 .menu-cta {
     // border: 2px solid blue;
     padding: 10vh 5vw;
-    // border-radius: $border-radius-xsm;
-    // background-image: url('../img/menu-bg_400.jpg');
     background-image: url('../img/menu-bg_450-min.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -216,7 +214,7 @@
         opacity: .7;
     }
     @include lg {
-    background-image: url('../img/menu-bg-min.jpg');
+        background-image: url('../img/menu_1200.jpg');
         background-attachment: fixed;
         padding: 25vh 5vw;
     }

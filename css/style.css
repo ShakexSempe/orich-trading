@@ -1133,7 +1133,7 @@
 }
 @media (min-width: 820px) {
   .menu-cta {
-    background-image: url("../img/menu-bg-min.jpg");
+    background-image: url("../img/menu_1200.jpg");
     background-attachment: fixed;
     padding: 25vh 5vw;
   }
