@@ -1401,36 +1401,6 @@
   box-shadow: 2px 3px 3px rgba(73, 86, 101, 0.15);
   text-shadow: 2px 2px 0px #f8650c;
 }
-.container .about .about-article p .article-link {
-  color: #000;
-  font-weight: 500;
-  text-transform: capitalize;
-  display: block;
-  position: relative;
-  transition: 0.25s;
-}
-.container .about .about-article p .article-link::before {
-  content: "-";
-  font-weight: 300;
-  margin-right: 0.25rem;
-  transition: 0.25s;
-}
-@media (min-width: 768px) {
-  .container .about .about-article p .article-link:hover {
-    color: #f8650c;
-  }
-  .container .about .about-article p .article-link:hover::before {
-    opacity: 0.5;
-  }
-}
-@media (max-width: 768px) {
-  .container .about .about-article p .article-link:active {
-    color: #f8650c;
-  }
-  .container .about .about-article p .article-link:active::before {
-    opacity: 0.5;
-  }
-}
 .container .about .about-article ul {
   margin: 0.5rem 0;
   padding: 0.5rem;

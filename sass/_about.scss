@@ -2,7 +2,6 @@
     position: relative;
 
     .about {
-        // padding: 5vh 0;
         // border: 2px solid red;
         position: relative;
         @include xlg {
@@ -26,12 +25,9 @@
         .about-article {
             // border: 1px solid $brand;
             background: $bg-main;
-            // border-radius: 5px;
             margin: 5vh 1rem 10vh 5vw;
             text-transform: none;
             line-height: 1.6;
-            // padding: .3em;
-            // height: 40vh;
             overflow: hidden;
             text-align: left;
             @include sm {
@@ -39,76 +35,38 @@
             }
             @include xlg {
                 width: 100%;
-                // margin: 5vh 5vw;
-                // margin: 5vh auto;
             }
 
             .article-body {
                 margin-bottom: 5vh;
+
                 h3 {
                     text-transform: capitalize;
                     font-size: 1.15rem;
                 }
 
             }
+
             p {
                 font-size: 1rem;
                 font-size: clamp(1rem, 1.5vw, 1.15rem);
                 font-weight: 400;
-                
+
                 &.article-intro {
-                    @include xlg {
-                        // text-align: center;
-                    }
-                &::first-letter {
-                    font-size: 2rem;
-                    // padding-right: 0.1em;
-                    padding: 0 .2rem 0 .05rem;
-                    background: #000;
-                    color: #fff;
-                    float: left;
-                    margin-right: 0.1rem;
-                    border-radius: .25rem;
-                    box-shadow: 2px 3px 3px hsla(211, 16%, 34%, 0.150);
-                    text-shadow: 2px 2px 0px #f8650c;
-                    
-                }
-            }
-                .article-link {
-                    color: #000;
-                    font-weight: 500;
-                    text-transform: capitalize;
-                    display: block;
-                    position: relative;
-                    transition: .25s;
-                    &::before {
-                        content: '-';
-                        font-weight: 300;
-                        // opacity: .5;
-                        margin-right: .25rem;
-                        transition: .25s;
-                    }
-                    // HOVER - ACTIVE MEDIA QUERY
-                    // DESKTOP HOVER
-                    @media (min-width: 768px){
-                        &:hover {
-                            color: $brand;
-                            &::before {
-                                opacity: .5;
-                            }
-                        }
-                    }
-                    // MOBILE ACTIVE
-                    @media (max-width: 768px){
-                        &:active {
-                            color: $brand;
-                            &::before {
-                                opacity: .5;
-                            }
-                        }
+                    &::first-letter {
+                        font-size: 2rem;
+                        // padding-right: 0.1em;
+                        padding: 0 .2rem 0 .05rem;
+                        background: #000;
+                        color: #fff;
+                        float: left;
+                        margin-right: 0.1rem;
+                        border-radius: .25rem;
+                        box-shadow: 2px 3px 3px hsla(211, 16%, 34%, 0.150);
+                        text-shadow: 2px 2px 0px #f8650c;
+
                     }
                 }
-                
             }
 
             ul {
