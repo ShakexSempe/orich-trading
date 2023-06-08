@@ -40,32 +40,86 @@
         rel="stylesheet">
     <!-- ICONS LINK -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preload" href="img/hero_400.jpg" as="image" media="(max-width: 450px)">
-    <link rel="preload" href="img/hero_800-min.jpg" as="image" media="(min-width: 450.1px)">
-    <link rel="preload" as="image" href="img/orich.jpg">
+    <link rel="preload" as="image" href="img/hero_400.jpg" media="(max-width: 450px)">
+    <link rel="preload" as="image" href="img/hero_800-min.jpg"  media="(min-width: 450.1px)">
+    <link rel="preload" as="image" href="img/orich.jpg" media="(min-width: 450.1px)">
+    <link rel="preload" as="image" href="img/orich_100.jpg" media="(max-width: 450px)">
     <!-- STYLES -->
-<style>
-    body {
-        font-family: 'Prompt', sans-serif;
-    }
-    .container {
-        max-width: 100%;
-    }
-    img {
-        max-width: 100%;
-        display: block;
-    }
-</style>
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif;
+        }
+
+        .container {
+            max-width: 100%;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* LOADER */
+        .loader_bg {
+            position: fixed;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #000;
+            z-index: 999;
+            display: grid;
+            place-items: center;
+        }
+
+        /* SPINNER  */
+        .spinner {
+            height: 6rem;
+            width: 6rem;
+            display: grid;
+            place-items: center;
+        }
+
+        .circle {
+            height: 4.5rem;
+            width: 4.5rem;
+            border: .35rem solid transparent;
+            border-radius: 50%;
+            position: absolute;
+            animation: spinner 1.5s infinite;
+
+        }
+
+        .circle.circle-1 {
+            border-top-color: orange;
+            animation-timing-function: ease-in;
+        }
+
+        .circle.circle-2 {
+            border-left-color: #fff;
+            animation-timing-function: ease-out;
+
+        }
+
+        @keyframes spinner {
+            0% {
+                transform: rotate(0);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 
 </head>
 <body>
     <!-- LOADER -->
-    <div class="loader_bg">
+    <!-- <div class="loader_bg">
         <div class="spinner">
             <div class="circle circle-1"></div>
             <div class="circle circle-2"></div>
         </div>
-    </div>
+    </div> -->
     <div class="container">
         <!-- HEADER = 1) LOGO 2) SECTION & PAGE NAVIGATION LINKS -->
         <header id="header" data-header class="index-header hero-header">

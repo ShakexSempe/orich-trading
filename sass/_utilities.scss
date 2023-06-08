@@ -77,54 +77,7 @@
     }
 }
 
-// LOADER
-.loader_bg {
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #000;
-    // opacity: .6;
-    // background: linear-gradient(0deg, #000 10%, #111 40%);
-    z-index: 999;
-    display: grid;
-    place-items: center;
-    // SPINNER 
-    .spinner {
-        height: 6rem;
-        width: 6rem;
-        // border: .25rem solid #fff;
-        display: grid;
-        place-items: center;
-        .circle {
-            height: 4.5rem;
-            width: 4.5rem;
-            border: .35rem solid transparent;
-            border-radius: 50%;
-            position: absolute;
-            animation: spinner 1.5s infinite;
 
-            &.circle-1 {
-                border-top-color: $brand;
-                animation-timing-function: ease-in;
-            }
-            &.circle-2 {
-                border-left-color: #fff;
-                animation-timing-function: ease-out;
-
-            }
-        }
-
-        @keyframes spinner {
-            0% {
-                transform: rotate(0);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-    }
-}
 
 .skip-link {
     position: fixed;
