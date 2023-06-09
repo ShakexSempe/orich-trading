@@ -170,23 +170,34 @@
 .menu-cta {
     // border: 2px solid blue;
     padding: 10vh 5vw;
-    background-image: url('../img/menu-bg_450-min.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: #f4f4f4;
+    // background-image: url('../img/menu-bg_450-min.jpg');
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // color: #f4f4f4;
     position: relative;
-    isolation: isolate;
-    &::after {
-        content: '';
+    // height: 90vh;
+    // isolation: isolate;
+
+    .menu-cta-figure {
+        // border: 2px solid blue;
+        // background: hsla(0, 0%, 0%, 0.75);
+        background: hsla(0, 0%, 0%, 0.85);
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        background: hsla(0, 0%, 0%, 0.75);
+        inset: 0;
+        // isolation: isolate;
+        img {
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            mix-blend-mode: overlay;
+            object-fit: cover;
+            @include lg {
+                display: none;
+            }
+        }
     }
+    
     .flex-container {
         display: flex;
         gap: .5rem;
@@ -202,7 +213,19 @@
         height: 100vh;
         background-image: url('../img/menu_1200.jpg');
         background-attachment: fixed;
+        // background-size: cover;
+        background-position: center;
         padding: 20vh 5vw;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: hsla(0, 0%, 0%, 0.75);
+        }
     }
     // TITLE
     h3 {
@@ -258,6 +281,7 @@
         isolation: isolate;
         border-radius: .25rem;
         padding: .5rem;
+        color: #fff;
         @include lg {
             flex-grow: 1;
             padding: 1rem;
@@ -266,7 +290,7 @@
             text-transform: capitalize;
             margin-bottom: .5rem;
             font-size: 1.25rem;
-            font-size: clamp(1.25rem, 4vw, 1.8rem);
+            font-size: clamp(1.25rem, 2vw, 1.5rem);
         }
 
         ul {
@@ -283,7 +307,7 @@
                 }
     
                 a {
-                    color: #f4f4f4;
+                    color: #fff;
                     text-decoration: none;
                     transition: .25s;
                 }
@@ -309,8 +333,11 @@
             background: #000;
             z-index: -1;
             border-radius: inherit;
-            opacity: .2;
+            opacity: .1;
             transition: .25s;
+            @include lg {
+                opacity: .2;
+            }
         }
 
         &:hover {
