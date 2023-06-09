@@ -394,7 +394,6 @@
     list-style: none;
     border-bottom: 1px solid rgba(78, 78, 78, 0.4);
     display: flex;
-    justify-content: flex-start;
     justify-content: center;
     align-items: center;
     transition: 1s;
