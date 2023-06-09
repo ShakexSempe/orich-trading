@@ -1127,24 +1127,42 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: #000;
-  opacity: 0.7;
+  background: rgba(0, 0, 0, 0.75);
+}
+.menu-cta .flex-container {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+@media (min-width: 820px) {
+  .menu-cta .flex-container {
+    flex-direction: row;
+    gap: 5vw;
+    justify-content: space-around;
+    margin-top: 10vh;
+  }
 }
 @media (min-width: 820px) {
   .menu-cta {
+    height: 100vh;
     background-image: url("../img/menu_1200.jpg");
     background-attachment: fixed;
-    padding: 25vh 5vw;
+    padding: 20vh 5vw;
   }
 }
 .menu-cta h3 {
   text-transform: capitalize;
   margin-bottom: 5vh;
   font-size: 2.5rem;
-  font-size: clamp(2.5rem, 4vw, 2rem);
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
   color: #fff;
   position: relative;
   width: max-content;
+}
+@media (min-width: 820px) {
+  .menu-cta h3 {
+    margin-bottom: 15vh;
+  }
 }
 .menu-cta h3::after {
   content: "";
@@ -1172,42 +1190,60 @@
 .menu-cta h3.active-item::after {
   transform: scaleX(1);
 }
+.menu-cta .cta-item {
+  position: relative;
+  isolation: isolate;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}
 @media (min-width: 820px) {
-  .menu-cta .flex-container {
-    display: flex;
-    gap: 10vw;
-    margin-top: 10vh;
+  .menu-cta .cta-item {
+    flex-grow: 1;
+    padding: 1rem;
   }
 }
-.menu-cta ul {
-  list-style: none;
-  margin-bottom: 5vh;
-}
-.menu-cta ul h4 {
+.menu-cta .cta-item h4 {
   text-transform: capitalize;
   margin-bottom: 0.5rem;
   font-size: 1.25rem;
   font-size: clamp(1.25rem, 4vw, 1.8rem);
 }
-.menu-cta ul li {
+.menu-cta .cta-item ul {
+  list-style: none;
+  margin-bottom: 5vh;
+}
+.menu-cta .cta-item ul li {
   margin-bottom: 0.25rem;
 }
-.menu-cta ul li i {
+.menu-cta .cta-item ul li i {
   width: 1.5rem;
   color: #ffa500;
   transition: 0.25s;
 }
-.menu-cta ul li a {
+.menu-cta .cta-item ul li a {
   color: #f4f4f4;
   text-decoration: none;
   transition: 0.25s;
 }
-.menu-cta ul li:hover i {
+.menu-cta .cta-item ul li:hover i {
   transform: translateX(0.25rem);
   color: #fafafa;
 }
-.menu-cta ul li:hover a {
+.menu-cta .cta-item ul li:hover a {
   color: #ffa500;
+}
+.menu-cta .cta-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #000;
+  z-index: -1;
+  border-radius: inherit;
+  opacity: 0.2;
+  transition: 0.25s;
+}
+.menu-cta .cta-item:hover::after {
+  opacity: 0.8;
 }
 
 #hero {

@@ -185,24 +185,39 @@
         width: 100%;
         height: 100%;
         z-index: -1;
-        background: #000;
-        opacity: .7;
+        background: hsla(0, 0%, 0%, 0.75);
+    }
+    .flex-container {
+        display: flex;
+        gap: .5rem;
+        flex-direction: column;
+        @include lg {
+            flex-direction: row;
+            gap: 5vw;
+            justify-content: space-around;
+            margin-top: 10vh;
+        }
     }
     @include lg {
+        height: 100vh;
         background-image: url('../img/menu_1200.jpg');
         background-attachment: fixed;
-        padding: 25vh 5vw;
+        padding: 20vh 5vw;
     }
+    // TITLE
     h3 {
         text-transform: capitalize;
         // text-transform: uppercase;
         margin-bottom: 5vh;
         font-size: 2.5rem;
-        font-size: clamp(2.5rem, 4vw, 2rem);
+        font-size: clamp(2.5rem, 4vw, 3.5rem);
         color: #fff;
         // border: 2px solid yellow;
         position: relative;
         width: max-content;
+        @include lg {
+            margin-bottom: 15vh;
+        }
         &::after {
             content: '';
             position: absolute;
@@ -236,49 +251,73 @@
             }
         }
     }
-
-    @include lg {
-        .flex-container {
-            // border: 2px solid red;
-            display: flex;
-            gap: 10vw;
-            margin-top: 10vh;
+    // CTA MENU ITEMS 
+    .cta-item {
+        // border: 2px solid red;
+        position: relative;
+        isolation: isolate;
+        border-radius: .25rem;
+        padding: .5rem;
+        @include lg {
+            flex-grow: 1;
+            padding: 1rem;
         }
-    }
-    ul {
-        list-style: none;
-        margin-bottom: 5vh;
-
         h4 {
             text-transform: capitalize;
             margin-bottom: .5rem;
             font-size: 1.25rem;
             font-size: clamp(1.25rem, 4vw, 1.8rem);
         }
-        li {
-            margin-bottom: .25rem;
-            i {
-                width: 1.5rem;
-                color: $brand-light;
-                transition: .25s;
-            }
-            a {
-                color: #f4f4f4;
-                text-decoration: none;
-                transition: .25s;
-            }
 
-            &:hover {
+        ul {
+            list-style: none;
+            margin-bottom: 5vh;
+    
+            li {
+                margin-bottom: .25rem;
+    
                 i {
-                    transform: translateX(.25rem);
-                    color: #fafafa;
-                }
-                a {
+                    width: 1.5rem;
                     color: $brand-light;
+                    transition: .25s;
+                }
+    
+                a {
+                    color: #f4f4f4;
+                    text-decoration: none;
+                    transition: .25s;
+                }
+    
+                &:hover {
+                    i {
+                        transform: translateX(.25rem);
+                        color: #fafafa;
+                    }
+    
+                    a {
+                        color: $brand-light;
+                    }
                 }
             }
         }
 
+        // ITEM BG
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: #000;
+            z-index: -1;
+            border-radius: inherit;
+            opacity: .2;
+            transition: .25s;
+        }
 
+        &:hover {
+            &::after {
+                opacity: .8;
+            }
+        }
     }
+
 }
