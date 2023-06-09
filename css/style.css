@@ -1146,8 +1146,11 @@
 @media (min-width: 820px) {
   .menu-cta {
     height: 100vh;
+    background-color: #000;
     background-image: url("../img/menu_1200.jpg");
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
     background-position: center;
     padding: 20vh 5vw;
   }
