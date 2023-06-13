@@ -185,7 +185,9 @@
         background: hsla(0, 0%, 0%, 0.85);
         position: absolute;
         inset: 0;
-        // isolation: isolate;
+        @include lg {
+            background: hsla(0, 0%, 0%, 0.65);
+        }
         img {
             width: 100%;
             height: 100%;
@@ -218,16 +220,7 @@
         background-size: cover;
         background-position: center ;
         padding: 20vh 5vw;
-        &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background: hsla(0, 0%, 0%, 0.75);
-        }
+        
     }
     // TITLE
     h3 {
@@ -293,6 +286,7 @@
             margin-bottom: .5rem;
             font-size: 1.25rem;
             font-size: clamp(1.25rem, 2vw, 1.5rem);
+            transition: .25s;
         }
 
         ul {
@@ -301,6 +295,8 @@
     
             li {
                 margin-bottom: .25rem;
+                width: max-content;
+                padding-right: 1rem;
     
                 i {
                     width: 1.5rem;
@@ -343,6 +339,9 @@
         }
 
         &:hover {
+            h4 {
+                color: $brand;
+            }
             &::after {
                 opacity: .8;
             }

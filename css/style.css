@@ -1118,6 +1118,11 @@
   position: absolute;
   inset: 0;
 }
+@media (min-width: 820px) {
+  .menu-cta .menu-cta-figure {
+    background: rgba(0, 0, 0, 0.65);
+  }
+}
 .menu-cta .menu-cta-figure img {
   width: 100%;
   height: 100%;
@@ -1153,16 +1158,6 @@
     background-size: cover;
     background-position: center;
     padding: 20vh 5vw;
-  }
-  .menu-cta::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: rgba(0, 0, 0, 0.75);
   }
 }
 .menu-cta h3 {
@@ -1223,6 +1218,7 @@
   margin-bottom: 0.5rem;
   font-size: 1.25rem;
   font-size: clamp(1.25rem, 2vw, 1.5rem);
+  transition: 0.25s;
 }
 .menu-cta .cta-item ul {
   list-style: none;
@@ -1230,6 +1226,8 @@
 }
 .menu-cta .cta-item ul li {
   margin-bottom: 0.25rem;
+  width: max-content;
+  padding-right: 1rem;
 }
 .menu-cta .cta-item ul li i {
   width: 1.5rem;
@@ -1262,6 +1260,9 @@
   .menu-cta .cta-item::after {
     opacity: 0.2;
   }
+}
+.menu-cta .cta-item:hover h4 {
+  color: #f8650c;
 }
 .menu-cta .cta-item:hover::after {
   opacity: 0.8;
