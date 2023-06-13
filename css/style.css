@@ -2370,8 +2370,10 @@
   font-size: 7rem;
   right: 10vw;
   right: 1rem;
-  color: rgba(179, 116, 0, 0.15);
+  color: rgba(179, 116, 0, 0.5);
+  opacity: 0.25;
   z-index: -1;
+  transition: 0.25s;
 }
 #references .references .reference h3 {
   text-transform: capitalize;
@@ -2379,22 +2381,6 @@
   font-size: 2vw;
   font-size: clamp(1.05rem, 2vw, 1.25rem);
   font-weight: 600;
-  margin-bottom: 1rem;
-}
-#references .references .reference h3 span {
-  display: block;
-  color: #666666;
-  font-weight: 500;
-  font-size: 1rem;
-}
-#references .references .reference h3 i {
-  font-size: 7rem;
-  position: absolute;
-  top: 1rem;
-  right: 10vw;
-  right: 1rem;
-  color: rgba(179, 116, 0, 0.15);
-  z-index: -1;
 }
 #references .references .reference .ref-name {
   margin-bottom: 0.25rem;
@@ -2411,25 +2397,23 @@
   width: 1.8rem;
   color: #ffa500;
 }
-#references .references .reference[data-scroll] {
-  transition: 1.5s;
-}
-#references .references .reference[data-scroll]:hover {
-  transform: scale(0.98);
+#references .references .reference a {
+  display: block;
+  width: max-content;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+  color: #666666;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
   transition: 0.25s;
-  transition-delay: 0;
-  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.15);
 }
-@media (min-width: 1024px) {
-  #references .references .reference:nth-child(1) {
-    transition-delay: 0;
-  }
-  #references .references .reference:nth-child(2) {
-    transition-delay: 0.3s;
-  }
-  #references .references .reference:nth-child(3) {
-    transition-delay: 0.6s;
-  }
+#references .references .reference a:hover {
+  color: #ffa500;
+}
+#references .references .reference:hover .item-icon {
+  opacity: 0.5;
 }
 @media (min-width: 1024px) {
   #references {
