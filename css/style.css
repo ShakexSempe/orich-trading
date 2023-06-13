@@ -2331,7 +2331,7 @@
 
 #references {
   background-color: #f4f4f4;
-  padding: 10vh 1rem;
+  padding: 10vh 5vw;
 }
 #references .references {
   display: grid;
@@ -2343,12 +2343,7 @@
   margin-top: 5vh;
   width: 100%;
 }
-@media (min-width: 768px) {
-  #references .references {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (min-width: 1024px) {
+@media (min-width: 820px) {
   #references .references {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -2364,17 +2359,32 @@
   position: relative;
   isolation: isolate;
   display: block;
-  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.05);
 }
-#references .references .reference i {
-  color: #ffa500;
+#references .references .reference .item-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+  font-size: 7rem;
+  right: 10vw;
+  right: 1rem;
+  color: rgba(179, 116, 0, 0.15);
+  z-index: -1;
 }
 #references .references .reference h3 {
   text-transform: capitalize;
   font-size: 1.125rem;
-  font-size: 1rem;
+  font-size: 2vw;
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
   font-weight: 600;
   margin-bottom: 1rem;
+}
+#references .references .reference h3 span {
+  display: block;
+  color: #666666;
+  font-weight: 500;
+  font-size: 1rem;
 }
 #references .references .reference h3 i {
   font-size: 7rem;
@@ -2382,8 +2392,7 @@
   top: 1rem;
   right: 10vw;
   right: 1rem;
-  color: #f4f4f4;
-  color: rgba(179, 116, 0, 0.1);
+  color: rgba(179, 116, 0, 0.15);
   z-index: -1;
 }
 #references .references .reference .ref-name {
@@ -2392,12 +2401,14 @@
 }
 #references .references .reference .ref-name i {
   width: 1.8rem;
+  color: #ffa500;
 }
 #references .references .reference .ref-contact {
   text-transform: capitalize;
 }
 #references .references .reference .ref-contact i {
   width: 1.8rem;
+  color: #ffa500;
 }
 #references .references .reference[data-scroll] {
   transition: 1.5s;
