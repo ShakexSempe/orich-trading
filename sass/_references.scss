@@ -1,8 +1,6 @@
 #references {
-    background: $brand;
+    background: $brand-overlay;
     padding: 10vh 5vw;
-    // border: 1px solid red;
-
     .references {
         display: grid;
         place-items: center;
@@ -12,9 +10,6 @@
         padding: 1rem 0;
         margin-top: 5vh;
         width: 100%;
-        // @include md {
-        //     grid-template-columns: 1fr 1fr;
-        // }
         @include lg {
             grid-template-columns: 1fr 1fr 1fr;
         }

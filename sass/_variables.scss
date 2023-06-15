@@ -3,12 +3,12 @@ $font-content: 'Prompt', sans-serif;
 $primary-color: #fff;
 $secondary-color: #000;
 $brand: #f8650c;
-$brand-dark: #f8650c;
+$brand-dark: hsl(23, 94%, 51%);
 $brand-light: #ffa500;
 $brand-lightest-border: hsla(39, 100%, 50%, .3);
 $brand-light-border: hsla(23, 94%, 51%, .4);
 
-$brand-overlay: linear-gradient(40deg, $brand-dark, $brand);
+$brand-overlay: linear-gradient(90deg, $brand, hsl(33, 100%, 50%), $brand);
 $brand-overlay-dark: linear-gradient(45deg, $brand, $brand-light);
 $brand-btn: linear-gradient(0deg, $brand-dark, $brand-light);
 $brand-btn-hover: linear-gradient(0deg, $brand-light, $brand-dark);
