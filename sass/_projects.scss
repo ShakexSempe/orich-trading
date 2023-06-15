@@ -89,6 +89,10 @@
             grid-template-columns: 1fr;
             overflow: hidden;
 
+            @include md {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
             .project-item {
                 
                 padding-bottom: 5vh;
@@ -142,11 +146,6 @@
     @media (min-width: 830px) {
         padding: 5vh 5vw;
         .gallery {
-            .gallery-grid{
-                grid-template-columns: 1fr 1fr;
-                // height: 50%;
-                overflow: hidden;
-            }
             .project-item {
                 figure {
                     width: 100%;
