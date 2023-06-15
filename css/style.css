@@ -1467,13 +1467,6 @@
   font-size: clamp(1rem, 1.5vw, 1.15rem);
   font-size: clamp(1.05rem, 2vw, 1.15rem);
 }
-.container .about .about-article a {
-  display: block;
-  color: #f8650c;
-  font-size: 1rem;
-  font-size: clamp(1rem, 1.5vw, 1.15rem);
-  text-decoration: none;
-}
 .container .about .vision-mission {
   padding: 5vh 5vw;
   margin: 5vh 0;
@@ -2946,7 +2939,8 @@ main section {
 .cta {
   transition: 0.25s;
 }
-.cta .cta-btn {
+
+.cta-btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2967,25 +2961,25 @@ main section {
   transition: 0.3s;
 }
 @media (min-width: 500px) {
-  .cta .cta-btn {
+  .cta-btn {
     cursor: pointer;
   }
 }
-.cta .cta-btn.section-btn {
+.cta-btn.section-btn {
   width: 12rem;
 }
 @media (min-width: 768px) {
-  .cta .cta-btn.section-btn {
+  .cta-btn.section-btn {
     width: 12rem;
   }
 }
-.cta .cta-btn i {
+.cta-btn i {
   font-size: 1rem;
 }
-.cta .cta-btn i.hero-cta-icon {
+.cta-btn i.hero-cta-icon {
   color: transparent;
 }
-.cta .cta-btn i.hero-cta-icon::before, .cta .cta-btn i.hero-cta-icon::after {
+.cta-btn i.hero-cta-icon::before, .cta-btn i.hero-cta-icon::after {
   position: absolute;
   color: #000;
   opacity: 1;
@@ -2994,12 +2988,12 @@ main section {
   right: 0.8rem;
   transition: 0.25s;
 }
-.cta .cta-btn i.hero-cta-icon::before {
+.cta-btn i.hero-cta-icon::before {
   content: "";
   font-family: "Font Awesome 6 Free";
   animation: arrow 1.5s infinite;
 }
-.cta .cta-btn i.hero-cta-icon::after {
+.cta-btn i.hero-cta-icon::after {
   content: "";
   font-family: "Font Awesome 6 Free";
   opacity: 0;
@@ -3016,10 +3010,10 @@ main section {
     opacity: 1;
   }
 }
-.cta .cta-btn:hover i::before {
+.cta-btn:hover i::before {
   animation: none;
 }
-.cta .cta-btn::before, .cta .cta-btn::after {
+.cta-btn::before, .cta-btn::after {
   position: absolute;
   content: "";
   top: 0;
@@ -3031,42 +3025,42 @@ main section {
   z-index: -1;
   transition: 0.3s;
 }
-.cta .cta-btn::before {
+.cta-btn::before {
   background: linear-gradient(0deg, #f8650c, #ffa500);
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 4px 4px 5px rgba(0, 0, 0, 0.15);
 }
-.cta .cta-btn::after {
+.cta-btn::after {
   opacity: 0;
   background: linear-gradient(0deg, #ffa500, #f8650c);
   box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.25), inset -2px -2px 2px rgba(255, 255, 255, 0.152), 1px 2px 2px rgba(0, 0, 0, 0.3);
 }
 @media (max-width: 1024px) {
-  .cta .cta-btn:active {
+  .cta-btn:active {
     transform: scale(0.97);
     letter-spacing: normal;
   }
-  .cta .cta-btn:active i {
+  .cta-btn:active i {
     animation: none;
   }
-  .cta .cta-btn:active::before {
+  .cta-btn:active::before {
     opacity: 0;
   }
-  .cta .cta-btn:active::after {
+  .cta-btn:active::after {
     opacity: 1;
   }
 }
 @media (min-width: 1024px) {
-  .cta .cta-btn:hover {
+  .cta-btn:hover {
     transform: scale(0.97);
     letter-spacing: normal;
   }
-  .cta .cta-btn:hover i {
+  .cta-btn:hover i {
     animation: none;
   }
-  .cta .cta-btn:hover::before {
+  .cta-btn:hover::before {
     opacity: 0;
   }
-  .cta .cta-btn:hover::after {
+  .cta-btn:hover::after {
     opacity: 1;
   }
 }
