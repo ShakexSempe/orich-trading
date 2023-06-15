@@ -137,18 +137,11 @@
                 img {
                     transform: scale(1.1);
                 }
-                &::after {
-                    transform: scaleX(0);
-                }
             }
             &.active-item {
                 img {
                     transform: scale(1);
                     transition: 2s;
-                }
-                &::after {
-                    transform: scaleX(1);
-                    transition: 1.5s;
                 }
             }
 
@@ -331,7 +324,7 @@
             background: #000;
             z-index: -1;
             border-radius: inherit;
-            opacity: .1;
+            opacity: 0;
             transition: .25s;
             @include lg {
                 opacity: .2;

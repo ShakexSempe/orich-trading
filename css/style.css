@@ -1090,16 +1090,9 @@
 .menu .menu-item .menu-image.io-item img {
   transform: scale(1.1);
 }
-.menu .menu-item .menu-image.io-item::after {
-  transform: scaleX(0);
-}
 .menu .menu-item .menu-image.active-item img {
   transform: scale(1);
   transition: 2s;
-}
-.menu .menu-item .menu-image.active-item::after {
-  transform: scaleX(1);
-  transition: 1.5s;
 }
 .menu .menu-item .menu-image:hover a, .menu .menu-item .menu-image:focus a {
   transform: translateY(0);
@@ -1253,7 +1246,7 @@
   background: #000;
   z-index: -1;
   border-radius: inherit;
-  opacity: 0.1;
+  opacity: 0;
   transition: 0.25s;
 }
 @media (min-width: 820px) {
@@ -2331,7 +2324,7 @@
 }
 
 #references {
-  background-color: #f4f4f4;
+  background: linear-gradient(45deg, #f8650c, #ffa500);
   padding: 10vh 5vw;
 }
 #references .references {
@@ -2360,7 +2353,7 @@
   position: relative;
   isolation: isolate;
   display: block;
-  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
 }
 #references .references .reference .item-icon {
   position: absolute;
