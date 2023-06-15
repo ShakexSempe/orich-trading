@@ -324,7 +324,7 @@
             background: #000;
             z-index: -1;
             border-radius: inherit;
-            opacity: 0;
+            opacity: .1;
             transition: .25s;
             @include lg {
                 opacity: .2;
