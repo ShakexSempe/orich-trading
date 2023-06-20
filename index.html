@@ -78,44 +78,66 @@
             place-items: center;
         }
 
-        /* SPINNER  */
-        .spinner {
-            height: 6rem;
-            width: 6rem;
-            display: grid;
-            place-items: center;
+        .loader-title {
+            font-size: 2rem;
+            color: #fff4;
+            display: flex;
+            position: relative;
+            gap: 2rem;
+            animation: loader-title 1.25s forwards 1s;
+        }
+        .loader-title .brand-span {
+            animation: brand-span 1.25s forwards 2.25s;
         }
 
-        .circle {
-            height: 4.5rem;
-            width: 4.5rem;
-            border: .35rem solid transparent;
-            border-radius: 50%;
+        .loader-title::before, .loader-title::after {
+            content: '';
             position: absolute;
-            animation: spinner 1.5s infinite;
-
+            bottom: -1rem;
+            left: 0;
+            width: 100%;
+            height: .125rem;
+        }
+        /* UNDERLINE 1 - LIGHT */
+        .loader-title::before {
+            background: linear-gradient(90deg, transparent, #f4f4f4, transparent);
+            animation: underline-1 1.25s forwards 1.25s;
+        }
+        /* UNDERLINE 2 - BRAND */
+        .loader-title::after {
+            background: linear-gradient(90deg, transparent, orange, transparent);
+            animation: underline-2 1.25s forwards 2.25s;
+            transform: scaleX(0);
         }
 
-        .circle.circle-1 {
-            border-top-color: orange;
-            animation-timing-function: ease-in;
-        }
-
-        .circle.circle-2 {
-            border-left-color: #fff;
-            animation-timing-function: ease-out;
-
-        }
-
-        @keyframes spinner {
-            0% {
-                transform: rotate(0);
-            }
-
+        /* UNDERLINE 1 ANIMATION */
+        @keyframes underline-1 {
             100% {
-                transform: rotate(360deg);
+                transform: scaleX(0);
             }
         }
+        /* UNDERLINE 2 ANIMATION */
+        @keyframes underline-2 {
+            100% {
+                transform: scaleX(1);
+            }
+        }
+
+        /* TITLE SPAN ANIMATION */
+        @keyframes brand-span {
+                100% {
+                    color: orange;
+                }
+            }
+        /* TITLE P ANIMATION */
+            @keyframes loader-title {
+                100% {
+                    gap: .5rem;
+                    color: #f4f4f4;
+                }
+            }
+
+
     </style>
 
 
@@ -123,10 +145,13 @@
 <body>
     <!-- LOADER -->
     <div class="loader_bg">
-        <div class="spinner">
-            <div class="circle circle-1"></div>
-            <div class="circle circle-2"></div>
-        </div>
+        <p class="loader-title">
+                <span>O</span>
+                <span>R</span>
+                <span class="brand-span">I</span>
+                <span>C</span>
+                <span>H</span>
+        </p>
     </div>
     <div class="container">
         <!-- HEADER = 1) LOGO 2) SECTION & PAGE NAVIGATION LINKS -->
@@ -1066,7 +1091,7 @@
     <script>
         setTimeout(function () {
             $('.loader_bg').fadeToggle();
-        }, 3500);
+        }, 4500);
     </script>
     <script>
         const date = document.getElementById("date");
