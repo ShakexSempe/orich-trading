@@ -2319,6 +2319,7 @@
 
 #references {
   background: #666666;
+  background: linear-gradient(90deg, #333333, #404040, #333333);
   padding: 10vh 5vw;
 }
 #references .references {
