@@ -2739,6 +2739,7 @@
     background: linear-gradient(90deg, #ffff, #fafafa);
     flex-direction: row;
     justify-content: space-between;
+    align-items: start;
   }
 }
 .footer a {
@@ -2749,18 +2750,10 @@
 .footer a:hover, .footer a:focus {
   color: #f8650c;
 }
-.footer .footer-logo {
-  display: grid;
-  place-content: center;
-}
 .footer .footer-logo img {
-  width: 100%;
-  width: 15rem;
-}
-@media (min-width: 500px) {
-  .footer .footer-logo img {
-    width: 10rem;
-  }
+  width: 10rem;
+  width: clamp(10rem, 15vw, 12rem);
+  height: 100%;
 }
 .footer .footer-copyright {
   text-transform: capitalize;
