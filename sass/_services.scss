@@ -185,34 +185,16 @@
                 width: 100%;
                 padding: 0 1rem;
                 ul {
-                    // background: $brand-overlay-dark;
-                    color: $text-second;
                     padding: 1rem .5rem;
-                    // border: 1px solid red;
-                    // list-style: none;
                     font-weight: 500;
                     width: 100%;
                     margin: 1rem auto;
                     border-radius: 5px;
                     position: relative;
-                    // PSEUDO UNDERLINE
-                    // &::after {
-                    //     position: absolute;
-                    //     content: '';
-                    //     bottom: 0;
-                    //     left: 0;
-                    //     width: 100%;
-                    //     transform: scale(0);
-                    //     height: 3px;
-                    //     background: $brand-border;
-                    //     border-radius: 5px;
-                    // }
                     li {
                         margin: .5rem 0;
-                        // padding: 0 0 .25rem 0;
                         text-transform: capitalize;
                         font-weight: 400;
-                        color: #000;
                         transition: 1.5s;
                         // border-bottom: 1px solid #ddd;
                         &::marker {

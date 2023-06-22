@@ -40,15 +40,16 @@
 
             h3 {
                 overflow: hidden;
-                font-size: 1.25rem;
-                font-size: clamp(1.25rem, 2vw, 1.25rem);
+                font-size: 1.125rem;
+                font-size: clamp(1.125rem, 2vw, 1.25rem);
                 font-weight: 600;
                 text-transform: capitalize;
                 margin-bottom: .5rem;
+                color: $text-main;
             }
             p {
+                color: $text-main-light;
                 font-weight: 400;
-                color: #333;
                 line-height: 1.4;
                 @include lg {
                     height: 8rem;
@@ -163,18 +164,9 @@
 .menu-cta {
     // border: 2px solid blue;
     padding: 10vh 5vw;
-    // background-image: url('../img/menu-bg_450-min.jpg');
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // color: #f4f4f4;
     position: relative;
-    // height: 90vh;
-    // isolation: isolate;
 
     .menu-cta-figure {
-        // border: 2px solid blue;
-        // background: hsla(0, 0%, 0%, 0.75);
         background: hsla(0, 0%, 0%, 0.85);
         position: absolute;
         inset: 0;

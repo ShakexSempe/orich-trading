@@ -20,7 +20,11 @@ $brand-border: linear-gradient(90deg, $brand-dark, $brand-light, $brand-dark);
 $font-clamp-sm: clamp(1.05rem, 2vw, 1.15rem) ;
 
 $text-main: #000;
-$text-second: #f4f4f4;
+// $text-main: #fff000;
+$text-main-light: #4f4f4f;
+// $text-main-light: green;
+$text-second: #ffffff;
+$text-second-light: #f4f4f4;
 $text-light: #fff;
 $text-light-trans: #fff9;
 $text-second-trans: #fffa;

@@ -451,7 +451,7 @@
     font-weight: 300;
   }
   #header .navigation aside ul li.aside-dropdown .aside-dropdown-content a:hover {
-    color: #f4f4f4;
+    color: #ffffff;
     transition: 0.2s;
   }
   #header .navigation aside ul li.aside-dropdown .aside-dropdown-content.services-dropdown a {
@@ -657,7 +657,7 @@
     display: none;
   }
   #header .navigation nav ul .dropdown .dropdown-content a:hover {
-    color: #f4f4f4;
+    color: #ffffff;
     box-shadow: none;
     background-color: #000;
   }
@@ -749,13 +749,13 @@
   z-index: 5;
 }
 #header.hero-header .navigation nav ul li a {
-  color: #f4f4f4;
+  color: #ffffff;
 }
 #header.hero-header .navigation nav ul li a:hover {
   color: #fff;
 }
 #header.hero-header .navigation nav .dropdown button {
-  color: #f4f4f4;
+  color: #ffffff;
 }
 #header.hero-header .navigation nav .dropdown button:hover {
   color: #fff;
@@ -862,7 +862,6 @@
 }
 #banner .banner-image-container figure .banner-content {
   background-color: #000;
-  color: #f4f4f4;
   padding: 1rem 0.5rem;
 }
 @media (min-width: 768px) {
@@ -906,13 +905,14 @@
   text-transform: capitalize;
   font-weight: 500;
   margin-bottom: 0.5rem;
+  color: #fff;
 }
 #banner .banner-image-container figure .banner-content .banner-image-title .flex-item p {
+  color: #fff;
   line-height: 1.6;
 }
 #banner .banner-image-container figure .banner-content .banner-image-title .flex-item p i {
   margin-right: 0.25rem;
-  color: #ffa500;
 }
 #banner .banner-image-container figure .banner-content .banner-image-title .flex-item p span {
   color: #f8650c;
@@ -920,7 +920,6 @@
 }
 #banner .banner-image-container figure .banner-content .banner-image-title .flex-item p a {
   display: block;
-  color: inherit;
   text-decoration: none;
 }
 #banner .banner-image-container figure .banner-content .banner-image-title .flex-item p:hover a {
@@ -996,15 +995,16 @@
 }
 .menu .menu-item .menu-item-title h3 {
   overflow: hidden;
-  font-size: 1.25rem;
-  font-size: clamp(1.25rem, 2vw, 1.25rem);
+  font-size: 1.125rem;
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
   font-weight: 600;
   text-transform: capitalize;
   margin-bottom: 0.5rem;
+  color: #000;
 }
 .menu .menu-item .menu-item-title p {
+  color: #4f4f4f;
   font-weight: 400;
-  color: #333;
   line-height: 1.4;
 }
 @media (min-width: 820px) {
@@ -1352,7 +1352,7 @@
 #hero .hero-title .slogan #cta .slogan-p {
   text-transform: capitalize;
   font-weight: 400;
-  color: #f4f4f4;
+  color: #ffffff;
   position: relative;
   isolation: isolate;
   font-size: 1.05rem;
@@ -1482,7 +1482,7 @@
 }
 .container .about .vision-mission .vision {
   background: linear-gradient(0deg, #000, #111);
-  color: #f4f4f4;
+  color: #ffffff;
   padding: 1rem 0.5rem;
   border-radius: 5px;
   margin: 0 1rem;
@@ -1601,7 +1601,7 @@
   }
 }
 .container .about .vision-mission .mission .statement .mission-content p {
-  color: #f4f4f4;
+  color: #ffffff;
   font-size: 1rem;
   font-size: clamp(1rem, 1.5vw, 1.15rem);
 }
@@ -1714,7 +1714,7 @@
 }
 .container#about-page main .vision-mission .vision {
   background: #000;
-  color: #f4f4f4;
+  color: #ffffff;
   padding: 1rem;
   border-radius: 0.25rem;
   margin: 0 1rem;
@@ -2020,7 +2020,6 @@
   padding: 0 1rem;
 }
 .services .service-container .service-item .service-type ul {
-  color: #f4f4f4;
   padding: 1rem 0.5rem;
   font-weight: 500;
   width: 100%;
@@ -2032,7 +2031,6 @@
   margin: 0.5rem 0;
   text-transform: capitalize;
   font-weight: 400;
-  color: #000;
   transition: 1.5s;
 }
 .services .service-container .service-item .service-type ul li::marker {
@@ -2424,6 +2422,7 @@
 }
 #contact .section-title {
   padding: 5vh 5vw;
+  color: #fff;
 }
 #contact .contact-items {
   border-radius: 5px;
@@ -2745,7 +2744,7 @@
 }
 .footer a {
   text-decoration: none;
-  color: #000;
+  color: #4f4f4f;
   transition: 0.25s;
 }
 .footer a:hover, .footer a:focus {
@@ -2819,6 +2818,7 @@ main {
   min-height: 100vh;
   position: relative;
   background: #fff;
+  color: #000;
 }
 main::after {
   position: fixed;

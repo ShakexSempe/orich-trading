@@ -37,11 +37,13 @@ img {
 }
 
 
+
 main {
     // border: 3px solid red;
     min-height: 100vh;
     position: relative;
     background: #fff;
+    color: $text-main;
 
     // ACTIVE HEADER OVERLAY TO MAIN SECTION
     &::after {

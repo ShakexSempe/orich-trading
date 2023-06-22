@@ -72,7 +72,6 @@
             // FIRST BANNER - FOUNDER
             .banner-content {
                 background-color: #000;
-                color: #f4f4f4;
                 padding: 1rem .5rem;
 
                 @include md {
@@ -126,15 +125,15 @@
                             text-transform: capitalize;
                             font-weight: 500;
                             margin-bottom: .5rem;
+                            color: $text-light;
                         }
     
                         p {
+                            color: $text-light;
                             i {
                                 margin-right: .25rem;
-                                color: $brand-light;
                             }
     
-                            // color: $text-light;
                             line-height: 1.6;
     
                             span {
@@ -144,7 +143,6 @@
     
                             a {
                                 display: block;
-                                color: inherit;
                                 text-decoration: none;
                             }
     
