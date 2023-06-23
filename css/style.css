@@ -1003,7 +1003,7 @@
   color: #000;
 }
 .menu .menu-item .menu-item-title p {
-  color: #4f4f4f;
+  color: #333;
   font-weight: 400;
   line-height: 1.4;
 }
@@ -2744,7 +2744,7 @@
 }
 .footer a {
   text-decoration: none;
-  color: #4f4f4f;
+  color: #333;
   transition: 0.25s;
 }
 .footer a:hover, .footer a:focus {
