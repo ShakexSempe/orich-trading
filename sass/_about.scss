@@ -328,7 +328,6 @@
 
     // ABOUT PAGE
     &#about-page {
-        main {
             .article-container {
                 padding: 0vh 0 5vh;
 
@@ -336,19 +335,25 @@
                     // border: 2px solid red;
                     position: relative;
                     isolation: isolate;
-                    .article-intro {
-                        // border: 1px solid blue;
+                    @include md {
+                        width: auto;
+                    }
+                    ul {
+                        margin-bottom: 5vh;
+                        @include md {
+                            margin-bottom: 10vh;
+                        }
                     }
                     p {
                         font-size: 1rem;
+                        font-size: clamp(1rem, 1.5vw, 1.125rem);
                         line-height: 1.6;
                         font-weight: 300;
-                        // text-align: justify;
 
                         &.article-intro {
-                            line-height: 1.6;
+                            margin-bottom: 1rem;
                             @include md {
-                                width: 60%;
+                                width: 50%;
                             }
                         }
                         
@@ -356,90 +361,70 @@
 
                     .article-pad {
                         // border: 2px solid red;
-                        // background-color: pink;
                         background-color: #fff;
                         width: auto;
-                        margin: 1rem auto;
+                        margin: 5vh auto;
                         
                         figure {
                             width: 100%;
                             overflow: hidden;
-                            margin: 1rem auto;
                             
                             img {
                                 border-radius: $border-radius-sm;
                             }
                         }
 
-                    }
-                }
+                        @include md {
+                            width: 20rem;
+                            float: left;
+                            overflow: hidden;
+                            margin-right: .5rem;
+                            margin: 0 .5rem 0 0;
 
+                            figure {
+                                margin: 0;
+                                width: 100%;
+                                height: auto;
 
-
-                @media (min-width: 768px) {
-                    // padding: 0 5vw;
-                    .page-article {
-                            width: auto;
-                            p {
-                                font-size: 1.15rem;
-                            }
-
-                            .article-pad {
-                                width: 20rem;
-                                float: left;
-                                overflow: hidden;
-                                margin-right: .5rem;
-                                margin: 0 .5rem 0 0;
-
-                                figure {
-                                    margin: 0;
+                                img {
+                                    border-radius: $border-radius-xsm;
                                     width: 100%;
                                     height: auto;
-                                    
-                                    img {
-                                        border-radius: $border-radius-xsm;
-                                        width: 100%;
-                                        height: auto;
-                                    }
-                                }
-                                &.reverse {
-                                    float: right;
-                                    margin-right: 0;
-                                    margin-left: .25rem;
                                 }
                             }
+
+                            &.reverse {
+                                float: right;
+                                margin-right: 0;
+                                margin-left: .25rem;
+                            }
                         }
+
                     }
-                
+                }
             }
             
             .vision-mission {
                 // border: 1px solid $brand;
                 padding: 1rem 0;
                 .vision {
-                    // background: $brand;
                     background: #000;
-                    // background: $brand-overlay-dark;
                     color: $text-second;
                     padding: 1rem;
+                    margin: 0 5vw;
                     border-radius: .25rem;
-                    margin: 0 1rem;
                     overflow: hidden;
-                    // box-shadow: $box-shadow-sm;
-                    
                     h3 {
                         font-size: 2.5rem;
+                        color: $brand;
                         font-weight: 500;
                         margin-bottom: 1rem;
                         position: relative;
                         width: fit-content;
-                        // color: $brand-light;
                     }
 
                     ul {
-                        // padding: .5rem 0 0 1rem;
                         li {
-                            // padding-bottom: .25rem;
                             margin-bottom: 1rem;
                             padding: .25rem 0rem .5rem .25rem;
                             font-weight: 400;
@@ -457,7 +442,6 @@
                             &:hover {
                                 background: #161616;
                                 border-color: transparent;
-                                // border-color: $brand;
                                 border-radius: $border-radius-xsm;
                             }
                         }
@@ -585,6 +569,5 @@
                     }
                 }
             }
-        }
     }
 }
