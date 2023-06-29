@@ -2752,7 +2752,7 @@
 }
 .footer a {
   text-decoration: none;
-  color: #333;
+  color: #000;
   transition: 0.25s;
 }
 .footer a:hover, .footer a:focus {
