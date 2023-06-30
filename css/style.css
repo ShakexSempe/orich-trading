@@ -1390,6 +1390,11 @@
 .container .about {
   position: relative;
 }
+@media (min-width: 820px) {
+  .container .about {
+    padding: 10vh 0;
+  }
+}
 @media (min-width: 1024px) {
   .container .about .flex-container {
     display: flex;
@@ -1405,18 +1410,10 @@
 .container .about .section-title {
   padding: 5vh 5vw;
 }
-@media (min-width: 820px) {
-  .container .about .section-title {
-    padding: 10vh 5vw 0;
-  }
-}
 .container .about .about-article {
-  background: #fff;
   margin: 5vh 1rem 10vh 5vw;
   text-transform: none;
   line-height: 1.6;
-  overflow: hidden;
-  text-align: left;
 }
 @media (min-width: 500px) {
   .container .about .about-article {

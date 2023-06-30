@@ -2,11 +2,12 @@
     position: relative;
 
     .about {
-        // border: 2px solid red;
         position: relative;
+        @include lg {
+            padding: 10vh 0;
+        }
         @include xlg {
             .flex-container {
-                // border: 20px solid blue;
                 display: flex;
                 align-items: center;
                 padding: 5vh 0;
@@ -18,18 +19,12 @@
         }
         .section-title {
             padding: 5vh 5vw;
-            @include lg {
-                padding: 10vh 5vw 0;
-            }
         }
         .about-article {
             // border: 1px solid $brand;
-            background: $bg-main;
             margin: 5vh 1rem 10vh 5vw;
             text-transform: none;
             line-height: 1.6;
-            overflow: hidden;
-            text-align: left;
             @include sm {
                 margin: 5vh 5vw;
             }
