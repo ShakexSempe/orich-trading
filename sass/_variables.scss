@@ -16,9 +16,15 @@ $brand-btn-hover: linear-gradient(0deg, $brand-light, $brand-dark);
 $bg-main: #fff;
 $bg-second: #000;
 
-$brand-border: linear-gradient(90deg, $brand-dark, $brand-light, $brand-dark);
+// FONT-SIZES
+$font-clamp-sm: clamp(1.05rem, 2vw, 1.15rem);
+$font-clamp-p-sm: clamp(1rem, 1.5vw, 1.15rem);
+$font-clamp-title-sm: clamp(1.125rem, 2vw, 1.25rem);
+$font-clamp-title-md: clamp(1.25rem, 2.5vw, 1.5rem);
 
-$font-clamp-sm: clamp(1.05rem, 2vw, 1.15rem) ;
+
+
+$brand-border: linear-gradient(90deg, $brand-dark, $brand-light, $brand-dark);
 
 $text-main: #000;
 // $text-main: #fff000;

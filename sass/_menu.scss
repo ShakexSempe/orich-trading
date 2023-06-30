@@ -35,27 +35,22 @@
             isolation: isolate;
             padding: 1rem;
             @include xlg {
-                padding: .5rem;
+                padding: 1rem;
             }
 
             h3 {
-                overflow: hidden;
-                font-size: 1.125rem;
-                font-size: clamp(1.125rem, 2vw, 1.25rem);
-                font-weight: 600;
-                text-transform: capitalize;
-                margin-bottom: .5rem;
                 color: $text-main;
+                margin-bottom: .5rem;
+                text-transform: capitalize;
+                overflow: hidden;
             }
             p {
-                color: $text-main-light;
-                font-weight: 400;
-                line-height: 1.4;
+                
                 @include lg {
-                    height: 8rem;
+                    height: 9rem;
                 }
                 @include xlg {
-                    height: 5rem;
+                    height: 6rem;
                 }
             }
             
@@ -270,8 +265,9 @@
             text-transform: capitalize;
             margin-bottom: .5rem;
             font-size: 1.25rem;
-            font-size: clamp(1.25rem, 2vw, 1.5rem);
+            font-size: $font-clamp-title-md;
             transition: .25s;
+            font-weight: 600;
         }
 
         ul {

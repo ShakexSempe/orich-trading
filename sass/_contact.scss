@@ -30,12 +30,8 @@
         }
 
         .contact-item {
-            // border: 1px solid #000;
-            background-color: #f4f4f4;
             background-color: #333;
             border-radius: .5rem;
-            // margin: 1rem auto 5vh;
-            padding: 1rem;
             padding: 1rem .5rem;
             height: 70%;
             width: 100%;
@@ -64,10 +60,12 @@
             .contact-item-title {
                 margin: -2rem 0 1.5rem;
                 h3 {
+                    color: $text-light;
                     text-transform: capitalize;
                     font-weight: 500;
                     font-size: 1.25rem;
                     font-size: clamp(1.25rem, 2.25vw, 1.4rem);
+                    font-size: $font-clamp-title-sm;
                 }
                 i {
                     font-size: 2.5rem;
@@ -95,12 +93,9 @@
                 .address {
                     display: flex;
                     flex-direction: column;
-                    // align-items: left;
                 }
                 p {
-                    // color: $text-main;
-                    // color: #000;
-                    text-overflow: ellipsis;
+                    color: $text-light;
                     line-height: 2;
                     span {
                         font-weight: 500;
@@ -124,25 +119,20 @@
                 button {
                     display: flex;
                     align-items: center;
-                    // width: 100%;
                     margin: 1rem 0 .5rem;
                     transition: .5s;
                     border: none;
-                    // background: #fafafa;
                     border-radius: $border-radius-sm;
                     text-transform: capitalize;
                     background: #000;
                     // border: 1px solid blue;
                     @include md {
-                    // border: 1px solid blue;
-                    // width: auto;
                     background-color: transparent;
                     }
                     a {
                         font-size: 1rem;
                         color: $text-main;
                         text-decoration: none;
-                        // background: $brand-light;
                         padding: .5em 1rem;
                         border-radius: $border-radius-sm;
                         transition: .5s;

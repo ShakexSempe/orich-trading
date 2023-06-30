@@ -85,15 +85,12 @@
 
                 .banner-image-title {
 
-                    // border: 2px solid red;
-                    // width: 90%;
-                    // margin: 0 auto;
                     h3 {
-                        text-transform: capitalize;
                         color: $brand-light;
-                        font-size: 1.5rem;
-                        margin-bottom: .5rem;
-                        font-weight: 600;
+                        font-size: $font-clamp-title-md;
+                        @include lg {
+                            margin-bottom: 1rem;
+                        }
                     }
 
                     .flex-container {
