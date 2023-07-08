@@ -13,7 +13,6 @@
         inset: 0;
 
         img {
-            // border: 3px solid blue;
             object-fit: cover;
             object-position: 55% 50%;
             height: 100%;
@@ -26,7 +25,7 @@
                 top: 0;
                 right: 0;
                 width: 60%;
-                border-left: 2px solid $brand-light;
+                // border-left: 2px solid $brand-light;
             }
         }
     }

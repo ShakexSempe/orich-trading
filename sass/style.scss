@@ -36,12 +36,29 @@ img {
     display: block;
 }
 
+h3 {
+    text-transform: capitalize;
+    color: $text-main;
+    font-size: 1.125rem;
+    font-size: $font-clamp-title-sm;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+p {
+    font-size: $font-clamp-p-sm;
+    color: $text-main-light;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+
 
 main {
     // border: 3px solid red;
     min-height: 100vh;
     position: relative;
     background: #fff;
+    color: $text-main;
 
     // ACTIVE HEADER OVERLAY TO MAIN SECTION
     &::after {

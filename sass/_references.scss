@@ -1,5 +1,6 @@
 #references {
-    background: $brand-overlay;
+    background: linear-gradient(90deg, hsl(0, 0%, 20%), hsl(0, 0%, 25%), hsl(0, 0%, 20%));
+    background: $brand-overlay-darker;
     padding: 10vh 5vw;
     .references {
         display: grid;

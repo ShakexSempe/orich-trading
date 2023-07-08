@@ -14,6 +14,8 @@
     <meta name="description" content="Johannesburg based Level-1 BEE Construction company providing small-scale construction services & solutions throughout the Gauteng province.">
     <!-- KEYWORDS -->
     <meta name="keywords" content="general building, construction, Johannesburg, Gauteng, industrial relations, painting, plumbing, tiling, roofing, electrical services & installations, IT network and infrastructure, general building, carpentry, paving, welding, ceiling">
+    <!-- PRELOAD -->
+    <link rel="preload" href="css/style.css" as="style" />
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="css/style.css">
     <!-- JAVASCRIPT -->
@@ -78,44 +80,66 @@
             place-items: center;
         }
 
-        /* SPINNER  */
-        .spinner {
-            height: 6rem;
-            width: 6rem;
-            display: grid;
-            place-items: center;
+        .loader-title {
+            font-size: 2rem;
+            color: #fff4;
+            display: flex;
+            position: relative;
+            gap: 2rem;
+            animation: loader-title 1.25s forwards 1s;
+        }
+        .loader-title .brand-span {
+            animation: brand-span 1.25s forwards 2.25s;
         }
 
-        .circle {
-            height: 4.5rem;
-            width: 4.5rem;
-            border: .35rem solid transparent;
-            border-radius: 50%;
+        .loader-title::before, .loader-title::after {
+            content: '';
             position: absolute;
-            animation: spinner 1.5s infinite;
-
+            bottom: -1rem;
+            left: 0;
+            width: 100%;
+            height: .125rem;
+        }
+        /* UNDERLINE 1 - LIGHT */
+        .loader-title::before {
+            background: linear-gradient(90deg, transparent, #f4f4f4, transparent);
+            animation: underline-1 1.25s forwards 1.25s;
+        }
+        /* UNDERLINE 2 - BRAND */
+        .loader-title::after {
+            background: linear-gradient(90deg, transparent, orange, transparent);
+            animation: underline-2 1.25s forwards 2.25s;
+            transform: scaleX(0);
         }
 
-        .circle.circle-1 {
-            border-top-color: orange;
-            animation-timing-function: ease-in;
-        }
-
-        .circle.circle-2 {
-            border-left-color: #fff;
-            animation-timing-function: ease-out;
-
-        }
-
-        @keyframes spinner {
-            0% {
-                transform: rotate(0);
-            }
-
+        /* UNDERLINE 1 ANIMATION */
+        @keyframes underline-1 {
             100% {
-                transform: rotate(360deg);
+                transform: scaleX(0);
             }
         }
+        /* UNDERLINE 2 ANIMATION */
+        @keyframes underline-2 {
+            100% {
+                transform: scaleX(1);
+            }
+        }
+
+        /* TITLE SPAN ANIMATION */
+        @keyframes brand-span {
+                100% {
+                    color: orange;
+                }
+            }
+        /* TITLE P ANIMATION */
+            @keyframes loader-title {
+                100% {
+                    gap: .5rem;
+                    color: #f4f4f4;
+                }
+            }
+
+
     </style>
 
 
@@ -123,10 +147,13 @@
 <body>
     <!-- LOADER -->
     <div class="loader_bg">
-        <div class="spinner">
-            <div class="circle circle-1"></div>
-            <div class="circle circle-2"></div>
-        </div>
+        <p class="loader-title">
+                <span>O</span>
+                <span>R</span>
+                <span class="brand-span">I</span>
+                <span>C</span>
+                <span>H</span>
+        </p>
     </div>
     <div class="container">
         <!-- HEADER = 1) LOGO 2) SECTION & PAGE NAVIGATION LINKS -->
@@ -328,8 +355,7 @@
                         <h4>Location</h4>
                         <ul class="social-cta-list">
                             <li><i class="fas fa-location-dot"></i><a href="https://www.facebook.com/orichtrading"
-                                    target="_blank">Johannesburg, Gauteng</a>
-                                <p style="padding-left: 1.5rem;">South, Africa</p>
+                                    target="_blank">Johannesburg, Gauteng.</a>
                             </li>
 
                         </ul>
@@ -385,13 +411,16 @@
                 </section>
             </div>
             </section>
+
             <!-- CERTIFICATES -->
             <section id="references">
+
                 <div class="container-title io-item">
                     <h2>certificates</h2>
                 </div>
                 <!-- EACH REFERENCE = CERTIFICATE -->
                 <div class="references">
+
                     <div class="reference">
                         <i class="fa-solid fa-award item-icon"></i>
                         <h3>Broad-Based Black<br> Economic Empowerment</h3>
@@ -403,6 +432,7 @@
                         </p>
                         <p class="ref-contact"><i class="fa-solid fa-award"></i>level 1</p>
                     </div>
+                    
                     <div class="reference">
                         <i class="fa-solid fa-award item-icon"></i>
                         <h3>National Home Builders <br> Registration Council</h3>
@@ -412,9 +442,10 @@
                         </p>
                         <p class="ref-contact"><i class="fa-solid fa-award"></i>level 1</p>
                     </div>
+                    
                     <div class="reference">
                         <i class="fa-solid fa-award item-icon"></i>
-                        <h3>Compensation Fund: <br> Department of Labour</h3>
+                        <h3>Worksmen's Compensation: <br> Department of Labour</h3>
                         <a href="https://www.labour.gov.za/">www.labour.gov.za</a>
                         <p class="ref-name">
                             <i class="fas fa-user"></i>COIDA
@@ -425,6 +456,7 @@
                 </div>
 
             </section>
+            
             <!-- SERVICES SECTION -->
             <section id="services" class="services">
                 <header class="section-title io-item">
@@ -433,7 +465,7 @@
                 <!-- INTRO TITLE & PARAGRAPH -->
                 <div class="section-description">
                     <h3>Industrial Relations</h3>
-                    <p class="block-line io-item">
+                    <p>
                         We specialize in Construction, Property
                         Development and Handyman Services.
                     </p>
@@ -873,7 +905,7 @@
                 <div class="cta">
                     <a href="pages/projects.html#main" class="cta-btn section-btn" title="Go to projects page">projects page<i class="fas fa-arrow-up-right-from-square"></i></a>
                 </div>
-            </section>>       
+            </section>     
             <!-- FOOTER = 1) CONTACT DETAILS. 2) CONTACT FORM. 3) COPYRIGHT SECTION -->
             <div id="contact">
                 <header class="section-title io-item">
@@ -990,7 +1022,7 @@
             <div class="footer" id="footer">
                 <!-- FOOTER LOGO -->
                 <div class="footer-logo">
-                    <img src="img/orich.jpg" alt="Orich Trading & Projects Logo">
+                    <img src="img/orich.jpg" width="250" height="250" alt="Orich Trading & Projects Logo">
                 </div>
 
                 <!-- FOOTER COPYRIGHT INFO -->
@@ -1062,7 +1094,7 @@
     <script>
         setTimeout(function () {
             $('.loader_bg').fadeToggle();
-        }, 3500);
+        }, 4500);
     </script>
     <script>
         const date = document.getElementById("date");

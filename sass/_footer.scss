@@ -10,10 +10,11 @@
         background: linear-gradient(90deg, #ffff, #fafafa);
         flex-direction: row;
         justify-content: space-between;
+        align-items: start;
     }
     a {
         text-decoration: none;
-        color: #000;
+        color: $text-main;
         transition: .25s;
         &:hover, &:focus {
             color: $brand;
@@ -23,15 +24,10 @@
 
     .footer-logo {
         // border: 1px solid blue;
-        display: grid;
-        place-content: center;
         img {
-            width: 100%;
-            width: 15rem;
-            // border: 2px solid red;
-            @include sm {
-                width: 10rem;
-            }
+            width: 10rem;
+            width: clamp(10rem, 15vw, 12rem);
+            height: 100%;
         }
     }
 
@@ -82,14 +78,8 @@
         // border: 2px solid red;
 
         li {
-            // display: flex;
-            // align-items: center;
-            a {
-                // border: 1px solid blue;
-                
-            }
+            
             i {
-                // border: 2px solid green;
                 margin-right: .5rem;
             }
         }
