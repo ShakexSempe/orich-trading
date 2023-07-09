@@ -442,10 +442,6 @@
         background-color: #000a;
         background: transparent;       
     }
-    // &.page-header {
-    //     background: $brand;
-    // }
-
     // LOGO - STARTS WITH 0 OPACITY
     .logo {
         z-index: 1;
@@ -497,13 +493,14 @@
 
     // HEADER ACTIVE CLASS
     &.hero-header {
-        height: 30vh;
+        height: 25vh;
         padding: 1rem 5vw;
         &::after {
             background-color: transparent;
         }
         @media (min-width: 820px) {
             background-color: transparent;
+            height: 30vh;
             .navigation {
                 // ADD PADDING BOTTOM TO LIFT UL UP THE SECTION
                 // padding-bottom: 2rem;
