@@ -1326,9 +1326,6 @@
   display: none;
 }
 @media (min-width: 820px) {
-  #hero .hero-title .slogan h1 {
-    margin-bottom: 0.5rem;
-  }
   #hero .hero-title .slogan h1 br {
     display: block;
   }
