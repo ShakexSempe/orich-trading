@@ -2751,7 +2751,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Prompt", sans-serif;
   scroll-behavior: smooth;
   scroll-padding-top: 8vh;
 }
