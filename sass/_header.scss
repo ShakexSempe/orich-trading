@@ -493,14 +493,13 @@
 
     // HEADER ACTIVE CLASS
     &.hero-header {
-        height: 25vh;
+        height: 30vh;
         padding: 1rem 5vw;
         &::after {
             background-color: transparent;
         }
         @media (min-width: 820px) {
             background-color: transparent;
-            height: 30vh;
             .navigation {
                 // ADD PADDING BOTTOM TO LIFT UL UP THE SECTION
                 // padding-bottom: 2rem;
