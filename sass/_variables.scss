@@ -17,7 +17,7 @@ $bg-main: #fff;
 $bg-second: #000;
 
 // FONT-SIZES
-$font-clamp-sm: clamp(1.05rem, 2vw, 1.15rem);
+$font-clamp-sm: clamp(1.05rem, 1.5vw, 1.15rem);
 $font-clamp-p-sm: clamp(1rem, 1.5vw, 1.15rem);
 $font-clamp-title-sm: clamp(1.125rem, 2vw, 1.25rem);
 $font-clamp-title-md: clamp(1.25rem, 2.5vw, 1.5rem);
@@ -33,7 +33,7 @@ $text-main-light: #333;
 $text-second: #ffffff;
 $text-second-light: #f4f4f4;
 $text-light: #fff;
-$text-light-trans: #fff9;
+$text-light-trans: hsla(0, 0%, 100%, 0.7);
 $text-second-trans: #fffa;
 $text-main-hover: #fffa;
 $text-second-hover: #000a;

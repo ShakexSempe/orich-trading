@@ -1297,12 +1297,10 @@
 @media (min-width: 500px) {
   #hero .hero-title {
     top: 55vh;
-    background: rgba(0, 0, 0, 0.9);
   }
 }
 @media (min-width: 820px) {
   #hero .hero-title {
-    padding: 0.5rem;
     padding: 1rem 0;
     top: 25vh;
     width: max-content;
@@ -1311,17 +1309,15 @@
 #hero .hero-title .slogan {
   color: #fff;
   border-radius: 5px;
-  text-align: left;
   position: relative;
+  text-transform: capitalize;
 }
 #hero .hero-title .slogan h1 {
-  text-transform: capitalize;
-  color: #fff;
   font-weight: 600;
-  font-size: clamp(1.025rem, 2.5vw, 2.25rem);
-  text-transform: capitalize;
+  font-size: 3vw;
+  font-size: clamp(1.025rem, 3vw, 2.25rem);
   line-height: 1.4;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 #hero .hero-title .slogan h1 br {
   display: none;
@@ -1331,31 +1327,21 @@
     display: block;
   }
 }
-#hero .hero-title .slogan p {
-  font-size: 1rem;
-  font-size: clamp(1.05rem, 2vw, 1.15rem);
-  color: #fff9;
+#hero .hero-title .slogan .hero-meta {
+  color: rgba(255, 255, 255, 0.7);
   font-weight: 200;
 }
-#hero .hero-title .slogan p i {
+#hero .hero-title .slogan .hero-meta i {
   width: 1.25rem;
   font-size: 0.95rem;
 }
 #hero .hero-title .slogan #cta .slogan-p {
-  text-transform: capitalize;
-  font-weight: 400;
-  color: #ffffff;
-  position: relative;
-  isolation: isolate;
-  font-size: 1.05rem;
-  font-size: clamp(1.05rem, 2vw, 1.15rem);
+  color: #fff;
   margin: 0.25rem 0 0.5rem;
   letter-spacing: 0.0125rem;
 }
 #hero .hero-title .slogan #cta .slogan-p span {
   color: #ffa500;
-  font-weight: 400;
-  font-family: inherit;
 }
 @media (min-width: 820px) {
   #hero .hero-title .slogan #cta .slogan-p {
@@ -1364,7 +1350,7 @@
 }
 #hero .hero-title .slogan #cta .cta-btn {
   font-size: 1.015rem;
-  font-size: clamp(1.05rem, 2vw, 1.15rem);
+  font-size: clamp(1.05rem, 1.5vw, 1.15rem);
   width: 12rem;
   width: clamp(11rem, 15vw, 15rem);
 }
@@ -1448,7 +1434,7 @@
   font-weight: 500;
   font-size: 1rem;
   font-size: clamp(1rem, 1.5vw, 1.15rem);
-  font-size: clamp(1.05rem, 2vw, 1.15rem);
+  font-size: clamp(1.05rem, 1.5vw, 1.15rem);
 }
 .container .about .vision-mission {
   padding: 5vh 5vw;
@@ -2780,7 +2766,6 @@ h3 {
 
 p {
   font-size: clamp(1rem, 1.5vw, 1.15rem);
-  color: #333;
   font-weight: 400;
   line-height: 1.6;
 }
