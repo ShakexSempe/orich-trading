@@ -313,6 +313,7 @@
                     display: flex;
                     align-items: center;
                     gap: 1rem;
+                    isolation: isolate;
                     // border: 2px solid red;
                     li {
                         list-style: none;
@@ -353,7 +354,8 @@
                     .dropdown {
                         position: relative;
                         button {
-                            font-size: .85rem;
+                            font-family: inherit;
+                            font-size: .95rem;
                             display: flex;
                             align-items: center;
                             float: left;
@@ -365,6 +367,8 @@
                             border: none;
                             text-transform: capitalize;
                             cursor: pointer;
+                            // border: 2px solid red;
+                            padding: .5rem 0;
 
                             i {
                                 margin-left: .5rem;
@@ -372,18 +376,19 @@
                         }
                         .dropdown-content {
                             display: block;
-                            height: 0;
+                            height: 0rem;
                             width: 15vw;
                             overflow-y: auto;
                             position: absolute;
-                            top: 1.25rem;
+                            top: 2rem;
                             left: -5vw;
-                            width: max-content;
                             background-color: $brand;
                             transition: .25s;
                             border-radius: .25rem;
-                            // padding: .25rem;
-
+                            z-index: -1;
+                            @include xlg {
+                                left: -9vw;
+                            }
                             a {
                                 display: block;
                                 border-radius: 0;
@@ -416,16 +421,9 @@
                                 }
                             }
                             .dropdown-content {
-                                // display: block;
-                                height: 15vh;
-                                opacity: 1;
-                                border: 2px solid #000;
-                                @media (min-width:820px){
-                                    height: 55vh;
-                                    height: auto;
-                                    width: 15vw;
-                                    overflow-y: auto;
-                                }
+                                height: 55vh;
+                                height: auto;
+                                overflow-y: auto;
                             }
                         }
                     }
