@@ -67,7 +67,7 @@
                     font-weight: 500;
                     font-size: 1.25rem;
                     font-size: clamp(1.25rem, 2.25vw, 1.4rem);
-                    font-size: abstracts.$font-clamp-title-sm;
+                    font-size: abstracts.$font-clamp-sm;
                 }
                 i {
                     font-size: 2.5rem;

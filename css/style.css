@@ -77,7 +77,8 @@ section {
 }
 .section-title h2 {
   position: relative;
-  font-size: clamp(2rem, 4vw, 2.25rem);
+  font-size: 1.5rem;
+  font-size: clamp(2rem, 5vw, 2.25rem);
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -134,8 +135,9 @@ section {
   color: #fff;
   text-transform: capitalize;
   font-weight: 500;
-  font-size: 1.65rem;
-  font-size: clamp(1.65rem, 4vw, 1.8rem);
+  font-size: 2rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-size: clamp(1.5rem, 4vw, 2rem);
   transition: 1.5s ease;
 }
 @media (min-width: 768px) {
@@ -157,17 +159,8 @@ section {
   letter-spacing: normal;
 }
 
-h3 {
-  text-transform: capitalize;
-  color: #000;
-  font-size: 1.125rem;
-  font-size: clamp(1.125rem, 2vw, 1.25rem);
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
 p {
-  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
   font-weight: 400;
   line-height: 1.6;
 }
@@ -733,7 +726,7 @@ img {
   font-weight: 500;
   font-size: 1rem;
   font-size: clamp(1rem, 1.5vw, 1.15rem);
-  font-size: clamp(1.05rem, 1.5vw, 1.15rem);
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
 }
 .container .about .vision-mission {
   padding: 5vh 5vw;
@@ -1192,8 +1185,10 @@ img {
   }
 }
 #banner .banner-image-container figure .banner-content .banner-image-title h3 {
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
   color: #ffa500;
-  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
 }
 @media (min-width: 820px) {
   #banner .banner-image-container figure .banner-content .banner-image-title h3 {
@@ -1337,7 +1332,7 @@ img {
   font-weight: 500;
   font-size: 1.25rem;
   font-size: clamp(1.25rem, 2.25vw, 1.4rem);
-  font-size: clamp(1.125rem, 2vw, 1.25rem);
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
 }
 #contact .contact-items .contact-item .contact-item-title i {
   font-size: 2.5rem;
@@ -2158,7 +2153,7 @@ img {
 }
 #hero .hero-title .slogan #cta .cta-btn {
   font-size: 1.015rem;
-  font-size: clamp(1.05rem, 1.5vw, 1.15rem);
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
   width: 12rem;
   width: clamp(11rem, 15vw, 15rem);
 }
@@ -2214,6 +2209,11 @@ img {
   margin-bottom: 0.5rem;
   text-transform: capitalize;
   overflow: hidden;
+  font-size: 1.25rem;
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
+}
+.menu .menu-item .menu-item-title p {
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
 }
 @media (min-width: 820px) {
   .menu .menu-item .menu-item-title p {
@@ -2418,7 +2418,7 @@ img {
   text-transform: capitalize;
   margin-bottom: 0.5rem;
   font-size: 1.25rem;
-  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
   transition: 0.25s;
   font-weight: 600;
 }
@@ -2746,7 +2746,7 @@ img {
 }
 .services .promise h3 {
   color: #f8650c;
-  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
   text-align: center;
   margin-bottom: 5vh;
 }
@@ -2997,7 +2997,7 @@ img {
     margin: 0;
   }
   #services-page .flex-container .section-description h3 {
-    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+    font-size: clamp(1.125rem, 2vw, 1.25rem);
     margin-bottom: 5vh;
   }
   #services-page .flex-container .section-description p {

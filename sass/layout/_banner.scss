@@ -88,8 +88,10 @@
                 .banner-image-title {
 
                     h3 {
+                        text-transform: capitalize;
+                        margin-bottom: .5rem;
                         color: abstracts.$brand-light;
-                        font-size: abstracts.$font-clamp-title-md;
+                        font-size: abstracts.$font-clamp-md;
                         @include abstracts.lg {
                             margin-bottom: 1rem;
                         }

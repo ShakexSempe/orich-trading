@@ -45,9 +45,11 @@
                 margin-bottom: .5rem;
                 text-transform: capitalize;
                 overflow: hidden;
+                font-size: 1.25rem;
+                font-size: abstracts.$font-clamp-md;
             }
             p {
-                
+                font-size: abstracts.$font-clamp-sm;
                 @include abstracts.lg {
                     height: 9rem;
                 }
@@ -267,7 +269,7 @@
             text-transform: capitalize;
             margin-bottom: .5rem;
             font-size: 1.25rem;
-            font-size: abstracts.$font-clamp-title-md;
+            font-size: abstracts.$font-clamp-md;
             transition: .25s;
             font-weight: 600;
         }

@@ -17,12 +17,16 @@ $bg-main: #fff;
 $bg-second: #000;
 
 // FONT-SIZES
-$font-clamp-sm: clamp(1.05rem, 1.5vw, 1.15rem);
-$font-clamp-p-sm: clamp(1rem, 1.5vw, 1.15rem);
-$font-clamp-title-sm: clamp(1.125rem, 2vw, 1.25rem);
-$font-clamp-title-md: clamp(1.25rem, 2.5vw, 1.5rem);
+// $font-clamp-sm: clamp(1.05rem, 1.5vw, 1.15rem);
+// $font-clamp-p-sm: clamp(1rem, 1.5vw, 1.15rem);
+// $font-clamp-title-sm: clamp(1.125rem, 2vw, 1.25rem);
+// $font-clamp-title-md: clamp(1.25rem, 2.5vw, 1.5rem);
 
-$font-clamp-lg: clamp(2rem, 4vw, 2.25rem);
+$font-clamp-xsm: clamp(.95rem, 1vw, 1rem);
+$font-clamp-sm: clamp(1rem, 1.5vw, 1.125rem);
+$font-clamp-md: clamp(1.125rem, 2vw, 1.25rem);
+$font-clamp-lg: clamp(1.5rem, 4vw, 2rem);
+$font-clamp-xlg: clamp(2rem, 5vw, 2.25rem);
 
 $brand-border: linear-gradient(90deg, $brand-dark, $brand-light, $brand-dark);
 
