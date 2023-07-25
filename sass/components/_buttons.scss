@@ -1,0 +1,165 @@
+@use '../abstracts';
+
+// CTA 
+.cta {
+    transition: .25s;
+}
+
+
+.cta-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 11rem;
+    padding: .6rem 1.5rem .6rem 1rem;
+    margin: .5rem 0;
+
+    background: abstracts.$brand-light;
+    color: #000;
+
+    font-size: 1rem;
+    font-size: clamp(1rem, 1.25vw, 1.15rem);
+    text-decoration: none;
+    text-transform: capitalize;
+
+    cursor: default;
+    border: none;
+    border-radius: abstracts.$border-radius-sm;
+    position: relative;
+    isolation: isolate;
+    transition: .3s;
+
+    @include abstracts.sm {
+        cursor: pointer;
+    }
+
+    &.section-btn {
+        width: 12rem;
+
+        @include abstracts.md {
+            width: 12rem;
+        }
+    }
+
+    i {
+        font-size: 1rem;
+
+        &.hero-cta-icon {
+            color: transparent;
+
+            &::before,
+            &::after {
+                position: absolute;
+                color: #000;
+                opacity: 1;
+                top: 50%;
+                transform: translateY(-50%);
+                right: .8rem;
+                transition: .25s;
+            }
+
+            &::before {
+                content: '\f101';
+                font-family: "Font Awesome 6 Free";
+                // opacity: 0;
+                animation: arrow 1.5s infinite;
+            }
+
+            &::after {
+                content: '\f105';
+                font-family: "Font Awesome 6 Free";
+                opacity: 0;
+                animation: arrow-2 1.5s infinite;
+            }
+
+            @keyframes arrow {
+                50% {
+                    transform: translateY(-50%) translateX(.125rem);
+                    opacity: 0;
+                }
+            }
+
+            @keyframes arrow-2 {
+                50% {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &:hover {
+        i {
+            &::before {
+                animation: none;
+            }
+        }
+    }
+
+
+
+    // CTA BACKGROUND & BOX SHADOW HOVER STATES
+    &::before,
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: abstracts.$border-radius-sm;
+        z-index: -1;
+        transition: .3s;
+    }
+
+    &::before {
+        background: abstracts.$brand-btn;
+        box-shadow: abstracts.$box-shadow-sm;
+    }
+
+    &::after {
+        opacity: 0;
+        background: abstracts.$brand-btn-hover;
+        box-shadow: abstracts.$box-shadow-sm-hover;
+    }
+
+    @media (max-width:1024px) {
+        &:active {
+            transform: scale(.97);
+            letter-spacing: normal;
+
+            i {
+                animation: none;
+            }
+
+            &::before {
+                opacity: 0
+            }
+
+            &::after {
+                opacity: 1
+            }
+        }
+    }
+
+    @media (min-width: 1024px) {
+        &:hover {
+            transform: scale(.97);
+            letter-spacing: normal;
+
+            i {
+                animation: none;
+            }
+
+            &::before {
+                opacity: 0
+            }
+
+            &::after {
+                opacity: 1
+            }
+        }
+
+    }
+}

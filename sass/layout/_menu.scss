@@ -1,8 +1,10 @@
+@use '../abstracts';
+
 .menu {
-    // border: .25rem solid $brand;
+    // border: .25rem solid abstracts.$brand;
     padding: 10vh 5vw 5vh;
     background: #f4f4f4;
-    @include lg {
+    @include abstracts.lg {
         padding: 10vh 5vw;
     }
     .menu-grid {
@@ -12,7 +14,7 @@
         gap: 10vh;
         
 
-        @include lg {
+        @include abstracts.lg {
             grid-template-columns: auto auto auto;
             column-gap: 1.5rem;
         }
@@ -34,22 +36,22 @@
             position: relative;
             isolation: isolate;
             padding: 1rem;
-            @include xlg {
+            @include abstracts.xlg {
                 padding: 1rem;
             }
 
             h3 {
-                color: $text-main;
+                color: abstracts.$text-main;
                 margin-bottom: .5rem;
                 text-transform: capitalize;
                 overflow: hidden;
             }
             p {
                 
-                @include lg {
+                @include abstracts.lg {
                     height: 9rem;
                 }
-                @include xlg {
+                @include abstracts.xlg {
                     height: 6rem;
                 }
             }
@@ -60,15 +62,15 @@
         .menu-image {
             // border: 2px solid red;
             height: 40vh;
-            border-bottom-left-radius: $border-radius-xsm;
-            border-bottom-right-radius: $border-radius-xsm;
+            border-bottom-left-radius: abstracts.$border-radius-xsm;
+            border-bottom-right-radius: abstracts.$border-radius-xsm;
             overflow: hidden;
             position: relative;
             isolation: isolate;
-            @include sm {
+            @include abstracts.sm {
                 height: 55vh;
             }
-            @include md {
+            @include abstracts.md {
                 height: 40vh;
             }
 
@@ -90,8 +92,8 @@
                 text-decoration: none;
                 text-transform: capitalize;
                 color: #000;
-                border-radius: $border-radius-sm;
-                background: $brand;
+                border-radius: abstracts.$border-radius-sm;
+                background: abstracts.$brand;
                 position: absolute;
                 bottom: 1rem;
                 left: 1rem;
@@ -124,7 +126,7 @@
                 left: 0;
                 width: 100%;
                 height: .125rem;
-                background: $brand-border;
+                background: abstracts.$brand-border;
                 transition: 1s;
                 z-index: 3;
             }
@@ -165,7 +167,7 @@
         background: hsla(0, 0%, 0%, 0.85);
         position: absolute;
         inset: 0;
-        @include lg {
+        @include abstracts.lg {
             background: hsla(0, 0%, 0%, 0.65);
         }
         img {
@@ -174,7 +176,7 @@
             z-index: 1;
             mix-blend-mode: overlay;
             object-fit: cover;
-            @include lg {
+            @include abstracts.lg {
                 display: none;
             }
         }
@@ -184,14 +186,14 @@
         display: flex;
         gap: .5rem;
         flex-direction: column;
-        @include lg {
+        @include abstracts.lg {
             flex-direction: row;
             gap: 5vw;
             justify-content: space-around;
             margin-top: 10vh;
         }
     }
-    @include lg {
+    @include abstracts.lg {
         height: 100vh;
         background-color: #000;
         background-image: url('../img/menu_1200.jpg');
@@ -213,7 +215,7 @@
         // border: 2px solid yellow;
         position: relative;
         width: max-content;
-        @include lg {
+        @include abstracts.lg {
             margin-bottom: 15vh;
         }
         &::after {
@@ -223,13 +225,13 @@
             left: 0;
             width: 100%;
             height: .25rem;
-            background: $brand-border;
+            background: abstracts.$brand-border;
             border-top-left-radius: 1rem;
             border-top-right-radius: 1rem;
             transition: 1.25s;
         }
         span {
-            color: $brand;
+            color: abstracts.$brand;
             transition: 1.25s;
         }
 
@@ -241,7 +243,7 @@
 
         &.active-item {
             span {
-                color: $text-light;
+                color: abstracts.$text-light;
                 transition: 1.5s;
             }
             &::after {
@@ -257,7 +259,7 @@
         border-radius: .25rem;
         padding: .5rem;
         color: #fff;
-        @include lg {
+        @include abstracts.lg {
             flex-grow: 1;
             padding: 1rem;
         }
@@ -265,7 +267,7 @@
             text-transform: capitalize;
             margin-bottom: .5rem;
             font-size: 1.25rem;
-            font-size: $font-clamp-title-md;
+            font-size: abstracts.$font-clamp-title-md;
             transition: .25s;
             font-weight: 600;
         }
@@ -282,7 +284,7 @@
     
                 i {
                     width: 1.5rem;
-                    color: $brand-light;
+                    color: abstracts.$brand-light;
                     transition: .25s;
                 }
     
@@ -299,7 +301,7 @@
                     }
     
                     a {
-                        color: $brand-light;
+                        color: abstracts.$brand-light;
                     }
                 }
             }
@@ -315,14 +317,14 @@
             border-radius: inherit;
             opacity: .1;
             transition: .25s;
-            @include lg {
+            @include abstracts.lg {
                 opacity: .2;
             }
         }
 
         &:hover {
             h4 {
-                color: $brand;
+                color: abstracts.$brand;
             }
             &::after {
                 opacity: .8;

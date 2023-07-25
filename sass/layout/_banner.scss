@@ -1,3 +1,5 @@
+@use '../abstracts';
+
 #banner {
     // min-height: 100vh;
     // height: 100%;
@@ -13,7 +15,7 @@
     }
 
     .container-title {
-        @include sm {
+        @include abstracts.sm {
             text-align: center;
         }
     }
@@ -26,12 +28,12 @@
         display: flex;
         flex-direction: column;
         gap: 5vh;
-        @include sm {
+        @include abstracts.sm {
             gap: 10vh;
             // flex-direction: row;
         }
         figure {
-            border-radius: $border-radius-sm;
+            border-radius: abstracts.$border-radius-sm;
             border: 1px solid #000;
             background: #000;
             position: relative;
@@ -41,11 +43,11 @@
             img {
                 width: 100%;
                 border-radius: 0;
-                border-top-right-radius: $border-radius-sm;
-                border-top-left-radius: $border-radius-sm;
+                border-top-right-radius: abstracts.$border-radius-sm;
+                border-top-left-radius: abstracts.$border-radius-sm;
             }
 
-            @include sm {
+            @include abstracts.sm {
                 width: 400px;
                 img {
                     // object-fit: contain;
@@ -54,7 +56,7 @@
             }
 
             // DESKTOP FIGURE
-            @include md {
+            @include abstracts.md {
                 height: 80vh;
                 width: 100%;
                 display: flex;
@@ -74,7 +76,7 @@
                 background-color: #000;
                 padding: 1rem .5rem;
 
-                @include md {
+                @include abstracts.md {
                     // background-color: #fff;
                     // color: #000;
                     width: 50%;
@@ -86,9 +88,9 @@
                 .banner-image-title {
 
                     h3 {
-                        color: $brand-light;
-                        font-size: $font-clamp-title-md;
-                        @include lg {
+                        color: abstracts.$brand-light;
+                        font-size: abstracts.$font-clamp-title-md;
+                        @include abstracts.lg {
                             margin-bottom: 1rem;
                         }
                     }
@@ -100,7 +102,7 @@
                         flex-direction: column;
                         gap: 1rem;
 
-                        @include md {
+                        @include abstracts.md {
                             // flex-direction: row;
                             // align-items: center;
                             justify-content: space-between;
@@ -110,11 +112,11 @@
                     .flex-item {
                         outline: 1px solid transparent;
                         background: #222;
-                        border-radius: $border-radius-xsm;
+                        border-radius: abstracts.$border-radius-xsm;
                         padding: .5rem .25rem;
                         transition: .25s;
 
-                        @include md {
+                        @include abstracts.md {
                             // background: #f4f4f4;
                             padding: .5rem;
                         }
@@ -122,11 +124,11 @@
                             text-transform: capitalize;
                             font-weight: 500;
                             margin-bottom: .5rem;
-                            color: $text-light;
+                            color: abstracts.$text-light;
                         }
     
                         p {
-                            color: $text-light;
+                            color: abstracts.$text-light;
                             i {
                                 margin-right: .25rem;
                             }
@@ -134,7 +136,7 @@
                             line-height: 1.6;
     
                             span {
-                                color: $brand;
+                                color: abstracts.$brand;
                                 margin-left: .25rem;
                             }
     
@@ -145,18 +147,18 @@
     
                             &:hover {
                                 a {
-                                    color: $brand;
+                                    color: abstracts.$brand;
                                     transition: .25s;
                                 }
                             }
                         }
     
                         a {
-                            color: $text-light;
+                            color: abstracts.$text-light;
                             text-decoration: none;
     
                             i {
-                                color: $brand-light;
+                                color: abstracts.$brand-light;
                                 margin-right: .5rem;
                                 transition: .25s;
                             }
@@ -166,22 +168,22 @@
                                 transition: .25s;
     
                                 i {
-                                    color: $brand;
+                                    color: abstracts.$brand;
                                 }
                             }
                         }
 
                         // LI ITEM HOVER
                         &:hover {
-                            outline-color: $brand-light;
+                            outline-color: abstracts.$brand-light;
                             span {
-                                color: $brand-light;
+                                color: abstracts.$brand-light;
                                 transition: .25s;
                             }
                             a {
                                 i {
                                     transform: translateX(.25rem);
-                                    color: $brand;
+                                    color: abstracts.$brand;
                                 }
                             }
                         }

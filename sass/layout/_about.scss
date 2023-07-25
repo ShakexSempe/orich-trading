@@ -1,17 +1,19 @@
+@use '../abstracts';
+
 .container {
     position: relative;
 
     .about {
         position: relative;
-        @include lg {
+        @include abstracts.lg {
             padding: 10vh 0;
         }
-        @include xlg {
+        @include abstracts.xlg {
             .flex-container {
                 display: flex;
                 align-items: center;
                 padding: 5vh 0;
-                @include lg {
+                @include abstracts.lg {
                     padding: 0;
                 }
 
@@ -21,13 +23,13 @@
             padding: 5vh 5vw;
         }
         .about-article {
-            // border: 1px solid $brand;
+            // border: 1px solid abstracts.$brand;
             margin: 5vh 1rem 10vh 5vw;
             text-transform: none;
-            @include sm {
+            @include abstracts.sm {
                 margin: 5vh 5vw;
             }
-            @include xlg {
+            @include abstracts.xlg {
                 width: 100%;
             }
 
@@ -74,7 +76,7 @@
                     font-weight: 500;
                     font-size: 1rem;
                     font-size: clamp(1rem, 1.5vw, 1.15rem);
-                    font-size: $font-clamp-sm;
+                    font-size: abstracts.$font-clamp-sm;
                 }
             }
         }
@@ -82,7 +84,7 @@
             padding: 5vh 5vw;
             margin: 5vh 0;
             // border: 2px solid blue;
-            @include sm {
+            @include abstracts.sm {
                 // border: 2px solid yellow;
                 margin: 0;
                 display: flex;
@@ -91,10 +93,10 @@
                 align-items: center;
             }
             .vision {
-                // background: $brand;
-                // background: $brand-overlay-dark;
+                // background: abstracts.$brand;
+                // background: abstracts.$brand-overlay-dark;
                 background: linear-gradient(0deg, #000, #111);
-                color: $text-second;
+                color: abstracts.$text-second;
                 padding: 1rem .5rem;
                 border-radius: 5px;
                 margin: 0 1rem;
@@ -118,7 +120,7 @@
                         height: .15rem;
                         border-radius: 5px;
                         background: #f4f4f4;
-                        background: $brand;
+                        background: abstracts.$brand;
                         transition: 1.5s;
                     }
 
@@ -145,7 +147,7 @@
                             font-size: .95rem;
                         }
                         &::marker {
-                            color: $marker;
+                            color: abstracts.$marker;
                             color: hsla(0, 0%, 100%, 0.200);
                         }
 
@@ -170,7 +172,7 @@
                     font-size: clamp(1.5rem, 2vw, 1.65rem);
                     font-weight: 500;
                     margin-bottom: 1rem;
-                    font-family: $font-content;
+                    font-family: abstracts.$font-content;
                     text-transform: capitalize;
                     transition: .3s;
                     text-align: center;
@@ -240,23 +242,23 @@
                         place-items: center;
                         place-content: center;
                         padding: .5rem;
-                        @include md {
+                        @include abstracts.md {
                             // border: 2px solid blue;
                             padding: 1rem;
                             flex-basis: 20%;
                         }
                         @media (min-width: 768px) {
-                            // border-right: 1px solid $brand;
+                            // border-right: 1px solid abstracts.$brand;
                             
                         }
                         p {
-                            color: $text-second;
+                            color: abstracts.$text-second;
                             font-size: 1rem;
                             font-size: clamp(1rem, 1.5vw, 1.15rem);
                             span {
                                 margin: 0 0rem;
                             }
-                            @include md {
+                            @include abstracts.md {
                                 br {
                                     display: none;
                                 }
@@ -266,7 +268,7 @@
                         a {
                             text-transform: capitalize;
                             text-decoration: none;
-                            color: $brand-light;
+                            color: abstracts.$brand-light;
                             // border: 2px solid red;
                             display: flex;
                             justify-content: space-between;
@@ -281,7 +283,7 @@
                             &:hover {
                                 i {
                                     transform: translateX(.25rem);
-                                    color: $brand;
+                                    color: abstracts.$brand;
                                 }
                             }
                         }
@@ -308,7 +310,7 @@
                         li {
                             padding-bottom: 1rem;
                             &::marker {
-                                color: $marker;
+                                color: abstracts.$marker;
                             }
                         }
                     }
@@ -326,19 +328,19 @@
                     // border: 2px solid red;
                     position: relative;
                     isolation: isolate;
-                    @include md {
+                    @include abstracts.md {
                         width: auto;
                     }
                     ul {
                         margin-bottom: 5vh;
-                        @include md {
+                        @include abstracts.md {
                             margin-bottom: 10vh;
                         }
                     }
                     p {
                         &.article-intro {
                             margin-bottom: 1rem;
-                            @include md {
+                            @include abstracts.md {
                                 width: 50%;
                             }
                         }
@@ -354,11 +356,11 @@
                             overflow: hidden;
                             
                             img {
-                                border-radius: $border-radius-sm;
+                                border-radius: abstracts.$border-radius-sm;
                             }
                         }
 
-                        @include md {
+                        @include abstracts.md {
                             width: 20rem;
                             float: left;
                             overflow: hidden;
@@ -370,7 +372,7 @@
                                 height: auto;
 
                                 img {
-                                    border-radius: $border-radius-xsm;
+                                    border-radius: abstracts.$border-radius-xsm;
                                     width: 100%;
                                     height: auto;
                                 }
@@ -388,18 +390,18 @@
             }
             
             .vision-mission {
-                // border: 1px solid $brand;
+                // border: 1px solid abstracts.$brand;
                 padding: 1rem 0;
                 .vision {
                     background: #000;
-                    color: $text-second;
+                    color: abstracts.$text-second;
                     padding: 1rem;
                     margin: 0 5vw;
                     border-radius: .25rem;
                     overflow: hidden;
                     h3 {
                         font-size: 2.5rem;
-                        color: $brand;
+                        color: abstracts.$brand;
                         font-weight: 500;
                         margin-bottom: 1rem;
                         position: relative;
@@ -412,20 +414,20 @@
                             padding: .25rem 0rem .5rem .25rem;
                             font-weight: 400;
                             list-style: none;
-                            border-bottom: 2px solid $brand-lightest-border;
+                            border-bottom: 2px solid abstracts.$brand-lightest-border;
                             transition: .25s;
                             &::marker {
                                 color: #fff6;
                             }
 
-                            @include lg {
+                            @include abstracts.lg {
                                 padding-bottom: .5rem;
                             }
 
                             &:hover {
                                 background: #161616;
                                 border-color: transparent;
-                                border-radius: $border-radius-xsm;
+                                border-radius: abstracts.$border-radius-xsm;
                             }
                         }
                     }
@@ -442,7 +444,7 @@
                         font-size: 1.25rem;
                         font-weight: 500;
                         margin-bottom: 1rem;
-                        // font-family: $font-header;
+                        // font-family: abstracts.$font-header;
                         text-transform: capitalize;
                         transition: .3s;
                     }
@@ -455,7 +457,7 @@
                         color: #fff;
                         // FONT-UBUNTU ON SMALL SCREENS
                         @media (max-width: 768px) {
-                            // font-family: $font-ubuntu;
+                            // font-family: abstracts.$font-ubuntu;
                         }
                     }
 
@@ -477,7 +479,7 @@
                     // MS CLASS FOR HOVER STATES
                     .ms-item {
                         border-radius: .25rem;
-                        border: 1px solid $brand;
+                        border: 1px solid abstracts.$brand;
                         background: #111;
                         transition: .25s;
                         &[data-scroll] {
@@ -485,7 +487,7 @@
                             opacity: 1;
 
                             h4 {
-                                color: $brand;
+                                color: abstracts.$brand;
                             }
                             p {
                                 opacity: 0;
@@ -509,7 +511,7 @@
                             transition: .5s;
                             border: 1px solid transparent;
                             h4 {
-                                color: $brand;
+                                color: abstracts.$brand;
                                 transition: .5s;
                             }
                             p {

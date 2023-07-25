@@ -1,8 +1,10 @@
+@use '../abstracts';
+
 .services {
     background: #f4f4f4;
     padding: 10vh 5vw;
     .container-title {
-        @include sm {
+        @include abstracts.sm {
             text-align: center;
         }
     }
@@ -11,24 +13,24 @@
     }
     .promise {
         background: linear-gradient(90deg, #000, #000);
-        color: $text-light;
+        color: abstracts.$text-light;
         padding: 1rem;
         margin: 5vh 0;
-        border-radius: $border-radius-sm;
+        border-radius: abstracts.$border-radius-sm;
         isolation: isolate;
         position: relative;
         z-index: 1;
         box-shadow: 0 .25rem .5rem hsla(39, 100%, 50%, .2),
                     0 .5rem 1rem #0002;
 
-        @include md {
+        @include abstracts.md {
             margin: 0;
         }
         
 
         h3 {
-            color: $brand;
-            font-size: $font-clamp-title-md;
+            color: abstracts.$brand;
+            font-size: abstracts.$font-clamp-title-md;
             text-align: center;
             margin-bottom: 5vh;
         }
@@ -59,8 +61,8 @@
                     width: 100%;
                     height: .15rem;
                     background: #f4f4f4;
-                    background: linear-gradient(90deg, #f4f4f4, $brand);
-                    background: $brand-overlay;
+                    background: linear-gradient(90deg, #f4f4f4, abstracts.$brand);
+                    background: abstracts.$brand-overlay;
                     border-radius: 5px;
                     opacity: .5;
                     transition: .5s;
@@ -69,11 +71,11 @@
 
                 &:hover {
                     h4 {
-                        color: $brand-light;
+                        color: abstracts.$brand-light;
                         letter-spacing: normal;
                     }
                     &:after {
-                        background: $brand-border;
+                        background: abstracts.$brand-border;
                         transform: scaleX(1);
                     }
                 }
@@ -82,17 +84,17 @@
         }
     }
     .service-container {
-        // border: 1px solid $brand;
+        // border: 1px solid abstracts.$brand;
         margin: 0 auto 0;
         border-radius: 5px;
         
         .service-item {
-            // border: 1px solid $brand;
+            // border: 1px solid abstracts.$brand;
             display: flex;
             flex-direction: column;
             padding: 1rem .5rem;
             margin: 10vh auto;
-            border-radius: $border-radius-sm;
+            border-radius: abstracts.$border-radius-sm;
             width: 100%;
             position: relative;
             background: #fff;
@@ -106,7 +108,7 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                border-radius: $border-radius-sm;
+                border-radius: abstracts.$border-radius-sm;
                 z-index: -1;
                 transition: 1s;
             }
@@ -119,8 +121,8 @@
                             0rem .215rem .5rem rgba(0, 0,0, .2);
                 opacity: 0;
             }
-            @include md {
-                // border-bottom: 1px solid $brand;
+            @include abstracts.md {
+                // border-bottom: 1px solid abstracts.$brand;
             }
             .service-core {
                 flex-basis: 50%;
@@ -134,7 +136,7 @@
                     font-weight: 500;
                     transition: .5s ease;
 
-                    @include md {
+                    @include abstracts.md {
                         text-align: center;
                     }
                 }
@@ -145,7 +147,7 @@
                     font-size: 2.5rem;
                     transition: .3s;
                     filter: drop-shadow(.1rem .25rem .25rem rgba(0,0, 0, .2));
-                    @include md {
+                    @include abstracts.md {
                         margin: -2rem auto 1rem;
                         margin: 0 auto ;
                         transform: translateY(-2rem);
@@ -191,14 +193,14 @@
                 .service-core {
                     i {
                         // transform: translateY(.5rem);
-                        @include md {
+                        @include abstracts.md {
                         // transform: translateY(0);
                         }
                         filter: drop-shadow(.15rem .25rem .1rem rgba(0,0, 0, .250));
                         transition: 1s ease;
                     }
                     // h4 {
-                    //     color: $brand;
+                    //     color: abstracts.$brand;
                     //     transition: 1.5s;
                     // }
                 }
@@ -212,14 +214,14 @@
                 .service-core {
                     i {
                         transform: translateY(.5rem);
-                        @include md {
+                        @include abstracts.md {
                         transform: translateY(0);
                         }
                         filter: drop-shadow(0rem .25rem .1rem rgba(0,0, 0, .250));
                         transition: .5s ease;
                     }
                     h4 {
-                        color: $brand;
+                        color: abstracts.$brand;
                     }
                 }
                 
@@ -274,7 +276,7 @@
         }
     }
     }
-    @include md {
+    @include abstracts.md {
         padding: 5vh 5vw 5vh;
         // border: 2px solid red;
         .section-description {
@@ -312,7 +314,7 @@
 
 #services-page {
     .flex-container {
-        @include lg {
+        @include abstracts.lg {
             // border: 2px solid red;
             display: flex;
             justify-content: center;
@@ -322,7 +324,7 @@
                 padding: 1rem;
                 margin: 0;
                 h3 {
-                    font-size: $font-clamp-title-md;
+                    font-size: abstracts.$font-clamp-title-md;
                     margin-bottom: 5vh;
                 }
 

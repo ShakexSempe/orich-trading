@@ -1,3 +1,5 @@
+@use '../abstracts';
+
 #hero {
     min-height: 100vh;
     padding: 5vh 5vw;
@@ -19,13 +21,13 @@
             width: 100%;
             mix-blend-mode: darken;
 
-            @include lg {
+            @include abstracts.lg {
                 object-position: 90% 0%;
                 position: absolute;
                 top: 0;
                 right: 0;
                 width: 60%;
-                // border-left: 2px solid $brand-light;
+                // border-left: 2px solid abstracts.$brand-light;
             }
         }
     }
@@ -34,19 +36,19 @@
         position: relative;
         top: 50vh;
         background: rgba(0, 0, 0, .8);
-        border-radius: $border-radius-sm;
+        border-radius: abstracts.$border-radius-sm;
         padding: .25rem 0;
-        @include sm {
+        @include abstracts.sm {
             top: 55vh;
         }
-        @include lg {
+        @include abstracts.lg {
             padding: 1rem 0;
             top: 25vh;
             width: max-content;
         }
         // SLOGAN
         .slogan {
-            color: $text-light;
+            color: abstracts.$text-light;
             border-radius: 5px;
             position: relative;
             text-transform: capitalize;
@@ -59,14 +61,14 @@
                 br {
                     display: none;
                 }
-                @include lg {
+                @include abstracts.lg {
                     br {
                         display: block;
                     }
                 }
             }
             .hero-meta {
-                color: $text-light-trans;
+                color: abstracts.$text-light-trans;
                 font-weight: 200;
                 i {
                     width: 1.25rem;
@@ -77,19 +79,19 @@
             #cta {
                 // QUALITY OR NOTHING P
                 .slogan-p {
-                    color: $text-light;
+                    color: abstracts.$text-light;
                     margin: .25rem 0 .5rem;
                     letter-spacing: .0125rem;
                     span {
-                        color: $brand-light;
+                        color: abstracts.$brand-light;
                     }
-                    @include lg {
+                    @include abstracts.lg {
                         margin: .5rem 0 1rem;
                     }
                 }
                 .cta-btn {
                     font-size: 1.015rem;
-                    font-size: $font-clamp-sm;
+                    font-size: abstracts.$font-clamp-sm;
                     width: 12rem;
                     width: clamp(11rem, 15vw, 15rem);
             }
@@ -105,7 +107,7 @@
 
     // HERO ACTIVE BACKGROUND CLASS
     &.active {
-        background: $brand-overlay-dark;
-        background: $brand;
+        background: abstracts.$brand-overlay-dark;
+        background: abstracts.$brand;
     }
 }
