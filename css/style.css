@@ -2842,7 +2842,7 @@ img {
 .services .service-container .service-item .service-core h4 {
   text-transform: capitalize;
   font-size: 1.25rem;
-  font-size: clamp(1.25rem, 2vw, 1.4rem);
+  font-size: clamp(1.25rem, 2.25vw, 1.25rem);
   font-weight: 500;
   transition: 0.5s ease;
 }
@@ -2872,10 +2872,6 @@ img {
 }
 .services .service-container .service-item .service-type ul {
   padding: 1rem 0.5rem;
-  font-weight: 500;
-  width: 100%;
-  margin: 1rem auto;
-  border-radius: 5px;
   position: relative;
 }
 .services .service-container .service-item .service-type ul li {
@@ -2883,9 +2879,12 @@ img {
   text-transform: capitalize;
   font-weight: 400;
   transition: 1.5s;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.25rem;
 }
 .services .service-container .service-item .service-type ul li::marker {
-  color: #0005;
+  color: #0003;
+  color: transparent;
   transition: 1s;
 }
 .services .service-container .service-item .service-type ul li:last-child {
@@ -2929,8 +2928,11 @@ img {
 .services .service-container .service-item:hover .service-core h4 {
   color: #f8650c;
 }
+.services .service-container .service-item:hover .service-type ul li {
+  border-bottom-color: rgba(255, 166, 0, 0.2);
+}
 .services .service-container .service-item:hover .service-type ul li::marker {
-  color: #000;
+  color: #0005;
 }
 .services .service-section-pad {
   border-radius: 5px;
