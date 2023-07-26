@@ -186,12 +186,12 @@
     
     .flex-container {
         display: flex;
-        gap: .5rem;
+        display: grid;
+        gap: 1rem;
         flex-direction: column;
         @include abstracts.lg {
-            flex-direction: row;
-            gap: 5vw;
-            justify-content: space-around;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2rem;
             margin-top: 10vh;
         }
     }
@@ -209,14 +209,12 @@
     // TITLE
     h3 {
         text-transform: capitalize;
-        // text-transform: uppercase;
         margin-bottom: 5vh;
         font-size: 2.5rem;
-        font-size: clamp(2.5rem, 4vw, 3.5rem);
-        color: #fff;
-        // border: 2px solid yellow;
+        font-style: abstracts.$font-clamp-xlg;
         position: relative;
         width: max-content;
+        color: abstracts.$text-light;
         @include abstracts.lg {
             margin-bottom: 15vh;
         }
@@ -276,23 +274,25 @@
 
         ul {
             list-style: none;
-            margin-bottom: 5vh;
     
             li {
                 margin-bottom: .25rem;
                 width: 80%;
-                // border: 2px solid red;
                 padding-right: 1rem;
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+                @include abstracts.sm {
+                    flex-direction: row;
+                }
     
                 i {
-                    width: 1.5rem;
                     color: abstracts.$brand-light;
                     transition: .25s;
                 }
     
                 a {
-                    color: #fff;
-                    text-decoration: none;
+                    color: inherit;
                     transition: .25s;
                 }
     

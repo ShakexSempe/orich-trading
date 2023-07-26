@@ -137,14 +137,7 @@ section {
   font-weight: 500;
   font-size: 2rem;
   font-size: clamp(1.5rem, 4vw, 2rem);
-  font-size: clamp(1.5rem, 4vw, 2rem);
   transition: 1.5s ease;
-}
-@media (min-width: 768px) {
-  .container-title h2,
-.container-title h3 {
-    text-align: center;
-  }
 }
 .container-title.io-item::after {
   transition: 1.5s;
@@ -159,10 +152,23 @@ section {
   letter-spacing: normal;
 }
 
+h3 {
+  text-transform: capitalize;
+  color: #000;
+  font-size: 1.125rem;
+  font-size: clamp(1.25rem, 2.25vw, 1.25rem);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
 p {
   font-size: clamp(1rem, 1.5vw, 1.125rem);
   font-weight: 400;
   line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
 }
 
 * {
@@ -802,14 +808,11 @@ img {
   transform: scale(1) translateX(0);
 }
 .container .about .vision-mission .mission h3 {
-  color: #000;
   font-size: 1.5rem;
-  font-size: clamp(1.5rem, 2vw, 1.65rem);
-  font-weight: 500;
+  font-size: clamp(1.5rem, 4vw, 2rem);
   margin-bottom: 1rem;
-  font-family: "Prompt", sans-serif;
   text-transform: capitalize;
-  transition: 0.3s;
+  transition: 0.25s;
   text-align: center;
 }
 .container .about .vision-mission .mission .statement {
@@ -1188,7 +1191,7 @@ img {
   text-transform: capitalize;
   margin-bottom: 0.5rem;
   color: #ffa500;
-  font-size: clamp(1.125rem, 2vw, 1.25rem);
+  font-size: clamp(1.25rem, 2.25vw, 1.25rem);
 }
 @media (min-width: 820px) {
   #banner .banner-image-container figure .banner-content .banner-image-title h3 {
@@ -2210,7 +2213,7 @@ img {
   text-transform: capitalize;
   overflow: hidden;
   font-size: 1.25rem;
-  font-size: clamp(1.125rem, 2vw, 1.25rem);
+  font-size: clamp(1.25rem, 2.25vw, 1.25rem);
 }
 .menu .menu-item .menu-item-title p {
   font-size: clamp(1rem, 1.5vw, 1.125rem);
@@ -2338,14 +2341,14 @@ img {
 }
 .menu-cta .flex-container {
   display: flex;
-  gap: 0.5rem;
+  display: grid;
+  gap: 1rem;
   flex-direction: column;
 }
 @media (min-width: 820px) {
   .menu-cta .flex-container {
-    flex-direction: row;
-    gap: 5vw;
-    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
     margin-top: 10vh;
   }
 }
@@ -2365,10 +2368,10 @@ img {
   text-transform: capitalize;
   margin-bottom: 5vh;
   font-size: 2.5rem;
-  font-size: clamp(2.5rem, 4vw, 3.5rem);
-  color: #fff;
+  font-style: clamp(2rem, 5vw, 2.25rem);
   position: relative;
   width: max-content;
+  color: #fff;
 }
 @media (min-width: 820px) {
   .menu-cta h3 {
@@ -2418,27 +2421,32 @@ img {
   text-transform: capitalize;
   margin-bottom: 0.5rem;
   font-size: 1.25rem;
-  font-size: clamp(1.125rem, 2vw, 1.25rem);
+  font-size: clamp(1.25rem, 2.25vw, 1.25rem);
   transition: 0.25s;
   font-weight: 600;
 }
 .menu-cta .cta-item ul {
   list-style: none;
-  margin-bottom: 5vh;
 }
 .menu-cta .cta-item ul li {
   margin-bottom: 0.25rem;
   width: 80%;
   padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+@media (min-width: 500px) {
+  .menu-cta .cta-item ul li {
+    flex-direction: row;
+  }
 }
 .menu-cta .cta-item ul li i {
-  width: 1.5rem;
   color: #ffa500;
   transition: 0.25s;
 }
 .menu-cta .cta-item ul li a {
-  color: #fff;
-  text-decoration: none;
+  color: inherit;
   transition: 0.25s;
 }
 .menu-cta .cta-item ul li:hover i {
@@ -2746,7 +2754,7 @@ img {
 }
 .services .promise h3 {
   color: #f8650c;
-  font-size: clamp(1.125rem, 2vw, 1.25rem);
+  font-size: clamp(1.25rem, 2.25vw, 1.25rem);
   text-align: center;
   margin-bottom: 5vh;
 }
@@ -2997,7 +3005,7 @@ img {
     margin: 0;
   }
   #services-page .flex-container .section-description h3 {
-    font-size: clamp(1.125rem, 2vw, 1.25rem);
+    font-size: clamp(1.25rem, 2.25vw, 1.25rem);
     margin-bottom: 5vh;
   }
   #services-page .flex-container .section-description p {

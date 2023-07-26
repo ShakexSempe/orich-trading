@@ -163,27 +163,14 @@
                 }
             }
             .mission {
-                // border: 2px solid red;
-                // padding: 5vh 1rem;
-                // margin: 5vh 0 0;
                 h3 {
-                    color:#000;
                     font-size: 1.5rem;
-                    font-size: clamp(1.5rem, 2vw, 1.65rem);
-                    font-weight: 500;
+                    font-size: abstracts.$font-clamp-lg;
                     margin-bottom: 1rem;
-                    font-family: abstracts.$font-content;
                     text-transform: capitalize;
-                    transition: .3s;
+                    transition: .25s;
                     text-align: center;
                 }
-
-                // p {
-                //     margin-bottom: .5rem;
-                //     line-height: 1.6;
-                //     transition: .3s;
-                //     font-weight: 300;
-                // }
 
                 .statement {
                     border: 2px solid #000;
