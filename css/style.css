@@ -622,54 +622,46 @@ img {
   transition: 0.5s;
 }
 
-.container {
-  position: relative;
-}
-.container .about {
+.about {
   position: relative;
 }
 @media (min-width: 820px) {
-  .container .about {
+  .about {
     padding: 10vh 0;
   }
 }
 @media (min-width: 1024px) {
-  .container .about .flex-container {
-    display: flex;
-    align-items: center;
-    padding: 5vh 0;
+  .about .flex-container {
+    display: grid;
+    grid-gap: 10vw;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 1024px) and (min-width: 820px) {
-  .container .about .flex-container {
-    padding: 0;
-  }
-}
-.container .about .section-title {
+.about .section-title {
   padding: 5vh 5vw;
 }
-.container .about .about-article {
+.about .about-article {
   margin: 5vh 1rem 10vh 5vw;
   text-transform: none;
 }
 @media (min-width: 500px) {
-  .container .about .about-article {
+  .about .about-article {
     margin: 5vh 5vw;
   }
 }
 @media (min-width: 1024px) {
-  .container .about .about-article {
+  .about .about-article {
     width: 100%;
   }
 }
-.container .about .about-article .article-body {
+.about .about-article .article-body {
   margin-bottom: 5vh;
 }
-.container .about .about-article .article-body h3 {
+.about .about-article .article-body h3 {
   text-transform: capitalize;
   font-size: 1.15rem;
 }
-.container .about .about-article p.article-intro::first-letter {
+.about .about-article p.article-intro::first-letter {
   font-size: 2rem;
   padding: 0 0.2rem 0 0.05rem;
   background: #000;
@@ -680,14 +672,14 @@ img {
   box-shadow: 2px 3px 3px rgba(73, 86, 101, 0.15);
   text-shadow: 2px 2px 0px #f8650c;
 }
-.container .about .about-article ul {
+.about .about-article ul {
   margin: 0.5rem 0;
   padding: 0.5rem;
   position: relative;
   border-radius: 0.25rem;
   background: linear-gradient(90deg, #ddd, #fff);
 }
-.container .about .about-article ul li {
+.about .about-article ul li {
   position: relative;
   list-style: none;
   text-transform: capitalize;
@@ -696,12 +688,12 @@ img {
   font-size: clamp(1rem, 1.5vw, 1.15rem);
   font-size: clamp(1rem, 1.5vw, 1.125rem);
 }
-.container .about .vision-mission {
+.about .vision-mission {
   padding: 5vh 5vw;
   margin: 5vh 0;
 }
 @media (min-width: 500px) {
-  .container .about .vision-mission {
+  .about .vision-mission {
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -709,7 +701,7 @@ img {
     align-items: center;
   }
 }
-.container .about .vision-mission .vision {
+.about .vision-mission .vision {
   background: linear-gradient(0deg, #000, #111);
   color: #ffffff;
   padding: 1rem 0.5rem;
@@ -717,7 +709,7 @@ img {
   margin: 0 1rem;
   overflow: hidden;
 }
-.container .about .vision-mission .vision h3 {
+.about .vision-mission .vision h3 {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 5vh;
@@ -725,7 +717,7 @@ img {
   letter-spacing: 0.1rem;
   text-align: center;
 }
-.container .about .vision-mission .vision h3::after {
+.about .vision-mission .vision h3::after {
   position: absolute;
   content: "";
   bottom: -0.1rem;
@@ -738,38 +730,38 @@ img {
   background: #f8650c;
   transition: 1.5s;
 }
-.container .about .vision-mission .vision h3[data-scroll] {
+.about .vision-mission .vision h3[data-scroll] {
   transform: scale(1);
   opacity: 1;
 }
-.container .about .vision-mission .vision h3[data-scroll=in]::after {
+.about .vision-mission .vision h3[data-scroll=in]::after {
   width: 3.5rem;
 }
-.container .about .vision-mission .vision ul {
+.about .vision-mission .vision ul {
   padding: 0.5rem 0 0 1rem;
 }
-.container .about .vision-mission .vision ul li {
+.about .vision-mission .vision ul li {
   padding-bottom: 1rem;
   font-size: 1rem;
   font-weight: 400;
 }
 @media (max-width: 768px) {
-  .container .about .vision-mission .vision ul li {
+  .about .vision-mission .vision ul li {
     font-size: 0.95rem;
   }
 }
-.container .about .vision-mission .vision ul li::marker {
+.about .vision-mission .vision ul li::marker {
   color: #f4f4f4;
   color: rgba(255, 255, 255, 0.2);
 }
-.container .about .vision-mission .vision ul li[data-scroll] {
+.about .vision-mission .vision ul li[data-scroll] {
   transform: scale(1) translateX(3rem);
   transition: 2s;
 }
-.container .about .vision-mission .vision ul li[data-scroll=in] {
+.about .vision-mission .vision ul li[data-scroll=in] {
   transform: scale(1) translateX(0);
 }
-.container .about .vision-mission .mission h3 {
+.about .vision-mission .mission h3 {
   font-size: 1.5rem;
   font-size: clamp(1.5rem, 4vw, 2rem);
   margin-bottom: 1rem;
@@ -777,7 +769,7 @@ img {
   transition: 0.25s;
   text-align: center;
 }
-.container .about .vision-mission .mission .statement {
+.about .vision-mission .mission .statement {
   border: 2px solid #000;
   border-radius: 5px;
   width: 100%;
@@ -788,30 +780,30 @@ img {
   display: flex;
   flex-direction: column-reverse;
 }
-.container .about .vision-mission .mission .statement .mission-logo {
+.about .vision-mission .mission .statement .mission-logo {
   overflow: hidden;
   flex-basis: 90%;
 }
-.container .about .vision-mission .mission .statement .mission-logo figure {
+.about .vision-mission .mission .statement .mission-logo figure {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-.container .about .vision-mission .mission .statement .mission-logo figure img {
+.about .vision-mission .mission .statement .mission-logo figure img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   border-radius: 5px;
   transition: 1s;
 }
-.container .about .vision-mission .mission .statement .mission-logo figure.io-item img {
+.about .vision-mission .mission .statement .mission-logo figure.io-item img {
   transform: translate(0) scale(0.8);
 }
-.container .about .vision-mission .mission .statement .mission-logo figure.active-item img {
+.about .vision-mission .mission .statement .mission-logo figure.active-item img {
   transform: translate(0) scale(1);
   transition: 1s;
 }
-.container .about .vision-mission .mission .statement .mission-content {
+.about .vision-mission .mission .statement .mission-content {
   flex-basis: 50%;
   background: #000;
   text-align: center;
@@ -821,25 +813,25 @@ img {
   padding: 0.5rem;
 }
 @media (min-width: 768px) {
-  .container .about .vision-mission .mission .statement .mission-content {
+  .about .vision-mission .mission .statement .mission-content {
     padding: 1rem;
     flex-basis: 20%;
   }
 }
-.container .about .vision-mission .mission .statement .mission-content p {
+.about .vision-mission .mission .statement .mission-content p {
   color: #ffffff;
   font-size: 1rem;
   font-size: clamp(1rem, 1.5vw, 1.15rem);
 }
-.container .about .vision-mission .mission .statement .mission-content p span {
+.about .vision-mission .mission .statement .mission-content p span {
   margin: 0 0rem;
 }
 @media (min-width: 768px) {
-  .container .about .vision-mission .mission .statement .mission-content p br {
+  .about .vision-mission .mission .statement .mission-content p br {
     display: none;
   }
 }
-.container .about .vision-mission .mission .statement .mission-content a {
+.about .vision-mission .mission .statement .mission-content a {
   text-transform: capitalize;
   text-decoration: none;
   color: #ffa500;
@@ -848,97 +840,98 @@ img {
   align-items: center;
   gap: 0.5rem;
 }
-.container .about .vision-mission .mission .statement .mission-content a i {
+.about .vision-mission .mission .statement .mission-content a i {
   font-size: 0.85rem;
   transition: 0.25s;
 }
-.container .about .vision-mission .mission .statement .mission-content a:hover i {
+.about .vision-mission .mission .statement .mission-content a:hover i {
   transform: translateX(0.25rem);
   color: #f8650c;
 }
 @media (min-width: 820px) {
-  .container .about .vision-mission .vision {
+  .about .vision-mission .vision {
     padding: 5vh 0.5rem;
     margin: 0 5vw;
     width: 70%;
   }
-  .container .about .vision-mission .vision h3 {
+  .about .vision-mission .vision h3 {
     font-size: 2.5rem;
   }
-  .container .about .vision-mission .vision ul li {
+  .about .vision-mission .vision ul li {
     padding-bottom: 1rem;
   }
-  .container .about .vision-mission .vision ul li::marker {
+  .about .vision-mission .vision ul li::marker {
     color: #f4f4f4;
   }
 }
-.container#about-page .article-container {
+
+#about-page .article-container {
   padding: 0vh 0 5vh;
 }
-.container#about-page .article-container .page-article {
+#about-page .article-container .page-article {
   position: relative;
   isolation: isolate;
 }
 @media (min-width: 768px) {
-  .container#about-page .article-container .page-article {
+  #about-page .article-container .page-article {
     width: auto;
   }
 }
-.container#about-page .article-container .page-article ul {
+#about-page .article-container .page-article ul {
   margin-bottom: 5vh;
 }
 @media (min-width: 768px) {
-  .container#about-page .article-container .page-article ul {
+  #about-page .article-container .page-article ul {
     margin-bottom: 10vh;
   }
 }
-.container#about-page .article-container .page-article p.article-intro {
+#about-page .article-container .page-article p.article-intro {
   margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
-  .container#about-page .article-container .page-article p.article-intro {
+  #about-page .article-container .page-article p.article-intro {
     width: 50%;
   }
 }
-.container#about-page .article-container .page-article .article-pad {
+#about-page .article-container .page-article .article-pad {
   background-color: #fff;
   width: auto;
   margin: 5vh auto;
 }
-.container#about-page .article-container .page-article .article-pad figure {
+#about-page .article-container .page-article .article-pad figure {
   width: 100%;
   overflow: hidden;
 }
-.container#about-page .article-container .page-article .article-pad figure img {
+#about-page .article-container .page-article .article-pad figure img {
   border-radius: 0.5rem;
 }
 @media (min-width: 768px) {
-  .container#about-page .article-container .page-article .article-pad {
+  #about-page .article-container .page-article .article-pad {
     width: 20rem;
     float: left;
     overflow: hidden;
     margin: 0 0.5rem 0 0;
   }
-  .container#about-page .article-container .page-article .article-pad figure {
+  #about-page .article-container .page-article .article-pad figure {
     margin: 0;
     width: 100%;
     height: auto;
   }
-  .container#about-page .article-container .page-article .article-pad figure img {
+  #about-page .article-container .page-article .article-pad figure img {
     border-radius: 0.25rem;
     width: 100%;
     height: auto;
   }
-  .container#about-page .article-container .page-article .article-pad.reverse {
+  #about-page .article-container .page-article .article-pad.reverse {
     float: right;
     margin-right: 0;
     margin-left: 0.25rem;
   }
 }
-.container#about-page .vision-mission {
+#about-page .vision-mission {
   padding: 1rem 0;
 }
-.container#about-page .vision-mission .vision {
+#about-page .vision-mission .vision {
   background: #000;
   color: #ffffff;
   padding: 1rem;
@@ -946,7 +939,7 @@ img {
   border-radius: 0.25rem;
   overflow: hidden;
 }
-.container#about-page .vision-mission .vision h3 {
+#about-page .vision-mission .vision h3 {
   font-size: 2.5rem;
   color: #f8650c;
   font-weight: 500;
@@ -954,7 +947,7 @@ img {
   position: relative;
   width: fit-content;
 }
-.container#about-page .vision-mission .vision ul li {
+#about-page .vision-mission .vision ul li {
   margin-bottom: 1rem;
   padding: 0.25rem 0rem 0.5rem 0.25rem;
   font-weight: 400;
@@ -962,26 +955,26 @@ img {
   border-bottom: 2px solid rgba(255, 166, 0, 0.3);
   transition: 0.25s;
 }
-.container#about-page .vision-mission .vision ul li::marker {
+#about-page .vision-mission .vision ul li::marker {
   color: #fff6;
 }
 @media (min-width: 820px) {
-  .container#about-page .vision-mission .vision ul li {
+  #about-page .vision-mission .vision ul li {
     padding-bottom: 0.5rem;
   }
 }
-.container#about-page .vision-mission .vision ul li:hover {
+#about-page .vision-mission .vision ul li:hover {
   background: #161616;
   border-color: transparent;
   border-radius: 0.25rem;
 }
-.container#about-page .vision-mission .mission {
+#about-page .vision-mission .mission {
   background: #f4f4f4;
   background: #000;
   padding: 5vh 5vw;
   margin: 10vh 0 0;
 }
-.container#about-page .vision-mission .mission h4 {
+#about-page .vision-mission .mission h4 {
   color: #000;
   color: #fff;
   font-size: 1.25rem;
@@ -990,89 +983,89 @@ img {
   text-transform: capitalize;
   transition: 0.3s;
 }
-.container#about-page .vision-mission .mission p {
+#about-page .vision-mission .mission p {
   margin-bottom: 0.5rem;
   line-height: 1.6;
   transition: 0.3s;
   font-weight: 400;
   color: #fff;
 }
-.container#about-page .vision-mission .mission .statement {
+#about-page .vision-mission .mission .statement {
   padding: 0.5rem;
   width: 100%;
   margin-bottom: 1rem;
 }
-.container#about-page .vision-mission .mission .term {
+#about-page .vision-mission .mission .term {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-.container#about-page .vision-mission .mission .term .objective {
+#about-page .vision-mission .mission .term .objective {
   padding: 0.5rem;
 }
-.container#about-page .vision-mission .mission .ms-item {
+#about-page .vision-mission .mission .ms-item {
   border-radius: 0.25rem;
   border: 1px solid #f8650c;
   background: #111;
   transition: 0.25s;
 }
-.container#about-page .vision-mission .mission .ms-item[data-scroll] {
+#about-page .vision-mission .mission .ms-item[data-scroll] {
   transform: scale(1);
   opacity: 1;
 }
-.container#about-page .vision-mission .mission .ms-item[data-scroll] h4 {
+#about-page .vision-mission .mission .ms-item[data-scroll] h4 {
   color: #f8650c;
 }
-.container#about-page .vision-mission .mission .ms-item[data-scroll] p {
+#about-page .vision-mission .mission .ms-item[data-scroll] p {
   opacity: 0;
 }
-.container#about-page .vision-mission .mission .ms-item[data-scroll=in] h4 {
+#about-page .vision-mission .mission .ms-item[data-scroll=in] h4 {
   color: #000;
   color: #fff;
   transition: 1s;
 }
-.container#about-page .vision-mission .mission .ms-item[data-scroll=in] p {
+#about-page .vision-mission .mission .ms-item[data-scroll=in] p {
   transition: 1.5s;
   opacity: 1;
 }
-.container#about-page .vision-mission .mission .ms-item:hover {
+#about-page .vision-mission .mission .ms-item:hover {
   background: #fff;
   background: #000;
   transition: 0.5s;
   border: 1px solid transparent;
 }
-.container#about-page .vision-mission .mission .ms-item:hover h4 {
+#about-page .vision-mission .mission .ms-item:hover h4 {
   color: #f8650c;
   transition: 0.5s;
 }
-.container#about-page .vision-mission .mission .ms-item:hover p {
+#about-page .vision-mission .mission .ms-item:hover p {
   transition: 0.1s;
 }
 @media (min-width: 768px) {
-  .container#about-page .vision-mission {
+  #about-page .vision-mission {
     padding: 5vh 0 0;
     margin-top: 10vh;
   }
-  .container#about-page .vision-mission .vision {
+  #about-page .vision-mission .vision {
     margin: 0 auto;
     width: 70%;
   }
-  .container#about-page .vision-mission .vision h3 {
+  #about-page .vision-mission .vision h3 {
     font-size: 2.5rem;
     width: auto;
   }
-  .container#about-page .vision-mission .mission {
+  #about-page .vision-mission .mission {
     padding: 10vh 5vw;
   }
-  .container#about-page .vision-mission .mission .statement {
+  #about-page .vision-mission .mission .statement {
     padding: 0.5rem;
     width: 100%;
   }
-  .container#about-page .vision-mission .mission .term {
+  #about-page .vision-mission .mission .term {
     display: flex;
     flex-direction: row;
   }
-  .container#about-page .vision-mission .mission .term .objective {
+  #about-page .vision-mission .mission .term .objective {
     flex-basis: 50%;
     padding: 0.5rem;
   }

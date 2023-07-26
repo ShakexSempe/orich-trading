@@ -1,29 +1,25 @@
 @use '../abstracts';
 
-.container {
-    position: relative;
-
+    // ABOUT SECTION
     .about {
         position: relative;
         @include abstracts.lg {
             padding: 10vh 0;
         }
+        // DESKTOP GRID LAYOUT
+        // 2 COLUMNS = ARTICLE + MISSION STATEMENT CARD
         @include abstracts.xlg {
             .flex-container {
-                display: flex;
-                align-items: center;
-                padding: 5vh 0;
-                @include abstracts.lg {
-                    padding: 0;
-                }
-
+                @include abstracts.grid(2, 10vw);
             }
         }
+
+        // SECTION TITLE PADDING BECAUSE ABOUT SECTION HAS 0 PADDING 
         .section-title {
             padding: 5vh 5vw;
         }
+        // ABOUT ARTICLE
         .about-article {
-            // border: 1px solid abstracts.$brand;
             margin: 5vh 1rem 10vh 5vw;
             text-transform: none;
             @include abstracts.sm {
@@ -33,6 +29,7 @@
                 width: 100%;
             }
 
+            // ABOUT TOP ARTICLE 
             .article-body {
                 margin-bottom: 5vh;
 
@@ -43,6 +40,7 @@
 
             }
 
+            // FIRST LETTER OF THIS P ARTICLE HAS MAGAZINE STYLE FIRST LETTER
             p {
 
                 &.article-intro {
@@ -80,6 +78,8 @@
                 }
             }
         }
+
+        // ABOUT PAGE VISION AND MISSION ARTICLES
         .vision-mission {
             padding: 5vh 5vw;
             margin: 5vh 0;
@@ -307,7 +307,7 @@
     }
 
     // ABOUT PAGE
-    &#about-page {
+    #about-page {
             .article-container {
                 padding: 0vh 0 5vh;
 
@@ -542,4 +542,3 @@
                 }
             }
     }
-}
