@@ -2267,53 +2267,6 @@ img {
   padding: 10vh 5vw;
   position: relative;
 }
-.menu-cta .menu-cta-figure {
-  background: rgba(0, 0, 0, 0.85);
-  position: absolute;
-  inset: 0;
-}
-@media (min-width: 820px) {
-  .menu-cta .menu-cta-figure {
-    background: rgba(0, 0, 0, 0.65);
-  }
-}
-.menu-cta .menu-cta-figure img {
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  mix-blend-mode: overlay;
-  object-fit: cover;
-}
-@media (min-width: 820px) {
-  .menu-cta .menu-cta-figure img {
-    display: none;
-  }
-}
-.menu-cta .flex-container {
-  display: flex;
-  display: grid;
-  gap: 1rem;
-  flex-direction: column;
-}
-@media (min-width: 820px) {
-  .menu-cta .flex-container {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
-    margin-top: 10vh;
-  }
-}
-@media (min-width: 820px) {
-  .menu-cta {
-    height: 100vh;
-    background-color: #000;
-    background-image: url("../img/menu_1200.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    padding: 20vh 5vw;
-  }
-}
 .menu-cta h3 {
   text-transform: capitalize;
   margin-bottom: 5vh;
@@ -2353,6 +2306,50 @@ img {
 }
 .menu-cta h3.active-item::after {
   transform: scaleX(1);
+}
+@media (min-width: 820px) {
+  .menu-cta {
+    height: 100vh;
+    background-image: url("../img/menu_1200.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 20vh 5vw;
+  }
+}
+.menu-cta .menu-cta-figure {
+  background: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  inset: 0;
+}
+@media (min-width: 820px) {
+  .menu-cta .menu-cta-figure {
+    background: rgba(0, 0, 0, 0.65);
+  }
+}
+.menu-cta .menu-cta-figure img {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  mix-blend-mode: overlay;
+  object-fit: cover;
+}
+@media (min-width: 820px) {
+  .menu-cta .menu-cta-figure img {
+    display: none;
+  }
+}
+.menu-cta .grid-container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 820px) {
+  .menu-cta .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10vh;
+  }
 }
 .menu-cta .cta-item {
   position: relative;
