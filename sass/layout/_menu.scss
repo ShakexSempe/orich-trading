@@ -284,11 +284,9 @@
         }
     }
 
-    
-
     // CTA MENU ITEMS 
+    // GRID ITEMS
     .cta-item {
-        // border: 2px solid red;
         position: relative;
         isolation: isolate;
         border-radius: .25rem;
@@ -296,10 +294,10 @@
         color: #fff;
 
         @include abstracts.lg {
-            flex-grow: 1;
             padding: 1rem;
         }
 
+        // ITEM TITLE = H4
         h4 {
             text-transform: capitalize;
             margin-bottom: .5rem;
@@ -308,10 +306,12 @@
             transition: .25s;
             font-weight: 600;
         }
-
+        // CONTACT ITEM LIST = UL
         ul {
             list-style: none;
 
+            // LIST ITEM = FLEX ITEM 
+            // FLEX ITEMS = LINK + ICON
             li {
                 margin-bottom: .25rem;
                 width: 80%;
@@ -330,10 +330,10 @@
                 }
 
                 a {
-                    color: inherit;
                     transition: .25s;
                 }
 
+                // LINK HOVER STATE = TRANSLATE ICON AND CHANGE LINK COLOR
                 &:hover {
                     i {
                         transform: translateX(.25rem);
@@ -348,6 +348,7 @@
         }
 
         // ITEM BG
+        // PSEUDO DARK BG FOR GRID ITEMS FOR HOVER STATE
         &::after {
             content: '';
             position: absolute;
@@ -363,6 +364,8 @@
             }
         }
 
+        // ITEM BOX HOVER STATE
+        // = CHANGE TITLE COLOR AND MAKE BG VISIBLE
         &:hover {
             h4 {
                 color: abstracts.$brand;

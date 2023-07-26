@@ -130,6 +130,7 @@ p {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 * {
@@ -2360,7 +2361,6 @@ img {
 }
 @media (min-width: 820px) {
   .menu-cta .cta-item {
-    flex-grow: 1;
     padding: 1rem;
   }
 }
@@ -2393,7 +2393,6 @@ img {
   transition: 0.25s;
 }
 .menu-cta .cta-item ul li a {
-  color: inherit;
   transition: 0.25s;
 }
 .menu-cta .cta-item ul li:hover i {
