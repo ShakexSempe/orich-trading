@@ -151,14 +151,16 @@ section {
 }
 
 h3 {
-    text-transform: capitalize;
     color: abstracts.$text-main;
+    text-transform: capitalize;
     font-size: 1.125rem;
     font-size: abstracts.$font-clamp-md;
     font-weight: 600;
     margin-bottom: .5rem;
 }
+
 p {
+    color: abstracts.$text-main-light;
     font-size: abstracts.$font-clamp-sm;
     font-weight: 400;
     line-height: 1.6;

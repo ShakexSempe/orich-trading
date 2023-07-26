@@ -1,7 +1,7 @@
 
 // $font-content: 'Prompt', sans-serif;
-$primary-color: #fff;
-$secondary-color: #000;
+// $primary-color: #fff;
+// $secondary-color: #000;
 $brand: #f8650c;
 $brand-dark: hsl(23, 94%, 51%);
 $brand-light: #ffa500;
@@ -13,8 +13,9 @@ $brand-overlay-dark: linear-gradient(45deg, $brand, $brand-light);
 $brand-overlay-darker: linear-gradient(-30deg, $brand, $brand-light, $brand);
 $brand-btn: linear-gradient(0deg, $brand-dark, $brand-light);
 $brand-btn-hover: linear-gradient(0deg, $brand-light, $brand-dark);
-$bg-main: #fff;
-$bg-second: #000;
+$bg-main: #ffffff;
+$bg-main-light: #f4f4f4;
+$bg-second: #000000;
 
 
 $font-clamp-xsm: clamp(.95rem, 1vw, 1rem);
