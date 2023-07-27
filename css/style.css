@@ -123,7 +123,7 @@ h3 {
 
 p {
   color: #333;
-  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  font-size: clamp(1rem, 1.25vw, 1.025rem);
   font-weight: 400;
   line-height: 1.6;
 }
@@ -657,10 +657,6 @@ img {
 .about .about-article .article-body {
   margin-bottom: 5vh;
 }
-.about .about-article .article-body h3 {
-  text-transform: capitalize;
-  font-size: 1.15rem;
-}
 .about .about-article p.article-intro::first-letter {
   font-size: 2rem;
   padding: 0 0.2rem 0 0.05rem;
@@ -685,8 +681,7 @@ img {
   text-transform: capitalize;
   font-weight: 500;
   font-size: 1rem;
-  font-size: clamp(1rem, 1.5vw, 1.15rem);
-  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  font-size: clamp(1rem, 1.25vw, 1.025rem);
 }
 .about .vision-mission {
   padding: 5vh 5vw;
@@ -701,66 +696,6 @@ img {
     align-items: center;
   }
 }
-.about .vision-mission .vision {
-  background: linear-gradient(0deg, #000, #111);
-  color: #ffffff;
-  padding: 1rem 0.5rem;
-  border-radius: 5px;
-  margin: 0 1rem;
-  overflow: hidden;
-}
-.about .vision-mission .vision h3 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 5vh;
-  position: relative;
-  letter-spacing: 0.1rem;
-  text-align: center;
-}
-.about .vision-mission .vision h3::after {
-  position: absolute;
-  content: "";
-  bottom: -0.1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 0.15rem;
-  border-radius: 5px;
-  background: #f4f4f4;
-  background: #f8650c;
-  transition: 1.5s;
-}
-.about .vision-mission .vision h3[data-scroll] {
-  transform: scale(1);
-  opacity: 1;
-}
-.about .vision-mission .vision h3[data-scroll=in]::after {
-  width: 3.5rem;
-}
-.about .vision-mission .vision ul {
-  padding: 0.5rem 0 0 1rem;
-}
-.about .vision-mission .vision ul li {
-  padding-bottom: 1rem;
-  font-size: 1rem;
-  font-weight: 400;
-}
-@media (max-width: 768px) {
-  .about .vision-mission .vision ul li {
-    font-size: 0.95rem;
-  }
-}
-.about .vision-mission .vision ul li::marker {
-  color: #f4f4f4;
-  color: rgba(255, 255, 255, 0.2);
-}
-.about .vision-mission .vision ul li[data-scroll] {
-  transform: scale(1) translateX(3rem);
-  transition: 2s;
-}
-.about .vision-mission .vision ul li[data-scroll=in] {
-  transform: scale(1) translateX(0);
-}
 .about .vision-mission .mission h3 {
   font-size: 1.5rem;
   font-size: clamp(1.5rem, 4vw, 2rem);
@@ -771,7 +706,7 @@ img {
 }
 .about .vision-mission .mission .statement {
   border: 2px solid #000;
-  border-radius: 5px;
+  border-radius: 0.25rem;
   width: 100%;
   height: 50vh;
   overflow: hidden;
@@ -793,7 +728,6 @@ img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border-radius: 5px;
   transition: 1s;
 }
 .about .vision-mission .mission .statement .mission-logo figure.io-item img {
@@ -820,20 +754,9 @@ img {
 }
 .about .vision-mission .mission .statement .mission-content p {
   color: #ffffff;
-  font-size: 1rem;
-  font-size: clamp(1rem, 1.5vw, 1.15rem);
-}
-.about .vision-mission .mission .statement .mission-content p span {
-  margin: 0 0rem;
-}
-@media (min-width: 768px) {
-  .about .vision-mission .mission .statement .mission-content p br {
-    display: none;
-  }
 }
 .about .vision-mission .mission .statement .mission-content a {
   text-transform: capitalize;
-  text-decoration: none;
   color: #ffa500;
   display: flex;
   justify-content: space-between;
@@ -845,7 +768,7 @@ img {
   transition: 0.25s;
 }
 .about .vision-mission .mission .statement .mission-content a:hover i {
-  transform: translateX(0.25rem);
+  transform: translateX(-0.25rem);
   color: #f8650c;
 }
 @media (min-width: 820px) {
@@ -865,9 +788,6 @@ img {
   }
 }
 
-#about-page .article-container {
-  padding: 0vh 0 5vh;
-}
 #about-page .article-container .page-article {
   position: relative;
   isolation: isolate;
@@ -878,11 +798,11 @@ img {
   }
 }
 #about-page .article-container .page-article ul {
-  margin-bottom: 5vh;
+  margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
   #about-page .article-container .page-article ul {
-    margin-bottom: 10vh;
+    margin-bottom: 2rem;
   }
 }
 #about-page .article-container .page-article p.article-intro {
@@ -969,7 +889,6 @@ img {
   border-radius: 0.25rem;
 }
 #about-page .vision-mission .mission {
-  background: #f4f4f4;
   background: #000;
   padding: 5vh 5vw;
   margin: 10vh 0 0;
@@ -984,11 +903,9 @@ img {
   transition: 0.3s;
 }
 #about-page .vision-mission .mission p {
+  color: #dbdbdb;
   margin-bottom: 0.5rem;
-  line-height: 1.6;
-  transition: 0.3s;
-  font-weight: 400;
-  color: #fff;
+  transition: 0.25s;
 }
 #about-page .vision-mission .mission .statement {
   padding: 0.5rem;
@@ -1009,27 +926,7 @@ img {
   background: #111;
   transition: 0.25s;
 }
-#about-page .vision-mission .mission .ms-item[data-scroll] {
-  transform: scale(1);
-  opacity: 1;
-}
-#about-page .vision-mission .mission .ms-item[data-scroll] h4 {
-  color: #f8650c;
-}
-#about-page .vision-mission .mission .ms-item[data-scroll] p {
-  opacity: 0;
-}
-#about-page .vision-mission .mission .ms-item[data-scroll=in] h4 {
-  color: #000;
-  color: #fff;
-  transition: 1s;
-}
-#about-page .vision-mission .mission .ms-item[data-scroll=in] p {
-  transition: 1.5s;
-  opacity: 1;
-}
 #about-page .vision-mission .mission .ms-item:hover {
-  background: #fff;
   background: #000;
   transition: 0.5s;
   border: 1px solid transparent;
@@ -1290,7 +1187,7 @@ img {
   font-weight: 500;
   font-size: 1.25rem;
   font-size: clamp(1.25rem, 2.25vw, 1.4rem);
-  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  font-size: clamp(1rem, 1.25vw, 1.025rem);
 }
 #contact .contact-items .contact-item .contact-item-title i {
   font-size: 2.5rem;
@@ -2111,7 +2008,7 @@ img {
 }
 #hero .hero-title .slogan #cta .cta-btn {
   font-size: 1.015rem;
-  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  font-size: clamp(1rem, 1.25vw, 1.025rem);
   width: 12rem;
   width: clamp(11rem, 15vw, 15rem);
 }
@@ -2160,7 +2057,6 @@ img {
 }
 .menu-item .menu-item-title p {
   max-width: 450px;
-  text-wrap: balance;
 }
 @media (min-width: 820px) {
   .menu-item .menu-item-title p {

@@ -51,7 +51,6 @@
         // ..AND TEXT AREA IN 3 COLUMN GRID
         p {
             max-width: 450px;
-            text-wrap: balance;
 
             @include abstracts.lg {
                 height: 9rem;
