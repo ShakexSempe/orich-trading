@@ -3,6 +3,7 @@
 .services {
     background: #f4f4f4;
     padding: 10vh 5vw;
+    // TITLE IS CENTER ALIGNED ON DESKTOP SAME AS SERVICES ITEMS
     .container-title {
         @include abstracts.sm {
             text-align: center;
