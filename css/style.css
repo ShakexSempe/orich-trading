@@ -2465,6 +2465,11 @@ img {
   background: linear-gradient(-30deg, #f8650c, #ffa500, #f8650c);
   padding: 10vh 5vw;
 }
+@media (min-width: 820px) {
+  #references {
+    padding: 20vh 5vw;
+  }
+}
 #references .references {
   display: grid;
   place-items: center;
@@ -2493,24 +2498,30 @@ img {
   display: block;
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
 }
+@media (min-width: 768px) {
+  #references .references .reference {
+    padding: 1rem;
+  }
+  #references .references .reference p {
+    display: flex;
+    align-items: center;
+  }
+}
 #references .references .reference .item-icon {
   position: absolute;
   top: 50%;
+  right: 1rem;
   transform: translateY(-50%);
-  right: 1rem;
   font-size: 7rem;
-  right: 10vw;
-  right: 1rem;
   color: rgba(179, 116, 0, 0.5);
   opacity: 0.25;
-  z-index: -1;
   transition: 0.25s;
+  z-index: -1;
 }
 #references .references .reference h3 {
   text-transform: capitalize;
-  font-size: 1.125rem;
-  font-size: 2vw;
-  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  font-size: 1rem;
+  font-size: clamp(1.05rem, 1.5vw, 1.25rem);
   font-weight: 600;
 }
 #references .references .reference .ref-name {
@@ -2545,18 +2556,6 @@ img {
 }
 #references .references .reference:hover .item-icon {
   opacity: 0.5;
-}
-@media (min-width: 1024px) {
-  #references {
-    padding: 20vh 5vw;
-  }
-  #references .references .reference {
-    padding: 0.5rem;
-  }
-  #references .references .reference p {
-    display: flex;
-    align-items: center;
-  }
 }
 
 .services {

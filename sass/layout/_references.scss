@@ -1,9 +1,13 @@
 @use '../abstracts';
 
+// CERTIFICATES
 #references {
     background: linear-gradient(90deg, hsl(0, 0%, 20%), hsl(0, 0%, 25%), hsl(0, 0%, 20%));
     background: abstracts.$brand-overlay-darker;
     padding: 10vh 5vw;
+    @include abstracts.lg {
+        padding: 20vh 5vw;
+    }
     .references {
         display: grid;
         place-items: center;
@@ -18,7 +22,6 @@
         }
 
         .reference {
-            // border: 2px solid abstracts.$brand-light;
             background-color: #fff;
             border-radius: abstracts.$border-radius-sm;
             width: 100%;
@@ -30,25 +33,32 @@
             isolation: isolate;
             display: block;
             box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .25);
+            // DESKTOP CARD STYLE
+            @include abstracts.md {
+                padding: 1rem;
+                p {
+                    display: flex;
+                    align-items: center;
+
+                }
+            }
             .item-icon {
                 position: absolute;
                 top: 50%;
+                right: 1rem;
                 transform: translateY(-50%);
-                right: 1rem;
                 font-size: 7rem;
-                right: 10vw;
-                right: 1rem;
                 color: hsla(39, 100%, 35%, .5);
                 opacity: .25;
-                z-index: -1;
                 transition: .25s;
+                z-index: -1;
             }
             
             h3 {
                 text-transform: capitalize;
-                font-size: 1.125rem;
-                font-size: 2vw;
-                font-size: clamp(1.05rem, 2vw, 1.25rem);
+                font-size: 1rem;
+                font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+                // font-size: abstracts.$font-clamp-sm;
                 font-weight: 600;
             }
 
@@ -94,31 +104,5 @@
                 }
             }
         }
-    }
-
-    @media (min-width: 1024px) {
-        padding: 20vh 5vw;
-
-        .references {
-    
-            .reference {
-                // border: 2px solid yellow;
-                padding: .5rem;
-                // display: flex;
-                // flex-direction: column;
-                // justify-content: center;
-                // align-items: center;
-
-                p {
-                    display: flex;
-                    align-items: center;
-
-                    i {
-                        // flex-basis: 10%;
-                    }
-                }
-            }
-        }
-
     }
 }
