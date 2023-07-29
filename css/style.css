@@ -2569,85 +2569,29 @@ img {
   }
 }
 .services .section-description {
-  margin-bottom: 1rem;
-}
-.services .promise {
-  background: linear-gradient(90deg, #000, #000);
-  color: #fff;
-  padding: 1rem;
-  margin: 5vh 0;
-  border-radius: 0.5rem;
-  isolation: isolate;
-  position: relative;
-  z-index: 1;
-  box-shadow: 0 0.25rem 0.5rem rgba(255, 166, 0, 0.2), 0 0.5rem 1rem #0002;
+  margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
-  .services .promise {
-    margin: 0;
+  .services .section-description {
+    margin: 5vh auto 10vh;
   }
-}
-.services .promise h3 {
-  color: #f8650c;
-  font-size: clamp(1.25rem, 2.25vw, 1.25rem);
-  text-align: center;
-  margin-bottom: 5vh;
-}
-.services .promise ul li {
-  margin-bottom: 5vh;
-  padding-bottom: 0.5rem;
-  list-style: none;
-  position: relative;
-}
-.services .promise ul li h4 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  letter-spacing: 0.025rem;
-  transition: 0.5s;
-}
-.services .promise ul li p {
-  color: #ddd;
-  font-weight: 400;
-}
-.services .promise ul li::after {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0.15rem;
-  background: #f4f4f4;
-  background: linear-gradient(90deg, #f4f4f4, #f8650c);
-  background: linear-gradient(90deg, #f8650c, darkorange, #f8650c);
-  border-radius: 5px;
-  opacity: 0.5;
-  transition: 0.5s;
-  transform: scaleX(0.8);
-}
-.services .promise ul li:hover h4 {
-  color: #ffa500;
-  letter-spacing: normal;
-}
-.services .promise ul li:hover:after {
-  background: linear-gradient(90deg, #f8670d, #ffa500, #f8670d);
-  transform: scaleX(1);
-}
-.services .service-container {
-  margin: 0 auto 0;
-  border-radius: 5px;
 }
 .services .service-container .service-item {
   display: flex;
   flex-direction: column;
+  width: 100%;
   padding: 1rem 0.5rem;
   margin: 10vh auto;
   border-radius: 0.5rem;
-  width: 100%;
   position: relative;
   background: #fff;
-  transition: 0.5s;
+  transition: 0.52s;
   isolation: isolate;
+}
+@media (min-width: 768px) {
+  .services .service-container .service-item {
+    flex-direction: row;
+  }
 }
 .services .service-container .service-item::before, .services .service-container .service-item::after {
   content: "";
@@ -2669,10 +2613,15 @@ img {
   opacity: 0;
 }
 .services .service-container .service-item .service-core {
-  flex-basis: 50%;
   display: flex;
   flex-direction: column-reverse;
   padding: 0 0.5rem;
+}
+@media (min-width: 768px) {
+  .services .service-container .service-item .service-core {
+    flex-basis: 50%;
+    height: 100%;
+  }
 }
 .services .service-container .service-item .service-core h4 {
   text-transform: capitalize;
@@ -2702,8 +2651,12 @@ img {
   }
 }
 .services .service-container .service-item .service-type {
-  width: 100%;
   padding: 0 1rem;
+}
+@media (min-width: 768px) {
+  .services .service-container .service-item .service-type {
+    flex-basis: 50%;
+  }
 }
 .services .service-container .service-item .service-type ul {
   padding: 1rem 0.5rem;
@@ -2718,12 +2671,8 @@ img {
   padding-bottom: 0.25rem;
 }
 .services .service-container .service-item .service-type ul li::marker {
-  color: #0003;
   color: transparent;
-  transition: 1s;
-}
-.services .service-container .service-item .service-type ul li:last-child {
-  display: none;
+  transition: 0.5s;
 }
 .services .service-container .service-item.io-item {
   transform: scale(0.98);
@@ -2769,67 +2718,69 @@ img {
 .services .service-container .service-item:hover .service-type ul li::marker {
   color: #0005;
 }
-.services .service-section-pad {
-  border-radius: 5px;
-  height: 95vh;
-  padding: 0;
-  overflow: hidden;
-  position: sticky;
-  top: 10vh;
-}
-.services .service-section-pad .section-pad-img {
-  width: 100%;
-  height: 100%;
-}
-@media (min-width: 768px) {
-  .services .service-section-pad .section-pad-img {
-    background: url(../img/ben-allan-BIeC4YK2MTA-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  .services .service-section-pad .section-pad-img.mobile-img {
-    display: none;
-    background: yellow;
-  }
-}
-@media (max-width: 768px) {
-  .services .service-section-pad .section-pad-img {
-    background: url(../img/orich-roof.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-  .services .service-section-pad .section-pad-img.desktop-img {
-    display: none;
-    background: green;
-  }
-}
-@media (min-width: 768px) {
-  .services {
-    padding: 5vh 5vw 5vh;
-  }
-  .services .section-description {
-    margin: 5vh auto 10vh;
-  }
-  .services .service-container {
-    margin: 5vh 0 0;
-  }
-  .services .service-container .service-item {
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    position: relative;
-  }
-  .services .service-container .service-item .service-core {
-    flex-basis: 50%;
-    height: 100%;
-  }
-  .services .service-container .service-item .service-type {
-    width: 50%;
-    text-align: left;
-  }
-}
 
+#services-page .promise {
+  background: linear-gradient(90deg, #000, #000);
+  color: #fff;
+  padding: 1rem;
+  margin: 5vh 0;
+  border-radius: 0.5rem;
+  isolation: isolate;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0.25rem 0.5rem rgba(255, 166, 0, 0.2), 0 0.5rem 1rem #0002;
+}
+@media (min-width: 768px) {
+  #services-page .promise {
+    margin: 0;
+  }
+}
+#services-page .promise h3 {
+  color: #f8650c;
+  font-size: clamp(1.25rem, 2.25vw, 1.25rem);
+  text-align: center;
+  margin-bottom: 5vh;
+}
+#services-page .promise ul li {
+  margin-bottom: 5vh;
+  padding-bottom: 0.5rem;
+  list-style: none;
+  position: relative;
+}
+#services-page .promise ul li h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.025rem;
+  transition: 0.5s;
+}
+#services-page .promise ul li p {
+  color: #ddd;
+  font-weight: 400;
+}
+#services-page .promise ul li::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.15rem;
+  background: #f4f4f4;
+  background: linear-gradient(90deg, #f4f4f4, #f8650c);
+  background: linear-gradient(90deg, #f8650c, darkorange, #f8650c);
+  border-radius: 5px;
+  opacity: 0.5;
+  transition: 0.5s;
+  transform: scaleX(0.8);
+}
+#services-page .promise ul li:hover h4 {
+  color: #ffa500;
+  letter-spacing: normal;
+}
+#services-page .promise ul li:hover:after {
+  background: linear-gradient(90deg, #f8670d, #ffa500, #f8670d);
+  transform: scaleX(1);
+}
 @media (min-width: 820px) {
   #services-page .flex-container {
     display: flex;
