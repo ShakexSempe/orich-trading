@@ -2572,6 +2572,7 @@ img {
   }
 }
 .services .service-container .service-item {
+  background: #fff;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -2579,9 +2580,8 @@ img {
   margin: 10vh auto;
   border-radius: 0.5rem;
   position: relative;
-  background: #fff;
-  transition: 0.52s;
   isolation: isolate;
+  transition: 0.25s;
 }
 @media (min-width: 768px) {
   .services .service-container .service-item {
@@ -2666,7 +2666,7 @@ img {
   padding-bottom: 0.25rem;
 }
 .services .service-container .service-item .service-type ul li::marker {
-  color: transparent;
+  color: #ddd;
   transition: 0.5s;
 }
 .services .service-container .service-item.io-item {
@@ -2708,7 +2708,7 @@ img {
   color: #f8650c;
 }
 .services .service-container .service-item:hover .service-type ul li {
-  border-bottom-color: rgba(255, 166, 0, 0.2);
+  border-bottom-color: #0005;
 }
 .services .service-container .service-item:hover .service-type ul li::marker {
   color: #0005;

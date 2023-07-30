@@ -21,16 +21,17 @@
     .service-container {
         // SERVICE ITEM = FLEX CONTAINER WITH TITLE + CONTENT[UL] 
         .service-item {
+            background: #fff;
             display: flex;
             flex-direction: column;
             width: 100%;
             padding: 1rem .5rem;
             margin: 10vh auto;
+            
             border-radius: abstracts.$border-radius-sm;
             position: relative;
-            background: #fff;
-            transition: .52s;
             isolation: isolate;
+            transition: .25s;
             // DESKTOP ITEM STYLE
             @include abstracts.md {
                 flex-direction: row;
@@ -92,7 +93,7 @@
                 }
                 
             }
-            // SERVICES TYPE = UL 
+            // SERVICES TYPE = UL OF SERVICE ITEMS 
             // PADDING ON THIS ELEMENT FOR WHITESPACE
             .service-type {
                 padding: 0 1rem;
@@ -111,7 +112,7 @@
                         padding-bottom: .25rem;
                         // LIST MARKER TRANSPARENT THEN VISIBLE ON HOVER
                         &::marker {
-                            color: transparent;
+                            color: #ddd;
                             transition: .5s;
                         }
                     }
@@ -138,8 +139,11 @@
             // ITEM HOVER EFFECT
             &:hover {
                 transition: .5s;
+                // BOX SHADOW TRANSITION ON HOVER
                 &::before { opacity: 0;}
                 &::after { opacity: 1;}
+                // CARD ICON TRANSLATE DOWN INTO CARD ON HOVER
+                // CARD TITLE CHANGE COLOR ON HOVER
                 .service-core {
                     i {
                         transform: translateY(.5rem);
@@ -153,11 +157,11 @@
                         color: abstracts.$brand;
                     }
                 }
-                
+                // ON HOVER LIST BORDER BOTTOM & LIST ITEM MARKER CHANGE COLOR
                 .service-type {
                     ul {
                         li {
-                            border-bottom-color: hsla(39, 100%, 50%, .2) ;
+                            border-bottom-color: #0005 ;
                             &::marker {
                                 color: #0005;
                             }
