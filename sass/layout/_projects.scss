@@ -1,14 +1,16 @@
 @use '../abstracts';
 
+// PROJECTS SECTION
 #projects {
-    padding: 5vh 1rem;
+    padding: 5vh 5vw;
     .gallery {
         // border: 1px solid red;
         margin: 5vh auto;
+        // GRID TITLE = STICKY TO TOP OF SCREEN
         .gallery-title {
             position: sticky;
             top: 7vh;
-            text-transform:capitalize;
+            text-transform: capitalize;
             padding: .5rem 0;
             background-color: #fff;
             z-index: 5;
@@ -23,9 +25,10 @@
             h3 {
                 font-weight: 500;
             }
+
+            // PROJECTS PAGE LINK
             a {
                     text-transform: capitalize;
-                    text-decoration: none;
                     width: 6rem;
                     font-size: .9rem;
                     font-weight: 400;
@@ -74,24 +77,23 @@
             }
             
         }
+        // GRID CONTAINER
         .gallery-grid {
             display: grid;
             gap: 1rem;
             margin: 0 0 5vh;
             padding: 5vh 0;
-            // border: 1px solid red;
-            // background: abstracts.$brand;
             border-radius: 5px;
             height: auto;
-            grid-template-columns: 1fr;
             overflow: hidden;
 
             @include abstracts.md {
                 grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
             }
 
             .project-item {
-                
+
                 padding-bottom: 5vh;
                 height: auto;
 
@@ -110,9 +112,11 @@
                     isolation: isolate;
                     z-index: 1;
                     margin-top: .5rem;
+
                     @media (min-width: 768px) {
                         height: 60vh;
                     }
+
                     img {
                         width: 100%;
                         height: 100%;
@@ -122,13 +126,15 @@
                         object-fit: cover;
                         object-position: center;
                     }
+
                     // DATA-SCROLL
                     &.io-item {
-                            img {
-                                transform: scale(1.1);
-                            }
-                        
+                        img {
+                            transform: scale(1.1);
+                        }
+
                     }
+
                     &.active-item {
                         img {
                             transform: scale(1);
@@ -138,7 +144,8 @@
                 }
 
             }
-    }
+        }
+
     }
     @media (min-width: 830px) {
         padding: 5vh 5vw;

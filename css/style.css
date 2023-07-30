@@ -329,11 +329,9 @@ img {
   align-items: center;
   background: #f8650c;
   color: #000;
-  text-align: left;
-  font-weight: 400;
-  font-size: 1.025rem;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-family: inherit;
   text-transform: capitalize;
-  cursor: pointer;
   border: none;
   border-radius: 0.5rem;
   position: relative;
@@ -342,6 +340,7 @@ img {
 }
 @media (min-width: 820px) {
   #form button {
+    cursor: pointer;
     width: 12rem;
     padding: 0.65rem;
   }
@@ -2306,7 +2305,7 @@ img {
 }
 
 #projects {
-  padding: 5vh 1rem;
+  padding: 5vh 5vw;
 }
 #projects .gallery {
   margin: 5vh auto;
@@ -2332,7 +2331,6 @@ img {
 }
 #projects .gallery .gallery-title a {
   text-transform: capitalize;
-  text-decoration: none;
   width: 6rem;
   font-size: 0.9rem;
   font-weight: 400;
@@ -2390,12 +2388,12 @@ img {
   padding: 5vh 0;
   border-radius: 5px;
   height: auto;
-  grid-template-columns: 1fr;
   overflow: hidden;
 }
 @media (min-width: 768px) {
   #projects .gallery .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 }
 #projects .gallery .gallery-grid .project-item {

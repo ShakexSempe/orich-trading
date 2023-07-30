@@ -68,18 +68,17 @@
 
         background: abstracts.$brand;
         color: #000;
-        text-align: left;
-        font-weight: 400;
-        font-size: 1.025rem;
+        font-size: abstracts.$font-clamp-sm;
+        font-family: inherit;
         text-transform: capitalize;
 
-        cursor: pointer;
         border: none;
         border-radius: abstracts.$border-radius-sm;
         position: relative;
         isolation: isolate;
         transition: .25s;
         @include abstracts.lg {
+            cursor: pointer;
             width: 12rem;
             padding: .65rem;
         }
