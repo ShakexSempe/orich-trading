@@ -1,19 +1,15 @@
 @use '../abstracts';
 
 #banner {
-    // min-height: 100vh;
-    // height: 100%;
-    // padding: 10vh 5vw;
-    // border: 2px solid red;
     background-color: #fff;
     isolation: isolate;
     margin: 5vh 5vw;
+    // WIDE SCREENS SECTION STYLE
     @media (min-width: 768px) {
         margin: 10vh 5vw;
-        // padding: 10vh 0vw;  
-
     }
 
+    // CONTAINER TITLE CENTERED ON WIDER SCREENS
     .container-title {
         @include abstracts.sm {
             text-align: center;
@@ -21,8 +17,6 @@
     }
 
     .banner-image-container {
-        // overflow: hidden;
-        min-height: 100vh;
         // border: 2px solid blue;
         margin: 10vh 0;
         display: flex;
@@ -30,8 +24,9 @@
         gap: 5vh;
         @include abstracts.sm {
             gap: 10vh;
-            // flex-direction: row;
+            margin: 10vh 10vw;
         }
+
         figure {
             border-radius: abstracts.$border-radius-sm;
             border: 1px solid #000;
@@ -47,17 +42,9 @@
                 border-top-left-radius: abstracts.$border-radius-sm;
             }
 
-            @include abstracts.sm {
-                width: 400px;
-                img {
-                    // object-fit: contain;
-                    // object-position: bottom;
-                }
-            }
-
             // DESKTOP FIGURE
             @include abstracts.md {
-                height: 80vh;
+                height: 60vh;
                 width: 100%;
                 display: flex;
                 flex-direction: row-reverse;
@@ -66,8 +53,7 @@
                     // border: 2px solid blue;
                     width: 50%;
                     height: 100%;
-                    border-radius: 0;
-                    object-fit: cover;
+                    object-fit: contain;
                 }
             }
 
@@ -77,10 +63,8 @@
                 padding: 1rem .5rem;
 
                 @include abstracts.md {
-                    // background-color: #fff;
-                    // color: #000;
-                    width: 50%;
                     // border: 2px solid yellow;
+                    width: 50%;
                     display: grid;
                     place-items: center;
                 }
@@ -88,10 +72,8 @@
                 .banner-image-title {
 
                     h3 {
-                        text-transform: capitalize;
                         margin-bottom: .5rem;
                         color: abstracts.$brand-light;
-                        font-size: abstracts.$font-clamp-md;
                         @include abstracts.lg {
                             margin-bottom: 1rem;
                         }
@@ -105,8 +87,6 @@
                         gap: 1rem;
 
                         @include abstracts.md {
-                            // flex-direction: row;
-                            // align-items: center;
                             justify-content: space-between;
                         }
                     }
@@ -191,10 +171,8 @@
                         }
                     }
 
-                    
-
-                   
                 }
+                
             }
 
         }

@@ -984,7 +984,6 @@ img {
   }
 }
 #banner .banner-image-container {
-  min-height: 100vh;
   margin: 10vh 0;
   display: flex;
   flex-direction: column;
@@ -993,6 +992,7 @@ img {
 @media (min-width: 500px) {
   #banner .banner-image-container {
     gap: 10vh;
+    margin: 10vh 10vw;
   }
 }
 #banner .banner-image-container figure {
@@ -1009,14 +1009,9 @@ img {
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
 }
-@media (min-width: 500px) {
-  #banner .banner-image-container figure {
-    width: 400px;
-  }
-}
 @media (min-width: 768px) {
   #banner .banner-image-container figure {
-    height: 80vh;
+    height: 60vh;
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
@@ -1024,8 +1019,7 @@ img {
   #banner .banner-image-container figure img {
     width: 50%;
     height: 100%;
-    border-radius: 0;
-    object-fit: cover;
+    object-fit: contain;
   }
 }
 #banner .banner-image-container figure .banner-content {
@@ -1040,10 +1034,8 @@ img {
   }
 }
 #banner .banner-image-container figure .banner-content .banner-image-title h3 {
-  text-transform: capitalize;
   margin-bottom: 0.5rem;
   color: #ffa500;
-  font-size: clamp(1.25rem, 2.25vw, 1.25rem);
 }
 @media (min-width: 820px) {
   #banner .banner-image-container figure .banner-content .banner-image-title h3 {
