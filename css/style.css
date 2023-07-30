@@ -2028,7 +2028,7 @@ img {
 @media (min-width: 820px) {
   .menu .menu-grid {
     grid-template-columns: auto auto auto;
-    column-gap: 1rem;
+    column-gap: 1.5rem;
   }
 }
 
@@ -2048,6 +2048,7 @@ img {
 }
 .menu-item .menu-item-title p {
   max-width: 450px;
+  font-size: clamp(.98rem, 1.25vw, 1.0125rem);
 }
 @media (min-width: 820px) {
   .menu-item .menu-item-title p {

@@ -20,7 +20,7 @@
 
         @include abstracts.lg {
             grid-template-columns: auto auto auto;
-            column-gap: 1rem;
+            column-gap: 1.5rem;
         }
 
     }
@@ -51,6 +51,7 @@
         // ..AND TEXT AREA IN 3 COLUMN GRID
         p {
             max-width: 450px;
+            font-size: abstracts.$font-clamp-xsm;
 
             @include abstracts.lg {
                 height: 9rem;
