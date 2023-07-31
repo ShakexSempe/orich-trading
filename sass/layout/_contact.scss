@@ -1,25 +1,18 @@
 @use '../abstracts';
-
+// CONTACT SECTION
 #contact {
-    background: abstracts.$bg-main;
     background: #000;
-    color: #fff;
+    color: abstracts.$text-second;
     padding: 10vh 0 5vh;
-    @include abstracts.lg {
-        // background-color: yellow;
-    }
     .section-title {
         padding: 5vh 5vw;
         color: abstracts.$text-light;
     }
     .contact-items {
-        // border: 2px solid abstracts.$brand-light;
-        border-radius: 5px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         gap: 10vh;
-        // align-items: center;
         padding: 5vh 0;
         margin: 0 1rem;
 
@@ -43,31 +36,17 @@
             @include abstracts.lg {
                     width: 100%;
                     height: auto;
-                    // overflow: hidden;
                     margin: 0;
                     padding: 1rem;
                     z-index: 2;
-                    header {
-                        font-size: 1.5rem;
-                    }
-                    button {
-                    // border: 1px solid red;
-                    a {
-                            font-size: 1rem;
-                        }
-                    }
             }
 
             // ITEM HEADER = ICON + TITLE
             .contact-item-title {
                 margin: -2rem 0 1.5rem;
                 h3 {
-                    color: abstracts.$text-light;
-                    text-transform: capitalize;
+                    color: abstracts.$text-second;
                     font-weight: 500;
-                    font-size: 1.25rem;
-                    font-size: clamp(1.25rem, 2.25vw, 1.4rem);
-                    font-size: abstracts.$font-clamp-sm;
                 }
                 i {
                     font-size: 2.5rem;
@@ -179,28 +158,37 @@
 
             // CONTACT ITEM HOVER 
             &:hover {
+                
                 .contact-info {
+
                     .contact-info-item {
                         outline-color: #fff4;
+
                         // ITEM HOVER
                         &:hover {
                             outline-color: abstracts.$brand-light;
+
                             p {
                                 color: abstracts.$brand-light;
+
                                 a {
                                     color: abstracts.$text-light;
                                 }
+
                                 span {
                                     color: #fff8;
                                 }
+
                                 i {
                                     color: abstracts.$text-light;
                                     transform: translateX(.125rem);
                                 }
                             }
                         }
+
                     }
                 }
+
             }
         }
     }
