@@ -131,6 +131,7 @@ p {
 a {
   text-decoration: none;
   color: inherit;
+  transition: 0.25s;
 }
 
 * {
@@ -2470,7 +2471,7 @@ img {
   display: grid;
   place-items: center;
   grid-template-columns: 1fr;
-  gap: 5vh;
+  gap: 2rem;
   padding: 1rem 0;
   margin-top: 5vh;
   width: 100%;
@@ -2478,6 +2479,12 @@ img {
 @media (min-width: 820px) {
   #references .references {
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  #references .references {
+    gap: 2rem;
   }
 }
 #references .references .reference {
@@ -2488,7 +2495,8 @@ img {
   padding: 1rem 0 1rem 1rem;
   position: relative;
   isolation: isolate;
-  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.125);
+  text-wrap: balance;
 }
 @media (min-width: 768px) {
   #references .references .reference {
@@ -2497,6 +2505,7 @@ img {
   #references .references .reference p {
     display: flex;
     align-items: center;
+    align-items: start;
   }
 }
 #references .references .reference .item-icon {
@@ -2516,32 +2525,19 @@ img {
   font-size: clamp(1rem, 2vw, 1.125rem);
   font-weight: 600;
 }
-#references .references .reference .ref-name {
-  margin-bottom: 0.25rem;
+#references .references .reference .card-item {
   text-transform: capitalize;
+  font-size: 1rem;
 }
-#references .references .reference .ref-name i {
-  width: 1.8rem;
-  color: #ffa500;
-}
-#references .references .reference .ref-contact {
-  text-transform: capitalize;
-}
-#references .references .reference .ref-contact i {
+#references .references .reference .card-item i {
   width: 1.8rem;
   color: #ffa500;
 }
 #references .references .reference a {
   display: block;
   width: max-content;
-  padding-right: 1rem;
-  padding-top: 0.25rem;
-  color: #666666;
-  font-weight: 500;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  text-decoration: none;
-  transition: 0.25s;
+  color: gray;
+  margin-top: 0.5rem;
 }
 #references .references .reference a:hover {
   color: #ffa500;
