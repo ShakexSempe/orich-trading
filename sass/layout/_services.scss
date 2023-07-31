@@ -113,7 +113,7 @@
                         padding-bottom: .25rem;
                         // LIST MARKER TRANSPARENT THEN VISIBLE ON HOVER
                         &::marker {
-                            color: #ddd;
+                            color: transparent;
                             transition: .5s;
                         }
                     }
@@ -158,11 +158,10 @@
                         color: abstracts.$brand;
                     }
                 }
-                // ON HOVER LIST BORDER BOTTOM & LIST ITEM MARKER CHANGE COLOR
+                // ON HOVER LIST ITEM MARKER CHANGE COLOR
                 .service-type {
                     ul {
                         li {
-                            border-bottom-color: #0005 ;
                             &::marker {
                                 color: #0005;
                             }

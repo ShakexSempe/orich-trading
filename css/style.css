@@ -2639,7 +2639,7 @@ img {
   padding-bottom: 0.25rem;
 }
 .services .service-container .service-item .service-type ul li::marker {
-  color: #ddd;
+  color: transparent;
   transition: 0.5s;
 }
 .services .service-container .service-item.io-item {
@@ -2679,9 +2679,6 @@ img {
 }
 .services .service-container .service-item:hover .service-core h4 {
   color: #f8650c;
-}
-.services .service-container .service-item:hover .service-type ul li {
-  border-bottom-color: #0005;
 }
 .services .service-container .service-item:hover .service-type ul li::marker {
   color: #0005;
