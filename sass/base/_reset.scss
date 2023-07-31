@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8vh;
+
+    @media (max-width:768px) {
+        scroll-padding-top: 7vh;
+    }
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}

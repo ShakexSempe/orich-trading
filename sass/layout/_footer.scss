@@ -1,11 +1,13 @@
+@use '../abstracts';
+
 .footer {
-    // border: 2px solid $brand;
+    // border: 2px solid abstracts.$brand;
     padding: 5vh 5vw 11vh;
     background: linear-gradient(0deg, #fafafa, #ffff);
     display: flex;
     flex-direction: column;
     gap: 5vh;
-    @include xlg {
+    @include abstracts.xlg {
         padding: 30vh 5vw 10vh;
         background: linear-gradient(90deg, #ffff, #fafafa);
         flex-direction: row;
@@ -14,10 +16,10 @@
     }
     a {
         text-decoration: none;
-        color: $text-main;
+        color: abstracts.$text-main;
         transition: .25s;
         &:hover, &:focus {
-            color: $brand;
+            color: abstracts.$brand;
         }
     }
     
@@ -36,7 +38,7 @@
         line-height: 1.6;
 
         a {
-            // color: $brand;
+            // color: abstracts.$brand;
             font-weight: 500;
         }
     }
@@ -67,7 +69,7 @@
                 &:hover {
                     i {
                         transform: translateX(.25rem);
-                        color: $brand;
+                        color: abstracts.$brand;
                     }
                 }
             }

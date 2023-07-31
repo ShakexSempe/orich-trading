@@ -1,3 +1,5 @@
+@use '../abstracts';
+
 .toggle {
     // border: 1px solid red;
     font-size: 20px;
@@ -61,7 +63,7 @@
         transform: translateY(-50%);
         height: 95%;
         width: .15rem;
-        background: linear-gradient(0deg, $brand, $brand-light, $brand);
+        background: linear-gradient(0deg, abstracts.$brand, abstracts.$brand-light, abstracts.$brand);
         transition: 1s ease;
     }
     &.io-item {
@@ -88,7 +90,7 @@
     text-align: center;
     text-transform: capitalize;
     text-decoration: none;
-    background: $brand;
+    background: abstracts.$brand;
     color: #fff;
     z-index: 99;
     transition: .25s;
@@ -136,7 +138,7 @@
             position: relative;
             isolation: isolate;
             transition: .25s;
-            @include sm {
+            @include abstracts.sm {
                 cursor: pointer;
             }
 
@@ -174,7 +176,7 @@
             
             &:hover {
                 i {
-                    color: $text-light;
+                    color: abstracts.$text-light;
                 }
                 &::after {
                 // animation: click .25s forwards;
@@ -204,7 +206,7 @@
         }
     }
     // DESKTOP NAV STYLE
-    @include md {
+    @include abstracts.md {
         display: none;
         // border-right: 1px solid #0002;
     }
@@ -225,7 +227,7 @@
         }
 
 
-        @include md {
+        @include abstracts.md {
             transform: translateX(0);
             .item {
                 transform: translateX(0);

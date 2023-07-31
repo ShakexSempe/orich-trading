@@ -1,3 +1,5 @@
+@use '../abstracts';
+
 .grid-gallery {
     // border: 2px solid red;
     padding: 10vh 5vw;
@@ -9,7 +11,7 @@
     grid-auto-rows: 50vh;
     grid-auto-flow: dense;
 
-    @include sm {
+    @include abstracts.sm {
         grid-auto-rows: 200px;
     }
     
@@ -23,20 +25,20 @@
         overflow: hidden;
         &.wide {
             // border: 2px solid purple;
-            @include sm {
+            @include abstracts.sm {
                 grid-column: span 1;
                 
             }
         }
         &.tall {
             // border: 2px solid green;
-            @include sm {
+            @include abstracts.sm {
                 grid-row: span 2;
             }
         }
         &.big {
             // border: 2px solid pink;
-            @include sm {
+            @include abstracts.sm {
                 grid-row: span 2;
                 grid-row: span 2;
             }

@@ -1,7 +1,7 @@
 
-$font-content: 'Prompt', sans-serif;
-$primary-color: #fff;
-$secondary-color: #000;
+// $font-content: 'Prompt', sans-serif;
+// $primary-color: #fff;
+// $secondary-color: #000;
 $brand: #f8650c;
 $brand-dark: hsl(23, 94%, 51%);
 $brand-light: #ffa500;
@@ -13,51 +13,35 @@ $brand-overlay-dark: linear-gradient(45deg, $brand, $brand-light);
 $brand-overlay-darker: linear-gradient(-30deg, $brand, $brand-light, $brand);
 $brand-btn: linear-gradient(0deg, $brand-dark, $brand-light);
 $brand-btn-hover: linear-gradient(0deg, $brand-light, $brand-dark);
-$bg-main: #fff;
-$bg-second: #000;
-
-// FONT-SIZES
-$font-clamp-sm: clamp(1.05rem, 2vw, 1.15rem);
-$font-clamp-p-sm: clamp(1rem, 1.5vw, 1.15rem);
-$font-clamp-title-sm: clamp(1.125rem, 2vw, 1.25rem);
-$font-clamp-title-md: clamp(1.25rem, 2.5vw, 1.5rem);
+$bg-main: #ffffff;
+$bg-main-light: #f4f4f4;
+$bg-second: #000000;
 
 
+$font-clamp-xsm: clamp(.98rem, 1.25vw, 1.0125rem);
+$font-clamp-sm: clamp(1rem, 2vw, 1.125rem);
+$font-clamp-md: clamp(1.25rem, 2.25vw, 1.25rem);
+$font-clamp-lg: clamp(1.5rem, 4vw, 2rem);
+$font-clamp-xlg: clamp(2rem, 5vw, 2.25rem);
 
 $brand-border: linear-gradient(90deg, $brand-dark, $brand-light, $brand-dark);
 
 $text-main: #000;
-// $text-main: #fff000;
 $text-main-light: #333;
-// $text-main-light: green;
 $text-second: #ffffff;
-$text-second-light: #f4f4f4;
+$text-second-light: hsl(0, 0%, 86%);
 $text-light: #fff;
-$text-light-trans: #fff9;
-$text-second-trans: #fffa;
-$text-main-hover: #fffa;
-$text-second-hover: #000a;
-$text-brand: #ffa500;
+$text-light-trans: hsla(0, 0%, 100%, 0.7);
 
 $border-radius-xsm: .25rem;
 $border-radius-sm: .5rem;
 $border-radius-md: 1rem;
 $border-radius-lg: 1.5rem;
 
-$header-bg: #000;
-$toggle: #000;
-$toggle-bar: #f4f4f4;
-
 $marker: #f4f4f4;
 
 $nav-bg: #161616;
 $nav-links: #eee;
-
-$border-main: #983900;
-$border-second: #0000;
-
-$bg-invalid: hsl(39, 100%, 80%);
-$bg-invalid: #f4f4f4;
 
 $box-shadow-sm: inset 2px 2px 2px rgba(255, 255, 255, 0.250),
                 inset -2px -2px 2px rgba(0, 0, 0, 0.250),

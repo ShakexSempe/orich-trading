@@ -9,13 +9,17 @@
     <!-- META OG IMAGE -->
     <meta name="image" property="og:image" content="https://orich-trading-projects.netlify.app/img/orich.jpg">
     <!-- TITLE -->
-    <title>Construction Company - Projects & Trading Services || General Building</title>
+    <title>Construction Company - Projects & Trading Services || Level-1 B-BBEE</title>
     <!-- META DESCRIPTION -->
-    <meta name="description" content="Johannesburg based Level-1 BEE Construction company providing small-scale construction services & solutions throughout the Gauteng province.">
+    <meta name="description" content="Johannesburg based Level-1 B-BBEE Construction company providing construction, electrical & general building services and solutions throughout Gauteng.">
     <!-- KEYWORDS -->
     <meta name="keywords" content="general building, construction, Johannesburg, Gauteng, industrial relations, painting, plumbing, tiling, roofing, electrical services & installations, IT network and infrastructure, general building, carpentry, paving, welding, ceiling">
     <!-- PRELOAD -->
+    <link rel="preload" href="img/orich.jpg" as="image" fetchpriority="high">
     <link rel="preload" href="css/style.css" as="style" />
+    <link rel="preload" href="js/app.js" as="script" />
+    <link rel="preload" href="img/hero_400.jpg" as="image" media="(max-width: 450px)">
+    <link rel="preload" href="img/hero_800.jpg" as="image" media="(min-width: 450.1px)">
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="css/style.css">
     <!-- JAVASCRIPT -->
@@ -44,15 +48,13 @@
     <meta name="msapplication-TileColor" content="f8650c">
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200;400;500;600;700&display=swap"
         rel="stylesheet">
     <!-- ICONS LINK -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preload" as="image" href="img/hero_400.jpg" media="(max-width: 450px)">
-    <link rel="preload" as="image" href="img/hero_800-min.jpg"  media="(min-width: 450.1px)">
-    <link rel="preload" as="image" href="img/orich.jpg" media="(min-width: 450.1px)">
-    <link rel="preload" as="image" href="img/orich_100.jpg" media="(max-width: 450px)">
+    
     <!-- STYLES -->
     <style>
         body {
@@ -127,18 +129,18 @@
 
         /* TITLE SPAN ANIMATION */
         @keyframes brand-span {
-                100% {
-                    color: orange;
-                }
-            }
-        /* TITLE P ANIMATION */
-            @keyframes loader-title {
-                100% {
-                    gap: .5rem;
-                    color: #f4f4f4;
-                }
-            }
+        100% {
+        color: orange;
+        }
+        }
 
+        /* TITLE P ANIMATION */
+        @keyframes loader-title {
+        100% {
+        gap: .5rem;
+        color: #f4f4f4;
+        }
+        }
 
     </style>
 
@@ -155,6 +157,7 @@
                 <span>H</span>
         </p>
     </div>
+
     <div class="container">
         <!-- HEADER = 1) LOGO 2) SECTION & PAGE NAVIGATION LINKS -->
         <header id="header" data-header class="index-header hero-header">
@@ -163,7 +166,7 @@
             <!-- LOGO = LINK TO TOP OF THE PAGE -->
             <div class="logo">
                     <a href="#">
-                        <img src="img/orich.jpg" width="120" height="120" alt="Orich Trading & Projects logo">
+                        <img src="img/orich.jpg" width="40" height="40" alt="Orich Trading & Projects logo">
                     </a>
             </div>
             <!-- DESKTOP NAVBAR & MOBILE HAMBURGER MENU -->
@@ -175,7 +178,7 @@
                 <!-- NAVBAR = HIDDEN ON MOBILE SCREENS -->
                 <nav id="nav">
                     <ul>
-                        <!-- ABOUT -->
+                        <!-- WEBSITE PAGE LINKS -->
                         <li><a class="nav-link" href="#">home</a></li>
                         <li><a class="nav-link" href="pages/about.html">about</a></li>
                         <li><a class="nav-link" href="pages/services.html">services</a></li>
@@ -223,7 +226,7 @@
             <!-- WEBSITE SLOGAN -->
             <div id="title" class="hero-title">
                 <div class="slogan">
-                    <h1 title="Website title: Orich Construction Company">level-1 BEE <br> construction company</h1>
+                    <h1>level-1 BEE <br> Construction Company</h1>
                     <p class="hero-meta"><i class="fas fa-location-dot"></i>Johannesburg, South Africa</p>
                     <div id="cta" class="cta">
                         <p class="slogan-p">Quality<span>Or</span>Nothing</p>
@@ -267,10 +270,10 @@
                                 class="fas fa-envelope"></i></a>
                             <picture>
                                 <source
-                                srcset="img/construction-min.jpg"
+                                srcset="img/construction.jpg"
                                 media="(min-width: 820px)"
-                                width="500"
-                                height="375"
+                                width="350"
+                                height="350"
                                 >
                                 <img src="img/construction_350.jpg" width="350" height="350" loading="lazy"
                                     alt="Roofing & Painting">
@@ -282,7 +285,7 @@
                         <div class="menu-item-title">
                             <h3>Electrical services</h3>
                             <p>Qualified & experienced electricians for installations,
-                                maintenance and solar solutions.
+                                maintenance and solar system solutions.
                             </p>
                         </div>
                         <figure class="menu-image io-item">
@@ -290,12 +293,12 @@
                                 class="fas fa-envelope"></i></a>
                                 <picture>
                                     <source
-                                    srcset="img/electric-service-min.jpg"
+                                    srcset="img/electric-service.jpg"
                                     media="(min-width: 820px)"
-                                    width="450"
-                                    height="450"
+                                    width="400"
+                                    height="533"
                                     >
-                                    <img src="img/electric-service_350.jpg" width="350" height="466" loading="lazy"
+                                    <img src="img/electric-service_300.jpg" width="350" height="466" loading="lazy"
                                         alt="Electrical services">
                                 </picture>
                         </figure>
@@ -325,12 +328,15 @@
                     </div>
                 </div>
             </div>
+
+            <!-- CALL TO ACTION MENU -->
             <div class="menu-cta">
                 <figure class="menu-cta-figure">
-                    <img src="img/menu-bg_450-min.jpg" width="450" height="562" alt="Construction Crane">
+                    <img src="img/menu-bg_450-min.jpg" loading="lazy" width="450" height="562" alt="Construction Crane">
                 </figure>
                 <h3 class="io-item">Let's w<span>o</span>rk</h3>
-                <div class="flex-container">
+                <!-- GRID CONTAINER -->
+                <div class="grid-container">
                     <div class="cta-item">
                         <h4>contact details</h4>
                         <ul class="contact-cta-list">
@@ -399,11 +405,7 @@
                             </div>
                             <div class="mission-logo">
                                 <figure class="io-item">
-                                    <img  
-                                    width="150" height="150"
-                                    loading="lazy"
-                                    src="img/orich.jpg" alt="Orich logo"
-                                        >
+                                    <img src="img/orich.jpg" width="150" height="150" loading="lazy" alt="Orich Trading & Projects logo">
                                 </figure>
                             </div>
                         </div>
@@ -424,33 +426,33 @@
                     <div class="reference">
                         <i class="fa-solid fa-award item-icon"></i>
                         <h3>Broad-Based Black<br> Economic Empowerment</h3>
+                        <p class="ref-name card-item">
+                            <i class="fas fa-user"></i>B-BBEE
+                        </p>
+                        <p class="ref-contact card-item"><i class="fa-solid fa-award"></i>level 1</p>
                         <a href="http://www.thedtic.gov.za/financial-and-non-financial-support/b-bbee/broad-based-black-economic-empowerment/" target="_blank">
                             www.thedtic.gov.za
                         </a>
-                        <p class="ref-name">
-                            <i class="fas fa-user"></i>B-BBEE
-                        </p>
-                        <p class="ref-contact"><i class="fa-solid fa-award"></i>level 1</p>
                     </div>
                     
                     <div class="reference">
                         <i class="fa-solid fa-award item-icon"></i>
                         <h3>National Home Builders <br> Registration Council</h3>
-                        <a href="https://www.nhbrc.org.za/">www.nhbrc.org.za</a>
-                        <p class="ref-name">
+                        <p class="ref-name card-item">
                             <i class="fas fa-user"></i>NHBRC certificate
                         </p>
-                        <p class="ref-contact"><i class="fa-solid fa-award"></i>level 1</p>
+                        <p class="ref-contact card-item"><i class="fa-solid fa-award"></i>level 1</p>
+                        <a href="https://www.nhbrc.org.za/">www.nhbrc.org.za</a>
                     </div>
                     
                     <div class="reference">
                         <i class="fa-solid fa-award item-icon"></i>
-                        <h3>Worksmen's Compensation: <br> Department of Labour</h3>
-                        <a href="https://www.labour.gov.za/">www.labour.gov.za</a>
-                        <p class="ref-name">
+                        <h3>Compensation fund: <br> Department of Labour</h3>
+                        <p class="ref-name card-item">
                             <i class="fas fa-user"></i>COIDA
                         </p>
-                        <p class="ref-contact"><i class="fa-solid fa-award"></i>Letter of good standing</p>
+                        <p class="ref-contact card-item"><i class="fa-solid fa-award"></i>Letter of good standing</p>
+                        <a href="https://www.labour.gov.za/">www.labour.gov.za</a>
                     </div>
                     
                 </div>
@@ -480,7 +482,7 @@
                     </div>
                     <!-- EACH SERVICE = 1) SERVICE CORE: TITLE & IMAGE. || 2) SERVICE TYPE = UL WITH 1 LINK TO ENQUIRY PAGE  -->
                     <!-- GENERAL BUILDING -->
-                    <div id="general" class="service-item io-item">
+                    <div id="building_services" class="service-item io-item">
                         <div class="service-core">
                             <h4>General Building</h4>
                             <i class="fas fa-wrench"></i>
@@ -507,7 +509,7 @@
                         </div>
                     </div>
                     <!-- PLUMBING -->
-                    <div id="plumbing" class="service-item io-item">
+                    <div id="plumbing_services" class="service-item io-item">
                         <div class="service-core">
                             <h4>plumbing</h4>
                             <!-- <i class="fas fa-faucet"></i> -->
@@ -524,7 +526,7 @@
 
                     </div>
                     <!-- ELECTRICAL -->
-                    <div id="electrical" class="service-item io-item">
+                    <div id="electrical_services" class="service-item io-item">
                         <div class="service-core">
                             <h4>electrical services</h4>
                             <i class="fas fa-plug"></i>
@@ -619,6 +621,7 @@
                     <a href="pages/services.html#main" class="cta-btn section-btn" title="Go to about page">view services<i class="fas fa-arrow-up-right-from-square"></i></a>
                 </div>
             </section>
+
             <!-- BANNER -->
             <div id="banner" data-active-footer class="banner active-footer">
                 <div class="container-title io-item">
@@ -688,6 +691,7 @@
                 </figure> -->
                 </div>
             </div>
+
             <!-- PROJECTS SECTION -->
             <section id="projects">
                 <header class="section-title io-item">
@@ -736,7 +740,7 @@
                     </div>
                 </div>
                 <!-- GENERAL BUILDING -->
-                <div class="gallery" id="general">
+                <div class="gallery" id="general_building">
                     <div class="gallery-title">
                         <h3>General building</h3>
                         <a href="pages/projects.html#general">view all<i class="fa-solid fa-angle-right"></i></a>
@@ -841,7 +845,7 @@
                 </div>
                 <!-- TILE INSTALLATION -->
                 <div class="gallery" id="tile">
-                    <div class="gallery-title" id="tile">
+                    <div class="gallery-title">
                         <h3>tiling</h3>
                         <a href="pages/projects.html#tile">view all<i class="fa-solid fa-angle-right"></i></a>
                     </div>
@@ -905,7 +909,8 @@
                 <div class="cta">
                     <a href="pages/projects.html#main" class="cta-btn section-btn" title="Go to projects page">projects page<i class="fas fa-arrow-up-right-from-square"></i></a>
                 </div>
-            </section>     
+            </section>  
+            
             <!-- FOOTER = 1) CONTACT DETAILS. 2) CONTACT FORM. 3) COPYRIGHT SECTION -->
             <div id="contact">
                 <header class="section-title io-item">
@@ -916,58 +921,76 @@
 
                     <div class="contact-item">
                         <div class="contact-item-title"><i class="fas fa-mobile-alt"></i><h3>phone numbers</h3></div>
+                        
                         <div class="contact-info">
                             <div class="contact-info-item">
-                            <p title="Thabelo - Executive Director"><i class="fas fa-user"></i>Thabelo Mathoma <span>E.D.</span></p>
-                            <p title="phone number"><i class="fas fa-phone"></i><a href="tel:073 481 1460">073 481 1460</a> / <a
-                                    href="tel:072 927 0758">072 927 0758</a></p>
-                            <button>
-                                <a class="contact-btn" title="Call Thabelo" href="tel:072 927 0758">call now<i class="fas fa-phone-volume"></i></a>
-                            </button>
+                                <p title="Thabelo - Executive Director"><i class="fas fa-user"></i>Thabelo Mathoma
+                                    <span>E.D.</span></p>
+                                <p title="phone number"><i class="fas fa-phone"></i><a href="tel:073 481 1460">073 481
+                                        1460</a> / <a href="tel:072 927 0758">072 927 0758</a></p>
+                                <div class="item-button">
+                                    <a class="contact-btn" title="Call Thabelo" href="tel:072 927 0758">call now<i
+                                            class="fas fa-phone-volume"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="contact-info">
+                                <div class="contact-info-item">
+                                    <p title="Sello Sempe CEO"><i class="fas fa-user"></i>Sello Sempe <span>CEO</span>
+                                    </p>
+                                    <p title="phone number"><a href="tel:081 780 2088"><i class="fas fa-phone"></i>081
+                                            780 2088</a></p>
+                                    <div class="item-button">
+                                        <a class="contact-btn" title="Call Sello" href="tel:081 780 2088">call now<i
+                                                class="fas fa-phone-volume"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="contact-info">
-                            <div class="contact-info-item">
-                            <p title="Sello Sempe CEO"><i class="fas fa-user"></i>Sello Sempe <span>CEO</span></p>
-                            <p title="phone number"><a href="tel:081 780 2088"><i class="fas fa-phone"></i>081 780 2088</a></p>
-                            <button>
-                                <a class="contact-btn" title="Call Sello" href="tel:081 780 2088">call now<i class="fas fa-phone-volume"></i></a>
-                            </button>
-                        </div>
-                        </div>
+
                     </div>
-                    </div>
+
                     <div class="contact-item">
                         <div class="contact-item-title"><i class="fas fa-envelope-open-text"></i><h3>Email address</h3></div>
+                        
                         <div class="contact-info">
                             <div class="contact-info-item">
-                            <p><a href="mailto:info@orichtrading.co.za"><i class="fas fa-envelope"></i>info@orichtrading.co.za</a></p>
-                            <button>
-                                <a class="contact-btn" title="send email" href="mailto:info@orichtrading.co.za">send email<i class="far fa-paper-plane"></i></a>
-                            </button>
+                                <p><a href="mailto:info@orichtrading.co.za"><i
+                                            class="fas fa-envelope"></i>info@orichtrading.co.za</a></p>
+                                <div class="item-button">
+                                    <a class="contact-btn" title="send email" href="mailto:info@orichtrading.co.za">send
+                                        email<i class="far fa-paper-plane"></i></a>
+                                </div>
+                            </div>
                         </div>
-                        </div>
+
                     </div>
+
                     <div class="contact-item">
                         <div class="contact-item-title"><i class="fas fa-users"></i><h3>social media</h3></div>
+                        
                         <div class="contact-info">
                             <div class="contact-info-item">
-                            <!-- <p>Orich Projects & Trading</p> -->
-                            <p><i class="fab fa-facebook-square"></i>Facebook</p>
-                            <button>
-                                <a class="contact-btn" title="Facebook profile" href="https://www.facebook.com/orichtrading"
-                                    target="_blank">view account<i class="fa-solid fa-up-right-from-square"></i></a>
-                            </button>
-                        </div>
-                        <div class="contact-info-item">
-                            <p><i class="fab fa-instagram"></i>Instagram</p>
-                            <button>
-                                <a class="contact-btn" title="Facebook profile"
-                                    href="https://www.instagram.com/orichtradingprojects/?fbclid=IwAR3F4lHFYwmHfR52gYtnQj-8hMbTLDAuQd9yX4IndLP05Ocfu3ZUZQkSpyk"
-                                    target="_blank">view account<i class="fa-solid fa-up-right-from-square"></i></a>
-                            </button>
-                        </div>
+                                <p><i class="fab fa-facebook-square"></i>Facebook</p>
+                                <div class="item-button">
+                                    <a class="contact-btn" title="Facebook profile"
+                                        href="https://www.facebook.com/orichtrading" target="_blank">view account<i
+                                            class="fa-solid fa-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <p><i class="fab fa-instagram"></i>Instagram</p>
+                                <div class="item-button">
+                                    <a class="contact-btn" title="Facebook profile"
+                                        href="https://www.instagram.com/orichtradingprojects/?fbclid=IwAR3F4lHFYwmHfR52gYtnQj-8hMbTLDAuQd9yX4IndLP05Ocfu3ZUZQkSpyk"
+                                        target="_blank">view account<i class="fa-solid fa-up-right-from-square"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                     <div class="contact-item">
                         <div class="contact-item-title"><i class="fas fa-map-marked-alt"></i><h3>location</h3></div>
                         <div class="contact-info">
@@ -975,13 +998,14 @@
                                 <p><i class="fas fa-map-marker-alt"></i>
                                     Johannesburg, Gauteng
                                 </p>
-                            <button>
+                            <div class="item-button">
                                 <a class="contact-btn" title="Orich location" href="https://goo.gl/maps/xipWF492X1BgCwsDA"
                                     target="_blank">google maps<i class="fa-solid fa-up-right-from-square"></i></a>
-                            </button>
+                            </div>
                         </div>
                         </div>
                     </div>
+
                 </div>
                 <!-- FORM -->
                 <form id="form" class="contact-form" target="_blank" action="https://formsubmit.co/info@orichtrading.co.za"
@@ -1022,7 +1046,7 @@
             <div class="footer" id="footer">
                 <!-- FOOTER LOGO -->
                 <div class="footer-logo">
-                    <img src="img/orich.jpg" width="250" height="250" alt="Orich Trading & Projects Logo">
+                    <img src="img/orich.jpg" loading="lazy" width="250" height="250" alt="Orich Trading & Projects Logo">
                 </div>
 
                 <!-- FOOTER COPYRIGHT INFO -->
