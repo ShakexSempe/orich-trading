@@ -18,6 +18,150 @@
         .section-title {
             padding: 5vh 5vw;
         }
+
+        // ABOUT SECTION MISSION STATEMENT CONTAINER
+        .vision-mission {
+            padding: 5vh 5vw;
+            margin: 5vh 0;
+
+            @include abstracts.sm {
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            // MISSION STATEMENT CARD
+            // CARD = TITLE[H3] + CONTENT[IMG + P]
+            .mission {
+                max-width: 450px;
+
+                // CARD TITLE
+                h3 {
+                    font-size: 1.5rem;
+                    font-size: abstracts.$font-clamp-lg;
+                    font-weight: 500;
+                    margin-bottom: 1rem;
+                    text-transform: capitalize;
+                    transition: .25s;
+                    text-align: center;
+                }
+
+                // CONTENT = BLACK BORDER BOX WITH IMG + CENTERED P TEXT
+                // OVERFLOW HIDDEN FOR IMG IO TRANSITION 
+                .statement {
+                    border: 2px solid #000;
+                    border-radius: .25rem;
+                    width: 100%;
+                    height: 50vh;
+                    height: 20rem;
+                    overflow: hidden;
+                    margin-bottom: 1rem;
+                    transition: 1s;
+                    display: flex;
+                    flex-direction: column-reverse;
+
+                    .mission-logo {
+                        overflow: hidden;
+                        flex-basis: 90%;
+
+                        figure {
+                            width: 100%;
+                            height: 100%;
+                            overflow: hidden;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: contain;
+                                transition: 1s;
+                            }
+
+                            &.io-item {
+                                img {
+                                    transform: translate(0) scale(.8);
+                                }
+                            }
+
+                            &.active-item {
+                                img {
+                                    transform: translate(0) scale(1);
+                                    transition: 1s;
+                                }
+                            }
+                        }
+                    }
+
+                    .mission-content {
+                        flex-basis: 50%;
+                        background: #000;
+                        text-align: center;
+                        display: grid;
+                        place-items: center;
+                        place-content: center;
+                        padding: .5rem;
+
+                        @include abstracts.md {
+                            padding: 1rem;
+                            flex-basis: 20%;
+                        }
+
+                        p {
+                            color: abstracts.$text-second;
+                        }
+
+                        // VIEW SERVICES LINK
+                        a {
+                            text-transform: capitalize;
+                            color: abstracts.$brand-light;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            gap: .5rem;
+
+                            i {
+                                font-size: .85rem;
+                                transition: .25s;
+                            }
+
+                            &:hover {
+                                i {
+                                    transform: translateX(-.25rem);
+                                    color: abstracts.$brand;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            @media (min-width: 820px) {
+
+                // margin-top: 10vh;
+                .vision {
+                    padding: 5vh .5rem;
+                    margin: 0 5vw;
+                    width: 70%;
+
+                    h3 {
+                        font-size: 2.5rem;
+                    }
+
+                    ul {
+
+                        li {
+                            padding-bottom: 1rem;
+
+                            &::marker {
+                                color: abstracts.$marker;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     // ABOUT ARTICLE
     .about-article {
@@ -73,144 +217,7 @@
         }
     }
 
-    // ABOUT SECTION MISSION STATEMENT CONTAINER
-    .vision-mission {
-        padding: 5vh 5vw;
-        margin: 5vh 0;
-        @include abstracts.sm {
-            // border: 2px solid blue;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        // MISSION STATEMENT CARD
-        // CARD = TITLE[H3] + CONTENT[IMG + P]
-        .mission {
-            max-width: 450px;
-            // CARD TITLE
-            h3 {
-                font-size: 1.5rem;
-                font-size: abstracts.$font-clamp-lg;
-                font-weight: 500;
-                margin-bottom: 1rem;
-                text-transform: capitalize;
-                transition: .25s;
-                text-align: center;
-            }
-
-            // CONTENT = BLACK BORDER BOX WITH IMG + CENTERED P TEXT
-            // OVERFLOW HIDDEN FOR IMG IO TRANSITION 
-            .statement {
-                border: 2px solid #000;
-                border-radius: .25rem;
-                width: 100%;
-                height: 50vh;
-                height: 20rem;
-                overflow: hidden;
-                margin-bottom: 1rem;
-                transition: 1s;
-                display: flex;
-                flex-direction: column-reverse;
-
-                .mission-logo {
-                    overflow: hidden;
-                    flex-basis: 90%;
-
-                    figure {
-                        width: 100%;
-                        height: 100%;
-                        overflow: hidden;
-
-                        img {
-                            width: 100%;
-                            height: 100%;
-                            object-fit: contain;
-                            transition: 1s;
-                        }
-
-                        &.io-item {
-                            img {
-                                transform: translate(0) scale(.8);
-                            }
-                        }
-
-                        &.active-item {
-                            img {
-                                transform: translate(0) scale(1);
-                                transition: 1s;
-                            }
-                        }
-                    }
-                }
-                
-                .mission-content {
-                    flex-basis: 50%;
-                    background: #000;
-                    text-align: center;
-                    display: grid;
-                    place-items: center;
-                    place-content: center;
-                    padding: .5rem;
-                    
-                    @include abstracts.md {
-                        padding: 1rem;
-                        flex-basis: 20%;
-                    }
-                    p {
-                        color: abstracts.$text-second;
-                    }
-                    // VIEW SERVICES LINK
-                    a {
-                        text-transform: capitalize;
-                        color: abstracts.$brand-light;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        gap: .5rem;
-
-                        i {
-                            font-size: .85rem;
-                            transition: .25s;
-                        }
-
-                        &:hover {
-                            i {
-                                transform: translateX(-.25rem);
-                                color: abstracts.$brand;
-                            }
-                        }
-                    }
-                }
-                
-            }
-        }
-
-        @media (min-width: 820px) {
-            
-            // margin-top: 10vh;
-            .vision {
-                padding: 5vh .5rem;
-                margin: 0 5vw;
-                width: 70%;
-
-                h3 {
-                    font-size: 2.5rem;
-                }
-
-                ul {
-                    
-                    li {
-                        padding-bottom: 1rem;
-                        &::marker {
-                            color: abstracts.$marker;
-                        }
-                    }
-                }
-            }
-        }
-    }
+    
 
     // ABOUT PAGE
     #about-page {
@@ -339,6 +346,7 @@
                 // EXTENDED MISSION STATEMENT
                 // .MISSION = TITLE + 
                 .mission {
+                    // border: 2px solid blue;
                     background: #000;
                     padding: 5vh 5vw;
                     margin: 10vh 0 0;
