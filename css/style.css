@@ -639,24 +639,25 @@ img {
 .about .section-title {
   padding: 5vh 5vw;
 }
-.about .about-article {
+
+.about-article {
   margin: 5vh 1rem 10vh 5vw;
   text-transform: none;
 }
 @media (min-width: 500px) {
-  .about .about-article {
+  .about-article {
     margin: 5vh 5vw;
   }
 }
 @media (min-width: 1024px) {
-  .about .about-article {
+  .about-article {
     width: 100%;
   }
 }
-.about .about-article .article-body {
+.about-article .article-body {
   margin-bottom: 5vh;
 }
-.about .about-article p.article-intro::first-letter {
+.about-article p.article-intro::first-letter {
   font-size: 2rem;
   padding: 0 0.2rem 0 0.05rem;
   background: #000;
@@ -667,14 +668,14 @@ img {
   box-shadow: 2px 3px 3px rgba(73, 86, 101, 0.15);
   text-shadow: 2px 2px 0px #f8650c;
 }
-.about .about-article ul {
+.about-article ul {
   margin: 0.5rem 0;
   padding: 0.5rem;
   position: relative;
   border-radius: 0.25rem;
   background: linear-gradient(90deg, #ddd, #fff);
 }
-.about .about-article ul li {
+.about-article ul li {
   position: relative;
   list-style: none;
   text-transform: capitalize;
@@ -682,12 +683,13 @@ img {
   font-size: 1rem;
   font-size: clamp(1rem, 2vw, 1.125rem);
 }
-.about .vision-mission {
+
+.vision-mission {
   padding: 5vh 5vw;
   margin: 5vh 0;
 }
 @media (min-width: 500px) {
-  .about .vision-mission {
+  .vision-mission {
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -695,48 +697,53 @@ img {
     align-items: center;
   }
 }
-.about .vision-mission .mission h3 {
+.vision-mission .mission {
+  max-width: 450px;
+}
+.vision-mission .mission h3 {
   font-size: 1.5rem;
   font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 500;
   margin-bottom: 1rem;
   text-transform: capitalize;
   transition: 0.25s;
   text-align: center;
 }
-.about .vision-mission .mission .statement {
+.vision-mission .mission .statement {
   border: 2px solid #000;
   border-radius: 0.25rem;
   width: 100%;
   height: 50vh;
+  height: 20rem;
   overflow: hidden;
   margin-bottom: 1rem;
   transition: 1s;
   display: flex;
   flex-direction: column-reverse;
 }
-.about .vision-mission .mission .statement .mission-logo {
+.vision-mission .mission .statement .mission-logo {
   overflow: hidden;
   flex-basis: 90%;
 }
-.about .vision-mission .mission .statement .mission-logo figure {
+.vision-mission .mission .statement .mission-logo figure {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-.about .vision-mission .mission .statement .mission-logo figure img {
+.vision-mission .mission .statement .mission-logo figure img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   transition: 1s;
 }
-.about .vision-mission .mission .statement .mission-logo figure.io-item img {
+.vision-mission .mission .statement .mission-logo figure.io-item img {
   transform: translate(0) scale(0.8);
 }
-.about .vision-mission .mission .statement .mission-logo figure.active-item img {
+.vision-mission .mission .statement .mission-logo figure.active-item img {
   transform: translate(0) scale(1);
   transition: 1s;
 }
-.about .vision-mission .mission .statement .mission-content {
+.vision-mission .mission .statement .mission-content {
   flex-basis: 50%;
   background: #000;
   text-align: center;
@@ -746,15 +753,15 @@ img {
   padding: 0.5rem;
 }
 @media (min-width: 768px) {
-  .about .vision-mission .mission .statement .mission-content {
+  .vision-mission .mission .statement .mission-content {
     padding: 1rem;
     flex-basis: 20%;
   }
 }
-.about .vision-mission .mission .statement .mission-content p {
+.vision-mission .mission .statement .mission-content p {
   color: #ffffff;
 }
-.about .vision-mission .mission .statement .mission-content a {
+.vision-mission .mission .statement .mission-content a {
   text-transform: capitalize;
   color: #ffa500;
   display: flex;
@@ -762,27 +769,27 @@ img {
   align-items: center;
   gap: 0.5rem;
 }
-.about .vision-mission .mission .statement .mission-content a i {
+.vision-mission .mission .statement .mission-content a i {
   font-size: 0.85rem;
   transition: 0.25s;
 }
-.about .vision-mission .mission .statement .mission-content a:hover i {
+.vision-mission .mission .statement .mission-content a:hover i {
   transform: translateX(-0.25rem);
   color: #f8650c;
 }
 @media (min-width: 820px) {
-  .about .vision-mission .vision {
+  .vision-mission .vision {
     padding: 5vh 0.5rem;
     margin: 0 5vw;
     width: 70%;
   }
-  .about .vision-mission .vision h3 {
+  .vision-mission .vision h3 {
     font-size: 2.5rem;
   }
-  .about .vision-mission .vision ul li {
+  .vision-mission .vision ul li {
     padding-bottom: 1rem;
   }
-  .about .vision-mission .vision ul li::marker {
+  .vision-mission .vision ul li::marker {
     color: #f4f4f4;
   }
 }
