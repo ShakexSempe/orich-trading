@@ -50,8 +50,6 @@
         // ADJUST HEIGHT AT WIDER SCREENS TO ALIGN IMAGES.. 
         // ..AND TEXT AREA IN 3 COLUMN GRID
         p {
-            // max-width: 450px;
-            // font-size: abstracts.$font-clamp-xsm;
 
             // HEIGHT OF TITLE RELATIVE TO TEXT
             @include abstracts.lg {

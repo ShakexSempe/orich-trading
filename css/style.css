@@ -2665,7 +2665,7 @@ img {
   color: #f8650c;
 }
 .services .service-container .service-item:hover .service-type ul li::marker {
-  color: #0005;
+  color: #ddd;
 }
 
 #services-page .promise {
