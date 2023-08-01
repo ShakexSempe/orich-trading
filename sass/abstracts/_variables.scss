@@ -1,7 +1,4 @@
 
-// $font-content: 'Prompt', sans-serif;
-// $primary-color: #fff;
-// $secondary-color: #000;
 $brand: #f8650c;
 $brand-dark: hsl(23, 94%, 51%);
 $brand-light: #ffa500;
@@ -17,12 +14,6 @@ $bg-main: #ffffff;
 $bg-main-light: #f4f4f4;
 $bg-second: #000000;
 
-
-$font-clamp-xsm: clamp(.98rem, 1.25vw, 1.0125rem);
-$font-clamp-sm: clamp(1rem, 2vw, 1.125rem);
-$font-clamp-md: clamp(1.25rem, 2.25vw, 1.25rem);
-$font-clamp-lg: clamp(1.5rem, 4vw, 2rem);
-$font-clamp-xlg: clamp(2rem, 5vw, 2.25rem);
 
 $brand-border: linear-gradient(90deg, $brand-dark, $brand-light, $brand-dark);
 
