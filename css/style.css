@@ -2038,15 +2038,16 @@ img {
 .menu-item .menu-item-title {
   position: relative;
   padding: 1rem;
+  text-wrap: balance;
 }
 @media (min-width: 820px) {
   .menu-item .menu-item-title p {
-    height: 9rem;
+    height: 5.5rem;
   }
 }
 @media (min-width: 1024px) {
   .menu-item .menu-item-title p {
-    height: 6rem;
+    height: 5rem;
   }
 }
 .menu-item .menu-image {
