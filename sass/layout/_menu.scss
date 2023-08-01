@@ -20,6 +20,9 @@
 
         @include abstracts.lg {
             grid-template-columns: auto auto auto;
+            column-gap: 1rem;
+        }
+        @include abstracts.xlg {
             column-gap: 2rem;
         }
 
@@ -42,13 +45,13 @@
     .menu-item-title {
         position: relative;
         padding: 1rem;
-        text-wrap: balance;
+        // text-wrap: balance;
 
         // ADJUST HEIGHT AT WIDER SCREENS TO ALIGN IMAGES.. 
         // ..AND TEXT AREA IN 3 COLUMN GRID
         p {
-            max-width: 450px;
-            font-size: abstracts.$font-clamp-xsm;
+            // max-width: 450px;
+            // font-size: abstracts.$font-clamp-xsm;
 
             @include abstracts.lg {
                 height: 9rem;

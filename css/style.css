@@ -2019,6 +2019,11 @@ img {
 @media (min-width: 820px) {
   .menu .menu-grid {
     grid-template-columns: auto auto auto;
+    column-gap: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .menu .menu-grid {
     column-gap: 2rem;
   }
 }
@@ -2033,11 +2038,6 @@ img {
 .menu-item .menu-item-title {
   position: relative;
   padding: 1rem;
-  text-wrap: balance;
-}
-.menu-item .menu-item-title p {
-  max-width: 450px;
-  font-size: clamp(.98rem, 1.25vw, 1.0125rem);
 }
 @media (min-width: 820px) {
   .menu-item .menu-item-title p {
