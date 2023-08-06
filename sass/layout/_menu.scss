@@ -50,7 +50,6 @@
         // ADJUST HEIGHT AT WIDER SCREENS TO ALIGN IMAGES.. 
         // ..AND TEXT AREA IN 3 COLUMN GRID
         p {
-
             // HEIGHT OF TITLE RELATIVE TO TEXT
             @include abstracts.lg {
                 height: 5.5rem;

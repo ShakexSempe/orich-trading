@@ -123,7 +123,7 @@ h3 {
 
 p {
   color: #333;
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: clamp(.98rem, 1.25vw, 1.125rem);
   font-weight: 400;
   line-height: 1.6;
 }
