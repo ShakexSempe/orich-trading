@@ -55,7 +55,7 @@ section {
   transition: 0.5s;
 }
 .section-title.io-item h2 {
-  letter-spacing: 0.125rem;
+  letter-spacing: 0.025rem;
   transition: 1s;
 }
 .section-title.io-item h2::after {
