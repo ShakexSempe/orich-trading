@@ -981,7 +981,7 @@ img {
 }
 @media (min-width: 768px) {
   #banner {
-    margin: 10vh 5vw;
+    margin: 20vh 10vw;
   }
 }
 @media (min-width: 500px) {
@@ -998,7 +998,6 @@ img {
 @media (min-width: 500px) {
   #banner .banner-image-container {
     gap: 10vh;
-    margin: 10vh 10vw;
   }
 }
 #banner .banner-image-container figure {
@@ -1021,11 +1020,16 @@ img {
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
   }
   #banner .banner-image-container figure img {
     width: 50%;
+    max-width: 600px;
     height: 100%;
-    object-fit: contain;
+    flex-basis: 50%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0;
   }
 }
 #banner .banner-image-container figure .banner-content {
@@ -1034,9 +1038,9 @@ img {
 }
 @media (min-width: 768px) {
   #banner .banner-image-container figure .banner-content {
-    width: 50%;
-    display: grid;
-    place-items: center;
+    flex-basis: 50%;
+    width: 100%;
+    padding: 10vh 5vw;
   }
 }
 #banner .banner-image-container figure .banner-content .banner-image-title h3 {
@@ -1068,7 +1072,7 @@ img {
 }
 @media (min-width: 768px) {
   #banner .banner-image-container figure .banner-content .banner-image-title .flex-item {
-    padding: 0.5rem;
+    padding: 1rem;
   }
 }
 #banner .banner-image-container figure .banner-content .banner-image-title .flex-item h4 {
