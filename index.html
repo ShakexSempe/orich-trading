@@ -15,9 +15,9 @@
     <!-- KEYWORDS -->
     <meta name="keywords" content="general building, construction, Johannesburg, Gauteng, industrial relations, painting, plumbing, tiling, roofing, electrical services & installations, IT network and infrastructure, general building, carpentry, paving, welding, ceiling">
     <!-- PRELOAD -->
-    <link rel="preload" href="img/orich.jpg" as="image" fetchpriority="high">
     <link rel="preload" href="css/style.css" as="style" />
     <link rel="preload" href="js/app.js" as="script" />
+    <link rel="preload" href="img/orich.jpg" as="image" fetchpriority="high">
     <link rel="preload" href="img/hero_400.jpg" as="image" media="(max-width: 450px)">
     <link rel="preload" href="img/hero_800.jpg" as="image" media="(min-width: 450.1px)">
     <!-- STYLESHEET -->
@@ -146,6 +146,7 @@
 
 
 </head>
+
 <body>
     <!-- LOADER -->
     <div class="loader_bg">
@@ -166,7 +167,15 @@
             <!-- LOGO = LINK TO TOP OF THE PAGE -->
             <div class="logo">
                     <a href="#">
-                        <img src="img/orich.jpg" width="40" height="40" alt="Orich Trading & Projects logo">
+                        <picture>
+                            <source
+                            type="image/webp"
+                            srcset="img/orich-logo.webp"
+                            width="260"
+                            height="255"
+                            >
+                            <img src="img/orich.jpg" width="250" height="250" alt="Orich Trading & Projects logo">
+                        </picture>
                     </a>
             </div>
             <!-- DESKTOP NAVBAR & MOBILE HAMBURGER MENU -->
@@ -239,13 +248,19 @@
             <!-- HERO IMAGE -->
             <picture class="hero-image">
                 <source
-                media="(min-width: 820px)"
+                media="(min-width: 820.1px)"
                 width="800"
                 height="1035"
-                srcset="img/hero_800-min.jpg"
+                srcset="img/hero_800.webp"
+                >
+                <source
+                media="(max-width: 820px)"
+                width="800"
+                height="1035"
+                srcset="img/hero_400.webp"
                 >
 
-                <img src="img/hero_400.jpg" width="450" height="1000" alt="Construction workers">
+                <img src="img/hero_800.jpg" width="800" height="1035" alt="Construction workers">
             </picture>
         </div>
         
@@ -262,7 +277,7 @@
                     <div class="menu-item menu1">
                         <div class="menu-item-title">
                             <h3>Construction projects</h3>
-                            <p>Working in good time & attention to detail to deliver high quality & cost effective projects. 
+                            <p>Reliable delivery of high quality and cost effective projects. 
                             </p>
                         </div>
                         <figure class="menu-image io-item">
@@ -284,7 +299,7 @@
                     <div class="menu-item menu2">
                         <div class="menu-item-title">
                             <h3>Electrical services</h3>
-                            <p>Qualified & experienced electricians for installations,
+                            <p>Expert installations,
                                 maintenance and solar system solutions.
                             </p>
                         </div>
@@ -307,7 +322,7 @@
                     <div class="menu-item menu3">
                         <div class="menu-item-title">
                             <h3>General building</h3>
-                            <p>Using the latest technologies & strategies as a commitment to quality & customer
+                            <p>Modern techniques to ensure quality & customer
                                 satisfaction.
                             </p>
                         </div>

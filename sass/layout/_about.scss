@@ -182,6 +182,7 @@
 
         // FIRST LETTER OF THIS P ARTICLE HAS MAGAZINE STYLE FIRST LETTER
         p {
+            
             &.article-intro {
                 &::first-letter {
                     font-size: 2rem;

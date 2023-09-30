@@ -55,7 +55,7 @@ section {
   transition: 0.5s;
 }
 .section-title.io-item h2 {
-  letter-spacing: 0.125rem;
+  letter-spacing: 0.025rem;
   transition: 1s;
 }
 .section-title.io-item h2::after {
@@ -981,7 +981,7 @@ img {
 }
 @media (min-width: 768px) {
   #banner {
-    margin: 10vh 5vw;
+    margin: 20vh 10vw;
   }
 }
 @media (min-width: 500px) {
@@ -998,7 +998,6 @@ img {
 @media (min-width: 500px) {
   #banner .banner-image-container {
     gap: 10vh;
-    margin: 10vh 10vw;
   }
 }
 #banner .banner-image-container figure {
@@ -1021,11 +1020,16 @@ img {
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
   }
   #banner .banner-image-container figure img {
     width: 50%;
+    max-width: 600px;
     height: 100%;
-    object-fit: contain;
+    flex-basis: 50%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0;
   }
 }
 #banner .banner-image-container figure .banner-content {
@@ -1034,9 +1038,9 @@ img {
 }
 @media (min-width: 768px) {
   #banner .banner-image-container figure .banner-content {
-    width: 50%;
-    display: grid;
-    place-items: center;
+    flex-basis: 50%;
+    width: 100%;
+    padding: 10vh 5vw;
   }
 }
 #banner .banner-image-container figure .banner-content .banner-image-title h3 {
@@ -1068,7 +1072,7 @@ img {
 }
 @media (min-width: 768px) {
   #banner .banner-image-container figure .banner-content .banner-image-title .flex-item {
-    padding: 0.5rem;
+    padding: 1rem;
   }
 }
 #banner .banner-image-container figure .banner-content .banner-image-title .flex-item h4 {
@@ -1134,17 +1138,15 @@ img {
   color: #fff;
 }
 #contact .contact-items {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(1, 1fr);
   gap: 10vh;
   padding: 5vh 0;
-  margin: 0 1rem;
+  margin: 0 5vw;
 }
 @media (min-width: 820px) {
   #contact .contact-items {
-    border: none;
-    display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 10vh 5vw 5vh;
     gap: 2rem;
@@ -1154,9 +1156,7 @@ img {
   background-color: #333;
   border-radius: 0.5rem;
   padding: 1rem 0.5rem;
-  height: 70%;
   width: 100%;
-  transform: scale(0.98);
   transition: 0.3s;
 }
 @media (min-width: 820px) {
@@ -2023,7 +2023,12 @@ img {
 @media (min-width: 820px) {
   .menu .menu-grid {
     grid-template-columns: auto auto auto;
-    column-gap: 1.5rem;
+    column-gap: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .menu .menu-grid {
+    column-gap: 2rem;
   }
 }
 
@@ -2040,17 +2045,16 @@ img {
   text-wrap: balance;
 }
 .menu-item .menu-item-title p {
-  max-width: 450px;
-  font-size: clamp(.98rem, 1.25vw, 1.0125rem);
+  font-size: clamp(.98rem, 1.25vw, 1.125rem);
 }
 @media (min-width: 820px) {
   .menu-item .menu-item-title p {
-    height: 9rem;
+    height: 5.5rem;
   }
 }
 @media (min-width: 1024px) {
   .menu-item .menu-item-title p {
-    height: 6rem;
+    height: 5rem;
   }
 }
 .menu-item .menu-image {
@@ -2668,7 +2672,7 @@ img {
   color: #f8650c;
 }
 .services .service-container .service-item:hover .service-type ul li::marker {
-  color: #0005;
+  color: #ddd;
 }
 
 #services-page .promise {
