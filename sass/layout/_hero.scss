@@ -13,7 +13,14 @@
 
     display: grid;
     grid-template-rows: 60% 1fr;
-    
+    @include abstracts.lg {
+        // grid-template-rows: 1fr;
+        // grid-template-columns: 1fr 1fr;
+        // gap: 5vw;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
     .hero-image {
         background: #0009;
         // border: 2px solid red;
@@ -29,12 +36,17 @@
             width: 100%;
             mix-blend-mode: darken;
 
+            @include abstracts.sm {
+                object-position: center;
+                // object-position: 90% 0%;
+                // position: absolute;
+                // top: 0;
+                // right: 0;
+                // border: 2px solid red;
+            }
             @include abstracts.lg {
-                object-position: 90% 0%;
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 60%;
+                width: 50vw;
+                object-position: top;
             }
         }
     }
@@ -47,13 +59,18 @@
         // top: 50vh;
         background: rgba(0, 0, 0, .8);
         border-radius: abstracts.$border-radius-sm;
-        @include abstracts.sm {
-            top: 55vh;
+        @include abstracts.lg {
+            top: 25vh;
+        left: 5vw;
+            // border: 2px solid blue;
+            // display: grid;
+            // place-items: center;
+            padding: 0;
         }
         @include abstracts.lg {
-            padding: 1rem 0;
-            top: 25vh;
-            width: max-content;
+            // padding: 1rem 0;
+            // top: 25vh;
+            // width: max-content;
         }
         // SLOGAN
         .slogan {
@@ -61,6 +78,7 @@
             border-radius: 5px;
             position: relative;
             text-transform: capitalize;
+            // border: 2px solid red;
             h1 {
                 font-weight: 600;
                 font-size: 3vw;

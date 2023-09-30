@@ -1911,6 +1911,13 @@ img {
   display: grid;
   grid-template-rows: 60% 1fr;
 }
+@media (min-width: 820px) {
+  #hero {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
 #hero .hero-image {
   background: #0009;
   z-index: -1;
@@ -1922,13 +1929,15 @@ img {
   width: 100%;
   mix-blend-mode: darken;
 }
+@media (min-width: 500px) {
+  #hero .hero-image img {
+    object-position: center;
+  }
+}
 @media (min-width: 820px) {
   #hero .hero-image img {
-    object-position: 90% 0%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 60%;
+    width: 50vw;
+    object-position: top;
   }
 }
 #hero .hero-title {
@@ -1937,16 +1946,11 @@ img {
   background: rgba(0, 0, 0, 0.8);
   border-radius: 0.5rem;
 }
-@media (min-width: 500px) {
-  #hero .hero-title {
-    top: 55vh;
-  }
-}
 @media (min-width: 820px) {
   #hero .hero-title {
-    padding: 1rem 0;
     top: 25vh;
-    width: max-content;
+    left: 5vw;
+    padding: 0;
   }
 }
 #hero .hero-title .slogan {
