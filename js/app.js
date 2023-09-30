@@ -72,7 +72,7 @@ logo.addEventListener("click", () => {
         // TRANSITIONS = 1) HEADER BACKGROUND.  2) LOGO HEIGHT
 const pageHeader = document.querySelector("[data-header]");
 const heroOptions = {
-    rootMargin: "-100% 0px 0px 0px"
+    rootMargin: "-80% 0px 0px 0px"
 };
 const heroObserver = new IntersectionObserver(
     function(

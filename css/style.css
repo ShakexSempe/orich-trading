@@ -1832,7 +1832,8 @@ img {
   color: #fff9;
 }
 #header.hero-header {
-  height: 30vh;
+  height: 25vh;
+  height: 10rem;
   padding: 1rem 5vw;
 }
 #header.hero-header::after {
@@ -1902,22 +1903,21 @@ img {
 }
 
 #hero {
-  min-height: 100vh;
-  padding: 5vh 5vw;
+  height: 90vh;
   background: #000;
   transition: 0.25s;
   position: relative;
   isolation: isolate;
+  display: grid;
+  grid-template-rows: 60% 1fr;
 }
 #hero .hero-image {
   background: #0009;
-  position: absolute;
   z-index: -1;
-  inset: 0;
 }
 #hero .hero-image img {
   object-fit: cover;
-  object-position: 55% 50%;
+  object-position: top;
   height: 100%;
   width: 100%;
   mix-blend-mode: darken;
@@ -1933,10 +1933,9 @@ img {
 }
 #hero .hero-title {
   position: relative;
-  top: 50vh;
+  padding-inline: 5vw;
   background: rgba(0, 0, 0, 0.8);
   border-radius: 0.5rem;
-  padding: 0.25rem 0;
 }
 @media (min-width: 500px) {
   #hero .hero-title {
