@@ -1909,7 +1909,7 @@ img {
   position: relative;
   isolation: isolate;
   display: grid;
-  grid-template-rows: 60% 1fr;
+  grid-template-rows: 50% 1fr;
 }
 @media (min-width: 820px) {
   #hero {
@@ -1962,8 +1962,8 @@ img {
   font-weight: 600;
   font-size: 3vw;
   font-size: clamp(1.25rem, 3vw, 2.25rem);
-  line-height: 1.4;
-  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 #hero .hero-title .slogan .hero-meta {
   color: rgba(255, 255, 255, 0.7);
@@ -1975,7 +1975,7 @@ img {
 }
 #hero .hero-title .slogan #cta .slogan-p {
   color: #fff;
-  margin: 0.25rem 0 0.5rem;
+  margin: 0.5rem 0 0.5rem;
   letter-spacing: 0.0125rem;
 }
 #hero .hero-title .slogan #cta .slogan-p span {
