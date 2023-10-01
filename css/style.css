@@ -1963,7 +1963,7 @@ img {
   font-size: 3vw;
   font-size: clamp(1.25rem, 3vw, 2.25rem);
   line-height: 1.4;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 #hero .hero-title .slogan .hero-meta {
   color: rgba(255, 255, 255, 0.7);
