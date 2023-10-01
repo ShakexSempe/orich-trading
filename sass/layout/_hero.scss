@@ -52,7 +52,6 @@
     }
     // HERO PAGE TITLE
     .hero-title {
-        // border: 2px solid blue;
         position: relative;
         // padding: .25rem 0;
         padding-inline: 5vw;
@@ -60,39 +59,33 @@
         background: rgba(0, 0, 0, .8);
         border-radius: abstracts.$border-radius-sm;
         @include abstracts.lg {
-            top: 25vh;
-        left: 5vw;
+            top: 30vh;
+            left: 5vw;
             // border: 2px solid blue;
             // display: grid;
             // place-items: center;
             padding: 0;
-        }
-        @include abstracts.lg {
-            // padding: 1rem 0;
-            // top: 25vh;
-            // width: max-content;
-        }
+        } // width: max-content;
+
         // SLOGAN
         .slogan {
             color: abstracts.$text-light;
-            border-radius: 5px;
             position: relative;
             text-transform: capitalize;
-            // border: 2px solid red;
             h1 {
                 font-weight: 600;
                 font-size: 3vw;
-                font-size: clamp(1.025rem, 3vw, 2.25rem);
+                font-size: clamp(1.25rem, 3vw, 2.25rem);
                 line-height: 1.4;
-                margin-bottom: .25rem;
-                br {
-                    display: none;
-                }
-                @include abstracts.lg {
-                    br {
-                        display: block;
-                    }
-                }
+                margin-bottom: 1rem;
+                // br {
+                //     display: none;
+                // }
+                // @include abstracts.lg {
+                //     br {
+                //         display: block;
+                //     }
+                // }
             }
             .hero-meta {
                 color: abstracts.$text-light-trans;

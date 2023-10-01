@@ -1948,31 +1948,22 @@ img {
 }
 @media (min-width: 820px) {
   #hero .hero-title {
-    top: 25vh;
+    top: 30vh;
     left: 5vw;
     padding: 0;
   }
 }
 #hero .hero-title .slogan {
   color: #fff;
-  border-radius: 5px;
   position: relative;
   text-transform: capitalize;
 }
 #hero .hero-title .slogan h1 {
   font-weight: 600;
   font-size: 3vw;
-  font-size: clamp(1.025rem, 3vw, 2.25rem);
+  font-size: clamp(1.25rem, 3vw, 2.25rem);
   line-height: 1.4;
-  margin-bottom: 0.25rem;
-}
-#hero .hero-title .slogan h1 br {
-  display: none;
-}
-@media (min-width: 820px) {
-  #hero .hero-title .slogan h1 br {
-    display: block;
-  }
+  margin-bottom: 1rem;
 }
 #hero .hero-title .slogan .hero-meta {
   color: rgba(255, 255, 255, 0.7);
