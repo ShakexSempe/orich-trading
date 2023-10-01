@@ -12,7 +12,7 @@
     isolation: isolate;
 
     display: grid;
-    grid-template-rows: 50% 1fr;
+    grid-template-rows: 55% 1fr;
     @include abstracts.lg {
         // grid-template-rows: 1fr;
         // grid-template-columns: 1fr 1fr;

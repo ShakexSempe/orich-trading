@@ -1909,7 +1909,7 @@ img {
   position: relative;
   isolation: isolate;
   display: grid;
-  grid-template-rows: 50% 1fr;
+  grid-template-rows: 55% 1fr;
 }
 @media (min-width: 820px) {
   #hero {
