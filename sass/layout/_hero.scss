@@ -75,17 +75,17 @@
             h1 {
                 font-weight: 600;
                 font-size: 3vw;
-                font-size: clamp(1.25rem, 3vw, 2.25rem);
+                font-size: clamp(1.0125rem, 3vw, 2.25rem);
                 line-height: 1.2;
-                margin-bottom: 1rem;
-                // br {
-                //     display: none;
-                // }
-                // @include abstracts.lg {
-                //     br {
-                //         display: block;
-                //     }
-                // }
+                margin-bottom: .5rem;
+                br {
+                    display: none;
+                }
+                @include abstracts.lg {
+                    br {
+                        display: block;
+                    }
+                }
             }
             .hero-meta {
                 color: abstracts.$text-light-trans;

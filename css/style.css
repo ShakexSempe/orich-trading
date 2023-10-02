@@ -1961,9 +1961,17 @@ img {
 #hero .hero-title .slogan h1 {
   font-weight: 600;
   font-size: 3vw;
-  font-size: clamp(1.25rem, 3vw, 2.25rem);
+  font-size: clamp(1.0125rem, 3vw, 2.25rem);
   line-height: 1.2;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+#hero .hero-title .slogan h1 br {
+  display: none;
+}
+@media (min-width: 820px) {
+  #hero .hero-title .slogan h1 br {
+    display: block;
+  }
 }
 #hero .hero-title .slogan .hero-meta {
   color: rgba(255, 255, 255, 0.7);
