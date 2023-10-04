@@ -12,7 +12,15 @@
     align-items: center;
     justify-content: space-between;
 
-    // BACKGROUND COLORS
+    height: 7vh;
+    padding: 0.25rem 5vw;
+    // DESKTOP HEADER STYLE
+    @include abstracts.lg {
+        height: 8vh;
+        padding: 0.25rem 5vw;
+    }
+
+    // PSEUDO BACKGROUND COLORS
     &::after {
         content: '';
         position: absolute;
@@ -25,279 +33,265 @@
         z-index: -1;
         box-shadow: 0rem 1rem 1rem transparent;
     }
-     // MOBILE HEADER 
-    @media (max-width: 820px) {
-        height: 7vh;
-        padding: .25rem 5vw;
-        .navigation {
-            position: relative;
-            border: none;
-            nav {
-                display: none;
-            }
-            aside {
-                position: fixed;
-                top: 7vh;
-                right: -100vw;
-                width: 100%;
-                height: 100vh;
-                background-color: abstracts.$bg-second;
-                padding: 0 ;
-                transition: .5s;
-                overflow: hidden;
-                z-index: 1;
 
-                ul {
-                    // border: 2px solid abstracts.$brand-light;
-                    border-radius: 3px;
-                    padding: 2em .2em;
-                    width: 70vw;
-                    height: 100%;
-                    height: auto;
-                    overflow: none;
+    aside {
+        position: fixed;
+        top: 7vh;
+        right: -100vw;
+        width: 100%;
+        height: 100vh;
+        background-color: abstracts.$bg-second;
+        padding: 0 ;
+        transition: .5s;
+        overflow: hidden;
+        z-index: 1;
 
-                    li {
-                        margin: 0 1rem 1rem;
-                        list-style: none;
-                        border-bottom: 1px solid rgba(78, 78, 78, 0.4);
+        ul {
+            // border: 2px solid abstracts.$brand-light;
+            border-radius: 3px;
+            padding: 2em .2em;
+            width: 70vw;
+            height: 100%;
+            height: auto;
+            overflow: none;
+
+            li {
+                margin: 0 1rem 1rem;
+                list-style: none;
+                border-bottom: 1px solid rgba(78, 78, 78, 0.4);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 1s;
+                transform: translateX(2em);
+                opacity: 0;
+
+                &.aside-dropdown {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+
+                    // ASIDE BUTTON LINKS
+                    button {
                         display: flex;
-                        justify-content: center;
                         align-items: center;
-                        transition: 1s;
-                        transform: translateX(2em);
-                        opacity: 0;
+                        width: 100%;
+                        padding: .5rem 0;
+                        background-color: transparent;
+                        color: abstracts.$nav-links;
+                        font-size: 1rem;
+                        text-transform: capitalize;
+                        text-decoration: none;
+                        letter-spacing: .025rem;
+                        transition: .2s;
+                        border: none;
 
-                        &.aside-dropdown {
+                        i {
                             position: relative;
-                            display: flex;
-                            flex-direction: column;
-
-                            // ASIDE BUTTON LINKS
-                            button {
-                                display: flex;
-                                align-items: center;
-                                width: 100%;
-                                padding: .5rem 0;
-                                background-color: transparent;
-                                color: abstracts.$nav-links;
-                                font-size: 1rem;
-                                text-transform: capitalize;
-                                text-decoration: none;
-                                letter-spacing: .025rem;
-                                transition: .2s;
-                                border: none;
-
-                                i {
-                                    position: relative;
-                                    color: #fff9;
-                                    width: 1.5rem;
-                                    border: 2px solid red;
-                                    &.fa-caret-down {
-                                        transition: .3s;
-                                        margin-left: auto;
-                                    }
-                                    &:first-of-type {
-                                        margin-right: 1rem;
-                                    }
-                                }
-
-
+                            color: #fff9;
+                            width: 1.5rem;
+                            border: 2px solid red;
+                            &.fa-caret-down {
+                                transition: .3s;
+                                margin-left: auto;
                             }
-
-                            .aside-dropdown-content {
-                                position: relative;
-                                top: 0;
-                                // left: 3.75rem;
-                                width: 100%;
-                                height: 0;
-                                // padding: 1rem;
-                                overflow: hidden;
-                                background-color: abstracts.$bg-second;
-                                display: flex;
-                                flex-direction: column;
-                                transition: .5s;
-
-                                a {
-                                    text-transform: capitalize;
-                                    margin-left: auto;
-                                    width: auto;
-                                    letter-spacing: .025rem;
-                                    font-weight: 300;
-
-                                    &:hover {
-                                        color: abstracts.$text-second;
-                                        transition: .2s;
-                                    }
-                                }
-
-                                // SERVICE PAGE ASIDE MENU ITEMS
-                                &.services-dropdown {
-                                    a {
-                                        width: 100%;
-                                        text-align: right;
-                                        text-transform: capitalize;
-                                    }
-                                }
+                            &:first-of-type {
+                                margin-right: 1rem;
                             }
-
-                            i {
-                                color: abstracts.$brand-light;
-                                // width: 20%;
-                                opacity: .7;
-                                // padding: .1em;
-                                // margin-right: auto;
-                                position: absolute;
-                                left: .5rem;
-                            }
-
-                            &:hover {
-                                transition: .2s;
-                                border-color: #fff8;
-                                border-radius: 0;
-
-                                button {
-                                    color: abstracts.$brand-light;
-                                    transition: .2s;
-
-                                    i {
-                                        transition: .2s;
-                                        color: #fff6;
-
-                                        &.fa-caret-down {
-                                            transform: rotate(180deg);
-                                        }
-                                    }
-                                }
-
-                                .aside-dropdown-content {
-                                    // display: block;
-                                    height: 18vh;
-
-                                    a {
-                                        &:hover {
-                                            color: abstracts.$brand-light;
-                                        }
-                                    }
-                                }
-
-                                // SERVICE PAGE DROPDOWN HOVER STATE
-                                .services-dropdown {
-                                    height: 65vh;
-                                }
-
-                                .projects-dropdown {
-                                    height: 60vh;
-                                    overflow-y: auto;
-                                }
-
-                            }
-                            
                         }
 
+
+                    }
+
+                    .aside-dropdown-content {
+                        position: relative;
+                        top: 0;
+                        // left: 3.75rem;
+                        width: 100%;
+                        height: 0;
+                        // padding: 1rem;
+                        overflow: hidden;
+                        background-color: abstracts.$bg-second;
+                        display: flex;
+                        flex-direction: column;
+                        transition: .5s;
+
                         a {
-                            color: abstracts.$nav-links;
-                            text-decoration: none;
-                            width: 100%;
-                            padding: .5rem;
+                            text-transform: capitalize;
+                            margin-left: auto;
+                            width: auto;
+                            letter-spacing: .025rem;
+                            font-weight: 300;
+
+                            &:hover {
+                                color: abstracts.$text-second;
+                                transition: .2s;
+                            }
+                        }
+
+                        // SERVICE PAGE ASIDE MENU ITEMS
+                        &.services-dropdown {
+                            a {
+                                width: 100%;
+                                text-align: right;
+                                text-transform: capitalize;
+                            }
+                        }
+                    }
+
+                    i {
+                        color: abstracts.$brand-light;
+                        // width: 20%;
+                        opacity: .7;
+                        // padding: .1em;
+                        // margin-right: auto;
+                        position: absolute;
+                        left: .5rem;
+                    }
+
+                    &:hover {
+                        transition: .2s;
+                        border-color: #fff8;
+                        border-radius: 0;
+
+                        button {
+                            color: abstracts.$brand-light;
                             transition: .2s;
 
                             i {
-                                margin-right: .5rem;
-                                width: 1.5rem;
-                                // border: 2px solid blue;
+                                transition: .2s;
+                                color: #fff6;
+
+                                &.fa-caret-down {
+                                    transform: rotate(180deg);
+                                }
                             }
-
-                            
                         }
 
-                        
-                    }
-                }
+                        .aside-dropdown-content {
+                            // display: block;
+                            height: 18vh;
 
-                .social-links {
-                    width: 85vw;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-start;
-                    align-items: center;
-                    opacity: 1;
-                    transition: .5s;
+                            a {
+                                &:hover {
+                                    color: abstracts.$brand-light;
+                                }
+                            }
+                        }
+
+                        // SERVICE PAGE DROPDOWN HOVER STATE
+                        .services-dropdown {
+                            height: 65vh;
+                        }
+
+                        .projects-dropdown {
+                            height: 60vh;
+                            overflow-y: auto;
+                        }
+
+                    }
                     
-                    a {
-                        width: 100%;
-                        text-decoration: none;
-                        color: #f4f4f4;
-                        letter-spacing: .05rem;
-                        font-weight: 300;
-                        // letter-spacing: .025rem;
-                        // margin: 1rem 0 0;
-                        margin-bottom: .5rem;
-                        transform: translateY(2rem);
-                        opacity: 0;
-                        transition: .5s;
-                        text-transform: none;
-                        
-                        i {
-                            // border: 1px solid red;
-                            width: 1rem;
-                            margin: 0 .5rem 0 1rem;
-                            font-size: 1rem;
-                            color: abstracts.$brand-light;
-                        }
-                    }
                 }
-                // HAMBURGER ACTIVE CLASS
-                &.active {
-                    // DISPLAY ASIDE FROM RIGHT
-                    right: -1rem;
-                    // DISPLAY UL
-                    ul {
-                        li {
-                            transform: translateX(0);
-                            opacity: 1;
-                        }
-                        :nth-child(1) {
-                            transition-delay: .3s;
-                        }
-                        :nth-child(2) {
-                            transition-delay: .35s;
-                        }
-                        :nth-child(3) {
-                            transition-delay: .4s;
-                        }
-                        :nth-child(4) {
-                            transition-delay: .45s;
-                        }
-                        :nth-child(5) {
-                            transition-delay: .5s;
-                        }
-                        :nth-child(6) {
-                            transition-delay: .8s;
-                        }
 
+                a {
+                    color: abstracts.$nav-links;
+                    text-decoration: none;
+                    width: 100%;
+                    padding: .5rem;
+                    transition: .2s;
+
+                    i {
+                        margin-right: .5rem;
+                        width: 1.5rem;
+                        // border: 2px solid blue;
                     }
-                    .social-links {
-                        opacity: 1;
-                        a {
-                            opacity: 1;
-                            transform: translateY(0);
-                            transition-delay: calc(.35s + .05s * var(--i)) ;
-                        }
-                    }
+
+                    
+                }
+
+                
+            }
+        }
+
+        .social-links {
+            width: 85vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            opacity: 1;
+            transition: .5s;
+            
+            a {
+                width: 100%;
+                text-decoration: none;
+                color: #f4f4f4;
+                letter-spacing: .05rem;
+                font-weight: 300;
+                // letter-spacing: .025rem;
+                // margin: 1rem 0 0;
+                margin-bottom: .5rem;
+                transform: translateY(2rem);
+                opacity: 0;
+                transition: .5s;
+                text-transform: none;
+                
+                i {
+                    // border: 1px solid red;
+                    width: 1rem;
+                    margin: 0 .5rem 0 1rem;
+                    font-size: 1rem;
+                    color: abstracts.$brand-light;
+                }
+            }
+        }
+        // HAMBURGER ACTIVE CLASS
+        &.active {
+            // DISPLAY ASIDE FROM RIGHT
+            right: -1rem;
+            // DISPLAY UL
+            ul {
+                li {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+                :nth-child(1) {
+                    transition-delay: .3s;
+                }
+                :nth-child(2) {
+                    transition-delay: .35s;
+                }
+                :nth-child(3) {
+                    transition-delay: .4s;
+                }
+                :nth-child(4) {
+                    transition-delay: .45s;
+                }
+                :nth-child(5) {
+                    transition-delay: .5s;
+                }
+                :nth-child(6) {
+                    transition-delay: .8s;
+                }
+
+            }
+            .social-links {
+                opacity: 1;
+                a {
+                    opacity: 1;
+                    transform: translateY(0);
+                    transition-delay: calc(.35s + .05s * var(--i)) ;
                 }
             }
         }
     }
-    
-    // DESKTOP HEADER
-    @media (min-width: 820px) {
-        height: 8vh;
-        padding: .25rem 5vw;
 
+    
+    // DESKTOP HEADER - TOGGLE + ASIDE = DISPLAY NONE
+    @include abstracts.lg {
+        
         .navigation {
-            // border: 1px solid yellow;
-            float: right;
-            // padding: .25rem;
+
             .toggle {
                 display: none;
             }
@@ -305,17 +299,59 @@
             aside {
                 display: none;
             }
+        }
 
-            // NAV STYLE
-            nav {
+    }
+    
+    // CHANGE BG COLOR ON SCROLL
+    // HEADER CLASSES FOR IO
+    &.index-header {
+        background-color: #fff;
+        background-color: #000a;
+        background: transparent;       
+    }
+    // LOGO - STARTS WITH 0 OPACITY
+    .logo {
+        z-index: 1;
+        transition: .5s;
+        height: 100%;
+        width: auto;
+
+        a {
+            overflow: hidden;
+            width: 15rem;
+            transition: .25s;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+                object-position: left;
+                border-bottom-left-radius: abstracts.$border-radius-xsm;
+                border-bottom-right-radius: abstracts.$border-radius-xsm;
+            }
+        }
+    }
+    
+    .navigation {
+        text-transform: capitalize;
+        transition: .5s;
+        position: relative;
+        border: none;
+
+        nav {
+            display: none;
+
+            @include abstracts.lg {
                 display: block;
                 transition: .5s;
-                
+
                 ul {
                     display: flex;
                     align-items: center;
                     gap: 1rem;
                     isolation: isolate;
+
                     // border: 2px solid red;
                     li {
                         list-style: none;
@@ -331,6 +367,7 @@
                             // padding: .25rem;
                             position: relative;
                             display: block;
+
                             // NAV LINK UNDERLINE
                             &::after {
                                 position: absolute;
@@ -355,6 +392,7 @@
                     // DROPDOWN
                     .dropdown {
                         position: relative;
+
                         button {
                             font-family: inherit;
                             font-size: .95rem;
@@ -376,6 +414,7 @@
                                 margin-left: .5rem;
                             }
                         }
+
                         .dropdown-content {
                             display: block;
                             height: 0rem;
@@ -388,13 +427,16 @@
                             transition: .25s;
                             border-radius: .25rem;
                             z-index: -1;
+
                             @include abstracts.xlg {
                                 left: -9vw;
                             }
+
                             a {
                                 display: block;
                                 border-radius: 0;
                                 padding: .25rem;
+
                                 &::after {
                                     display: none;
                                 }
@@ -403,7 +445,7 @@
                                     color: abstracts.$text-second;
                                     box-shadow: none;
                                     background-color: #000;
-                                    
+
                                 }
                             }
 
@@ -416,12 +458,14 @@
                         &:hover {
                             button {
                                 color: #000a;
+
                                 i {
                                     transition: .3s;
                                     transform: scale(.9) rotate(180deg);
                                     color: abstracts.$brand
                                 }
                             }
+
                             .dropdown-content {
                                 height: 55vh;
                                 height: auto;
@@ -433,56 +477,10 @@
             }
         }
 
-    }
-    
-    // CHANGE BG COLOR ON SCROLL
-    // HEADER CLASSES FOR IO
-    &.index-header {
-        background-color: #fff;
-        background-color: #000a;
-        background: transparent;       
-    }
-    // LOGO - STARTS WITH 0 OPACITY
-    .logo {
-        z-index: 1;
-        transition: .5s;
-        height: 100%;
-        width: auto;
-        @include abstracts.sm {
-            left: 5vw;
-        }
-
-        a {
-            color: #fff;
-            text-align: center;
-            text-decoration: none;
-            overflow: hidden;
-            width: 15rem;
-            height: 100%;
-            transition: .3s;
-
-            img {
-                height: 100%;
-                width: 100%;
-                object-fit: contain;
-                object-position: left;
-                border-bottom-left-radius: abstracts.$border-radius-xsm;
-                border-bottom-right-radius: abstracts.$border-radius-xsm;
-            }
-        }
-    }
-    
-    .navigation {
-        text-transform: capitalize;
-        transition: .5s;
-
 
         .nav-link {
             &.active {
                 color: abstracts.$brand-light;
-                // @include abstracts.md {
-                //     color: abstracts.$brand;
-                // }
                 i {
                     color: #fff9;
                 }
@@ -491,7 +489,7 @@
     }
 
 
-    // HEADER ACTIVE CLASS
+    // HERO SECTION HEADER STYLE
     &.hero-header {
         height: 25vh;
         height: 10rem;
@@ -556,6 +554,7 @@
             }
         }
     }
+    // HEADER STYLE WHEN SIDEBAR SELECTED
     &.toggle-header {
         &::after {
             background-color: #000;
@@ -573,12 +572,11 @@
             }
         }
     }
+    // MAIN SECTION HEADER STYLE WHEN IO
     &.main-header {
         &::after {
             background-color: #fff;
             box-shadow:  0rem .25rem 1rem rgba(0, 0, 0, .05);
-            // box-shadow: .015rem .015rem .5rem hsla(0, 0%, 0%, .2),
-            //         .25rem .25rem 1rem rgba(0, 0, 0, 5);
             transition: box-shadow .5s ease, background-color .25s;
             
         }
