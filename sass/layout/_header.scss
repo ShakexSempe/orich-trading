@@ -496,30 +496,14 @@
         height: 25vh;
         height: 10rem;
         padding: 1rem 5vw;
+        // TRANSPARENT BG WHEN HERO IN VIEW
         &::after {
             background-color: transparent;
         }
-        @media (min-width: 820px) {
+        @include abstracts.lg {
+            height: 12rem;
             background-color: transparent;
-            .navigation {
-                // ADD PADDING BOTTOM TO LIFT UL UP THE SECTION
-                // padding-bottom: 2rem;
-                nav {
-                    ul {
-                        // background: #000;
-                        // border-radius: .5rem;
-                        li {
-                            a {
-                                // opacity: .8;
-
-                                &:hover {
-                                    opacity: 1;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+        
             
         }
         // NAV BAR LINKS UNDERLINES COLOR WHEN SCROLL CLASS ACTIVE

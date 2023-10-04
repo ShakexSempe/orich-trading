@@ -1,132 +1,134 @@
 @use '../abstracts';
 
 // HERO 
-// HERO-IMAGE = BACKGROUND IMAGE
 #hero {
-    // min-height: 100vh;
     height: 90vh;
-    // padding: 5vh 5vw;
     background: #000;
     transition: .25s;
     position: relative;
     isolation: isolate;
-
+    
     display: grid;
     grid-template-rows: 55% 1fr;
+    // DESKTOP HERO
     @include abstracts.lg {
-        // grid-template-rows: 1fr;
-        // grid-template-columns: 1fr 1fr;
-        // gap: 5vw;
+        height: 95vh;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-    }
-    .hero-image {
-        background: #0009;
-        // border: 2px solid red;
-        // position: absolute;
-        z-index: -1;
-        // inset: 0;
-
-        img {
-            object-fit: cover;
-            // object-position: 55% 50%;
-            object-position: top;
-            height: 100%;
-            width: 100%;
-            mix-blend-mode: darken;
-
-            @include abstracts.sm {
-                object-position: center;
-                // object-position: 90% 0%;
-                // position: absolute;
-                // top: 0;
-                // right: 0;
-                // border: 2px solid red;
-            }
-            @include abstracts.lg {
-                width: 50vw;
-                object-position: top;
-            }
-        }
-    }
-    // HERO PAGE TITLE
-    .hero-title {
-        position: relative;
-        // padding: .25rem 0;
-        padding-inline: 5vw;
-        // top: 50vh;
-        background: rgba(0, 0, 0, .8);
-        border-radius: abstracts.$border-radius-sm;
-        @include abstracts.lg {
-            top: 30vh;
-            left: 5vw;
-            // border: 2px solid blue;
-            // display: grid;
-            // place-items: center;
-            padding: 0;
-        } // width: max-content;
-
-        // SLOGAN
-        .slogan {
-            color: abstracts.$text-light;
-            position: relative;
-            text-transform: capitalize;
-            h1 {
-                font-weight: 600;
-                font-size: 3vw;
-                font-size: clamp(1.0125rem, 3vw, 2.25rem);
-                line-height: 1.2;
-                margin-bottom: .5rem;
-                br {
-                    display: none;
-                }
-                @include abstracts.lg {
-                    br {
-                        display: block;
-                    }
-                }
-            }
-            .hero-meta {
-                color: abstracts.$text-light-trans;
-                font-weight: 200;
-                i {
-                    width: 1.25rem;
-                    font-size: .95rem;
-                }
-            }
-            // CTA AND SLOGAN
-            #cta {
-                // QUALITY OR NOTHING P
-                .slogan-p {
-                    color: abstracts.$text-light;
-                    margin: .5rem 0 .5rem;
-                    letter-spacing: .0125rem;
-                    span {
-                        color: abstracts.$brand-light;
-                    }
-                    @include abstracts.lg {
-                        margin: .5rem 0 1rem;
-                    }
-                }
-                .cta-btn {
-                    font-size: 1.015rem;
-                    font-size: abstracts.$font-clamp-sm;
-                    width: 12rem;
-                    width: clamp(11rem, 15vw, 15rem);
-            }
-            }
-            // THANK YOU PAGE HERO
-            &.thanks-message {
-                p {
-                    font-weight: 400;
-                }
-            }
-        }
     }
 
     // HERO ACTIVE BACKGROUND CLASS
     &.active {
         background: abstracts.$brand;
+    }
+}
+
+// HERO-IMAGE = BACKGROUND IMAGE
+.hero-image {
+    background: #0009;
+    z-index: -1;
+
+    img {
+        object-fit: cover;
+        // object-position: 55% 50%;
+        object-position: top;
+        height: 100%;
+        width: 100%;
+        mix-blend-mode: darken;
+
+        @include abstracts.sm {
+            object-position: center;
+            // object-position: 90% 0%;
+            object-position: center 35%;
+            // position: absolute;
+            // top: 0;
+            // right: 0;
+            // border: 2px solid red;
+        }
+        @include abstracts.lg {
+            width: 55vw;
+            object-position: 50% 0%;
+        }
+    }
+}
+
+// HERO PAGE TITLE
+.hero-title {
+    position: relative;
+    padding: 0 5vw;
+    // top: 50vh;
+    // left: 5vw;
+    background: rgba(0, 0, 0, .8);
+    background: #000;
+
+    @include abstracts.sm {
+        padding: 10vh 0 0 5vw;
+    }
+
+    @include abstracts.lg {
+        top: 30vh;
+        padding: 5vh 0 0 5vw;
+        // left: 5vw;
+        // border: 2px solid blue;
+        // display: grid;
+        // place-items: center;
+    } // width: max-content;
+
+    // SLOGAN
+    .slogan {
+        color: abstracts.$text-light;
+        position: relative;
+        text-transform: capitalize;
+        h1 {
+            font-weight: 600;
+            font-size: 3vw;
+            font-size: clamp(1.0125rem, 3vw, 2.25rem);
+            line-height: 1.2;
+            margin-bottom: .5rem;
+            br {
+                display: none;
+            }
+            @include abstracts.lg {
+                br {
+                    display: block;
+                }
+            }
+        }
+        .hero-meta {
+            color: abstracts.$text-light-trans;
+            font-weight: 200;
+            i {
+                width: 1.25rem;
+                font-size: .95rem;
+            }
+        }
+        // CTA AND SLOGAN
+        #cta {
+            // QUALITY OR NOTHING P
+            .slogan-p {
+                color: abstracts.$text-light;
+                margin: .5rem 0 .5rem;
+                letter-spacing: .0125rem;
+                span {
+                    color: abstracts.$brand-light;
+                }
+                @include abstracts.lg {
+                    margin: .5rem 0 1rem;
+                }
+            }
+            .cta-btn {
+                font-size: 1.015rem;
+                font-size: abstracts.$font-clamp-sm;
+                width: 12rem;
+                width: clamp(11rem, 15vw, 15rem);
+        }
+        }
+        // THANK YOU PAGE HERO
+        &.thanks-message {
+            p {
+                font-weight: 400;
+            }
+        }
     }
 }
