@@ -1901,7 +1901,7 @@ img {
 }
 
 #hero {
-  height: 90vh;
+  height: 95vh;
   background: #000;
   transition: 0.25s;
   position: relative;
@@ -1911,7 +1911,6 @@ img {
 }
 @media (min-width: 820px) {
   #hero {
-    height: 95vh;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
