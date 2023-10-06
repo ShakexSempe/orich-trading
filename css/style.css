@@ -1999,6 +1999,7 @@ img {
 }
 .hero-title .slogan.thanks-message p {
   font-weight: 400;
+  color: inherit;
 }
 
 .menu {
