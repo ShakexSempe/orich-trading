@@ -38,6 +38,17 @@
     box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .125);
     margin-inline: auto;
     width: 100%;
+    overflow: hidden;
+
+    display: grid;
+    height: 60vh;
+    max-height: 500px;
+    grid-template-rows: 1fr 70%;
+    grid-template-rows: 1fr 70%;
+    // DESKTOP GRID ROWS
+    @include abstracts.lg {
+        grid-template-rows: 1fr 60%;
+    }
 
     // MENU TITLE
     // CONTENT SECTION OF THE CARD = H3 + P
@@ -46,19 +57,21 @@
         position: relative;
         padding: 1rem;
         text-wrap: balance;
+        
+
 
         // ADJUST HEIGHT AT WIDER SCREENS TO ALIGN IMAGES.. 
         // ..AND TEXT AREA IN 3 COLUMN GRID
         p {
             font-size: abstracts.$font-clamp-xsm;
             // HEIGHT OF TITLE RELATIVE TO TEXT
-            @include abstracts.lg {
-                height: 5.5rem;
-            }
+            // @include abstracts.lg {
+            //     height: 5.5rem;
+            // }
 
-            @include abstracts.xlg {
-                height: 5rem;
-            }
+            // @include abstracts.xlg {
+            //     height: 5rem;
+            // }
         }
 
     }
@@ -67,20 +80,20 @@
     // ON HOVER = PSEUDO BACKGROUND WITH AN EMAIL .CTA TRANSITIONING INTO VIEW
     .menu-image {
         // border: 2px solid red;
-        height: 40vh;
+        // height: 40vh;
         border-bottom-left-radius: abstracts.$border-radius-xsm;
         border-bottom-right-radius: abstracts.$border-radius-xsm;
         overflow: hidden;
         position: relative;
         isolation: isolate;
 
-        @include abstracts.sm {
-            height: 55vh;
-        }
+        // @include abstracts.sm {
+        //     height: 55vh;
+        // }
 
-        @include abstracts.md {
-            height: 40vh;
-        }
+        // @include abstracts.md {
+        //     height: 40vh;
+        // }
 
         img {
             width: 100%;
@@ -88,6 +101,7 @@
             object-fit: cover;
             object-position: center;
             transition: .5s;
+            // border: 2px solid blue;
         }
 
         a {

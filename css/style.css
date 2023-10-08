@@ -116,7 +116,7 @@ h3 {
   color: #000;
   text-transform: capitalize;
   font-size: 1.125rem;
-  font-size: clamp(1.25rem, 2.25vw, 1.25rem);
+  font-size: clamp(1.125rem, 2.25vw, 1.25rem);
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
@@ -2035,6 +2035,17 @@ img {
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.125);
   margin-inline: auto;
   width: 100%;
+  overflow: hidden;
+  display: grid;
+  height: 60vh;
+  max-height: 500px;
+  grid-template-rows: 1fr 70%;
+  grid-template-rows: 1fr 70%;
+}
+@media (min-width: 820px) {
+  .menu-item {
+    grid-template-rows: 1fr 60%;
+  }
 }
 .menu-item .menu-item-title {
   position: relative;
@@ -2044,33 +2055,12 @@ img {
 .menu-item .menu-item-title p {
   font-size: clamp(.98rem, 1.25vw, 1.125rem);
 }
-@media (min-width: 820px) {
-  .menu-item .menu-item-title p {
-    height: 5.5rem;
-  }
-}
-@media (min-width: 1024px) {
-  .menu-item .menu-item-title p {
-    height: 5rem;
-  }
-}
 .menu-item .menu-image {
-  height: 40vh;
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
   overflow: hidden;
   position: relative;
   isolation: isolate;
-}
-@media (min-width: 500px) {
-  .menu-item .menu-image {
-    height: 55vh;
-  }
-}
-@media (min-width: 768px) {
-  .menu-item .menu-image {
-    height: 40vh;
-  }
 }
 .menu-item .menu-image img {
   width: 100%;
@@ -2243,7 +2233,7 @@ img {
   text-transform: capitalize;
   margin-bottom: 0.5rem;
   font-size: 1.25rem;
-  font-size: clamp(1.25rem, 2.25vw, 1.25rem);
+  font-size: clamp(1.125rem, 2.25vw, 1.25rem);
   transition: 0.25s;
   font-weight: 600;
 }
@@ -2582,7 +2572,7 @@ img {
 .services .service-container .service-item .service-core h4 {
   text-transform: capitalize;
   font-size: 1.25rem;
-  font-size: clamp(1.25rem, 2.25vw, 1.25rem);
+  font-size: clamp(1.125rem, 2.25vw, 1.25rem);
   font-weight: 500;
   transition: 0.5s ease;
 }
@@ -2746,7 +2736,7 @@ img {
     margin: 0;
   }
   #services-page .flex-container .section-description h3 {
-    font-size: clamp(1.25rem, 2.25vw, 1.25rem);
+    font-size: clamp(1.125rem, 2.25vw, 1.25rem);
     margin-bottom: 5vh;
   }
   #services-page .flex-container .section-description p {
