@@ -1,91 +1,41 @@
 @use '../abstracts';
 
-// CTA 
-.cta {
-    transition: .25s;
-}
-
 
 .cta-btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    width: clamp(8rem, 10vw, 20rem);
     width: 11rem;
-    padding: .6rem 1.5rem .6rem 1rem;
+    width: clamp(11rem, 15vw, 12rem);
+    // padding: .6rem 1.5rem .6rem 1rem;
+    padding: .65rem 1rem;
     margin: .5rem 0;
 
     background: abstracts.$brand-light;
     color: #000;
+    border: none;
+    border-radius: abstracts.$border-radius-sm;
 
     font-size: 1rem;
     font-size: clamp(1rem, 1.25vw, 1.15rem);
     text-decoration: none;
     text-transform: capitalize;
 
-    cursor: default;
-    border: none;
-    border-radius: abstracts.$border-radius-sm;
     position: relative;
     isolation: isolate;
-    transition: .3s;
+    transition: .25s;
+    cursor: default;
 
     @include abstracts.sm {
         cursor: pointer;
     }
 
-    &.section-btn {
-        width: 12rem;
-
-        @include abstracts.md {
-            width: 12rem;
-        }
-    }
-
     i {
         font-size: 1rem;
 
-        &.hero-cta-icon {
-            color: transparent;
-
-            &::before,
-            &::after {
-                position: absolute;
-                color: #000;
-                opacity: 1;
-                top: 50%;
-                transform: translateY(-50%);
-                right: .8rem;
-                transition: .25s;
-            }
-
-            &::before {
-                content: '\f101';
-                font-family: "Font Awesome 6 Free";
-                // opacity: 0;
-                animation: arrow 1.5s infinite;
-            }
-
-            &::after {
-                content: '\f105';
-                font-family: "Font Awesome 6 Free";
-                opacity: 0;
-                animation: arrow-2 1.5s infinite;
-            }
-
-            @keyframes arrow {
-                50% {
-                    transform: translateY(-50%) translateX(.125rem);
-                    opacity: 0;
-                }
-            }
-
-            @keyframes arrow-2 {
-                50% {
-                    opacity: 1;
-                }
-            }
-        }
+        
     }
 
     &:hover {
@@ -161,5 +111,48 @@
             }
         }
 
+    }
+}
+
+// ANIMATED BUTTON ICON
+.animated-icon {
+    color: transparent;
+
+    &::before,
+    &::after {
+        position: absolute;
+        color: #000;
+        opacity: 1;
+        top: 50%;
+        transform: translateY(-50%);
+        right: .8rem;
+        transition: .25s;
+    }
+
+    &::before {
+        content: '\f101';
+        font-family: "Font Awesome 6 Free";
+        // opacity: 0;
+        animation: arrow 1.5s infinite;
+    }
+
+    &::after {
+        content: '\f105';
+        font-family: "Font Awesome 6 Free";
+        opacity: 0;
+        animation: arrow-2 1.5s infinite;
+    }
+
+    @keyframes arrow {
+        50% {
+            transform: translateY(-50%) translateX(.125rem);
+            opacity: 0;
+        }
+    }
+
+    @keyframes arrow-2 {
+        50% {
+            opacity: 1;
+        }
     }
 }

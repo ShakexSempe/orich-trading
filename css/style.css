@@ -155,79 +155,35 @@ img {
   display: block;
 }
 
-.cta {
-  transition: 0.25s;
-}
-
 .cta-btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: clamp(8rem, 10vw, 20rem);
   width: 11rem;
-  padding: 0.6rem 1.5rem 0.6rem 1rem;
+  width: clamp(11rem, 15vw, 12rem);
+  padding: 0.65rem 1rem;
   margin: 0.5rem 0;
   background: #ffa500;
   color: #000;
+  border: none;
+  border-radius: 0.5rem;
   font-size: 1rem;
   font-size: clamp(1rem, 1.25vw, 1.15rem);
   text-decoration: none;
   text-transform: capitalize;
-  cursor: default;
-  border: none;
-  border-radius: 0.5rem;
   position: relative;
   isolation: isolate;
-  transition: 0.3s;
+  transition: 0.25s;
+  cursor: default;
 }
 @media (min-width: 500px) {
   .cta-btn {
     cursor: pointer;
   }
 }
-.cta-btn.section-btn {
-  width: 12rem;
-}
-@media (min-width: 768px) {
-  .cta-btn.section-btn {
-    width: 12rem;
-  }
-}
 .cta-btn i {
   font-size: 1rem;
-}
-.cta-btn i.hero-cta-icon {
-  color: transparent;
-}
-.cta-btn i.hero-cta-icon::before, .cta-btn i.hero-cta-icon::after {
-  position: absolute;
-  color: #000;
-  opacity: 1;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0.8rem;
-  transition: 0.25s;
-}
-.cta-btn i.hero-cta-icon::before {
-  content: "";
-  font-family: "Font Awesome 6 Free";
-  animation: arrow 1.5s infinite;
-}
-.cta-btn i.hero-cta-icon::after {
-  content: "";
-  font-family: "Font Awesome 6 Free";
-  opacity: 0;
-  animation: arrow-2 1.5s infinite;
-}
-@keyframes arrow {
-  50% {
-    transform: translateY(-50%) translateX(0.125rem);
-    opacity: 0;
-  }
-}
-@keyframes arrow-2 {
-  50% {
-    opacity: 1;
-  }
 }
 .cta-btn:hover i::before {
   animation: none;
@@ -280,6 +236,41 @@ img {
     opacity: 0;
   }
   .cta-btn:hover::after {
+    opacity: 1;
+  }
+}
+
+.animated-icon {
+  color: transparent;
+}
+.animated-icon::before, .animated-icon::after {
+  position: absolute;
+  color: #000;
+  opacity: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.8rem;
+  transition: 0.25s;
+}
+.animated-icon::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  animation: arrow 1.5s infinite;
+}
+.animated-icon::after {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  opacity: 0;
+  animation: arrow-2 1.5s infinite;
+}
+@keyframes arrow {
+  50% {
+    transform: translateY(-50%) translateX(0.125rem);
+    opacity: 0;
+  }
+}
+@keyframes arrow-2 {
+  50% {
     opacity: 1;
   }
 }
@@ -2070,17 +2061,6 @@ img {
   transition: 0.5s;
 }
 .menu-item .menu-image a {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 12rem;
-  padding: 0.5rem 1rem;
-  margin: 0.5rem 0;
-  text-decoration: none;
-  text-transform: capitalize;
-  color: #000;
-  border-radius: 0.5rem;
-  background: linear-gradient(0deg, #f8670d, #ffa500);
   position: absolute;
   bottom: 1rem;
   left: 1rem;
