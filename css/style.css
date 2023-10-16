@@ -1910,7 +1910,7 @@ img {
 }
 .hero-image img {
   object-fit: cover;
-  object-position: top;
+  object-position: 50% 10%;
   height: 100%;
   width: 100%;
   mix-blend-mode: darken;
