@@ -1927,7 +1927,6 @@ img {
 .hero-title {
   position: relative;
   padding: 1rem 5vw 0;
-  background: rgba(0, 0, 0, 0.8);
   background: #000;
 }
 @media (min-width: 500px) {

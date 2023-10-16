@@ -56,9 +56,6 @@
 .hero-title {
     position: relative;
     padding: 1rem 5vw 0;
-    // top: 50vh;
-    // left: 5vw;
-    background: rgba(0, 0, 0, .8);
     background: #000;
 
     @include abstracts.sm {
@@ -68,11 +65,7 @@
     @include abstracts.lg {
         top: 30vh;
         padding: 5vh 0 0 5vw;
-        // left: 5vw;
-        // border: 2px solid blue;
-        // display: grid;
-        // place-items: center;
-    } // width: max-content;
+    }
 
     // SLOGAN
     .slogan {
