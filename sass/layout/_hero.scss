@@ -55,7 +55,7 @@
 // HERO PAGE TITLE
 .hero-title {
     position: relative;
-    padding: 0 5vw;
+    padding: 1rem 5vw 0;
     // top: 50vh;
     // left: 5vw;
     background: rgba(0, 0, 0, .8);
@@ -82,7 +82,7 @@
         h1 {
             font-weight: 600;
             font-size: 3vw;
-            font-size: clamp(1.0125rem, 3vw, 2.25rem);
+            font-size: clamp(1.125rem, 3vw, 2.25rem);
             line-height: 1.2;
             margin-bottom: .5rem;
             br {
@@ -107,7 +107,7 @@
             // QUALITY OR NOTHING P
             .slogan-p {
                 color: abstracts.$text-light;
-                margin: .5rem 0 .5rem;
+                margin: .25rem 0 1rem;
                 letter-spacing: .0125rem;
                 span {
                     color: abstracts.$brand-light;
