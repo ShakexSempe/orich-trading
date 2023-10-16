@@ -2475,7 +2475,7 @@ img {
 #references .references .reference a {
   display: block;
   width: max-content;
-  color: gray;
+  color: #595959;
   margin-top: 0.5rem;
 }
 #references .references .reference a:hover {
