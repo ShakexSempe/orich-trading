@@ -31,19 +31,15 @@
     img {
         object-fit: cover;
         object-position: 50% 10%;
-        // object-position: top;
         height: 100%;
         width: 100%;
         mix-blend-mode: darken;
 
         @include abstracts.sm {
             object-position: center;
-            // object-position: 90% 0%;
-            object-position: center 35%;
-            // position: absolute;
-            // top: 0;
-            // right: 0;
-            // border: 2px solid red;
+            object-position: 50% 30%;
+            margin-left: auto;
+            width: 500px;
         }
         @include abstracts.lg {
             width: 55vw;
