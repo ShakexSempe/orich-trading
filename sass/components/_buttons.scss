@@ -6,12 +6,10 @@
     justify-content: space-between;
     align-items: center;
 
-    width: clamp(8rem, 10vw, 20rem);
     width: 11rem;
     width: clamp(11rem, 15vw, 12rem);
-    // padding: .6rem 1.5rem .6rem 1rem;
     padding: .65rem 1rem;
-    // margin: .5rem 0;
+    margin: .5rem 0;
 
     background: abstracts.$brand-light;
     color: #000;
@@ -19,7 +17,7 @@
     border-radius: abstracts.$border-radius-sm;
 
     font-size: 1rem;
-    font-size: clamp(1rem, 1.25vw, 1.15rem);
+    font-size: clamp(1rem, 1.25vw, 1.125rem);
     font-weight: 500;
     text-decoration: none;
     text-transform: capitalize;
