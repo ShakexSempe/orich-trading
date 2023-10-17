@@ -643,12 +643,12 @@ img {
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
 }
 .about .vision-mission .mission {
-  max-width: 450px;
+  max-width: 500px;
 }
 .about .vision-mission .mission h3 {
   font-size: 1.5rem;
@@ -666,7 +666,6 @@ img {
   height: 50vh;
   height: 20rem;
   overflow: hidden;
-  margin-bottom: 1rem;
   transition: 1s;
   display: flex;
   flex-direction: column-reverse;
@@ -786,6 +785,9 @@ img {
   font-weight: 500;
   font-size: 1rem;
   font-size: clamp(1rem, 2vw, 1.125rem);
+}
+.about-article a {
+  margin: 1rem 0 0;
 }
 
 #about-page .article-container .page-article {

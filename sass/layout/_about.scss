@@ -2,6 +2,7 @@
 
     // ABOUT SECTION
     .about {
+        
         position: relative;
         @include abstracts.lg {
             padding: 10vh 0;
@@ -28,14 +29,14 @@
                 margin: 0;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: space-between;
                 align-items: center;
             }
 
             // MISSION STATEMENT CARD
             // CARD = TITLE[H3] + CONTENT[IMG + P]
             .mission {
-                max-width: 450px;
+                max-width: 500px;
 
                 // CARD TITLE
                 h3 {
@@ -46,6 +47,8 @@
                     text-transform: capitalize;
                     transition: .25s;
                     text-align: center;
+                    // background: #000;
+                    // color: #fff;
                 }
 
                 // CONTENT = BLACK BORDER BOX WITH IMG + CENTERED P TEXT
@@ -57,7 +60,6 @@
                     height: 50vh;
                     height: 20rem;
                     overflow: hidden;
-                    margin-bottom: 1rem;
                     transition: 1s;
                     display: flex;
                     flex-direction: column-reverse;
@@ -216,9 +218,13 @@
                 font-size: abstracts.$font-clamp-sm;
             }
         }
+
+        // ABOUT PAGE LINK 
+        a {
+            margin: 1rem 0 0;
+        }
     }
 
-    
 
     // ABOUT PAGE
     #about-page {
