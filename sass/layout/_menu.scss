@@ -36,14 +36,13 @@
     background: #fff;
     border-radius: .25rem;
     box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .125);
-    margin-inline: auto;
     width: 100%;
     overflow: hidden;
 
     display: grid;
     height: 60vh;
     max-height: 500px;
-    grid-template-rows: 1fr 70%;
+    max-width: 500px;
     grid-template-rows: 1fr 70%;
     // DESKTOP GRID ROWS
     @include abstracts.lg {
@@ -64,14 +63,6 @@
         // ..AND TEXT AREA IN 3 COLUMN GRID
         p {
             font-size: abstracts.$font-clamp-xsm;
-            // HEIGHT OF TITLE RELATIVE TO TEXT
-            // @include abstracts.lg {
-            //     height: 5.5rem;
-            // }
-
-            // @include abstracts.xlg {
-            //     height: 5rem;
-            // }
         }
 
     }
@@ -80,20 +71,11 @@
     // ON HOVER = PSEUDO BACKGROUND WITH AN EMAIL .CTA TRANSITIONING INTO VIEW
     .menu-image {
         // border: 2px solid red;
-        // height: 40vh;
+        position: relative;
         border-bottom-left-radius: abstracts.$border-radius-xsm;
         border-bottom-right-radius: abstracts.$border-radius-xsm;
         overflow: hidden;
-        position: relative;
         isolation: isolate;
-
-        // @include abstracts.sm {
-        //     height: 55vh;
-        // }
-
-        // @include abstracts.md {
-        //     height: 40vh;
-        // }
 
         img {
             width: 100%;
@@ -105,17 +87,6 @@
         }
 
         a {
-            // display: flex;
-            // justify-content: space-between;
-            // align-items: center;
-            // width: 12rem;
-            // padding: .5rem 1rem;
-            // margin: .5rem 0;
-            // text-decoration: none;
-            // text-transform: capitalize;
-            // color: #000;
-            // border-radius: abstracts.$border-radius-sm;
-            // background: abstracts.$brand-btn;
             position: absolute;
             bottom: 1rem;
             left: 1rem;
