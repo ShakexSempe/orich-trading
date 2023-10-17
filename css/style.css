@@ -163,13 +163,13 @@ img {
   width: 11rem;
   width: clamp(11rem, 15vw, 12rem);
   padding: 0.65rem 1rem;
-  margin: 0.5rem 0;
   background: #ffa500;
   color: #000;
   border: none;
   border-radius: 0.5rem;
   font-size: 1rem;
   font-size: clamp(1rem, 1.25vw, 1.15rem);
+  font-weight: 500;
   text-decoration: none;
   text-transform: capitalize;
   position: relative;
