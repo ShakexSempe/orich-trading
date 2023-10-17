@@ -2211,8 +2211,8 @@ img {
   position: relative;
   isolation: isolate;
   border-radius: 0.25rem;
-  padding: 0.5rem;
-  color: #fff;
+  padding: 1rem;
+  color: #ffffff;
 }
 @media (min-width: 820px) {
   .menu-cta .cta-item {
