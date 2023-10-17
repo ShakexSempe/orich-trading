@@ -13,8 +13,9 @@
     // INTRO P BEFORE SERVICE ITEMS
     .section-description {
         margin-bottom: 2rem;
+        // max-width: 550px;
         @include abstracts.md {
-            margin: 5vh auto 10vh;
+            margin: 2rem 0 4rem;
         }
     }
     

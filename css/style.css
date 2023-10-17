@@ -2509,7 +2509,7 @@ img {
 }
 @media (min-width: 768px) {
   .services .section-description {
-    margin: 5vh auto 10vh;
+    margin: 2rem 0 4rem;
   }
 }
 .services .service-container .service-item {
