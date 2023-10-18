@@ -18,6 +18,7 @@
     <link rel="preload" href="css/style.css" as="style" />
     <link rel="preload" href="js/app.js" as="script" />
     <link rel="preload" href="img/orich.jpg" as="image" fetchpriority="high">
+    <link rel="preload" href="img/hero-mobile-web.webp" as="image/webp" fetchpriority="high">
     <link rel="preload" href="img/hero_400.jpg" as="image" media="(max-width: 450px)">
     <link rel="preload" href="img/hero_800.jpg" as="image" media="(min-width: 450.1px)">
     <!-- STYLESHEET -->
@@ -268,6 +269,7 @@
         
         <!-- MAIN -->
         <main class="main index-main" id="main" >
+
             <!-- EACH MENU = FULL PAGE || EMAIL & TEL LINKS || ENQUIRY AND NEXT PAGE ACTIONS -->
             <div class="menu" data-active-footer id="menu1">
 
@@ -462,6 +464,7 @@
                 <div class="container-title io-item">
                     <h2>certificates</h2>
                 </div>
+                
                 <!-- EACH REFERENCE = CERTIFICATE -->
                 <div class="references">
 
@@ -503,9 +506,11 @@
             
             <!-- SERVICES SECTION -->
             <section id="services" class="services">
+
                 <header class="section-title io-item">
                     <h2 title="Services">services</h2>
                 </header>
+
                 <!-- INTRO TITLE & PARAGRAPH -->
                 <div class="section-description">
                     <h3>Industrial Relations</h3>
@@ -516,10 +521,13 @@
                         small businesses, professionals and individuals.
                     </p>
                 </div>
+
                 <div class="service-container index-container" id="service-container">
+                    
                     <div class="container-title io-item">
                         <h3>our services</h3>
                     </div>
+
                     <!-- EACH SERVICE = 1) SERVICE CORE: TITLE & IMAGE. || 2) SERVICE TYPE = UL WITH 1 LINK TO ENQUIRY PAGE  -->
                     <!-- GENERAL BUILDING -->
                     <div id="building_services" class="service-item io-item">
@@ -655,11 +663,14 @@
                             </ul>
                         </div>
                     </div>
+
                 </div>
+
                 <!-- SECTION BUTTON = LINK TO SECTIONS FULL PAGE -->
                 <div class="cta">
                     <a href="pages/services.html#main" class="cta-btn section-btn" title="Go to about page">view services<i class="fas fa-arrow-up-right-from-square"></i></a>
                 </div>
+
             </section>
 
             <!-- BANNER -->
@@ -1070,7 +1081,15 @@
             <div class="footer" id="footer">
                 <!-- FOOTER LOGO -->
                 <div class="footer-logo">
-                    <img src="img/orich.jpg" loading="lazy" width="250" height="250" alt="Orich Trading & Projects Logo">
+                    <picture>
+                        <source
+                        type="image/webp"
+                        srcset="img/orich-logo.webp"
+                        width="250"
+                        height="250"
+                        >
+                        <img src="img/orich-logo.png" loading="lazy" width="250" height="250" alt="Orich Trading & Projects Logo">
+                    </picture>
                 </div>
 
                 <!-- FOOTER COPYRIGHT INFO -->
