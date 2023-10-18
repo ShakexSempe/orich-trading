@@ -118,6 +118,35 @@
                             transition: .5s;
                         }
                     }
+
+                    .service-cta {
+                        border-bottom: none;
+                        list-style: none;
+                        overflow: hidden;
+                        display: flex;
+                        align-items: center;
+                        margin: .5rem 0 0;
+                        padding-top: .5rem;
+                        gap: .5rem;
+                        a {
+                            display: block;
+                            transition: .25s;
+                            &:hover, &:focus {
+                                color: abstracts.$brand;
+                            }
+                        }
+                        i {
+                            transition: .25s;
+                            color: #000;
+                        }
+
+                        &:hover{
+                            i {
+                                transform: translateX(.25rem);
+                                color: abstracts.$brand;
+                            }
+                        }
+                    }
                 }
             }
             
@@ -165,6 +194,12 @@
                         li {
                             &::marker {
                                 color: #ddd;
+                            }
+                        }
+
+                        .service-cta {
+                            i {
+                                color: abstracts.$brand;
                             }
                         }
                     }   

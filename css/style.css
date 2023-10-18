@@ -2611,6 +2611,31 @@ img {
   color: transparent;
   transition: 0.5s;
 }
+.services .service-container .service-item .service-type ul .service-cta {
+  border-bottom: none;
+  list-style: none;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0 0;
+  padding-top: 0.5rem;
+  gap: 0.5rem;
+}
+.services .service-container .service-item .service-type ul .service-cta a {
+  display: block;
+  transition: 0.25s;
+}
+.services .service-container .service-item .service-type ul .service-cta a:hover, .services .service-container .service-item .service-type ul .service-cta a:focus {
+  color: #f8650c;
+}
+.services .service-container .service-item .service-type ul .service-cta i {
+  transition: 0.25s;
+  color: #000;
+}
+.services .service-container .service-item .service-type ul .service-cta:hover i {
+  transform: translateX(0.25rem);
+  color: #f8650c;
+}
 .services .service-container .service-item.io-item {
   transform: scale(0.98);
 }
@@ -2651,6 +2676,9 @@ img {
 }
 .services .service-container .service-item:hover .service-type ul li::marker {
   color: #ddd;
+}
+.services .service-container .service-item:hover .service-type ul .service-cta i {
+  color: #f8650c;
 }
 
 #services-page .promise {
