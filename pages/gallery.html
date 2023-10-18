@@ -150,6 +150,7 @@
                 </aside>
             </div>
         </header>
+
         <div id="hero">
 
             <!-- HERO IMAGE -->
@@ -238,8 +239,17 @@
             <!-- FOOTER -->
             <div class="footer" id="footer">
 
+                <!-- FOOTER LOGO -->
                 <div class="footer-logo">
-                    <img src="../img/orich-logo.png" loading="lazy" alt="Orich Trading & Projects Logo">
+                    <picture>
+                        <source
+                        type="image/webp"
+                        srcset="../img/orich-logo.webp"
+                        width="250"
+                        height="250"
+                        >
+                        <img src="../img/orich-logo.png" loading="lazy" width="250" height="250" alt="Orich Trading & Projects Logo">
+                    </picture>
                 </div>
 
                 <!-- FOOTER CONTACT ITEMS -->
@@ -289,6 +299,7 @@
 
             </div>
         </main>
+
         <!-- FOOTER-NAVIGATION -->
         <div class="bottom-nav">
             <div class="item item1 menu-target">
@@ -302,6 +313,7 @@
                 <a class="contact-item" title="Footer" href="#footer"><i class="fa-solid fa-circle-info"></i></a>
             </div>
         </div>
+
     </div>
     <script src="../js/app.js"></script>
     <!-- LOADER -->

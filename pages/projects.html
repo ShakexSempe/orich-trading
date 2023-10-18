@@ -160,6 +160,7 @@
 
         <!-- MAIN -->
         <main id="main" class="main page-main">
+
             <section id="projects">
                 <header class="section-title io-item">
                     <h2 title="Orich projects">projects</h2>
@@ -458,6 +459,7 @@
                     </div>
                 </div>
             </section>
+
             <!-- FOOTER = 1) CONTACT DETAILS. 2) CONTACT FORM. 3) COPYRIGHT SECTION -->
             <div id="contact">
                 <header class="section-title io-item">
@@ -601,11 +603,21 @@
 
                 </div>
             </div>
+
             <!-- FOOTER -->
             <div class="footer" id="footer">
                 
+                <!-- FOOTER LOGO -->
                 <div class="footer-logo">
-                    <img src="../img/orich-logo.png" loading="lazy" alt="Orich Trading & Projects Logo">
+                    <picture>
+                        <source
+                        type="image/webp"
+                        srcset="../img/orich-logo.webp"
+                        width="250"
+                        height="250"
+                        >
+                        <img src="../img/orich-logo.png" loading="lazy" width="250" height="250" alt="Orich Trading & Projects Logo">
+                    </picture>
                 </div>
 
                 <div class="footer-item footer-copyright">
@@ -646,7 +658,9 @@
                     </ul>
                 </div>
             </div>
+
         </main>
+
         <!-- FOOTER-NAVIGATION -->
         <div class="bottom-nav">
             <div class="item item1 menu-target">
