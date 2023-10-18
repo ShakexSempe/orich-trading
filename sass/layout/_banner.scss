@@ -5,8 +5,8 @@
     isolation: isolate;
     margin: 5vh 5vw;
     // WIDE SCREENS SECTION STYLE
-    @media (min-width: 768px) {
-        margin: 20vh 10vw;
+    @include abstracts.md {
+        margin: 20vh 5vw;
     }
 
     // CONTAINER TITLE CENTERED ON WIDER SCREENS
@@ -37,8 +37,8 @@
 
             img {
                 width: 100%;
-                // height: 50vh;
-                max-height: 80vh;
+                height: auto;
+                max-height: 75vh;
                 object-fit: cover;
                 object-position: 25% 50%;
                 border-radius: 0;
@@ -48,7 +48,6 @@
 
             // DESKTOP FIGURE
             @include abstracts.md {
-                height: 60vh;
                 width: 100%;
                 display: flex;
                 flex-direction: row-reverse;
