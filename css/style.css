@@ -1067,8 +1067,9 @@ img {
   outline: 1px solid transparent;
   background: #222;
   border-radius: 0.25rem;
-  padding: 0.5rem 0.25rem;
+  padding: 0.5rem;
   transition: 0.25s;
+  font-size: clamp(.98rem, 1.25vw, 1.125rem);
 }
 @media (min-width: 768px) {
   #banner .banner-image-container figure .banner-content .banner-image-title .flex-item {

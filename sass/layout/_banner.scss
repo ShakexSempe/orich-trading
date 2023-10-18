@@ -103,8 +103,9 @@
                         outline: 1px solid transparent;
                         background: #222;
                         border-radius: abstracts.$border-radius-xsm;
-                        padding: .5rem .25rem;
+                        padding:  .5rem;
                         transition: .25s;
+                        font-size: abstracts.$font-clamp-xsm;
 
                         @include abstracts.md {
                             // background: #f4f4f4;
