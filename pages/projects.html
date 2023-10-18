@@ -119,14 +119,27 @@
                 </aside>
             </div>
         </header>
-        <!-- END OF HEADER -->
+
         <!-- HERO -->
         <div id="hero">
+
             <!-- HERO IMAGE -->
             <picture class="hero-image">
-                <source media="(min-width: 450.1px)" width="800" height="1035" srcset="../img/hero_800.jpg">
+                <source
+                media="(min-width: 820.1px)"
+                width="800"
+                height="1035"
+                srcset="../img/hero_800.webp"
+                >
+                <source
+                type="image/webp"
+                media="(max-width: 820px)"
+                width="488"
+                height="580"
+                srcset="../img/hero-mobile-web.webp"
+                >
 
-                <img src="../img/hero_400.jpg" width="450" height="1000" alt="Construction workers">
+                <img src="../img/mobile-hero-1.jpg" width="488" height="580" alt="Construction workers">
             </picture>
 
             <!-- WEBSITE SLOGAN -->
@@ -144,7 +157,7 @@
             </div>
 
         </div>   
-        <!-- END OF HERO -->
+
         <!-- MAIN -->
         <main id="main" class="main page-main">
             <section id="projects">

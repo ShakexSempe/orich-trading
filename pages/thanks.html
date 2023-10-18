@@ -65,6 +65,7 @@
 
 <body>
     <div class="container thanks-page">
+        
         <!-- HEADER -->
         <header id="header" class="index-header">
             <!-- <div class="brand"><a href="#">or<span>i</span>ch</a></div> -->
@@ -149,14 +150,27 @@
                 </aside>
             </div>
         </header>
-        <!-- END OF HEADER -->
+        
         <!-- HERO -->
         <div id="hero">
+
             <!-- HERO IMAGE -->
             <picture class="hero-image">
-                <source media="(min-width: 450.1px)" width="800" height="1035" srcset="../img/hero_800.jpg">
+                <source
+                media="(min-width: 820.1px)"
+                width="800"
+                height="1035"
+                srcset="../img/hero_800.webp"
+                >
+                <source
+                type="image/webp"
+                media="(max-width: 820px)"
+                width="488"
+                height="580"
+                srcset="../img/hero-mobile-web.webp"
+                >
 
-                <img src="../img/hero_400.jpg" width="450" height="1000" alt="Construction workers">
+                <img src="../img/mobile-hero-1.jpg" width="488" height="580" alt="Construction workers">
             </picture>
             
             <div class="page-title hero-title" id="title">
@@ -170,9 +184,9 @@
                 </div>
             </div>
 
-            
-
         </div>
+
+        <!-- MAIN -->
         <main class="main">
 
             <div id="contact">
@@ -326,6 +340,7 @@
                 </div>
             </div>
         </main>
+
         <!-- FOOTER-NAVIGATION -->
         <div class="bottom-nav">
             <div class="item item1 menu-target">
@@ -339,6 +354,7 @@
                 <a class="contact-item" title="Footer" href="#footer"><i class="fa-solid fa-circle-info"></i></a>
             </div>
         </div>
+
     </div>
     <script src="../js/app.js"></script>
     <script>
