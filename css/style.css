@@ -1,4 +1,11 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Prompt";
+  src: url("../../fonts/Prompt-Regular.ttf") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-weight: 500;
+}
 .container {
   max-width: 100%;
 }
