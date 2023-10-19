@@ -2221,7 +2221,7 @@ img {
 }
 
 #projects {
-  padding: 5vh 5vw;
+  padding: 5vh 5vw 10vh;
 }
 #projects .gallery {
   margin: 5vh auto;
@@ -2300,8 +2300,6 @@ img {
 #projects .gallery .gallery-grid {
   display: grid;
   gap: 1rem;
-  margin: 0 0 5vh;
-  padding: 5vh 0;
   height: auto;
   overflow: hidden;
 }

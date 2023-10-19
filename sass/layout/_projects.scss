@@ -2,7 +2,7 @@
 
 // PROJECTS SECTION
 #projects {
-    padding: 5vh 5vw;
+    padding: 5vh 5vw 10vh;
     // PROJECT ITEMS CONTAINER
     .gallery {
         margin: 5vh auto;
@@ -82,8 +82,7 @@
         .gallery-grid {
             display: grid;
             gap: 1rem;
-            margin: 0 0 5vh;
-            padding: 5vh 0;
+            // padding: 5vh 0;
             height: auto;
             overflow: hidden;
 
