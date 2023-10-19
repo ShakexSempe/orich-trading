@@ -229,7 +229,6 @@ img {
   }
   .cta-btn:active i {
     animation: none;
-    transform: translateX(-0.125rem);
   }
   .cta-btn:active::before {
     opacity: 0;
