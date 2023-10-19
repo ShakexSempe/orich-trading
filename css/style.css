@@ -3,8 +3,8 @@
   font-family: "Prompt";
   src: url("../fonts/Prompt-Regular.ttf") format("woff2"), url("../fonts/Prompt-Regular.ttf") format("woff"), url("../fonts/Prompt-Regular.ttf") format("ttf");
   font-style: normal;
-  font-weight: 100 900;
   font-weight: 500;
+  font-weight: 100 200 400 500 600 700;
 }
 body {
   font-family: "Prompt", sans-serif;
@@ -50,7 +50,7 @@ section {
   position: relative;
   font-size: 1.5rem;
   font-size: clamp(2rem, 5vw, 2.25rem);
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
 }
 .section-title h2::after {
@@ -2512,7 +2512,7 @@ img {
   text-transform: capitalize;
   font-size: 1.25rem;
   font-size: clamp(1.125rem, 2.25vw, 1.25rem);
-  font-weight: 500;
+  font-weight: 600;
   transition: 0.5s ease;
 }
 @media (min-width: 768px) {
@@ -2526,7 +2526,7 @@ img {
   padding: 0;
   font-size: 2.5rem;
   transition: 0.3s;
-  filter: drop-shadow(0.1rem 0.25rem 0.25rem rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0.1rem 0.25rem 0.125rem rgba(0, 0, 0, 0.2));
 }
 @media (min-width: 768px) {
   .services .service-container .service-item .service-core i {
@@ -2595,10 +2595,6 @@ img {
 }
 .services .service-container .service-item.active-item::before {
   opacity: 1;
-}
-.services .service-container .service-item.active-item .service-core i {
-  filter: drop-shadow(0.15rem 0.25rem 0.1rem rgba(0, 0, 0, 0.25));
-  transition: 1s ease;
 }
 .services .service-container .service-item:hover {
   transition: 0.5s;

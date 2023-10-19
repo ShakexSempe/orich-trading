@@ -73,7 +73,7 @@
                     text-transform: capitalize;
                     font-size: 1.25rem;
                     font-size: abstracts.$font-clamp-md;
-                    font-weight: 500;
+                    font-weight: 600;
                     transition: .5s ease;
 
                     @include abstracts.md {
@@ -86,7 +86,7 @@
                     padding: 0;
                     font-size: 2.5rem;
                     transition: .3s;
-                    filter: drop-shadow(.1rem .25rem .25rem rgba(0,0, 0, .2));
+                    filter: drop-shadow(.1rem .25rem .125rem rgba(0,0, 0, .2));
                     @include abstracts.md {
                         margin: -2rem auto 1rem;
                         margin: 0 auto ;
@@ -159,12 +159,6 @@
             &.active-item {
                 transform: scale(1);
                 &::before {opacity: 1;}
-                .service-core {
-                    i {
-                        filter: drop-shadow(.15rem .25rem .1rem rgba(0,0, 0, .250));
-                        transition: 1s ease;
-                    }
-                }
             }
             // END OF SCROLL
             // ITEM HOVER EFFECT
