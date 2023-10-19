@@ -6,6 +6,10 @@
   font-weight: 100 900;
   font-weight: 500;
 }
+body {
+  font-family: "Prompt", sans-serif;
+}
+
 .container {
   max-width: 100%;
 }
@@ -1906,7 +1910,7 @@ img {
 }
 .hero-title .slogan h1 {
   font-weight: 600;
-  font-size: 3vw;
+  font-size: 1.1rem;
   font-size: clamp(1.1rem, 3vw, 2.25rem);
   line-height: 1.2;
   margin-bottom: 0.5rem;
