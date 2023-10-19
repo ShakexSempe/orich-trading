@@ -1,5 +1,9 @@
 @use '../abstracts';
 
+$btn-sm : clamp(9rem, 15vw, 10rem);
+$btn-md : clamp(11rem, 15vw, 11rem);
+
+
 
 .cta-btn {
     display: flex;
@@ -8,7 +12,7 @@
 
     width: 11rem;
     width: clamp(11rem, 15vw, 12rem);
-    padding: .65rem 1rem;
+    padding: .6rem 1rem;
     margin: .5rem 0;
 
     background: abstracts.$brand-light;
@@ -19,6 +23,7 @@
     font-size: 1rem;
     font-size: clamp(1rem, 1.25vw, 1.125rem);
     font-weight: 500;
+    letter-spacing: .0125rem;
     text-decoration: none;
     text-transform: capitalize;
 
@@ -33,8 +38,6 @@
 
     i {
         font-size: 1rem;
-
-        
     }
 
     &:hover {
@@ -44,7 +47,6 @@
             }
         }
     }
-
 
 
     // CTA BACKGROUND & BOX SHADOW HOVER STATES
@@ -73,46 +75,35 @@
         box-shadow: abstracts.$box-shadow-sm-hover;
     }
 
-    @media (max-width:1024px) {
-        &:active {
-            transform: scale(.97);
-            letter-spacing: normal;
-
-            i {
-                animation: none;
-            }
-
-            &::before {
-                opacity: 0
-            }
-
-            &::after {
-                opacity: 1
-            }
-        }
+    &:active {
+        transform: scale(.97);
+        letter-spacing: normal;
     }
 
-    @media (min-width: 1024px) {
-        &:hover {
-            transform: scale(.97);
-            letter-spacing: normal;
-
-            i {
-                animation: none;
+    &:hover {
+    
+                i {
+                    animation: none;
+                }
+    
+                &::before {
+                    opacity: 0
+                }
+    
+                &::after {
+                    opacity: 1
+                }
             }
-
-            &::before {
-                opacity: 0
-            }
-
-            &::after {
-                opacity: 1
-            }
-        }
-
-    }
 }
 
+.contact-button {
+    width: $btn-sm;
+
+    // LARGER BUTTONS
+    &.btn-md {
+        width: $btn-md;
+    }
+}
 // ANIMATED BUTTON ICON
 .animated-icon {
     color: transparent;
