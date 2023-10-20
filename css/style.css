@@ -180,7 +180,7 @@ img {
   border-radius: 0.5rem;
   font-size: 1rem;
   font-size: clamp(1rem, 1.25vw, 1.125rem);
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.0125rem;
   text-decoration: none;
   text-transform: capitalize;
@@ -348,6 +348,7 @@ img {
   font-size: clamp(1rem, 2vw, 1.125rem);
   font-family: inherit;
   text-transform: capitalize;
+  font-weight: 600;
   border: none;
   border-radius: 0.5rem;
   position: relative;
