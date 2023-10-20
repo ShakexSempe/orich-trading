@@ -209,13 +209,12 @@
             border-radius: .25rem;
             background: linear-gradient(90deg, #ddd, #fff);
             li {
-                $font-clamp-li: clamp(.5rem, 2vw, 3rem);
                 position: relative;
                 list-style: none;
                 text-transform: capitalize;
-                font-weight: 500;
                 font-size: 1rem;
                 font-size: abstracts.$font-clamp-sm;
+                margin-bottom: .25rem;
             }
         }
 

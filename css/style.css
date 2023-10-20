@@ -802,9 +802,9 @@ img {
   position: relative;
   list-style: none;
   text-transform: capitalize;
-  font-weight: 500;
   font-size: 1rem;
   font-size: clamp(1rem, 2vw, 1.125rem);
+  margin-bottom: 0.25rem;
 }
 .about-article a {
   margin: 1rem 0 0;
