@@ -1252,6 +1252,9 @@ img {
 #contact .contact-items .contact-item:hover .contact-info .contact-info-item {
   outline-color: #fff4;
 }
+#contact .contact-items .contact-item:hover .contact-info .contact-info-item p i {
+  color: #fff;
+}
 #contact .contact-items .contact-item:hover .contact-info .contact-info-item:hover {
   outline-color: #ffa500;
 }
@@ -1265,7 +1268,6 @@ img {
   color: #fff8;
 }
 #contact .contact-items .contact-item:hover .contact-info .contact-info-item:hover p i {
-  color: #fff;
   transform: translateX(0.125rem);
 }
 
