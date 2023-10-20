@@ -8,14 +8,11 @@
     }
     min-height: 100vh;
     padding: 10vh 5vw;
-    // margin: 5vh 5vw;
     overflow: hidden;
-    // border: 2px solid blue;
-    // width: 100%;
+
     .form-container-title {
-        // border: 2px solid blue;
         margin-bottom: 5vh;
-        
+        font-size: abstracts.$font-clamp-md;
     }
     
     

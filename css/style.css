@@ -180,7 +180,7 @@ img {
   border-radius: 0.5rem;
   font-size: 1rem;
   font-size: clamp(1rem, 1.25vw, 1.125rem);
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.0125rem;
   text-decoration: none;
   text-transform: capitalize;
@@ -308,6 +308,7 @@ img {
 }
 #form .form-container-title {
   margin-bottom: 5vh;
+  font-size: clamp(1.125rem, 2.25vw, 1.25rem);
 }
 #form label {
   text-transform: capitalize;

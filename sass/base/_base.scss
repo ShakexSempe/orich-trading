@@ -125,11 +125,6 @@ section {
         font-size: 2rem;
         font-size: abstracts.$font-clamp-lg;
         transition: 1.5s ease;
-
-        @include abstracts.md {
-            // text-align: center;
-
-        }
     }
 
     // CONTAINER-TITLE IO
