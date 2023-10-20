@@ -1801,7 +1801,7 @@ img {
 }
 @media (min-width: 820px) {
   #header.hero-header {
-    height: 12rem;
+    height: 30vh;
     background-color: transparent;
   }
 }
