@@ -138,6 +138,7 @@
                         i {
                             transition: .25s;
                             color: #000;
+                            opacity: .5;
                         }
 
                         &:hover{
@@ -193,7 +194,7 @@
 
                         .service-cta {
                             i {
-                                color: abstracts.$brand;
+                                opacity: 1;
                             }
                         }
                     }   
