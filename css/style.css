@@ -156,7 +156,7 @@ h3 {
   text-transform: capitalize;
   font-size: 1.125rem;
   font-size: clamp(1.125rem, 2.25vw, 1.25rem);
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 0.5rem;
 }
 
@@ -2559,7 +2559,7 @@ img {
   text-transform: capitalize;
   font-size: 1.25rem;
   font-size: clamp(1.125rem, 2.25vw, 1.25rem);
-  font-weight: 600;
+  font-weight: 500;
   transition: 0.5s ease;
 }
 @media (min-width: 768px) {

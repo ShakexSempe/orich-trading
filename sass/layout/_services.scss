@@ -73,7 +73,7 @@
                     text-transform: capitalize;
                     font-size: 1.25rem;
                     font-size: abstracts.$font-clamp-md;
-                    font-weight: 600;
+                    font-weight: 500;
                     transition: .5s ease;
 
                     @include abstracts.md {
