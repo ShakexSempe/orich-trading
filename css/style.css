@@ -346,13 +346,13 @@ img {
   padding: 1rem 0.5rem;
   margin: 1rem 0 2rem;
   width: 100%;
-  border: none;
+  border: 1px solid transparent;
   outline: 1px solid #000;
   background-color: #333;
   color: #f4f4f4;
   border-radius: 0.25rem;
   resize: none;
-  transition: outline 0.5s;
+  transition: 0.5s;
 }
 #form input:valid, #form textarea:valid {
   outline-color: #ffa500;
@@ -364,7 +364,7 @@ img {
   transition: 0.5s;
 }
 #form input:hover, #form input:focus, #form textarea:hover, #form textarea:focus {
-  border-bottom: 1px solid #ffa500;
+  border-bottom-color: #ffa500;
 }
 #form input:hover::placeholder, #form input:focus::placeholder, #form textarea:hover::placeholder, #form textarea:focus::placeholder {
   opacity: 1;

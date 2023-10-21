@@ -25,13 +25,13 @@
         padding: 1rem .5rem;
         margin: 1rem 0 2rem;
         width: 100%;
-        border: none;
+        border: 1px solid transparent;
         outline: 1px solid #000;
         background-color: #333;
         color: #f4f4f4;
         border-radius: abstracts.$border-radius-xsm;
         resize: none;
-        transition: outline .5s;
+        transition: .5s;
 
         &:valid {
             outline-color: abstracts.$brand-light;
@@ -47,7 +47,7 @@
         
         // INPUT HOVER EFFECT
         &:hover, &:focus {
-            border-bottom: 1px solid abstracts.$brand-light;
+            border-bottom-color: abstracts.$brand-light;
 
             &::placeholder {
                 opacity: 1;
