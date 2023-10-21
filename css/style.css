@@ -1972,12 +1972,15 @@ img {
   font-size: 1.1rem;
   font-size: clamp(1.1rem, 3vw, 2.25rem);
   line-height: 1.2;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .hero-title .slogan h1 br {
   display: none;
 }
 @media (min-width: 820px) {
+  .hero-title .slogan h1 {
+    margin-bottom: 2rem;
+  }
   .hero-title .slogan h1 br {
     display: block;
   }

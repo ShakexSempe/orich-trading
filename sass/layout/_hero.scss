@@ -73,11 +73,12 @@
             font-size: 1.1rem;
             font-size: clamp(1.1rem, 3vw, 2.25rem);
             line-height: 1.2;
-            margin-bottom: 1rem;
+            margin-bottom: .5rem;
             br {
                 display: none;
             }
             @include abstracts.lg {
+                margin-bottom: 2rem;
                 br {
                     display: block;
                 }
