@@ -376,7 +376,6 @@ img {
   font-size: clamp(1rem, 2vw, 1.125rem);
   font-family: inherit;
   text-transform: capitalize;
-  font-weight: 600;
   border: none;
   border-radius: 0.5rem;
   position: relative;
@@ -2507,6 +2506,9 @@ img {
   .services .section-description {
     margin: 2rem 0 4rem;
   }
+}
+.services .section-description p {
+  text-wrap: balance;
 }
 .services .service-container .service-item {
   background: #fff;
