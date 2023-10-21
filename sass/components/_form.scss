@@ -8,11 +8,13 @@
     }
     min-height: 100vh;
     padding: 10vh 5vw;
-    overflow: hidden;
 
     .form-container-title {
         margin-bottom: 5vh;
-        font-size: abstracts.$font-clamp-md;
+        padding: 0;
+        h2 {
+            font-size: abstracts.$font-clamp-xlg;
+        }
     }
     
     

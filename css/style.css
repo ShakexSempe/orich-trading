@@ -326,7 +326,6 @@ img {
 #form {
   min-height: 100vh;
   padding: 10vh 5vw;
-  overflow: hidden;
 }
 @media (min-width: 768px) {
   #form {
@@ -336,7 +335,10 @@ img {
 }
 #form .form-container-title {
   margin-bottom: 5vh;
-  font-size: clamp(1.125rem, 2.25vw, 1.25rem);
+  padding: 0;
+}
+#form .form-container-title h2 {
+  font-size: clamp(2rem, 5vw, 2.25rem);
 }
 #form label {
   text-transform: capitalize;
