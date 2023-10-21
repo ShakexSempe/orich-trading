@@ -2507,11 +2507,6 @@ img {
   background: #f4f4f4;
   padding: 10vh 5vw;
 }
-@media (min-width: 500px) {
-  .services .container-title {
-    text-align: center;
-  }
-}
 .services .section-description {
   margin-bottom: 2rem;
 }
@@ -2523,13 +2518,28 @@ img {
 .services .section-description p {
   text-wrap: balance;
 }
+.services .service-container .grid-container {
+  display: grid;
+  margin: 10vh auto;
+  gap: 10vh;
+}
+@media (min-width: 768px) {
+  .services .service-container .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10vh auto 10vh;
+    column-gap: 2rem;
+    row-gap: 4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .services .service-container .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 .services .service-container .service-item {
   background: #fff;
-  display: flex;
-  flex-direction: column;
   width: 100%;
-  padding: 1rem 0.5rem;
-  margin: 10vh auto;
+  padding: 0 1rem 1rem;
   border-radius: 0.5rem;
   position: relative;
   isolation: isolate;
@@ -2537,7 +2547,7 @@ img {
 }
 @media (min-width: 768px) {
   .services .service-container .service-item {
-    flex-direction: row;
+    padding: 0rem 1rem 4rem;
   }
 }
 .services .service-container .service-item::before, .services .service-container .service-item::after {
@@ -2562,13 +2572,6 @@ img {
 .services .service-container .service-item .service-core {
   display: flex;
   flex-direction: column-reverse;
-  padding: 0 0.5rem;
-}
-@media (min-width: 768px) {
-  .services .service-container .service-item .service-core {
-    flex-basis: 50%;
-    height: 100%;
-  }
 }
 .services .service-container .service-item .service-core h4 {
   text-transform: capitalize;
@@ -2577,48 +2580,32 @@ img {
   font-weight: 500;
   transition: 0.5s ease;
 }
-@media (min-width: 768px) {
-  .services .service-container .service-item .service-core h4 {
-    text-align: center;
-  }
-}
 .services .service-container .service-item .service-core i {
-  margin-top: -2rem;
-  margin: -2rem 0 1rem;
+  transform: translateY(-1rem);
   padding: 0;
   font-size: 2.5rem;
   transition: 0.3s;
   filter: drop-shadow(0.1rem 0.25rem 0.125rem rgba(0, 0, 0, 0.2));
 }
-@media (min-width: 768px) {
-  .services .service-container .service-item .service-core i {
-    margin: -2rem auto 1rem;
-    margin: 0 auto;
-    transform: translateY(-2rem);
-  }
-}
 .services .service-container .service-item .service-type {
   padding: 0 1rem;
-}
-@media (min-width: 768px) {
-  .services .service-container .service-item .service-type {
-    flex-basis: 50%;
-  }
+  outline-color: blue;
 }
 .services .service-container .service-item .service-type ul {
-  padding: 1rem 0.5rem;
-  position: relative;
+  padding: 1rem 0;
 }
 .services .service-container .service-item .service-type ul li {
   margin: 0.5rem 0;
   text-transform: capitalize;
   font-weight: 400;
+  font-size: clamp(.98rem, 1.25vw, 1.125rem);
   transition: 1.5s;
   border-bottom: 1px solid #ddd;
   padding-bottom: 0.25rem;
+  list-style-type: square;
 }
 .services .service-container .service-item .service-type ul li::marker {
-  color: transparent;
+  color: #ddd;
   transition: 0.5s;
 }
 .services .service-container .service-item .service-type ul .service-cta {
@@ -2631,6 +2618,14 @@ img {
   padding-top: 0.5rem;
   gap: 0.5rem;
 }
+@media (min-width: 768px) {
+  .services .service-container .service-item .service-type ul .service-cta {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    width: 50%;
+  }
+}
 .services .service-container .service-item .service-type ul .service-cta a {
   display: block;
   transition: 0.25s;
@@ -2641,11 +2636,12 @@ img {
 .services .service-container .service-item .service-type ul .service-cta i {
   transition: 0.25s;
   color: #000;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 .services .service-container .service-item .service-type ul .service-cta:hover i {
   transform: translateX(0.25rem);
   color: #f8650c;
+  opacity: 1;
 }
 .services .service-container .service-item.io-item {
   transform: scale(0.98);
@@ -2662,6 +2658,11 @@ img {
 .services .service-container .service-item:hover {
   transition: 0.5s;
 }
+@media (min-width: 820px) {
+  .services .service-container .service-item:hover {
+    transform: scale(1.01);
+  }
+}
 .services .service-container .service-item:hover::before {
   opacity: 0;
 }
@@ -2669,7 +2670,7 @@ img {
   opacity: 1;
 }
 .services .service-container .service-item:hover .service-core i {
-  transform: translateY(0.5rem);
+  transform: translateY(0);
   filter: drop-shadow(0rem 0.25rem 0.1rem rgba(0, 0, 0, 0.25));
   transition: 0.5s ease;
 }
@@ -2682,10 +2683,10 @@ img {
   color: #f8650c;
 }
 .services .service-container .service-item:hover .service-type ul li::marker {
-  color: #ddd;
+  color: #b3b3b3;
 }
 .services .service-container .service-item:hover .service-type ul .service-cta i {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 #services-page .promise {

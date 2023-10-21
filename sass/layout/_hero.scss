@@ -68,6 +68,7 @@
         color: abstracts.$text-light;
         position: relative;
         text-transform: capitalize;
+
         h1 {
             font-weight: 600;
             font-size: 1.1rem;
@@ -84,6 +85,7 @@
                 }
             }
         }
+
         .hero-meta {
             color: abstracts.$text-light-trans;
             font-weight: 200;
@@ -92,6 +94,7 @@
                 font-size: .95rem;
             }
         }
+
         // CTA AND SLOGAN
         #cta {
             // QUALITY OR NOTHING P
@@ -113,6 +116,7 @@
                 width: clamp(11rem, 15vw, 15rem);
         }
         }
+
         // THANK YOU PAGE HERO
         &.thanks-message {
             p {
@@ -120,5 +124,6 @@
                 color: inherit;
             }
         }
+        
     }
 }

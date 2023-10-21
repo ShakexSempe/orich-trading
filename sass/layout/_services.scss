@@ -5,11 +5,11 @@
     background: #f4f4f4;
     padding: 10vh 5vw;
     // TITLE IS CENTER ALIGNED ON DESKTOP SAME AS SERVICES ITEMS
-    .container-title {
-        @include abstracts.sm {
-            text-align: center;
-        }
-    }
+    // .container-title {
+    //     @include abstracts.sm {
+    //         text-align: center;
+    //     }
+    // }
     // INTRO P BEFORE SERVICE ITEMS
     .section-description {
         margin-bottom: 2rem;
@@ -24,16 +24,39 @@
     
     .service-container {
 
-        
+        .grid-container {
+            // border: 3px solid red;
+            display: grid;
+            margin: 10vh auto;
+            gap: 10vh;
 
+            // * {
+            //     outline: 1px solid #000;
+            //     &:first-child {
+            //         outline-color: #0006;
+            //     }
+            // }
+
+            // WIDER SCREENS GRID
+            @include abstracts.md {
+                grid-template-columns: repeat(2, 1fr);
+                margin: 10vh auto 10vh;
+                column-gap: 2rem;
+                row-gap: 4rem;
+            }
+            @include abstracts.xlg {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
         // SERVICE ITEM = FLEX CONTAINER WITH TITLE + CONTENT[UL] 
         .service-item {
             background: #fff;
-            display: flex;
-            flex-direction: column;
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: space-between;
+            // display: grid;
             width: 100%;
-            padding: 1rem .5rem;
-            margin: 10vh auto;
+            padding: 0 1rem 1rem;
             
             border-radius: abstracts.$border-radius-sm;
             position: relative;
@@ -41,7 +64,7 @@
             transition: .25s;
             // DESKTOP ITEM STYLE
             @include abstracts.md {
-                flex-direction: row;
+                padding: 0rem 1rem 4rem;
             }
             // PSEUDO SHADOW
             &::before, &::after {
@@ -68,10 +91,11 @@
             .service-core {
                 display: flex;
                 flex-direction: column-reverse;
-                padding: 0 .5rem;
+                // padding: 0 .5rem;
                 @include abstracts.md {
-                    flex-basis: 50%;
-                    height: 100%;
+                    // flex-basis: 50%;
+                    // height: 100%;
+                    // margin-bottom: 1rem;
                 }
 
                 h4 {
@@ -81,21 +105,23 @@
                     font-weight: 500;
                     transition: .5s ease;
 
-                    @include abstracts.md {
-                        text-align: center;
-                    }
+                    // @include abstracts.md {
+                    //     text-align: center;
+                    // }
                 }
                 i {
-                    margin-top: -2rem;
-                    margin: -2rem 0 1rem;
+                    // margin-top: -2rem;
+                    // margin: -2rem 0 1rem;
+                    transform: translateY(-1rem);
+
                     padding: 0;
                     font-size: 2.5rem;
                     transition: .3s;
                     filter: drop-shadow(.1rem .25rem .125rem rgba(0,0, 0, .2));
                     @include abstracts.md {
-                        margin: -2rem auto 1rem;
-                        margin: 0 auto ;
-                        transform: translateY(-2rem);
+                        // margin: -2rem auto 1rem;
+                        // margin: 0 auto ;
+                        // transform: translateY(-2rem);
                     }
                 }
                 
@@ -104,22 +130,26 @@
             // PADDING ON THIS ELEMENT FOR WHITESPACE
             .service-type {
                 padding: 0 1rem;
+                outline-color: blue;    
+
                 @include abstracts.md {
-                    flex-basis: 50%;
+                    // flex-basis: 50%;
                 }
                 ul {
-                    padding: 1rem .5rem;
-                    position: relative;
+                    padding: 1rem 0;
                     li {
                         margin: .5rem 0;
                         text-transform: capitalize;
                         font-weight: 400;
+                        font-size: abstracts.$font-clamp-xsm;
                         transition: 1.5s;
                         border-bottom: 1px solid #ddd;
                         padding-bottom: .25rem;
+                        list-style-type: square;
                         // LIST MARKER TRANSPARENT THEN VISIBLE ON HOVER
                         &::marker {
-                            color: transparent;
+                            color: #ddd;
+                            
                             transition: .5s;
                         }
                     }
@@ -133,6 +163,14 @@
                         margin: .5rem 0 0;
                         padding-top: .5rem;
                         gap: .5rem;
+
+                        
+                        @include abstracts.md {
+                            position: absolute;
+                            bottom: 1rem;
+                            left: 1rem;
+                            width: 50%;
+                        }
                         a {
                             display: block;
                             transition: .25s;
@@ -143,13 +181,14 @@
                         i {
                             transition: .25s;
                             color: #000;
-                            opacity: .5;
+                            opacity: .4;
                         }
 
                         &:hover{
                             i {
                                 transform: translateX(.25rem);
                                 color: abstracts.$brand;
+                                opacity: 1;
                             }
                         }
                     }
@@ -170,6 +209,9 @@
             // ITEM HOVER EFFECT
             &:hover {
                 transition: .5s;
+                @include abstracts.lg {
+                    transform: scale(1.01);
+                }
                 // BOX SHADOW TRANSITION ON HOVER
                 &::before { opacity: 0;}
                 &::after { opacity: 1;}
@@ -177,7 +219,7 @@
                 // CARD TITLE CHANGE COLOR ON HOVER
                 .service-core {
                     i {
-                        transform: translateY(.5rem);
+                        transform: translateY(0);
                         @include abstracts.md {
                         transform: translateY(0);
                         }
@@ -193,13 +235,12 @@
                     ul {
                         li {
                             &::marker {
-                                color: #ddd;
+                                color: hsl(0, 0%, 70%);
                             }
                         }
-
                         .service-cta {
                             i {
-                                opacity: 1;
+                                opacity: .8;
                             }
                         }
                     }   
