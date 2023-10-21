@@ -383,6 +383,7 @@ img {
   color: #000;
   font-size: clamp(1rem, 2vw, 1.125rem);
   font-family: inherit;
+  font-weight: 500;
   text-transform: capitalize;
   border: none;
   border-radius: 0.5rem;
