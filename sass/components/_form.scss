@@ -22,33 +22,36 @@
 
     input, textarea {
         display: block;
-        padding: .65rem .5rem;
-        margin: .25rem 0 2rem;
+        padding: 1rem .5rem;
+        margin: 1rem 0 2rem;
         width: 100%;
         border: none;
         outline: 1px solid #000;
+        background-color: #333;
+        color: #f4f4f4;
         border-radius: abstracts.$border-radius-xsm;
         resize: none;
         transition: outline .5s;
 
         &:valid {
-            outline-color: abstracts.$brand;
+            outline-color: abstracts.$brand-light;
             // border-color: abstracts.$brand;
         }
 
         &::placeholder {
             opacity: 0;
+            color: #ddd;
             transform: translateX(.5rem);
-            // letter-spacing: .05rem;
             transition: .5s;
         }
         
         // INPUT HOVER EFFECT
         &:hover, &:focus {
+            border-bottom: 1px solid abstracts.$brand-light;
+
             &::placeholder {
                 opacity: 1;
-            transform: translateX(0rem);
-                // letter-spacing: normal;
+                transform: translateX(0rem);
             }
         }
     }
