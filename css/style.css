@@ -2527,7 +2527,7 @@ img {
   .services .service-container .grid-container {
     grid-template-columns: repeat(2, 1fr);
     margin: 10vh auto 10vh;
-    column-gap: 2rem;
+    column-gap: 4rem;
     row-gap: 4rem;
   }
 }

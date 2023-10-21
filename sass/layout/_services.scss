@@ -41,7 +41,7 @@
             @include abstracts.md {
                 grid-template-columns: repeat(2, 1fr);
                 margin: 10vh auto 10vh;
-                column-gap: 2rem;
+                column-gap: 4rem;
                 row-gap: 4rem;
             }
             @include abstracts.xlg {
