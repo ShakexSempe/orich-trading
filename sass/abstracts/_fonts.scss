@@ -7,13 +7,43 @@ $font-clamp-xlg: clamp(2rem, 5vw, 2.25rem);
 
 @font-face {
     font-family: "Prompt";
-    src: url('../fonts/Prompt-Regular.ttf')
-    format('woff2'),
-    url("../fonts/Prompt-Regular.ttf") format("woff"),
-    url("../fonts/Prompt-Regular.ttf") format("ttf")
-    ;
+    src: url('/fonts/prompt-light-webfont.woff2') format('woff2'),
+            url('/fonts/prompt-light-webfont.woff') format('woff') ;
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Prompt";
+    src: url('/fonts/prompt-regular-webfont.woff2') format('woff2'),
+            url('/fonts/prompt-regular-webfont.woff') format('woff') ;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Prompt";
+    src: url('/fonts/prompt-medium-webfont.woff2') format('woff2'),
+            url('/fonts/prompt-medium-webfont.woff') format('woff') ;
     font-style: normal;
     font-weight: 500;
-    font-weight:  100 200 400 500 600 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Prompt";
+    src: url('/fonts/prompt-semibold-webfont.woff2') format('woff2'),
+            url('/fonts/prompt-semibold-webfont.woff') format('woff') ;
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Prompt";
+    src: url('/fonts/prompt-bold-webfont.woff2') format('woff2'),
+            url('/fonts/prompt-bold-webfont.woff') format('woff') ;
+    font-style: normal;
+    font-weight: 700;
     font-display: swap;
 }

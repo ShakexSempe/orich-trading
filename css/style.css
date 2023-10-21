@@ -1,10 +1,37 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Prompt";
-  src: url("../fonts/Prompt-Regular.ttf") format("woff2"), url("../fonts/Prompt-Regular.ttf") format("woff"), url("../fonts/Prompt-Regular.ttf") format("ttf");
+  src: url("/fonts/prompt-light-webfont.woff2") format("woff2"), url("/fonts/prompt-light-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Prompt";
+  src: url("/fonts/prompt-regular-webfont.woff2") format("woff2"), url("/fonts/prompt-regular-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Prompt";
+  src: url("/fonts/prompt-medium-webfont.woff2") format("woff2"), url("/fonts/prompt-medium-webfont.woff") format("woff");
   font-style: normal;
   font-weight: 500;
-  font-weight: 100 200 400 500 600 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Prompt";
+  src: url("/fonts/prompt-semibold-webfont.woff2") format("woff2"), url("/fonts/prompt-semibold-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Prompt";
+  src: url("/fonts/prompt-bold-webfont.woff2") format("woff2"), url("/fonts/prompt-bold-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
   font-display: swap;
 }
 body {
@@ -129,7 +156,7 @@ h3 {
   text-transform: capitalize;
   font-size: 1.125rem;
   font-size: clamp(1.125rem, 2.25vw, 1.25rem);
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 0.5rem;
 }
 
@@ -181,7 +208,7 @@ img {
   border-radius: 0.5rem;
   font-size: 1rem;
   font-size: clamp(1rem, 1.25vw, 1.125rem);
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.0125rem;
   text-decoration: none;
   text-transform: capitalize;
