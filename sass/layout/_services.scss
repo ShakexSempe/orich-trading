@@ -48,13 +48,10 @@
                 grid-template-columns: repeat(3, 1fr);
             }
         }
+
         // SERVICE ITEM = FLEX CONTAINER WITH TITLE + CONTENT[UL] 
         .service-item {
             background: #fff;
-            // display: flex;
-            // flex-direction: column;
-            // justify-content: space-between;
-            // display: grid;
             width: 100%;
             padding: 0 1rem 1rem;
             
@@ -219,10 +216,8 @@
                 // CARD TITLE CHANGE COLOR ON HOVER
                 .service-core {
                     i {
-                        transform: translateY(0);
-                        @include abstracts.md {
-                        transform: translateY(0);
-                        }
+                        transform: translateY(-.25rem);
+                        
                         filter: drop-shadow(0rem .25rem .1rem rgba(0,0, 0, .250));
                         transition: .5s ease;
                     }
