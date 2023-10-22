@@ -30,18 +30,11 @@
             margin: 10vh auto;
             gap: 10vh;
 
-            // * {
-            //     outline: 1px solid #000;
-            //     &:first-child {
-            //         outline-color: #0006;
-            //     }
-            // }
-
             // WIDER SCREENS GRID
             @include abstracts.md {
                 grid-template-columns: repeat(2, 1fr);
                 margin: 10vh auto 10vh;
-                column-gap: 4rem;
+                column-gap: 2rem;
                 row-gap: 4rem;
             }
             @include abstracts.xlg {

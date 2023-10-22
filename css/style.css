@@ -207,7 +207,7 @@ img {
   border-radius: 0.5rem;
   font-size: 1rem;
   font-size: clamp(1rem, 1.25vw, 1.125rem);
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.0125rem;
   text-decoration: none;
   text-transform: capitalize;
@@ -824,6 +824,9 @@ img {
 }
 .about-article .article-body {
   margin-bottom: 5vh;
+}
+.about-article p {
+  font-weight: 300;
 }
 .about-article p.article-intro::first-letter {
   font-size: 2rem;
@@ -2076,6 +2079,7 @@ img {
 }
 .menu-item .menu-item-title p {
   font-size: clamp(.98rem, 1.25vw, 1.125rem);
+  font-weight: 400;
 }
 .menu-item .menu-image {
   position: relative;
@@ -2534,7 +2538,7 @@ img {
   .services .service-container .grid-container {
     grid-template-columns: repeat(2, 1fr);
     margin: 10vh auto 10vh;
-    column-gap: 4rem;
+    column-gap: 2rem;
     row-gap: 4rem;
   }
 }
