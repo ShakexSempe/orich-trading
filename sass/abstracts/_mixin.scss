@@ -53,6 +53,7 @@ $screen-xlg-min: 1024px;
     display: grid;
     grid-gap: $gap;
     grid-template-columns: repeat($columns, 1fr);
+    @content
 }
 
 

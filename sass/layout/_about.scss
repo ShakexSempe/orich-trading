@@ -12,6 +12,7 @@
         @include abstracts.xlg {
             .flex-container {
                 @include abstracts.grid(2, 10vw);
+                
             }
         }
 
@@ -31,6 +32,9 @@
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
+            }
+            @include abstracts.xlg {
+                padding: 0;
             }
 
             // MISSION STATEMENT CARD
@@ -169,6 +173,7 @@
     .about-article {
         margin: 5vh 1rem 10vh 5vw;
         text-transform: none;
+        // border: 2px solid red;
         @include abstracts.sm {
             margin: 5vh 5vw;
         }
@@ -186,6 +191,7 @@
         p {
             font-weight: 300;
             &.article-intro {
+                text-wrap: balance;
                 &::first-letter {
                     font-size: 2rem;
                     padding: 0 .2rem 0 .05rem;
@@ -222,6 +228,7 @@
         // ABOUT PAGE LINK 
         a {
             margin: 1rem 0 0;
+            
         }
     }
 

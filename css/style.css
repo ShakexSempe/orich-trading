@@ -712,6 +712,11 @@ img {
     align-items: center;
   }
 }
+@media (min-width: 1024px) {
+  .about .vision-mission {
+    padding: 0;
+  }
+}
 .about .vision-mission .mission {
   max-width: 500px;
 }
@@ -827,6 +832,9 @@ img {
 }
 .about-article p {
   font-weight: 300;
+}
+.about-article p.article-intro {
+  text-wrap: balance;
 }
 .about-article p.article-intro::first-letter {
   font-size: 2rem;
