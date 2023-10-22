@@ -172,7 +172,7 @@
         text-transform: capitalize;
         margin-bottom: 5vh;
         font-size: 2.5rem;
-        font-style: abstracts.$font-clamp-xlg;
+        font-size: abstracts.$font-clamp-xlg;
         position: relative;
         width: max-content;
         color: abstracts.$text-light;
@@ -288,7 +288,6 @@
             font-size: 1.25rem;
             font-size: abstracts.$font-clamp-md;
             transition: .25s;
-            font-weight: 600;
         }
         // CONTACT ITEM LIST = UL
         ul {

@@ -156,12 +156,13 @@ h3 {
     font-size: 1.025rem;
     font-size: abstracts.$font-clamp-md;
     margin-bottom: .5rem;
+    font-weight: 500;
 }
 
 p {
-    color: abstracts.$text-main-light;
+    // color: abstracts.$text-main-light;
     font-size: abstracts.$font-clamp-sm;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.6;
 }
 
