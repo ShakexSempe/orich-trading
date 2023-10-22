@@ -2017,6 +2017,7 @@ img {
   font-size: 1.015rem;
   font-size: clamp(1rem, 2vw, 1.125rem);
   width: 12rem;
+  height: 3rem;
   width: clamp(11rem, 15vw, 15rem);
 }
 .hero-title .slogan.thanks-message p {
