@@ -36,17 +36,23 @@ $btn-md : clamp(11rem, 15vw, 11rem);
         cursor: pointer;
     }
 
+
+    // BUTTON WITH SVG IMAGE ICON
+    img {
+        width: 1rem;
+        transition: .25s;
+        animation: hero-arrow 1s infinite;
+        @keyframes hero-arrow {
+            50% {
+                transform: translateX(.125rem);
+                opacity: .5;
+            }
+        }
+    }
+
     i {
         font-size: 1rem;
         transition: 0.25s;
-    }
-
-    &:hover {
-        i {
-            &::before {
-                animation: none;
-            }
-        }
     }
 
 
@@ -81,7 +87,7 @@ $btn-md : clamp(11rem, 15vw, 11rem);
         &:active {
             transform: scale(0.97);
             letter-spacing: normal;
-            i {
+            i, img {
                 animation: none;
             }
 
