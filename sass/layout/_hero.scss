@@ -113,7 +113,8 @@
                 font-size: 1.015rem;
                 font-size: abstracts.$font-clamp-sm;
                 width: 12rem;
-                height: 3rem;
+                // height: 3rem;
+                max-height: 4rem;
                 width: clamp(11rem, 15vw, 15rem);
         }
         }
