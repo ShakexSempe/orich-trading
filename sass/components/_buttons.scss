@@ -3,7 +3,11 @@
 $btn-sm : clamp(9rem, 15vw, 10rem);
 $btn-md : clamp(11rem, 15vw, 11rem);
 
-
+// ICONS 
+.icon {
+    // border: 4px solid;
+    width: 1rem;
+}
 
 .cta-btn {
     display: flex;
@@ -39,7 +43,6 @@ $btn-md : clamp(11rem, 15vw, 11rem);
 
     // BUTTON WITH SVG IMAGE ICON
     img {
-        width: 1rem;
         transition: .25s;
         animation: hero-arrow 1s infinite;
         @keyframes hero-arrow {
