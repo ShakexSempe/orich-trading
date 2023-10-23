@@ -174,7 +174,7 @@ a {
 
 .icon {
   display: inline-block;
-  width: 1.25rem;
+  width: 1.125rem;
 }
 
 * {
@@ -230,7 +230,7 @@ img {
     cursor: pointer;
   }
 }
-.cta-btn img {
+.cta-btn .hero-cta-icon {
   transition: 0.25s;
   animation: hero-arrow 1s infinite;
 }
@@ -2133,6 +2133,9 @@ img {
 }
 .menu-item .menu-image a i {
   margin-left: 0.5rem;
+}
+.menu-item .menu-image a img {
+  width: 1.125rem;
 }
 .menu-item .menu-image::before {
   content: "";

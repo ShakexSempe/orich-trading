@@ -15,6 +15,7 @@ $btn-md : clamp(11rem, 15vw, 11rem);
     align-items: center;
 
     width: 11rem;
+    // height: 4rem;
     width: clamp(11rem, 15vw, 12rem);
     padding: .6rem 1rem;
     margin: .5rem 0;
@@ -42,7 +43,7 @@ $btn-md : clamp(11rem, 15vw, 11rem);
 
 
     // BUTTON WITH SVG IMAGE ICON
-    img {
+    .hero-cta-icon {
         transition: .25s;
         animation: hero-arrow 1s infinite;
         @keyframes hero-arrow {
