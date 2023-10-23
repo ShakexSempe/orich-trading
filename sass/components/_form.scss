@@ -24,7 +24,7 @@
 
     input, textarea {
         display: block;
-        padding: 1rem .5rem;
+        padding: .65rem .5rem;
         margin: 1rem 0 2rem;
         width: 100%;
         border: 1px solid transparent;
@@ -34,6 +34,10 @@
         border-radius: abstracts.$border-radius-xsm;
         resize: none;
         transition: .5s;
+        // DESKTOP PADDING
+        @include abstracts.md {
+            padding: 1rem;
+        }
 
         &:valid {
             outline-color: abstracts.$brand-light;
