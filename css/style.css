@@ -360,7 +360,7 @@ img {
 }
 #form input, #form textarea {
   display: block;
-  padding: 0.65rem 0.5rem;
+  padding: 1rem 0.5rem;
   margin: 1rem 0 2rem;
   width: 100%;
   border: 1px solid transparent;
