@@ -87,20 +87,19 @@
         }
 
         .hero-meta {
-            color: abstracts.$text-light-trans;
+            color: abstracts.$text-second-light;
             font-weight: 200;
+            display: flex;
+            align-items: center;
             i {
                 width: 1.25rem;
                 font-size: .95rem;
             }
 
-            img {
-                margin-right: .5rem;
-                // background: #fff;
-                color: red;
-                padding: .125rem;
-                fill: red;
-            
+            .icon {
+                width: 1.25rem;
+                position: relative;
+                left: -0.25rem;
             }
         }
 

@@ -174,7 +174,7 @@ a {
 
 .icon {
   display: inline-block;
-  width: 1rem;
+  width: 1.25rem;
 }
 
 * {
@@ -995,7 +995,7 @@ img {
   transition: 0.3s;
 }
 #about-page .vision-mission .mission p {
-  color: #dbdbdb;
+  color: #cccccc;
   margin-bottom: 0.5rem;
   transition: 0.25s;
 }
@@ -2017,18 +2017,19 @@ img {
   }
 }
 .hero-title .slogan .hero-meta {
-  color: rgba(255, 255, 255, 0.7);
+  color: #cccccc;
   font-weight: 200;
+  display: flex;
+  align-items: center;
 }
 .hero-title .slogan .hero-meta i {
   width: 1.25rem;
   font-size: 0.95rem;
 }
-.hero-title .slogan .hero-meta img {
-  margin-right: 0.5rem;
-  color: red;
-  padding: 0.125rem;
-  fill: red;
+.hero-title .slogan .hero-meta .icon {
+  width: 1.25rem;
+  position: relative;
+  left: -0.25rem;
 }
 .hero-title .slogan #cta .slogan-p {
   color: #fff;
