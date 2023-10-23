@@ -2139,7 +2139,7 @@ img {
   margin-left: 0.5rem;
 }
 .menu-item .menu-image a img {
-  width: 1.125rem;
+  width: 1rem;
 }
 .menu-item .menu-image::before {
   content: "";
