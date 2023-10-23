@@ -285,7 +285,7 @@ img {
     transform: scale(0.985);
     letter-spacing: normal;
   }
-  .cta-btn:hover i {
+  .cta-btn:hover i, .cta-btn:hover img {
     animation: none;
   }
   .cta-btn:hover::before {
