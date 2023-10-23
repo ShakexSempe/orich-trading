@@ -160,8 +160,14 @@
 
             i {
                 font-size: 1rem;
-                color: hsl(0, 0%, 70%);
+                color: #b3b3b3;
                 transition: .25s;
+            }
+
+            .icon {
+                // border: 1px solid red;
+                width: 1.25rem;
+                height: 1.25rem;
             }
 
             &:active {
