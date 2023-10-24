@@ -14,8 +14,7 @@ const links = document.querySelectorAll('#aside ul li a');
 // ACTIVE PAGE LINKS
 const activePage = window.location.pathname;
 const navLinks = document.querySelectorAll('.nav-link');
-console.log(activePage);
-console.log(navLinks);
+
 
 navLinks.forEach(link => {
     if(link.href.includes(`${activePage}`)) {
@@ -80,11 +79,11 @@ const heroObserver = new IntersectionObserver(
     ) {
         entries.forEach(entry => {
             if(!entry.isIntersecting) {
-                console.log("hero NOT intersecting");
+                // console.log("hero NOT intersecting");
                 pageHeader.classList.remove("hero-header");
                 logo.classList.remove("active-logo");
             } else {
-                console.log("hero intersecting");
+                // console.log("hero intersecting");
                 pageHeader.classList.add("hero-header");
                 logo.classList.add("active-logo");
             }
@@ -104,13 +103,13 @@ const mainObserver = new IntersectionObserver(
     function(entries, mainObserver){
         entries.forEach( entry => {
             if(!entry.isIntersecting){
-                console.log('MAIN NOT IO');
+                // console.log('MAIN NOT IO');
                 header.classList.remove("main-header");
                 bottomNav.classList.remove("active-footer");
 
             } else {
                 console.log('MAIN IS IO');
-                header.classList.add("main-header");
+                // header.classList.add("main-header");
                 bottomNav.classList.add("active-footer");
 
             }
@@ -119,27 +118,7 @@ const mainObserver = new IntersectionObserver(
 );
 mainObserver.observe(main);
 
-// MENU OBSERVER
-// const menu = document.getElementById("menu1");
-const menu = document.querySelectorAll('[data-active-footer]');
-const menuOptions = {
-    rootMargin: '0% 0px -70% 0px',
-};
-menu.forEach(menu => {
 
-    const menuObserver = new IntersectionObserver(
-        function(entries, menuObserver){
-            entries.forEach(entry => {
-                if(!entry.isIntersecting){
-                    console.log('Menu NOT io');
-                } else {
-                    console.log('menu IS io');
-                }
-            })
-        }, menuOptions
-    );
-    menuObserver.observe(menu);
-})
 
 // SECTION TITLE INTERSECTION OBSERVERS
 // const topLine = document.querySelector(".decoration-line");
@@ -153,11 +132,11 @@ titles.forEach(title => {
         function(entries, titleObserver){
             entries.forEach(entry => {
                 if(!entry.isIntersecting) {
-                    console.log("title NOT io");
+                    // console.log("title NOT io");
                     title.classList.remove("active-title");
                     // topLine.classList.add('active-line');
                 } else {
-                    console.log("title is io");
+                    // console.log("title is io");
                     title.classList.add("active-title");
                     // topLine.classList.remove('active-line');
 
@@ -180,10 +159,10 @@ ioItem.forEach(item => {
         function(entries, itemObserver) {
             entries.forEach(entry => {
                 if(!entry.isIntersecting){
-                    console.log("Item NOT io");
+                    // console.log("Item NOT io");
                     item.classList.remove("active-item");
                 } else {
-                    console.log("Item IS io");
+                    // console.log("Item IS io");
                     item.classList.add("active-item");
                 }
             })
