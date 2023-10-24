@@ -109,7 +109,7 @@ const mainObserver = new IntersectionObserver(
 
             } else {
                 console.log('MAIN IS IO');
-                // header.classList.add("main-header");
+                header.classList.add("main-header");
                 bottomNav.classList.add("active-footer");
 
             }
