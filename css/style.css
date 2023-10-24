@@ -176,7 +176,6 @@ a {
   display: inline-block;
   width: 1.125rem;
   transition: 0.25s;
-  border-radius: 50%;
 }
 
 * {
@@ -262,7 +261,7 @@ img {
 .bottom-nav .item a .icon {
   width: 1.25rem;
   height: 100%;
-  fill: green;
+  border-radius: 50%;
 }
 .bottom-nav .item a .icon g {
   fill: #b3b3b3;
