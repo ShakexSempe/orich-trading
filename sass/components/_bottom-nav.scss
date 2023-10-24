@@ -84,6 +84,9 @@
                 i {
                     color: abstracts.$text-light;
                 }
+                img {
+                    opacity: .6;
+                }
                 &::after {
                 // animation: click .25s forwards;
                 animation: click .25s;

@@ -175,6 +175,8 @@ a {
 .icon {
   display: inline-block;
   width: 1.125rem;
+  transition: 0.25s;
+  border-radius: 50%;
 }
 
 * {
@@ -275,6 +277,9 @@ img {
 }
 .bottom-nav .item a:hover i {
   color: #fff;
+}
+.bottom-nav .item a:hover img {
+  opacity: 0.6;
 }
 .bottom-nav .item a:hover::after {
   animation: click 0.25s;
