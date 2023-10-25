@@ -2396,57 +2396,23 @@ aside.active .social-links a {
     top: 8vh;
   }
 }
-#projects .gallery .gallery-title a {
-  text-transform: capitalize;
-  width: 6rem;
+#projects .gallery .gallery-title .cta-btn {
+  width: 6.5rem;
+  width: clamp(6rem, 10vw, 8rem);
   font-size: 0.9rem;
   font-weight: 500;
   border-radius: 0.5rem;
   color: #000;
   padding: 0.25rem 0.5rem;
-  transition: 0.2s;
-  isolation: isolate;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 @media (min-width: 820px) {
-  #projects .gallery .gallery-title a {
-    padding: 0.25rem 0.5rem;
+  #projects .gallery .gallery-title .cta-btn {
+    padding: 0.5rem;
   }
 }
-#projects .gallery .gallery-title a::after, #projects .gallery .gallery-title a::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 0.5rem;
-  transition: 0.2s;
-  z-index: -1;
-}
-#projects .gallery .gallery-title a::before {
-  background: linear-gradient(0deg, #f8670d, #ffa500);
-  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 4px 4px 5px rgba(0, 0, 0, 0.15);
-}
-#projects .gallery .gallery-title a::after {
-  background: linear-gradient(0deg, #ffa500, #f8670d);
-  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.25), inset -2px -2px 2px rgba(255, 255, 255, 0.152), 1px 2px 2px rgba(0, 0, 0, 0.3);
-  opacity: 0;
-}
-#projects .gallery .gallery-title a:hover {
-  transform: scale(0.985);
-}
-#projects .gallery .gallery-title a:hover::before {
-  opacity: 0;
-}
-#projects .gallery .gallery-title a:hover::after {
-  opacity: 1;
-}
-#projects .gallery .gallery-title a:hover i {
-  transform: translateX(-0.125rem);
+#projects .gallery .gallery-title .cta-btn .icon {
+  width: 0.95rem;
+  width: clamp(.95rem, 3vw, 1.125rem);
 }
 #projects .gallery .gallery-grid {
   display: grid;
