@@ -1759,6 +1759,10 @@ aside {
   overflow: hidden;
   z-index: 1;
 }
+aside .icon {
+  width: 1.025rem;
+  height: 1.025rem;
+}
 aside ul {
   border-radius: 3px;
   padding: 2em 0.2em;
@@ -1886,10 +1890,6 @@ aside ul li .nav-link {
 aside ul li .nav-link i {
   color: #fff9;
 }
-aside ul li .nav-link .icon {
-  width: 1.025rem;
-  height: 1.025rem;
-}
 aside .social-links {
   width: 85vw;
   display: flex;
@@ -1910,12 +1910,19 @@ aside .social-links a {
   opacity: 0;
   transition: 0.5s;
   text-transform: none;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
 }
 aside .social-links a i {
   width: 1rem;
   margin: 0 0.5rem 0 1rem;
   font-size: 1rem;
   color: #ffa500;
+}
+aside .social-links a img {
+  margin-left: 1rem;
 }
 aside.active {
   right: -1rem;

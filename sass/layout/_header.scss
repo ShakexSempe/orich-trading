@@ -353,6 +353,11 @@ aside {
     overflow: hidden;
     z-index: 1;
 
+    .icon {
+        width: 1.025rem;
+        height: 1.025rem;
+    }
+
     ul {
         // border: 2px solid abstracts.$brand-light;
         border-radius: 3px;
@@ -519,17 +524,11 @@ aside {
                     color: abstracts.$nav-icons;
                 }
 
-                .icon {
-                    width: 1.025rem;
-                    height: 1.025rem;
-                }
-
-                
             }
-
             
         }
     }
+   
 
     .social-links {
         width: 85vw;
@@ -553,13 +552,20 @@ aside {
             opacity: 0;
             transition: .5s;
             text-transform: none;
-            
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 1rem;
             i {
                 // border: 1px solid red;
                 width: 1rem;
                 margin: 0 .5rem 0 1rem;
                 font-size: 1rem;
                 color: abstracts.$brand-light;
+            }
+
+            img {
+                margin-left: 1rem;
             }
         }
     }
