@@ -34,9 +34,6 @@
         box-shadow: 0rem 1rem 1rem transparent;
     }
 
-    
-
-    
     // DESKTOP HEADER - TOGGLE + ASIDE = DISPLAY NONE
     @include abstracts.lg {
         
@@ -60,185 +57,6 @@
         background-color: #000a;
         background: transparent;       
     }
-    // LOGO - STARTS WITH 0 OPACITY
-    .logo {
-        z-index: 1;
-        transition: .5s;
-        height: 100%;
-        width: auto;
-
-        a {
-            overflow: hidden;
-            width: 15rem;
-            transition: .25s;
-
-            img {
-                height: 100%;
-                width: 100%;
-                object-fit: contain;
-                object-position: left;
-                border-bottom-left-radius: abstracts.$border-radius-xsm;
-                border-bottom-right-radius: abstracts.$border-radius-xsm;
-            }
-        }
-    }
-    
-    .navigation {
-        text-transform: capitalize;
-        transition: .5s;
-        position: relative;
-        border: none;
-
-        nav {
-            display: none;
-
-            @include abstracts.lg {
-                display: block;
-                transition: .5s;
-
-                ul {
-                    display: flex;
-                    align-items: center;
-                    gap: 1rem;
-                    isolation: isolate;
-
-                    // border: 2px solid red;
-                    li {
-                        list-style: none;
-                        // float: left;
-                        position: relative;
-                        // border: 1px solid blue;
-
-                        a {
-                            font-size: .95rem;
-                            color: #000;
-                            text-decoration: none;
-                            transition: .3s;
-                            // padding: .25rem;
-                            position: relative;
-                            display: block;
-
-                            // NAV LINK UNDERLINE
-                            &::after {
-                                position: absolute;
-                                content: '';
-                                bottom: -.25rem;
-                                left: 50%;
-                                transform: translateX(-50%) scale(0);
-                                width: 70%;
-                                height: .15rem;
-                                background-color: abstracts.$brand;
-                                transition: .3s;
-                            }
-
-                            &:hover {
-                                &::after {
-                                    transform: translateX(-50%) scale(1);
-                                }
-                            }
-                        }
-                    }
-
-                    // DROPDOWN
-                    .dropdown {
-                        position: relative;
-
-                        button {
-                            font-family: inherit;
-                            font-size: .95rem;
-                            display: flex;
-                            align-items: center;
-                            float: left;
-                            color: #000;
-                            text-decoration: none;
-                            transition: .3s;
-                            border-radius: 5px;
-                            background-color: transparent;
-                            border: none;
-                            text-transform: capitalize;
-                            cursor: pointer;
-                            // border: 2px solid red;
-                            padding: .5rem 0;
-
-                            i {
-                                margin-left: .5rem;
-                            }
-                        }
-
-                        .dropdown-content {
-                            display: block;
-                            height: 0rem;
-                            width: 15vw;
-                            overflow-y: auto;
-                            position: absolute;
-                            top: 2rem;
-                            left: -5vw;
-                            background-color: abstracts.$brand;
-                            transition: .25s;
-                            border-radius: .25rem;
-                            z-index: -1;
-
-                            @include abstracts.xlg {
-                                left: -9vw;
-                            }
-
-                            a {
-                                display: block;
-                                border-radius: 0;
-                                padding: .25rem;
-
-                                &::after {
-                                    display: none;
-                                }
-
-                                &:hover {
-                                    color: abstracts.$text-second;
-                                    box-shadow: none;
-                                    background-color: #000;
-
-                                }
-                            }
-
-                            i {
-                                color: #ddd;
-                                margin-right: .5rem;
-                            }
-                        }
-
-                        &:hover {
-                            button {
-                                color: #000a;
-
-                                i {
-                                    transition: .3s;
-                                    transform: scale(.9) rotate(180deg);
-                                    color: abstracts.$brand
-                                }
-                            }
-
-                            .dropdown-content {
-                                height: 55vh;
-                                height: auto;
-                                overflow-y: auto;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-
-        .nav-link {
-            &.active {
-                color: abstracts.$brand-light;
-                i {
-                    color: abstracts.$active-nav-icon;
-                }
-            }
-        }
-    }
-
-
     // HERO SECTION HEADER STYLE
     &.hero-header {
         height: 25vh;
@@ -343,6 +161,184 @@
         }
     }
     
+}
+
+ // LOGO - STARTS WITH 0 OPACITY
+.logo {
+    z-index: 1;
+    transition: .5s;
+    height: 100%;
+    width: auto;
+
+    a {
+        overflow: hidden;
+        width: 15rem;
+        transition: .25s;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            object-position: left;
+            border-bottom-left-radius: abstracts.$border-radius-xsm;
+            border-bottom-right-radius: abstracts.$border-radius-xsm;
+        }
+    }
+}
+
+.navigation {
+    text-transform: capitalize;
+    transition: .5s;
+    position: relative;
+    border: none;
+
+    nav {
+        display: none;
+
+        @include abstracts.lg {
+            display: block;
+            transition: .5s;
+
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                isolation: isolate;
+
+                // border: 2px solid red;
+                li {
+                    list-style: none;
+                    // float: left;
+                    position: relative;
+                    // border: 1px solid blue;
+
+                    a {
+                        font-size: .95rem;
+                        color: #000;
+                        text-decoration: none;
+                        transition: .3s;
+                        // padding: .25rem;
+                        position: relative;
+                        display: block;
+
+                        // NAV LINK UNDERLINE
+                        &::after {
+                            position: absolute;
+                            content: '';
+                            bottom: -.25rem;
+                            left: 50%;
+                            transform: translateX(-50%) scale(0);
+                            width: 70%;
+                            height: .15rem;
+                            background-color: abstracts.$brand;
+                            transition: .3s;
+                        }
+
+                        &:hover {
+                            &::after {
+                                transform: translateX(-50%) scale(1);
+                            }
+                        }
+                    }
+                }
+
+                // DROPDOWN
+                .dropdown {
+                    position: relative;
+
+                    button {
+                        font-family: inherit;
+                        font-size: .95rem;
+                        display: flex;
+                        align-items: center;
+                        float: left;
+                        color: #000;
+                        text-decoration: none;
+                        transition: .3s;
+                        border-radius: 5px;
+                        background-color: transparent;
+                        border: none;
+                        text-transform: capitalize;
+                        cursor: pointer;
+                        // border: 2px solid red;
+                        padding: .5rem 0;
+
+                        i {
+                            margin-left: .5rem;
+                        }
+                    }
+
+                    .dropdown-content {
+                        display: block;
+                        height: 0rem;
+                        width: 15vw;
+                        overflow-y: auto;
+                        position: absolute;
+                        top: 2rem;
+                        left: -5vw;
+                        background-color: abstracts.$brand;
+                        transition: .25s;
+                        border-radius: .25rem;
+                        z-index: -1;
+
+                        @include abstracts.xlg {
+                            left: -9vw;
+                        }
+
+                        a {
+                            display: block;
+                            border-radius: 0;
+                            padding: .25rem;
+
+                            &::after {
+                                display: none;
+                            }
+
+                            &:hover {
+                                color: abstracts.$text-second;
+                                box-shadow: none;
+                                background-color: #000;
+
+                            }
+                        }
+
+                        i {
+                            color: #ddd;
+                            margin-right: .5rem;
+                        }
+                    }
+
+                    &:hover {
+                        button {
+                            color: #000a;
+
+                            i {
+                                transition: .3s;
+                                transform: scale(.9) rotate(180deg);
+                                color: abstracts.$brand
+                            }
+                        }
+
+                        .dropdown-content {
+                            height: 55vh;
+                            height: auto;
+                            overflow-y: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .nav-link {
+        &.active {
+            color: abstracts.$brand-light;
+            i {
+                color: abstracts.$active-nav-icon;
+            }
+        }
+    }
 }
 
 aside {
@@ -504,17 +500,28 @@ aside {
                 
             }
 
-            a {
+            .nav-link {
                 color: abstracts.$nav-links;
                 text-decoration: none;
                 width: 100%;
                 padding: .5rem;
                 transition: .2s;
+                // border: 1px solid red;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                gap: 1rem;
+
 
                 i {
-                    margin-right: .5rem;
-                    width: 1.5rem;
+                    // margin-right: .5rem;
+                    // width: 1.5rem;
                     color: abstracts.$nav-icons;
+                }
+
+                .icon {
+                    width: 1.125rem;
+                    height: 1.125rem;
                 }
 
                 
