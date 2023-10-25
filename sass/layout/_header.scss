@@ -34,257 +34,7 @@
         box-shadow: 0rem 1rem 1rem transparent;
     }
 
-    aside {
-        position: fixed;
-        top: 7vh;
-        right: -100vw;
-        width: 100%;
-        height: 100vh;
-        background-color: abstracts.$bg-second;
-        padding: 0 ;
-        transition: .5s;
-        overflow: hidden;
-        z-index: 1;
-
-        ul {
-            // border: 2px solid abstracts.$brand-light;
-            border-radius: 3px;
-            padding: 2em .2em;
-            width: 70vw;
-            height: 100%;
-            height: auto;
-            overflow: none;
-
-            li {
-                margin: 0 1rem 1rem;
-                list-style: none;
-                border-bottom: 1px solid rgba(78, 78, 78, 0.4);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                transition: 1s;
-                transform: translateX(2em);
-                opacity: 0;
-
-                &.aside-dropdown {
-                    position: relative;
-                    display: flex;
-                    flex-direction: column;
-
-                    // ASIDE BUTTON LINKS
-                    button {
-                        display: flex;
-                        align-items: center;
-                        width: 100%;
-                        padding: .5rem 0;
-                        background-color: transparent;
-                        color: abstracts.$nav-links;
-                        font-size: 1rem;
-                        text-transform: capitalize;
-                        text-decoration: none;
-                        letter-spacing: .025rem;
-                        transition: .2s;
-                        border: none;
-
-                        i {
-                            position: relative;
-                            color: #fff9;
-                            width: 1.5rem;
-                            border: 2px solid red;
-                            &.fa-caret-down {
-                                transition: .3s;
-                                margin-left: auto;
-                            }
-                            &:first-of-type {
-                                margin-right: 1rem;
-                            }
-                        }
-
-
-                    }
-
-                    .aside-dropdown-content {
-                        position: relative;
-                        top: 0;
-                        // left: 3.75rem;
-                        width: 100%;
-                        height: 0;
-                        // padding: 1rem;
-                        overflow: hidden;
-                        background-color: abstracts.$bg-second;
-                        display: flex;
-                        flex-direction: column;
-                        transition: .5s;
-
-                        a {
-                            text-transform: capitalize;
-                            margin-left: auto;
-                            width: auto;
-                            letter-spacing: .025rem;
-                            font-weight: 300;
-
-                            &:hover {
-                                color: abstracts.$text-second;
-                                transition: .2s;
-                            }
-                        }
-
-                        // SERVICE PAGE ASIDE MENU ITEMS
-                        &.services-dropdown {
-                            a {
-                                width: 100%;
-                                text-align: right;
-                                text-transform: capitalize;
-                            }
-                        }
-                    }
-
-                    i {
-                        color: abstracts.$brand-light;
-                        // width: 20%;
-                        opacity: .7;
-                        // padding: .1em;
-                        // margin-right: auto;
-                        position: absolute;
-                        left: .5rem;
-                    }
-
-                    &:hover {
-                        transition: .2s;
-                        border-color: #fff8;
-                        border-radius: 0;
-
-                        button {
-                            color: abstracts.$brand-light;
-                            transition: .2s;
-
-                            i {
-                                transition: .2s;
-                                color: #fff6;
-
-                                &.fa-caret-down {
-                                    transform: rotate(180deg);
-                                }
-                            }
-                        }
-
-                        .aside-dropdown-content {
-                            // display: block;
-                            height: 18vh;
-
-                            a {
-                                &:hover {
-                                    color: abstracts.$brand-light;
-                                }
-                            }
-                        }
-
-                        // SERVICE PAGE DROPDOWN HOVER STATE
-                        .services-dropdown {
-                            height: 65vh;
-                        }
-
-                        .projects-dropdown {
-                            height: 60vh;
-                            overflow-y: auto;
-                        }
-
-                    }
-                    
-                }
-
-                a {
-                    color: abstracts.$nav-links;
-                    text-decoration: none;
-                    width: 100%;
-                    padding: .5rem;
-                    transition: .2s;
-
-                    i {
-                        margin-right: .5rem;
-                        width: 1.5rem;
-                        // border: 2px solid blue;
-                    }
-
-                    
-                }
-
-                
-            }
-        }
-
-        .social-links {
-            width: 85vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            opacity: 1;
-            transition: .5s;
-            
-            a {
-                width: 100%;
-                text-decoration: none;
-                color: #f4f4f4;
-                letter-spacing: .05rem;
-                font-weight: 300;
-                // letter-spacing: .025rem;
-                // margin: 1rem 0 0;
-                margin-bottom: .5rem;
-                transform: translateY(2rem);
-                opacity: 0;
-                transition: .5s;
-                text-transform: none;
-                
-                i {
-                    // border: 1px solid red;
-                    width: 1rem;
-                    margin: 0 .5rem 0 1rem;
-                    font-size: 1rem;
-                    color: abstracts.$brand-light;
-                }
-            }
-        }
-        // HAMBURGER ACTIVE CLASS
-        &.active {
-            // DISPLAY ASIDE FROM RIGHT
-            right: -1rem;
-            // DISPLAY UL
-            ul {
-                li {
-                    transform: translateX(0);
-                    opacity: 1;
-                }
-                :nth-child(1) {
-                    transition-delay: .3s;
-                }
-                :nth-child(2) {
-                    transition-delay: .35s;
-                }
-                :nth-child(3) {
-                    transition-delay: .4s;
-                }
-                :nth-child(4) {
-                    transition-delay: .45s;
-                }
-                :nth-child(5) {
-                    transition-delay: .5s;
-                }
-                :nth-child(6) {
-                    transition-delay: .8s;
-                }
-
-            }
-            .social-links {
-                opacity: 1;
-                a {
-                    opacity: 1;
-                    transform: translateY(0);
-                    transition-delay: calc(.35s + .05s * var(--i)) ;
-                }
-            }
-        }
-    }
+    
 
     
     // DESKTOP HEADER - TOGGLE + ASIDE = DISPLAY NONE
@@ -482,7 +232,7 @@
             &.active {
                 color: abstracts.$brand-light;
                 i {
-                    color: #fff9;
+                    color: abstracts.$active-nav-icon;
                 }
             }
         }
@@ -593,4 +343,256 @@
         }
     }
     
+}
+
+aside {
+    position: fixed;
+    top: 7vh;
+    right: -100vw;
+    width: 100%;
+    height: 100vh;
+    background-color: abstracts.$bg-second;
+    padding: 0 ;
+    transition: .5s;
+    overflow: hidden;
+    z-index: 1;
+
+    ul {
+        // border: 2px solid abstracts.$brand-light;
+        border-radius: 3px;
+        padding: 2em .2em;
+        width: 70vw;
+        height: 100%;
+        height: auto;
+        overflow: none;
+
+        li {
+            margin: 0 1rem 1rem;
+            list-style: none;
+            border-bottom: 1px solid rgba(78, 78, 78, 0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 1s;
+            transform: translateX(2em);
+            opacity: 0;
+
+            &.aside-dropdown {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+
+                // ASIDE BUTTON LINKS
+                button {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    padding: .5rem 0;
+                    background-color: transparent;
+                    color: abstracts.$nav-links;
+                    font-size: 1rem;
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    letter-spacing: .025rem;
+                    transition: .2s;
+                    border: none;
+
+                    i {
+                        position: relative;
+                        color: #fff9;
+                        width: 1.5rem;
+                        border: 2px solid red;
+                        &.fa-caret-down {
+                            transition: .3s;
+                            margin-left: auto;
+                        }
+                        &:first-of-type {
+                            margin-right: 1rem;
+                        }
+                    }
+
+
+                }
+
+                .aside-dropdown-content {
+                    position: relative;
+                    top: 0;
+                    // left: 3.75rem;
+                    width: 100%;
+                    height: 0;
+                    // padding: 1rem;
+                    overflow: hidden;
+                    background-color: abstracts.$bg-second;
+                    display: flex;
+                    flex-direction: column;
+                    transition: .5s;
+
+                    a {
+                        text-transform: capitalize;
+                        margin-left: auto;
+                        width: auto;
+                        letter-spacing: .025rem;
+                        font-weight: 300;
+
+                        &:hover {
+                            color: abstracts.$text-second;
+                            transition: .2s;
+                        }
+                    }
+
+                    // SERVICE PAGE ASIDE MENU ITEMS
+                    &.services-dropdown {
+                        a {
+                            width: 100%;
+                            text-align: right;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+
+                i {
+                    color: abstracts.$brand-light;
+                    // width: 20%;
+                    opacity: .3;
+                    // padding: .1em;
+                    // margin-right: auto;
+                    position: absolute;
+                    left: .5rem;
+                }
+
+                &:hover {
+                    transition: .2s;
+                    border-color: #fff8;
+                    border-radius: 0;
+
+                    button {
+                        color: abstracts.$brand-light;
+                        transition: .2s;
+
+                        i {
+                            transition: .2s;
+                            color: #fff6;
+
+                            &.fa-caret-down {
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+
+                    .aside-dropdown-content {
+                        // display: block;
+                        height: 18vh;
+
+                        a {
+                            &:hover {
+                                color: abstracts.$brand-light;
+                            }
+                        }
+                    }
+
+                    // SERVICE PAGE DROPDOWN HOVER STATE
+                    .services-dropdown {
+                        height: 65vh;
+                    }
+
+                    .projects-dropdown {
+                        height: 60vh;
+                        overflow-y: auto;
+                    }
+
+                }
+                
+            }
+
+            a {
+                color: abstracts.$nav-links;
+                text-decoration: none;
+                width: 100%;
+                padding: .5rem;
+                transition: .2s;
+
+                i {
+                    margin-right: .5rem;
+                    width: 1.5rem;
+                    color: abstracts.$nav-icons;
+                }
+
+                
+            }
+
+            
+        }
+    }
+
+    .social-links {
+        width: 85vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        opacity: 1;
+        transition: .5s;
+        
+        a {
+            width: 100%;
+            text-decoration: none;
+            color: #f4f4f4;
+            letter-spacing: .05rem;
+            font-weight: 300;
+            // letter-spacing: .025rem;
+            // margin: 1rem 0 0;
+            margin-bottom: .5rem;
+            transform: translateY(2rem);
+            opacity: 0;
+            transition: .5s;
+            text-transform: none;
+            
+            i {
+                // border: 1px solid red;
+                width: 1rem;
+                margin: 0 .5rem 0 1rem;
+                font-size: 1rem;
+                color: abstracts.$brand-light;
+            }
+        }
+    }
+    // HAMBURGER ACTIVE CLASS
+    &.active {
+        // DISPLAY ASIDE FROM RIGHT
+        right: -1rem;
+        // DISPLAY UL
+        ul {
+            li {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            :nth-child(1) {
+                transition-delay: .3s;
+            }
+            :nth-child(2) {
+                transition-delay: .35s;
+            }
+            :nth-child(3) {
+                transition-delay: .4s;
+            }
+            :nth-child(4) {
+                transition-delay: .45s;
+            }
+            :nth-child(5) {
+                transition-delay: .5s;
+            }
+            :nth-child(6) {
+                transition-delay: .8s;
+            }
+
+        }
+        .social-links {
+            opacity: 1;
+            a {
+                opacity: 1;
+                transform: translateY(0);
+                transition-delay: calc(.35s + .05s * var(--i)) ;
+            }
+        }
+    }
 }
