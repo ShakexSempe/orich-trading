@@ -2309,6 +2309,11 @@ aside.active .social-links a {
   font-size: clamp(1.125rem, 2.25vw, 1.25rem);
   transition: 0.25s;
 }
+@media (min-width: 500px) {
+  .menu-cta .cta-item h4 {
+    margin-bottom: 1rem;
+  }
+}
 .menu-cta .cta-item ul {
   list-style: none;
 }
@@ -2323,11 +2328,16 @@ aside.active .social-links a {
 @media (min-width: 500px) {
   .menu-cta .cta-item ul li {
     flex-direction: row;
+    margin-bottom: 0.5rem;
   }
 }
 .menu-cta .cta-item ul li i {
   color: #ffa500;
   transition: 0.25s;
+}
+.menu-cta .cta-item ul li img {
+  height: 100%;
+  width: clamp(1.125rem, 2vw, 1.25rem);
 }
 .menu-cta .cta-item ul li a {
   transition: 0.25s;
