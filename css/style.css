@@ -2546,9 +2546,10 @@ aside.active .social-links a {
   transform: translateY(-50%);
   font-size: 7rem;
   width: 40%;
+  height: auto;
   color: rgba(179, 116, 0, 0.5);
-  opacity: 0.12;
-  transition: 0.25s;
+  opacity: 0.05;
+  transition: 0.5s;
   z-index: -1;
 }
 #references .references .reference h3 {

@@ -57,10 +57,11 @@
                 transform: translateY(-50%);
                 font-size: 7rem;
                 width: 40%;
+                height: auto;
                 color: hsla(39, 100%, 35%, .5);
-                opacity: 0.12;
+                opacity: 0.05;
                 // opacity: .9;
-                transition: .25s;
+                transition: .5s;
                 z-index: -1;
             }
             
@@ -85,10 +86,6 @@
                 i {
                     width: 1.8rem;
                     color: abstracts.$brand-light;
-                }
-
-                img {
-                    // border: 1px solid blue;
                 }
             }
 
