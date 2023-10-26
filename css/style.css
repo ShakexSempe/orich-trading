@@ -2528,7 +2528,7 @@ aside.active .social-links a {
   font-size: 7rem;
   width: 40%;
   color: rgba(179, 116, 0, 0.5);
-  opacity: 0.15;
+  opacity: 0.12;
   transition: 0.25s;
   z-index: -1;
 }
@@ -2560,7 +2560,7 @@ aside.active .social-links a {
   color: #ffa500;
 }
 #references .references .reference:hover .item-icon {
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 .services {
