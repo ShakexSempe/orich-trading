@@ -2544,6 +2544,7 @@ aside.active .social-links a {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 #references .references .reference .card-item i {
   width: 1.8rem;
