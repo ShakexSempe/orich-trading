@@ -56,11 +56,14 @@
                 right: 1rem;
                 transform: translateY(-50%);
                 font-size: 7rem;
+                width: 40%;
                 color: hsla(39, 100%, 35%, .5);
-                opacity: .25;
+                opacity: .15;
+                // opacity: .9;
                 transition: .25s;
                 z-index: -1;
             }
+            
             // CARD TITLE[H3]
             h3 {
                 text-transform: capitalize;
@@ -74,9 +77,17 @@
             .card-item {
                 text-transform: capitalize;
                 font-size: 1rem;
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+
                 i {
                     width: 1.8rem;
                     color: abstracts.$brand-light;
+                }
+
+                img {
+                    // border: 1px solid blue;
                 }
             }
 
@@ -96,7 +107,7 @@
             // WATERMARK OPACITY INCREASE
             &:hover {
                 .item-icon {
-                    opacity: .5;
+                    opacity: .3;
                 }
             }
         }
