@@ -1781,7 +1781,7 @@ aside {
   width: 100%;
   height: 100vh;
   background-color: #000000;
-  padding: 0;
+  padding: 0 2rem;
   transition: 0.5s;
   overflow: hidden;
   z-index: 1;
@@ -1791,15 +1791,15 @@ aside .icon {
   height: 1.025rem;
 }
 aside ul {
-  border-radius: 3px;
-  padding: 2em 0.2em;
+  padding: 2rem 0 0;
   width: 70vw;
   height: 100%;
   height: auto;
   overflow: none;
+  margin-bottom: 2rem;
 }
 aside ul li {
-  margin: 0 1rem 1rem;
+  margin: 0 0rem 1rem;
   list-style: none;
   border-bottom: 1px solid rgba(78, 78, 78, 0.4);
   display: flex;
@@ -1907,7 +1907,7 @@ aside ul li .nav-link {
   color: #bfbfbf;
   text-decoration: none;
   width: 100%;
-  padding: 0.5rem;
+  padding-bottom: 0.5rem;
   transition: 0.2s;
   display: flex;
   align-items: center;
@@ -1921,19 +1921,21 @@ aside ul li .nav-link img {
   opacity: 0.7;
 }
 aside .social-links {
-  width: 85vw;
+  width: 70vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   opacity: 1;
   transition: 0.5s;
+  background: #111;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }
 aside .social-links a {
   width: 100%;
   text-decoration: none;
   color: #f4f4f4;
-  letter-spacing: 0.05rem;
   font-weight: 300;
   margin-bottom: 0.5rem;
   transform: translateY(2rem);
@@ -1950,9 +1952,6 @@ aside .social-links a i {
   margin: 0 0.5rem 0 1rem;
   font-size: 1rem;
   color: #ffa500;
-}
-aside .social-links a img {
-  margin-left: 1rem;
 }
 aside.active {
   right: -1rem;

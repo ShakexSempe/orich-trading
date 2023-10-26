@@ -351,7 +351,7 @@ aside {
     width: 100%;
     height: 100vh;
     background-color: abstracts.$bg-second;
-    padding: 0 ;
+    padding: 0 2rem;
     transition: .5s;
     overflow: hidden;
     z-index: 1;
@@ -363,15 +363,15 @@ aside {
 
     ul {
         // border: 2px solid abstracts.$brand-light;
-        border-radius: 3px;
-        padding: 2em .2em;
+        padding: 2rem 0 0;
         width: 70vw;
         height: 100%;
         height: auto;
         overflow: none;
+        margin-bottom: 2rem;
 
         li {
-            margin: 0 1rem 1rem;
+            margin: 0 0rem 1rem;
             list-style: none;
             border-bottom: 1px solid rgba(78, 78, 78, 0.4);
             display: flex;
@@ -512,7 +512,7 @@ aside {
                 color: abstracts.$nav-links;
                 text-decoration: none;
                 width: 100%;
-                padding: .5rem;
+                padding-bottom: 0.5rem;
                 transition: .2s;
                 // border: 1px solid red;
                 display: flex;
@@ -538,22 +538,22 @@ aside {
 
 
     .social-links {
-        width: 85vw;
+        width: 70vw;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         opacity: 1;
         transition: .5s;
+        background: #111;
+        padding: 0.5rem;
+        border-radius: abstracts.$border-radius-sm;
         
         a {
             width: 100%;
             text-decoration: none;
             color: #f4f4f4;
-            letter-spacing: .05rem;
             font-weight: 300;
-            // letter-spacing: .025rem;
-            // margin: 1rem 0 0;
             margin-bottom: .5rem;
             transform: translateY(2rem);
             opacity: 0;
@@ -572,7 +572,7 @@ aside {
             }
 
             img {
-                margin-left: 1rem;
+                // margin-left: 1rem;
             }
         }
     }
