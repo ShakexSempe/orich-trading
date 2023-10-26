@@ -75,15 +75,33 @@
                     box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .25);
                     outline: 1px solid transparent;
                     transition: .25s;
+
+                    // USER ICON AND NAME ROW
+                    .flex-container {
+                        // border: 1px solid red;
+                        display: flex;
+                        align-items: center;
+                        gap: 0.5rem;
+                        &:nth-child(1) {
+                            margin-bottom: .25rem;
+                        }
+
+                        .icon {
+                            opacity: .7;
+                        }
+                    }
+
                 }
 
                 .address {
                     display: flex;
                     flex-direction: column;
                 }
+
                 p {
                     color: abstracts.$text-light;
                     line-height: 2;
+                    transition: 0.25s;
                     span {
                         font-weight: 500;
                         color: abstracts.$brand-light;
@@ -94,6 +112,7 @@
                         transition: .25s;
                     }
                 }
+
                 a {
                     color: inherit;
                     text-decoration: none;
@@ -113,6 +132,34 @@
                         
                     }
                 }
+
+                // CONTACT INFO HOVER
+                &:hover {
+                    outline-color: abstracts.$brand-light;
+                
+                    p {
+                        color: abstracts.$brand-light;
+
+                        a {
+                            color: abstracts.$text-light;
+                        }
+
+                        span {
+                            color: #fff8;
+                        }
+
+                        i {
+                            transform: translateX(.125rem);
+                        }
+                    }
+
+                    .contact-info-item {
+                        .icon {
+                            opacity: 1;
+                        }
+
+                    }
+                }
             }
 
             // CONTACT ITEM HOVER 
@@ -122,32 +169,16 @@
 
                     .contact-info-item {
                         outline-color: #fff4;
+
+                        
+
                         p {
                                 i {
                                     color: abstracts.$text-light;
                                 }
                         }
 
-                        // ITEM HOVER
-                        &:hover {
-                            outline-color: abstracts.$brand-light;
-
-                            p {
-                                color: abstracts.$brand-light;
-
-                                a {
-                                    color: abstracts.$text-light;
-                                }
-
-                                span {
-                                    color: #fff8;
-                                }
-
-                                i {
-                                    transform: translateX(.125rem);
-                                }
-                            }
-                        }
+                        
 
                     }
                 }
