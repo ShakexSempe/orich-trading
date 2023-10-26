@@ -35,7 +35,7 @@
             overflow: hidden;
             margin-inline: auto;
 
-            img {
+            .banner-image {
                 width: 100%;
                 height: auto;
                 max-height: 75vh;
@@ -44,6 +44,15 @@
                 border-radius: 0;
                 border-top-right-radius: abstracts.$border-radius-sm;
                 border-top-left-radius: abstracts.$border-radius-sm;
+                @include abstracts.md{
+                    width: 50%;
+                    max-width: 600px;
+                    height: 100%;
+                    flex-basis: 50%;
+                    object-fit: cover;
+                    object-position: center;
+                    border-radius: 0;
+                }
             }
 
             // DESKTOP FIGURE
@@ -54,13 +63,7 @@
                 justify-content: space-between;
 
                 img {
-                    width: 50%;
-                    max-width: 600px;
-                    height: 100%;
-                    flex-basis: 50%;
-                    object-fit: cover;
-                    object-position: center;
-                    border-radius: 0;
+                    
                 }
             }
 
@@ -73,8 +76,12 @@
                     flex-basis: 50%;
                     width: 100%;
                     padding: 10vh 5vw;
-                    // display: grid;
-                    // place-items: center;
+                    padding: 1rem;
+                }
+                @include abstracts.xlg {
+                    padding: 10vh 5vw;
+                    display: grid;
+                    place-items: center;
                 }
 
                 .banner-image-title {
@@ -88,7 +95,6 @@
                     }
 
                     .flex-container {
-                        // border: 2px solid blue;
                         display: flex;
                         justify-content: space-between;
                         flex-direction: column;
@@ -103,8 +109,8 @@
                         outline: 1px solid transparent;
                         background: #222;
                         border-radius: abstracts.$border-radius-xsm;
-                        padding:  .5rem;
-                        transition: .25s;
+                        padding:  0.5rem;
+                        transition: 0.25s;
                         font-size: abstracts.$font-clamp-xsm;
 
                         @include abstracts.md {
@@ -114,44 +120,34 @@
                         h4 {
                             text-transform: capitalize;
                             font-weight: 500;
-                            margin-bottom: .5rem;
+                            margin-bottom: 0.5rem;
                             color: abstracts.$text-light;
                         }
     
                         p {
                             color: abstracts.$text-light;
-                            i {
-                                margin-right: .25rem;
-                            }
-    
-                            line-height: 1.6;
-    
-                            span {
-                                color: abstracts.$brand;
-                                margin-left: .25rem;
-                            }
-    
-                            a {
-                                display: block;
-                                text-decoration: none;
-                            }
-    
-                            &:hover {
-                                a {
-                                    color: abstracts.$brand;
-                                    transition: .25s;
-                                }
-                            }
+                            
                         }
     
                         a {
                             color: abstracts.$text-light;
                             text-decoration: none;
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 0.5rem;
+                            transition: 0.25s;
+                            &:hover {
+                                color: abstracts.$brand-light;
+                            }
     
                             i {
                                 color: abstracts.$brand-light;
                                 margin-right: .5rem;
                                 transition: .25s;
+                            }
+
+                            img {
+                                margin-right: .5rem;
                             }
     
                             &:hover {
@@ -170,12 +166,6 @@
                             span {
                                 color: abstracts.$brand-light;
                                 transition: .25s;
-                            }
-                            a {
-                                i {
-                                    transform: translateX(.25rem);
-                                    color: abstracts.$brand;
-                                }
                             }
                         }
                     }

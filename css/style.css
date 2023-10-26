@@ -1109,7 +1109,7 @@ img {
   overflow: hidden;
   margin-inline: auto;
 }
-#banner .banner-image-container figure img {
+#banner .banner-image-container figure .banner-image {
   width: 100%;
   height: auto;
   max-height: 75vh;
@@ -1120,13 +1120,7 @@ img {
   border-top-left-radius: 0.5rem;
 }
 @media (min-width: 768px) {
-  #banner .banner-image-container figure {
-    width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
-  #banner .banner-image-container figure img {
+  #banner .banner-image-container figure .banner-image {
     width: 50%;
     max-width: 600px;
     height: 100%;
@@ -1134,6 +1128,14 @@ img {
     object-fit: cover;
     object-position: center;
     border-radius: 0;
+  }
+}
+@media (min-width: 768px) {
+  #banner .banner-image-container figure {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
 }
 #banner .banner-image-container figure .banner-content {
@@ -1145,6 +1147,14 @@ img {
     flex-basis: 50%;
     width: 100%;
     padding: 10vh 5vw;
+    padding: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  #banner .banner-image-container figure .banner-content {
+    padding: 10vh 5vw;
+    display: grid;
+    place-items: center;
   }
 }
 #banner .banner-image-container figure .banner-content .banner-image-title h3 {
@@ -1188,31 +1198,25 @@ img {
 }
 #banner .banner-image-container figure .banner-content .banner-image-title .flex-item p {
   color: #fff;
-  line-height: 1.6;
-}
-#banner .banner-image-container figure .banner-content .banner-image-title .flex-item p i {
-  margin-right: 0.25rem;
-}
-#banner .banner-image-container figure .banner-content .banner-image-title .flex-item p span {
-  color: #f8650c;
-  margin-left: 0.25rem;
-}
-#banner .banner-image-container figure .banner-content .banner-image-title .flex-item p a {
-  display: block;
-  text-decoration: none;
-}
-#banner .banner-image-container figure .banner-content .banner-image-title .flex-item p:hover a {
-  color: #f8650c;
-  transition: 0.25s;
 }
 #banner .banner-image-container figure .banner-content .banner-image-title .flex-item a {
   color: #fff;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  transition: 0.25s;
+}
+#banner .banner-image-container figure .banner-content .banner-image-title .flex-item a:hover {
+  color: #ffa500;
 }
 #banner .banner-image-container figure .banner-content .banner-image-title .flex-item a i {
   color: #ffa500;
   margin-right: 0.5rem;
   transition: 0.25s;
+}
+#banner .banner-image-container figure .banner-content .banner-image-title .flex-item a img {
+  margin-right: 0.5rem;
 }
 #banner .banner-image-container figure .banner-content .banner-image-title .flex-item a:hover {
   opacity: 0.9;
@@ -1227,10 +1231,6 @@ img {
 #banner .banner-image-container figure .banner-content .banner-image-title .flex-item:hover span {
   color: #ffa500;
   transition: 0.25s;
-}
-#banner .banner-image-container figure .banner-content .banner-image-title .flex-item:hover a i {
-  transform: translateX(0.25rem);
-  color: #f8650c;
 }
 
 #contact {
