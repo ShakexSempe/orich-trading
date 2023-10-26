@@ -337,6 +337,9 @@
             i {
                 color: abstracts.$active-nav-icon;
             }
+            img {
+                opacity: 1;
+            }
         }
     }
 }
@@ -524,11 +527,15 @@ aside {
                     color: abstracts.$nav-icons;
                 }
 
+                img {
+                    opacity: .7;
+                }
+
             }
             
         }
     }
-   
+
 
     .social-links {
         width: 85vw;

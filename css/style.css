@@ -1750,6 +1750,9 @@ img {
 .navigation .nav-link.active i {
   color: #f4f4f4;
 }
+.navigation .nav-link.active img {
+  opacity: 1;
+}
 
 aside {
   position: fixed;
@@ -1797,7 +1800,7 @@ aside ul li.aside-dropdown button {
   width: 100%;
   padding: 0.5rem 0;
   background-color: transparent;
-  color: #f4f4f4;
+  color: #bfbfbf;
   font-size: 1rem;
   text-transform: capitalize;
   text-decoration: none;
@@ -1881,7 +1884,7 @@ aside ul li.aside-dropdown:hover .projects-dropdown {
   overflow-y: auto;
 }
 aside ul li .nav-link {
-  color: #f4f4f4;
+  color: #bfbfbf;
   text-decoration: none;
   width: 100%;
   padding: 0.5rem;
@@ -1893,6 +1896,9 @@ aside ul li .nav-link {
 }
 aside ul li .nav-link i {
   color: #fff9;
+}
+aside ul li .nav-link img {
+  opacity: 0.7;
 }
 aside .social-links {
   width: 85vw;
