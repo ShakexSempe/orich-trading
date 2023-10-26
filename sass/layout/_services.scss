@@ -115,6 +115,15 @@
                     }
                 }
                 
+                img {
+                    width: 2.5rem;
+                    // border: 1px solid blue;
+                    transform: translateY(-1rem);
+                    padding: 0;
+                    transition: .3s;
+                    filter: drop-shadow(.1rem .25rem .125rem rgba(0,0, 0, .2));
+                }
+
             }
             // SERVICES TYPE = UL OF SERVICE ITEMS 
             // PADDING ON THIS ELEMENT FOR WHITESPACE
@@ -208,7 +217,7 @@
                 // CARD ICON TRANSLATE DOWN INTO CARD ON HOVER
                 // CARD TITLE CHANGE COLOR ON HOVER
                 .service-core {
-                    i {
+                    i, img {
                         transform: translateY(-.25rem);
                         
                         filter: drop-shadow(0rem .25rem .1rem rgba(0,0, 0, .250));
