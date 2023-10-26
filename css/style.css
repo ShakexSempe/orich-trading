@@ -1286,6 +1286,11 @@ img {
   margin-bottom: 1rem;
   color: #f4f4f4;
 }
+#contact .contact-items .contact-item .contact-item-title .contact-icon {
+  width: 2.8rem;
+  height: auto;
+  margin-bottom: 1rem;
+}
 #contact .contact-items .contact-item .contact-info {
   display: flex;
   flex-direction: column;
