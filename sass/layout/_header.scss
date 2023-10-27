@@ -85,8 +85,8 @@
                     li {
                         a {
                             color: abstracts.$text-second;
-                            &:hover {
-                                color: #fff;
+                            &:hover, &:focus {
+                                color: abstracts.$brand-light;
                             }
                         }
                     }
@@ -95,8 +95,8 @@
                 .dropdown {
                     button {
                         color: abstracts.$text-second;
-                        &:hover {
-                            color: #fff;
+                        &:hover, &:focus {
+                            color: abstracts.$brand-light;
                         }
                     }
                 }
@@ -234,7 +234,7 @@
                             transition: .3s;
                         }
 
-                        &:hover {
+                        &:hover, &:focus {
                             &::after {
                                 transform: translateX(-50%) scale(1);
                             }

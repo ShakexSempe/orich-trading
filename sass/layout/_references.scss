@@ -96,7 +96,7 @@
                 width: max-content;
                 color: #595959;
                 margin-top: .5rem;
-                &:hover {
+                &:hover, &:focus {
                     color: abstracts.$brand-light;
                 }
             }
@@ -105,7 +105,7 @@
             // WATERMARK OPACITY INCREASE
             &:hover {
                 .item-icon {
-                    opacity: 0.2;
+                    opacity: 0.1;
                 }
             }
         }

@@ -170,6 +170,9 @@ a {
     text-decoration: none;
     color: inherit;
     transition: .25s;
+    &:hover:not(.cta-btn, .skip-link), &:focus:not(.cta-btn, .skip-link) {
+        color: abstracts.$brand-light;
+    }
 }
 
 .icon {

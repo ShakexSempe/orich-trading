@@ -171,6 +171,9 @@ a {
   color: inherit;
   transition: 0.25s;
 }
+a:hover:not(.cta-btn, .skip-link), a:focus:not(.cta-btn, .skip-link) {
+  color: #ffa500;
+}
 
 .icon {
   display: inline-block;
@@ -379,7 +382,7 @@ img {
   }
 }
 .cta-btn.btn-lg {
-  width: clamp(12rem, 20vw, 15rem);
+  width: clamp(12rem, 20vw, 14rem);
 }
 .cta-btn .hero-cta-icon {
   transition: 0.25s;
@@ -1265,10 +1268,10 @@ img {
 #contact .contact-items .contact-item .contact-info a {
   color: inherit;
   text-decoration: none;
-}
-#contact .contact-items .contact-item .contact-info a:hover {
-  color: #f8650c;
   transition: 0.25s;
+}
+#contact .contact-items .contact-item .contact-info a:hover, #contact .contact-items .contact-item .contact-info a:focus {
+  color: #ffa500;
 }
 #contact .contact-items .contact-item .contact-info .item-button {
   margin: 1rem 0 0.5rem;
@@ -1278,12 +1281,6 @@ img {
 }
 #contact .contact-items .contact-item .contact-info:hover {
   outline-color: #ffa500;
-}
-#contact .contact-items .contact-item .contact-info:hover p {
-  color: #ffa500;
-}
-#contact .contact-items .contact-item .contact-info:hover p a {
-  color: #fff;
 }
 #contact .contact-items .contact-item .contact-info:hover p span {
   color: #fff8;
@@ -1502,14 +1499,14 @@ img {
 #header.hero-header .navigation nav ul li a {
   color: #ffffff;
 }
-#header.hero-header .navigation nav ul li a:hover {
-  color: #fff;
+#header.hero-header .navigation nav ul li a:hover, #header.hero-header .navigation nav ul li a:focus {
+  color: #ffa500;
 }
 #header.hero-header .navigation nav .dropdown button {
   color: #ffffff;
 }
-#header.hero-header .navigation nav .dropdown button:hover {
-  color: #fff;
+#header.hero-header .navigation nav .dropdown button:hover, #header.hero-header .navigation nav .dropdown button:focus {
+  color: #ffa500;
 }
 #header.hero-header .navigation .toggle {
   top: 1rem;
@@ -1614,7 +1611,7 @@ img {
     background-color: #f8650c;
     transition: 0.3s;
   }
-  .navigation nav ul li a:hover::after {
+  .navigation nav ul li a:hover::after, .navigation nav ul li a:focus::after {
     transform: translateX(-50%) scale(1);
   }
   .navigation nav ul .dropdown {
@@ -2506,11 +2503,11 @@ aside.active .social-links a {
   color: #595959;
   margin-top: 0.5rem;
 }
-#references .references .reference a:hover {
+#references .references .reference a:hover, #references .references .reference a:focus {
   color: #ffa500;
 }
 #references .references .reference:hover .item-icon {
-  opacity: 0.2;
+  opacity: 0.1;
 }
 
 .services {

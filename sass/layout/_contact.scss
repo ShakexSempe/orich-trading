@@ -115,9 +115,9 @@
                 a {
                     color: inherit;
                     text-decoration: none;
-                    &:hover {
-                        color: abstracts.$brand;
-                        transition: .25s;
+                    transition: .25s;
+                    &:hover, &:focus {
+                        color: abstracts.$brand-light;
                     }
                 }
 
@@ -126,10 +126,7 @@
                     margin: 1rem 0 .5rem;
                     
                     a {
-                        // width: 10rem;
-                        // font-size: 1rem;
                         color: abstracts.$text-main;
-                        
                     }
                 }
 
@@ -138,12 +135,6 @@
                     outline-color: abstracts.$brand-light;
                 
                     p {
-                        color: abstracts.$brand-light;
-
-                        a {
-                            color: abstracts.$text-light;
-                        }
-
                         span {
                             color: #fff8;
                         }
@@ -170,15 +161,11 @@
                     .contact-info-item {
                         outline-color: #fff4;
 
-                        
-
                         p {
                                 i {
                                     color: abstracts.$text-light;
                                 }
                         }
-
-                        
 
                     }
                 }
