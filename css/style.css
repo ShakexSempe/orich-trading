@@ -2004,9 +2004,9 @@ aside.active .social-links a {
   font-size: 0.95rem;
 }
 .hero-title .slogan .hero-meta .icon {
-  width: 1.25rem;
   position: relative;
   left: -0.25rem;
+  opacity: 0.7;
 }
 .hero-title .slogan #cta .slogan-p {
   color: #fff;
@@ -2027,6 +2027,9 @@ aside.active .social-links a {
   width: 12rem;
   max-height: 4rem;
   width: clamp(11rem, 15vw, 15rem);
+}
+.hero-title .slogan #cta .cta-btn .icon {
+  width: 1.25rem;
 }
 .hero-title .slogan.thanks-message p {
   font-weight: 400;

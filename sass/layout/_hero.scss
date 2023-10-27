@@ -97,9 +97,9 @@
             }
 
             .icon {
-                width: 1.25rem;
                 position: relative;
                 left: -0.25rem;
+                opacity: .7;
             }
         }
 
@@ -124,6 +124,10 @@
                 // height: 3rem;
                 max-height: 4rem;
                 width: clamp(11rem, 15vw, 15rem);
+
+                .icon {
+                    width: 1.25rem;
+                }
         }
         }
 
