@@ -1130,13 +1130,13 @@ img {
 }
 #banner .banner-image-container figure .banner-content .banner-image-title .flex-item a {
   color: #fff;
-  text-decoration: none;
+  width: 70%;
   display: flex;
   align-items: center;
   margin-bottom: 0.5rem;
   transition: 0.25s;
 }
-#banner .banner-image-container figure .banner-content .banner-image-title .flex-item a:hover {
+#banner .banner-image-container figure .banner-content .banner-image-title .flex-item a:hover, #banner .banner-image-container figure .banner-content .banner-image-title .flex-item a:focus {
   color: #ffa500;
 }
 #banner .banner-image-container figure .banner-content .banner-image-title .flex-item a i {
@@ -1147,15 +1147,8 @@ img {
 #banner .banner-image-container figure .banner-content .banner-image-title .flex-item a img {
   margin-right: 0.5rem;
 }
-#banner .banner-image-container figure .banner-content .banner-image-title .flex-item a:hover {
-  opacity: 0.9;
-  transition: 0.25s;
-}
-#banner .banner-image-container figure .banner-content .banner-image-title .flex-item a:hover i {
-  color: #f8650c;
-}
 #banner .banner-image-container figure .banner-content .banner-image-title .flex-item:hover {
-  outline-color: #ffa500;
+  outline-color: #fff4;
 }
 #banner .banner-image-container figure .banner-content .banner-image-title .flex-item:hover span {
   color: #ffa500;
@@ -1858,6 +1851,7 @@ aside .social-links {
   background: #111;
   padding: 0.5rem;
   border-radius: 0.5rem;
+  border: 2px solid #fff2;
 }
 aside .social-links a {
   width: 100%;

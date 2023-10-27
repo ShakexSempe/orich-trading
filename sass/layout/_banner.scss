@@ -62,9 +62,6 @@
                 flex-direction: row-reverse;
                 justify-content: space-between;
 
-                img {
-                    
-                }
             }
 
             // FIRST BANNER - FOUNDER
@@ -131,12 +128,12 @@
     
                         a {
                             color: abstracts.$text-light;
-                            text-decoration: none;
+                            width: 70%;
                             display: flex;
                             align-items: center;
                             margin-bottom: 0.5rem;
                             transition: 0.25s;
-                            &:hover {
+                            &:hover, &:focus {
                                 color: abstracts.$brand-light;
                             }
     
@@ -150,19 +147,19 @@
                                 margin-right: .5rem;
                             }
     
-                            &:hover {
-                                opacity: .9;
-                                transition: .25s;
+                            // &:hover {
+                            //     opacity: .9;
+                            //     transition: .25s;
     
-                                i {
-                                    color: abstracts.$brand;
-                                }
-                            }
+                            //     i {
+                            //         color: abstracts.$brand;
+                            //     }
+                            // }
                         }
 
                         // LI ITEM HOVER
                         &:hover {
-                            outline-color: abstracts.$brand-light;
+                            outline-color: #fff4;
                             span {
                                 color: abstracts.$brand-light;
                                 transition: .25s;
