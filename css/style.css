@@ -1350,7 +1350,7 @@ img {
 .footer .footer-item .footer-list li {
   margin-bottom: 0.15rem;
 }
-.footer .footer-item .footer-list li i {
+.footer .footer-item .footer-list li i, .footer .footer-item .footer-list li img {
   width: 1rem;
   margin-right: 0.5rem;
   transition: 0.25s;
@@ -1361,6 +1361,10 @@ img {
 .footer .footer-item .footer-list li:hover i {
   transform: translateX(0.25rem);
   color: #f8650c;
+}
+.footer .footer-item .footer-list li:has(img) {
+  display: flex;
+  align-items: center;
 }
 .footer .page-links li i {
   margin-right: 0.5rem;

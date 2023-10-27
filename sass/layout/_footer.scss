@@ -58,7 +58,8 @@
             
             li {
                 margin-bottom: .15rem;
-                i {
+                // border: 1px solid red;
+                i, img {
                     width: 1rem;
                     margin-right: .5rem;
                     transition: .25s;
@@ -72,6 +73,11 @@
                         color: abstracts.$brand;
                     }
                 }
+            }
+
+            li:has(img) {
+                display: flex;
+                align-items: center;
             }
         }
     }
