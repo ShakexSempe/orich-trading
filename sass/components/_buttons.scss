@@ -2,6 +2,7 @@
 
 $btn-sm : clamp(9rem, 15vw, 10rem);
 $btn-md : clamp(11rem, 15vw, 11rem);
+$btn-lg : clamp(12rem, 20vw, 15rem);
 
 // ICONS 
 .icon {
@@ -27,7 +28,7 @@ $btn-md : clamp(11rem, 15vw, 11rem);
     border-radius: abstracts.$border-radius-sm;
 
     font-size: 1rem;
-    font-size: clamp(1rem, 1.25vw, 1.125rem);
+    font-size: abstracts.$font-clamp-sm;
     font-weight: 500;
     letter-spacing: .0125rem;
     text-decoration: none;
@@ -42,6 +43,10 @@ $btn-md : clamp(11rem, 15vw, 11rem);
         cursor: pointer;
     }
 
+    // BUTTON WIDTHS
+    &.btn-lg {
+        width: $btn-lg;
+    }
 
     // BUTTON WITH SVG IMAGE ICON
     .hero-cta-icon {
@@ -138,6 +143,7 @@ $btn-md : clamp(11rem, 15vw, 11rem);
     &.btn-md {
         width: $btn-md;
     }
+    
 }
 // ANIMATED BUTTON ICON
 .animated-icon {

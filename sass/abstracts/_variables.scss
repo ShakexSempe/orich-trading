@@ -1,4 +1,8 @@
 
+$btn-sm : clamp(9rem, 15vw, 10rem);
+$btn-md : clamp(11rem, 15vw, 11rem);
+$btn-lg : clamp(12rem, 15vw, 13rem);
+
 $brand: #f8650c;
 $brand-dark: hsl(23, 94%, 51%);
 $brand-light: #ffa500;

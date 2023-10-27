@@ -161,7 +161,7 @@ h3 {
 }
 
 p {
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: clamp(.975rem, 2vw, 1.125rem);
   font-weight: 300;
   line-height: 1.6;
 }
@@ -363,7 +363,7 @@ img {
   border: none;
   border-radius: 0.5rem;
   font-size: 1rem;
-  font-size: clamp(1rem, 1.25vw, 1.125rem);
+  font-size: clamp(.975rem, 2vw, 1.125rem);
   font-weight: 500;
   letter-spacing: 0.0125rem;
   text-decoration: none;
@@ -377,6 +377,9 @@ img {
   .cta-btn {
     cursor: pointer;
   }
+}
+.cta-btn.btn-lg {
+  width: clamp(12rem, 20vw, 15rem);
 }
 .cta-btn .hero-cta-icon {
   transition: 0.25s;
@@ -541,88 +544,11 @@ img {
   transform: translateX(0rem);
 }
 #form button {
-  padding: 0.65rem 1rem;
-  margin-top: 1rem 1rem;
-  width: 12rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #f8650c;
-  color: #000;
-  font-size: clamp(1rem, 2vw, 1.125rem);
   font-family: inherit;
-  font-weight: 500;
-  text-transform: capitalize;
-  border: none;
-  border-radius: 0.5rem;
-  position: relative;
-  isolation: isolate;
+}
+#form button:active .icon, #form button:focus .icon, #form button:hover .icon {
+  transform: rotate(20deg) translateX(0.25rem);
   transition: 0.25s;
-}
-@media (min-width: 820px) {
-  #form button {
-    cursor: pointer;
-    width: 12rem;
-    padding: 0.65rem;
-  }
-}
-#form button::before, #form button::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  outline: none;
-  border-radius: 0.5rem;
-  transition: 0.25s;
-  z-index: -1;
-}
-#form button::before {
-  background: linear-gradient(0deg, #f8670d, #ffa500);
-  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 4px 4px 5px rgba(0, 0, 0, 0.15);
-}
-#form button::after {
-  background: linear-gradient(0deg, #ffa500, #f8670d);
-  opacity: 0;
-  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.25), inset -2px -2px 2px rgba(255, 255, 255, 0.152), 1px 2px 2px rgba(0, 0, 0, 0.3);
-}
-@media (min-width: 768px) {
-  #form button:hover, #form button:focus {
-    transition: 0.25s;
-    letter-spacing: 0;
-    transform: scale(0.98);
-  }
-  #form button:hover::before, #form button:focus::before {
-    opacity: 0;
-  }
-  #form button:hover::after, #form button:focus::after {
-    opacity: 1;
-  }
-  #form button:hover i, #form button:focus i {
-    transform: rotate(20deg) translateX(0.25rem);
-    transition: 0.5s;
-  }
-}
-@media (max-width: 768px) {
-  #form button {
-    transition: 0.25s;
-  }
-  #form button:active, #form button:focus {
-    letter-spacing: 0;
-    transform: scale(0.98);
-  }
-  #form button:active::before, #form button:focus::before {
-    opacity: 0;
-  }
-  #form button:active::after, #form button:focus::after {
-    opacity: 1;
-  }
-  #form button:active i, #form button:focus i {
-    transform: rotate(20deg) translateX(0.25rem);
-    transition: 0.5s;
-  }
 }
 
 .toggle {
@@ -887,7 +813,7 @@ img {
   text-transform: capitalize;
   font-size: 1rem;
   font-weight: 500;
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: clamp(.975rem, 2vw, 1.125rem);
   margin-bottom: 0.25rem;
 }
 .about-article a {
@@ -2102,7 +2028,7 @@ aside.active .social-links a {
 }
 .hero-title .slogan #cta .cta-btn {
   font-size: 1.015rem;
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: clamp(.975rem, 2vw, 1.125rem);
   width: 12rem;
   max-height: 4rem;
   width: clamp(11rem, 15vw, 15rem);
@@ -2555,7 +2481,7 @@ aside.active .social-links a {
 #references .references .reference h3 {
   text-transform: capitalize;
   font-size: 1rem;
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: clamp(.975rem, 2vw, 1.125rem);
   font-weight: 600;
 }
 #references .references .reference .card-item {

@@ -65,80 +65,12 @@
 
     // SUBMIT BUTTON
     button {
-        padding: .65rem 1rem;
-        margin-top: 1rem 1rem;
-        width: 12rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        background: abstracts.$brand;
-        color: #000;
-        font-size: abstracts.$font-clamp-sm;
         font-family: inherit;
-        font-weight: 500;
-        text-transform: capitalize;
 
-        border: none;
-        border-radius: abstracts.$border-radius-sm;
-        position: relative;
-        isolation: isolate;
-        transition: .25s;
-        @include abstracts.lg {
-            cursor: pointer;
-            width: 12rem;
-            padding: .65rem;
-        }
-        // BUTTON BOX SHADOW
-        &::before, &::after {
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-            outline: none;
-            border-radius: abstracts.$border-radius-sm;
-            transition: .25s;
-            z-index: -1;
-        }
-        &::before {
-            background: abstracts.$brand-btn;
-            box-shadow: abstracts.$box-shadow-sm;
-        }
-        &::after {
-            background: abstracts.$brand-btn-hover;
-            opacity: 0;
-            box-shadow: abstracts.$box-shadow-sm-hover;
-        }
-        // DESKTOP HOVER & FOCUS
-        @media (min-width: 768px){
-            &:hover, &:focus {
+        &:active, &:focus, &:hover  {
+            .icon {
+                transform: rotate(20deg) translateX(.25rem);
                 transition: .25s;
-                letter-spacing: 0;
-                transform: scale(.98);
-                &::before {opacity: 0;}
-                &::after {opacity: 1;}
-
-                i {
-                    transform: rotate(20deg) translateX(.25rem);
-                    transition: .5s;
-                }
-            }
-        }
-        // MOBILE ACTIVE & FOCUS
-        @media (max-width: 768px){
-            transition: .25s;
-            &:active, &:focus {
-                letter-spacing: 0;
-                transform: scale(.98);
-                &::before {opacity: 0;}
-                &::after {opacity: 1;}
-                i {
-                    transform: rotate(20deg) translateX(.25rem);
-                    transition: .5s;
-                }
             }
         }
     }
