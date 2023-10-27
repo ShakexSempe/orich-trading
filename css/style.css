@@ -2073,9 +2073,9 @@ aside.active .social-links a {
   width: 100%;
   overflow: hidden;
   display: grid;
-  height: 60vh;
-  max-height: 500px;
-  max-width: 500px;
+  height: 65vh;
+  max-height: 550px;
+  max-width: 550px;
   grid-template-rows: 1fr 70%;
 }
 @media (min-width: 820px) {
