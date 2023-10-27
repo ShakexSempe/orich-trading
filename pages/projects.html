@@ -45,7 +45,7 @@
         <!-- HEADER -->
         <header id="header" data-header class="index-header">
             <!-- SKIP LINK -->
-            <a href="#main" class="skip-link" tabindex="1">skip to main content</a>
+            <a href="#main" class="skip-link" tabindex="0">skip to main content</a>
             <!-- LOGO - LINK TO INDEX -->
             <div class="logo">
                 <a href="../index.html" title="Homepage">
@@ -555,17 +555,17 @@
                     <!-- NAME -->
                     <label for="name">name :</label>
                     <input type="text" name="Name" id="username" placeholder="Enter your full name.." minlength="2"
-                        tabindex="1" required>
+                         required>
                     <!-- EMAIL -->
                     <label for="email">email :</label>
-                    <input type="email" name="Email" id="email" placeholder="Enter your email address.." tabindex="2"
+                    <input type="email" name="Email" id="email" placeholder="Enter your email address.." 
                         required>
                     <!-- TEXTAREA -->
                     <label for="message">subject of enquiry :</label>
                     <textarea name="Subject" rows="4" cols="10" minlength="2" placeholder="eg. Bathroom Set Installation"
-                        id="message" tabindex="3" required></textarea>
+                        id="message"  required></textarea>
 
-                    <button type="submit" title="submit form" tabindex="6">submit enquiry<i
+                    <button class="cta-btn" type="submit" title="submit form" >submit enquiry<i
                             class="fa-solid fa-paper-plane"></i></button>
                     <!-- form options -->
                     <input type="hidden" name="_subject" value="New submission!">
