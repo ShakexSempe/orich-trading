@@ -2030,6 +2030,7 @@ aside.active .social-links a {
 }
 .hero-title .slogan #cta .cta-btn .icon {
   width: 1.25rem;
+  width: clamp(1.25rem, 3vw, 1.5rem);
 }
 .hero-title .slogan.thanks-message p {
   font-weight: 400;
