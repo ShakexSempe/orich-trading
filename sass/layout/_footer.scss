@@ -58,8 +58,7 @@
             
             li {
                 margin-bottom: .15rem;
-                // border: 1px solid red;
-                i, img {
+                i {
                     width: 1rem;
                     margin-right: .5rem;
                     transition: .25s;
@@ -73,11 +72,24 @@
                         color: abstracts.$brand;
                     }
                 }
-            }
 
-            li:has(img) {
+                
+            }
+            
+            // FLEX LINK WITH IMG ICON
+            li:has(.icon) {
                 display: flex;
                 align-items: center;
+                gap: .5rem;
+
+                &:hover {
+                    a {
+                        color: abstracts.$brand;
+                    }
+                    .icon {
+                        transform: translateX(.25rem);
+                    }
+                }
             }
         }
     }
