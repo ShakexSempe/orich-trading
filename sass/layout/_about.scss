@@ -185,6 +185,26 @@
         // = TITLE[H3] + P
         .article-body {
             margin-bottom: 5vh;
+
+            .body-title {
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+                // border: 1px solid red;
+
+                a {
+                    .icon {
+                        height: auto;
+                        opacity: .25;
+                    }
+                    &:hover , &:focus {
+                        .icon {
+                            opacity: 1;
+                            transform: translateX(-0.5rem);
+                        }
+                    }
+                }
+            }
         }
 
         // FIRST LETTER OF THIS P ARTICLE HAS MAGAZINE STYLE FIRST LETTER
@@ -222,16 +242,29 @@
                 font-weight: 500;
                 font-size: abstracts.$font-clamp-sm;
                 margin-bottom: .25rem;
-            }
-        }
+                // border: 1px solid blue;
 
-        // ABOUT PAGE LINK 
-        a {
-            margin: 1rem 0 0;
-            // .icon {
-            //     border: 1px solid red;
-            //     width: 1.2rem;
-            // }
+                a {
+                    width: 70%;
+                    display: flex;
+                    align-items: center;
+                    gap: 1.5rem;
+                    // border: 1px solid red;
+
+                    .icon {
+                        opacity: 0;
+                    }
+
+                    &:hover, &:focus {
+                        .icon {
+                            opacity: 1;
+                            transform: translateX(-0.5rem);
+                        }
+                    }
+                }
+            }
+
+            
         }
     }
 
