@@ -1284,6 +1284,9 @@ img {
 #contact .contact-items .contact-item .contact-info:hover .contact-info-item .icon {
   opacity: 1;
 }
+#contact .contact-items .contact-item .contact-info:hover .contact-info-item:hover {
+  outline-color: #ffa500;
+}
 #contact .contact-items .contact-item:hover .contact-info .contact-info-item {
   outline-color: #fff4;
 }
