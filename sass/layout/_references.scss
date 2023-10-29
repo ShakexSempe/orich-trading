@@ -53,14 +53,14 @@
             .item-icon {
                 position: absolute;
                 top: 50%;
-                right: 1rem;
+                right: 0rem;
                 transform: translateY(-50%);
                 font-size: 7rem;
-                width: 40%;
+                width: 8rem;
+                width: clamp(8rem, 20vw, 10rem);
                 height: auto;
                 color: hsla(39, 100%, 35%, .5);
                 opacity: 0.05;
-                // opacity: .9;
                 transition: .5s;
                 z-index: -1;
             }

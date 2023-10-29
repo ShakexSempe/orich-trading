@@ -2510,10 +2510,11 @@ aside.active .social-links a {
 #references .references .reference .item-icon {
   position: absolute;
   top: 50%;
-  right: 1rem;
+  right: 0rem;
   transform: translateY(-50%);
   font-size: 7rem;
-  width: 40%;
+  width: 8rem;
+  width: clamp(8rem, 20vw, 10rem);
   height: auto;
   color: rgba(179, 116, 0, 0.5);
   opacity: 0.05;
