@@ -108,14 +108,14 @@
             // QUALITY OR NOTHING P
             .slogan-p {
                 color: abstracts.$text-light;
-                margin: .25rem 0 1rem;
+                margin: .5rem 0 1rem;
                 letter-spacing: .0125rem;
                 span {
                     color: abstracts.$brand-light;
                 }
-                @include abstracts.lg {
-                    margin: .5rem 0 1rem;
-                }
+                // @include abstracts.lg {
+                //     margin: .5rem 0 1rem;
+                // }
             }
             .cta-btn {
                 font-size: 1.015rem;
