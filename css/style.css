@@ -1380,6 +1380,7 @@ img {
 }
 .footer .footer-item .footer-list li i {
   width: 1rem;
+  margin-right: 0.5rem;
   transition: 0.25s;
 }
 .footer .footer-item .footer-list li a {
