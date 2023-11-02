@@ -2051,7 +2051,7 @@ aside.active .social-links a {
 }
 .hero-title .slogan #cta .slogan-p {
   color: #fff;
-  margin: 0.25rem 0 1rem;
+  margin: 0 0 1rem;
   letter-spacing: 0.0125rem;
 }
 .hero-title .slogan #cta .slogan-p span {
@@ -2063,10 +2063,6 @@ aside.active .social-links a {
   width: 12rem;
   max-height: 4rem;
   width: clamp(11rem, 15vw, 15rem);
-}
-.hero-title .slogan #cta .cta-btn .icon {
-  width: 1.25rem;
-  width: clamp(1.25rem, 3vw, 1.5rem);
 }
 .hero-title .slogan.thanks-message p {
   font-weight: 400;
