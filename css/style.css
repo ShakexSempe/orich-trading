@@ -2680,6 +2680,9 @@ aside.active .social-links a {
   color: #000;
   opacity: 0.4;
 }
+.services .service-container .service-item .service-type ul .service-cta .icon {
+  opacity: 0.7;
+}
 .services .service-container .service-item .service-type ul .service-cta:hover i {
   transform: translateX(0.25rem);
   color: #f8650c;
@@ -2698,7 +2701,8 @@ aside.active .social-links a {
   opacity: 1;
 }
 .services .service-container .service-item:hover {
-  transition: 0.5s;
+  transition: 0.25s ease-out;
+  transform: scale(1.01);
 }
 @media (min-width: 820px) {
   .services .service-container .service-item:hover {
@@ -2719,11 +2723,8 @@ aside.active .social-links a {
 .services .service-container .service-item:hover .service-core h4 {
   color: #f8650c;
 }
-.services .service-container .service-item:hover .service-type ul li::marker {
-  color: #b3b3b3;
-}
-.services .service-container .service-item:hover .service-type ul .service-cta i {
-  opacity: 0.8;
+.services .service-container .service-item:hover .service-type ul .service-cta .icon {
+  opacity: 1;
 }
 
 #services-page .promise {

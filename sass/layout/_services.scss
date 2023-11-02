@@ -183,6 +183,10 @@
                             opacity: .4;
                         }
 
+                        .icon {
+                            opacity: .7;
+                        }
+
                         &:hover{
                             i {
                                 transform: translateX(.25rem);
@@ -207,7 +211,9 @@
             // END OF SCROLL
             // ITEM HOVER EFFECT
             &:hover {
-                transition: .5s;
+                transition: .25s ease-out;
+                transform: scale(1.01);
+
                 @include abstracts.lg {
                     transform: scale(1.01);
                 }
@@ -230,14 +236,9 @@
                 // ON HOVER LIST ITEM MARKER CHANGE COLOR
                 .service-type {
                     ul {
-                        li {
-                            &::marker {
-                                color: hsl(0, 0%, 70%);
-                            }
-                        }
                         .service-cta {
-                            i {
-                                opacity: .8;
+                            .icon {
+                                opacity: 1;
                             }
                         }
                     }   
