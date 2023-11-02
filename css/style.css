@@ -1726,6 +1726,7 @@ img {
   }
 }
 .navigation .nav-link.active {
+  border-bottom: 1px solid rgba(255, 166, 0, 0.3);
   color: #ffa500;
 }
 .navigation .nav-link.active i {
@@ -1879,7 +1880,7 @@ aside ul li .nav-link i {
   color: #fff9;
 }
 aside ul li .nav-link img {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 aside .social-links {
   width: 70vw;
@@ -2390,8 +2391,8 @@ aside.active .social-links a {
   }
 }
 #projects .gallery .gallery-title .cta-btn .icon {
-  width: 0.75rem;
-  width: clamp(.75rem, 2vw, 1rem);
+  width: 0.65rem;
+  width: clamp(.65rem, 2vw, 1rem);
 }
 #projects .gallery .gallery-grid {
   display: grid;
