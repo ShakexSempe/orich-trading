@@ -2391,7 +2391,7 @@ aside.active .social-links a {
 }
 #projects .gallery .gallery-title .cta-btn .icon {
   width: 0.65rem;
-  width: clamp(.65rem, 2vw, 1rem);
+  width: clamp(.65rem, 1.5vw, .95rem);
 }
 #projects .gallery .gallery-grid {
   display: grid;
