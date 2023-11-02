@@ -333,14 +333,7 @@
 
     .nav-link {
         &.active {
-            border-bottom: 1px solid abstracts.$brand-lightest-border;
             color: abstracts.$brand-light;
-            i {
-                color: abstracts.$active-nav-icon;
-            }
-            img {
-                opacity: 1;
-            }
         }
     }
 }
@@ -530,6 +523,14 @@ aside {
 
                 img {
                     opacity: .5;
+                }
+
+                &.active {
+                    border-bottom: 1px solid abstracts.$brand-lightest-border;
+                    
+                    .icon , i {
+                        opacity: 1;
+                    }
                 }
 
             }

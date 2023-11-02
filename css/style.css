@@ -1726,14 +1726,7 @@ img {
   }
 }
 .navigation .nav-link.active {
-  border-bottom: 1px solid rgba(255, 166, 0, 0.3);
   color: #ffa500;
-}
-.navigation .nav-link.active i {
-  color: #f4f4f4;
-}
-.navigation .nav-link.active img {
-  opacity: 1;
 }
 
 aside {
@@ -1881,6 +1874,12 @@ aside ul li .nav-link i {
 }
 aside ul li .nav-link img {
   opacity: 0.5;
+}
+aside ul li .nav-link.active {
+  border-bottom: 1px solid rgba(255, 166, 0, 0.3);
+}
+aside ul li .nav-link.active .icon, aside ul li .nav-link.active i {
+  opacity: 1;
 }
 aside .social-links {
   width: 70vw;
