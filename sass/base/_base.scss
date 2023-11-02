@@ -178,7 +178,7 @@ a {
 .icon {
     display: inline-block;
     width: 1rem;
-    width: clamp(1rem, 3vw, 1.025rem);
+    width: clamp(1rem, 3vw, 1.0125rem);
     height: 100%;
     transition: 0.25s;
 }

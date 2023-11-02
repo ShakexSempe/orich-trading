@@ -321,11 +321,6 @@
                     color: abstracts.$brand-light;
                     transition: .25s;
                 }
-
-                img {
-                    height: 100%;
-                    width: clamp(1.125rem, 2vw, 1.25rem);
-                }
                 a {
                     transition: .25s;
                 }
