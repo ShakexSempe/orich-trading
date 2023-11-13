@@ -105,6 +105,7 @@
                     span {
                         font-weight: 500;
                         color: abstracts.$brand-light;
+                        transition: 250ms;
                     }
                     i {
                         margin-right: .5rem;
@@ -136,7 +137,7 @@
 
                     p {
                         span {
-                            color: #fff8;
+                            opacity: 0.7;
                         }
 
                         i {
