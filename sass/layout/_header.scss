@@ -112,6 +112,12 @@
                     }
                 }
             }
+
+            .nav-link {
+                &.active {
+                    color: abstracts.$brand-light;
+                }
+            }
         }
         // LOGO 
         .logo {

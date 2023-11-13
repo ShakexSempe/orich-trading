@@ -1635,6 +1635,9 @@ img {
 #header.hero-header .navigation .toggle .bar::after, #header.hero-header .navigation .toggle .bar::before {
   background-color: #ffffff;
 }
+#header.hero-header .navigation .nav-link.active {
+  color: #ffa500;
+}
 #header.hero-header .logo {
   padding: 0;
 }
