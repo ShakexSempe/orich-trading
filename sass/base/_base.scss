@@ -35,6 +35,15 @@ main {
             opacity: .7;
         }
     }
+
+    // CONTACT PAGE THEME COLOR
+    &.contact-page-main {
+        background: #000;
+        form {
+        color: abstracts.$text-second;
+
+        }
+    }
 }
 
 section {

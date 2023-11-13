@@ -1,13 +1,12 @@
 @use '../abstracts';
 
 #form {
-    @media (min-width: 768px) {
-        // padding: 10vh 10vw;
+    min-height: 100vh;
+    padding: 10vh 5vw;
+    @include abstracts.md {
         width: 50%;
         margin: 0 auto;
     }
-    min-height: 100vh;
-    padding: 10vh 5vw;
 
     .form-container-title {
         margin-bottom: 5vh;
