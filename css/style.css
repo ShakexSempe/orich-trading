@@ -1775,7 +1775,7 @@ aside ul li.aside-dropdown button {
   width: 100%;
   padding: 0.5rem 0;
   background-color: transparent;
-  color: #bfbfbf;
+  color: #e6e6e6;
   font-size: 1rem;
   text-transform: capitalize;
   text-decoration: none;
@@ -1859,7 +1859,7 @@ aside ul li.aside-dropdown:hover .projects-dropdown {
   overflow-y: auto;
 }
 aside ul li .nav-link {
-  color: #bfbfbf;
+  color: #e6e6e6;
   text-decoration: none;
   width: 100%;
   padding-bottom: 0.5rem;
@@ -1897,7 +1897,7 @@ aside .social-links {
 aside .social-links a {
   width: 100%;
   text-decoration: none;
-  color: #bfbfbf;
+  color: #e6e6e6;
   font-weight: 300;
   margin-bottom: 0.5rem;
   transform: translateY(2rem);
