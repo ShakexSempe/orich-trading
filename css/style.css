@@ -2789,21 +2789,21 @@ aside.active .social-links a {
   transform: scaleX(1);
 }
 @media (min-width: 820px) {
-  #services-page .flex-container {
+  #services-page .services-flex-container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     margin: 20vh 0 10vh;
   }
-  #services-page .flex-container .section-description {
+  #services-page .services-flex-container .section-description {
     padding: 1rem;
     margin: 0;
   }
-  #services-page .flex-container .section-description h3 {
+  #services-page .services-flex-container .section-description h3 {
     font-size: clamp(1.125rem, 2.25vw, 1.25rem);
     margin-bottom: 5vh;
   }
-  #services-page .flex-container .section-description p {
+  #services-page .services-flex-container .section-description p {
     margin-bottom: 1rem;
   }
 }

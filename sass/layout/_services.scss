@@ -329,7 +329,7 @@
         }
     }
     // FLEX CONTAINER = 'SERVICES DESC P + PROMISES CARD'
-    .flex-container {
+    .services-flex-container {
         @include abstracts.lg {
             display: flex;
             justify-content: center;

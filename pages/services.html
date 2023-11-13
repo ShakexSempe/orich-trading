@@ -102,27 +102,64 @@
                     
                     </ul>
                 </nav>
+                
                 <aside id="aside" class="aside" >
-                    <ul>
-                        <!-- HOME DROPDOWN -->
-                        <li><a href="../index.html" class="nav-link"><i class="fas fa-house"></i>home</a></li>
-                        <!-- ABOUT DROPDOWN -->
-                        <li><a href="about.html" class="nav-link"><i class="fas fa-user"></i>about</a></li>
-                        <!-- SERVICES DROPDOWN -->
-                        <li><a href="services.html" class="nav-link"><i class="fas fa-screwdriver-wrench"></i>services</a></li>
-                        <!-- PROJECTS DROPDOWN -->
-                        <li><a href="projects.html" class="nav-link"><i class="fa-solid fa-list-check"></i>projects</a></li>
                     
+                    <!-- WEBSITE PAGE BROWSE -->
+                    <ul>
+
+                        <!-- HOME DROPDOWN -->
+                        <li><a href="../index.html" title="Home-page" class="nav-link">
+                            <img class="icon nav-icon" src="../icons/outline/icons8-homepage-32-light.png" height="32" width="32" alt="Home page icon" >
+                            home</a>
+                        </li>
+
+                        <!-- ABOUT DROPDOWN -->
+                        <li><a href="about.html" title="About page" class="nav-link">
+                            <img class="icon nav-icon" src="../icons/outline/icons8-user-48-light.png" height="48" width="48" alt="user icon" >
+                            about</a>
+                        </li>
+
+                        <!-- SERVICES DROPDOWN -->
+                        <li><a href="services.html" title="Services page" class="nav-link">
+                            <img class="icon nav-icon" src="../icons/outline/icons8-service-48-light.png" height="48" width="48" alt="Tools icon" >
+                            services</a>
+                        </li>
+
+                        <!-- PROJECTS DROPDOWN -->
+                        <li><a href="projects.html" title="Projects page" class="nav-link">
+                            <img class="icon nav-icon" src="../icons/outline/icons8-four-squares-32-light.png" height="48" width="48" alt="Tasks icon" >
+                            projects</a>
+                        </li>
                     </ul>
+
                     <!-- SOCIAL & CONTACT DETAILS -->
                     <div class="social-links">
-                        <a target="_blank" style="--i:1;" href="https://wa.me/27729270758"><i class="fa-brands fa-whatsapp"></i>072 927 0758</a>
-                        <a target="_blank" style="--i:2;" href="tel:0734811460"><i class="fas fa-phone-volume"></i>073 481 1460</a>
-                        <a target="_blank" style="--i:3;" href="mailto:info@orichtrading.co.za"><i class="fas fa-envelope"></i>info@orichtrading.co.za</a>
-                        <a target="_blank" style="--i:4;" href="https://www.facebook.com/photo/?fbid=130044952743326&set=a.130045042743317"><i class="fa-brands fa-facebook"></i>facebook</a>
-                        <a target="_blank" style="--i:5;" href="https://www.instagram.com/orichtradingprojects/?fbclid=IwAR3F4lHFYwmHfR52gYtnQj-8hMbTLDAuQd9yX4IndLP05Ocfu3ZUZQkSpyk"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                        
+                        <a target="_blank" style="--i:1;" title="Whatsapp number" href="https://wa.me/27729270758">
+                            <img class="icon" src="../icons/aside/icons8-whatsapp-50.png" height="50" width="50" alt="Whatsapp icon">
+                            072 927 0758
+                        </a>
+
+                        <a target="_blank" style="--i:2;" title="Phone number" href="tel:0734811460">
+                            <img class="icon" src="../icons/brand-icons/icons8-outgoing-call-48-brand.png" height="48" width="48" alt="Outgoing phone-call icon">
+                            073 481 1460
+                        </a>
+
+                        <a target="_blank" style="--i:3;" title="Email address" href="mailto:info@orichtrading.co.za">
+                            <img class="icon" src="../icons/solid/icons8-envelope-48-brand.png" height="48" width="48" alt="envelope icon">
+                            info@orichtrading.co.za
+                        </a>
+
+                        <a target="_blank" style="--i:5;" title="Instagram account" href="https://www.instagram.com/orichtradingprojects/?fbclid=IwAR3F4lHFYwmHfR52gYtnQj-8hMbTLDAuQd9yX4IndLP05Ocfu3ZUZQkSpyk">
+                            <img class="icon" src="../icons/solid/icons8-instagram-48-brand.png" height="48" width="48"  alt="Instagram icon">
+                            Instagram
+                        </a>
+
                     </div>
+
                 </aside>
+
             </div>
 
         </header>
@@ -152,11 +189,16 @@
             <!-- WEBSITE SLOGAN -->
             <div id="title" class="hero-title">
                 <div class="slogan">
-                    <h1 title="Website title: Orich Construction Company">level-1 BEE <br> construction company</h1>
-                    <p class="hero-meta"><i class="fas fa-location-dot"></i>Johannesburg, South Africa</p>
+                    <h1>level-1 BEE <br> Construction Company</h1>
+
+                    <p class="hero-meta">
+                        Johannesburg, South Africa
+                    </p>
                     <div id="cta" class="cta">
                         <p class="slogan-p">Quality<span>Or</span>Nothing</p>
-                        <a href="#main" class="cta-btn" title="Go to main section">our services<i class="fas fa-angles-right hero-cta-icon"></i></a>
+                        <a href="#main" class="cta-btn" title="Main Section">our services
+                            <img src="../icons/solid/icons8-double-right-48-dark.png" class="icon hero-cta-icon" height="48" width="48" alt="double-right">
+                        </a>
                     </div>
                 </div>
                 <!-- CALL TO ACTION = LINK TO SERVICES MENU -->
@@ -176,175 +218,203 @@
                         <h2>our services</h2>
                     </div>
 
-                    <!-- SERVICE ITEMS GRID CONTAINER -->
-                    <div class="grid-container">
-
-                    <!-- GENERAL -->
-                    <div id="general" class="service-item io-item">
-                        <div class="service-core">
-                            <h4>General Building</h4>
-                            <i class="fas fa-wrench"></i>
+                    <div class="service-container index-container" id="service-container">
+    
+                        <!-- GRID CONTAINER -->
+                        <div class="grid-container">
+                            <!-- EACH SERVICE = 1) SERVICE CORE: TITLE & IMAGE. || 2) SERVICE TYPE = UL WITH 1 LINK TO ENQUIRY PAGE  -->
+    
+                            <!-- GENERAL BUILDING -->
+                            <div id="building_services" class="service-item io-item">
+    
+                                <div class="service-core">
+                                    <h4>General Building</h4>
+                                    <img class="icon" src="../icons/services/icons8-full-tool-storage-box-64.png" height="60" width="60" alt="wrench">
+                                </div>
+    
+                                <div class="service-type">
+                                    <ul>
+                                        <li>Houses & offices</li>
+                                        <li>Wall Fence</li>
+                                        <li class="service-cta">
+                                            <img src="../icons/solid/icons8-envelope-48-dark.png" height="48" width="48" alt="envelope icon" class="icon">
+                                            <a href="mailto:info@orichtrading.co.za">make enquiry</a>
+                                        </li>
+                                    </ul>
+                                </div>
+    
+                            </div>
+    
+                            <!-- PAINTING -->
+                            <div id="painting" class="service-item io-item">
+                                <div class="service-core">
+                                    <h4>Painting</h4>
+                                    <img class="icon" src="../icons/services/icons8-paint-roller-64.png" height="64" width="64" alt="paint-roller">
+                                </div>
+                                <div class="service-type">
+                                    <ul>
+                                        <li>Cement Paint</li>
+                                        <li>oil paint</li>
+                                        <li>primer paint</li>
+                                        <li class="service-cta">
+                                            <img src="../icons/solid/icons8-envelope-48-dark.png" height="48" width="48" alt="envelope icon" class="icon">
+                                            <a href="mailto:info@orichtrading.co.za">make enquiry</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                            <!-- PLUMBING -->
+                            <div id="plumbing_services" class="service-item io-item">
+                                <div class="service-core">
+                                    <h4>plumbing</h4>
+                                    <img class="icon" src="../icons/services/icons8-plumbing-100.png" height="100" width="100" alt="plumbing">
+                                </div>
+    
+                                <div class="service-type">
+                                    <ul>
+                                        <li>Bathroom Set Installation</li>
+                                        <li>Electric Geyser & Solar Geyser</li>
+                                        <li>Rigid Copper Pipe</li>
+                                        <li>Stainless Steel Pipes</li>
+                                        <li class="service-cta">
+                                            <img src="../icons/solid/icons8-envelope-48-dark.png" height="48" width="48" alt="envelope icon" class="icon">
+                                            <a href="mailto:info@orichtrading.co.za">make enquiry</a>
+                                        </li>
+                                    </ul>
+                                </div>
+    
+                            </div>
+    
+                            <!-- ELECTRICAL -->
+                            <div id="electrical_services" class="service-item io-item">
+                                <div class="service-core">
+                                    <h4>electrical services</h4>
+                                    <img class="icon" src="../icons/services/icons8-plug-64.png" height="64" width="64" alt="electric plug">
+                                </div>
+                                <div class="service-type">
+                                    <ul>
+                                        <li>Boom Gate Installation, Setup & Maintenance</li>
+                                        <li>Electric Geyser & Solar Geyser</li>
+                                        <li>Energizer & Electrical Types</li>
+                                        <li>Wire Type</li>
+                                        <li class="service-cta">
+                                            <img src="../icons/solid/icons8-envelope-48-dark.png" height="48" width="48" alt="envelope icon" class="icon">
+                                            <a href="mailto:info@orichtrading.co.za">make enquiry</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                            <!-- TITLE & ROOF -->
+                            <div id="roof" class="service-item io-item">
+                                <div class="service-core">
+                                    <h4>Roofing</h4>
+                                    <img class="icon" src="../icons/services/icons8-house-100.png" height="100" width="100" alt="roof house">
+                                </div>
+                                <div class="service-type">
+                                    <ul>
+                                        <li>Composite Roof Tiles</li>
+                                        <li>Concrete Roof Tiles</li>
+                                        <li>Clay Roof Tiles</li>
+                                        <li>Metal Roof Tiles</li>
+                                        <li>Slate Roof Tiles</li>
+                                        <li class="service-cta">
+                                            <img src="../icons/solid/icons8-envelope-48-dark.png" height="48" width="48" alt="envelope icon" class="icon">
+                                            <a href="mailto:info@orichtrading.co.za">make enquiry</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                            <!-- CARPENTRY -->
+                            <div id="carpentry" class="service-item io-item">
+                                <div class="service-core">
+                                    <h4>Carpentry</h4>
+                                    <img class="icon" src="../icons/services/icons8-construction-carpenter-ruler-100.png" height="100" width="100" alt="carpenter-ruler">
+    
+                                </div>
+                                <div class="service-type">
+                                    <ul>
+                                        <li>Kitchen Units</li>
+                                        <li>Office Shelves</li>
+                                        <li>Wardrobe</li>
+                                        <li class="service-cta">
+                                            <img src="../icons/solid/icons8-envelope-48-dark.png" height="48" width="48" alt="envelope icon" class="icon">
+                                            <a href="mailto:info@orichtrading.co.za">make enquiry</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                            <!-- PAVING -->
+                            <div id="paving" class="service-item io-item">
+                                <div class="service-core">
+                                    <h4>Paving</h4>
+                                    <img class="icon" src="../icons/services/icons8-pavement-100.png" height="100" width="100" alt="pavement">
+                                </div>
+                                <div class="service-type">
+                                    <ul>
+                                        <li>brick Paving</li>
+                                        <li>Concrete Paving</li>
+                                        <li class="service-cta">
+                                            <img src="../icons/solid/icons8-envelope-48-dark.png" height="48" width="48" alt="envelope icon" class="icon">
+                                            <a href="mailto:info@orichtrading.co.za">make enquiry</a>
+                                        </li>
+    
+                                    </ul>
+                                </div>
+                            </div>
+    
+                            <!-- WELDING -->
+                            <div id="welding" class="service-item io-item">
+                                <div class="service-core">
+                                    <h4>welding</h4>
+                                    <img class="icon" src="../icons/services/icons8-welder-100.png" height="100" width="100" alt="welder">
+                                </div>
+                                <div class="service-type">
+                                    <ul>
+                                        <li>Automated Gate Systems</li>
+                                        <li>Aluminium Windows & sliding doors</li>
+                                        <li>cages</li>
+                                        <li>pool gates</li>
+                                        <li>Window frames</li>
+                                        <li class="service-cta">
+                                            <img src="../icons/solid/icons8-envelope-48-dark.png" height="48" width="48" alt="envelope icon" class="icon">
+                                            <a href="mailto:info@orichtrading.co.za">make enquiry</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                            <!-- CEILING -->
+                            <div id="ceiling" class="service-item io-item">
+                                <div class="service-core">
+                                    <h4>ceiling</h4>
+                                    <img class="icon" src="../icons/services/icons8-pavilion-100.png" height="100" width="100" alt="pavilion">
+                                </div>
+                                <div class="service-type">
+                                    <ul>
+                                        <li>Beam Ceiling</li>
+                                        <li>Conventional Ceiling</li>
+                                        <li>Coved Ceiling</li>
+                                        <li>Suspended Ceiling</li>
+                                        <li>Tray Ceiling</li>
+                                        <li class="service-cta">
+                                            <img src="../icons/solid/icons8-envelope-48-dark.png" height="48" width="48" alt="envelope icon" class="icon">
+                                            <a href="mailto:info@orichtrading.co.za">make enquiry</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+    
                         </div>
-                        <div class="service-type">
-                            <ul>
-                                <li>Houses & offices</li>
-                                <li>Wall Fence</li>
-                                <li class="service-cta"><i class="fas fa-envelope"></i><a href="mailto:info@orichtrading.co.za">make enquiry</a></li>
-                            
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- PAINTING -->
-                    <div id="painting" class="service-item io-item">
-                        <div class="service-core">
-                            <h4>Painting</h4>
-                            <i class="fas fa-paint-roller"></i>
-                        </div>
-                        <div class="service-type">
-                            <ul>
-                                <li>Cement Paint</li>
-                                <li>oil paint</li>
-                                <li>primer paint</li>
-                                <li class="service-cta"><i class="fas fa-envelope"></i><a href="mailto:info@orichtrading.co.za">make enquiry</a></li>
-                            
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- PLUMBING -->
-                    <div id="plumbing" class="service-item io-item">
-                        <div class="service-core">
-                            <h4>plumbing</h4>
-                            <!-- <i class="fas fa-faucet"></i> -->
-                            <i class="fas fa-wrench"></i>
-                        </div>
-                        <div class="service-type">
-                            <ul>
-                                <li>Bathroom Set Installation</li>
-                                <li>Electric Geyser & Solar Geyser</li>
-                                <li>Rigid Copper Pipe</li>
-                                <li>Stainless Steel Pipes</li>
-                                <li class="service-cta"><i class="fas fa-envelope"></i><a href="mailto:info@orichtrading.co.za">make enquiry</a></li>
-                            
-                            </ul>
-                        </div>
-
-                    </div>
-
-                    <!-- ELECTRICAL -->
-                    <div id="electrical" class="service-item io-item">
-                        <div class="service-core">
-                            <h4>electrical services</h4>
-                            <i class="fas fa-plug"></i>
-                        </div>
-                        <div class="service-type">
-                            <ul>
-                                <li>Boom Gate Installation, Setup & Maintenance</li>
-                                <li>Electric Geyser & Solar Geyser</li>
-                                <li>Energizer & Electrical Types</li>
-                                <li>Wire Type</li>
-                                <li class="service-cta"><i class="fas fa-envelope"></i><a href="mailto:info@orichtrading.co.za">make enquiry</a></li>
-                            
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- TITLE & ROOF -->
-                    <div id="roof" class="service-item io-item">
-                        <div class="service-core">
-                            <h4>Roofing</h4>
-                            <i class="fas fa-home"></i>
-                        </div>
-                        <div class="service-type">
-                            <ul>
-                                <li>Composite Roof Tiles</li>
-                                <li>Concrete Roof Tiles</li>
-                                <li>Clay Roof Tiles</li>
-                                <li>Metal Roof Tiles</li>
-                                <li>Slate Roof Tiles</li>
-                                <li class="service-cta"><i class="fas fa-envelope"></i><a href="mailto:info@orichtrading.co.za">make enquiry</a></li>
-                            
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- CARPENTRY -->
-                    <div id="carpentry" class="service-item io-item">
-                        <div class="service-core">
-                            <h4>Carpentry</h4>
-                            <i class="fas fa-chair"></i>
-                        </div>
-                        <div class="service-type">
-                            <ul>
-                                <li>Kitchen Units</li>
-                                <li>Office Shelves</li>
-                                <li>Wardrobe</li>
-                                <li class="service-cta"><i class="fas fa-envelope"></i><a href="mailto:info@orichtrading.co.za">make enquiry</a></li>
-                            
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- PAVING -->
-                    <div id="paving" class="service-item io-item">
-                        <div class="service-core">
-                            <h4>Paving</h4>
-                            <i class="fas fa-house-damage"></i>
-                        </div>
-                        <div class="service-type">
-                            <ul>
-                                <li>brick Paving</li>
-                                <li>Concrete Paving</li>
-                                <li class="service-cta"><i class="fas fa-envelope"></i><a href="mailto:info@orichtrading.co.za">make enquiry</a></li>
-                            
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- WELDING -->
-                    <div id="welding" class="service-item io-item">
-                        <div class="service-core">
-                            <h4>welding</h4>
-                            <i class="fas fa-door-closed"></i>
-                        </div>
-                        <div class="service-type">
-                            <ul>
-                                <li>Automated Gate Systems</li>
-                                <li>Aluminium Windows & sliding doors</li>
-                                <li>cages</li>
-                                <li>pool gates</li>
-                                <li>Window frames</li>
-                                <li class="service-cta"><i class="fas fa-envelope"></i><a href="mailto:info@orichtrading.co.za">make enquiry</a></li>
-                            
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- CEILING -->
-                    <div id="ceiling" class="service-item io-item">
-                        <div class="service-core">
-                            <h4>ceiling</h4>
-                            <i class="fas fa-dungeon"></i>
-                        </div>
-                        <div class="service-type">
-                            <ul>
-                                <li>Beam Ceiling</li>
-                                <li>Conventional Ceiling</li>
-                                <li>Coved Ceiling</li>
-                                <li>Suspended Ceiling</li>
-                                <li>Tray Ceiling</li>
-                                <li class="service-cta"><i class="fas fa-envelope"></i><a href="mailto:info@orichtrading.co.za">make enquiry</a></li>
-                            
-                            </ul>
-                        </div>
-                    </div>
-
+    
                     </div>
 
                 </div>
 
-                <div class="flex-container">
+                <div class="services-flex-container">
 
                     <div class="section-description">
                         <h3>Industrial Relations</h3>
@@ -356,7 +426,9 @@
                             We serve a broad market made of
                             small businesses, professionals and individuals. <br>
                             <div class="cta">
-                                <a class="cta-btn section-btn" href="mailto:info@orichtrading.co.za">make enquiry<i class="fas fa-envelope"></i></a>
+                                <a class="cta-btn section-btn" href="mailto:info@orichtrading.co.za">make enquiry
+                                    <img src="../icons/solid/icons8-envelope-48-dark.png" height="48" width="48" alt="envelope" class="icon">
+                                </a>
                             </div>
                             </p>
                     </div>
@@ -393,40 +465,75 @@
 
             <!-- FOOTER = 1) CONTACT DETAILS. 2) CONTACT FORM. 3) COPYRIGHT SECTION -->
             <div id="contact">
-
                 <header class="section-title io-item">
                     <h2 >contact us</h2>
                 </header>
-
+                
                 <!-- CONTACT INFO -->
                 <div id="contact-items" class="contact-items">
 
                     <!-- PHONE NUMBERS  -->
                     <div class="contact-item">
-                        <div class="contact-item-title"><i class="fas fa-mobile-alt"></i><h3>phone numbers</h3></div>
                         
+                        <div class="contact-item-title">
+                            <img class="contact-icon" src="../icons/contact/icons8-smartphone-100.png" height="100" width="100" alt="smartphone" >
+                            <h3>phone numbers</h3>
+                        </div>
+                        <!-- THABELO CONTACT INFO-->
                         <div class="contact-info">
+
                             <div class="contact-info-item">
-                                <p title="Thabelo - Executive Director"><i class="fas fa-user"></i>Thabelo Mathoma
-                                    <span>E.D.</span></p>
-                                <p title="phone number"><i class="fas fa-phone"></i><a href="tel:073 481 1460">073 481
-                                        1460</a> / <a href="tel:072 927 0758">072 927 0758</a></p>
-                                <div class="item-button">
-                                    <a class="cta-btn contact-button" title="Call Thabelo" href="tel:072 927 0758">call now<i
-                                            class="fas fa-phone-volume"></i></a>
+                                
+                                <div class="flex-container">
+
+                                    <img src="../icons/solid/icons8-user-48-light.png"  height="48" width="48" class="icon" alt="user icon">
+                                    <p title="Thabelo - Executive Director">
+                                        Thabelo Mathoma
+                                        <span>E.D.</span>
+                                    </p>
+
                                 </div>
+
+                                <div class="flex-container">
+
+                                    <img src="../icons/solid/icons8-phone-48-light.png" alt="phone icon" height="48" width="48" class="icon">
+                                    <p>
+                                            <a href="tel:073 481 1460">073 481 1460</a> / 
+                                            <a href="tel:072 927 0758">072 927 0758</a>
+                                    </p>
+
+                                </div>
+
+                                <!-- CALL NOW BUTTON -->
+                                    <div class="item-button">
+                                    <a class="cta-btn contact-button" title="Call Thabelo" href="tel:072 927 0758">
+                                        call now
+                                        <img class="icon" src="../icons/solid/icons8-outgoing-call-48-dark.png" height="48" width="48" alt="phone call icon">
+                                    </a>
+                                    </div>
                             </div>
 
-                            <div class="contact-info">
-                                <div class="contact-info-item">
-                                    <p title="Sello Sempe CEO"><i class="fas fa-user"></i>Sello Sempe <span>CEO</span>
+                        </div>
+
+                        <!-- NELSON CONTACT INFO -->
+                        <div class="contact-info">
+
+                            <div class="contact-info-item">
+                                <div class="flex-container">
+                                    <img src="../icons/solid/icons8-user-48-light.png"  height="48" width="48" class="icon" alt="user icon">
+                                    <p title="Sello Sempe CEO">
+                                        Sello Sempe <span>CEO</span>
                                     </p>
-                                    <p title="phone number"><a href="tel:081 780 2088"><i class="fas fa-phone"></i>081
-                                            780 2088</a></p>
-                                    <div class="item-button">
-                                        <a class="cta-btn contact-button" title="Call Sello" href="tel:081 780 2088">call now<i
-                                                class="fas fa-phone-volume"></i></a>
+                            </div>
+                            <div class="flex-container">
+                                <img src="../icons/solid/icons8-phone-48-light.png" height="30" width="30" class="icon" alt="phone icon">
+                                <p title="phone number"><a href="tel:081 780 2088">081
+                                        780 2088</a></p>
                                     </div>
+                                <div class="item-button">
+                                    <a class="cta-btn contact-button" title="Call Sello" href="tel:081 780 2088">call now
+                                        <img src="../icons/solid/icons8-outgoing-call-48-dark.png" height="64" width="64" alt="phone call icon" class="icon">
+                                    </a>
                                 </div>
                             </div>
 
@@ -436,15 +543,29 @@
 
                     <!-- EMAIL -->
                     <div class="contact-item">
-                        <div class="contact-item-title"><i class="fas fa-envelope-open-text"></i><h3>Email address</h3></div>
+                        <div class="contact-item-title">
+                            <img class="contact-icon" src="../icons/contact/icons8-open-email-64.png" height="64" width="64" alt="open email" >
+                            <h3>Email address</h3>
+                        </div>
                         
                         <div class="contact-info">
                             <div class="contact-info-item">
-                                <p><a href="mailto:info@orichtrading.co.za"><i
-                                            class="fas fa-envelope"></i>info@orichtrading.co.za</a></p>
+
+                                <div class="flex-container">
+
+                                    <img src="../icons/contact/icons8-envelope-100.png" alt="envelope icon" height="100" width="100" class="icon">
+                                    <p>
+                                        <a href="mailto:info@orichtrading.co.za">
+                                        info@orichtrading.co.za</a>
+                                    </p>
+
+                                </div>
+                                    
                                 <div class="item-button">
-                                    <a class="cta-btn contact-button" title="send email" href="mailto:info@orichtrading.co.za">send
-                                        email<i class="far fa-paper-plane"></i></a>
+                                    <a class="cta-btn" title="send email" href="mailto:info@orichtrading.co.za">send
+                                        Email
+                                        <img src="../icons/solid/icons8-sent-48-dark-rotated.png" height="48" width="48" alt="sent envelope icon" class="icon">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -453,43 +574,69 @@
 
                     <!-- SOCIAL MEDIA -->
                     <div class="contact-item">
-                        <div class="contact-item-title"><i class="fas fa-users"></i><h3>social media</h3></div>
+
+                        <div class="contact-item-title">
+                            <img class="contact-icon" src="../icons/contact/icons8-users-64.png" height="64" width="64" alt="users">
+                            <h3>social media</h3>
+                        </div>
                         
+                        <!-- FACEBOOK -->
                         <div class="contact-info">
 
-                            <!-- FACEBOOK -->
                             <div class="contact-info-item">
-                                <p><i class="fab fa-facebook-square"></i>Facebook</p>
+                                <div class="flex-container">
+                                    <img src="../icons/solid/icons8-facebook-48-light.png" height="48" width="48" class="icon" alt="facebook icon">
+                                    <p>Facebook</p>
+                                </div>
                                 <div class="item-button">
-                                    <a class="cta-btn contact-button btn-md" title="Facebook profile"
-                                        href="https://www.facebook.com/orichtrading" target="_blank">view account<i
-                                            class="fa-solid fa-up-right-from-square"></i></a>
+                                    <a class="cta-btn btn-md" title="Facebook profile"
+                                        href="https://www.facebook.com/orichtrading" target="_blank">view account
+                                        <img src="../icons/solid/icons8-link-48-dark.png" height="48" width="48" alt="link icon" class="icon">
+                                        </a>
                                 </div>
                             </div>
-                            
-                            <!-- INSTAGRAM -->
-                            <div class="contact-info-item">
-                                <p><i class="fab fa-instagram"></i>Instagram</p>
-                                <div class="item-button">
-                                    <a class="cta-btn contact-button btn-md" title="Facebook profile"
-                                        href="https://www.instagram.com/orichtradingprojects/?fbclid=IwAR3F4lHFYwmHfR52gYtnQj-8hMbTLDAuQd9yX4IndLP05Ocfu3ZUZQkSpyk"
-                                        target="_blank">view account<i class="fa-solid fa-up-right-from-square"></i></a>
-                                </div>
-                            </div>
+
                         </div>
+                            
+                        
+                        <!-- INSTAGRAM -->
+                        <div class="contact-info">
+
+                            <div class="contact-info-item">
+                                <div class="flex-container">
+                                    <img src="../icons/solid/icons8-instagram-48-light.png" height="48" width="48" alt="instagram icon" class="icon">
+                                    <p>Instagram</p>
+                                </div>
+                                <div class="item-button">
+                                    <a class="cta-btn btn-md" title="Facebook profile"
+                                        href="https://www.instagram.com/orichtradingprojects/?fbclid=IwAR3F4lHFYwmHfR52gYtnQj-8hMbTLDAuQd9yX4IndLP05Ocfu3ZUZQkSpyk"
+                                        target="_blank">view account
+                                        <img src="../icons/solid/icons8-link-48-dark.png" height="48" width="48" alt="link icon" class="icon">
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
 
                     <!-- LOCATION -->
                     <div class="contact-item">
-                        <div class="contact-item-title"><i class="fas fa-map-marked-alt"></i><h3>location</h3></div>
+                        <div class="contact-item-title">
+                            <img class="contact-icon" src="../icons/contact/icons8-map-marker-64.png" height="64" width="64" alt="map location marker" >
+                            <h3>location</h3>
+                        </div>
                         <div class="contact-info">
                             <div class="contact-info-item">
-                                <p><i class="fas fa-map-marker-alt"></i>
-                                    Johannesburg, Gauteng
-                                </p>
+                                <div class="flex-container">
+                                    <img src="../icons/solid/icons8-location-pin-48-light.png" alt="location pin icon" height="50" width="50" class="icon">
+                                    <p>Johannesburg, Gauteng</p>
+                                </div>
                             <div class="item-button">
-                                <a class="cta-btn contact-button btn-md" title="Orich location" href="https://goo.gl/maps/xipWF492X1BgCwsDA"
-                                    target="_blank">google maps<i class="fa-solid fa-up-right-from-square"></i></a>
+                                <a class="cta-btn btn-md" title="Orich location" href="https://goo.gl/maps/xipWF492X1BgCwsDA"
+                                    target="_blank">google maps
+                                    <img src="../icons/solid/icons8-link-48-dark.png" height="48" width="48" alt="link icon" class="icon">
+                                </a>
                             </div>
                         </div>
                         </div>
@@ -509,15 +656,16 @@
                         required>
                     <!-- EMAIL -->
                     <label for="email">email :</label>
-                    <input type="email" name="Email" id="email" placeholder="Enter your email address.."
+                    <input type="email" name="Email" id="email" placeholder="Enter your email address.." 
                         required>
                     <!-- TEXTAREA -->
                     <label for="message">subject of enquiry :</label>
                     <textarea name="Subject" rows="4" cols="10" minlength="2" placeholder="eg. Bathroom Set Installation"
-                        id="message" required></textarea>
+                        id="message"  required></textarea>
 
-                    <button class="cta-btn" type="submit" title="submit form">submit enquiry<i
-                            class="fa-solid fa-paper-plane"></i></button>
+                    <button class="cta-btn" type="submit" title="submit form">submit enquiry
+                        <img class="icon" src="../icons/contact/icons8-sent-100.png" alt="sent envelope" height="100" width="100" >
+                    </button>
                     <!-- form options -->
                     <input type="hidden" name="_subject" value="New submission!">
                     <input type="hidden" name="_autoresponse"
@@ -529,6 +677,7 @@
 
 
                 </form>
+                <!-- END OF FORM -->
             </div>
 
             <!-- FOOTER -->
@@ -555,38 +704,54 @@
                     <p>web design <a href="https://shakexsempe.netlify.app/" target="_blank">shakex sempe</a></p>
                     <p><span id="date"></span></p>
                 </div>
-                
+
                 <div class="footer-item">
                     <div class="footer-item-title">
                         <h3>browse</h3>
                     </div>
                     <ul class="footer-list page-links">
-                        <li><a href="../index.html">home</a></li>
-                        <li><i class="fa-solid fa-arrow-up-right-from-square"></i><a href="contact.html">contact us</a></li>
-                        <li><i class="fa-solid fa-arrow-up-right-from-square"></i><a href="projects.html">projects</a></li>
-                        <li><i class="fa-solid fa-arrow-up-right-from-square"></i><a href="about.html">about</a></li>
-                    
+                        <li>
+                            <img class="icon" src="../icons/contact/icons8-home-page-48.png" alt="home page icon" height="48" width="48">
+                            <a href="../index.html">home</a>
+                        </li>
+                        <li>
+                            <img class="icon" src="../icons/solid/icons8-link-48-dark.png" alt="open link icon" height="48" width="48">
+                            <a href="services.html">services</a></li>
+                        <li>
+                            <img class="icon" src="../icons/solid/icons8-link-48-dark.png" alt="open link icon" height="48" width="48">
+                            <a href="projects.html">projects</a></li>
+                        <li>
+                            <img class="icon" src="../icons/solid/icons8-link-48-dark.png" alt="open link icon" height="48" width="48">
+                            <a href="contact.html">contact us</a></li>
                     </ul>
                 </div>
 
+                <!-- FOOTER CONTACT ITEMS -->
                 <div class="footer-item contact-items">
-                    
+
                     <div class="footer-item-title">
-                        <h3>contact</h3>
+                        <h3>contact details</h3>
                     </div>
 
                     <ul class="footer-list contact-links">
-                        <li><a href="mailto:info@orichtrading.co.za"><i class="fas fa-envelope"></i>info@orichtrading.co.za</a></li>
-                        <li>
-                            <a target="_blank"  href="https://www.facebook.com/photo/?fbid=130044952743326&set=a.130045042743317"><i class="fa-brands fa-facebook"></i>Facebook</a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://www.instagram.com/orichtradingprojects/?fbclid=IwAR3F4lHFYwmHfR52gYtnQj-8hMbTLDAuQd9yX4IndLP05Ocfu3ZUZQkSpyk"><i class="fa-brands fa-instagram"></i>Instagram</a>
-                        </li>
-                        <li><a href="#"><i class="fas fa-map-marked-alt"></i>Johannesburg, Gauteng</a></li>
-                    
-                    </ul>
 
+                        <li>
+                            <img src="../icons/solid/icons8-envelope-48-dark.png" height="48" width="48" alt="envelope icon" class="icon">
+                            <a href="mailto:info@orichtrading.co.za">info@orichtrading.co.za</a>
+                        </li>
+                        <li>
+                            <img src="../icons/solid/icons8-outgoing-call-48-dark.png" height="48" width="48" alt="outgoing call icon" class="icon">
+                            <a target="_blank" style="--i:2;" href="tel:0734811460">073 481 1460</a>
+                        </li>
+                        <li>
+                            <img src="../icons/solid/icons8-facebook-48-dark.png" height="48" width="48" alt="Facebook icon" class="icon">
+                            <a target="_blank" href="https://www.facebook.com/photo/?fbid=130044952743326&set=a.130045042743317">Facebook</a>
+                        </li>
+                        <li>
+                            <img src="../icons/solid/icons8-info-squared-48-dark.png" height="48" width="48" alt="Info square icon" class="icon">
+                            <a href="contact.html">Contact Page</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         
@@ -596,13 +761,20 @@
         <div class="bottom-nav">
             <div class="item item1 menu-target">
                 <a class="contact-item mobile-contact-item"
-                    title="Contact" href="#main"><i class="fas fa-arrow-up"></i></a>
+                    title="return to top" href="#">
+                    <img class="icon" src="../icons/outline/icons8-double-right-48-up.png" width="48" height="48" alt="envelope icon">
+                </a>
             </div>
             <div class="item item2">
-                <a href="../index.html" title="Home"><i class="fa-solid fa-house"></i></a>
+                <a href="../index.html" title="Home-page">
+                    <img class="icon" src="../icons/outline/icons8-homepage-32-light.png" width="32" height="32" alt="Home-page icon">
+
+                </a>
             </div>
             <div class="item item3 menu-target">
-                <a class="contact-item" title="Footer" href="#contact"><i class="fas fa-envelope"></i></a>
+                <a class="contact-item" title="contact" href="#contact">
+                    <img class="icon" src="../icons/outline/icons8-envelope-48-light.png" width="32" height="32" alt="four-squares icon">
+                </a>
             </div>
         </div>
 
