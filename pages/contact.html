@@ -73,60 +73,93 @@
                     <img src="../img/orich.jpg" width="120" height="120" alt="Orich Trading logo">
                 </a>
             </div>
+            
             <div class="navigation">
-                <div class="toggle">
+                <div id="toggle" class="toggle">
                     <div class="bar"></div>
                 </div>
+                <!-- SERVICES DROPDOWN -->
                 <nav id="nav">
                     <ul>
-                        <li>
-                            <a title="About Orich Trading and Projects" href="../index.html">home</a>
+                        <!-- WEBSITE PAGE LINKS -->
+                        <li><a class="nav-link" href="../index.html">home</a></li>
+                        <li><a class="nav-link" href="about.html">about</a></li>
+                        <li><a class="nav-link" href="services.html">services</a></li>
+                        <li><a class="nav-link" href="projects.html">projects</a></li>
+                        
+                        <!-- CONTACT DROPDOWN BUTTON -->
+                        <li title="Contact Dropdown" class="dropdown">
+                            <button class="dropdown-btn">contact
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a title="Contact-info" href="#contact">contact info</a>
+                                <a title="Contact-page" class="nav-link" href="contact.html">contact page</a>
+                            </div>
                         </li>
-                        <li>
-                            <a title="About Page : Orich Projects" href="about.html">about</a>
-                        </li>
-                        <li>
-                            <a title="Services Page : Orich Projects" href="services.html">services</a>
-                        </li>
-                        <li>
-                            <a title="Projects Page : Orich Projects" href="projects.html">projects</a>
-                        </li>
-
+                    
                     </ul>
                 </nav>
-                <aside id="aside" class="aisde">
+                
+                <aside id="aside" class="aside" >
+                    
+                    <!-- WEBSITE PAGE BROWSE -->
                     <ul>
-                        <li>
-                            <i class="fas fa-house"></i>
-                            <a href="../index.html">home</a>
+
+                        <!-- HOME DROPDOWN -->
+                        <li><a href="../index.html" title="Home-page" class="nav-link">
+                            <img class="icon nav-icon" src="../icons/outline/icons8-homepage-32-light.png" height="32" width="32" alt="Home page icon" >
+                            home</a>
                         </li>
-                        <li>
-                            <i class="fas fa-hard-hat"></i>
-                            <a href="projects.html">projects</a>
+
+                        <!-- ABOUT DROPDOWN -->
+                        <li><a href="about.html" title="About page" class="nav-link">
+                            <img class="icon nav-icon" src="../icons/outline/icons8-user-48-light.png" height="48" width="48" alt="user icon" >
+                            about</a>
                         </li>
-                        <li>
-                            <i class="fas fa-tools"></i>
-                            <a href="services.html">services</a>
+
+                        <!-- SERVICES DROPDOWN -->
+                        <li><a href="services.html" title="Services page" class="nav-link">
+                            <img class="icon nav-icon" src="../icons/outline/icons8-service-48-light.png" height="48" width="48" alt="Tools icon" >
+                            services</a>
+                        </li>
+
+                        <!-- PROJECTS DROPDOWN -->
+                        <li><a href="projects.html" title="Projects page" class="nav-link">
+                            <img class="icon nav-icon" src="../icons/outline/icons8-four-squares-32-light.png" height="48" width="48" alt="Tasks icon" >
+                            projects</a>
                         </li>
                     </ul>
+
                     <!-- SOCIAL & CONTACT DETAILS -->
                     <div class="social-links">
-                        <a target="_blank" style="--i:1;" href="https://wa.me/27729270758"><i
-                                class="fa-brands fa-whatsapp"></i>072 927 0758</a>
-                        <a target="_blank" style="--i:2;" href="tel:0734811460"><i class="fas fa-phone-volume"></i>073
-                            481
-                            1460</a>
-                        <a target="_blank" style="--i:3;" href="mailto:info@orichtrading.co.za"><i
-                                class="fas fa-envelope"></i>info@orichtrading.co.za</a>
-                        <a target="_blank" style="--i:4;"
-                            href="https://www.facebook.com/photo/?fbid=130044952743326&set=a.130045042743317"><i
-                                class="fa-brands fa-facebook"></i>facebook</a>
-                        <a target="_blank" style="--i:5;"
-                            href="https://www.instagram.com/orichtradingprojects/?fbclid=IwAR3F4lHFYwmHfR52gYtnQj-8hMbTLDAuQd9yX4IndLP05Ocfu3ZUZQkSpyk"><i
-                                class="fa-brands fa-instagram"></i>Instagram</a>
+                        
+                        <a target="_blank" style="--i:1;" title="Whatsapp number" href="https://wa.me/27729270758">
+                            <img class="icon" src="../icons/aside/icons8-whatsapp-50.png" height="50" width="50" alt="Whatsapp icon">
+                            072 927 0758
+                        </a>
+
+                        <a target="_blank" style="--i:2;" title="Phone number" href="tel:0734811460">
+                            <img class="icon" src="../icons/brand-icons/icons8-outgoing-call-48-brand.png" height="48" width="48" alt="Outgoing phone-call icon">
+                            073 481 1460
+                        </a>
+
+                        <a target="_blank" style="--i:3;" title="Email address" href="mailto:info@orichtrading.co.za">
+                            <img class="icon" src="../icons/solid/icons8-envelope-48-brand.png" height="48" width="48" alt="envelope icon">
+                            info@orichtrading.co.za
+                        </a>
+
+                        <a target="_blank" style="--i:5;" title="Instagram account" href="https://www.instagram.com/orichtradingprojects/?fbclid=IwAR3F4lHFYwmHfR52gYtnQj-8hMbTLDAuQd9yX4IndLP05Ocfu3ZUZQkSpyk">
+                            <img class="icon" src="../icons/solid/icons8-instagram-48-brand.png" height="48" width="48"  alt="Instagram icon">
+                            Instagram
+                        </a>
+
                     </div>
+
                 </aside>
+
             </div>
+
         </header>
         <!-- END OF HEADER -->
         <!-- HERO -->
@@ -153,12 +186,16 @@
             <!-- WEBSITE SLOGAN -->
             <div id="title" class="hero-title">
                 <div class="slogan">
-                    <h1 title="Website title: Orich Construction Company">level-1 BEE <br> construction company</h1>
-                    <p class="hero-meta"><i class="fas fa-location-dot"></i>Johannesburg, South Africa</p>
+                    <h1>level-1 BEE <br> Construction Company</h1>
+
+                    <p class="hero-meta">
+                        Johannesburg, South Africa
+                    </p>
                     <div id="cta" class="cta">
                         <p class="slogan-p">Quality<span>Or</span>Nothing</p>
-                        <a href="#main" class="cta-btn" title="Go to main section">let's talk<i
-                                class="fas fa-angles-right hero-cta-icon"></i></a>
+                        <a href="#main" class="cta-btn" title="Main Section">let's talk
+                            <img src="../icons/solid/icons8-double-right-48-dark.png" class="icon hero-cta-icon" height="48" width="48" alt="double-right">
+                        </a>
                     </div>
                 </div>
                 <!-- CALL TO ACTION = LINK TO SERVICES MENU -->
@@ -199,8 +236,9 @@
                         placeholder="eg. Bathroom Set Installation" id="message" tabindex="5" required></textarea>
                 </div>
 
-                <button class="cta-btn" type="submit" title="submit contact form" tabindex="6">submit form<i
-                        class="fa-solid fa-paper-plane"></i></button>
+                <button class="cta-btn" type="submit" title="submit contact form" tabindex="6">submit form
+                    <img src="../icons/solid/icons8-sent-48-dark-rotated.png" alt="" class="icon">
+                </button>
                 <!-- form options -->
                 <input type="hidden" name="_subject" value="New submission!">
                 <input type="hidden" name="_autoresponse"
@@ -224,30 +262,66 @@
 
                     <!-- PHONE NUMBERS  -->
                     <div class="contact-item">
-                        <div class="contact-item-title"><i class="fas fa-mobile-alt"></i><h3>phone numbers</h3></div>
                         
+                        <div class="contact-item-title">
+                            <img class="contact-icon" src="../icons/contact/icons8-smartphone-100.png" height="100" width="100" alt="smartphone" >
+                            <h3>phone numbers</h3>
+                        </div>
+                        <!-- THABELO CONTACT INFO-->
                         <div class="contact-info">
+
                             <div class="contact-info-item">
-                                <p title="Thabelo - Executive Director"><i class="fas fa-user"></i>Thabelo Mathoma
-                                    <span>E.D.</span></p>
-                                <p title="phone number"><i class="fas fa-phone"></i><a href="tel:073 481 1460">073 481
-                                        1460</a> / <a href="tel:072 927 0758">072 927 0758</a></p>
-                                <div class="item-button">
-                                    <a class="cta-btn contact-button" title="Call Thabelo" href="tel:072 927 0758">call now<i
-                                            class="fas fa-phone-volume"></i></a>
+                                
+                                <div class="flex-container">
+
+                                    <img src="../icons/solid/icons8-user-48-light.png"  height="48" width="48" class="icon" alt="user icon">
+                                    <p title="Thabelo - Executive Director">
+                                        Thabelo Mathoma
+                                        <span>E.D.</span>
+                                    </p>
+
                                 </div>
+
+                                <div class="flex-container">
+
+                                    <img src="../icons/solid/icons8-phone-48-light.png" alt="phone icon" height="48" width="48" class="icon">
+                                    <p>
+                                            <a href="tel:073 481 1460">073 481 1460</a> / 
+                                            <a href="tel:072 927 0758">072 927 0758</a>
+                                    </p>
+
+                                </div>
+
+                                <!-- CALL NOW BUTTON -->
+                                    <div class="item-button">
+                                    <a class="cta-btn contact-button" title="Call Thabelo" href="tel:072 927 0758">
+                                        call now
+                                        <img class="icon" src="../icons/solid/icons8-outgoing-call-48-dark.png" height="48" width="48" alt="phone call icon">
+                                    </a>
+                                    </div>
                             </div>
 
-                            <div class="contact-info">
-                                <div class="contact-info-item">
-                                    <p title="Sello Sempe CEO"><i class="fas fa-user"></i>Sello Sempe <span>CEO</span>
+                        </div>
+
+                        <!-- NELSON CONTACT INFO -->
+                        <div class="contact-info">
+
+                            <div class="contact-info-item">
+                                <div class="flex-container">
+                                    <img src="../icons/solid/icons8-user-48-light.png"  height="48" width="48" class="icon" alt="user icon">
+                                    <p title="Sello Sempe CEO">
+                                        Sello Sempe <span>CEO</span>
                                     </p>
-                                    <p title="phone number"><a href="tel:081 780 2088"><i class="fas fa-phone"></i>081
-                                            780 2088</a></p>
-                                    <div class="item-button">
-                                        <a class="cta-btn contact-button" title="Call Sello" href="tel:081 780 2088">call now<i
-                                                class="fas fa-phone-volume"></i></a>
+                            </div>
+                            <div class="flex-container">
+                                <img src="../icons/solid/icons8-phone-48-light.png" height="30" width="30" class="icon" alt="phone icon">
+                                <p title="phone number"><a href="tel:081 780 2088">081
+                                        780 2088</a></p>
                                     </div>
+                                <div class="item-button">
+                                    <a class="cta-btn contact-button" title="Call Sello" href="tel:081 780 2088">call now
+                                        <img src="../icons/solid/icons8-outgoing-call-48-dark.png" height="64" width="64" alt="phone call icon" class="icon">
+                                    </a>
                                 </div>
                             </div>
 
@@ -257,15 +331,29 @@
 
                     <!-- EMAIL -->
                     <div class="contact-item">
-                        <div class="contact-item-title"><i class="fas fa-envelope-open-text"></i><h3>Email address</h3></div>
+                        <div class="contact-item-title">
+                            <img class="contact-icon" src="../icons/contact/icons8-open-email-64.png" height="64" width="64" alt="open email" >
+                            <h3>Email address</h3>
+                        </div>
                         
                         <div class="contact-info">
                             <div class="contact-info-item">
-                                <p><a href="mailto:info@orichtrading.co.za"><i
-                                            class="fas fa-envelope"></i>info@orichtrading.co.za</a></p>
+
+                                <div class="flex-container">
+
+                                    <img src="../icons/contact/icons8-envelope-100.png" alt="envelope icon" height="100" width="100" class="icon">
+                                    <p>
+                                        <a href="mailto:info@orichtrading.co.za">
+                                        info@orichtrading.co.za</a>
+                                    </p>
+
+                                </div>
+                                    
                                 <div class="item-button">
-                                    <a class="cta-btn contact-button" title="send email" href="mailto:info@orichtrading.co.za">send
-                                        email<i class="far fa-paper-plane"></i></a>
+                                    <a class="cta-btn" title="send email" href="mailto:info@orichtrading.co.za">send
+                                        Email
+                                        <img src="../icons/solid/icons8-sent-48-dark-rotated.png" height="48" width="48" alt="sent envelope icon" class="icon">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -274,43 +362,69 @@
 
                     <!-- SOCIAL MEDIA -->
                     <div class="contact-item">
-                        <div class="contact-item-title"><i class="fas fa-users"></i><h3>social media</h3></div>
+
+                        <div class="contact-item-title">
+                            <img class="contact-icon" src="../icons/contact/icons8-users-64.png" height="64" width="64" alt="users">
+                            <h3>social media</h3>
+                        </div>
                         
+                        <!-- FACEBOOK -->
                         <div class="contact-info">
 
-                            <!-- FACEBOOK -->
                             <div class="contact-info-item">
-                                <p><i class="fab fa-facebook-square"></i>Facebook</p>
+                                <div class="flex-container">
+                                    <img src="../icons/solid/icons8-facebook-48-light.png" height="48" width="48" class="icon" alt="facebook icon">
+                                    <p>Facebook</p>
+                                </div>
                                 <div class="item-button">
-                                    <a class="cta-btn contact-button btn-md" title="Facebook profile"
-                                        href="https://www.facebook.com/orichtrading" target="_blank">view account<i
-                                            class="fa-solid fa-up-right-from-square"></i></a>
+                                    <a class="cta-btn btn-md" title="Facebook profile"
+                                        href="https://www.facebook.com/orichtrading" target="_blank">view account
+                                        <img src="../icons/solid/icons8-link-48-dark.png" height="48" width="48" alt="link icon" class="icon">
+                                        </a>
                                 </div>
                             </div>
-                            
-                            <!-- INSTAGRAM -->
-                            <div class="contact-info-item">
-                                <p><i class="fab fa-instagram"></i>Instagram</p>
-                                <div class="item-button">
-                                    <a class="cta-btn contact-button btn-md" title="Facebook profile"
-                                        href="https://www.instagram.com/orichtradingprojects/?fbclid=IwAR3F4lHFYwmHfR52gYtnQj-8hMbTLDAuQd9yX4IndLP05Ocfu3ZUZQkSpyk"
-                                        target="_blank">view account<i class="fa-solid fa-up-right-from-square"></i></a>
-                                </div>
-                            </div>
+
                         </div>
+                            
+                        
+                        <!-- INSTAGRAM -->
+                        <div class="contact-info">
+
+                            <div class="contact-info-item">
+                                <div class="flex-container">
+                                    <img src="../icons/solid/icons8-instagram-48-light.png" height="48" width="48" alt="instagram icon" class="icon">
+                                    <p>Instagram</p>
+                                </div>
+                                <div class="item-button">
+                                    <a class="cta-btn btn-md" title="Facebook profile"
+                                        href="https://www.instagram.com/orichtradingprojects/?fbclid=IwAR3F4lHFYwmHfR52gYtnQj-8hMbTLDAuQd9yX4IndLP05Ocfu3ZUZQkSpyk"
+                                        target="_blank">view account
+                                        <img src="../icons/solid/icons8-link-48-dark.png" height="48" width="48" alt="link icon" class="icon">
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
 
                     <!-- LOCATION -->
                     <div class="contact-item">
-                        <div class="contact-item-title"><i class="fas fa-map-marked-alt"></i><h3>location</h3></div>
+                        <div class="contact-item-title">
+                            <img class="contact-icon" src="../icons/contact/icons8-map-marker-64.png" height="64" width="64" alt="map location marker" >
+                            <h3>location</h3>
+                        </div>
                         <div class="contact-info">
                             <div class="contact-info-item">
-                                <p><i class="fas fa-map-marker-alt"></i>
-                                    Johannesburg, Gauteng
-                                </p>
+                                <div class="flex-container">
+                                    <img src="../icons/solid/icons8-location-pin-48-light.png" alt="location pin icon" height="50" width="50" class="icon">
+                                    <p>Johannesburg, Gauteng</p>
+                                </div>
                             <div class="item-button">
-                                <a class="cta-btn contact-button btn-md" title="Orich location" href="https://goo.gl/maps/xipWF492X1BgCwsDA"
-                                    target="_blank">google maps<i class="fa-solid fa-up-right-from-square"></i></a>
+                                <a class="cta-btn btn-md" title="Orich location" href="https://goo.gl/maps/xipWF492X1BgCwsDA"
+                                    target="_blank">google maps
+                                    <img src="../icons/solid/icons8-link-48-dark.png" height="48" width="48" alt="link icon" class="icon">
+                                </a>
                             </div>
                         </div>
                         </div>
@@ -345,36 +459,53 @@
                     <p><span id="date"></span></p>
                 </div>
 
+                <!-- BROWSE WEBSITE -->
                 <div class="footer-item">
                     <div class="footer-item-title">
-                        <h3>browse website</h3>
+                        <h3>browse</h3>
                     </div>
                     <ul class="footer-list page-links">
-                        <li><a href="../index.html">home</a></li>
-                        <li><a href="services.html">our services</a></li>
-                        <li><a href="projects.html">projects</a></li>
-                        <li><a href="about.html">about</a></li>
+                        <li>
+                            <img class="icon" src="../icons/contact/icons8-home-page-48.png" alt="home page icon" height="48" width="48">
+                            <a href="../index.html">home</a>
+                        </li>
+                        <li>
+                            <img class="icon" src="../icons/solid/icons8-link-48-dark.png" alt="open link icon" height="48" width="48">
+                            <a href="services.html">services</a></li>
+                        <li>
+                            <img class="icon" src="../icons/solid/icons8-link-48-dark.png" alt="open link icon" height="48" width="48">
+                            <a href="projects.html">projects</a></li>
+                        <li>
+                            <img class="icon" src="../icons/solid/icons8-link-48-dark.png" alt="open link icon" height="48" width="48">
+                            <a href="contact.html">contact us</a></li>
                     </ul>
                 </div>
 
+                <!-- FOOTER CONTACT ITEMS -->
                 <div class="footer-item contact-items">
+
                     <div class="footer-item-title">
-                        <h3>contact info</h3>
+                        <h3>contact details</h3>
                     </div>
+
                     <ul class="footer-list contact-links">
-                        <li><a href="mailto:info@orichtrading.co.za"><i
-                                    class="fas fa-envelope"></i>info@orichtrading.co.za</a></li>
+
                         <li>
-                            <a target="_blank"
-                                href="https://www.facebook.com/photo/?fbid=130044952743326&set=a.130045042743317"><i
-                                    class="fa-brands fa-facebook"></i>Facebook</a>
+                            <img src="../icons/solid/icons8-envelope-48-dark.png" height="48" width="48" alt="envelope icon" class="icon">
+                            <a href="mailto:info@orichtrading.co.za">info@orichtrading.co.za</a>
                         </li>
                         <li>
-                            <a target="_blank"
-                                href="https://www.instagram.com/orichtradingprojects/?fbclid=IwAR3F4lHFYwmHfR52gYtnQj-8hMbTLDAuQd9yX4IndLP05Ocfu3ZUZQkSpyk"><i
-                                    class="fa-brands fa-instagram"></i>Instagram</a>
+                            <img src="../icons/solid/icons8-outgoing-call-48-dark.png" height="48" width="48" alt="outgoing call icon" class="icon">
+                            <a target="_blank" style="--i:2;" href="tel:0734811460">073 481 1460</a>
                         </li>
-                        <li><a href="#"><i class="fas fa-map-marked-alt"></i>Johannesburg, Gauteng</a></li>
+                        <li>
+                            <img src="../icons/solid/icons8-facebook-48-dark.png" height="48" width="48" alt="Facebook icon" class="icon">
+                            <a target="_blank" href="https://www.facebook.com/photo/?fbid=130044952743326&set=a.130045042743317">Facebook</a>
+                        </li>
+                        <li>
+                            <img src="../icons/solid/icons8-info-squared-48-dark.png" height="48" width="48" alt="Info square icon" class="icon">
+                            <a href="contact.html">Contact Page</a>
+                        </li>
                     </ul>
                 </div>
                 
