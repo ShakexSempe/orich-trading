@@ -49,20 +49,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
     <meta name="msapplication-TileColor" content="f8650c">
-    <!-- GOOGLE FONTS -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200;400;500;600;700&display=swap"
-        rel="stylesheet"> -->
-    <!-- ICONS LINK -->
-    <!-- <link rel="preconnect" href="https://cdnjs.cloudflare.com/">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     
     <!-- STYLES -->
     <style>
-
-        
 
         body {
             font-family: 'Prompt', sans-serif;
@@ -77,77 +66,7 @@
             display: block;
         }
 
-        /* LOADER */
-        .loader_bg {
-            position: fixed;
-            top: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: #000;
-            z-index: 999;
-            display: grid;
-            place-items: center;
-        }
-
-        .loader-title {
-            font-size: 2rem;
-            color: #fff4;
-            display: flex;
-            position: relative;
-            gap: 2rem;
-            animation: loader-title 1.25s forwards 1s;
-        }
-        .loader-title .brand-span {
-            animation: brand-span 1.25s forwards 2.25s;
-        }
-
-        .loader-title::before, .loader-title::after {
-            content: '';
-            position: absolute;
-            bottom: -1rem;
-            left: 0;
-            width: 100%;
-            height: .125rem;
-        }
-        /* UNDERLINE 1 - LIGHT */
-        .loader-title::before {
-            background: linear-gradient(90deg, transparent, #f4f4f4, transparent);
-            animation: underline-1 1.25s forwards 1.25s;
-        }
-        /* UNDERLINE 2 - BRAND */
-        .loader-title::after {
-            background: linear-gradient(90deg, transparent, orange, transparent);
-            animation: underline-2 1.25s forwards 2.25s;
-            transform: scaleX(0);
-        }
-
-        /* UNDERLINE 1 ANIMATION */
-        @keyframes underline-1 {
-            100% {
-                transform: scaleX(0);
-            }
-        }
-        /* UNDERLINE 2 ANIMATION */
-        @keyframes underline-2 {
-            100% {
-                transform: scaleX(1);
-            }
-        }
-
-        /* TITLE SPAN ANIMATION */
-        @keyframes brand-span {
-        100% {
-        color: orange;
-        }
-        }
-
-        /* TITLE P ANIMATION */
-        @keyframes loader-title {
-        100% {
-        gap: .5rem;
-        color: #f4f4f4;
-        }
-        }
+        
 
     </style>
 
@@ -1480,11 +1399,11 @@
     </div>
     
     <!-- PRELOADER SCRIPT -->
-    <script>
+    <!-- <script>
         setTimeout(function () {
             $('.loader_bg').fadeToggle();
         }, 4500);
-    </script>
+    </script> -->
 
     <script>
         const date = document.getElementById("date");
