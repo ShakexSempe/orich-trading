@@ -431,10 +431,6 @@
 
                         margin-bottom: .5rem;
                         transition: 250ms;
-
-                        &:hover {
-                            color: abstracts.$text-second;
-                        }
                     }
 
                     
@@ -478,7 +474,8 @@
                                 transition: .5s;
                             }
                             p {
-                                transition: .1s;
+                                transition: 250ms;
+                                color: abstracts.$text-light;
                             }
                         }
                     }

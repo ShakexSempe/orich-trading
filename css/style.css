@@ -1058,9 +1058,6 @@ img {
   margin-bottom: 0.5rem;
   transition: 250ms;
 }
-#about-page .vision-mission .mission p:hover {
-  color: #ffffff;
-}
 #about-page .vision-mission .mission .term {
   display: flex;
   flex-direction: column;
@@ -1096,7 +1093,8 @@ img {
   transition: 0.5s;
 }
 #about-page .vision-mission .mission .ms-item:hover p {
-  transition: 0.1s;
+  transition: 250ms;
+  color: #fff;
 }
 #about-page .vision-mission .mission .statement {
   padding: 0.5rem;
