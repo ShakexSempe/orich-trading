@@ -2582,38 +2582,36 @@ aside.active .social-links a {
   top: 50%;
   right: 0rem;
   transform: translateY(-50%);
-  font-size: 7rem;
   width: 8rem;
-  width: clamp(8rem, 20vw, 10rem);
+  width: clamp(8rem, 15vw, 10rem);
   height: auto;
-  color: rgba(179, 116, 0, 0.5);
   opacity: 0.05;
-  transition: 0.5s;
+  transition: 500ms;
   z-index: -1;
 }
 #references .references .reference h3 {
   text-transform: capitalize;
-  font-size: 1rem;
-  font-size: clamp(1rem, 2vw, 1.1rem);
+  font-size: 1.025rem;
+  font-size: clamp(1rem, 2vw, 1.125rem);
   font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+  text-wrap: balance;
 }
 #references .references .reference .card-item {
   text-transform: capitalize;
+  font-size: clamp(1rem, 2vw, 1.1rem);
   font-size: 1rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-#references .references .reference .card-item i {
-  width: 1.8rem;
-  color: #ffa500;
+  margin-bottom: 0.25rem;
 }
 #references .references .reference a {
   display: block;
   width: max-content;
   color: #595959;
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
 }
 #references .references .reference a:hover, #references .references .reference a:focus {
   color: #ffa500;
