@@ -26,8 +26,9 @@
         padding: 1rem .5rem;
         margin: 1rem 0 2rem;
         width: 100%;
-        border: 1px solid transparent;
-        outline: 1px solid #000;
+        border: none;
+        outline: 1px solid abstracts.$brand;
+        outline: 1px solid transparent;
         background-color: #333;
         color: #f4f4f4;
         border-radius: abstracts.$border-radius-xsm;
@@ -39,9 +40,9 @@
         }
 
         &:valid {
-            outline-color: abstracts.$brand-light;
-            // border-color: abstracts.$brand;
+            outline-color: #fff6;
         }
+        
 
         &::placeholder {
             opacity: 0;
@@ -51,13 +52,18 @@
         }
         
         // INPUT HOVER EFFECT
-        &:hover, &:focus {
-            border-bottom-color: abstracts.$brand-light;
+        &:focus {
+            // border-bottom-color: abstracts.$brand-light;
+            outline-color: abstracts.$brand-light;
 
+        }
+
+        &:hover, &:focus {
             &::placeholder {
                 opacity: 1;
                 transform: translateX(0rem);
             }
+
         }
     }
     
