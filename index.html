@@ -770,7 +770,22 @@
 
                     <!-- BANNER ITEM 1 -->
                     <figure>
-                        <img class="banner-image" src="img/orich-partners2.jpg" loading="lazy" width="621" height="753" alt="Orich Partners">
+                        <picture>
+                            <source
+                                media="(min-width: 430.1px)"
+                                width="500"
+                                height="443"
+                                srcset="img/orich-partners_desktop.webp"
+                                >
+                                <source
+                                type="image/webp"
+                                media="(max-width: 430px)"
+                                width="488"
+                                height="580"
+                                srcset="img/orich-partners_mobile.webp"
+                            >
+                            <img class="banner-image" src="img/orich-partners_mobile.jpg" loading="lazy" width="500" height="443" alt="Orich Partners">
+                        </picture>
                         
                         <div class="banner-content">
 
@@ -797,18 +812,41 @@
 
                     <!-- BANNER ITEM 2 -->
                     <figure>
-                        <img class="banner-image" src="img/orich-team.jpg" loading="lazy" width="1280" height="960" alt="Orich Construction Team">
+                        <picture>
+                            <source
+                                media="(min-width: 430.1px)"
+                                width="500"
+                                height="443"
+                                srcset="img/orich-team_desktop.webp"
+                                >
+                                <source
+                                type="image/webp"
+                                media="(max-width: 430px)"
+                                width="488"
+                                height="580"
+                                srcset="img/orich-team_mobile.webp"
+                            >
+                        <img class="banner-image" src="img/orich-team_mobile.jpg" loading="lazy" width="500" height="428" alt="Orich Construction Team">
+                            
+                        </picture>
                         <div class="banner-content">
+                            
                             <div class="banner-image-title">
+                                
                                 <h3>orich team</h3>
+                                
                                 <div class="flex-container">
+                                    
                                     <div class="flex-item item1">
                                         <a href="mailto:info@orichtrading.co.za">
                                             <img class="icon" src="icons/solid/icons8-envelope-48-brand.png" height="48" width="48" alt="envelope icon">
                                             info@orichtrading.co.za</a>
                                     </div>
+
                                 </div>
+
                             </div>
+
                         </div>
                     </figure>
 
