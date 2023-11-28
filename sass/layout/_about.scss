@@ -115,6 +115,7 @@
 
                         p {
                             color: abstracts.$text-second;
+                            font-family: abstracts.$font-content;
                         }
 
                         // VIEW SERVICES LINK
@@ -125,6 +126,8 @@
                             justify-content: space-between;
                             align-items: center;
                             gap: .5rem;
+                            text-decoration: underline;
+                            
 
                             i {
                                 font-size: .85rem;

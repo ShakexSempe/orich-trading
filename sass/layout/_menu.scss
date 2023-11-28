@@ -172,6 +172,7 @@
     // border: 2px solid blue;
     padding: 10vh 5vw;
     position: relative;
+    font-family: abstracts.$font-content;
     // CTA SECTION TITLE
     // ANIMATED BOTTOM BORDER GRADIENT UNDERLINE TRANSITION IN VIA IO
     h3 {
@@ -289,11 +290,13 @@
 
         // ITEM TITLE = H4
         h4 {
+            font-family: abstracts.$font-brand;
             text-transform: capitalize;
             margin-bottom: .5rem;
             font-size: 1.25rem;
             font-size: abstracts.$font-clamp-md;
             transition: .25s;
+
             @include abstracts.sm {
                 margin-bottom: 1rem;
             }

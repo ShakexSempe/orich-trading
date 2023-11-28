@@ -36,6 +36,7 @@
     .footer-copyright {
         text-transform: capitalize;
         p {
+            font-family: abstracts.$font-content;
             // font-size: abstracts.$font-clamp-xsm;
             @include abstracts.lg {
                 margin-bottom: .25rem;
@@ -61,6 +62,7 @@
             }
             
             li {
+                font-family: abstracts.$font-content;
                 display: flex;
                 align-items: center;
                 gap: .5rem;

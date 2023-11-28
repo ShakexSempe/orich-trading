@@ -821,6 +821,7 @@ img {
 }
 .about .vision-mission .mission .statement .mission-content p {
   color: #ffffff;
+  font-family: "Content", sans-serif;
 }
 .about .vision-mission .mission .statement .mission-content a {
   text-transform: capitalize;
@@ -829,6 +830,7 @@ img {
   justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
+  text-decoration: underline;
 }
 .about .vision-mission .mission .statement .mission-content a i {
   font-size: 0.85rem;
@@ -1437,6 +1439,9 @@ img {
 .footer .footer-copyright {
   text-transform: capitalize;
 }
+.footer .footer-copyright p {
+  font-family: "Content", sans-serif;
+}
 @media (min-width: 820px) {
   .footer .footer-copyright p {
     margin-bottom: 0.25rem;
@@ -1456,6 +1461,7 @@ img {
   text-transform: capitalize;
 }
 .footer .footer-item .footer-list li {
+  font-family: "Content", sans-serif;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -2287,6 +2293,7 @@ aside.active .social-links a {
 .menu-cta {
   padding: 10vh 5vw;
   position: relative;
+  font-family: "Content", sans-serif;
 }
 .menu-cta h3 {
   text-transform: capitalize;
@@ -2385,6 +2392,7 @@ aside.active .social-links a {
   }
 }
 .menu-cta .cta-item h4 {
+  font-family: "Prompt", sans-serif;
   text-transform: capitalize;
   margin-bottom: 0.5rem;
   font-size: 1.25rem;
@@ -2645,6 +2653,7 @@ aside.active .social-links a {
 }
 .services .section-description p {
   text-wrap: balance;
+  font-family: "Content", sans-serif;
 }
 .services .service-container .grid-container {
   display: grid;
