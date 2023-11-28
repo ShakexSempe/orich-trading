@@ -2294,7 +2294,6 @@ aside.active .social-links a {
 .menu-cta {
   padding: 10vh 5vw;
   position: relative;
-  font-family: "Content", sans-serif;
 }
 .menu-cta h3 {
   text-transform: capitalize;
@@ -2393,7 +2392,6 @@ aside.active .social-links a {
   }
 }
 .menu-cta .cta-item h4 {
-  font-family: "Prompt", sans-serif;
   text-transform: capitalize;
   margin-bottom: 0.5rem;
   font-size: 1.25rem;
@@ -2415,6 +2413,7 @@ aside.active .social-links a {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  font-family: "Content", sans-serif;
 }
 @media (min-width: 500px) {
   .menu-cta .cta-item ul li {
