@@ -34,6 +34,13 @@
   font-weight: 700;
   font-display: swap;
 }
+@font-face {
+  font-family: "Content";
+  src: url("../fonts/Inter-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
 body {
   font-family: "Prompt", sans-serif;
 }
@@ -169,7 +176,7 @@ h3 {
 p {
   font-size: clamp(1rem, 2vw, 1.1rem);
   font-weight: 300;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 a {
@@ -851,6 +858,7 @@ img {
 .about-article {
   margin: 5vh 1rem 10vh 5vw;
   text-transform: none;
+  font-family: "Content", sans-serif;
 }
 @media (min-width: 500px) {
   .about-article {
@@ -869,6 +877,7 @@ img {
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  font-family: "Prompt", sans-serif;
 }
 .about-article .article-body .body-title a .icon {
   height: auto;
@@ -877,9 +886,6 @@ img {
 .about-article .article-body .body-title a:hover .icon, .about-article .article-body .body-title a:focus .icon {
   opacity: 1;
   transform: translateX(-0.5rem);
-}
-.about-article p {
-  font-weight: 300;
 }
 .about-article p.article-intro {
   text-wrap: balance;
@@ -907,7 +913,7 @@ img {
   list-style: none;
   text-transform: capitalize;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   font-size: clamp(1rem, 2vw, 1.1rem);
   margin-bottom: 0.25rem;
 }
@@ -1978,6 +1984,7 @@ aside .social-links {
   padding: 0.5rem;
   border-radius: 0.5rem;
   border: 2px solid #fff2;
+  font-family: "Content", sans-serif;
 }
 aside .social-links a {
   width: 100%;
@@ -2119,6 +2126,9 @@ aside.active .social-links a {
     display: block;
   }
 }
+.hero-title .slogan p {
+  line-height: 1.6;
+}
 .hero-title .slogan .hero-meta {
   color: #cccccc;
   font-weight: 200;
@@ -2206,6 +2216,7 @@ aside.active .social-links a {
 .menu-item .menu-item-title p {
   font-size: clamp(1rem, 2vw, 1.1rem);
   font-weight: 300;
+  font-family: "Content", sans-serif;
 }
 .menu-item .menu-image {
   position: relative;
