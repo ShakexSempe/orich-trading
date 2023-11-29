@@ -385,6 +385,7 @@
                     ul {
                         // LI ITEMS SEPARATED BY BOTTOM PADDING + BORDER
                         li {
+                            font-family: abstracts.$font-content;
                             margin-bottom: 1rem;
                             padding: .25rem 0rem .5rem .25rem;
                             font-weight: 400;
@@ -420,7 +421,6 @@
                     @include abstracts.md {
                         padding: 15vh 5vw;
                     }
-                    
 
                     h4 {
                         color: #000;
@@ -434,12 +434,10 @@
 
                     p {
                         color: abstracts.$text-second-light;
-
+                        font-family: abstracts.$font-content;
                         margin-bottom: .5rem;
                         transition: 250ms;
                     }
-
-                    
 
                     .term {
                         display: flex;
@@ -498,7 +496,6 @@
                         }
                     }
 
-                    
                 }
 
             }

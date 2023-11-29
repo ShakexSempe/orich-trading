@@ -1025,6 +1025,7 @@ img {
   width: fit-content;
 }
 #about-page .vision-mission .vision ul li {
+  font-family: "Content", sans-serif;
   margin-bottom: 1rem;
   padding: 0.25rem 0rem 0.5rem 0.25rem;
   font-weight: 400;
@@ -1066,6 +1067,7 @@ img {
 }
 #about-page .vision-mission .mission p {
   color: #cccccc;
+  font-family: "Content", sans-serif;
   margin-bottom: 0.5rem;
   transition: 250ms;
 }
