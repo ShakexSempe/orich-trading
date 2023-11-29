@@ -1454,7 +1454,7 @@ img {
 }
 .footer .footer-item .footer-item-title {
   text-transform: capitalize;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 .footer .footer-item .footer-list {
   list-style: none;
@@ -1467,11 +1467,11 @@ img {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin-bottom: 0.15rem;
+  margin-bottom: 0.5rem;
 }
 @media (min-width: 820px) {
   .footer .footer-item .footer-list li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
 }
 .footer .footer-item .footer-list li i {
