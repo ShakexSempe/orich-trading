@@ -13,10 +13,11 @@
     // INTRO P BEFORE SERVICE ITEMS
     .section-description {
         margin-bottom: 2rem;
+        
         @include abstracts.md {
             margin: 2rem 0 4rem;
         }
-
+        
         p {
             text-wrap: balance;
             font-family: abstracts.$font-content;
@@ -26,7 +27,6 @@
     .service-container {
 
         .grid-container {
-            // border: 3px solid red;
             display: grid;
             margin: 10vh auto;
             gap: 10vh;
@@ -38,9 +38,11 @@
                 column-gap: 2rem;
                 row-gap: 4rem;
             }
+
             @include abstracts.xlg {
                 grid-template-columns: repeat(3, 1fr);
             }
+
         }
 
         // SERVICE ITEM = FLEX CONTAINER WITH TITLE + CONTENT[UL] 
@@ -52,7 +54,8 @@
             border-radius: abstracts.$border-radius-sm;
             position: relative;
             isolation: isolate;
-            transition: .25s;
+            transition: 250ms;
+
             // DESKTOP ITEM STYLE
             @include abstracts.md {
                 padding: 0rem 1rem 4rem;
@@ -129,23 +132,27 @@
             // SERVICES TYPE = UL OF SERVICE ITEMS 
             // PADDING ON THIS ELEMENT FOR WHITESPACE
             .service-type {
-                padding: 0 1rem;
-                outline-color: blue;    
+                // padding: 0 1rem;    
 
                 @include abstracts.md {
                     // flex-basis: 50%;
                 }
                 ul {
                     padding: 1rem 0;
+
                     li {
-                        margin: .5rem 0;
+                        margin: 0.5rem 0;
                         text-transform: capitalize;
                         font-weight: 400;
                         font-size: abstracts.$font-clamp-xsm;
+                        font-family: abstracts.$font-content;
                         transition: 1.5s;
                         border-bottom: 1px solid #ddd;
                         padding-bottom: .25rem;
                         list-style-type: square;
+                        list-style: none;
+                        text-wrap: balance;
+                        // border: 1px solid red;
                         // LIST MARKER TRANSPARENT THEN VISIBLE ON HOVER
                         &::marker {
                             color: #ddd;
@@ -172,16 +179,13 @@
                             width: 50%;
                         }
                         a {
+                            text-decoration: underline abstracts.$brand-light;
+                            text-underline-offset: 2px;
                             display: block;
-                            transition: .25s;
+                            transition: 250ms;
                             &:hover, &:focus {
                                 color: abstracts.$brand;
                             }
-                        }
-                        i {
-                            transition: .25s;
-                            color: #000;
-                            opacity: .4;
                         }
 
                         .icon {
@@ -246,6 +250,7 @@
                 }
             } 
         }
+
     }
 
 }
@@ -296,6 +301,7 @@
                 p {
                     color: #ddd;
                     font-weight: 400;
+                    font-family: abstracts.$font-content;
                 }
     
                 // BRAND BOTTOM BORDER

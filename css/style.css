@@ -2688,7 +2688,7 @@ aside.active .social-links a {
   border-radius: 0.5rem;
   position: relative;
   isolation: isolate;
-  transition: 0.25s;
+  transition: 250ms;
 }
 @media (min-width: 768px) {
   .services .service-container .service-item {
@@ -2739,10 +2739,6 @@ aside.active .social-links a {
   transition: 0.3s;
   filter: drop-shadow(0.1rem 0.25rem 0.125rem rgba(0, 0, 0, 0.2));
 }
-.services .service-container .service-item .service-type {
-  padding: 0 1rem;
-  outline-color: blue;
-}
 .services .service-container .service-item .service-type ul {
   padding: 1rem 0;
 }
@@ -2751,10 +2747,13 @@ aside.active .social-links a {
   text-transform: capitalize;
   font-weight: 400;
   font-size: clamp(.98rem, 1.25vw, 1.125rem);
+  font-family: "Content", sans-serif;
   transition: 1.5s;
   border-bottom: 1px solid #ddd;
   padding-bottom: 0.25rem;
   list-style-type: square;
+  list-style: none;
+  text-wrap: balance;
 }
 .services .service-container .service-item .service-type ul li::marker {
   color: #ddd;
@@ -2779,16 +2778,13 @@ aside.active .social-links a {
   }
 }
 .services .service-container .service-item .service-type ul .service-cta a {
+  text-decoration: underline #ffa500;
+  text-underline-offset: 2px;
   display: block;
-  transition: 0.25s;
+  transition: 250ms;
 }
 .services .service-container .service-item .service-type ul .service-cta a:hover, .services .service-container .service-item .service-type ul .service-cta a:focus {
   color: #f8650c;
-}
-.services .service-container .service-item .service-type ul .service-cta i {
-  transition: 0.25s;
-  color: #000;
-  opacity: 0.4;
 }
 .services .service-container .service-item .service-type ul .service-cta .icon {
   opacity: 0.7;
@@ -2875,6 +2871,7 @@ aside.active .social-links a {
 #services-page .promise ul li p {
   color: #ddd;
   font-weight: 400;
+  font-family: "Content", sans-serif;
 }
 #services-page .promise ul li::after {
   position: absolute;

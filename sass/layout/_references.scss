@@ -8,6 +8,7 @@
     @include abstracts.lg {
         padding: 20vh 5vw;
     }
+    
     // GRID CONTAINER - 3 COLUMNS ON WIDE SCREENS & 1 COLUMN ON SMALLER SCREENS
     .references {
         display: grid;
@@ -108,5 +109,7 @@
                 }
             }
         }
+
     }
+
 }
