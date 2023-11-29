@@ -1362,6 +1362,7 @@ img {
   color: #fff;
   line-height: 2;
   transition: 0.25s;
+  font-weight: 400;
 }
 #contact .contact-items .contact-item .contact-info p span {
   font-weight: 500;
@@ -1374,12 +1375,15 @@ img {
   transition: 0.25s;
 }
 #contact .contact-items .contact-item .contact-info a {
+  font-family: "Content", sans-serif;
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline #f8650c;
+  text-underline-offset: 2px;
   transition: 0.25s;
 }
 #contact .contact-items .contact-item .contact-info a:hover, #contact .contact-items .contact-item .contact-info a:focus {
   color: #ffa500;
+  text-decoration-color: transparent;
 }
 #contact .contact-items .contact-item .contact-info .item-button {
   margin: 1rem 0 0.5rem;
