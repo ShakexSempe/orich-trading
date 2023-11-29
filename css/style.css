@@ -1392,6 +1392,7 @@ img {
 }
 #contact .contact-items .contact-item .contact-info .item-button a {
   color: #000;
+  text-decoration: none;
 }
 #contact .contact-items .contact-item .contact-info .item-button:active a .icon {
   transform: rotate(10deg);
