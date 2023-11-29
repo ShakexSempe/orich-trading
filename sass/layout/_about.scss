@@ -239,23 +239,23 @@
             position: relative;
             border-radius: .25rem;
             background: linear-gradient(90deg, #ddd, #fff);
+            
             li {
                 position: relative;
                 list-style: none;
-                text-transform: capitalize;
-                font-size: 1rem;
-                font-weight: 500;
-                font-family: abstracts.$font-brand;
-                font-size: abstracts.$font-clamp-sm;
                 margin-bottom: .25rem;
-                // border: 1px solid blue;
+                
+                font-family: abstracts.$font-brand;
+                font-size: 1rem;
+                font-size: abstracts.$font-clamp-sm;
+                font-weight: 500;
+                text-transform: capitalize;
 
                 a {
                     width: 70%;
                     display: flex;
                     align-items: center;
                     gap: 1.5rem;
-                    // border: 1px solid red;
 
                     .icon {
                         opacity: 0;
@@ -270,7 +270,6 @@
                 }
             }
 
-            
         }
     }
 

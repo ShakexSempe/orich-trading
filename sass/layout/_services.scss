@@ -13,7 +13,7 @@
     // INTRO P BEFORE SERVICE ITEMS
     .section-description {
         margin-bottom: 2rem;
-        
+        text-wrap: balance;
         @include abstracts.md {
             margin: 2rem 0 4rem;
         }
