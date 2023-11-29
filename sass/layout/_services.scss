@@ -141,23 +141,32 @@
                     padding: 1rem 0;
 
                     li {
-                        margin: 0.5rem 0;
+                        // margin: 0 0 0.5rem;
+                        // padding-bottom: .25rem;
+                        // margin-bottom: 0.75rem;
+                        padding: 0.5rem 0;
+
                         text-transform: capitalize;
+                        text-wrap: balance;
+                        
                         font-weight: 400;
                         font-size: abstracts.$font-clamp-xsm;
                         font-family: abstracts.$font-content;
-                        transition: 1.5s;
-                        border-bottom: 1px solid #ddd;
-                        padding-bottom: .25rem;
+                        
+                        // border-bottom: 1px solid #ddd;
+                        // background-color: yellow;
+                        
                         list-style-type: square;
                         list-style: none;
-                        text-wrap: balance;
-                        // border: 1px solid red;
-                        // LIST MARKER TRANSPARENT THEN VISIBLE ON HOVER
-                        &::marker {
-                            color: #ddd;
-                            
-                            transition: .5s;
+                        transition: 1.5s;
+
+
+                        &:nth-child(2n) {
+                            background-color: #f4f4f4;
+                            border-bottom-color: transparent;
+                        }
+                        &:last-child {
+                            background-color: #ffff;
                         }
                     }
 
@@ -167,8 +176,8 @@
                         overflow: hidden;
                         display: flex;
                         align-items: center;
-                        margin: .5rem 0 0;
-                        padding-top: .5rem;
+                        margin: 1rem 0 0;
+                        padding-block: .5rem;
                         gap: .5rem;
 
                         

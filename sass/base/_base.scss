@@ -188,6 +188,7 @@ a {
     display: inline-block;
     width: 1rem;
     width: clamp(1rem, 3vw, 1.0125rem);
-    height: 100%;
+    height: 1rem;
+    height: clamp(1rem, 3vh, 1.0125rem);
     transition: 0.25s;
 }
