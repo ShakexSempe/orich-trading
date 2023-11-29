@@ -38,16 +38,13 @@
             isolation: isolate;
             box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .125);
             text-wrap: balance;
+            transition: 250ms;
 
             // DESKTOP CARD STYLE
             // BIGGER PADDING AND FLEX P[ICON + P]
             @include abstracts.md {
                 padding: 1rem;
-                p {
-                    display: flex;
-                    align-items: center;
-                    align-items:start;
-                }
+                
             }
             // CARD WATERMARK ICON - ICON DARKENS ON HOVER
             .item-icon {
@@ -61,7 +58,7 @@
                 height: auto;
                 
                 opacity: 0.05;
-                transition: 500ms;
+                transition: 250ms;
                 z-index: -1;
             }
             
@@ -73,7 +70,10 @@
                 font-weight: 600;
                 line-height: 1.5;
                 margin-bottom: 0.75rem;
-                text-wrap: balance;
+            }
+
+            p {
+                font-family: abstracts.$font-content;
             }
 
             // CARD-ITEM = P
@@ -84,7 +84,6 @@
                 display: flex;
                 align-items: center;
                 gap: 0.5rem;
-                margin-bottom: 0.25rem;
 
             }
 
@@ -103,8 +102,9 @@
             // CARD HOVER STATE
             // WATERMARK OPACITY INCREASE
             &:hover {
+                transform: scale(1.0125);
                 .item-icon {
-                    opacity: 0.085;
+                    opacity: 0.1;
                 }
             }
         }

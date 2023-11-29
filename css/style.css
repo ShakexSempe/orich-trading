@@ -2593,15 +2593,11 @@ aside.active .social-links a {
   isolation: isolate;
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.125);
   text-wrap: balance;
+  transition: 250ms;
 }
 @media (min-width: 768px) {
   #references .references .reference {
     padding: 1rem;
-  }
-  #references .references .reference p {
-    display: flex;
-    align-items: center;
-    align-items: start;
   }
 }
 #references .references .reference .item-icon {
@@ -2613,7 +2609,7 @@ aside.active .social-links a {
   width: clamp(8rem, 15vw, 10rem);
   height: auto;
   opacity: 0.05;
-  transition: 500ms;
+  transition: 250ms;
   z-index: -1;
 }
 #references .references .reference h3 {
@@ -2623,7 +2619,9 @@ aside.active .social-links a {
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 0.75rem;
-  text-wrap: balance;
+}
+#references .references .reference p {
+  font-family: "Content", sans-serif;
 }
 #references .references .reference .card-item {
   text-transform: capitalize;
@@ -2632,7 +2630,6 @@ aside.active .social-links a {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin-bottom: 0.25rem;
 }
 #references .references .reference a {
   display: block;
@@ -2643,8 +2640,11 @@ aside.active .social-links a {
 #references .references .reference a:hover, #references .references .reference a:focus {
   color: #ffa500;
 }
+#references .references .reference:hover {
+  transform: scale(1.0125);
+}
 #references .references .reference:hover .item-icon {
-  opacity: 0.085;
+  opacity: 0.1;
 }
 
 .services {
