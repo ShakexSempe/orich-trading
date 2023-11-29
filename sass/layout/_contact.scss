@@ -133,6 +133,16 @@
                     a {
                         color: abstracts.$text-main;
                     }
+
+                    &:active {
+                        a {
+                            .icon {
+                                transform: rotate(10deg);
+                            }
+
+                        }
+                    }
+
                 }
 
                 // CONTACT INFO HOVER

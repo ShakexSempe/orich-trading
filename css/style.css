@@ -1391,6 +1391,9 @@ img {
 #contact .contact-items .contact-item .contact-info .item-button a {
   color: #000;
 }
+#contact .contact-items .contact-item .contact-info .item-button:active a .icon {
+  transform: rotate(10deg);
+}
 #contact .contact-items .contact-item .contact-info:hover {
   outline-color: #ffa500;
 }
