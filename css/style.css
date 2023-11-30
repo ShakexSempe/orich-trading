@@ -552,7 +552,8 @@ img {
   opacity: 0;
   color: #ddd;
   transform: translateX(0.5rem);
-  transition: 0.5s;
+  transition: 500ms;
+  text-transform: capitalize;
 }
 #form input:focus, #form textarea:focus {
   outline-color: #ffa500;

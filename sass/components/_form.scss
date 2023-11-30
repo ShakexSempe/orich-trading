@@ -48,7 +48,8 @@
             opacity: 0;
             color: #ddd;
             transform: translateX(.5rem);
-            transition: .5s;
+            transition: 500ms;
+            text-transform: capitalize;
         }
         
         // INPUT HOVER EFFECT
