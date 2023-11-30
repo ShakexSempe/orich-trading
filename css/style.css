@@ -2147,6 +2147,7 @@ aside.active .social-links a {
 }
 .hero-title .slogan p {
   line-height: 1.6;
+  font-family: "Content", sans-serif;
 }
 .hero-title .slogan .hero-meta {
   color: #cccccc;
