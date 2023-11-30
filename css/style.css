@@ -2749,7 +2749,7 @@ aside.active .social-links a {
   padding: 1rem 0;
 }
 .services .service-container .service-item .service-type ul li {
-  padding: 0.5rem 0;
+  padding: 0.5rem 0.125rem;
   text-transform: capitalize;
   text-wrap: balance;
   font-weight: 400;
@@ -2758,10 +2758,10 @@ aside.active .social-links a {
   list-style-type: square;
   list-style: none;
   transition: 1.5s;
+  background-color: #f4f4f4;
 }
 .services .service-container .service-item .service-type ul li:nth-child(2n) {
-  background-color: #f4f4f4;
-  border-bottom-color: transparent;
+  background-color: #fafafa;
 }
 .services .service-container .service-item .service-type ul li:last-child {
   background-color: #ffff;
