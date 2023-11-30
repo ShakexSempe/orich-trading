@@ -2381,7 +2381,7 @@ aside.active .social-links a {
 }
 .menu-cta .grid-container {
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 0;
   grid-template-columns: repeat(1, 1fr);
 }
 @media (min-width: 820px) {

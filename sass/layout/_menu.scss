@@ -265,7 +265,7 @@
     // 1 COLUMN GRID EXPANDS TO 3 COLUMNS ON WIDER SCREENS
     // GRID MIXIN GRID(COLUMNS,GAP);
     .grid-container {
-        @include abstracts.grid(1, 1rem);
+        @include abstracts.grid(1, 0);
         
         // 3 COLUMN GRID MEDIA QUERY
         @include abstracts.lg {
@@ -279,7 +279,7 @@
     .cta-item {
         position: relative;
         isolation: isolate;
-        border-radius: .25rem;
+        border-radius: 0.25rem;
         padding: 1rem;
         color: abstracts.$text-second;
 
