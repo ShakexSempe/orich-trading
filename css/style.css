@@ -1618,8 +1618,8 @@ img {
   background: transparent;
 }
 #header.hero-header {
-  height: 25vh;
   height: 10rem;
+  height: 20vh;
   padding: 1rem 5vw;
 }
 #header.hero-header::after {
