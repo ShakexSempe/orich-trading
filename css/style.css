@@ -1615,8 +1615,8 @@ img {
   background: transparent;
 }
 #header.hero-header {
-  height: 10rem;
   height: 20vh;
+  height: 10rem;
   padding: 1rem 5vw;
 }
 #header.hero-header::after {
@@ -2170,7 +2170,7 @@ aside.active .social-links a {
   color: #ffa500;
 }
 .hero-title .slogan #cta .cta-btn {
-  font-size: 1.015rem;
+  font-size: 1rem;
   font-size: clamp(1rem, 2vw, 1.1rem);
   width: 12rem;
   max-height: 4rem;

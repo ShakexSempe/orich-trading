@@ -59,8 +59,8 @@
     }
     // HERO SECTION HEADER STYLE
     &.hero-header {
-        height: 10rem;
         height: 20vh;
+        height: 10rem;
         padding: 1rem 5vw;
         // TRANSPARENT BG WHEN HERO IN VIEW
         &::after {
