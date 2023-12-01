@@ -829,10 +829,6 @@ img {
 .about .vision-mission .mission .statement .mission-content a {
   text-transform: capitalize;
   color: #ffa500;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.5rem;
   text-decoration: underline;
 }
 .about .vision-mission .mission .statement .mission-content a i {
@@ -2747,7 +2743,7 @@ aside.active .social-links a {
   filter: drop-shadow(0.1rem 0.25rem 0.125rem rgba(0, 0, 0, 0.2));
 }
 .services .service-container .service-item .service-type ul {
-  padding: 1rem 0;
+  margin-top: 1rem;
 }
 .services .service-container .service-item .service-type ul li {
   padding: 0.5rem 0.125rem;
@@ -2756,7 +2752,6 @@ aside.active .social-links a {
   font-weight: 400;
   font-size: clamp(.98rem, 1.25vw, 1.125rem);
   font-family: "Content", sans-serif;
-  list-style-type: square;
   list-style: none;
   transition: 1.5s;
   background-color: #f4f4f4;

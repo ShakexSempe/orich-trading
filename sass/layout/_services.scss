@@ -138,12 +138,9 @@
                     // flex-basis: 50%;
                 }
                 ul {
-                    padding: 1rem 0;
-
+                    margin-top: 1rem;
+                    
                     li {
-                        // margin: 0 0 0.5rem;
-                        // padding-bottom: .25rem;
-                        // margin-bottom: 0.75rem;
                         padding: 0.5rem 0.125rem;
 
                         text-transform: capitalize;
@@ -153,10 +150,6 @@
                         font-size: abstracts.$font-clamp-xsm;
                         font-family: abstracts.$font-content;
                         
-                        // border-bottom: 1px solid #ddd;
-                        // background-color: yellow;
-                        
-                        list-style-type: square;
                         list-style: none;
                         transition: 1.5s;
                         background-color: #f4f4f4;
