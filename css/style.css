@@ -379,9 +379,10 @@ img {
   color: #000;
   border: none;
   border-radius: 0.5rem;
-  font-size: 1rem;
+  font-family: "Content", sans-serif;
+  font-size: 0.75rem;
   font-size: clamp(.98rem, 1.25vw, 1.125rem);
-  font-weight: 500;
+  font-weight: bold;
   letter-spacing: 0.0125rem;
   text-decoration: none;
   text-transform: capitalize;
