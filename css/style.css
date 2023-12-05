@@ -565,6 +565,7 @@ img {
 }
 #form button {
   font-family: inherit;
+  font-weight: 500;
 }
 #form button:active .icon, #form button:focus .icon, #form button:hover .icon {
   transform: rotate(20deg) translateX(0.25rem);
