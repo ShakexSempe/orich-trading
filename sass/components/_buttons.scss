@@ -19,8 +19,8 @@ $btn-lg : clamp(12rem, 20vw, 14rem);
     width: 11rem;
     // height: 4rem;
     width: clamp(11rem, 15vw, 12rem);
-    padding: .6rem 1rem;
-    margin: .5rem 0;
+    padding: 0.75rem 1rem;
+    margin: 0.5rem 0;
 
     background: abstracts.$brand-light;
     color: #000;

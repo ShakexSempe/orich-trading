@@ -373,7 +373,7 @@ img {
   align-items: center;
   width: 11rem;
   width: clamp(11rem, 15vw, 12rem);
-  padding: 0.6rem 1rem;
+  padding: 0.75rem 1rem;
   margin: 0.5rem 0;
   background: #ffa500;
   color: #000;
@@ -2144,7 +2144,6 @@ aside.active .social-links a {
 }
 .hero-title .slogan p {
   line-height: 1.6;
-  font-family: "Content", sans-serif;
 }
 .hero-title .slogan .hero-meta {
   color: #cccccc;
