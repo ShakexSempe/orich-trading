@@ -71,10 +71,11 @@
 
         h1 {
             font-weight: 600;
-            font-size: 1.1rem;
-            font-size: clamp(1.1rem, 3vw, 2.25rem);
+            font-size: 1.05rem;
+            font-size: clamp(1.05rem, 3vw, 2.25rem);
             line-height: 1.2;
-            margin-bottom: .5rem;
+            margin-bottom: 0.5rem;
+            text-wrap: balance;
             br {
                 display: none;
             }
