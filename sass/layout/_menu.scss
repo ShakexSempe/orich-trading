@@ -41,7 +41,7 @@
 
     display: grid;
     height: 60vh;
-    max-height: 550px;
+    max-height: 350px;
     max-width: 550px;
     grid-template-rows: 1fr 70%;
     // DESKTOP GRID ROWS
@@ -270,6 +270,7 @@
         // 3 COLUMN GRID MEDIA QUERY
         @include abstracts.lg {
             grid-template-columns: 1fr 1fr 1fr;
+            gap: 1rem;
             margin-top: 10vh;
         }
     }

@@ -2215,7 +2215,7 @@ aside.active .social-links a {
   overflow: hidden;
   display: grid;
   height: 60vh;
-  max-height: 550px;
+  max-height: 350px;
   max-width: 550px;
   grid-template-rows: 1fr 70%;
 }
@@ -2385,6 +2385,7 @@ aside.active .social-links a {
 @media (min-width: 820px) {
   .menu-cta .grid-container {
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
     margin-top: 10vh;
   }
 }
