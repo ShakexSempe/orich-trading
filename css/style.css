@@ -381,7 +381,6 @@ img {
   border-radius: 0.5rem;
   font-family: "Content", sans-serif;
   font-size: 0.75rem;
-  font-size: clamp(.98rem, 1.25vw, 1.125rem);
   font-weight: bold;
   letter-spacing: 0.0125rem;
   text-decoration: none;
@@ -2171,8 +2170,8 @@ aside.active .social-links a {
   color: #ffa500;
 }
 .hero-title .slogan #cta .cta-btn {
-  font-size: 1rem;
-  font-size: clamp(1rem, 2vw, 1.1rem);
+  font-size: 0.85rem;
+  font-size: clamp(.98rem, 1.25vw, 1.125rem);
   width: 12rem;
   max-height: 4rem;
   width: clamp(11rem, 15vw, 15rem);
