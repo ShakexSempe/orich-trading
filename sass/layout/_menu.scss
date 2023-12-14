@@ -1,4 +1,5 @@
 @use '../abstracts';
+    $menu-cta-height: 2.5rem;
 
 // CORE SERVICES DISPLAY SECTION 
 // TITLE("CORE SERVICES") + GRID(3 ITEMS);
@@ -41,7 +42,7 @@
 
     display: grid;
     height: 60vh;
-    max-height: 350px;
+    max-height: 450px;
     max-width: 550px;
     grid-template-rows: 1fr 70%;
     // DESKTOP GRID ROWS
@@ -69,6 +70,23 @@
 
     }
 
+    .menu-item-cta {
+        // border: 2px solid abstracts.$brand;
+        background: #000;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        height: 3rem;
+        height: 0;
+        width: 100%;
+        
+        position: relative;
+        overflow: hidden;
+        transition: 500ms;
+        z-index: 5;
+    }
     // MENU IMAGE
     // ON HOVER = PSEUDO BACKGROUND WITH AN EMAIL .CTA TRANSITIONING INTO VIEW
     .menu-image {
@@ -79,16 +97,17 @@
         overflow: hidden;
         isolation: isolate;
 
-        img {
+        .menu-item-image {
             width: 100%;
             height: 100%;
             object-fit: cover;
             object-position: center;
-            transition: .5s;
-            // border: 2px solid blue;
+            transition: 500ms;
         }
 
-        a {
+        
+
+        .cta-btn {
             position: absolute;
             bottom: 1rem;
             left: 1rem;
@@ -96,13 +115,6 @@
             transition: .5s ease;
             z-index: 1;
 
-            i {
-                margin-left: .5rem;
-            }
-
-            img {
-                width: 1rem;
-            }
         }
 
         // BG OVERLAY
@@ -116,7 +128,7 @@
             left: 0;
             background: #0005;
             opacity: 0;
-            transition: .25s;
+            transition: 250ms;
             z-index: 1;
         }
 
@@ -152,7 +164,7 @@
         // WHEN IMAGE HOVERED = CTA TRANSITION IN AND OVERLAY OPACITY = 1
         &:hover,
         &:focus {
-            a {
+            .cta-btn {
                 transform: translateY(0);
             }
 
@@ -160,6 +172,23 @@
                 opacity: 1;
                 transition: .5s;
             }
+        }
+    }
+
+    &:hover {
+        .menu-image {
+            &::before {
+                opacity: 0.5;
+            }
+        }
+        .menu-item-cta {
+            height: $menu-cta-height;
+        }
+    }
+
+    &:has(a:focus) {
+        .menu-item-cta {
+            height: $menu-cta-height;
         }
     }
 }

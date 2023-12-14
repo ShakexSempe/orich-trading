@@ -6,9 +6,10 @@ $btn-lg : clamp(12rem, 20vw, 14rem);
 
 // ICONS 
 .icon {
-    width: 1.125rem;
+    width: 1.1rem;
     width: clamp(1rem, 3vw, 1.125rem);
-    height: 100%;
+    height: 1rem;
+    height: clamp(1rem, 3vw, 1.125rem);
 }
 
 .cta-btn {

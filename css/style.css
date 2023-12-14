@@ -362,9 +362,10 @@ img {
 }
 
 .icon {
-  width: 1.125rem;
+  width: 1.1rem;
   width: clamp(1rem, 3vw, 1.125rem);
-  height: 100%;
+  height: 1rem;
+  height: clamp(1rem, 3vw, 1.125rem);
 }
 
 .cta-btn {
@@ -2216,7 +2217,7 @@ aside.active .social-links a {
   overflow: hidden;
   display: grid;
   height: 60vh;
-  max-height: 350px;
+  max-height: 450px;
   max-width: 550px;
   grid-template-rows: 1fr 70%;
 }
@@ -2235,6 +2236,19 @@ aside.active .social-links a {
   font-weight: 300;
   font-family: "Content", sans-serif;
 }
+.menu-item .menu-item-cta {
+  background: #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 3rem;
+  height: 0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: 500ms;
+  z-index: 5;
+}
 .menu-item .menu-image {
   position: relative;
   border-bottom-left-radius: 0.25rem;
@@ -2242,26 +2256,20 @@ aside.active .social-links a {
   overflow: hidden;
   isolation: isolate;
 }
-.menu-item .menu-image img {
+.menu-item .menu-image .menu-item-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
-  transition: 0.5s;
+  transition: 500ms;
 }
-.menu-item .menu-image a {
+.menu-item .menu-image .cta-btn {
   position: absolute;
   bottom: 1rem;
   left: 1rem;
   transform: translateY(5rem);
   transition: 0.5s ease;
   z-index: 1;
-}
-.menu-item .menu-image a i {
-  margin-left: 0.5rem;
-}
-.menu-item .menu-image a img {
-  width: 1rem;
 }
 .menu-item .menu-image::before {
   content: "";
@@ -2272,7 +2280,7 @@ aside.active .social-links a {
   left: 0;
   background: #0005;
   opacity: 0;
-  transition: 0.25s;
+  transition: 250ms;
   z-index: 1;
 }
 .menu-item .menu-image::after {
@@ -2293,12 +2301,21 @@ aside.active .social-links a {
   transform: scale(1);
   transition: 2s;
 }
-.menu-item .menu-image:hover a, .menu-item .menu-image:focus a {
+.menu-item .menu-image:hover .cta-btn, .menu-item .menu-image:focus .cta-btn {
   transform: translateY(0);
 }
 .menu-item .menu-image:hover::before, .menu-item .menu-image:focus::before {
   opacity: 1;
   transition: 0.5s;
+}
+.menu-item:hover .menu-image::before {
+  opacity: 0.5;
+}
+.menu-item:hover .menu-item-cta {
+  height: 2.5rem;
+}
+.menu-item:has(a:focus) .menu-item-cta {
+  height: 2.5rem;
 }
 
 .menu-cta {
