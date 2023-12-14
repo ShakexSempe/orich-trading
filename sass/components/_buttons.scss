@@ -28,10 +28,9 @@ $btn-lg : clamp(12rem, 20vw, 14rem);
     border-radius: abstracts.$border-radius-sm;
 
     font-family: abstracts.$font-content;
-    font-size: 0.75rem;
-    // font-size: abstracts.$font-clamp-xsm;
-    font-weight: bold;
-    letter-spacing: .0125rem;
+    font-size: 0.85rem;
+    font-size: abstracts.$font-clamp-xsm;
+    font-weight: 600;
     text-decoration: none;
     text-transform: capitalize;
 
