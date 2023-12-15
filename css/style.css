@@ -354,7 +354,7 @@ img {
 }
 
 .active-icon a {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 .active-icon a img {
   position: absolute;
@@ -2249,6 +2249,13 @@ aside.active .social-links a {
   overflow: hidden;
   transition: 500ms;
   z-index: 5;
+}
+.menu-item .menu-item-cta a {
+  padding: 0.25rem 1rem;
+  border-radius: 0.25rem;
+}
+.menu-item .menu-item-cta a:hover {
+  background: #333;
 }
 .menu-item .menu-image {
   position: relative;
