@@ -221,7 +221,7 @@ img {
   position: fixed;
   z-index: 5;
   bottom: 0;
-  height: auto;
+  height: 7vh;
   width: 100%;
   padding: 0rem 5vw;
   background: #000;
@@ -245,7 +245,6 @@ img {
   display: grid;
   place-items: center;
   place-content: center;
-  padding: 1rem 0;
   border-radius: 1.5rem;
   cursor: default;
   position: relative;
@@ -271,16 +270,9 @@ img {
   transition: 0.25s;
   z-index: -1;
 }
-.bottom-nav .item a i {
-  font-size: 1rem;
-  color: #b3b3b3;
-  transition: 0.25s;
-}
 .bottom-nav .item a .icon {
-  width: 24px;
   width: 1.125rem;
-  height: 100%;
-  opacity: 0.7;
+  height: 1.125rem;
 }
 .bottom-nav .item a:active {
   transition: 0.25s;
@@ -289,12 +281,6 @@ img {
   transform: scaleX(1);
   transition: 0.125s;
   opacity: 0.5;
-}
-.bottom-nav .item a:hover i {
-  color: #fff;
-}
-.bottom-nav .item a:hover img {
-  opacity: 1;
 }
 .bottom-nav .item a:hover::after {
   animation: click 0.25s;
@@ -365,6 +351,22 @@ img {
   width: clamp(1rem, 3vw, 1.125rem);
   height: 1rem;
   height: clamp(1rem, 3vw, 1.125rem);
+}
+
+.active-icon a {
+  padding: 1rem;
+}
+.active-icon a img {
+  position: absolute;
+}
+.active-icon a img.solid-icon {
+  opacity: 0;
+}
+.active-icon a:hover .outline-icon {
+  opacity: 0;
+}
+.active-icon a:hover .solid-icon {
+  opacity: 1;
 }
 
 .cta-btn {

@@ -5,7 +5,7 @@
     position: fixed;
     z-index: 5;
     bottom: 0;
-    height: auto;
+    height: 7vh;
     width: 100%;
     // border: 2px solid green;
     padding: 0rem 5vw;
@@ -30,7 +30,7 @@
             display: grid;
             place-items: center;
             place-content: center;
-            padding: 1rem 0;
+            // padding: 1rem 0;
             border-radius: 1.5rem;
             cursor: default;
             position: relative;
@@ -55,17 +55,9 @@
                 z-index: -1;
             }
 
-            i {
-                font-size: 1rem;
-                color: #b3b3b3;
-                transition: .25s;
-            }
-
             .icon {
-                width: 24px;
                 width: 1.125rem;
-                height: 100%;
-                opacity: .7
+                height: 1.125rem;
             }
 
             &:active {
@@ -79,12 +71,6 @@
             }
             
             &:hover {
-                i {
-                    color: abstracts.$text-light;
-                }
-                img {
-                    opacity: 1;
-                }
                 &::after {
                 // animation: click .25s forwards;
                 animation: click .25s;

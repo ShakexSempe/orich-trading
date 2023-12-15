@@ -12,6 +12,34 @@ $btn-lg : clamp(12rem, 20vw, 14rem);
     height: clamp(1rem, 3vw, 1.125rem);
 }
 
+// ACTIVE ICON
+.active-icon {
+    
+    a {
+        padding: 1rem;
+
+        img {
+            position: absolute;
+            &.solid-icon {
+                opacity: 0;
+            }
+        }
+
+        &:hover {
+            .outline-icon {
+                opacity: 0;
+            }
+            .solid-icon {
+                opacity: 1;
+            }
+        }
+
+    }
+
+
+    
+}
+
 .cta-btn {
     display: flex;
     justify-content: space-between;
