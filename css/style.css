@@ -101,7 +101,7 @@ section {
   left: 0;
   width: 100%;
   height: 0.25rem;
-  background: linear-gradient(90deg, #f8670d, #ffa500, #f8670d);
+  background: linear-gradient(90deg, #f8670d, #ffc966, #f8670d);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   transition: 0.5s;
@@ -2236,7 +2236,6 @@ aside.active .social-links a {
   font-family: "Content", sans-serif;
 }
 .menu-item .menu-item-cta {
-  border: 2px solid #f8650c;
   background: #000;
   display: flex;
   justify-content: space-around;
@@ -2289,10 +2288,20 @@ aside.active .social-links a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 0.125rem;
-  background: linear-gradient(90deg, #f8670d, #ffa500, #f8670d);
-  transition: 1s;
+  height: 0.15rem;
+  background: linear-gradient(90deg, #f8670d, #ffc966, #f8670d);
+  background-size: 120%;
+  transition: 250ms;
   z-index: 3;
+  animation: bg-pulse 2000ms infinite;
+}
+@keyframes bg-pulse {
+  0%, 100% {
+    background-position: 150%;
+  }
+  50% {
+    background-position: -150%;
+  }
 }
 .menu-item .menu-image.io-item img {
   transform: scale(1.1);
@@ -2343,7 +2352,7 @@ aside.active .social-links a {
   left: 0;
   width: 100%;
   height: 0.25rem;
-  background: linear-gradient(90deg, #f8670d, #ffa500, #f8670d);
+  background: linear-gradient(90deg, #f8670d, #ffc966, #f8670d);
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   transition: 1.25s;
@@ -2908,7 +2917,7 @@ aside.active .social-links a {
   letter-spacing: normal;
 }
 #services-page .promise ul li:hover:after {
-  background: linear-gradient(90deg, #f8670d, #ffa500, #f8670d);
+  background: linear-gradient(90deg, #f8670d, #ffc966, #f8670d);
   transform: scaleX(1);
 }
 @media (min-width: 820px) {
