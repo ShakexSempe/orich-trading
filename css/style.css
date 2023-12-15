@@ -189,7 +189,6 @@ a:hover:not(.cta-btn, .skip-link), a:focus:not(.cta-btn, .skip-link) {
 }
 
 .icon {
-  display: inline-block;
   width: 1rem;
   width: clamp(1rem, 3vw, 1.0125rem);
   height: 1rem;
@@ -2237,6 +2236,7 @@ aside.active .social-links a {
   font-family: "Content", sans-serif;
 }
 .menu-item .menu-item-cta {
+  border: 2px solid #f8650c;
   background: #000;
   display: flex;
   justify-content: space-around;
@@ -2746,18 +2746,12 @@ aside.active .social-links a {
   font-weight: 500;
   transition: 0.5s ease;
 }
-.services .service-container .service-item .service-core i {
-  transform: translateY(-1rem);
-  padding: 0;
-  font-size: 2.5rem;
-  transition: 0.3s;
-  filter: drop-shadow(0.1rem 0.25rem 0.125rem rgba(0, 0, 0, 0.2));
-}
 .services .service-container .service-item .service-core img {
   width: 2.5rem;
+  height: 2.5rem;
   transform: translateY(-1rem);
   padding: 0;
-  transition: 0.3s;
+  transition: 250ms;
   filter: drop-shadow(0.1rem 0.25rem 0.125rem rgba(0, 0, 0, 0.2));
 }
 .services .service-container .service-item .service-type ul {
@@ -2843,9 +2837,9 @@ aside.active .social-links a {
   opacity: 1;
 }
 .services .service-container .service-item:hover .service-core i, .services .service-container .service-item:hover .service-core img {
-  transform: translateY(-0.25rem);
+  transform: translateY(-0.5rem);
   filter: drop-shadow(0rem 0.25rem 0.1rem rgba(0, 0, 0, 0.25));
-  transition: 0.5s ease;
+  transition: 500ms ease;
 }
 .services .service-container .service-item:hover .service-core h4 {
   color: #f8650c;
