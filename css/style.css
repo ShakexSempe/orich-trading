@@ -275,6 +275,9 @@ img {
   width: 1.125rem;
   height: 1.125rem;
 }
+.bottom-nav .item a .icon.outline-icon {
+  opacity: 0.8;
+}
 .bottom-nav .item a:active {
   transition: 0.25s;
 }
