@@ -99,12 +99,13 @@
             align-items: center;
             gap: 0.5rem;
             transition: 250ms;
+            
             &:hover, &:focus {
                 color: abstracts.$brand-light;
                 background: #333;
                 text-decoration-color: transparent;
             }
-
+            
         }
     }
     // MENU IMAGE
