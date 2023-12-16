@@ -2255,7 +2255,6 @@ aside.active .social-links a {
 .menu-item .menu-item-cta a {
   padding: 0.25rem 1rem;
   border-radius: 0.25rem;
-  color: #ffa500;
   color: #fff;
   text-transform: capitalize;
   text-decoration: underline #f8650c;
@@ -2266,6 +2265,7 @@ aside.active .social-links a {
   transition: 250ms;
 }
 .menu-item .menu-item-cta a:hover, .menu-item .menu-item-cta a:focus {
+  color: #ffa500;
   background: #333;
   text-decoration-color: transparent;
 }
