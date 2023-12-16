@@ -2241,8 +2241,9 @@ aside.active .social-links a {
 .menu-item .menu-item-cta {
   background: #000;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 2rem;
   height: 3rem;
   height: 0;
   width: 100%;
@@ -2254,9 +2255,19 @@ aside.active .social-links a {
 .menu-item .menu-item-cta a {
   padding: 0.25rem 1rem;
   border-radius: 0.25rem;
+  color: #ffa500;
+  color: #fff;
+  text-transform: capitalize;
+  text-decoration: underline #f8650c;
+  text-underline-offset: 2px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: 250ms;
 }
-.menu-item .menu-item-cta a:hover {
+.menu-item .menu-item-cta a:hover, .menu-item .menu-item-cta a:focus {
   background: #333;
+  text-decoration-color: transparent;
 }
 .menu-item .menu-image {
   position: relative;
