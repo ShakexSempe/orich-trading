@@ -8,7 +8,7 @@
     height: auto;
     height: 7vh;
     width: 100%;
-    border: 2px solid green;
+    // border: 2px solid green;
     padding: 0.25rem 5vw;
     // background: linear-gradient(0deg, #000, #111);
     background: #000;
@@ -21,7 +21,7 @@
     
     .item {
         width: 100%;
-        border: 1px solid yellow;
+        // border: 1px solid yellow;
 
         transform: translateY(10vh);
         border-radius: 1.5rem;
@@ -38,7 +38,7 @@
             color: #f4f4f4;
             padding: 1rem 0.5rem;
             border-radius: 1.5rem;
-            border: 1px solid red;
+            // border: 1px solid red;
             cursor: default;
             position: relative;
             isolation: isolate;
