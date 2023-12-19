@@ -1,0 +1,12 @@
+// CARD HOVER BOUNCE ANIMATION
+@keyframes card-hover {
+    0%, 70% , 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    80% {
+        transform: scale(1.025);
+    }
+}
