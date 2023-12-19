@@ -70,17 +70,31 @@
                 height: 100%;
                 border-radius: abstracts.$border-radius-sm;
                 z-index: -1;
-                transition: 1s;
+                transition: 350ms;
             }
             &::before {
                 border: 1px solid #0001;
                 box-shadow: .0125rem .5rem .5rem rgba(0, 0,0, .05);
             }
             &::after {
-                box-shadow: 
-                            0rem .215rem .5rem rgba(0, 0,0, .2);
+                background: hsl(0, 0%, 0%);
+                box-shadow: 0rem .225rem .25rem rgba(0, 0,0, .5);
                 opacity: 0;
             }
+
+            // ANIMATION KEYFRAMES
+            @keyframes card-hover {
+                0%, 70% , 100% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(1.1);
+                }
+                80% {
+                    transform: scale(1.05);
+                }
+            }
+
             // FLEX ITEM 1 = ICON + H4
             .service-core {
                 display: flex;
@@ -97,7 +111,7 @@
                     font-size: 1.25rem;
                     font-size: abstracts.$font-clamp-md;
                     font-weight: 500;
-                    transition: .5s ease;
+                    transition: 250ms ease;
 
                     // @include abstracts.md {
                     //     text-align: center;
@@ -122,11 +136,14 @@
                 @include abstracts.md {
                     // flex-basis: 50%;
                 }
+
                 ul {
                     margin-top: 1rem;
-                    
+                    border-radius: abstracts.$border-radius-xsm;
+                    overflow: hidden;
+
                     li {
-                        padding: 0.5rem 0.125rem;
+                        padding: 0.5rem 0.25rem;
 
                         text-transform: capitalize;
                         text-wrap: balance;
@@ -136,7 +153,8 @@
                         font-family: abstracts.$font-content;
                         
                         list-style: none;
-                        transition: 1.5s;
+                        
+                        transition: color 250ms, background 0s;
                         background-color: #f4f4f4;
 
 
@@ -146,6 +164,7 @@
 
                         &:last-child {
                             background-color: #ffff;
+                            background-color: transparent;
                         }
                     }
 
@@ -170,9 +189,11 @@
                             text-decoration: underline abstracts.$brand-light;
                             text-underline-offset: 2px;
                             display: block;
-                            transition: 250ms;
+                            transition: 0ms;
                             &:hover, &:focus {
-                                color: abstracts.$brand;
+                                color: abstracts.$brand-light;
+                                text-decoration-color: transparent;
+                                transition: 250ms;
                             }
                         }
 
@@ -204,8 +225,11 @@
             // END OF SCROLL
             // ITEM HOVER EFFECT
             &:hover {
-                transition: .25s ease-out;
+                transition: 250ms ease-out;
                 transform: scale(1.01);
+                animation: card-hover 350ms ease-in-out;
+
+                
 
                 @include abstracts.lg {
                     transform: scale(1.01);
@@ -229,6 +253,20 @@
                 // ON HOVER LIST ITEM MARKER CHANGE COLOR
                 .service-type {
                     ul {
+                        li {
+                            background: transparent;
+                            color: #fff;
+                            background-color: #333;
+
+
+                        &:nth-child(2n) {
+                            background-color: hsl(0, 0%, 30%);
+                        }
+
+                        &:last-child {
+                            background-color: transparent;
+                        }
+                        }
                         .service-cta {
                             .icon {
                                 opacity: 1;

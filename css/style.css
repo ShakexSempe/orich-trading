@@ -2758,15 +2758,27 @@ aside.active .social-links a {
   height: 100%;
   border-radius: 0.5rem;
   z-index: -1;
-  transition: 1s;
+  transition: 350ms;
 }
 .services .service-container .service-item::before {
   border: 1px solid #0001;
   box-shadow: 0.0125rem 0.5rem 0.5rem rgba(0, 0, 0, 0.05);
 }
 .services .service-container .service-item::after {
-  box-shadow: 0rem 0.215rem 0.5rem rgba(0, 0, 0, 0.2);
+  background: black;
+  box-shadow: 0rem 0.225rem 0.25rem rgba(0, 0, 0, 0.5);
   opacity: 0;
+}
+@keyframes card-hover {
+  0%, 70%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(1.05);
+  }
 }
 .services .service-container .service-item .service-core {
   display: flex;
@@ -2777,7 +2789,7 @@ aside.active .social-links a {
   font-size: 1.25rem;
   font-size: clamp(1.125rem, 2.25vw, 1.25rem);
   font-weight: 500;
-  transition: 0.5s ease;
+  transition: 250ms ease;
 }
 .services .service-container .service-item .service-core img {
   width: 2.5rem;
@@ -2789,16 +2801,18 @@ aside.active .social-links a {
 }
 .services .service-container .service-item .service-type ul {
   margin-top: 1rem;
+  border-radius: 0.25rem;
+  overflow: hidden;
 }
 .services .service-container .service-item .service-type ul li {
-  padding: 0.5rem 0.125rem;
+  padding: 0.5rem 0.25rem;
   text-transform: capitalize;
   text-wrap: balance;
   font-weight: 400;
   font-size: clamp(.98rem, 1.25vw, 1.125rem);
   font-family: "Content", sans-serif;
   list-style: none;
-  transition: 1.5s;
+  transition: color 250ms, background 0s;
   background-color: #f4f4f4;
 }
 .services .service-container .service-item .service-type ul li:nth-child(2n) {
@@ -2806,6 +2820,7 @@ aside.active .social-links a {
 }
 .services .service-container .service-item .service-type ul li:last-child {
   background-color: #ffff;
+  background-color: transparent;
 }
 .services .service-container .service-item .service-type ul .service-cta {
   border-bottom: none;
@@ -2829,10 +2844,12 @@ aside.active .social-links a {
   text-decoration: underline #ffa500;
   text-underline-offset: 2px;
   display: block;
-  transition: 250ms;
+  transition: 0ms;
 }
 .services .service-container .service-item .service-type ul .service-cta a:hover, .services .service-container .service-item .service-type ul .service-cta a:focus {
-  color: #f8650c;
+  color: #ffa500;
+  text-decoration-color: transparent;
+  transition: 250ms;
 }
 .services .service-container .service-item .service-type ul .service-cta .icon {
   opacity: 0.7;
@@ -2855,8 +2872,9 @@ aside.active .social-links a {
   opacity: 1;
 }
 .services .service-container .service-item:hover {
-  transition: 0.25s ease-out;
+  transition: 250ms ease-out;
   transform: scale(1.01);
+  animation: card-hover 350ms ease-in-out;
 }
 @media (min-width: 820px) {
   .services .service-container .service-item:hover {
@@ -2876,6 +2894,17 @@ aside.active .social-links a {
 }
 .services .service-container .service-item:hover .service-core h4 {
   color: #f8650c;
+}
+.services .service-container .service-item:hover .service-type ul li {
+  background: transparent;
+  color: #fff;
+  background-color: #333;
+}
+.services .service-container .service-item:hover .service-type ul li:nth-child(2n) {
+  background-color: #4d4d4d;
+}
+.services .service-container .service-item:hover .service-type ul li:last-child {
+  background-color: transparent;
 }
 .services .service-container .service-item:hover .service-type ul .service-cta .icon {
   opacity: 1;
