@@ -70,7 +70,7 @@
                 height: 100%;
                 border-radius: abstracts.$border-radius-sm;
                 z-index: -1;
-                transition: 350ms;
+                transition: 0ms;
             }
             &::before {
                 border: 1px solid #0001;
@@ -243,9 +243,9 @@
             // END OF SCROLL
             // ITEM HOVER EFFECT
             &:hover {
-                transition: 250ms ease-out;
+                transition: 350ms ease-out;
                 transform: scale(1.01);
-                animation: card-hover 350ms ease-in-out;
+                animation: card-hover 500ms ease-in-out;
 
                 
 
@@ -253,8 +253,13 @@
                     transform: scale(1.01);
                 }
                 // BOX SHADOW TRANSITION ON HOVER
-                &::before { opacity: 0;}
-                &::after { opacity: 1;}
+                &::before {
+                    opacity: 0;
+                }
+
+                &::after { 
+                        opacity: 1;
+                }
                 // CARD ICON TRANSLATE DOWN INTO CARD ON HOVER
                 // CARD TITLE CHANGE COLOR ON HOVER
                 .service-core {

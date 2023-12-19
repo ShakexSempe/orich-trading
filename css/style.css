@@ -2758,7 +2758,7 @@ aside.active .social-links a {
   height: 100%;
   border-radius: 0.5rem;
   z-index: -1;
-  transition: 350ms;
+  transition: 0ms;
 }
 .services .service-container .service-item::before {
   border: 1px solid #0001;
@@ -2884,9 +2884,9 @@ aside.active .social-links a {
   opacity: 1;
 }
 .services .service-container .service-item:hover {
-  transition: 250ms ease-out;
+  transition: 350ms ease-out;
   transform: scale(1.01);
-  animation: card-hover 350ms ease-in-out;
+  animation: card-hover 500ms ease-in-out;
 }
 @media (min-width: 820px) {
   .services .service-container .service-item:hover {
