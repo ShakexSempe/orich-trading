@@ -49,7 +49,7 @@
         .service-item {
             background: #fff;
             width: 100%;
-            padding: 0 1rem 1rem;
+            padding: 0.25rem 1rem 1rem;
             
             border-radius: abstracts.$border-radius-sm;
             position: relative;
@@ -78,7 +78,11 @@
             }
             &::after {
                 background: hsl(0, 0%, 0%);
-                box-shadow: 0rem .225rem .25rem rgba(0, 0,0, .5);
+                background: radial-gradient(#222, #000);
+                box-shadow: 
+                inset 0.15rem .025rem 0.5rem #fff3,
+                inset -0.25rem -.025rem 0.25rem #000,
+                0rem .225rem .25rem rgba(0, 0,0, .5);
                 opacity: 0;
             }
 
@@ -118,7 +122,21 @@
                     // }
                 }
                 
+                .active-icon {
+                    // border: 1px solid red;
+                    position: relative;
+                    display: grid;
+                    height: 2.5rem;
+
+                    img {
+                        position: absolute;
+                        &.light-icon {
+                            opacity: 0;
+                        }
+                    }
+                }
                 img {
+                    // position: absolute;
                     width: 2.5rem;
                     height: 2.5rem;
                     transform: translateY(-1rem);
@@ -240,11 +258,13 @@
                 // CARD ICON TRANSLATE DOWN INTO CARD ON HOVER
                 // CARD TITLE CHANGE COLOR ON HOVER
                 .service-core {
-                    i, img {
-                        transform: translateY(-0.5rem);
-                        
+                    img {
+                        transform: translateY(-0rem);
                         filter: drop-shadow(0rem .25rem .1rem rgba(0,0, 0, .250));
                         transition: 500ms ease;
+
+                        &.dark-icon {opacity: 0;}
+                        &.light-icon {opacity: 1;}
                     }
                     h4 {
                         color: abstracts.$brand;

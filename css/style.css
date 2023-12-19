@@ -2738,7 +2738,7 @@ aside.active .social-links a {
 .services .service-container .service-item {
   background: #fff;
   width: 100%;
-  padding: 0 1rem 1rem;
+  padding: 0.25rem 1rem 1rem;
   border-radius: 0.5rem;
   position: relative;
   isolation: isolate;
@@ -2766,7 +2766,8 @@ aside.active .social-links a {
 }
 .services .service-container .service-item::after {
   background: black;
-  box-shadow: 0rem 0.225rem 0.25rem rgba(0, 0, 0, 0.5);
+  background: radial-gradient(#222, #000);
+  box-shadow: inset 0.15rem 0.025rem 0.5rem #fff3, inset -0.25rem -0.025rem 0.25rem #000, 0rem 0.225rem 0.25rem rgba(0, 0, 0, 0.5);
   opacity: 0;
 }
 @keyframes card-hover {
@@ -2790,6 +2791,17 @@ aside.active .social-links a {
   font-size: clamp(1.125rem, 2.25vw, 1.25rem);
   font-weight: 500;
   transition: 250ms ease;
+}
+.services .service-container .service-item .service-core .active-icon {
+  position: relative;
+  display: grid;
+  height: 2.5rem;
+}
+.services .service-container .service-item .service-core .active-icon img {
+  position: absolute;
+}
+.services .service-container .service-item .service-core .active-icon img.light-icon {
+  opacity: 0;
 }
 .services .service-container .service-item .service-core img {
   width: 2.5rem;
@@ -2887,10 +2899,16 @@ aside.active .social-links a {
 .services .service-container .service-item:hover::after {
   opacity: 1;
 }
-.services .service-container .service-item:hover .service-core i, .services .service-container .service-item:hover .service-core img {
-  transform: translateY(-0.5rem);
+.services .service-container .service-item:hover .service-core img {
+  transform: translateY(0rem);
   filter: drop-shadow(0rem 0.25rem 0.1rem rgba(0, 0, 0, 0.25));
   transition: 500ms ease;
+}
+.services .service-container .service-item:hover .service-core img.dark-icon {
+  opacity: 0;
+}
+.services .service-container .service-item:hover .service-core img.light-icon {
+  opacity: 1;
 }
 .services .service-container .service-item:hover .service-core h4 {
   color: #f8650c;
