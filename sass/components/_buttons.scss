@@ -56,10 +56,10 @@ $btn-lg : clamp(12rem, 20vw, 14rem);
     border: none;
     border-radius: abstracts.$border-radius-sm;
 
-    font-family: abstracts.$font-content;
+    // font-family: abstracts.$font-content;
     font-size: 0.85rem;
     font-size: abstracts.$font-clamp-xsm;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
     text-transform: capitalize;
 
@@ -174,6 +174,7 @@ $btn-lg : clamp(12rem, 20vw, 14rem);
     }
     
 }
+
 // ANIMATED BUTTON ICON
 .animated-icon {
     color: transparent;
