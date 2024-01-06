@@ -170,13 +170,17 @@ h3 {
   font-size: 1.025rem;
   font-size: clamp(1.125rem, 2.25vw, 1.25rem);
   margin-bottom: 0.5rem;
-  font-weight: 700;
+  font-weight: 500;
+  text-wrap: balance;
 }
 
 p {
-  font-size: clamp(1rem, 2vw, 1.1rem);
+  color: #333;
+  font-family: "Content", sans-serif;
+  font-size: clamp(1rem, 2vw, 1.125rem);
   font-weight: 300;
   line-height: 1.8;
+  text-wrap: pretty;
 }
 
 a {
@@ -385,7 +389,7 @@ img {
   border: none;
   border-radius: 0.5rem;
   font-size: 0.85rem;
-  font-size: clamp(.98rem, 1.25vw, 1.125rem);
+  font-size: clamp(.98rem, 1.25vw, 1.025rem);
   font-weight: 500;
   text-decoration: none;
   text-transform: capitalize;
@@ -919,7 +923,7 @@ img {
   margin-bottom: 0.25rem;
   font-family: "Prompt", sans-serif;
   font-size: 1rem;
-  font-size: clamp(1rem, 2vw, 1.1rem);
+  font-size: clamp(1rem, 2vw, 1.125rem);
   font-weight: 500;
   text-transform: capitalize;
 }
@@ -1230,7 +1234,7 @@ img {
   border-radius: 0.25rem;
   padding: 0.5rem;
   transition: 0.25s;
-  font-size: clamp(.98rem, 1.25vw, 1.125rem);
+  font-size: clamp(.98rem, 1.25vw, 1.025rem);
 }
 @media (min-width: 768px) {
   #banner .banner-image-container figure .banner-content .banner-image-title .flex-item {
@@ -2175,7 +2179,7 @@ aside.active .social-links a {
 }
 .hero-title .slogan #cta .cta-btn {
   font-size: 0.85rem;
-  font-size: clamp(1rem, 2vw, 1.1rem);
+  font-size: clamp(1rem, 2vw, 1.125rem);
   width: 12rem;
   max-height: 4rem;
   width: clamp(11rem, 15vw, 15rem);
@@ -2232,12 +2236,6 @@ aside.active .social-links a {
 .menu-item .menu-item-title {
   position: relative;
   padding: 1rem;
-  text-wrap: balance;
-}
-.menu-item .menu-item-title p {
-  font-size: clamp(1rem, 2vw, 1.1rem);
-  font-weight: 300;
-  font-family: "Content", sans-serif;
 }
 .menu-item .menu-item-cta {
   background: #000;
@@ -2314,7 +2312,7 @@ aside.active .social-links a {
   height: 0.15rem;
   background: linear-gradient(90deg, #f8670d, #ffc966, #f8670d);
   background-size: 120%;
-  transition: 250ms;
+  transition: 1000ms;
   z-index: 3;
   animation: bg-pulse 2000ms infinite;
 }
@@ -2325,13 +2323,6 @@ aside.active .social-links a {
   50% {
     background-position: -150%;
   }
-}
-.menu-item .menu-image.io-item img {
-  transform: scale(1.1);
-}
-.menu-item .menu-image.active-item img {
-  transform: scale(1);
-  transition: 2s;
 }
 .menu-item .menu-image:hover .cta-btn, .menu-item .menu-image:focus .cta-btn {
   transform: translateY(0);
@@ -2695,7 +2686,7 @@ aside.active .social-links a {
 }
 #references .references .reference .card-item {
   text-transform: capitalize;
-  font-size: clamp(1rem, 2vw, 1.1rem);
+  font-size: clamp(1rem, 2vw, 1.125rem);
   font-size: 1rem;
   display: flex;
   align-items: center;
@@ -2824,7 +2815,7 @@ aside.active .social-links a {
   text-transform: capitalize;
   text-wrap: balance;
   font-weight: 400;
-  font-size: clamp(.98rem, 1.25vw, 1.125rem);
+  font-size: clamp(.98rem, 1.25vw, 1.025rem);
   font-family: "Content", sans-serif;
   list-style: none;
   transition: color 250ms, background 0s;

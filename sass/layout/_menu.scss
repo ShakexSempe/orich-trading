@@ -56,18 +56,6 @@
     .menu-item-title {
         position: relative;
         padding: 1rem;
-        text-wrap: balance;
-        
-
-
-        // ADJUST HEIGHT AT WIDER SCREENS TO ALIGN IMAGES.. 
-        // ..AND TEXT AREA IN 3 COLUMN GRID
-        p {
-            font-size: abstracts.$font-clamp-sm;
-            font-weight: 300;
-            font-family: abstracts.$font-content;
-        }
-
     }
 
     .menu-item-cta {
@@ -166,7 +154,7 @@
             background: abstracts.$brand-border;
             // background: linear-gradient(90deg, black, yellow, black);
             background-size: 120%;
-            transition: 250ms;
+            transition: 1000ms;
             z-index: 3;
             animation: bg-pulse 2000ms infinite;
 
@@ -177,21 +165,6 @@
                 50% {
                     background-position: -150%;
                 }
-            }
-        }
-
-        // INTERSECTION OBSERVER CLASS
-        // SCALE IMG WHEN INTERSECTING
-        &.io-item {
-            img {
-                transform: scale(1.1);
-            }
-        }
-        // ACTIVE CLASS IO
-        &.active-item {
-            img {
-                transform: scale(1);
-                transition: 2s;
             }
         }
 
