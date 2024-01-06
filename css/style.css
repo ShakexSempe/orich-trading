@@ -2593,7 +2593,7 @@ aside.active .social-links a {
 }
 #projects .gallery .project-item figure::after {
   opacity: 0;
-  box-shadow: inset 0.25rem 0.25rem 0.25rem #fff5, inset -0.25rem -0.25rem 0.25rem #0003, 0 0.25rem 0.25rem #0005;
+  box-shadow: inset 0.25rem 0.25rem 0.25rem #fff5, inset -0.25rem -0.25rem 0.25rem #0003, 0 0.25rem 0.25rem #0003;
 }
 #projects .gallery .project-item figure img {
   width: 100%;
@@ -2606,6 +2606,11 @@ aside.active .social-links a {
 }
 #projects .gallery .project-item figure:hover {
   animation: card-hover 450ms ease-in-out;
+}
+@media (prefers-reduced-motion) {
+  #projects .gallery .project-item figure:hover {
+    animation: none;
+  }
 }
 #projects .gallery .project-item figure:hover::before {
   opacity: 0;
@@ -2881,6 +2886,11 @@ aside.active .social-links a {
   transition: 350ms ease-out;
   transform: scale(1.01);
   animation: card-hover 500ms ease-in-out;
+}
+@media (prefers-reduced-motion) {
+  .services .service-container .service-item:hover {
+    animation: none;
+  }
 }
 @media (min-width: 820px) {
   .services .service-container .service-item:hover {

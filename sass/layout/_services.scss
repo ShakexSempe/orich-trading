@@ -233,7 +233,9 @@
                 transform: scale(1.01);
                 animation: card-hover 500ms ease-in-out;
 
-                
+                @media (prefers-reduced-motion) {
+                    animation: none;
+                }
 
                 @include abstracts.lg {
                     transform: scale(1.01);
