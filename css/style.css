@@ -1302,7 +1302,7 @@ img {
     row-gap: 4rem;
   }
 }
-#contact .contact-items .contact-item {
+#contact .contact-item {
   background-color: #333;
   border-radius: 0.5rem;
   padding: 1rem 0.5rem;
@@ -1310,7 +1310,7 @@ img {
   transition: 0.3s;
 }
 @media (min-width: 820px) {
-  #contact .contact-items .contact-item {
+  #contact .contact-item {
     width: 100%;
     height: auto;
     margin: 0;
@@ -1318,111 +1318,107 @@ img {
     z-index: 2;
   }
 }
-#contact .contact-items .contact-item .contact-item-title {
+#contact .contact-item .contact-item-title {
   margin: -2rem 0 1.5rem;
 }
-#contact .contact-items .contact-item .contact-item-title h3 {
+#contact .contact-item .contact-item-title h3 {
   color: #ffffff;
   font-weight: 500;
 }
-#contact .contact-items .contact-item .contact-item-title i {
+#contact .contact-item .contact-item-title i {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: #f4f4f4;
 }
-#contact .contact-items .contact-item .contact-item-title .contact-icon {
+#contact .contact-item .contact-item-title .contact-icon {
   width: 2.8rem;
   height: auto;
   margin-bottom: 1rem;
 }
-#contact .contact-items .contact-item .contact-info {
+#contact .contact-item .contact-info {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-#contact .contact-items .contact-item .contact-info .contact-info-item {
-  border-radius: 0.5rem;
+#contact .contact-item .contact-info .contact-info-item {
   margin-bottom: 1rem;
-  background: #fafafa;
+  padding: 0.5rem 0.5rem;
+  outline: 1px solid transparent;
   background: linear-gradient(0deg, #000, #060606);
   color: #fff;
-  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
-  outline: 1px solid transparent;
-  transition: 0.25s;
+  transition: 250ms;
 }
-#contact .contact-items .contact-item .contact-info .contact-info-item .flex-container {
+#contact .contact-item .contact-info .contact-info-item .flex-container {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-#contact .contact-items .contact-item .contact-info .contact-info-item .flex-container:nth-child(1) {
+#contact .contact-item .contact-info .contact-info-item .flex-container:nth-child(1) {
   margin-bottom: 0.25rem;
 }
-#contact .contact-items .contact-item .contact-info .contact-info-item .flex-container .icon {
+#contact .contact-item .contact-info .contact-info-item .flex-container .icon {
   opacity: 0.7;
 }
-#contact .contact-items .contact-item .contact-info .address {
+#contact .contact-item .contact-info .address {
   display: flex;
   flex-direction: column;
 }
-#contact .contact-items .contact-item .contact-info p {
+#contact .contact-item .contact-info p {
   color: #fff;
   line-height: 2;
   transition: 0.25s;
   font-weight: 400;
 }
-#contact .contact-items .contact-item .contact-info p span {
+#contact .contact-item .contact-info p span {
   font-weight: 500;
   color: #ffa500;
   transition: 250ms;
 }
-#contact .contact-items .contact-item .contact-info p i {
+#contact .contact-item .contact-info p i {
   margin-right: 0.5rem;
   color: #fff9;
   transition: 0.25s;
 }
-#contact .contact-items .contact-item .contact-info a {
+#contact .contact-item .contact-info a {
   font-family: "Content", sans-serif;
   color: inherit;
-  text-decoration: underline #f8650c;
-  text-underline-offset: 2px;
-  transition: 0.25s;
+  text-decoration: underline transparent;
+  text-underline-offset: 4px;
+  transition: 250ms;
 }
-#contact .contact-items .contact-item .contact-info a:hover, #contact .contact-items .contact-item .contact-info a:focus {
-  color: #ffa500;
-  text-decoration-color: transparent;
-}
-#contact .contact-items .contact-item .contact-info .item-button {
+#contact .contact-item .contact-info .item-button {
   margin: 1rem 0 0.5rem;
 }
-#contact .contact-items .contact-item .contact-info .item-button a {
+#contact .contact-item .contact-info .item-button a {
   color: #000;
   text-decoration: none;
 }
-#contact .contact-items .contact-item .contact-info .item-button:active a .icon {
+#contact .contact-item .contact-info .item-button:active a .icon {
   transform: rotate(10deg);
 }
-#contact .contact-items .contact-item .contact-info:hover {
-  outline-color: #ffa500;
-}
-#contact .contact-items .contact-item .contact-info:hover p span {
+#contact .contact-item .contact-info:hover p span {
   opacity: 0.7;
 }
-#contact .contact-items .contact-item .contact-info:hover p i {
+#contact .contact-item .contact-info:hover p i {
   transform: translateX(0.125rem);
 }
-#contact .contact-items .contact-item .contact-info:hover .contact-info-item .icon {
+#contact .contact-item .contact-info:hover .contact-info-item .icon {
   opacity: 1;
 }
-#contact .contact-items .contact-item .contact-info:hover .contact-info-item:hover {
-  outline-color: #ffa500;
+#contact .contact-item .contact-info:hover .contact-info-item a {
+  text-decoration-color: #ffa500;
 }
-#contact .contact-items .contact-item:hover .contact-info .contact-info-item {
-  outline-color: #fff4;
+#contact .contact-item .contact-info:hover .contact-info-item a:hover, #contact .contact-item .contact-info:hover .contact-info-item a:focus {
+  color: #ffa500;
+  text-decoration-color: transparent;
 }
-#contact .contact-items .contact-item:hover .contact-info .contact-info-item p i {
-  color: #fff;
+#contact .contact-item .contact-info:hover .contact-info-item:hover {
+  outline-color: #fff6;
+}
+#contact .contact-item:hover .contact-info .contact-info-item {
+  outline-color: #fff3;
 }
 
 .footer {
