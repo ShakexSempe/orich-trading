@@ -2468,15 +2468,12 @@ aside.active .social-links a {
     margin-bottom: 0.5rem;
   }
 }
-.menu-cta .cta-item ul li i {
-  color: #ffa500;
-  transition: 0.25s;
-}
 .menu-cta .cta-item ul li a {
   text-decoration: underline transparent;
-  transition: 0.25s;
+  text-underline-offset: 2px;
+  transition: 250ms;
 }
-.menu-cta .cta-item ul li:hover i {
+.menu-cta .cta-item ul li:hover .icon {
   transform: translateX(0.25rem);
   color: #fafafa;
 }
@@ -2500,7 +2497,7 @@ aside.active .social-links a {
   }
 }
 .menu-cta .cta-item:hover {
-  scale: 1.05;
+  scale: 1.025;
   transition-timing-function: ease-out;
 }
 .menu-cta .cta-item:hover h4 {

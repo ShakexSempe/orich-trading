@@ -360,18 +360,15 @@
                     margin-bottom: 0.5rem;
                 }
 
-                i {
-                    color: abstracts.$brand-light;
-                    transition: .25s;
-                }
                 a {
                     text-decoration: underline transparent;
-                    transition: .25s;
+                    text-underline-offset: 2px;
+                    transition: 250ms;
                 }
 
                 // LINK HOVER STATE = TRANSLATE ICON AND CHANGE LINK COLOR
                 &:hover {
-                    i {
+                    .icon {
                         transform: translateX(.25rem);
                         color: #fafafa;
                     }
@@ -404,7 +401,7 @@
         // ITEM BOX HOVER STATE
         // = CHANGE TITLE COLOR AND MAKE BG VISIBLE
         &:hover {
-            scale: 1.05;
+            scale: 1.025;
             transition-timing-function: ease-out;
             h4 {
                 color: abstracts.$brand;
