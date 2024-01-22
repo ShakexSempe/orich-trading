@@ -2431,6 +2431,7 @@ aside.active .social-links a {
   border-radius: 0.25rem;
   padding: 1rem;
   color: #ffffff;
+  transition: 250ms ease-in;
 }
 @media (min-width: 820px) {
   .menu-cta .cta-item {
@@ -2472,6 +2473,7 @@ aside.active .social-links a {
   transition: 0.25s;
 }
 .menu-cta .cta-item ul li a {
+  text-decoration: underline transparent;
   transition: 0.25s;
 }
 .menu-cta .cta-item ul li:hover i {
@@ -2480,6 +2482,7 @@ aside.active .social-links a {
 }
 .menu-cta .cta-item ul li:hover a {
   color: #ffa500;
+  text-decoration-color: transparent;
 }
 .menu-cta .cta-item::after {
   content: "";
@@ -2496,8 +2499,15 @@ aside.active .social-links a {
     opacity: 0.2;
   }
 }
+.menu-cta .cta-item:hover {
+  scale: 1.05;
+  transition-timing-function: ease-out;
+}
 .menu-cta .cta-item:hover h4 {
   color: #f8650c;
+}
+.menu-cta .cta-item:hover a {
+  text-decoration-color: #ffa500;
 }
 .menu-cta .cta-item:hover::after {
   opacity: 0.8;

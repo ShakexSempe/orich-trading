@@ -45,6 +45,7 @@
     max-height: 450px;
     max-width: 550px;
     grid-template-rows: 1fr 70%;
+
     // DESKTOP GRID ROWS
     @include abstracts.lg {
         grid-template-rows: 1fr 60%;
@@ -52,7 +53,6 @@
 
     // MENU TITLE
     // CONTENT SECTION OF THE CARD = H3 + P
-
     .menu-item-title {
         position: relative;
         padding: 1rem;
@@ -198,6 +198,8 @@
             height: $menu-cta-height;
         }
     }
+
+
 }
 
 
@@ -319,6 +321,7 @@
         border-radius: 0.25rem;
         padding: 1rem;
         color: abstracts.$text-second;
+        transition: 250ms ease-in;
 
         @include abstracts.lg {
             padding: 1rem;
@@ -362,6 +365,7 @@
                     transition: .25s;
                 }
                 a {
+                    text-decoration: underline transparent;
                     transition: .25s;
                 }
 
@@ -374,6 +378,7 @@
 
                     a {
                         color: abstracts.$brand-light;
+                        text-decoration-color: transparent;
                     }
                 }
             }
@@ -399,8 +404,14 @@
         // ITEM BOX HOVER STATE
         // = CHANGE TITLE COLOR AND MAKE BG VISIBLE
         &:hover {
+            scale: 1.05;
+            transition-timing-function: ease-out;
             h4 {
                 color: abstracts.$brand;
+            }
+
+            a {
+                text-decoration-color: abstracts.$brand-light;
             }
 
             &::after {
