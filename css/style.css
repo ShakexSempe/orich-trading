@@ -3019,12 +3019,15 @@ aside.active .social-links a {
 @keyframes card-hover {
   0%, 70%, 100% {
     transform: scale(1);
+    transition-timing-function: ease-in;
   }
   50% {
     transform: scale(1.05);
+    transition-timing-function: ease-out;
   }
   80% {
     transform: scale(1.025);
+    transition-timing-function: ease-out;
   }
 }
 
