@@ -16,6 +16,7 @@
     // DARK-THEME 
     @include abstracts.dark {
         background-color: #000;
+        color: #f4f4f4;
     }
 
     // MENU GRID. 1 COLUMN ON SMALLER SCREENS - 3 COLUMNS ON WIDER SCREENS

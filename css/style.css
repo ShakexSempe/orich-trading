@@ -2248,6 +2248,7 @@ aside.active .social-links a {
 @media (prefers-color-scheme: dark) {
   .menu {
     background-color: #000;
+    color: #f4f4f4;
   }
 }
 .menu .menu-grid {
@@ -2763,6 +2764,7 @@ aside.active .social-links a {
   margin-bottom: 0.75rem;
 }
 #references .references .reference p {
+  color: #333;
   font-family: "Content", sans-serif;
 }
 #references .references .reference .card-item {
