@@ -54,6 +54,11 @@ main {
   background: #fff;
   color: #000;
 }
+@media (prefers-color-scheme: dark) {
+  main {
+    background: #000;
+  }
+}
 main::after {
   position: fixed;
   content: "";
@@ -180,6 +185,11 @@ p {
   font-weight: 300;
   line-height: 1.8;
   text-wrap: pretty;
+}
+@media (prefers-color-scheme: dark) {
+  p {
+    color: #ddd;
+  }
 }
 
 a {
@@ -748,6 +758,12 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media (prefers-color-scheme: dark) {
+  .about {
+    background-color: #000;
+    color: #f4f4f4;
+  }
+}
 .about .section-title {
   padding: 5vh 5vw;
 }
@@ -795,6 +811,7 @@ img {
 .about .vision-mission .mission .statement .mission-logo {
   overflow: hidden;
   flex-basis: 90%;
+  background: #fff;
 }
 .about .vision-mission .mission .statement .mission-logo figure {
   width: 100%;
@@ -938,6 +955,11 @@ img {
 .about-article ul li a:hover .icon, .about-article ul li a:focus .icon {
   opacity: 1;
   transform: translateX(-0.5rem);
+}
+@media (prefers-color-scheme: dark) {
+  .about-article ul {
+    background: #333;
+  }
 }
 
 #about-page .article-container .page-article {
@@ -2193,6 +2215,11 @@ aside.active .social-links a {
     padding: 10vh 5vw;
   }
 }
+@media (prefers-color-scheme: dark) {
+  .menu {
+    background-color: #000;
+  }
+}
 .menu .menu-grid {
   margin: 5vh 0;
   display: grid;
@@ -2226,6 +2253,11 @@ aside.active .social-links a {
 @media (min-width: 820px) {
   .menu-item {
     grid-template-rows: 1fr 60%;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .menu-item {
+    background-color: #333;
   }
 }
 .menu-item .menu-item-title {
@@ -2339,6 +2371,7 @@ aside.active .social-links a {
 .menu-cta {
   padding: 10vh 5vw;
   position: relative;
+  background: #fff;
 }
 .menu-cta h3 {
   text-transform: capitalize;

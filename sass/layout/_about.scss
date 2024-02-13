@@ -2,7 +2,6 @@
 
     // ABOUT SECTION
     .about {
-        
         position: relative;
         @include abstracts.lg {
             padding: 10vh 0;
@@ -14,6 +13,12 @@
                 @include abstracts.grid(2, 10vw);
                 
             }
+        }
+
+        // DARK-THEME 
+        @include abstracts.dark {
+            background-color: #000;
+            color: #f4f4f4;
         }
 
         // SECTION TITLE PADDING BECAUSE ABOUT SECTION HAS 0 PADDING 
@@ -71,6 +76,7 @@
                     .mission-logo {
                         overflow: hidden;
                         flex-basis: 90%;
+                        background: #fff;
 
                         figure {
                             width: 100%;
@@ -268,7 +274,11 @@
                 }
             }
 
+            @include abstracts.dark {
+                background: #333;
+            }
         }
+
     }
 
 

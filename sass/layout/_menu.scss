@@ -13,6 +13,11 @@
         padding: 10vh 5vw;
     }
 
+    // DARK-THEME 
+    @include abstracts.dark {
+        background-color: #000;
+    }
+
     // MENU GRID. 1 COLUMN ON SMALLER SCREENS - 3 COLUMNS ON WIDER SCREENS
     // MENU GRID CLASS = MIXIN 'GRID(COLUMNS & GAP)'
     .menu-grid {
@@ -28,6 +33,7 @@
         }
 
     }
+
 }
 
 // MENU(GRID) ITEM
@@ -49,6 +55,11 @@
     // DESKTOP GRID ROWS
     @include abstracts.lg {
         grid-template-rows: 1fr 60%;
+    }
+
+    // DARK-THEME 
+    @include abstracts.dark {
+        background-color: #333;
     }
 
     // MENU TITLE
@@ -207,9 +218,10 @@
 // CALL TO ACTION MENU 
 // TITLE + 3 ITEM GRID 
 .menu-cta {
-    // border: 2px solid blue;
     padding: 10vh 5vw;
     position: relative;
+    background: #fff;
+
     // CTA SECTION TITLE
     // ANIMATED BOTTOM BORDER GRADIENT UNDERLINE TRANSITION IN VIA IO
     h3 {

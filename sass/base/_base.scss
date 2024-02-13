@@ -14,6 +14,10 @@ main {
     background: #fff;
     color: abstracts.$text-main;
 
+    @include abstracts.dark {
+        background: #000;
+    }
+
     // ACTIVE HEADER OVERLAY TO MAIN SECTION
     &::after {
         position: fixed;
@@ -179,6 +183,10 @@ p {
 
     line-height: 1.8;
     text-wrap: pretty;
+
+    @include abstracts.dark {
+        color: #ddd;
+    }
 }
 
 a {
