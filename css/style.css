@@ -1723,12 +1723,25 @@ img {
   box-shadow: 0rem 0.25rem 1rem rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.5s ease, background-color 0.25s;
 }
+@media (prefers-color-scheme: dark) {
+  #header.main-header::after {
+    background-color: #000;
+  }
+}
 #header.main-header .navigation .toggle .bar {
   background-color: #f8650c;
   background-color: #000;
 }
 #header.main-header .navigation .toggle .bar::before, #header.main-header .navigation .toggle .bar::after {
   background-color: #000;
+}
+@media (prefers-color-scheme: dark) {
+  #header.main-header .navigation .toggle .bar {
+    background-color: #ffff;
+  }
+  #header.main-header .navigation .toggle .bar::before, #header.main-header .navigation .toggle .bar::after {
+    background-color: #ffff;
+  }
 }
 
 .logo {

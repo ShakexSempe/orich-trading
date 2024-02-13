@@ -132,6 +132,7 @@
     &.toggle-header {
         &::after {
             background-color: #000;
+            
         }
         .navigation {
             .toggle {
@@ -152,7 +153,9 @@
             background-color: #fff;
             box-shadow:  0rem .25rem 1rem rgba(0, 0, 0, .05);
             transition: box-shadow .5s ease, background-color .25s;
-            
+            @include abstracts.dark {
+                background-color: #000;
+            }
         }
         .navigation {
             .toggle {
@@ -161,6 +164,12 @@
                     background-color: #000;
                     &::before, &::after {
                         background-color: #000;
+                    }
+                    @include abstracts.dark {
+                        background-color: #ffff;
+                        &::before, &::after {
+                            background-color: #ffff;
+                        }
                     }
                 }
             }
