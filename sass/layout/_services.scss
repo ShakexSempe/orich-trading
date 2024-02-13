@@ -4,6 +4,14 @@
 .services {
     background: #f4f4f4;
     padding: 10vh 5vw;
+
+    @include abstracts.dark {
+        background: #000;
+        color: #f4f4f4;
+        P {
+            color: #ddd;
+        }
+    }
 }
 
 // INTRO P BEFORE SERVICE ITEMS
@@ -46,7 +54,7 @@
 
 // SERVICE ITEM = FLEX CONTAINER WITH TITLE + CONTENT[UL] 
 .service-item {
-    background: #fafafa;
+    background: transparent;
     width: 100%;
     padding: 0.25rem 1rem 1rem;
 
@@ -55,6 +63,7 @@
     position: relative;
     isolation: isolate;
     transition: 250ms;
+    
 
     // DESKTOP ITEM STYLE
     @include abstracts.md {
@@ -85,6 +94,17 @@
         opacity: 0;
     }
 
+    // ITEM DARK-THEME
+    @include abstracts.dark {
+        background: #222;
+        border: 1px solid #fff3;
+        &::before {
+            background: #222;
+        }
+        &::after {
+            background: #333;
+        }
+    }
 
 
     // FLEX ITEM 1 = ICON + H4
@@ -92,23 +112,12 @@
         display: flex;
         flex-direction: column-reverse;
 
-        // padding: 0 .5rem;
-        @include abstracts.md {
-            // flex-basis: 50%;
-            // height: 100%;
-            // margin-bottom: 1rem;
-        }
-
         h4 {
             text-transform: capitalize;
             font-size: 1.25rem;
             font-size: abstracts.$font-clamp-md;
             font-weight: 500;
             transition: 250ms ease;
-
-            // @include abstracts.md {
-            //     text-align: center;
-            // }
         }
 
         .active-icon {
@@ -123,11 +132,22 @@
                 &.light-icon {
                     opacity: 0;
                 }
+                
+
+                @include abstracts.dark {
+                    &.light-icon {
+                        opacity: 1;
+                    }
+                    &.dark-icon {
+                        opacity: 0;
+                    }
+                }
+
+
             }
         }
 
         img {
-            // position: absolute;
             width: 2.5rem;
             height: 2.5rem;
             transform: translateY(-1rem);
@@ -141,11 +161,6 @@
     // SERVICES TYPE = UL OF SERVICE ITEMS 
     // PADDING ON THIS ELEMENT FOR WHITESPACE
     .service-type {
-        // padding: 0 1rem;    
-
-        @include abstracts.md {
-            // flex-basis: 50%;
-        }
 
         ul {
             margin-top: 1rem;
@@ -176,6 +191,22 @@
                     background-color: #ffff;
                     background-color: transparent;
                 }
+
+                // DARK THEME LI
+
+                @include abstracts.dark {
+                            color: #fff;
+                            background-color: #333;
+        
+            
+                            &:nth-child(2n) {
+                                background-color: hsl(0, 0%, 30%);
+                            }
+            
+                            &:last-child {
+                                background-color: transparent;
+                            }
+                } 
             }
 
             .service-cta {
@@ -223,6 +254,7 @@
                 }
             }
         }
+
     }
 
     // INTERSECTION OBSERVER CLASSES
@@ -240,6 +272,7 @@
 
         &::before {
             opacity: 1;
+            transition: 250ms;
         }
     }
 

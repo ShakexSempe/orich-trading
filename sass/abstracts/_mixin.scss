@@ -1,4 +1,13 @@
 @use './variables';
+
+
+// DARK MODE
+@mixin dark {
+    @media(prefers-color-scheme: dark) {
+        @content
+    }
+}
+
 // BREAK POINTS
 $screen-xsm-max: 390px;
 $screen-sm-min: 500px;
@@ -55,5 +64,7 @@ $screen-xlg-min: 1024px;
     grid-template-columns: repeat($columns, 1fr);
     @content
 }
+
+
 
 

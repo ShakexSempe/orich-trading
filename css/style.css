@@ -2719,6 +2719,15 @@ aside.active .social-links a {
   background: #f4f4f4;
   padding: 10vh 5vw;
 }
+@media (prefers-color-scheme: dark) {
+  .services {
+    background: #000;
+    color: #f4f4f4;
+  }
+  .services P {
+    color: #ddd;
+  }
+}
 
 .section-description {
   margin-bottom: 2rem;
@@ -2754,7 +2763,7 @@ aside.active .social-links a {
 }
 
 .service-item {
-  background: #fafafa;
+  background: transparent;
   width: 100%;
   padding: 0.25rem 1rem 1rem;
   border-radius: 0.5rem;
@@ -2785,6 +2794,18 @@ aside.active .social-links a {
   box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
   opacity: 0;
 }
+@media (prefers-color-scheme: dark) {
+  .service-item {
+    background: #222;
+    border: 1px solid #fff3;
+  }
+  .service-item::before {
+    background: #222;
+  }
+  .service-item::after {
+    background: #333;
+  }
+}
 .service-item .service-core {
   display: flex;
   flex-direction: column-reverse;
@@ -2806,6 +2827,14 @@ aside.active .social-links a {
 }
 .service-item .service-core .active-icon img.light-icon {
   opacity: 0;
+}
+@media (prefers-color-scheme: dark) {
+  .service-item .service-core .active-icon img.light-icon {
+    opacity: 1;
+  }
+  .service-item .service-core .active-icon img.dark-icon {
+    opacity: 0;
+  }
 }
 .service-item .service-core img {
   width: 2.5rem;
@@ -2837,6 +2866,18 @@ aside.active .social-links a {
 .service-item .service-type ul li:last-child {
   background-color: #ffff;
   background-color: transparent;
+}
+@media (prefers-color-scheme: dark) {
+  .service-item .service-type ul li {
+    color: #fff;
+    background-color: #333;
+  }
+  .service-item .service-type ul li:nth-child(2n) {
+    background-color: #4d4d4d;
+  }
+  .service-item .service-type ul li:last-child {
+    background-color: transparent;
+  }
 }
 .service-item .service-type ul .service-cta {
   border-bottom: none;
@@ -2886,6 +2927,7 @@ aside.active .social-links a {
 }
 .service-item.active-item::before {
   opacity: 1;
+  transition: 250ms;
 }
 .service-item:hover {
   transition: 350ms ease-out;
