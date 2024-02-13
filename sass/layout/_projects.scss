@@ -3,6 +3,12 @@
 // PROJECTS SECTION
 #projects {
     padding: 5vh 5vw 10vh;
+
+    @include abstracts.dark {
+        background-color: #222;
+        color: #f4f4f4;
+    }
+
     // PROJECT ITEMS CONTAINER
     .gallery {
         margin: 5vh auto;
@@ -43,6 +49,10 @@
                     }
             }
             
+            @include abstracts.dark {
+                background-color: #222;
+            }
+
         }
         // GRID CONTAINER 
         // EACH .GALLERY-GRID = PROJECTS CATEGORY

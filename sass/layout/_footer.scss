@@ -7,6 +7,13 @@
     display: flex;
     flex-direction: column;
     gap: 5vh;
+
+    // DARK-THEME 
+    @include abstracts.dark {
+        background: #333;
+        color: #f4f4f4;
+    }
+
     @include abstracts.xlg {
         padding: 30vh 5vw 10vh;
         background: linear-gradient(90deg, #ffff, #fafafa);
@@ -20,6 +27,10 @@
         transition: .25s;
         &:hover, &:focus {
             color: abstracts.$brand;
+        }
+
+        @include abstracts.dark {
+            color: #ddd;
         }
     }
     
