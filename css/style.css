@@ -840,6 +840,11 @@ img {
   place-content: center;
   padding: 0.5rem;
 }
+@media (prefers-color-scheme: dark) {
+  .about .vision-mission .mission .statement .mission-content {
+    background: #222;
+  }
+}
 @media (min-width: 768px) {
   .about .vision-mission .mission .statement .mission-content {
     padding: 1rem;

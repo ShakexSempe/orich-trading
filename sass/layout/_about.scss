@@ -114,6 +114,10 @@
                         place-content: center;
                         padding: .5rem;
 
+                        @include abstracts.dark {
+                            background: #222;
+                        }
+
                         @include abstracts.md {
                             padding: 1rem;
                             flex-basis: 20%;
