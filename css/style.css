@@ -2719,26 +2719,28 @@ aside.active .social-links a {
   background: #f4f4f4;
   padding: 10vh 5vw;
 }
-.services .section-description {
+
+.section-description {
   margin-bottom: 2rem;
   text-wrap: balance;
 }
 @media (min-width: 768px) {
-  .services .section-description {
+  .section-description {
     margin: 2rem 0 4rem;
   }
 }
-.services .section-description p {
+.section-description p {
   text-wrap: balance;
   font-family: "Content", sans-serif;
 }
-.services .service-container .grid-container {
+
+.service-container .grid-container {
   display: grid;
   margin: 10vh auto;
   gap: 10vh;
 }
 @media (min-width: 768px) {
-  .services .service-container .grid-container {
+  .service-container .grid-container {
     grid-template-columns: repeat(2, 1fr);
     margin: 10vh auto 10vh;
     column-gap: 2rem;
@@ -2746,25 +2748,27 @@ aside.active .social-links a {
   }
 }
 @media (min-width: 1024px) {
-  .services .service-container .grid-container {
+  .service-container .grid-container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.services .service-container .service-item {
-  background: #fff;
+
+.service-item {
+  background: #fafafa;
   width: 100%;
   padding: 0.25rem 1rem 1rem;
   border-radius: 0.5rem;
+  border: 1px solid #0001;
   position: relative;
   isolation: isolate;
   transition: 250ms;
 }
 @media (min-width: 768px) {
-  .services .service-container .service-item {
+  .service-item {
     padding: 0rem 1rem 4rem;
   }
 }
-.services .service-container .service-item::before, .services .service-container .service-item::after {
+.service-item::before, .service-item::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -2772,38 +2776,38 @@ aside.active .social-links a {
   z-index: -1;
   transition: 0;
 }
-.services .service-container .service-item::before {
-  border: 1px solid #0001;
-  box-shadow: 0.0125rem 1rem 1rem rgba(0, 0, 0, 0.025);
+.service-item::before {
+  background: #fafafa;
+  box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.05);
 }
-.services .service-container .service-item::after {
-  background-image: radial-gradient(#222, #000);
-  box-shadow: inset 0.15rem 0.025rem 0.5rem #fff3, inset -0.25rem -0.025rem 0.25rem #000, 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+.service-item::after {
+  background: #fff;
+  box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
   opacity: 0;
 }
-.services .service-container .service-item .service-core {
+.service-item .service-core {
   display: flex;
   flex-direction: column-reverse;
 }
-.services .service-container .service-item .service-core h4 {
+.service-item .service-core h4 {
   text-transform: capitalize;
   font-size: 1.25rem;
   font-size: clamp(1.125rem, 2.25vw, 1.25rem);
   font-weight: 500;
   transition: 250ms ease;
 }
-.services .service-container .service-item .service-core .active-icon {
+.service-item .service-core .active-icon {
   position: relative;
   display: grid;
   height: 2.5rem;
 }
-.services .service-container .service-item .service-core .active-icon img {
+.service-item .service-core .active-icon img {
   position: absolute;
 }
-.services .service-container .service-item .service-core .active-icon img.light-icon {
+.service-item .service-core .active-icon img.light-icon {
   opacity: 0;
 }
-.services .service-container .service-item .service-core img {
+.service-item .service-core img {
   width: 2.5rem;
   height: 2.5rem;
   transform: translateY(-1rem);
@@ -2811,12 +2815,12 @@ aside.active .social-links a {
   transition: 250ms;
   filter: drop-shadow(0.1rem 0.25rem 0.125rem rgba(0, 0, 0, 0.2));
 }
-.services .service-container .service-item .service-type ul {
+.service-item .service-type ul {
   margin-top: 1rem;
   border-radius: 0.25rem;
   overflow: hidden;
 }
-.services .service-container .service-item .service-type ul li {
+.service-item .service-type ul li {
   padding: 0.5rem 0.25rem;
   text-transform: capitalize;
   text-wrap: balance;
@@ -2827,14 +2831,14 @@ aside.active .social-links a {
   transition: color 250ms, background 0s;
   background-color: #f4f4f4;
 }
-.services .service-container .service-item .service-type ul li:nth-child(2n) {
+.service-item .service-type ul li:nth-child(2n) {
   background-color: #fafafa;
 }
-.services .service-container .service-item .service-type ul li:last-child {
+.service-item .service-type ul li:last-child {
   background-color: #ffff;
   background-color: transparent;
 }
-.services .service-container .service-item .service-type ul .service-cta {
+.service-item .service-type ul .service-cta {
   border-bottom: none;
   list-style: none;
   overflow: hidden;
@@ -2845,92 +2849,76 @@ aside.active .social-links a {
   gap: 0.5rem;
 }
 @media (min-width: 768px) {
-  .services .service-container .service-item .service-type ul .service-cta {
+  .service-item .service-type ul .service-cta {
     position: absolute;
     bottom: 1rem;
     left: 1rem;
     width: 50%;
   }
 }
-.services .service-container .service-item .service-type ul .service-cta a {
+.service-item .service-type ul .service-cta a {
   text-decoration: underline #ffa500;
   text-underline-offset: 2px;
   display: block;
   transition: 0ms;
 }
-.services .service-container .service-item .service-type ul .service-cta a:hover, .services .service-container .service-item .service-type ul .service-cta a:focus {
+.service-item .service-type ul .service-cta a:hover, .service-item .service-type ul .service-cta a:focus {
   color: #ffa500;
   text-decoration-color: transparent;
   transition: 250ms;
 }
-.services .service-container .service-item .service-type ul .service-cta .icon {
+.service-item .service-type ul .service-cta .icon {
   opacity: 0.7;
 }
-.services .service-container .service-item .service-type ul .service-cta:hover i {
+.service-item .service-type ul .service-cta:hover i {
   transform: translateX(0.25rem);
   color: #f8650c;
   opacity: 1;
 }
-.services .service-container .service-item.io-item {
+.service-item.io-item {
   transform: scale(0.98);
 }
-.services .service-container .service-item.io-item::before {
+.service-item.io-item::before {
   opacity: 0;
 }
-.services .service-container .service-item.active-item {
+.service-item.active-item {
   transform: scale(1);
 }
-.services .service-container .service-item.active-item::before {
+.service-item.active-item::before {
   opacity: 1;
 }
-.services .service-container .service-item:hover {
+.service-item:hover {
   transition: 350ms ease-out;
   transform: scale(1.01);
-  animation: card-hover 500ms ease-in-out;
+  animation: card-hover 400ms ease-in-out;
 }
 @media (prefers-reduced-motion) {
-  .services .service-container .service-item:hover {
+  .service-item:hover {
     animation: none;
   }
 }
 @media (min-width: 820px) {
-  .services .service-container .service-item:hover {
+  .service-item:hover {
     transform: scale(1.01);
   }
 }
-.services .service-container .service-item:hover::before {
+.service-item:hover::before {
   opacity: 0;
 }
-.services .service-container .service-item:hover::after {
+.service-item:hover::after {
   opacity: 1;
+  transition: 300ms;
+  transition-delay: 200ms;
 }
-.services .service-container .service-item:hover .service-core img {
-  transform: translateY(0rem);
+.service-item:hover .service-core img {
+  transform: translateY(-0.25rem);
   filter: drop-shadow(0rem 0.25rem 0.1rem rgba(0, 0, 0, 0.25));
-  transition: 500ms ease;
+  transition: 500ms ease 150ms;
 }
-.services .service-container .service-item:hover .service-core img.dark-icon {
-  opacity: 0;
-}
-.services .service-container .service-item:hover .service-core img.light-icon {
-  opacity: 1;
-}
-.services .service-container .service-item:hover .service-core h4 {
+.service-item:hover .service-core h4 {
   color: #f8650c;
-}
-.services .service-container .service-item:hover .service-type ul li {
-  background: transparent;
-  color: #fff;
-  background-color: #333;
-}
-.services .service-container .service-item:hover .service-type ul li:nth-child(2n) {
-  background-color: #4d4d4d;
-}
-.services .service-container .service-item:hover .service-type ul li:last-child {
-  background-color: transparent;
-}
-.services .service-container .service-item:hover .service-type ul .service-cta .icon {
-  opacity: 1;
+  transition-delay: 150ms;
+  transition-duration: 150ms;
 }
 
 #services-page .promise {
@@ -3017,17 +3005,9 @@ aside.active .social-links a {
 }
 
 @keyframes card-hover {
-  0%, 70%, 100% {
-    transform: scale(1);
-    transition-timing-function: ease-in;
-  }
   50% {
-    transform: scale(1.05);
-    transition-timing-function: ease-out;
-  }
-  80% {
     transform: scale(1.025);
-    transition-timing-function: ease-out;
+    transition-timing-function: ease-in-out;
   }
 }
 
